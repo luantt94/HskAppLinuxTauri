@@ -1,0 +1,2953 @@
+{
+ "level": "HSK4",
+ "topics": [
+  {
+   "id": 1,
+   "zh": "职业规划",
+   "vi": "Quy hoạch nghề nghiệp",
+   "icon": "🧭",
+   "dialogues": [
+    {
+     "id": "1-1",
+     "title_zh": "毕业以后怎么办",
+     "title_vi": "Tốt nghiệp rồi làm gì",
+     "scene_vi": "Hai sinh viên bàn về dự định tương lai.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，下个月就毕业了，你找到工作了吗？",
+       "py": "Xiǎo hóng, xià gè yuè jiù bì yè le, nǐ zhǎo dào gōng zuò le ma?",
+       "vi": "Tiểu Hồng, tháng sau là tốt nghiệp rồi, bạn tìm được việc chưa?"
+      },
+      {
+       "spk": 1,
+       "zh": "还没有。我投了十几份简历，只有两家公司让我去面试。",
+       "py": "Hái méi yǒu. Wǒ tóu le shí jǐ fèn jiǎn lì, zhǐ yǒu liǎng jiā gōng sī ràng wǒ qù miàn shì.",
+       "vi": "Chưa. Mình nộp hơn mười hồ sơ, chỉ có hai công ty mời mình đi phỏng vấn."
+      },
+      {
+       "spk": 0,
+       "zh": "你想找什么样的工作？",
+       "py": "Nǐ xiǎng zhǎo shén me yàng de gōng zuò?",
+       "vi": "Bạn muốn tìm công việc như thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "我希望工资高一点儿，不过更重要的是能学到东西。",
+       "py": "Wǒ xī wàng gōng zī gāo yì diǎnr, bú guò gèng zhòng yào de shì néng xué dào dōng xi.",
+       "vi": "Mình hy vọng lương cao một chút, nhưng quan trọng hơn là học hỏi được nhiều điều."
+      },
+      {
+       "spk": 0,
+       "zh": "我也是这么想的。虽然刚开始工资不高，但是发展空间大更重要。",
+       "py": "Wǒ yě shì zhè me xiǎng de. Suī rán gāng kāi shǐ gōng zī bù gāo, dàn shì fā zhǎn kōng jiān dà gèng zhòng yào.",
+       "vi": "Mình cũng nghĩ vậy. Dù lúc đầu lương không cao, nhưng không gian phát triển lớn mới quan trọng hơn."
+      },
+      {
+       "spk": 1,
+       "zh": "对，不能只看眼前，要看长远的发展。",
+       "py": "Duì, bù néng zhǐ kàn yǎn qián, yào kàn cháng yuǎn de fā zhǎn.",
+       "vi": "Đúng, không thể chỉ nhìn trước mắt, mà phải nhìn sự phát triển lâu dài."
+      },
+      {
+       "spk": 0,
+       "zh": "让我们一起加油，相信我们都会找到合适的工作。",
+       "py": "Ràng wǒ men yì qǐ jiā yóu, xiāng xìn wǒ men dōu huì zhǎo dào hé shì de gōng zuò.",
+       "vi": "Cùng cố gắng nhé, tin rằng chúng ta đều sẽ tìm được công việc phù hợp."
+      }
+     ]
+    },
+    {
+     "id": "1-2",
+     "title_zh": "要不要读研究生",
+     "title_vi": "Có nên học cao học không",
+     "scene_vi": "Cân nhắc giữa đi làm và học tiếp.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "爸爸",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "爸爸，我在考虑要不要继续读研究生。",
+       "py": "Bà ba, wǒ zài kǎo lǜ yào bú yào jì xù dú yán jiū shēng.",
+       "vi": "Bố ơi, con đang cân nhắc có nên học tiếp cao học không."
+      },
+      {
+       "spk": 1,
+       "zh": "你为什么想读？是真的有兴趣，还是怕找不到工作？",
+       "py": "Nǐ wèi shén me xiǎng dú? Shì zhēn de yǒu xìng qù, hái shì pà zhǎo bú dào gōng zuò?",
+       "vi": "Vì sao con muốn học? Là thật sự có hứng thú, hay sợ không tìm được việc?"
+      },
+      {
+       "spk": 0,
+       "zh": "两个原因都有。不过我觉得多学点儿东西，对以后有帮助。",
+       "py": "Liǎng gè yuán yīn dōu yǒu. Bú guò wǒ jué de duō xué diǎnr dōng xi, duì yǐ hòu yǒu bāng zhù.",
+       "vi": "Cả hai lý do đều có. Nhưng con thấy học thêm một chút sẽ giúp ích cho sau này."
+      },
+      {
+       "spk": 1,
+       "zh": "读研究生需要三年，这期间你没有收入，家里要支持你。",
+       "py": "Dú yán jiū shēng xū yào sān nián, zhè qī jiān nǐ méi yǒu shōu rù, jiā lǐ yào zhī chí nǐ.",
+       "vi": "Học cao học mất ba năm, thời gian đó con không có thu nhập, gia đình phải hỗ trợ con."
+      },
+      {
+       "spk": 0,
+       "zh": "我知道，所以我打算申请奖学金，也会做一些兼职。",
+       "py": "Wǒ zhī dao, suǒ yǐ wǒ dǎ suàn shēn qǐng jiǎng xué jīn, yě huì zuò yì xiē jiān zhí.",
+       "vi": "Con biết, nên con định xin học bổng và cũng sẽ làm thêm một chút."
+      },
+      {
+       "spk": 1,
+       "zh": "只要你想清楚了，我们都支持你，但是别后悔。",
+       "py": "Zhǐ yào nǐ xiǎng qīng chǔ le, wǒ men dōu zhī chí nǐ, dàn shì bié hòu huǐ.",
+       "vi": "Chỉ cần con suy nghĩ kỹ rồi, bố mẹ đều ủng hộ con, nhưng đừng hối hận."
+      },
+      {
+       "spk": 0,
+       "zh": "谢谢爸爸，我会认真考虑的。",
+       "py": "Xiè xie bà ba, wǒ huì rèn zhēn kǎo lǜ de.",
+       "vi": "Cảm ơn bố, con sẽ cân nhắc nghiêm túc."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "zh": "创业",
+   "vi": "Khởi nghiệp",
+   "icon": "🚀",
+   "dialogues": [
+    {
+     "id": "2-1",
+     "title_zh": "我想开一家店",
+     "title_vi": "Mình muốn mở một cửa hàng",
+     "scene_vi": "Bạn bè bàn về kế hoạch khởi nghiệp.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，我打算辞职，自己开一家咖啡店。",
+       "py": "Xiǎo měi, wǒ dǎ suàn cí zhí, zì jǐ kāi yì jiā kā fēi diàn.",
+       "vi": "Tiểu Mỹ, mình định nghỉ việc, tự mở một quán cà phê."
+      },
+      {
+       "spk": 1,
+       "zh": "真的吗？你考虑清楚了吗？创业可不是一件容易的事。",
+       "py": "Zhēn de ma? Nǐ kǎo lǜ qīng chǔ le ma? Chuàng yè kě bú shì yí jiàn róng yì de shì.",
+       "vi": "Thật à? Bạn suy nghĩ kỹ chưa? Khởi nghiệp không phải việc dễ."
+      },
+      {
+       "spk": 0,
+       "zh": "我知道，所以我已经做了半年的计划，还去别的店学习过。",
+       "py": "Wǒ zhī dao, suǒ yǐ wǒ yǐ jīng zuò le bàn nián de jì huà, hái qù bié de diàn xué xí guò.",
+       "vi": "Mình biết, nên đã lập kế hoạch nửa năm, còn đến các quán khác học hỏi."
+      },
+      {
+       "spk": 1,
+       "zh": "资金够吗？开店需要很多钱。",
+       "py": "Zī jīn gòu ma? Kāi diàn xū yào hěn duō qián.",
+       "vi": "Vốn có đủ không? Mở quán cần rất nhiều tiền."
+      },
+      {
+       "spk": 0,
+       "zh": "我自己有一部分，另外打算向银行贷款。",
+       "py": "Wǒ zì jǐ yǒu yí bù fèn, lìng wài dǎ suàn xiàng yín háng dài kuǎn.",
+       "vi": "Mình tự có một phần, ngoài ra định vay ngân hàng."
+      },
+      {
+       "spk": 1,
+       "zh": "风险还是挺大的，万一生意不好，你怎么办？",
+       "py": "Fēng xiǎn hái shì tǐng dà de, wàn yī shēng yì bù hǎo, nǐ zěn me bàn?",
+       "vi": "Rủi ro vẫn khá lớn, lỡ làm ăn không tốt thì bạn làm sao?"
+      },
+      {
+       "spk": 0,
+       "zh": "我已经想好了，即使失败了，我也不后悔，因为我努力过。",
+       "py": "Wǒ yǐ jīng xiǎng hǎo le, jí shǐ shī bài le, wǒ yě bú hòu huǐ, yīn wèi wǒ nǔ lì guò.",
+       "vi": "Mình nghĩ kỹ rồi, dù thất bại mình cũng không hối hận, vì mình đã cố gắng."
+      }
+     ]
+    },
+    {
+     "id": "2-2",
+     "title_zh": "你的想法很好",
+     "title_vi": "Ý tưởng của bạn rất hay",
+     "scene_vi": "Nhà đầu tư nghe trình bày ý tưởng.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "投资人",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "各位好，我们的产品可以帮助老年人更方便地使用手机。",
+       "py": "Gè wèi hǎo, wǒ men de chǎn pǐn kě yǐ bāng zhù lǎo nián rén gèng fāng biàn de shǐ yòng shǒu jī.",
+       "vi": "Chào các vị, sản phẩm của chúng tôi giúp người lớn tuổi sử dụng điện thoại thuận tiện hơn."
+      },
+      {
+       "spk": 1,
+       "zh": "这个想法不错，现在市场上这样的产品多吗？",
+       "py": "Zhè ge xiǎng fǎ bú cuò, xiàn zài shì chǎng shàng zhè yàng de chǎn pǐn duō ma?",
+       "vi": "Ý tưởng này không tệ, hiện nay trên thị trường sản phẩm như vậy có nhiều không?"
+      },
+      {
+       "spk": 0,
+       "zh": "不多，大部分产品只考虑年轻人，所以我们有很大的机会。",
+       "py": "Bù duō, dà bù fen chǎn pǐn zhǐ kǎo lǜ nián qīng rén, suǒ yǐ wǒ men yǒu hěn dà de jī huì.",
+       "vi": "Không nhiều, phần lớn sản phẩm chỉ nghĩ đến người trẻ, nên chúng tôi có cơ hội rất lớn."
+      },
+      {
+       "spk": 1,
+       "zh": "你们的团队有多少人？之前做过类似的项目吗？",
+       "py": "Nǐ men de tuán duì yǒu duō shǎo rén? Zhī qián zuò guò lèi sì de xiàng mù ma?",
+       "vi": "Nhóm của các bạn có bao nhiêu người? Trước đây có làm dự án tương tự chưa?"
+      },
+      {
+       "spk": 0,
+       "zh": "一共八个人，其中三个人有五年以上的经验。",
+       "py": "Yí gòng bā gè rén, qí zhōng sān gè rén yǒu wǔ nián yǐ shàng de jīng yàn.",
+       "vi": "Tổng cộng tám người, trong đó ba người có hơn năm năm kinh nghiệm."
+      },
+      {
+       "spk": 1,
+       "zh": "好的，请把详细的计划书发给我，我们回去讨论一下。",
+       "py": "Hǎo de, qǐng bǎ xiáng xì de jì huà shū fā gěi wǒ, wǒ men huí qù tǎo lùn yí xià.",
+       "vi": "Được, xin gửi bản kế hoạch chi tiết cho tôi, chúng tôi về thảo luận."
+      },
+      {
+       "spk": 0,
+       "zh": "谢谢您给我们这个机会，我们一定不会让您失望。",
+       "py": "Xiè xie nín gěi wǒ men zhè ge jī huì, wǒ men yí dìng bú huì ràng nín shī wàng.",
+       "vi": "Cảm ơn chị đã cho chúng tôi cơ hội này, chúng tôi nhất định không làm chị thất vọng."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "zh": "消费观",
+   "vi": "Quan niệm tiêu dùng",
+   "icon": "🛍️",
+   "dialogues": [
+    {
+     "id": "3-1",
+     "title_zh": "一定要买新的吗",
+     "title_vi": "Có nhất thiết phải mua đồ mới không",
+     "scene_vi": "Hai người bàn về thói quen mua sắm.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "小明",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小明，你看，这个牌子又出了新手机，你要换吗？",
+       "py": "Xiǎo míng, nǐ kàn, zhè ge pái zi yòu chū le xīn shǒu jī, nǐ yào huàn ma?",
+       "vi": "Tiểu Minh, bạn xem, hãng này lại ra điện thoại mới, bạn có đổi không?"
+      },
+      {
+       "spk": 1,
+       "zh": "不换，我的手机才用了一年，还很好用。",
+       "py": "Bú huàn, wǒ de shǒu jī cái yòng le yì nián, hái hěn hǎo yòng.",
+       "vi": "Không đổi, điện thoại của mình mới dùng một năm, vẫn rất tốt."
+      },
+      {
+       "spk": 0,
+       "zh": "可是新的功能更多，照相也更清楚。",
+       "py": "Kě shì xīn de gōng néng gèng duō, zhào xiàng yě gèng qīng chǔ.",
+       "vi": "Nhưng bản mới nhiều chức năng hơn, chụp ảnh cũng nét hơn."
+      },
+      {
+       "spk": 1,
+       "zh": "我觉得很多人买东西不是因为需要，而是因为别人都在买。",
+       "py": "Wǒ jué de hěn duō rén mǎi dōng xi bú shì yīn wèi xū yào, ér shì yīn wèi bié rén dōu zài mǎi.",
+       "vi": "Mình thấy nhiều người mua đồ không phải vì cần, mà vì người khác đều mua."
+      },
+      {
+       "spk": 0,
+       "zh": "你说得也有道理，这样确实容易浪费。",
+       "py": "Nǐ shuō de yě yǒu dào lǐ, zhè yàng què shí róng yì làng fèi.",
+       "vi": "Bạn nói cũng có lý, như vậy đúng là dễ lãng phí."
+      },
+      {
+       "spk": 1,
+       "zh": "买东西以前，我都会问自己：我真的需要吗？",
+       "py": "Mǎi dōng xi yǐ qián, wǒ dōu huì wèn zì jǐ: wǒ zhēn de xū yào ma?",
+       "vi": "Trước khi mua đồ, mình đều hỏi bản thân: mình thật sự cần không?"
+      },
+      {
+       "spk": 0,
+       "zh": "我以后也要学着这样，别被广告影响。",
+       "py": "Wǒ yǐ hòu yě yào xué zhe zhè yàng, bié bèi guǎng gào yǐng xiǎng.",
+       "vi": "Sau này mình cũng phải học cách đó, đừng để quảng cáo ảnh hưởng."
+      }
+     ]
+    },
+    {
+     "id": "3-2",
+     "title_zh": "二手东西",
+     "title_vi": "Đồ cũ",
+     "scene_vi": "Bàn về việc mua bán đồ cũ.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，你的这张桌子很漂亮，是在哪儿买的？",
+       "py": "Xiǎo měi, nǐ de zhè zhāng zhuō zi hěn piào liang, shì zài nǎr mǎi de?",
+       "vi": "Tiểu Mỹ, cái bàn này của bạn rất đẹp, bạn mua ở đâu vậy?"
+      },
+      {
+       "spk": 1,
+       "zh": "是在二手网站买的，只花了新的三分之一的钱。",
+       "py": "Shì zài èr shǒu wǎng zhàn mǎi de, zhǐ huā le xīn de sān fēn zhī yí de qián.",
+       "vi": "Mình mua trên trang đồ cũ, chỉ tốn một phần ba giá mới."
+      },
+      {
+       "spk": 0,
+       "zh": "二手的东西质量会不会有问题？",
+       "py": "Èr shǒu de dōng xi zhì liàng huì bú huì yǒu wèn tí?",
+       "vi": "Đồ cũ chất lượng có vấn đề không?"
+      },
+      {
+       "spk": 1,
+       "zh": "有的会有，所以买之前要看清楚照片，最好当面检查。",
+       "py": "Yǒu de huì yǒu, suǒ yǐ mǎi zhī qián yào kàn qīng chǔ zhào piàn, zuì hǎo dāng miàn jiǎn chá.",
+       "vi": "Có cái sẽ có, nên trước khi mua phải xem kỹ ảnh, tốt nhất là kiểm tra trực tiếp."
+      },
+      {
+       "spk": 0,
+       "zh": "听起来既省钱又环保，我也想试试。",
+       "py": "Tīng qǐ lái jì shěng qián yòu huán bǎo, wǒ yě xiǎng shì shì.",
+       "vi": "Nghe vừa tiết kiệm tiền vừa bảo vệ môi trường, mình cũng muốn thử."
+      },
+      {
+       "spk": 1,
+       "zh": "我还把不用的东西卖掉了，赚了不少钱。",
+       "py": "Wǒ hái bǎ bú yòng de dōng xi mài diào le, zhuàn le bù shǎo qián.",
+       "vi": "Mình còn bán những thứ không dùng, kiếm được khá nhiều tiền."
+      },
+      {
+       "spk": 0,
+       "zh": "看来我家里也有很多可以卖的东西。",
+       "py": "Kàn lái wǒ jiā lǐ yě yǒu hěn duō kě yǐ mài de dōng xi.",
+       "vi": "Xem ra nhà mình cũng có nhiều thứ có thể bán."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "zh": "传统文化",
+   "vi": "Văn hoá truyền thống",
+   "icon": "🏮",
+   "dialogues": [
+    {
+     "id": "4-1",
+     "title_zh": "春节的意义",
+     "title_vi": "Ý nghĩa của Tết",
+     "scene_vi": "Người nước ngoài tìm hiểu về Tết.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，为什么春节对中国人这么重要？",
+       "py": "Xiǎo hóng, wèi shén me chūn jié duì zhōng guó rén zhè me zhòng yào?",
+       "vi": "Tiểu Hồng, vì sao Tết lại quan trọng với người Trung Quốc như vậy?"
+      },
+      {
+       "spk": 1,
+       "zh": "因为这是一年中最重要的时间，也是全家人团聚的时候。",
+       "py": "Yīn wèi zhè shì yì nián zhōng zuì zhòng yào de shí jiān, yě shì quán jiā rén tuán jù de shí hou.",
+       "vi": "Vì đây là thời gian quan trọng nhất trong năm, cũng là lúc cả nhà đoàn tụ."
+      },
+      {
+       "spk": 0,
+       "zh": "我听说春节前，很多人会坐很长时间的车回家。",
+       "py": "Wǒ tīng shuō chūn jié qián, hěn duō rén huì zuò hěn cháng shí jiān de chē huí jiā.",
+       "vi": "Mình nghe nói trước Tết, nhiều người đi xe rất lâu để về nhà."
+      },
+      {
+       "spk": 1,
+       "zh": "是的，不管路有多远，大家都想回家过年。",
+       "py": "Shì de, bù guǎn lù yǒu duō yuǎn, dà jiā dōu xiǎng huí jiā guò nián.",
+       "vi": "Đúng vậy, bất kể đường xa bao nhiêu, mọi người đều muốn về nhà ăn Tết."
+      },
+      {
+       "spk": 0,
+       "zh": "春节的时候，大家都做什么？",
+       "py": "Chūn jié de shí hou, dà jiā dōu zuò shén me?",
+       "vi": "Vào dịp Tết, mọi người làm gì?"
+      },
+      {
+       "spk": 1,
+       "zh": "除夕晚上一起吃饭，看电视，还要放鞭炮，孩子们能拿到红包。",
+       "py": "Chú xī wǎn shàng yì qǐ chī fàn, kàn diàn shì, hái yào fàng biān pào, hái zi men néng ná dào hóng bāo.",
+       "vi": "Tối giao thừa cùng ăn cơm, xem tivi, còn đốt pháo, bọn trẻ nhận được lì xì."
+      },
+      {
+       "spk": 0,
+       "zh": "听起来很热闹，我真想亲自体验一次。",
+       "py": "Tīng qǐ lái hěn rè nào, wǒ zhēn xiǎng qīn zì tǐ yàn yí cì.",
+       "vi": "Nghe thật náo nhiệt, mình rất muốn tự mình trải nghiệm một lần."
+      }
+     ]
+    },
+    {
+     "id": "4-2",
+     "title_zh": "传统与现代",
+     "title_vi": "Truyền thống và hiện đại",
+     "scene_vi": "Bàn về sự thay đổi của phong tục.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "奶奶",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "奶奶，现在过春节和您小时候相比，有什么不同？",
+       "py": "Nǎi nǎi, xiàn zài guò chūn jié hé nín xiǎo shí hou xiāng bǐ, yǒu shén me bù tóng?",
+       "vi": "Bà ơi, bây giờ ăn Tết so với hồi nhỏ của bà có gì khác?"
+      },
+      {
+       "spk": 1,
+       "zh": "以前大家都在家里包饺子，现在很多人去饭店吃。",
+       "py": "Yǐ qián dà jiā dōu zài jiā lǐ bāo jiǎo zi, xiàn zài hěn duō rén qù fàn diàn chī.",
+       "vi": "Trước đây mọi người đều gói sủi cảo ở nhà, bây giờ nhiều người đi nhà hàng ăn."
+      },
+      {
+       "spk": 0,
+       "zh": "拜年的方式也变了，现在我们常常用手机发祝福。",
+       "py": "Bài nián de fāng shì yě biàn le, xiàn zài wǒ men cháng cháng yòng shǒu jī fā zhù fú.",
+       "vi": "Cách chúc Tết cũng thay đổi, bây giờ chúng cháu thường dùng điện thoại gửi lời chúc."
+      },
+      {
+       "spk": 1,
+       "zh": "虽然方便了，但是我总觉得少了一点儿什么。",
+       "py": "Suī rán fāng biàn le, dàn shì wǒ zǒng jué de shǎo le yì diǎnr shén me.",
+       "vi": "Tuy tiện lợi hơn nhưng bà luôn cảm thấy thiếu một chút gì đó."
+      },
+      {
+       "spk": 0,
+       "zh": "是不是少了见面时那种温暖的感觉？",
+       "py": "Shì bú shì shǎo le jiàn miàn shí nà zhǒng wēn nuǎn de gǎn jué?",
+       "vi": "Có phải thiếu cảm giác ấm áp khi gặp mặt không?"
+      },
+      {
+       "spk": 1,
+       "zh": "是啊，所以我希望你们有时间还是多回来看看。",
+       "py": "Shì a, suǒ yǐ wǒ xī wàng nǐ men yǒu shí jiān hái shì duō huí lái kàn kàn.",
+       "vi": "Đúng vậy, nên bà hy vọng các cháu có thời gian thì vẫn nên về thăm nhiều hơn."
+      },
+      {
+       "spk": 0,
+       "zh": "您放心，今年春节我们全家都会回去陪您。",
+       "py": "Nín fàng xīn, jīn nián chūn jié wǒ men quán jiā dōu huì huí qù péi nín.",
+       "vi": "Bà yên tâm, Tết năm nay cả nhà cháu đều về với bà."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "zh": "环境污染",
+   "vi": "Ô nhiễm môi trường",
+   "icon": "🌫️",
+   "dialogues": [
+    {
+     "id": "5-1",
+     "title_zh": "空气越来越差",
+     "title_vi": "Không khí ngày càng tệ",
+     "scene_vi": "Bàn luận về chất lượng không khí.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，今天的空气质量特别差，我的喉咙都不舒服了。",
+       "py": "Xiǎo měi, jīn tiān de kōng qì zhì liàng tè bié chà, wǒ de hóu lóng dōu bù shū fú le.",
+       "vi": "Tiểu Mỹ, hôm nay chất lượng không khí rất tệ, cổ họng mình khó chịu rồi."
+      },
+      {
+       "spk": 1,
+       "zh": "是啊，随着汽车和工厂越来越多，空气污染也越来越严重。",
+       "py": "Shì a, suí zhe qì chē hé gōng chǎng yuè lái yuè duō, kōng qì wū rǎn yě yuè lái yuè yán zhòng.",
+       "vi": "Đúng vậy, cùng với xe và nhà máy ngày càng nhiều, ô nhiễm không khí cũng ngày càng nghiêm trọng."
+      },
+      {
+       "spk": 0,
+       "zh": "政府有没有采取什么办法？",
+       "py": "Zhèng fǔ yǒu méi yǒu cǎi qǔ shén me bàn fǎ?",
+       "vi": "Chính phủ có biện pháp nào không?"
+      },
+      {
+       "spk": 1,
+       "zh": "有，比如限制汽车的数量，鼓励大家坐公共交通。",
+       "py": "Yǒu, bǐ rú xiàn zhì qì chē de shù liàng, gǔ lì dà jiā zuò gōng gòng jiāo tōng.",
+       "vi": "Có, ví dụ hạn chế số lượng xe, khuyến khích mọi người đi phương tiện công cộng."
+      },
+      {
+       "spk": 0,
+       "zh": "这些办法有效果吗？",
+       "py": "Zhè xiē bàn fǎ yǒu xiào guǒ ma?",
+       "vi": "Những biện pháp này có hiệu quả không?"
+      },
+      {
+       "spk": 1,
+       "zh": "有一些，这几年天空蓝的日子明显比以前多了。",
+       "py": "Yǒu yì xiē, zhè jǐ nián tiān kōng lán de rì zi míng xiǎn bǐ yǐ qián duō le.",
+       "vi": "Có phần nào, mấy năm nay những ngày trời xanh rõ ràng nhiều hơn trước."
+      },
+      {
+       "spk": 0,
+       "zh": "看来每个人都应该为保护环境做点儿事。",
+       "py": "Kàn lái měi gè rén dōu yīng gāi wèi bǎo hù huán jìng zuò diǎnr shì.",
+       "vi": "Xem ra mỗi người đều nên làm gì đó để bảo vệ môi trường."
+      }
+     ]
+    },
+    {
+     "id": "5-2",
+     "title_zh": "我们能做什么",
+     "title_vi": "Chúng ta có thể làm gì",
+     "scene_vi": "Thảo luận hành động cá nhân bảo vệ môi trường.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "小明",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小明，你觉得作为普通人，我们能为环境做什么？",
+       "py": "Xiǎo míng, nǐ jué de zuò wéi pǔ tōng rén, wǒ men néng wèi huán jìng zuò shén me?",
+       "vi": "Tiểu Minh, bạn thấy là người bình thường, chúng ta có thể làm gì cho môi trường?"
+      },
+      {
+       "spk": 1,
+       "zh": "很多小事都有用，比如随手关灯，少用一次性的东西。",
+       "py": "Hěn duō xiǎo shì dōu yǒu yòng, bǐ rú suí shǒu guān dēng, shǎo yòng yí cì xìng de dōng xi.",
+       "vi": "Nhiều việc nhỏ đều có ích, ví dụ tiện tay tắt đèn, dùng ít đồ dùng một lần."
+      },
+      {
+       "spk": 0,
+       "zh": "我最近开始骑自行车上班，既锻炼了身体，又减少了污染。",
+       "py": "Wǒ zuì jìn kāi shǐ qí zì xíng chē shàng bān, jì duàn liàn le shēn tǐ, yòu jiǎn shǎo le wū rǎn.",
+       "vi": "Gần đây mình bắt đầu đạp xe đi làm, vừa rèn luyện sức khỏe vừa giảm ô nhiễm."
+      },
+      {
+       "spk": 1,
+       "zh": "这个办法很好。如果更多人这样做，效果会更明显。",
+       "py": "Zhè ge bàn fǎ hěn hǎo. Rú guǒ gèng duō rén zhè yàng zuò, xiào guǒ huì gèng míng xiǎn.",
+       "vi": "Cách này rất hay. Nếu nhiều người làm như vậy, hiệu quả sẽ rõ rệt hơn."
+      },
+      {
+       "spk": 0,
+       "zh": "可是有的人觉得一个人的力量太小，不愿意改变。",
+       "py": "Kě shì yǒu de rén jué de yí gè rén de lì liàng tài xiǎo, bú yuàn yì gǎi biàn.",
+       "vi": "Nhưng có người thấy sức của một người quá nhỏ, không muốn thay đổi."
+      },
+      {
+       "spk": 1,
+       "zh": "其实大家都这么想，问题才不会解决。我们要从自己做起。",
+       "py": "Qí shí dà jiā dōu zhè me xiǎng, wèn tí cái bú huì jiě jué. Wǒ men yào cóng zì jǐ zuò qǐ.",
+       "vi": "Thật ra vì ai cũng nghĩ vậy nên vấn đề mới không được giải quyết. Chúng ta phải bắt đầu từ chính mình."
+      },
+      {
+       "spk": 0,
+       "zh": "说得对，我们还可以影响身边的朋友。",
+       "py": "Shuō de duì, wǒ men hái kě yǐ yǐng xiǎng shēn biān de péng you.",
+       "vi": "Nói đúng, chúng ta còn có thể ảnh hưởng đến bạn bè xung quanh."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "zh": "健康生活",
+   "vi": "Lối sống khỏe mạnh",
+   "icon": "🥦",
+   "dialogues": [
+    {
+     "id": "6-1",
+     "title_zh": "工作再忙也要锻炼",
+     "title_vi": "Bận mấy cũng phải tập",
+     "scene_vi": "Bàn về thói quen vận động.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，你工作这么忙，怎么还有时间锻炼？",
+       "py": "Xiǎo hóng, nǐ gōng zuò zhè me máng, zěn me hái yǒu shí jiān duàn liàn?",
+       "vi": "Tiểu Hồng, bạn bận thế, sao vẫn có thời gian tập thể dục?"
+      },
+      {
+       "spk": 1,
+       "zh": "时间是挤出来的。我每天中午吃完饭，就在公司附近走半个小时。",
+       "py": "Shí jiān shì jǐ chū lái de. Wǒ měi tiān zhōng wǔ chī wán fàn, jiù zài gōng sī fù jìn zǒu bàn gè xiǎo shí.",
+       "vi": "Thời gian là do mình sắp xếp mà có. Mỗi trưa ăn xong, mình đi bộ nửa tiếng quanh công ty."
+      },
+      {
+       "spk": 0,
+       "zh": "只走路就有效果吗？",
+       "py": "Zhǐ zǒu lù jiù yǒu xiào guǒ ma?",
+       "vi": "Chỉ đi bộ thôi cũng có hiệu quả sao?"
+      },
+      {
+       "spk": 1,
+       "zh": "关键是坚持，只要每天都做，身体就会有变化。",
+       "py": "Guān jiàn shì jiān chí, zhǐ yào měi tiān dōu zuò, shēn tǐ jiù huì yǒu biàn huà.",
+       "vi": "Quan trọng là kiên trì, chỉ cần ngày nào cũng làm, cơ thể sẽ có thay đổi."
+      },
+      {
+       "spk": 0,
+       "zh": "我也想试试，可是我常常觉得太累，不想动。",
+       "py": "Wǒ yě xiǎng shì shì, kě shì wǒ cháng cháng jué de tài lèi, bù xiǎng dòng.",
+       "vi": "Mình cũng muốn thử, nhưng thường thấy quá mệt, không muốn động đậy."
+      },
+      {
+       "spk": 1,
+       "zh": "越不动越累，运动以后精神反而会更好。",
+       "py": "Yuè bú dòng yuè lèi, yùn dòng yǐ hòu jīng shén fǎn ér huì gèng hǎo.",
+       "vi": "Càng không động càng mệt, vận động xong tinh thần ngược lại sẽ tốt hơn."
+      },
+      {
+       "spk": 0,
+       "zh": "好，从明天开始，我跟你一起走。",
+       "py": "Hǎo, cóng míng tiān kāi shǐ, wǒ gēn nǐ yì qǐ zǒu.",
+       "vi": "Được, từ ngày mai mình đi cùng bạn."
+      }
+     ]
+    },
+    {
+     "id": "6-2",
+     "title_zh": "饮食要平衡",
+     "title_vi": "Ăn uống cần cân bằng",
+     "scene_vi": "Bác sĩ khuyên về chế độ ăn.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "医生",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "医生，我最近总是胃疼，是怎么回事？",
+       "py": "Yī shēng, wǒ zuì jìn zǒng shì wèi téng, shì zěn me huí shì?",
+       "vi": "Bác sĩ, dạo này tôi hay đau dạ dày, là sao vậy?"
+      },
+      {
+       "spk": 1,
+       "zh": "你平时吃饭规律吗？",
+       "py": "Nǐ píng shí chī fàn guī lǜ ma?",
+       "vi": "Bình thường bạn ăn uống có điều độ không?"
+      },
+      {
+       "spk": 0,
+       "zh": "不太规律，早饭常常不吃，晚饭又吃得很晚。",
+       "py": "Bú tài guī lǜ, zǎo fàn cháng cháng bù chī, wǎn fàn yòu chī de hěn wǎn.",
+       "vi": "Không điều độ lắm, bữa sáng thường bỏ, bữa tối lại ăn rất muộn."
+      },
+      {
+       "spk": 1,
+       "zh": "这样对胃很不好，你应该一日三餐按时吃，而且不要吃得太油、太辣。",
+       "py": "Zhè yàng duì wèi hěn bù hǎo, nǐ yīng gāi yí rì sān cān àn shí chī, ér qiě bú yào chī de tài yóu, tài là.",
+       "vi": "Như vậy rất không tốt cho dạ dày, bạn nên ăn ba bữa đúng giờ, hơn nữa đừng ăn quá nhiều dầu mỡ, quá cay."
+      },
+      {
+       "spk": 0,
+       "zh": "我工作的时候没有时间吃饭，怎么办？",
+       "py": "Wǒ gōng zuò de shí hou méi yǒu shí jiān chī fàn, zěn me bàn?",
+       "vi": "Lúc làm việc tôi không có thời gian ăn, phải làm sao?"
+      },
+      {
+       "spk": 1,
+       "zh": "身体是最重要的本钱，再忙也要吃饭，否则小问题会变成大问题。",
+       "py": "Shēn tǐ shì zuì zhòng yào de běn qián, zài máng yě yào chī fàn, fǒu zé xiǎo wèn tí huì biàn chéng dà wèn tí.",
+       "vi": "Cơ thể là vốn quý nhất, bận mấy cũng phải ăn, nếu không vấn đề nhỏ sẽ thành vấn đề lớn."
+      },
+      {
+       "spk": 0,
+       "zh": "我明白了，我一定改变饮食习惯。",
+       "py": "Wǒ míng bai le, wǒ yí dìng gǎi biàn yǐn shí xí guàn.",
+       "vi": "Tôi hiểu rồi, nhất định sẽ thay đổi thói quen ăn uống."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "zh": "教育方式",
+   "vi": "Phương pháp giáo dục",
+   "icon": "🏫",
+   "dialogues": [
+    {
+     "id": "7-1",
+     "title_zh": "压力太大了",
+     "title_vi": "Áp lực quá lớn",
+     "scene_vi": "Phụ huynh bàn về áp lực học tập của con.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，我女儿每天写作业写到十一点，我觉得她压力太大了。",
+       "py": "Xiǎo měi, wǒ nǚ ér měi tiān xiě zuò yè xiě dào shí yī diǎn, wǒ jué de tā yā lì tài dà le.",
+       "vi": "Tiểu Mỹ, con gái mình mỗi ngày làm bài tập đến mười một giờ, mình thấy con áp lực quá lớn."
+      },
+      {
+       "spk": 1,
+       "zh": "现在的孩子确实不轻松，不但作业多，还要上很多辅导班。",
+       "py": "Xiàn zài de hái zi què shí bù qīng sōng, bú dàn zuò yè duō, hái yào shàng hěn duō fǔ dǎo bān.",
+       "vi": "Trẻ con bây giờ đúng là không nhẹ nhàng, không những bài tập nhiều mà còn phải học rất nhiều lớp phụ đạo."
+      },
+      {
+       "spk": 0,
+       "zh": "我想让她少上几个班，可是又怕她成绩落后。",
+       "py": "Wǒ xiǎng ràng tā shǎo shàng jǐ gè bān, kě shì yòu pà tā chéng jì luò hòu.",
+       "vi": "Mình muốn cho con học bớt mấy lớp, nhưng lại sợ con bị tụt điểm."
+      },
+      {
+       "spk": 1,
+       "zh": "我觉得成绩固然重要，但是快乐和健康更重要。",
+       "py": "Wǒ jué de chéng jì gù rán zhòng yào, dàn shì kuài lè hé jiàn kāng gèng zhòng yào.",
+       "vi": "Mình thấy điểm số cố nhiên quan trọng, nhưng vui vẻ và khỏe mạnh còn quan trọng hơn."
+      },
+      {
+       "spk": 0,
+       "zh": "你说得对。可是别的父母都让孩子学，我怕她输在起跑线上。",
+       "py": "Nǐ shuō de duì. Kě shì bié de fù mǔ dōu ràng hái zi xué, wǒ pà tā shū zài qǐ pǎo xiàn shàng.",
+       "vi": "Bạn nói đúng. Nhưng phụ huynh khác đều cho con học, mình sợ con thua ngay từ vạch xuất phát."
+      },
+      {
+       "spk": 1,
+       "zh": "每个孩子都不一样，找到适合她的方式比跟别人比较更重要。",
+       "py": "Měi gè hái zi dōu bù yí yàng, zhǎo dào shì hé tā de fāng shì bǐ gēn bié rén bǐ jiào gèng zhòng yào.",
+       "vi": "Mỗi đứa trẻ khác nhau, tìm cách phù hợp với con còn quan trọng hơn so sánh với người khác."
+      },
+      {
+       "spk": 0,
+       "zh": "你说得我心里舒服多了，我回去和她好好谈谈。",
+       "py": "Nǐ shuō de wǒ xīn lǐ shū fu duō le, wǒ huí qù hé tā hǎo hǎo tán tán.",
+       "vi": "Bạn nói làm mình thấy nhẹ lòng hơn nhiều, mình về nói chuyện với con thật kỹ."
+      }
+     ]
+    },
+    {
+     "id": "7-2",
+     "title_zh": "老师的责任",
+     "title_vi": "Trách nhiệm của giáo viên",
+     "scene_vi": "Giáo viên trao đổi với phụ huynh.",
+     "speakers": [
+      {
+       "name": "王老师",
+       "gender": "f"
+      },
+      {
+       "name": "李先生",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "李先生，您儿子最近的成绩有些下降，我想和您聊一聊。",
+       "py": "Lǐ xiān sheng, nín ér zi zuì jìn de chéng jì yǒu xiē xià jiàng, wǒ xiǎng hé nín liáo yì liáo.",
+       "vi": "Anh Lý, điểm số của con trai anh dạo này hơi giảm, tôi muốn trao đổi với anh."
+      },
+      {
+       "spk": 1,
+       "zh": "是吗？我平时工作忙，很少关心他的学习。",
+       "py": "Shì ma? Wǒ píng shí gōng zuò máng, hěn shǎo guān xīn tā de xué xí.",
+       "vi": "Vậy sao? Bình thường tôi bận công việc, rất ít quan tâm đến việc học của cháu."
+      },
+      {
+       "spk": 0,
+       "zh": "我发现他上课常常走神，可能是家里发生了什么事。",
+       "py": "Wǒ fā xiàn tā shàng kè cháng cháng zǒu shén, kě néng shì jiā lǐ fā shēng le shén me shì.",
+       "vi": "Tôi thấy em hay mất tập trung trong giờ học, có thể ở nhà đã xảy ra chuyện gì."
+      },
+      {
+       "spk": 1,
+       "zh": "其实最近我们家搬了家，他不太适应新环境。",
+       "py": "Qí shí zuì jìn wǒ men jiā bān le jiā, tā bú tài shì yìng xīn huán jìng.",
+       "vi": "Thật ra gần đây nhà tôi chuyển nhà, cháu chưa thích nghi với môi trường mới."
+      },
+      {
+       "spk": 0,
+       "zh": "原来是这样。我建议您多花点儿时间陪他，让他感觉到有人关心他。",
+       "py": "Yuán lái shì zhè yàng. Wǒ jiàn yì nín duō huā diǎnr shí jiān péi tā, ràng tā gǎn jué dào yǒu rén guān xīn tā.",
+       "vi": "Hóa ra là vậy. Tôi đề nghị anh dành thêm thời gian ở bên cháu, để em cảm nhận được có người quan tâm."
+      },
+      {
+       "spk": 1,
+       "zh": "谢谢您提醒我，我以后会注意的。",
+       "py": "Xiè xie nín tí xǐng wǒ, wǒ yǐ hòu huì zhù yì de.",
+       "vi": "Cảm ơn cô đã nhắc, sau này tôi sẽ chú ý."
+      },
+      {
+       "spk": 0,
+       "zh": "在学校我也会多留意他，我们一起帮助他。",
+       "py": "Zài xué xiào wǒ yě huì duō liú yì tā, wǒ men yì qǐ bāng zhù tā.",
+       "vi": "Ở trường tôi cũng sẽ để ý em nhiều hơn, chúng ta cùng giúp em."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "zh": "科技",
+   "vi": "Công nghệ & AI",
+   "icon": "🤖",
+   "dialogues": [
+    {
+     "id": "8-1",
+     "title_zh": "机器人会代替人吗",
+     "title_vi": "Robot có thay thế con người không",
+     "scene_vi": "Bàn về trí tuệ nhân tạo.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，你觉得将来机器人会代替人的工作吗？",
+       "py": "Xiǎo měi, nǐ jué de jiāng lái jī qì rén huì dài tì rén de gōng zuò ma?",
+       "vi": "Tiểu Mỹ, bạn thấy sau này robot có thay thế công việc của con người không?"
+      },
+      {
+       "spk": 1,
+       "zh": "有些简单重复的工作肯定会被代替，比如在工厂里做同样的事。",
+       "py": "Yǒu xiē jiǎn dān chóng fù de gōng zuò kěn dìng huì bèi dài tì, bǐ rú zài gōng chǎng lǐ zuò tóng yàng de shì.",
+       "vi": "Một số công việc đơn giản lặp lại chắc chắn sẽ bị thay thế, ví dụ làm cùng một việc trong nhà máy."
+      },
+      {
+       "spk": 0,
+       "zh": "那我们是不是应该担心失业？",
+       "py": "Nà wǒ men shì bú shì yīng gāi dān xīn shī yè?",
+       "vi": "Vậy chúng ta có nên lo bị thất nghiệp không?"
+      },
+      {
+       "spk": 1,
+       "zh": "我觉得不用太担心，因为新技术也会创造新的工作。",
+       "py": "Wǒ jué de bú yòng tài dān xīn, yīn wèi xīn jì shù yě huì chuàng zào xīn de gōng zuò.",
+       "vi": "Mình thấy không cần lo quá, vì công nghệ mới cũng sẽ tạo ra việc làm mới."
+      },
+      {
+       "spk": 0,
+       "zh": "可是这些新工作需要新的技能，不是每个人都能适应。",
+       "py": "Kě shì zhè xiē xīn gōng zuò xū yào xīn de jì néng, bú shì měi gè rén dōu néng shì yìng.",
+       "vi": "Nhưng những việc mới này cần kỹ năng mới, không phải ai cũng thích nghi được."
+      },
+      {
+       "spk": 1,
+       "zh": "所以我们要不断学习，保持对新事物的好奇心。",
+       "py": "Suǒ yǐ wǒ men yào bú duàn xué xí, bǎo chí duì xīn shì wù de hào qí xīn.",
+       "vi": "Vì vậy chúng ta phải không ngừng học hỏi, giữ sự tò mò với những điều mới."
+      },
+      {
+       "spk": 0,
+       "zh": "说得对，学习永远是最好的办法。",
+       "py": "Shuō de duì, xué xí yǒng yuǎn shì zuì hǎo de bàn fǎ.",
+       "vi": "Nói đúng, học tập mãi mãi là cách tốt nhất."
+      }
+     ]
+    },
+    {
+     "id": "8-2",
+     "title_zh": "手机离不开了",
+     "title_vi": "Không thể thiếu điện thoại",
+     "scene_vi": "Bàn về thói quen phụ thuộc điện thoại.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，你有没有发现，我们现在几乎一分钟也离不开手机？",
+       "py": "Xiǎo hóng, nǐ yǒu méi yǒu fā xiàn, wǒ men xiàn zài jī hū yì fēn zhōng yě lí bù kāi shǒu jī?",
+       "vi": "Tiểu Hồng, bạn có nhận ra bây giờ chúng ta gần như một phút cũng không rời được điện thoại không?"
+      },
+      {
+       "spk": 1,
+       "zh": "是啊，吃饭、坐车、甚至上厕所，都在看手机。",
+       "py": "Shì a, chī fàn, zuò chē, shèn zhì shàng cè suǒ, dōu zài kàn shǒu jī.",
+       "vi": "Đúng vậy, ăn cơm, đi xe, thậm chí đi vệ sinh, đều xem điện thoại."
+      },
+      {
+       "spk": 0,
+       "zh": "手机让生活方便了，但是也让我们和家人说话越来越少。",
+       "py": "Shǒu jī ràng shēng huó fāng biàn le, dàn shì yě ràng wǒ men hé jiā rén shuō huà yuè lái yuè shǎo.",
+       "vi": "Điện thoại khiến cuộc sống tiện lợi nhưng cũng khiến chúng ta nói chuyện với gia đình ngày càng ít."
+      },
+      {
+       "spk": 1,
+       "zh": "所以我现在规定自己，吃饭的时候不看手机。",
+       "py": "Suǒ yǐ wǒ xiàn zài guī dìng zì jǐ, chī fàn de shí hou bú kàn shǒu jī.",
+       "vi": "Vì vậy bây giờ mình tự đặt quy định, lúc ăn cơm không xem điện thoại."
+      },
+      {
+       "spk": 0,
+       "zh": "这个办法好，能做到吗？",
+       "py": "Zhè ge bàn fǎ hǎo, néng zuò dào ma?",
+       "vi": "Cách này hay, bạn làm được không?"
+      },
+      {
+       "spk": 1,
+       "zh": "刚开始很难，不过坚持两个星期以后，习惯了。",
+       "py": "Gāng kāi shǐ hěn nán, bú guò jiān chí liǎng gè xīng qī yǐ hòu, xí guàn le.",
+       "vi": "Lúc đầu rất khó, nhưng kiên trì hai tuần thì quen rồi."
+      },
+      {
+       "spk": 0,
+       "zh": "我也要试试，把时间还给家人和朋友。",
+       "py": "Wǒ yě yào shì shì, bǎ shí jiān huán gěi jiā rén hé péng you.",
+       "vi": "Mình cũng phải thử, trả lại thời gian cho gia đình và bạn bè."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "zh": "社交媒体",
+   "vi": "Mạng xã hội",
+   "icon": "📲",
+   "dialogues": [
+    {
+     "id": "9-1",
+     "title_zh": "发朋友圈",
+     "title_vi": "Đăng bài lên mạng xã hội",
+     "scene_vi": "Bàn về chuyện chia sẻ đời sống trực tuyến.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，你为什么很少发朋友圈？",
+       "py": "Xiǎo měi, nǐ wèi shén me hěn shǎo fā péng you quān?",
+       "vi": "Tiểu Mỹ, vì sao bạn rất ít đăng bài lên mạng xã hội?"
+      },
+      {
+       "spk": 1,
+       "zh": "我觉得生活是自己的，没有必要什么都让别人看。",
+       "py": "Wǒ jué de shēng huó shì zì jǐ de, méi yǒu bì yào shén me dōu ràng bié rén kàn.",
+       "vi": "Mình thấy cuộc sống là của riêng mình, không cần thiết cho người khác thấy hết mọi thứ."
+      },
+      {
+       "spk": 0,
+       "zh": "可是通过朋友圈，朋友们可以了解你的生活啊。",
+       "py": "Kě shì tōng guò péng you quān, péng you men kě yǐ liǎo jiě nǐ de shēng huó a.",
+       "vi": "Nhưng thông qua mạng xã hội, bạn bè có thể biết cuộc sống của bạn mà."
+      },
+      {
+       "spk": 1,
+       "zh": "我更愿意直接和他们见面聊天，那样更真实。",
+       "py": "Wǒ gèng yuàn yì zhí jiē hé tā men jiàn miàn liáo tiān, nà yàng gèng zhēn shí.",
+       "vi": "Mình thích gặp trực tiếp trò chuyện với họ hơn, như vậy chân thật hơn."
+      },
+      {
+       "spk": 0,
+       "zh": "有道理。有时候我看到别人发的照片，会觉得自己生活得不够好。",
+       "py": "Yǒu dào lǐ. Yǒu shí hòu wǒ kàn dào bié rén fā de zhào piàn, huì jué de zì jǐ shēng huó de bú gòu hǎo.",
+       "vi": "Có lý. Đôi khi thấy ảnh người khác đăng, mình lại thấy cuộc sống mình chưa đủ tốt."
+      },
+      {
+       "spk": 1,
+       "zh": "那些照片往往只是最好的一面，不代表真实的全部。",
+       "py": "Nà xiē zhào piàn wǎng wǎng zhǐ shì zuì hǎo de yí miàn, bú dài biǎo zhēn shí de quán bù.",
+       "vi": "Những bức ảnh đó thường chỉ là mặt tốt nhất, không đại diện cho toàn bộ sự thật."
+      },
+      {
+       "spk": 0,
+       "zh": "你说得对，我以后不会再拿自己跟别人比较了。",
+       "py": "Nǐ shuō de duì, wǒ yǐ hòu bú huì zài ná zì jǐ gēn bié rén bǐ jiào le.",
+       "vi": "Bạn nói đúng, sau này mình sẽ không so sánh bản thân với người khác nữa."
+      }
+     ]
+    },
+    {
+     "id": "9-2",
+     "title_zh": "网络上的消息",
+     "title_vi": "Tin tức trên mạng",
+     "scene_vi": "Bàn về việc phân biệt thông tin thật giả.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，你看到了吗？网上说那家公司的产品有问题。",
+       "py": "Xiǎo hóng, nǐ kàn dào le ma? Wǎng shàng shuō nà jiā gōng sī de chǎn pǐn yǒu wèn tí.",
+       "vi": "Tiểu Hồng, bạn thấy chưa? Trên mạng nói sản phẩm của công ty đó có vấn đề."
+      },
+      {
+       "spk": 1,
+       "zh": "我看到了，不过在相信以前，我想先看看是不是真的。",
+       "py": "Wǒ kàn dào le, bú guò zài xiāng xìn yǐ qián, wǒ xiǎng xiān kàn kàn shì bú shì zhēn de.",
+       "vi": "Mình thấy rồi, nhưng trước khi tin, mình muốn xem có thật không đã."
+      },
+      {
+       "spk": 0,
+       "zh": "你怎么确认？",
+       "py": "Nǐ zěn me què rèn?",
+       "vi": "Bạn xác nhận thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "我会找几个不同的来源比较一下，尤其是官方的消息。",
+       "py": "Wǒ huì zhǎo jǐ gè bù tóng de lái yuán bǐ jiào yí xià, yóu qí shì guān fāng de xiāo xī.",
+       "vi": "Mình sẽ tìm vài nguồn khác nhau để so sánh, đặc biệt là thông tin chính thức."
+      },
+      {
+       "spk": 0,
+       "zh": "现在假消息太多了，很容易让人上当。",
+       "py": "Xiàn zài jiǎ xiāo xī tài duō le, hěn róng yì ràng rén shàng dàng.",
+       "vi": "Bây giờ tin giả quá nhiều, rất dễ khiến người ta bị lừa."
+      },
+      {
+       "spk": 1,
+       "zh": "所以我们不能看到什么就转发什么，要对自己说的话负责。",
+       "py": "Suǒ yǐ wǒ men bù néng kàn dào shén me jiù zhuǎn fā shén me, yào duì zì jǐ shuō de huà fù zé.",
+       "vi": "Vì vậy chúng ta không thể thấy gì cũng chia sẻ, phải chịu trách nhiệm cho lời mình nói."
+      },
+      {
+       "spk": 0,
+       "zh": "你说得太对了，我以后也会小心。",
+       "py": "Nǐ shuō de tài duì le, wǒ yǐ hòu yě huì xiǎo xīn.",
+       "vi": "Bạn nói quá đúng, sau này mình cũng sẽ cẩn thận."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "zh": "共享单车",
+   "vi": "Xe đạp công cộng",
+   "icon": "🚲",
+   "dialogues": [
+    {
+     "id": "10-1",
+     "title_zh": "扫码骑车",
+     "title_vi": "Quét mã đi xe",
+     "scene_vi": "Hướng dẫn người nước ngoài dùng xe đạp công cộng.",
+     "speakers": [
+      {
+       "name": "小美",
+       "gender": "f"
+      },
+      {
+       "name": "大卫",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "大卫，看，路边这些自行车，用手机扫一下就能骑。",
+       "py": "Dà wèi, kàn, lù biān zhè xiē zì xíng chē, yòng shǒu jī sǎo yí xià jiù néng qí.",
+       "vi": "David, nhìn này, những chiếc xe đạp bên đường, dùng điện thoại quét một cái là đi được."
+      },
+      {
+       "spk": 1,
+       "zh": "真的吗？不用租，也不用买吗？",
+       "py": "Zhēn de ma? Bú yòng zū, yě bú yòng mǎi ma?",
+       "vi": "Thật à? Không cần thuê, cũng không cần mua sao?"
+      },
+      {
+       "spk": 0,
+       "zh": "对，骑完以后，停在路边就行，按时间收费，很便宜。",
+       "py": "Duì, qí wán yǐ hòu, tíng zài lù biān jiù xíng, àn shí jiān shōu fèi, hěn pián yi.",
+       "vi": "Đúng, đi xong dừng ở ven đường là được, tính tiền theo thời gian, rất rẻ."
+      },
+      {
+       "spk": 1,
+       "zh": "这个办法真方便，我们国家还没有这样的服务。",
+       "py": "Zhè ge bàn fǎ zhēn fāng biàn, wǒ men guó jiā hái méi yǒu zhè yàng de fú wù.",
+       "vi": "Cách này thật tiện, nước mình chưa có dịch vụ như vậy."
+      },
+      {
+       "spk": 0,
+       "zh": "不过现在有的地方车太多了，影响了交通。",
+       "py": "Bú guò xiàn zài yǒu de dì fang chē tài duō le, yǐng xiǎng le jiāo tōng.",
+       "vi": "Nhưng bây giờ có nơi xe quá nhiều, gây ảnh hưởng giao thông."
+      },
+      {
+       "spk": 1,
+       "zh": "看来任何新事物都有好处，也有问题。",
+       "py": "Kàn lái rèn hé xīn shì wù dōu yǒu hǎo chù, yě yǒu wèn tí.",
+       "vi": "Xem ra bất kỳ điều mới nào cũng có mặt tốt và cả vấn đề."
+      },
+      {
+       "spk": 0,
+       "zh": "所以要有好的管理，大家也要自觉遵守规定。",
+       "py": "Suǒ yǐ yào yǒu hǎo de guǎn lǐ, dà jiā yě yào zì jué zūn shǒu guī dìng.",
+       "vi": "Vì vậy cần có quản lý tốt, mọi người cũng phải tự giác tuân thủ quy định."
+      }
+     ]
+    },
+    {
+     "id": "10-2",
+     "title_zh": "停车乱放",
+     "title_vi": "Đỗ xe bừa bãi",
+     "scene_vi": "Bàn về hiện tượng đỗ xe tùy tiện.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，你看，这么多自行车乱放在人行道上，走路都不方便。",
+       "py": "Xiǎo hóng, nǐ kàn, zhè me duō zì xíng chē luàn fàng zài rén xíng dào shàng, zǒu lù dōu bù fāng biàn.",
+       "vi": "Tiểu Hồng, bạn xem, nhiều xe đạp bỏ bừa trên vỉa hè như vậy, đi bộ cũng bất tiện."
+      },
+      {
+       "spk": 1,
+       "zh": "是啊，有些人骑完车随便一放，从来不考虑别人。",
+       "py": "Shì a, yǒu xiē rén qí wán chē suí biàn yí fàng, cóng lái bù kǎo lǜ bié rén.",
+       "vi": "Đúng vậy, có người đi xong tiện tay để đó, chẳng bao giờ nghĩ cho người khác."
+      },
+      {
+       "spk": 0,
+       "zh": "公司应该想办法，比如在手机里规定必须停在指定的地方。",
+       "py": "Gōng sī yīng gāi xiǎng bàn fǎ, bǐ rú zài shǒu jī lǐ guī dìng bì xū tíng zài zhǐ dìng de dì fang.",
+       "vi": "Công ty nên tìm cách, ví dụ quy định trong ứng dụng phải đỗ ở nơi chỉ định."
+      },
+      {
+       "spk": 1,
+       "zh": "这样还不够，最重要的是提高大家的意识。",
+       "py": "Zhè yàng hái bú gòu, zuì zhòng yào de shì tí gāo dà jiā de yì shí.",
+       "vi": "Như vậy vẫn chưa đủ, quan trọng nhất là nâng cao ý thức của mọi người."
+      },
+      {
+       "spk": 0,
+       "zh": "我每次都会把车放整齐，有时候还帮别人整理。",
+       "py": "Wǒ měi cì dōu huì bǎ chē fàng zhěng qí, yǒu shí hòu hái bāng bié rén zhěng lǐ.",
+       "vi": "Lần nào mình cũng để xe ngay ngắn, đôi khi còn giúp người khác sắp xếp lại."
+      },
+      {
+       "spk": 1,
+       "zh": "你这么做很好，如果大家都像你一样，问题就解决了。",
+       "py": "Nǐ zhè me zuò hěn hǎo, rú guǒ dà jiā dōu xiàng nǐ yí yàng, wèn tí jiù jiě jué le.",
+       "vi": "Bạn làm như vậy rất tốt, nếu mọi người đều như bạn thì vấn đề được giải quyết."
+      },
+      {
+       "spk": 0,
+       "zh": "希望如此，我们一起努力。",
+       "py": "Xī wàng rú cǐ, wǒ men yì qǐ nǔ lì.",
+       "vi": "Hy vọng là vậy, chúng ta cùng cố gắng."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "zh": "房价",
+   "vi": "Giá nhà đất",
+   "icon": "🏘️",
+   "dialogues": [
+    {
+     "id": "11-1",
+     "title_zh": "买不起房子",
+     "title_vi": "Không mua nổi nhà",
+     "scene_vi": "Bàn về giá nhà ở thành phố lớn.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，你知道吗？我们公司附近的房子，一平方米要八万块。",
+       "py": "Xiǎo hóng, nǐ zhī dao ma? Wǒ men gōng sī fù jìn de fáng zi, yì píng fāng mǐ yào bā wàn kuài.",
+       "vi": "Tiểu Hồng, bạn biết không? Nhà gần công ty mình, một mét vuông tám vạn tệ."
+      },
+      {
+       "spk": 1,
+       "zh": "这么贵？照这样算，一套房子要几百万，我们一辈子都买不起。",
+       "py": "Zhè me guì? Zhào zhè yàng suàn, yí tào fáng zi yào jǐ bǎi wàn, wǒ men yí bèi zi dōu mǎi bù qǐ.",
+       "vi": "Đắt vậy? Tính như thế, một căn nhà mấy triệu, cả đời chúng ta cũng không mua nổi."
+      },
+      {
+       "spk": 0,
+       "zh": "所以很多年轻人选择租房，而不是买房。",
+       "py": "Suǒ yǐ hěn duō nián qīng rén xuǎn zé zū fáng, ér bú shì mǎi fáng.",
+       "vi": "Vì vậy nhiều người trẻ chọn thuê nhà thay vì mua nhà."
+      },
+      {
+       "spk": 1,
+       "zh": "可是租房子总觉得不稳定，说不定哪天房东就不租了。",
+       "py": "Kě shì zū fáng zi zǒng jué de bù wěn dìng, shuō bú dìng nǎ tiān fáng dōng jiù bù zū le.",
+       "vi": "Nhưng thuê nhà luôn thấy không ổn định, biết đâu hôm nào chủ nhà không cho thuê nữa."
+      },
+      {
+       "spk": 0,
+       "zh": "有利也有弊，租房压力小，可以随时搬家，生活也更自由。",
+       "py": "Yǒu lì yě yǒu bì, zū fáng yā lì xiǎo, kě yǐ suí shí bān jiā, shēng huó yě gèng zì yóu.",
+       "vi": "Có lợi có hại, thuê nhà áp lực nhỏ, có thể chuyển bất cứ lúc nào, cuộc sống cũng tự do hơn."
+      },
+      {
+       "spk": 1,
+       "zh": "你的看法很特别，我以前只想着一定要有自己的房子。",
+       "py": "Nǐ de kàn fǎ hěn tè bié, wǒ yǐ qián zhǐ xiǎng zhe yí dìng yào yǒu zì jǐ de fáng zi.",
+       "vi": "Quan điểm của bạn rất đặc biệt, trước đây mình chỉ nghĩ nhất định phải có nhà riêng."
+      },
+      {
+       "spk": 0,
+       "zh": "其实幸福不一定要和房子连在一起。",
+       "py": "Qí shí xìng fú bù yí dìng yào hé fáng zi lián zài yì qǐ.",
+       "vi": "Thật ra hạnh phúc không nhất thiết phải gắn liền với nhà cửa."
+      }
+     ]
+    },
+    {
+     "id": "11-2",
+     "title_zh": "看新房",
+     "title_vi": "Đi xem nhà mới",
+     "scene_vi": "Vợ chồng đi xem căn hộ.",
+     "speakers": [
+      {
+       "name": "李先生",
+       "gender": "m"
+      },
+      {
+       "name": "李太太",
+       "gender": "f"
+      },
+      {
+       "name": "销售员",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "这套房子面积有多大？朝向怎么样？",
+       "py": "Zhè tào fáng zi miàn jī yǒu duō dà? Cháo xiàng zěn me yàng?",
+       "vi": "Căn hộ này diện tích bao nhiêu? Hướng nhà thế nào?"
+      },
+      {
+       "spk": 2,
+       "zh": "一百一十平方米，朝南，一年四季阳光都很好。",
+       "py": "Yì bǎi yī shí píng fāng mǐ, cháo nán, yì nián sì jì yáng guāng dōu hěn hǎo.",
+       "vi": "Một trăm mười mét vuông, hướng nam, quanh năm ánh nắng đều rất tốt."
+      },
+      {
+       "spk": 1,
+       "zh": "我们比较关心交通和周围的学校。",
+       "py": "Wǒ men bǐ jiào guān xīn jiāo tōng hé zhōu wéi de xué xiào.",
+       "vi": "Chúng tôi khá quan tâm đến giao thông và trường học xung quanh."
+      },
+      {
+       "spk": 2,
+       "zh": "走路十分钟有地铁站，旁边就是一所很不错的小学。",
+       "py": "Zǒu lù shí fēn zhōng yǒu dì tiě zhàn, páng biān jiù shì yì suǒ hěn bú cuò de xiǎo xué.",
+       "vi": "Đi bộ mười phút có ga tàu điện ngầm, bên cạnh là một trường tiểu học rất tốt."
+      },
+      {
+       "spk": 0,
+       "zh": "价格能不能再商量一下？尽管我们很喜欢，但是预算有限。",
+       "py": "Jià gé néng bù néng zài shāng liáng yí xià? Jǐn guǎn wǒ men hěn xǐ huan, dàn shì yù suàn yǒu xiàn.",
+       "vi": "Giá có thể thương lượng thêm không? Tuy chúng tôi rất thích nhưng ngân sách có hạn."
+      },
+      {
+       "spk": 2,
+       "zh": "如果您今天决定，我可以向经理申请一点儿优惠。",
+       "py": "Rú guǒ nín jīn tiān jué dìng, wǒ kě yǐ xiàng jīng lǐ shēn qǐng yì diǎnr yōu huì.",
+       "vi": "Nếu hôm nay anh chị quyết định, tôi có thể xin giám đốc ưu đãi thêm chút."
+      },
+      {
+       "spk": 1,
+       "zh": "我们回去再商量一下，明天给您答复。",
+       "py": "Wǒ men huí qù zài shāng liáng yí xià, míng tiān gěi nín dá fù.",
+       "vi": "Chúng tôi về bàn thêm, ngày mai sẽ trả lời chị."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "zh": "饮食文化",
+   "vi": "Văn hoá ẩm thực",
+   "icon": "🥢",
+   "dialogues": [
+    {
+     "id": "12-1",
+     "title_zh": "各地的菜",
+     "title_vi": "Món ăn các vùng",
+     "scene_vi": "Bàn về sự khác biệt ẩm thực.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，中国这么大，各地的菜是不是差别很大？",
+       "py": "Xiǎo hóng, zhōng guó zhè me dà, gè dì de cài shì bú shì chā bié hěn dà?",
+       "vi": "Tiểu Hồng, Trung Quốc rộng như vậy, món ăn các vùng có phải khác nhau nhiều không?"
+      },
+      {
+       "spk": 1,
+       "zh": "差别非常大，比如南方人爱吃甜的，北方人爱吃面食，四川人最爱吃辣的。",
+       "py": "Chā bié fēi cháng dà, bǐ rú nán fāng rén ài chī tián de, běi fāng rén ài chī miàn shí, sì chuān rén zuì ài chī là de.",
+       "vi": "Khác nhau rất nhiều, ví dụ người miền Nam thích ăn ngọt, người miền Bắc thích mì bột, người Tứ Xuyên thích ăn cay nhất."
+      },
+      {
+       "spk": 0,
+       "zh": "为什么会有这样的差别？",
+       "py": "Wèi shén me huì yǒu zhè yàng de chā bié?",
+       "vi": "Vì sao lại có sự khác biệt như vậy?"
+      },
+      {
+       "spk": 1,
+       "zh": "主要和气候、环境，还有历史有关系。",
+       "py": "Zhǔ yào hé qì hòu, huán jìng, hái yǒu lì shǐ yǒu guān xì.",
+       "vi": "Chủ yếu liên quan đến khí hậu, môi trường và cả lịch sử."
+      },
+      {
+       "spk": 0,
+       "zh": "你最喜欢哪个地方的菜？",
+       "py": "Nǐ zuì xǐ huan nǎ ge dì fang de cài?",
+       "vi": "Bạn thích món ăn vùng nào nhất?"
+      },
+      {
+       "spk": 1,
+       "zh": "我是在家乡长大的，所以最喜欢家乡的味道，不过别的地方的菜我也都愿意尝试。",
+       "py": "Wǒ shì zài jiā xiāng cháng dà de, suǒ yǐ zuì xǐ huan jiā xiāng de wèi dào, bú guò bié de dì fang de cài wǒ yě dōu yuàn yì cháng shì.",
+       "vi": "Mình lớn lên ở quê nhà nên thích nhất hương vị quê, nhưng món ăn vùng khác mình cũng đều sẵn lòng thử."
+      },
+      {
+       "spk": 0,
+       "zh": "有机会的话，我想把每个地方的特色菜都吃一遍。",
+       "py": "Yǒu jī huì de huà, wǒ xiǎng bǎ měi gè dì fang de tè sè cài dōu chī yí biàn.",
+       "vi": "Nếu có cơ hội, mình muốn ăn qua món đặc sắc của mỗi vùng."
+      }
+     ]
+    },
+    {
+     "id": "12-2",
+     "title_zh": "一起吃饭的规矩",
+     "title_vi": "Quy tắc khi ăn chung",
+     "scene_vi": "Tìm hiểu phép tắc bàn ăn.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，我发现中国人吃饭的时候，菜是放在中间大家一起吃的。",
+       "py": "Xiǎo měi, wǒ fā xiàn zhōng guó rén chī fàn de shí hou, cài shì fàng zài zhōng jiān dà jiā yì qǐ chī de.",
+       "vi": "Tiểu Mỹ, mình phát hiện người Trung Quốc ăn cơm, món ăn đặt ở giữa mọi người cùng ăn."
+      },
+      {
+       "spk": 1,
+       "zh": "对，这样更热闹，也能表现大家的关系很亲近。",
+       "py": "Duì, zhè yàng gèng rè nào, yě néng biǎo xiàn dà jiā de guān xì hěn qīn jìn.",
+       "vi": "Đúng, như vậy náo nhiệt hơn, cũng thể hiện mối quan hệ gần gũi của mọi người."
+      },
+      {
+       "spk": 0,
+       "zh": "那吃饭的时候有什么需要注意的吗？",
+       "py": "Nà chī fàn de shí hou yǒu shén me xū yào zhù yì de ma?",
+       "vi": "Vậy khi ăn có điều gì cần chú ý không?"
+      },
+      {
+       "spk": 1,
+       "zh": "比如，不能把筷子插在饭里，因为那样会让人想到不吉利的事。",
+       "py": "Bǐ rú, bù néng bǎ kuài zi chā zài fàn lǐ, yīn wèi nà yàng huì ràng rén xiǎng dào bù jí lì de shì.",
+       "vi": "Ví dụ, không được cắm đũa vào bát cơm, vì như vậy sẽ khiến người ta nghĩ đến điều không may."
+      },
+      {
+       "spk": 0,
+       "zh": "原来还有这样的说法，幸好你告诉我。",
+       "py": "Yuán lái hái yǒu zhè yàng de shuō fǎ, xìng hǎo nǐ gào sù wǒ.",
+       "vi": "Hóa ra còn có cách nói như vậy, may mà bạn nói cho mình."
+      },
+      {
+       "spk": 1,
+       "zh": "不用太紧张，大家一般都能理解外国朋友不太了解这些习惯。",
+       "py": "Bú yòng tài jǐn zhāng, dà jiā yì bān dōu néng lǐ jiě wài guó péng you bú tài liǎo jiě zhè xiē xí guàn.",
+       "vi": "Không cần quá căng thẳng, mọi người thường thông cảm bạn bè nước ngoài chưa hiểu những phong tục này."
+      },
+      {
+       "spk": 0,
+       "zh": "我会慢慢学，尽量尊重你们的文化。",
+       "py": "Wǒ huì màn màn xué, jǐn liàng zūn zhòng nǐ men de wén huà.",
+       "vi": "Mình sẽ từ từ học, cố gắng tôn trọng văn hoá của các bạn."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "zh": "学外语",
+   "vi": "Học ngoại ngữ",
+   "icon": "🌐",
+   "dialogues": [
+    {
+     "id": "13-1",
+     "title_zh": "有什么好办法",
+     "title_vi": "Có cách nào hay không",
+     "scene_vi": "Chia sẻ kinh nghiệm học ngoại ngữ.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，你的英语说得这么流利，是怎么学的？",
+       "py": "Xiǎo hóng, nǐ de yīng yǔ shuō de zhè me liú lì, shì zěn me xué de?",
+       "vi": "Tiểu Hồng, tiếng Anh của bạn nói trôi chảy như vậy, bạn học thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "我从小就喜欢看英文电影，还经常和外国朋友聊天。",
+       "py": "Wǒ cóng xiǎo jiù xǐ huan kàn yīng wén diàn yǐng, hái jīng cháng hé wài guó péng you liáo tiān.",
+       "vi": "Mình từ nhỏ đã thích xem phim tiếng Anh, còn thường xuyên trò chuyện với bạn nước ngoài."
+      },
+      {
+       "spk": 0,
+       "zh": "可是我一说话就紧张，担心说错。",
+       "py": "Kě shì wǒ yì shuō huà jiù jǐn zhāng, dān xīn shuō cuò.",
+       "vi": "Nhưng mình hễ nói là căng thẳng, lo nói sai."
+      },
+      {
+       "spk": 1,
+       "zh": "犯错误是学习的必经过程，没有人一开始就说得完美。",
+       "py": "Fàn cuò wù shì xué xí de bì jīng guò chéng, méi yǒu rén yì kāi shǐ jiù shuō de wán měi.",
+       "vi": "Mắc lỗi là quá trình tất yếu của học tập, không ai vừa bắt đầu đã nói hoàn hảo."
+      },
+      {
+       "spk": 0,
+       "zh": "你说得对，我应该更大胆一点儿。",
+       "py": "Nǐ shuō de duì, wǒ yīng gāi gèng dà dǎn yì diǎnr.",
+       "vi": "Bạn nói đúng, mình nên bạo dạn hơn một chút."
+      },
+      {
+       "spk": 1,
+       "zh": "而且语言环境很重要，你现在在中国，机会比在国内多多了。",
+       "py": "Ér qiě yǔ yán huán jìng hěn zhòng yào, nǐ xiàn zài zài zhōng guó, jī huì bǐ zài guó nèi duō duō le.",
+       "vi": "Hơn nữa môi trường ngôn ngữ rất quan trọng, bạn đang ở Trung Quốc, cơ hội nhiều hơn ở trong nước nhiều."
+      },
+      {
+       "spk": 0,
+       "zh": "是的，我要好好利用这个机会，多和中国人交流。",
+       "py": "Shì de, wǒ yào hǎo hǎo lì yòng zhè ge jī huì, duō hé zhōng guó rén jiāo liú.",
+       "vi": "Đúng vậy, mình phải tận dụng tốt cơ hội này, giao lưu nhiều với người Trung Quốc."
+      }
+     ]
+    },
+    {
+     "id": "13-2",
+     "title_zh": "背单词太难了",
+     "title_vi": "Học thuộc từ vựng khó quá",
+     "scene_vi": "Than thở về việc ghi nhớ từ mới.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，我每天背二十个生词，可是一个星期以后全忘了。",
+       "py": "Xiǎo měi, wǒ měi tiān bèi èr shí gè shēng cí, kě shì yí gè xīng qī yǐ hòu quán wàng le.",
+       "vi": "Tiểu Mỹ, mỗi ngày mình học hai mươi từ mới, nhưng một tuần sau quên hết."
+      },
+      {
+       "spk": 1,
+       "zh": "只靠背是不够的，最好把生词放在句子里，在生活中使用。",
+       "py": "Zhǐ kào bèi shì bú gòu de, zuì hǎo bǎ shēng cí fàng zài jù zi lǐ, zài shēng huó zhōng shǐ yòng.",
+       "vi": "Chỉ học thuộc là chưa đủ, tốt nhất đặt từ mới vào câu, dùng trong cuộc sống."
+      },
+      {
+       "spk": 0,
+       "zh": "可是有些词在生活中很少用到。",
+       "py": "Kě shì yǒu xiē cí zài shēng huó zhōng hěn shǎo yòng dào.",
+       "vi": "Nhưng có những từ trong cuộc sống rất ít dùng đến."
+      },
+      {
+       "spk": 1,
+       "zh": "那就先选常用的学，不要一下子贪多。",
+       "py": "Nà jiù xiān xuǎn cháng yòng de xué, bú yào yí xià zi tān duō.",
+       "vi": "Vậy hãy chọn từ thường dùng học trước, đừng tham nhiều một lúc."
+      },
+      {
+       "spk": 0,
+       "zh": "还有，复习的时间应该怎么安排？",
+       "py": "Hái yǒu, fù xí de shí jiān yīng gāi zěn me ān pái?",
+       "vi": "Còn nữa, thời gian ôn tập nên sắp xếp thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "隔一天、一个星期、一个月各复习一次，这样记得最牢。",
+       "py": "Gé yì tiān, yí gè xīng qī, yí gè yuè gè fù xí yí cì, zhè yàng jì de zuì láo.",
+       "vi": "Cách một ngày, một tuần, một tháng mỗi lần ôn một lần, như vậy nhớ lâu nhất."
+      },
+      {
+       "spk": 0,
+       "zh": "听起来有科学道理，我从今天开始这样做。",
+       "py": "Tīng qǐ lái yǒu kē xué dào lǐ, wǒ cóng jīn tiān kāi shǐ zhè yàng zuò.",
+       "vi": "Nghe có lý lẽ khoa học, mình bắt đầu làm như vậy từ hôm nay."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "zh": "工作生活平衡",
+   "vi": "Cân bằng công việc & cuộc sống",
+   "icon": "⚖️",
+   "dialogues": [
+    {
+     "id": "14-1",
+     "title_zh": "加班太多了",
+     "title_vi": "Làm thêm quá nhiều",
+     "scene_vi": "Than thở về việc tăng ca.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，我已经连续三个星期周末加班了，感觉快撑不住了。",
+       "py": "Xiǎo měi, wǒ yǐ jīng lián xù sān gè xīng qī zhōu mò jiā bān le, gǎn jué kuài chēng bú zhù le.",
+       "vi": "Tiểu Mỹ, mình đã liên tiếp ba tuần cuối tuần đều tăng ca, cảm thấy sắp không chịu nổi."
+      },
+      {
+       "spk": 1,
+       "zh": "你和经理说过吗？长期这样下去对身体不好。",
+       "py": "Nǐ hé jīng lǐ shuō guò ma? Cháng qī zhè yàng xià qù duì shēn tǐ bù hǎo.",
+       "vi": "Bạn nói với giám đốc chưa? Cứ tiếp tục thế này không tốt cho sức khỏe."
+      },
+      {
+       "spk": 0,
+       "zh": "说过，可是项目太紧，大家都在加班，我不好意思拒绝。",
+       "py": "Shuō guò, kě shì xiàng mù tài jǐn, dà jiā dōu zài jiā bān, wǒ bù hǎo yì sī jù jué.",
+       "vi": "Nói rồi, nhưng dự án quá gấp, mọi người đều tăng ca, mình ngại từ chối."
+      },
+      {
+       "spk": 1,
+       "zh": "工作固然重要，但是你也要有自己的生活，否则会失去很多东西。",
+       "py": "Gōng zuò gù rán zhòng yào, dàn shì nǐ yě yào yǒu zì jǐ de shēng huó, fǒu zé huì shī qù hěn duō dōng xi.",
+       "vi": "Công việc cố nhiên quan trọng, nhưng bạn cũng phải có cuộc sống riêng, nếu không sẽ đánh mất nhiều thứ."
+      },
+      {
+       "spk": 0,
+       "zh": "我也这么想，可是不知道怎么平衡。",
+       "py": "Wǒ yě zhè me xiǎng, kě shì bù zhī dao zěn me píng héng.",
+       "vi": "Mình cũng nghĩ vậy, nhưng không biết cân bằng thế nào."
+      },
+      {
+       "spk": 1,
+       "zh": "你可以先把最重要的事情做好，其他的事情安排在平时。",
+       "py": "Nǐ kě yǐ xiān bǎ zuì zhòng yào de shì qíng zuò hǎo, qí tā de shì qíng ān pái zài píng shí.",
+       "vi": "Bạn có thể làm tốt việc quan trọng nhất trước, những việc khác sắp xếp vào ngày thường."
+      },
+      {
+       "spk": 0,
+       "zh": "好，我下周先试试，如果不行就再找经理谈。",
+       "py": "Hǎo, wǒ xià zhōu xiān shì shì, rú guǒ bù xíng jiù zài zhǎo jīng lǐ tán.",
+       "vi": "Được, tuần sau mình thử xem, nếu không được thì lại tìm giám đốc nói chuyện."
+      }
+     ]
+    },
+    {
+     "id": "14-2",
+     "title_zh": "请假去旅行",
+     "title_vi": "Xin nghỉ đi du lịch",
+     "scene_vi": "Nói chuyện với sếp về việc nghỉ phép.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "经理",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "经理，我想请一个星期的年假，去国外旅行。",
+       "py": "Jīng lǐ, wǒ xiǎng qǐng yí gè xīng qī de nián jià, qù guó wài lǚ xíng.",
+       "vi": "Thưa giám đốc, tôi muốn xin nghỉ phép năm một tuần để đi du lịch nước ngoài."
+      },
+      {
+       "spk": 1,
+       "zh": "什么时候？现在项目正在关键的时候。",
+       "py": "Shén me shí hòu? Xiàn zài xiàng mù zhèng zài guān jiàn de shí hou.",
+       "vi": "Khi nào? Bây giờ dự án đang ở giai đoạn then chốt."
+      },
+      {
+       "spk": 0,
+       "zh": "下个月中旬。我保证在走以前把所有的工作安排好。",
+       "py": "Xià gè yuè zhōng xún. Wǒ bǎo zhèng zài zǒu yǐ qián bǎ suǒ yǒu de gōng zuò ān pái hǎo.",
+       "vi": "Giữa tháng sau. Tôi đảm bảo trước khi đi sẽ sắp xếp xong toàn bộ công việc."
+      },
+      {
+       "spk": 1,
+       "zh": "你有没有想过，项目没结束，你就不在，会影响大家吗？",
+       "py": "Nǐ yǒu méi yǒu xiǎng guò, xiàng mù méi jié shù, nǐ jiù bú zài, huì yǐng xiǎng dà jiā ma?",
+       "vi": "Anh đã nghĩ chưa, dự án chưa kết thúc mà anh vắng mặt, có ảnh hưởng đến mọi người không?"
+      },
+      {
+       "spk": 0,
+       "zh": "我已经和同事商量过了，他们愿意帮我，这是我两年来第一次休假。",
+       "py": "Wǒ yǐ jīng hé tóng shì shāng liáng guò le, tā men yuàn yì bāng wǒ, zhè shì wǒ liǎng nián lái dì yī cì xiū jià.",
+       "vi": "Tôi đã bàn với đồng nghiệp rồi, họ sẵn lòng giúp tôi, đây là lần nghỉ phép đầu tiên của tôi trong hai năm."
+      },
+      {
+       "spk": 1,
+       "zh": "好吧，工作要做，生活也要有，我批准了。",
+       "py": "Hǎo ba, gōng zuò yào zuò, shēng huó yě yào yǒu, wǒ pī zhǔn le.",
+       "vi": "Được rồi, công việc phải làm, cuộc sống cũng phải có, tôi phê duyệt."
+      },
+      {
+       "spk": 0,
+       "zh": "谢谢您的理解，我回来以后会更努力。",
+       "py": "Xiè xie nín de lǐ jiě, wǒ huí lái yǐ hòu huì gèng nǔ lì.",
+       "vi": "Cảm ơn sự thông cảm của giám đốc, sau khi về tôi sẽ nỗ lực hơn."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "zh": "志愿者",
+   "vi": "Hoạt động tình nguyện",
+   "icon": "🤝",
+   "dialogues": [
+    {
+     "id": "15-1",
+     "title_zh": "去做志愿者",
+     "title_vi": "Đi làm tình nguyện viên",
+     "scene_vi": "Rủ bạn tham gia hoạt động tình nguyện.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "小明",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小明，周末我们学校有一个志愿者活动，去敬老院看望老人，你来吗？",
+       "py": "Xiǎo míng, zhōu mò wǒ men xué xiào yǒu yí gè zhì yuàn zhě huó dòng, qù jìng lǎo yuàn kàn wàng lǎo rén, nǐ lái ma?",
+       "vi": "Tiểu Minh, cuối tuần trường mình có một hoạt động tình nguyện đến thăm người già ở viện dưỡng lão, bạn đi không?"
+      },
+      {
+       "spk": 1,
+       "zh": "好啊，我们要做什么？",
+       "py": "Hǎo a, wǒ men yào zuò shén me?",
+       "vi": "Được chứ, chúng ta cần làm gì?"
+      },
+      {
+       "spk": 0,
+       "zh": "主要是陪老人聊天，帮他们打扫房间，还可以表演节目。",
+       "py": "Zhǔ yào shì péi lǎo rén liáo tiān, bāng tā men dǎ sǎo fáng jiān, hái kě yǐ biǎo yǎn jié mù.",
+       "vi": "Chủ yếu là trò chuyện với người già, giúp họ dọn phòng, còn có thể biểu diễn tiết mục."
+      },
+      {
+       "spk": 1,
+       "zh": "我会弹吉他，可以给他们唱歌。",
+       "py": "Wǒ huì dàn jí tā, kě yǐ gěi tā men chàng gē.",
+       "vi": "Mình biết chơi guitar, có thể hát cho họ nghe."
+      },
+      {
+       "spk": 0,
+       "zh": "太好了，老人们一定会很高兴。",
+       "py": "Tài hǎo le, lǎo rén men yí dìng huì hěn gāo xìng.",
+       "vi": "Tuyệt quá, các cụ nhất định sẽ rất vui."
+      },
+      {
+       "spk": 1,
+       "zh": "做这样的事，帮助别人的同时，自己也会得到快乐。",
+       "py": "Zuò zhè yàng de shì, bāng zhù bié rén de tóng shí, zì jǐ yě huì dé dào kuài lè.",
+       "vi": "Làm những việc như vậy, giúp đỡ người khác đồng thời bản thân cũng nhận được niềm vui."
+      },
+      {
+       "spk": 0,
+       "zh": "你说得对，这就是做志愿者的意义。",
+       "py": "Nǐ shuō de duì, zhè jiù shì zuò zhì yuàn zhě de yì yì.",
+       "vi": "Bạn nói đúng, đó chính là ý nghĩa của việc làm tình nguyện viên."
+      }
+     ]
+    },
+    {
+     "id": "15-2",
+     "title_zh": "活动结束以后",
+     "title_vi": "Sau hoạt động",
+     "scene_vi": "Chia sẻ cảm nhận sau khi tham gia.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "小明",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小明，今天你有什么感想？",
+       "py": "Xiǎo míng, jīn tiān nǐ yǒu shén me gǎn xiǎng?",
+       "vi": "Tiểu Minh, hôm nay bạn có cảm nghĩ gì?"
+      },
+      {
+       "spk": 1,
+       "zh": "我觉得很受感动，老人们其实最需要的是有人陪伴。",
+       "py": "Wǒ jué de hěn shòu gǎn dòng, lǎo rén men qí shí zuì xū yào de shì yǒu rén péi bàn.",
+       "vi": "Mình thấy rất cảm động, thật ra điều các cụ cần nhất là có người bầu bạn."
+      },
+      {
+       "spk": 0,
+       "zh": "是啊，有位奶奶拉着我的手，说了一个多小时的话。",
+       "py": "Shì a, yǒu wèi nǎi nǎi lā zhe wǒ de shǒu, shuō le yí gè duō xiǎo shí de huà.",
+       "vi": "Đúng vậy, có một bà nắm tay mình nói chuyện hơn một tiếng đồng hồ."
+      },
+      {
+       "spk": 1,
+       "zh": "她们的孩子工作忙，没有时间常常回来看她们。",
+       "py": "Tā men de hái zi gōng zuò máng, méi yǒu shí jiān cháng cháng huí lái kàn tā men.",
+       "vi": "Con cái của họ bận công việc, không có thời gian thường về thăm."
+      },
+      {
+       "spk": 0,
+       "zh": "所以我们也要多关心自己家里的老人。",
+       "py": "Suǒ yǐ wǒ men yě yào duō guān xīn zì jǐ jiā lǐ de lǎo rén.",
+       "vi": "Vì vậy chúng ta cũng phải quan tâm nhiều hơn đến người già trong gia đình mình."
+      },
+      {
+       "spk": 1,
+       "zh": "我今天晚上就给奶奶打个电话，好久没有联系了。",
+       "py": "Wǒ jīn tiān wǎn shàng jiù gěi nǎi nǎi dǎ gè diàn huà, hǎo jiǔ méi yǒu lián xì le.",
+       "vi": "Tối nay mình sẽ gọi điện cho bà nội, đã lâu không liên lạc."
+      },
+      {
+       "spk": 0,
+       "zh": "我们下个月再去一次吧，好吗？",
+       "py": "Wǒ men xià gè yuè zài qù yí cì ba, hǎo ma?",
+       "vi": "Tháng sau chúng ta lại đi một lần nữa nhé, được không?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "zh": "文化差异",
+   "vi": "Khác biệt văn hoá",
+   "icon": "🌍",
+   "dialogues": [
+    {
+     "id": "16-1",
+     "title_zh": "不一样的习惯",
+     "title_vi": "Những thói quen khác nhau",
+     "scene_vi": "Bàn về khác biệt giữa hai nền văn hoá.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，我来中国以后发现了很多和我们国家不一样的习惯。",
+       "py": "Xiǎo měi, wǒ lái zhōng guó yǐ hòu fā xiàn le hěn duō hé wǒ men guó jiā bù yí yàng de xí guàn.",
+       "vi": "Tiểu Mỹ, từ khi đến Trung Quốc mình phát hiện nhiều thói quen khác với nước mình."
+      },
+      {
+       "spk": 1,
+       "zh": "比如呢？",
+       "py": "Bǐ rú ne?",
+       "vi": "Ví dụ như?"
+      },
+      {
+       "spk": 0,
+       "zh": "比如，中国人见面常常问“你吃了吗”，我们那儿没有这样的说法。",
+       "py": "Bǐ rú, zhōng guó rén jiàn miàn cháng cháng wèn “nǐ chī le ma”, wǒ men nàr méi yǒu zhè yàng de shuō fǎ.",
+       "vi": "Ví dụ, người Trung Quốc gặp nhau thường hỏi “你吃了吗”, chỗ mình không có cách nói như thế."
+      },
+      {
+       "spk": 1,
+       "zh": "这其实只是一种打招呼的方式，并不是真的想请你吃饭。",
+       "py": "Zhè qí shí zhǐ shì yì zhǒng dǎ zhāo hū de fāng shì, bìng bú shì zhēn de xiǎng qǐng nǐ chī fàn.",
+       "vi": "Thực ra đó chỉ là một cách chào hỏi, không thật sự muốn mời bạn ăn cơm."
+      },
+      {
+       "spk": 0,
+       "zh": "我刚开始不知道，还认真地回答了很长时间。",
+       "py": "Wǒ gāng kāi shǐ bù zhī dao, hái rèn zhēn de huí dá le hěn cháng shí jiān.",
+       "vi": "Lúc đầu mình không biết, còn nghiêm túc trả lời rất lâu."
+      },
+      {
+       "spk": 1,
+       "zh": "哈哈，你不用回答那么多，说“吃了”就可以。",
+       "py": "Hā hā, nǐ bú yòng huí dá nà me duō, shuō “chī le” jiù kě yǐ.",
+       "vi": "Ha ha, bạn không cần trả lời nhiều thế, chỉ cần nói “吃了” là được."
+      },
+      {
+       "spk": 0,
+       "zh": "文化不同真有意思，每天都能学到新东西。",
+       "py": "Wén huà bù tóng zhēn yǒu yì si, měi tiān dōu néng xué dào xīn dōng xi.",
+       "vi": "Văn hoá khác nhau thật thú vị, mỗi ngày đều học được điều mới."
+      }
+     ]
+    },
+    {
+     "id": "16-2",
+     "title_zh": "互相理解",
+     "title_vi": "Thấu hiểu lẫn nhau",
+     "scene_vi": "Bàn về cách ứng xử với sự khác biệt.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，有时候我会因为文化不同，说错话让别人不高兴。",
+       "py": "Xiǎo měi, yǒu shí hòu wǒ huì yīn wèi wén huà bù tóng, shuō cuò huà ràng bié rén bù gāo xìng.",
+       "vi": "Tiểu Mỹ, có lúc vì khác biệt văn hoá, mình nói sai làm người khác không vui."
+      },
+      {
+       "spk": 1,
+       "zh": "别担心，大多数人都能理解，重要的是你有没有诚意。",
+       "py": "Bié dān xīn, dà duō shù rén dōu néng lǐ jiě, zhòng yào de shì nǐ yǒu méi yǒu chéng yì.",
+       "vi": "Đừng lo, đa số mọi người đều thông cảm, quan trọng là bạn có thành ý hay không."
+      },
+      {
+       "spk": 0,
+       "zh": "我也想更多了解你们的想法，这样才能避免误会。",
+       "py": "Wǒ yě xiǎng gèng duō liǎo jiě nǐ men de xiǎng fǎ, zhè yàng cái néng bì miǎn wù huì.",
+       "vi": "Mình cũng muốn hiểu thêm suy nghĩ của các bạn, như vậy mới tránh được hiểu lầm."
+      },
+      {
+       "spk": 1,
+       "zh": "有不懂的地方，直接问就行，大家都很愿意解释。",
+       "py": "Yǒu bù dǒng de dì fang, zhí jiē wèn jiù xíng, dà jiā dōu hěn yuàn yì jiě shì.",
+       "vi": "Chỗ nào chưa hiểu cứ hỏi thẳng, mọi người đều sẵn lòng giải thích."
+      },
+      {
+       "spk": 0,
+       "zh": "同样，如果我们国家的人做了让你不舒服的事，你也可以告诉我。",
+       "py": "Tóng yàng, rú guǒ wǒ men guó jiā de rén zuò le ràng nǐ bù shū fú de shì, nǐ yě kě yǐ gào sù wǒ.",
+       "vi": "Tương tự, nếu người nước mình làm điều khiến bạn khó chịu, bạn cũng có thể nói với mình."
+      },
+      {
+       "spk": 1,
+       "zh": "好的，只要我们互相尊重，就不会有大问题。",
+       "py": "Hǎo de, zhǐ yào wǒ men hù xiāng zūn zhòng, jiù bú huì yǒu dà wèn tí.",
+       "vi": "Được, chỉ cần chúng ta tôn trọng lẫn nhau thì sẽ không có vấn đề lớn."
+      },
+      {
+       "spk": 0,
+       "zh": "对，不同的文化放在一起，反而让世界更丰富。",
+       "py": "Duì, bù tóng de wén huà fàng zài yì qǐ, fǎn ér ràng shì jiè gèng fēng fù.",
+       "vi": "Đúng, những nền văn hoá khác nhau đặt cạnh nhau ngược lại làm thế giới phong phú hơn."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "zh": "老年生活",
+   "vi": "Cuộc sống người cao tuổi",
+   "icon": "👴",
+   "dialogues": [
+    {
+     "id": "17-1",
+     "title_zh": "退休以后",
+     "title_vi": "Sau khi nghỉ hưu",
+     "scene_vi": "Hai người bàn về cuộc sống tuổi già.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "爷爷",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "爷爷，您退休以后每天都做什么？不会觉得无聊吗？",
+       "py": "Yé yé, nín tuì xiū yǐ hòu měi tiān dōu zuò shén me? Bú huì jué de wú liáo ma?",
+       "vi": "Ông ơi, sau khi nghỉ hưu mỗi ngày ông làm gì? Không thấy chán sao?"
+      },
+      {
+       "spk": 1,
+       "zh": "一点儿也不无聊。早上打太极拳，下午和老朋友下棋，晚上看看新闻。",
+       "py": "Yì diǎnr yě bù wú liáo. Zǎo shàng dǎ tài jí quán, xià wǔ hé lǎo péng you xià qí, wǎn shàng kàn kàn xīn wén.",
+       "vi": "Chẳng chán chút nào. Sáng tập thái cực quyền, chiều chơi cờ với bạn cũ, tối xem tin tức."
+      },
+      {
+       "spk": 0,
+       "zh": "您有没有想过学点儿新东西？比如用智能手机。",
+       "py": "Nín yǒu méi yǒu xiǎng guò xué diǎnr xīn dōng xi? Bǐ rú yòng zhì néng shǒu jī.",
+       "vi": "Ông có nghĩ đến học thứ gì mới không? Ví dụ dùng điện thoại thông minh."
+      },
+      {
+       "spk": 1,
+       "zh": "想过，可是我觉得太复杂了，怕学不会。",
+       "py": "Xiǎng guò, kě shì wǒ jué de tài fù zá le, pà xué bú huì.",
+       "vi": "Có nghĩ, nhưng ông thấy phức tạp quá, sợ không học được."
+      },
+      {
+       "spk": 0,
+       "zh": "我可以教您，只要您愿意学，一定没问题。",
+       "py": "Wǒ kě yǐ jiào nín, zhǐ yào nín yuàn yì xué, yí dìng méi wèn tí.",
+       "vi": "Cháu có thể dạy ông, chỉ cần ông sẵn lòng học, nhất định không vấn đề."
+      },
+      {
+       "spk": 1,
+       "zh": "好，那就麻烦你了，我也想和你们视频聊天。",
+       "py": "Hǎo, nà jiù má fán nǐ le, wǒ yě xiǎng hé nǐ men shì pín liáo tiān.",
+       "vi": "Được, vậy phiền cháu, ông cũng muốn gọi video với các cháu."
+      },
+      {
+       "spk": 0,
+       "zh": "不麻烦，学会以后，您会发现这个世界更大了。",
+       "py": "Bù má fán, xué huì yǐ hòu, nín huì fā xiàn zhè ge shì jiè gèng dà le.",
+       "vi": "Không phiền đâu, học xong ông sẽ thấy thế giới rộng lớn hơn."
+      }
+     ]
+    },
+    {
+     "id": "17-2",
+     "title_zh": "老年大学",
+     "title_vi": "Đại học dành cho người cao tuổi",
+     "scene_vi": "Bà đi học đại học người cao tuổi.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "奶奶",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "奶奶，听说您报名参加了老年大学？",
+       "py": "Nǎi nǎi, tīng shuō nín bào míng cān jiā le lǎo nián dà xué?",
+       "vi": "Bà ơi, nghe nói bà đăng ký học đại học người cao tuổi à?"
+      },
+      {
+       "spk": 1,
+       "zh": "对，我选了书法和唱歌，每个星期上三次课。",
+       "py": "Duì, wǒ xuǎn le shū fǎ hé chàng gē, měi gè xīng qī shàng sān cì kè.",
+       "vi": "Đúng, bà chọn thư pháp và hát, mỗi tuần học ba buổi."
+      },
+      {
+       "spk": 0,
+       "zh": "您怎么突然想起去学这些了？",
+       "py": "Nín zěn me tū rán xiǎng qǐ qù xué zhè xiē le?",
+       "vi": "Sao bà đột nhiên nghĩ đến việc học những thứ này?"
+      },
+      {
+       "spk": 1,
+       "zh": "年轻的时候忙着工作和养孩子，没有时间做自己喜欢的事。",
+       "py": "Nián qīng de shí hou máng zhe gōng zuò hé yǎng hái zi, méi yǒu shí jiān zuò zì jǐ xǐ huan de shì.",
+       "vi": "Hồi trẻ bận làm việc và nuôi con, không có thời gian làm điều mình thích."
+      },
+      {
+       "spk": 0,
+       "zh": "现在终于有时间了，真好。",
+       "py": "Xiàn zài zhōng yú yǒu shí jiān le, zhēn hǎo.",
+       "vi": "Bây giờ cuối cùng cũng có thời gian rồi, thật tốt."
+      },
+      {
+       "spk": 1,
+       "zh": "而且在那儿认识了很多新朋友，大家年龄差不多，特别聊得来。",
+       "py": "Ér qiě zài nàr rèn shi le hěn duō xīn péng you, dà jiā nián líng chà bù duō, tè bié liáo de lái.",
+       "vi": "Hơn nữa quen được nhiều bạn mới ở đó, mọi người tuổi tác tương đương, rất hợp chuyện."
+      },
+      {
+       "spk": 0,
+       "zh": "您这样我们就放心了，学习让人永远年轻。",
+       "py": "Nín zhè yàng wǒ men jiù fàng xīn le, xué xí ràng rén yǒng yuǎn nián qīng.",
+       "vi": "Bà như vậy chúng cháu yên tâm rồi, học tập khiến người ta mãi trẻ trung."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "zh": "节约",
+   "vi": "Tiết kiệm & chống lãng phí",
+   "icon": "🍚",
+   "dialogues": [
+    {
+     "id": "18-1",
+     "title_zh": "别浪费粮食",
+     "title_vi": "Đừng lãng phí lương thực",
+     "scene_vi": "Nhắc nhau không bỏ thừa đồ ăn.",
+     "speakers": [
+      {
+       "name": "小美",
+       "gender": "f"
+      },
+      {
+       "name": "大卫",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "大卫，你点的菜太多了，我们两个人吃不完。",
+       "py": "Dà wèi, nǐ diǎn de cài tài duō le, wǒ men liǎng gè rén chī bù wán.",
+       "vi": "David, bạn gọi nhiều món quá, hai người chúng ta ăn không hết."
+      },
+      {
+       "spk": 1,
+       "zh": "没关系，剩下的可以打包带走。",
+       "py": "Méi guān xì, shèng xià de kě yǐ dǎ bāo dài zǒu.",
+       "vi": "Không sao, phần thừa có thể gói mang về."
+      },
+      {
+       "spk": 0,
+       "zh": "其实最好的办法是按需要点，吃多少点多少。",
+       "py": "Qí shí zuì hǎo de bàn fǎ shì àn xū yào diǎn, chī duō shǎo diǎn duō shǎo.",
+       "vi": "Thực ra cách tốt nhất là gọi theo nhu cầu, ăn bao nhiêu gọi bấy nhiêu."
+      },
+      {
+       "spk": 1,
+       "zh": "你说得对，在我们国家，剩饭也是一个很严重的问题。",
+       "py": "Nǐ shuō de duì, zài wǒ men guó jiā, shèng fàn yě shì yí gè hěn yán zhòng de wèn tí.",
+       "vi": "Bạn nói đúng, ở nước mình, thức ăn thừa cũng là vấn đề nghiêm trọng."
+      },
+      {
+       "spk": 0,
+       "zh": "中国有句话说“谁知盘中餐，粒粒皆辛苦”，意思是每一粒米都是农民辛苦种出来的。",
+       "py": "Zhōng guó yǒu jù huà shuō “shuí zhī pán zhōng cān, lì lì jiē xīn kǔ”, yì si shì měi yí lì mǐ dōu shì nóng mín xīn kǔ zhǒng chū lái de.",
+       "vi": "Trung Quốc có câu “谁知盘中餐，粒粒皆辛苦”, nghĩa là mỗi hạt gạo đều do nông dân vất vả trồng ra."
+      },
+      {
+       "spk": 1,
+       "zh": "这句话说得真好，我以后要注意，不浪费食物。",
+       "py": "Zhè jù huà shuō de zhēn hǎo, wǒ yǐ hòu yào zhù yì, bú làng fèi shí wù.",
+       "vi": "Câu này nói thật hay, sau này mình sẽ chú ý, không lãng phí thức ăn."
+      },
+      {
+       "spk": 0,
+       "zh": "养成好习惯，不但省钱，而且是对别人的尊重。",
+       "py": "Yǎng chéng hǎo xí guàn, bú dàn shěng qián, ér qiě shì duì bié rén de zūn zhòng.",
+       "vi": "Hình thành thói quen tốt, không những tiết kiệm tiền mà còn là sự tôn trọng người khác."
+      }
+     ]
+    },
+    {
+     "id": "18-2",
+     "title_zh": "少买没用的东西",
+     "title_vi": "Mua ít thứ vô dụng",
+     "scene_vi": "Bàn về lối sống tối giản.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，我最近整理房间，发现有很多东西买了以后从来没用过。",
+       "py": "Xiǎo hóng, wǒ zuì jìn zhěng lǐ fáng jiān, fā xiàn yǒu hěn duō dōng xi mǎi le yǐ hòu cóng lái méi yòng guò.",
+       "vi": "Tiểu Hồng, dạo này mình dọn phòng, phát hiện nhiều thứ mua xong chưa từng dùng đến."
+      },
+      {
+       "spk": 1,
+       "zh": "这种情况很常见，很多人都是因为打折才买的。",
+       "py": "Zhè zhǒng qíng kuàng hěn cháng jiàn, hěn duō rén dōu shì yīn wèi dǎ zhé cái mǎi de.",
+       "vi": "Tình trạng này rất phổ biến, nhiều người mua chỉ vì giảm giá."
+      },
+      {
+       "spk": 0,
+       "zh": "看起来省了钱，其实是花了不该花的钱。",
+       "py": "Kàn qǐ lái shěng le qián, qí shí shì huā le bù gāi huā de qián.",
+       "vi": "Nhìn thì như tiết kiệm tiền, thật ra là tiêu khoản không nên tiêu."
+      },
+      {
+       "spk": 1,
+       "zh": "我现在奉行“少而精”，只买真正需要的、质量好的东西。",
+       "py": "Wǒ xiàn zài fèng xíng “shǎo ér jīng”, zhǐ mǎi zhēn zhèng xū yào de, zhì liàng hǎo de dōng xi.",
+       "vi": "Bây giờ mình theo đuổi lối “ít mà tinh”, chỉ mua thứ thực sự cần và chất lượng tốt."
+      },
+      {
+       "spk": 0,
+       "zh": "这样家里也会更整洁，心情也更好。",
+       "py": "Zhè yàng jiā lǐ yě huì gèng zhěng jié, xīn qíng yě gèng hǎo.",
+       "vi": "Như vậy nhà cửa cũng gọn gàng hơn, tâm trạng cũng tốt hơn."
+      },
+      {
+       "spk": 1,
+       "zh": "对，生活简单一点儿，反而更容易感受到幸福。",
+       "py": "Duì, shēng huó jiǎn dān yì diǎnr, fǎn ér gèng róng yì gǎn shòu dào xìng fú.",
+       "vi": "Đúng, sống đơn giản một chút ngược lại dễ cảm nhận hạnh phúc hơn."
+      },
+      {
+       "spk": 0,
+       "zh": "我也要向你学习，把不用的东西捐给需要的人。",
+       "py": "Wǒ yě yào xiàng nǐ xué xí, bǎ bú yòng de dōng xi juān gěi xū yào de rén.",
+       "vi": "Mình cũng phải học theo bạn, quyên tặng những thứ không dùng cho người cần."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "zh": "电子书",
+   "vi": "Đọc sách điện tử",
+   "icon": "📖",
+   "dialogues": [
+    {
+     "id": "19-1",
+     "title_zh": "纸书还是电子书",
+     "title_vi": "Sách giấy hay sách điện tử",
+     "scene_vi": "Tranh luận về thói quen đọc.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，你喜欢看纸书还是电子书？",
+       "py": "Xiǎo měi, nǐ xǐ huan kàn zhǐ shū hái shì diàn zi shū?",
+       "vi": "Tiểu Mỹ, bạn thích đọc sách giấy hay sách điện tử?"
+      },
+      {
+       "spk": 1,
+       "zh": "我喜欢纸书，翻书的时候有一种特别的感觉。",
+       "py": "Wǒ xǐ huan zhǐ shū, fān shū de shí hou yǒu yì zhǒng tè bié de gǎn jué.",
+       "vi": "Mình thích sách giấy, lúc lật sách có một cảm giác đặc biệt."
+      },
+      {
+       "spk": 0,
+       "zh": "可是电子书又轻又方便，一部手机里可以放上千本书。",
+       "py": "Kě shì diàn zi shū yòu qīng yòu fāng biàn, yí bù shǒu jī lǐ kě yǐ fàng shàng qiān běn shū.",
+       "vi": "Nhưng sách điện tử vừa nhẹ vừa tiện, một chiếc điện thoại có thể chứa cả nghìn quyển."
+      },
+      {
+       "spk": 1,
+       "zh": "这点我同意，出门的时候电子书确实更方便。",
+       "py": "Zhè diǎn wǒ tóng yì, chū mén de shí hou diàn zi shū què shí gèng fāng biàn.",
+       "vi": "Điều này mình đồng ý, lúc ra ngoài sách điện tử đúng là tiện hơn."
+      },
+      {
+       "spk": 0,
+       "zh": "不过看久了眼睛会累，而且手机上的消息总会影响我的注意力。",
+       "py": "Bú guò kàn jiǔ le yǎn jīng huì lèi, ér qiě shǒu jī shàng de xiāo xī zǒng huì yǐng xiǎng wǒ de zhù yì lì.",
+       "vi": "Nhưng đọc lâu mắt sẽ mỏi, hơn nữa tin nhắn trên điện thoại luôn ảnh hưởng đến sự tập trung của mình."
+      },
+      {
+       "spk": 1,
+       "zh": "所以我认为，需要认真读的书，还是买纸书比较好。",
+       "py": "Suǒ yǐ wǒ rèn wéi, xū yào rèn zhēn dú de shū, hái shì mǎi zhǐ shū bǐ jiào hǎo.",
+       "vi": "Vì vậy mình cho rằng, những cuốn cần đọc nghiêm túc vẫn nên mua sách giấy."
+      },
+      {
+       "spk": 0,
+       "zh": "你说服了我，我打算周末去书店买几本。",
+       "py": "Nǐ shuō fú le wǒ, wǒ dǎ suàn zhōu mò qù shū diàn mǎi jǐ běn.",
+       "vi": "Bạn thuyết phục mình rồi, mình định cuối tuần đến hiệu sách mua vài quyển."
+      }
+     ]
+    },
+    {
+     "id": "19-2",
+     "title_zh": "一个月读几本书",
+     "title_vi": "Một tháng đọc mấy quyển",
+     "scene_vi": "Chia sẻ thói quen đọc sách.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "小明",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小明，你一个月能读几本书？",
+       "py": "Xiǎo míng, nǐ yí gè yuè néng dú jǐ běn shū?",
+       "vi": "Tiểu Minh, một tháng bạn đọc được mấy quyển sách?"
+      },
+      {
+       "spk": 1,
+       "zh": "大概两三本。其实我读书很慢，不过喜欢认真地读。",
+       "py": "Dà gài liǎng sān běn. Qí shí wǒ dú shū hěn màn, bú guò xǐ huan rèn zhēn de dú.",
+       "vi": "Khoảng hai ba quyển. Thật ra mình đọc rất chậm, nhưng thích đọc cẩn thận."
+      },
+      {
+       "spk": 0,
+       "zh": "我现在每天睡觉前读半个小时，已经坚持了一年。",
+       "py": "Wǒ xiàn zài měi tiān shuì jiào qián dú bàn gè xiǎo shí, yǐ jīng jiān chí le yì nián.",
+       "vi": "Bây giờ mỗi ngày trước khi ngủ mình đọc nửa tiếng, đã kiên trì một năm rồi."
+      },
+      {
+       "spk": 1,
+       "zh": "太棒了！你觉得读书给你带来了什么变化？",
+       "py": "Tài bàng le! Nǐ jué de dú shū gěi nǐ dài lái le shén me biàn huà?",
+       "vi": "Giỏi quá! Bạn thấy đọc sách mang lại cho bạn thay đổi gì?"
+      },
+      {
+       "spk": 0,
+       "zh": "我觉得自己想问题更全面了，也不那么容易着急。",
+       "py": "Wǒ jué de zì jǐ xiǎng wèn tí gèng quán miàn le, yě bú nà me róng yì zháo jí.",
+       "vi": "Mình thấy bản thân suy nghĩ vấn đề toàn diện hơn, cũng không dễ nóng vội như trước."
+      },
+      {
+       "spk": 1,
+       "zh": "难怪你现在看起来那么平静，我也要多读书。",
+       "py": "Nán guài nǐ xiàn zài kàn qǐ lái nà me píng jìng, wǒ yě yào duō dú shū.",
+       "vi": "Thảo nào bây giờ bạn trông bình tĩnh như vậy, mình cũng phải đọc nhiều sách hơn."
+      },
+      {
+       "spk": 0,
+       "zh": "没关系，从每天十页开始，慢慢来。",
+       "py": "Méi guān xì, cóng měi tiān shí yè kāi shǐ, màn màn lái.",
+       "vi": "Không sao, bắt đầu từ mười trang mỗi ngày, từ từ thôi."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "zh": "婚姻观",
+   "vi": "Quan niệm hôn nhân",
+   "icon": "💍",
+   "dialogues": [
+    {
+     "id": "20-1",
+     "title_zh": "什么时候结婚",
+     "title_vi": "Khi nào kết hôn",
+     "scene_vi": "Cha mẹ và con bàn chuyện kết hôn.",
+     "speakers": [
+      {
+       "name": "妈妈",
+       "gender": "f"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，你今年已经二十八岁了，什么时候带男朋友回来给我们看看？",
+       "py": "Xiǎo hóng, nǐ jīn nián yǐ jīng èr shí bā suì le, shén me shí hòu dài nán péng you huí lái gěi wǒ men kàn kàn?",
+       "vi": "Tiểu Hồng, năm nay con đã hai mươi tám tuổi rồi, khi nào dẫn bạn trai về cho bố mẹ xem?"
+      },
+      {
+       "spk": 1,
+       "zh": "妈妈，现在不是着急结婚的时候，我想先把事业做好。",
+       "py": "Mā ma, xiàn zài bú shì zháo jí jié hūn de shí hou, wǒ xiǎng xiān bǎ shì yè zuò hǎo.",
+       "vi": "Mẹ ơi, bây giờ không phải lúc vội kết hôn, con muốn làm tốt sự nghiệp trước."
+      },
+      {
+       "spk": 0,
+       "zh": "事业当然重要，可是年龄越大，找到合适的人就越难。",
+       "py": "Shì yè dāng rán zhòng yào, kě shì nián líng yuè dà, zhǎo dào hé shì de rén jiù yuè nán.",
+       "vi": "Sự nghiệp đương nhiên quan trọng, nhưng tuổi càng lớn, tìm được người phù hợp càng khó."
+      },
+      {
+       "spk": 1,
+       "zh": "我宁愿一个人过，也不想为了结婚而结婚。",
+       "py": "Wǒ nìng yuàn yí gè rén guò, yě bù xiǎng wèi le jié hūn ér jié hūn.",
+       "vi": "Con thà sống một mình, cũng không muốn kết hôn chỉ vì phải kết hôn."
+      },
+      {
+       "spk": 0,
+       "zh": "妈妈不是逼你，只是担心你以后一个人太孤单。",
+       "py": "Mā ma bú shì bī nǐ, zhǐ shì dān xīn nǐ yǐ hòu yí gè rén tài gū dān.",
+       "vi": "Mẹ không ép con, chỉ lo sau này con một mình sẽ cô đơn."
+      },
+      {
+       "spk": 1,
+       "zh": "我知道您是为我好，等我遇到合适的人，一定第一个告诉您。",
+       "py": "Wǒ zhī dao nín shì wèi wǒ hǎo, děng wǒ yù dào hé shì de rén, yí dìng dì yī gè gào sù nín.",
+       "vi": "Con biết mẹ muốn tốt cho con, khi con gặp được người phù hợp, nhất định nói với mẹ đầu tiên."
+      },
+      {
+       "spk": 0,
+       "zh": "好，妈妈相信你，你自己决定吧。",
+       "py": "Hǎo, mā ma xiāng xìn nǐ, nǐ zì jǐ jué dìng ba.",
+       "vi": "Được, mẹ tin con, con tự quyết định nhé."
+      }
+     ]
+    },
+    {
+     "id": "20-2",
+     "title_zh": "婚后的生活",
+     "title_vi": "Cuộc sống sau hôn nhân",
+     "scene_vi": "Hai người đã kết hôn chia sẻ kinh nghiệm.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小明",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小明，你结婚两年了，感觉怎么样？",
+       "py": "Xiǎo míng, nǐ jié hūn liǎng nián le, gǎn jué zěn me yàng?",
+       "vi": "Tiểu Minh, bạn kết hôn hai năm rồi, cảm giác thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "有幸福，也有麻烦。结婚以后才发现，两个人的生活习惯真的很不一样。",
+       "py": "Yǒu xìng fú, yě yǒu má fán. Jié hūn yǐ hòu cái fā xiàn, liǎng gè rén de shēng huó xí guàn zhēn de hěn bù yí yàng.",
+       "vi": "Có hạnh phúc, cũng có phiền toái. Kết hôn xong mới phát hiện thói quen sinh hoạt của hai người thật sự rất khác nhau."
+      },
+      {
+       "spk": 0,
+       "zh": "那你们怎么解决矛盾？",
+       "py": "Nà nǐ men zěn me jiě jué máo dùn?",
+       "vi": "Vậy hai bạn giải quyết mâu thuẫn thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "最重要的是沟通，生气的时候先别说话，冷静以后再谈。",
+       "py": "Zuì zhòng yào de shì gōu tōng, shēng qì de shí hou xiān bié shuō huà, lěng jìng yǐ hòu zài tán.",
+       "vi": "Quan trọng nhất là trao đổi, lúc giận đừng nói gì trước, bình tĩnh rồi hãy nói."
+      },
+      {
+       "spk": 0,
+       "zh": "听起来容易，做起来很难吧？",
+       "py": "Tīng qǐ lái róng yì, zuò qǐ lái hěn nán ba?",
+       "vi": "Nghe thì dễ, làm thì khó nhỉ?"
+      },
+      {
+       "spk": 1,
+       "zh": "是的，我们也是吵了很多次才学会的。",
+       "py": "Shì de, wǒ men yě shì chǎo le hěn duō cì cái xué huì de.",
+       "vi": "Đúng vậy, chúng mình cũng cãi nhau rất nhiều lần mới học được."
+      },
+      {
+       "spk": 0,
+       "zh": "谢谢你的经验，我以后结婚也会记住的。",
+       "py": "Xiè xie nǐ de jīng yàn, wǒ yǐ hòu jié hūn yě huì jì zhù de.",
+       "vi": "Cảm ơn kinh nghiệm của bạn, sau này kết hôn mình cũng sẽ ghi nhớ."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "zh": "体育精神",
+   "vi": "Tinh thần thể thao",
+   "icon": "🥇",
+   "dialogues": [
+    {
+     "id": "21-1",
+     "title_zh": "输了也没关系",
+     "title_vi": "Thua cũng không sao",
+     "scene_vi": "An ủi bạn sau khi thua trận.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "大卫",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "大卫，别难过了，输了比赛也没关系，我们已经尽力了。",
+       "py": "Dà wèi, bié nán guò le, shū le bǐ sài yě méi guān xì, wǒ men yǐ jīng jìn lì le.",
+       "vi": "David, đừng buồn nữa, thua trận cũng không sao, chúng ta đã cố hết sức rồi."
+      },
+      {
+       "spk": 1,
+       "zh": "可是我们准备了这么久，结果还是输了，我心里真不舒服。",
+       "py": "Kě shì wǒ men zhǔn bèi le zhè me jiǔ, jié guǒ hái shì shū le, wǒ xīn lǐ zhēn bù shū fú.",
+       "vi": "Nhưng chúng ta chuẩn bị lâu như vậy, kết quả vẫn thua, trong lòng mình thật khó chịu."
+      },
+      {
+       "spk": 0,
+       "zh": "比赛的结果固然重要，但是在这个过程中我们学到了很多东西。",
+       "py": "Bǐ sài de jié guǒ gù rán zhòng yào, dàn shì zài zhè ge guò chéng zhōng wǒ men xué dào le hěn duō dōng xi.",
+       "vi": "Kết quả trận đấu cố nhiên quan trọng, nhưng trong quá trình này chúng ta học được rất nhiều điều."
+      },
+      {
+       "spk": 1,
+       "zh": "你说得对，比如怎么合作，怎么在困难的时候不放弃。",
+       "py": "Nǐ shuō de duì, bǐ rú zěn me hé zuò, zěn me zài kùn nán de shí hou bú fàng qì.",
+       "vi": "Bạn nói đúng, ví dụ cách hợp tác, cách không bỏ cuộc lúc khó khăn."
+      },
+      {
+       "spk": 0,
+       "zh": "这才是体育真正的意义，不是只为了赢。",
+       "py": "Zhè cái shì tǐ yù zhēn zhèng de yì yì, bú shì zhǐ wèi le yíng.",
+       "vi": "Đây mới là ý nghĩa thật sự của thể thao, không phải chỉ để thắng."
+      },
+      {
+       "spk": 1,
+       "zh": "好，下次我们会踢得更好，一定要赢回来。",
+       "py": "Hǎo, xià cì wǒ men huì tī de gèng hǎo, yí dìng yào yíng huí lái.",
+       "vi": "Được, lần sau chúng ta sẽ đá tốt hơn, nhất định giành lại."
+      },
+      {
+       "spk": 0,
+       "zh": "这样想就对了，晚上我请大家吃饭，不管输赢。",
+       "py": "Zhè yàng xiǎng jiù duì le, wǎn shàng wǒ qǐng dà jiā chī fàn, bù guǎn shū yíng.",
+       "vi": "Nghĩ vậy mới đúng, tối nay mình mời mọi người ăn cơm, bất kể thắng thua."
+      }
+     ]
+    },
+    {
+     "id": "21-2",
+     "title_zh": "比赛中的坚持",
+     "title_vi": "Kiên trì trong thi đấu",
+     "scene_vi": "Kể về một vận động viên kiên trì.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "小明",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小明，你看了昨天的马拉松比赛吗？有一位选手特别让人感动。",
+       "py": "Xiǎo míng, nǐ kàn le zuó tiān de mǎ lā sōng bǐ sài ma? Yǒu yí wèi xuǎn shǒu tè bié ràng rén gǎn dòng.",
+       "vi": "Tiểu Minh, bạn xem cuộc thi marathon hôm qua chưa? Có một vận động viên khiến người ta rất cảm động."
+      },
+      {
+       "spk": 1,
+       "zh": "是那位腿受伤的选手吗？我看了，他一直跑到了终点。",
+       "py": "Shì nà wèi tuǐ shòu shāng de xuǎn shǒu ma? Wǒ kàn le, tā yì zhí pǎo dào le zhōng diǎn.",
+       "vi": "Là vận động viên bị thương ở chân đó phải không? Mình xem rồi, anh ấy chạy đến tận đích."
+      },
+      {
+       "spk": 0,
+       "zh": "对，虽然他最后一个到，可是观众都站起来为他鼓掌。",
+       "py": "Duì, suī rán tā zuì hòu yí gè dào, kě shì guān zhòng dōu zhàn qǐ lái wèi tā gǔ zhǎng.",
+       "vi": "Đúng, tuy anh về đích cuối cùng nhưng khán giả đều đứng dậy vỗ tay cho anh."
+      },
+      {
+       "spk": 1,
+       "zh": "他用行动告诉我们，只要不放弃，就有希望。",
+       "py": "Tā yòng xíng dòng gào sù wǒ men, zhǐ yào bú fàng qì, jiù yǒu xī wàng.",
+       "vi": "Anh ấy dùng hành động nói với chúng ta rằng chỉ cần không bỏ cuộc thì có hy vọng."
+      },
+      {
+       "spk": 0,
+       "zh": "我看的时候眼睛都湿了，觉得自己平时遇到的困难太小了。",
+       "py": "Wǒ kàn de shí hou yǎn jīng dōu shī le, jué de zì jǐ píng shí yù dào de kùn nán tài xiǎo le.",
+       "vi": "Lúc xem mắt mình đều ướt, thấy khó khăn mình gặp thường ngày quá nhỏ bé."
+      },
+      {
+       "spk": 1,
+       "zh": "是啊，有时候我们应该向这样的人学习。",
+       "py": "Shì a, yǒu shí hòu wǒ men yīng gāi xiàng zhè yàng de rén xué xí.",
+       "vi": "Phải, có lúc chúng ta nên học tập những người như vậy."
+      },
+      {
+       "spk": 0,
+       "zh": "下次有机会，我们也去参加一次马拉松吧。",
+       "py": "Xià cì yǒu jī huì, wǒ men yě qù cān jiā yí cì mǎ lā sōng ba.",
+       "vi": "Lần sau có cơ hội, chúng ta cũng đi tham gia một lần marathon nhé."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "zh": "旅行见闻",
+   "vi": "Chuyện đi du lịch",
+   "icon": "🧳",
+   "dialogues": [
+    {
+     "id": "22-1",
+     "title_zh": "旅行回来以后",
+     "title_vi": "Sau chuyến du lịch",
+     "scene_vi": "Chia sẻ trải nghiệm chuyến đi.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "小明",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小明，你从云南回来了，那里怎么样？",
+       "py": "Xiǎo míng, nǐ cóng yún nán huí lái le, nà lǐ zěn me yàng?",
+       "vi": "Tiểu Minh, bạn từ Vân Nam về rồi, ở đó thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "太美了！风景像画一样，而且那里的人都特别热情。",
+       "py": "Tài měi le! Fēng jǐng xiàng huà yí yàng, ér qiě nà lǐ de rén dōu tè bié rè qíng.",
+       "vi": "Đẹp lắm! Phong cảnh như tranh vẽ, hơn nữa người ở đó đều rất nhiệt tình."
+      },
+      {
+       "spk": 0,
+       "zh": "有没有遇到什么特别的事情？",
+       "py": "Yǒu méi yǒu yù dào shén me tè bié de shì qíng?",
+       "vi": "Có gặp chuyện gì đặc biệt không?"
+      },
+      {
+       "spk": 1,
+       "zh": "有一天我们迷路了，一位当地的老人不但给我们带路，还请我们吃了饭。",
+       "py": "Yǒu yì tiān wǒ men mí lù le, yí wèi dāng dì de lǎo rén bú dàn gěi wǒ men dài lù, hái qǐng wǒ men chī le fàn.",
+       "vi": "Có một hôm chúng mình bị lạc, một cụ già địa phương không những dẫn đường mà còn mời bọn mình ăn cơm."
+      },
+      {
+       "spk": 0,
+       "zh": "真让人感动，这就是旅行最美好的地方吧。",
+       "py": "Zhēn ràng rén gǎn dòng, zhè jiù shì lǚ xíng zuì měi hǎo de dì fang ba.",
+       "vi": "Thật cảm động, đó chính là điểm đẹp nhất của du lịch nhỉ."
+      },
+      {
+       "spk": 1,
+       "zh": "对，比起看风景，我更怀念和这些人相遇的时刻。",
+       "py": "Duì, bǐ qǐ kàn fēng jǐng, wǒ gèng huái niàn hé zhè xiē rén xiāng yù de shí kè.",
+       "vi": "Đúng, so với ngắm cảnh, mình nhớ những khoảnh khắc gặp gỡ họ hơn."
+      },
+      {
+       "spk": 0,
+       "zh": "听你这么说，我也想马上出发了。",
+       "py": "Tīng nǐ zhè me shuō, wǒ yě xiǎng mǎ shàng chū fā le.",
+       "vi": "Nghe bạn nói vậy, mình cũng muốn xuất phát ngay."
+      }
+     ]
+    },
+    {
+     "id": "22-2",
+     "title_zh": "旅行的意义",
+     "title_vi": "Ý nghĩa của du lịch",
+     "scene_vi": "Bàn về mục đích đi du lịch.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，你为什么那么喜欢旅行？花时间又花钱。",
+       "py": "Xiǎo měi, nǐ wèi shén me nà me xǐ huan lǚ xíng? Huā shí jiān yòu huā qián.",
+       "vi": "Tiểu Mỹ, vì sao bạn thích du lịch thế? Vừa tốn thời gian vừa tốn tiền."
+      },
+      {
+       "spk": 1,
+       "zh": "因为旅行让我看到不同的生活方式，也更了解自己。",
+       "py": "Yīn wèi lǚ xíng ràng wǒ kàn dào bù tóng de shēng huó fāng shì, yě gèng liǎo jiě zì jǐ.",
+       "vi": "Vì du lịch cho mình thấy những cách sống khác nhau, cũng hiểu bản thân hơn."
+      },
+      {
+       "spk": 0,
+       "zh": "可是有的人觉得，旅行只是去拍照，没有什么意义。",
+       "py": "Kě shì yǒu de rén jué de, lǚ xíng zhǐ shì qù pāi zhào, méi yǒu shén me yì yì.",
+       "vi": "Nhưng có người thấy du lịch chỉ là đi chụp ảnh, chẳng có ý nghĩa gì."
+      },
+      {
+       "spk": 1,
+       "zh": "如果只是拍照，确实意义不大，关键是你用什么心态去体验。",
+       "py": "Rú guǒ zhǐ shì pāi zhào, què shí yì yì bú dà, guān jiàn shì nǐ yòng shén me xīn tài qù tǐ yàn.",
+       "vi": "Nếu chỉ để chụp ảnh thì đúng là ý nghĩa không lớn, mấu chốt là bạn dùng tâm thế nào để trải nghiệm."
+      },
+      {
+       "spk": 0,
+       "zh": "你说得对，我以前总是着急去很多地方，没有认真感受过。",
+       "py": "Nǐ shuō de duì, wǒ yǐ qián zǒng shì zháo jí qù hěn duō dì fang, méi yǒu rèn zhēn gǎn shòu guò.",
+       "vi": "Bạn nói đúng, trước đây mình toàn vội đi nhiều nơi, chưa cảm nhận nghiêm túc."
+      },
+      {
+       "spk": 1,
+       "zh": "下次试试在一个地方多住几天，像当地人一样生活。",
+       "py": "Xià cì shì shì zài yí gè dì fang duō zhù jǐ tiān, xiàng dāng dì rén yí yàng shēng huó.",
+       "vi": "Lần sau thử ở một nơi vài ngày, sống như người địa phương."
+      },
+      {
+       "spk": 0,
+       "zh": "好主意，我下个假期就这么做。",
+       "py": "Hǎo zhǔ yì, wǒ xià gè jià qī jiù zhè me zuò.",
+       "vi": "Ý hay, kỳ nghỉ sau mình sẽ làm vậy."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "zh": "职场沟通",
+   "vi": "Giao tiếp nơi làm việc",
+   "icon": "💬",
+   "dialogues": [
+    {
+     "id": "23-1",
+     "title_zh": "怎么拒绝别人",
+     "title_vi": "Từ chối người khác thế nào",
+     "scene_vi": "Bàn về cách nói “không” ở chỗ làm.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，同事总是让我帮他们做事，我不好意思拒绝，怎么办？",
+       "py": "Xiǎo měi, tóng shì zǒng shì ràng wǒ bāng tā men zuò shì, wǒ bù hǎo yì sī jù jué, zěn me bàn?",
+       "vi": "Tiểu Mỹ, đồng nghiệp cứ nhờ mình làm việc, mình ngại từ chối, phải làm sao?"
+      },
+      {
+       "spk": 1,
+       "zh": "你要先考虑自己的工作能不能完成，如果不能，就要诚实地说出来。",
+       "py": "Nǐ yào xiān kǎo lǜ zì jǐ de gōng zuò néng bù néng wán chéng, rú guǒ bù néng, jiù yào chéng shí de shuō chū lái.",
+       "vi": "Bạn phải cân nhắc công việc của mình có xong được không, nếu không thì phải thành thật nói ra."
+      },
+      {
+       "spk": 0,
+       "zh": "可是我怕他们不高兴，以后不愿意帮我。",
+       "py": "Kě shì wǒ pà tā men bù gāo xìng, yǐ hòu bú yuàn yì bāng wǒ.",
+       "vi": "Nhưng mình sợ họ không vui, sau này không muốn giúp mình."
+      },
+      {
+       "spk": 1,
+       "zh": "你可以先说明原因，再告诉他你什么时候有空，这样对方更容易理解。",
+       "py": "Nǐ kě yǐ xiān shuō míng yuán yīn, zài gào sù tā nǐ shén me shí hòu yǒu kòng, zhè yàng duì fāng gèng róng yì lǐ jiě.",
+       "vi": "Bạn có thể giải thích lý do trước, rồi nói khi nào mình rảnh, như vậy đối phương dễ thông cảm hơn."
+      },
+      {
+       "spk": 0,
+       "zh": "有道理，拒绝也要讲究方法。",
+       "py": "Yǒu dào lǐ, jù jué yě yào jiǎng jiū fāng fǎ.",
+       "vi": "Có lý, từ chối cũng cần có phương pháp."
+      },
+      {
+       "spk": 1,
+       "zh": "对，真诚、清楚、有礼貌，别人才不会觉得被冒犯。",
+       "py": "Duì, zhēn chéng, qīng chǔ, yǒu lǐ mào, bié rén cái bú huì jué de bèi mào fàn.",
+       "vi": "Đúng, chân thành, rõ ràng, lịch sự thì người khác mới không thấy bị xúc phạm."
+      },
+      {
+       "spk": 0,
+       "zh": "谢谢你的建议，我明天就试试。",
+       "py": "Xiè xie nǐ de jiàn yì, wǒ míng tiān jiù shì shì.",
+       "vi": "Cảm ơn lời khuyên của bạn, ngày mai mình sẽ thử."
+      }
+     ]
+    },
+    {
+     "id": "23-2",
+     "title_zh": "向领导汇报",
+     "title_vi": "Báo cáo với cấp trên",
+     "scene_vi": "Chuẩn bị báo cáo công việc.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "大卫",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "大卫，明天我要向总经理汇报项目的进展，你能帮我看一下吗？",
+       "py": "Dà wèi, míng tiān wǒ yào xiàng zǒng jīng lǐ huì bào xiàng mù dì jìn zhǎn, nǐ néng bāng wǒ kàn yí xià ma?",
+       "vi": "David, ngày mai mình phải báo cáo tiến độ dự án với tổng giám đốc, bạn xem giúp mình được không?"
+      },
+      {
+       "spk": 1,
+       "zh": "没问题，你先说说主要内容。",
+       "py": "Méi wèn tí, nǐ xiān shuō shuō zhǔ yào nèi róng.",
+       "vi": "Không vấn đề, bạn nói qua nội dung chính trước."
+      },
+      {
+       "spk": 0,
+       "zh": "我分成三部分：已经完成的，正在做的，还有遇到的问题。",
+       "py": "Wǒ fēn chéng sān bù fèn: yǐ jīng wán chéng de, zhèng zài zuò de, hái yǒu yù dào de wèn tí.",
+       "vi": "Mình chia làm ba phần: việc đã xong, việc đang làm, và những vấn đề gặp phải."
+      },
+      {
+       "spk": 1,
+       "zh": "我建议你先说好消息，再说问题，而且每个问题都要提出解决办法。",
+       "py": "Wǒ jiàn yì nǐ xiān shuō hǎo xiāo xī, zài shuō wèn tí, ér qiě měi gè wèn tí dōu yào tí chū jiě jué bàn fǎ.",
+       "vi": "Mình đề nghị bạn nói tin tốt trước, rồi nói vấn đề, hơn nữa mỗi vấn đề đều phải đưa ra cách giải quyết."
+      },
+      {
+       "spk": 0,
+       "zh": "这样领导会觉得我有准备，而不是只会提问题。",
+       "py": "Zhè yàng lǐng dǎo huì jué de wǒ yǒu zhǔn bèi, ér bú shì zhǐ huì tí wèn tí.",
+       "vi": "Như vậy lãnh đạo sẽ thấy mình có chuẩn bị, chứ không phải chỉ biết nêu vấn đề."
+      },
+      {
+       "spk": 1,
+       "zh": "对，另外说话要简单清楚，别用太多专业词。",
+       "py": "Duì, lìng wài shuō huà yào jiǎn dān qīng chǔ, bié yòng tài duō zhuān yè cí.",
+       "vi": "Đúng, ngoài ra nói năng phải đơn giản rõ ràng, đừng dùng quá nhiều thuật ngữ chuyên môn."
+      },
+      {
+       "spk": 0,
+       "zh": "谢谢你，我现在心里有底了。",
+       "py": "Xiè xie nǐ, wǒ xiàn zài xīn lǐ yǒu dǐ le.",
+       "vi": "Cảm ơn bạn, bây giờ mình đã yên tâm hơn."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

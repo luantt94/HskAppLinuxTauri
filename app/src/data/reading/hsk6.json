@@ -1,0 +1,642 @@
+{
+  "level": "HSK6",
+  "story_title": "Câu chuyện của Lý Minh (6): Nhìn lại và hướng tới tương lai",
+  "story_intro_vi": "Lý Minh khởi nghiệp, lập gia đình với Tiểu Vũ và dần tìm thấy câu trả lời cho câu hỏi về bản sắc, thành công và hạnh phúc — khép lại hành trình mười năm kể từ ngày đầu đặt chân đến Trung Quốc.",
+  "passages": [
+    {
+      "id": 1,
+      "title_zh": "人生的十字路口",
+      "title_vi": "Ngã rẽ cuộc đời",
+      "text": "三十岁那年，我站在人生的十字路口：是继续留在大公司稳步晋升，还是冒险创办一家属于自己的公司？经过无数个辗转难眠的夜晚，我终于明白，真正让我热血沸腾的，始终是连接中越两国文化这件事。于是，我递交了辞职信，迈出了创业的第一步。",
+      "text_vi": "Năm ba mươi tuổi, tôi đứng trước ngã rẽ cuộc đời: tiếp tục ở lại công ty lớn thăng tiến từng bước, hay mạo hiểm thành lập một công ty của riêng mình? Qua vô số đêm trằn trọc không ngủ, cuối cùng tôi cũng hiểu ra, điều thực sự khiến máu trong tôi sôi sục, vẫn luôn là việc kết nối văn hóa hai nước Việt-Trung. Thế là, tôi nộp đơn xin nghỉ việc, bước ra bước đầu tiên trên con đường khởi nghiệp.",
+      "vocab": [
+        {
+          "zh": "十字路口",
+          "pinyin": "shízìlùkǒu",
+          "vi": "ngã rẽ, ngã tư"
+        },
+        {
+          "zh": "辗转难眠",
+          "pinyin": "zhǎnzhuǎnnánmián",
+          "vi": "trằn trọc không ngủ"
+        },
+        {
+          "zh": "热血沸腾",
+          "pinyin": "rèxuèfèiténg",
+          "vi": "máu sôi sục, nhiệt huyết dâng trào"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title_zh": "创业的开始",
+      "title_vi": "Khởi đầu khởi nghiệp",
+      "text": "公司刚成立的时候，只有我和小雨两个人，办公室是租来的一间小屋子。我们既要开拓客户，又要亲自处理各种琐碎的事务，常常忙到深夜才能回家。虽然辛苦，但每签下一份合同，都让我们倍感振奋。",
+      "text_vi": "Khi công ty mới thành lập, chỉ có tôi và Tiểu Vũ hai người, văn phòng là một căn phòng nhỏ đi thuê. Chúng tôi vừa phải mở rộng khách hàng, vừa phải tự mình xử lý đủ loại việc vặt vãnh, thường bận đến đêm khuya mới về được đến nhà. Tuy vất vả, nhưng mỗi lần ký được một hợp đồng, đều khiến chúng tôi vô cùng phấn chấn.",
+      "vocab": [
+        {
+          "zh": "开拓",
+          "pinyin": "kāituò",
+          "vi": "mở rộng, khai phá"
+        },
+        {
+          "zh": "琐碎",
+          "pinyin": "suǒsuì",
+          "vi": "vặt vãnh, lặt vặt"
+        },
+        {
+          "zh": "振奋",
+          "pinyin": "zhènfèn",
+          "vi": "phấn chấn, hăng hái"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title_zh": "失败与坚持",
+      "title_vi": "Thất bại và kiên trì",
+      "text": "创业第二年，我们因为盲目扩张，差点儿让公司陷入资金危机。那段时间，我几乎夜夜失眠，甚至怀疑自己当初的选择是否正确。幸好小雨始终在我身边，提醒我：“失败并不可怕，可怕的是因此放弃。”正是这句话，让我重新振作起来，带领团队渡过了难关。",
+      "text_vi": "Năm thứ hai khởi nghiệp, vì mở rộng quy mô một cách mù quáng, chúng tôi suýt khiến công ty rơi vào khủng hoảng tài chính. Khoảng thời gian đó, hầu như đêm nào tôi cũng mất ngủ, thậm chí nghi ngờ liệu lựa chọn ban đầu của mình có đúng đắn hay không. May mà Tiểu Vũ luôn ở bên tôi, nhắc nhở tôi: \"Thất bại không đáng sợ, đáng sợ là vì vậy mà từ bỏ.\" Chính câu nói đó, đã khiến tôi phấn chấn trở lại, dẫn dắt đội ngũ vượt qua khó khăn.",
+      "vocab": [
+        {
+          "zh": "盲目扩张",
+          "pinyin": "mángmù kuòzhāng",
+          "vi": "mở rộng quy mô mù quáng"
+        },
+        {
+          "zh": "危机",
+          "pinyin": "wēijī",
+          "vi": "khủng hoảng"
+        },
+        {
+          "zh": "渡过难关",
+          "pinyin": "dùguò nánguān",
+          "vi": "vượt qua khó khăn"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title_zh": "身份的思考",
+      "title_vi": "Suy ngẫm về bản sắc",
+      "text": "在中国生活了十几年，我常常思考一个问题：我究竟是谁？是越南人，还是半个中国人？后来我渐渐明白，身份并不是非此即彼的选择题。我既可以深爱自己的祖国，也可以把中国当作第二故乡——这两者之间，并不矛盾。",
+      "text_vi": "Sống ở Trung Quốc hơn mười năm, tôi thường suy ngẫm về một câu hỏi: rốt cuộc tôi là ai? Là người Việt Nam, hay là nửa người Trung Quốc? Về sau tôi dần dần hiểu ra, bản sắc không phải là câu hỏi trắc nghiệm chọn một trong hai. Tôi vừa có thể yêu sâu sắc tổ quốc của mình, cũng có thể coi Trung Quốc là quê hương thứ hai — hai điều này, không hề mâu thuẫn.",
+      "vocab": [
+        {
+          "zh": "究竟",
+          "pinyin": "jiūjìng",
+          "vi": "rốt cuộc"
+        },
+        {
+          "zh": "非此即彼",
+          "pinyin": "fēicǐjíbǐ",
+          "vi": "hoặc cái này hoặc cái kia"
+        },
+        {
+          "zh": "矛盾",
+          "pinyin": "máodùn",
+          "vi": "mâu thuẫn"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title_zh": "城市化的利与弊",
+      "title_vi": "Lợi và hại của đô thị hóa",
+      "text": "这些年，中国的城市化进程飞速发展，高楼大厦拔地而起，交通也越来越便利。然而，与此同时，不少老城区的传统风貌逐渐消失，邻里之间的人情味也在淡化。如何在发展与保留之间找到平衡，是每一座城市都必须面对的课题。",
+      "text_vi": "Những năm nay, tiến trình đô thị hóa của Trung Quốc phát triển với tốc độ chóng mặt, các tòa nhà cao tầng mọc lên san sát, giao thông cũng ngày càng thuận tiện. Tuy nhiên, đồng thời, diện mạo truyền thống của không ít khu phố cổ dần biến mất, tình cảm láng giềng cũng đang nhạt dần. Làm thế nào để tìm được sự cân bằng giữa phát triển và bảo tồn, là bài toán mà mỗi thành phố đều phải đối mặt.",
+      "vocab": [
+        {
+          "zh": "拔地而起",
+          "pinyin": "bádì'érqǐ",
+          "vi": "mọc lên san sát, nhanh chóng"
+        },
+        {
+          "zh": "人情味",
+          "pinyin": "rénqíngwèi",
+          "vi": "tình người, tình cảm láng giềng"
+        },
+        {
+          "zh": "课题",
+          "pinyin": "kètí",
+          "vi": "bài toán, vấn đề cần giải quyết"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title_zh": "教育观念的差异",
+      "title_vi": "Khác biệt quan niệm giáo dục",
+      "text": "得知小雨怀孕以后，我们开始讨论将来孩子的教育问题。小雨希望孩子从小接受中文教育，而我则希望他同时掌握越南语，不要忘记自己身上流着的越南血统。经过商量，我们决定让孩子成为一个真正意义上双语双文化的孩子。",
+      "text_vi": "Biết tin Tiểu Vũ mang thai, chúng tôi bắt đầu bàn về vấn đề giáo dục của con sau này. Tiểu Vũ hy vọng con được giáo dục bằng tiếng Trung từ nhỏ, còn tôi thì hy vọng con cũng nắm vững tiếng Việt, đừng quên dòng máu Việt Nam chảy trong người mình. Sau khi bàn bạc, chúng tôi quyết định để con trở thành một đứa trẻ thực sự song ngữ, song văn hóa.",
+      "vocab": [
+        {
+          "zh": "怀孕",
+          "pinyin": "huáiyùn",
+          "vi": "mang thai"
+        },
+        {
+          "zh": "血统",
+          "pinyin": "xuètǒng",
+          "vi": "dòng máu, huyết thống"
+        },
+        {
+          "zh": "双语双文化",
+          "pinyin": "shuāngyǔ shuāng wénhuà",
+          "vi": "song ngữ song văn hóa"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title_zh": "为人父母的准备",
+      "title_vi": "Chuẩn bị làm cha mẹ",
+      "text": "距离孩子出生只剩下两个月了，我和小雨一边忙着布置婴儿房，一边恶补各种育儿知识。说实话，即将为人父母的喜悦中，也掺杂着一丝对未知的忐忑。但我相信，只要彼此扶持，我们一定能成为合格的父母。",
+      "text_vi": "Chỉ còn hai tháng nữa là con ra đời, tôi và Tiểu Vũ vừa bận rộn trang trí phòng cho em bé, vừa gấp rút bổ sung đủ loại kiến thức nuôi dạy con. Nói thật, trong niềm vui sắp làm cha mẹ, cũng xen lẫn một chút bất an trước những điều chưa biết. Nhưng tôi tin rằng, chỉ cần nâng đỡ lẫn nhau, chúng tôi nhất định sẽ trở thành những bậc cha mẹ đủ tư cách.",
+      "vocab": [
+        {
+          "zh": "恶补",
+          "pinyin": "èbǔ",
+          "vi": "gấp rút bổ sung"
+        },
+        {
+          "zh": "掺杂",
+          "pinyin": "chānzá",
+          "vi": "xen lẫn, pha trộn"
+        },
+        {
+          "zh": "忐忑",
+          "pinyin": "tǎntè",
+          "vi": "bất an, hồi hộp"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title_zh": "孩子的名字",
+      "title_vi": "Tên của con",
+      "text": "孩子出生那天，我和小雨紧紧地拥抱在一起，激动得说不出话来。给孩子取名字的时候，我们特意选了一个在中文和越南语里都有美好寓意的名字，希望他将来能成为连接两国友谊的又一座桥梁。",
+      "text_vi": "Ngày con chào đời, tôi và Tiểu Vũ ôm chặt lấy nhau, xúc động đến nỗi không nói nên lời. Khi đặt tên cho con, chúng tôi đặc biệt chọn một cái tên mang ý nghĩa tốt đẹp trong cả tiếng Trung lẫn tiếng Việt, hy vọng sau này con có thể trở thành thêm một cây cầu kết nối tình hữu nghị giữa hai nước.",
+      "vocab": [
+        {
+          "zh": "拥抱",
+          "pinyin": "yōngbào",
+          "vi": "ôm, ôm ấp"
+        },
+        {
+          "zh": "寓意",
+          "pinyin": "yùyì",
+          "vi": "ý nghĩa ngụ ý, hàm ý"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title_zh": "父母的爱",
+      "title_vi": "Tình yêu của cha mẹ",
+      "text": "有了孩子以后，我才真正体会到父母当年的不易。想起妈妈每次打电话都反复叮嘱我注意身体，想起爸爸从不说“想你”，却总在视频时偷偷抹眼泪——这份沉默而深沉的爱，直到此刻，我才真正读懂。",
+      "text_vi": "Sau khi có con, tôi mới thực sự thấu hiểu nỗi vất vả của bố mẹ năm xưa. Nhớ lại mỗi lần gọi điện mẹ đều dặn đi dặn lại tôi chú ý sức khỏe, nhớ lại bố chưa bao giờ nói \"nhớ con\", nhưng luôn lén lau nước mắt khi gọi video — tình yêu thầm lặng mà sâu sắc này, đến tận bây giờ, tôi mới thực sự hiểu được.",
+      "vocab": [
+        {
+          "zh": "叮嘱",
+          "pinyin": "dīngzhǔ",
+          "vi": "dặn dò"
+        },
+        {
+          "zh": "抹眼泪",
+          "pinyin": "mǒ yǎnlèi",
+          "vi": "lau nước mắt"
+        },
+        {
+          "zh": "沉默",
+          "pinyin": "chénmò",
+          "vi": "thầm lặng, im lặng"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title_zh": "传承与创新",
+      "title_vi": "Kế thừa và đổi mới",
+      "text": "公司发展到今天，我常常思考：如何在坚守初心的同时，不断创新？归根结底，无论时代如何变化，真诚待人、用心做事的原则，永远不会过时。我希望把这样的理念，传承给团队中的每一位年轻人。",
+      "text_vi": "Công ty phát triển đến ngày hôm nay, tôi thường suy nghĩ: làm thế nào để vừa giữ vững tâm huyết ban đầu, vừa không ngừng đổi mới? Xét cho cùng, dù thời đại thay đổi thế nào, nguyên tắc đối xử chân thành với người khác, dốc lòng làm việc, sẽ mãi mãi không lỗi thời. Tôi hy vọng truyền lại lý niệm như vậy, cho từng người trẻ trong đội ngũ của mình.",
+      "vocab": [
+        {
+          "zh": "初心",
+          "pinyin": "chūxīn",
+          "vi": "tâm huyết ban đầu"
+        },
+        {
+          "zh": "归根结底",
+          "pinyin": "guīgēnjiédǐ",
+          "vi": "xét cho cùng, rốt cuộc"
+        },
+        {
+          "zh": "理念",
+          "pinyin": "lǐniàn",
+          "vi": "lý niệm, quan niệm"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title_zh": "失去与珍惜",
+      "title_vi": "Mất mát và trân trọng",
+      "text": "去年，远在越南的奶奶因病去世了，我没能赶上见她最后一面，这成了我心中永远的遗憾。那段日子，我常常想起小时候奶奶牵着我的手走在乡间小路上的画面。这件事让我深刻体会到：有些时光，一旦错过，便再也无法重来。",
+      "text_vi": "Năm ngoái, bà nội ở tận Việt Nam vì bệnh qua đời, tôi đã không kịp gặp bà lần cuối, điều này trở thành nỗi tiếc nuối mãi mãi trong lòng tôi. Khoảng thời gian đó, tôi thường nhớ lại hình ảnh hồi nhỏ bà nắm tay tôi đi trên con đường làng quê. Việc này khiến tôi thấm thía sâu sắc: có những khoảng thời gian, một khi đã bỏ lỡ, thì không bao giờ có thể làm lại được nữa.",
+      "vocab": [
+        {
+          "zh": "去世",
+          "pinyin": "qùshì",
+          "vi": "qua đời, mất"
+        },
+        {
+          "zh": "遗憾",
+          "pinyin": "yíhàn",
+          "vi": "tiếc nuối, hối tiếc"
+        },
+        {
+          "zh": "错过",
+          "pinyin": "cuòguò",
+          "vi": "bỏ lỡ"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title_zh": "回越南奔丧",
+      "title_vi": "Về Việt Nam chịu tang",
+      "text": "我带着小雨和孩子一起回越南参加奶奶的葬礼。看着越南传统的丧葬仪式，小雨虽然语言不通，却默默地陪在我身边，给了我莫大的安慰。那一刻，我深深感受到，爱是不需要翻译的。",
+      "text_vi": "Tôi đưa Tiểu Vũ và con cùng về Việt Nam dự đám tang của bà nội. Nhìn nghi thức tang lễ truyền thống của Việt Nam, Tiểu Vũ tuy bất đồng ngôn ngữ, nhưng vẫn lặng lẽ ở bên cạnh tôi, mang lại cho tôi sự an ủi vô cùng lớn lao. Khoảnh khắc đó, tôi cảm nhận sâu sắc rằng, tình yêu không cần phiên dịch.",
+      "vocab": [
+        {
+          "zh": "葬礼",
+          "pinyin": "zànglǐ",
+          "vi": "đám tang, tang lễ"
+        },
+        {
+          "zh": "仪式",
+          "pinyin": "yíshì",
+          "vi": "nghi thức, nghi lễ"
+        },
+        {
+          "zh": "安慰",
+          "pinyin": "ānwèi",
+          "vi": "an ủi"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title_zh": "重新认识故乡",
+      "title_vi": "Nhận thức lại về quê hương",
+      "text": "这次回越南，我特意多住了几天，重新走遍了小时候熟悉的街道。多年未见，家乡发生了翻天覆地的变化，高楼多了，车也多了。但巷子口那家卖河粉的小店依然在，老板娘还认得出我，这让我倍感亲切。",
+      "text_vi": "Lần về Việt Nam này, tôi đặc biệt ở lại thêm vài ngày, đi lại khắp những con phố quen thuộc hồi nhỏ. Nhiều năm không gặp, quê hương đã có những thay đổi long trời lở đất, nhà cao tầng nhiều hơn, xe cộ cũng nhiều hơn. Nhưng quán phở nhỏ ở đầu hẻm vẫn còn đó, bà chủ quán vẫn nhận ra tôi, điều này khiến tôi cảm thấy vô cùng thân thương.",
+      "vocab": [
+        {
+          "zh": "翻天覆地",
+          "pinyin": "fāntiānfùdì",
+          "vi": "long trời lở đất, thay đổi lớn"
+        },
+        {
+          "zh": "亲切",
+          "pinyin": "qīnqiè",
+          "vi": "thân thương, gần gũi"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title_zh": "科技与伦理",
+      "title_vi": "Công nghệ và đạo đức",
+      "text": "随着人工智能在翻译行业的广泛应用，公司也面临新的挑战——如何在追求效率的同时，保护客户的隐私和数据安全？我始终坚持一个原则：技术可以帮助我们提高效率，但绝不能以牺牲诚信和道德底线为代价。",
+      "text_vi": "Cùng với việc trí tuệ nhân tạo được ứng dụng rộng rãi trong ngành phiên dịch, công ty cũng đối mặt với thách thức mới — làm thế nào vừa theo đuổi hiệu quả, vừa bảo vệ quyền riêng tư và an toàn dữ liệu của khách hàng? Tôi luôn kiên trì một nguyên tắc: công nghệ có thể giúp chúng ta nâng cao hiệu quả, nhưng tuyệt đối không được lấy việc hy sinh sự trung thực và lằn ranh đạo đức làm cái giá phải trả.",
+      "vocab": [
+        {
+          "zh": "隐私",
+          "pinyin": "yǐnsī",
+          "vi": "quyền riêng tư"
+        },
+        {
+          "zh": "诚信",
+          "pinyin": "chéngxìn",
+          "vi": "sự trung thực, tín nhiệm"
+        },
+        {
+          "zh": "底线",
+          "pinyin": "dǐxiàn",
+          "vi": "lằn ranh, giới hạn cuối cùng"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title_zh": "给年轻创业者的话",
+      "title_vi": "Lời nhắn cho người khởi nghiệp trẻ",
+      "text": "有一次，一位刚毕业的年轻人找我咨询创业的事情，眼神里满是迷茫和焦虑。我告诉他：“创业就像一场马拉松，拼的不是起跑时有多快，而是能不能在遇到困难时依然坚持跑下去。”",
+      "text_vi": "Có lần, một bạn trẻ vừa tốt nghiệp tìm tôi hỏi về chuyện khởi nghiệp, ánh mắt đầy sự mơ hồ và lo lắng. Tôi nói với cậu ấy: \"Khởi nghiệp giống như một cuộc chạy marathon, điều quyết định không phải là lúc xuất phát nhanh đến đâu, mà là liệu có thể tiếp tục chạy khi gặp khó khăn hay không.\"",
+      "vocab": [
+        {
+          "zh": "咨询",
+          "pinyin": "zīxún",
+          "vi": "tư vấn, hỏi ý kiến"
+        },
+        {
+          "zh": "迷茫",
+          "pinyin": "mímáng",
+          "vi": "mơ hồ, mông lung"
+        },
+        {
+          "zh": "焦虑",
+          "pinyin": "jiāolǜ",
+          "vi": "lo lắng, lo âu"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title_zh": "成功的定义",
+      "title_vi": "Định nghĩa về thành công",
+      "text": "年轻的时候，我以为成功就是赚很多钱、拥有很高的地位。如今，经历了创业的起起伏伏，我才明白，真正的成功，或许是能够坦然面对自己的选择，无愧于心，同时也不辜负身边爱着自己的人。",
+      "text_vi": "Hồi trẻ, tôi từng cho rằng thành công là kiếm được nhiều tiền, có địa vị cao. Bây giờ, trải qua những thăng trầm của khởi nghiệp, tôi mới hiểu ra, thành công thực sự, có lẽ là có thể thản nhiên đối diện với lựa chọn của chính mình, không hổ thẹn với lương tâm, đồng thời cũng không phụ lòng những người yêu thương mình bên cạnh.",
+      "vocab": [
+        {
+          "zh": "起起伏伏",
+          "pinyin": "qǐqǐfúfú",
+          "vi": "thăng trầm"
+        },
+        {
+          "zh": "坦然",
+          "pinyin": "tǎnrán",
+          "vi": "thản nhiên, bình thản"
+        },
+        {
+          "zh": "辜负",
+          "pinyin": "gūfù",
+          "vi": "phụ lòng"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title_zh": "社会的温度",
+      "title_vi": "Hơi ấm của xã hội",
+      "text": "公司规模扩大以后，我们开始拿出一部分利润，资助贫困地区的孩子学习中文和越南语。虽然这笔钱对公司来说不算太多，但每次收到孩子们寄来的感谢信，我都觉得，这才是企业存在真正的意义——不仅创造价值，也温暖社会。",
+      "text_vi": "Sau khi quy mô công ty mở rộng, chúng tôi bắt đầu trích ra một phần lợi nhuận, tài trợ cho trẻ em ở vùng khó khăn học tiếng Trung và tiếng Việt. Tuy số tiền này đối với công ty không quá nhiều, nhưng mỗi lần nhận được thư cảm ơn của các em gửi đến, tôi đều cảm thấy, đây mới chính là ý nghĩa thực sự của sự tồn tại doanh nghiệp — không chỉ tạo ra giá trị, mà còn sưởi ấm xã hội.",
+      "vocab": [
+        {
+          "zh": "资助",
+          "pinyin": "zīzhù",
+          "vi": "tài trợ"
+        },
+        {
+          "zh": "利润",
+          "pinyin": "lìrùn",
+          "vi": "lợi nhuận"
+        },
+        {
+          "zh": "温暖",
+          "pinyin": "wēnnuǎn",
+          "vi": "sưởi ấm, ấm áp"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title_zh": "十年之约",
+      "title_vi": "Hẹn ước mười năm",
+      "text": "今年是我和小雨相识的第十年。我们一起回顾了这十年走过的路——从陌生的同事，到彼此扶持的夫妻，再到一双儿女的父母。小雨笑着说：“当年那个连中文都说不利索的小伙子，现在已经是一位成熟稳重的爸爸了。”",
+      "text_vi": "Năm nay là năm thứ mười tôi và Tiểu Vũ quen biết nhau. Chúng tôi cùng nhìn lại con đường mười năm đã đi qua — từ những đồng nghiệp xa lạ, đến vợ chồng nâng đỡ nhau, rồi trở thành cha mẹ của hai đứa con. Tiểu Vũ cười nói: \"Chàng trai năm đó nói tiếng Trung còn chưa trôi chảy, bây giờ đã là một người bố chín chắn, trưởng thành rồi.\"",
+      "vocab": [
+        {
+          "zh": "利索",
+          "pinyin": "lìsuo",
+          "vi": "trôi chảy, gọn gàng"
+        },
+        {
+          "zh": "成熟稳重",
+          "pinyin": "chéngshú wěnzhòng",
+          "vi": "chín chắn, điềm đạm"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title_zh": "搬进新办公室",
+      "title_vi": "Chuyển vào văn phòng mới",
+      "text": "去年，公司终于搬进了宽敞明亮的新办公室。站在落地窗前，望着窗外川流不息的车流，我不禁回想起当年那间租来的小屋。从无到有的每一步，都凝聚着团队每个人的心血，这份来之不易的成果，让我既自豪又感恩。",
+      "text_vi": "Năm ngoái, công ty cuối cùng cũng chuyển vào văn phòng mới rộng rãi sáng sủa. Đứng trước cửa kính sát đất, nhìn dòng xe cộ tấp nập ngoài cửa sổ, tôi bất giác nhớ lại căn phòng nhỏ đi thuê năm xưa. Từng bước đi từ con số không đều kết tinh tâm huyết của mỗi người trong đội ngũ; thành quả không dễ có được này khiến tôi vừa tự hào vừa biết ơn.",
+      "vocab": [
+        {
+          "zh": "落地窗",
+          "pinyin": "luòdìchuāng",
+          "vi": "cửa kính sát đất"
+        },
+        {
+          "zh": "川流不息",
+          "pinyin": "chuānliú-bùxī",
+          "vi": "(dòng xe) tấp nập không ngớt"
+        },
+        {
+          "zh": "凝聚",
+          "pinyin": "níngjù",
+          "vi": "kết tinh, ngưng tụ"
+        },
+        {
+          "zh": "心血",
+          "pinyin": "xīnxuè",
+          "vi": "tâm huyết"
+        },
+        {
+          "zh": "来之不易",
+          "pinyin": "láizhī-bùyì",
+          "vi": "không dễ mà có được"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title_zh": "牙牙学语",
+      "title_vi": "Bập bẹ tập nói",
+      "text": "我们最小的孩子刚满两岁，开始牙牙学语。有趣的是，他常常把中文和越南语混着说，一句话里一半中文一半越南语，逗得全家哈哈大笑。起初我有些焦虑，后来了解到这是双语儿童成长中的正常现象，便顺其自然，安心地陪伴他成长。",
+      "text_vi": "Đứa con út của chúng tôi vừa tròn hai tuổi, bắt đầu bập bẹ tập nói. Thú vị là bé thường nói trộn lẫn tiếng Trung và tiếng Việt, một câu nửa tiếng Trung nửa tiếng Việt, khiến cả nhà cười ầm lên. Lúc đầu tôi hơi lo lắng, sau đó biết được đây là hiện tượng bình thường trong quá trình lớn lên của trẻ song ngữ, nên cứ thuận theo tự nhiên và yên tâm đồng hành cùng con.",
+      "vocab": [
+        {
+          "zh": "牙牙学语",
+          "pinyin": "yáyá-xuéyǔ",
+          "vi": "bập bẹ tập nói"
+        },
+        {
+          "zh": "混",
+          "pinyin": "hùn",
+          "vi": "trộn lẫn"
+        },
+        {
+          "zh": "焦虑",
+          "pinyin": "jiāolǜ",
+          "vi": "lo âu"
+        },
+        {
+          "zh": "顺其自然",
+          "pinyin": "shùnqí-zìrán",
+          "vi": "thuận theo tự nhiên"
+        },
+        {
+          "zh": "陪伴",
+          "pinyin": "péibàn",
+          "vi": "đồng hành, ở bên"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "title_zh": "重游西安",
+      "title_vi": "Trở lại Tây An",
+      "text": "十年后，我们一家人重游西安。再次站在兵马俑面前，感受与当年大不相同。当年的我只是惊叹于它的壮观，如今却更能体会到背后那份跨越千年的工匠精神。历史不只是课本上的文字，更是需要用心去感知的传承。",
+      "text_vi": "Mười năm sau, cả nhà chúng tôi lại đến thăm Tây An. Đứng trước Binh mã dũng một lần nữa, cảm nhận khác xa năm xưa. Ngày ấy tôi chỉ kinh ngạc trước sự hùng vĩ của nó, giờ đây lại thấm thía hơn tinh thần thợ thủ công vượt qua ngàn năm đằng sau. Lịch sử không chỉ là những dòng chữ trong sách giáo khoa, mà còn là sự kế thừa cần dùng cả tấm lòng để cảm nhận.",
+      "vocab": [
+        {
+          "zh": "惊叹",
+          "pinyin": "jīngtàn",
+          "vi": "kinh ngạc thán phục"
+        },
+        {
+          "zh": "壮观",
+          "pinyin": "zhuàngguān",
+          "vi": "hùng vĩ"
+        },
+        {
+          "zh": "跨越",
+          "pinyin": "kuàyuè",
+          "vi": "vượt qua"
+        },
+        {
+          "zh": "工匠精神",
+          "pinyin": "gōngjiàng jīngshén",
+          "vi": "tinh thần nghệ nhân"
+        },
+        {
+          "zh": "传承",
+          "pinyin": "chuánchéng",
+          "vi": "kế thừa, truyền lại"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "title_zh": "信息爆炸",
+      "title_vi": "Bùng nổ thông tin",
+      "text": "如今，信息铺天盖地，我们每天被无数的新闻和短视频包围着。然而，信息越多，并不意味着认知越深刻。我学会了有意识地筛选内容，每天留出一段时间远离屏幕，让思绪沉淀下来，这反而让我变得更加专注、更有定力。",
+      "text_vi": "Ngày nay thông tin tràn ngập khắp nơi, mỗi ngày chúng ta bị vô số tin tức và video ngắn vây quanh. Thế nhưng thông tin càng nhiều không có nghĩa là nhận thức càng sâu sắc. Tôi học cách chủ động chọn lọc nội dung, mỗi ngày dành một khoảng thời gian rời xa màn hình để tâm trí lắng lại, điều này ngược lại khiến tôi tập trung hơn, vững vàng hơn.",
+      "vocab": [
+        {
+          "zh": "铺天盖地",
+          "pinyin": "pūtiān-gàidì",
+          "vi": "tràn ngập khắp nơi"
+        },
+        {
+          "zh": "筛选",
+          "pinyin": "shāixuǎn",
+          "vi": "sàng lọc"
+        },
+        {
+          "zh": "沉淀",
+          "pinyin": "chéndiàn",
+          "vi": "lắng đọng"
+        },
+        {
+          "zh": "专注",
+          "pinyin": "zhuānzhù",
+          "vi": "tập trung"
+        },
+        {
+          "zh": "定力",
+          "pinyin": "dìnglì",
+          "vi": "sự vững vàng, định lực"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "title_zh": "翻译的意义",
+      "title_vi": "Ý nghĩa của việc dịch thuật",
+      "text": "做了这么多年翻译，我越来越觉得，翻译不仅是语言的转换，更是文化的摆渡。同一句话，在不同的语境中可能蕴含着截然不同的情感。好的译者要像一座桥梁，既忠实于原文，又能让对岸的读者心领神会。",
+      "text_vi": "Làm dịch thuật bao nhiêu năm, tôi ngày càng cảm thấy dịch không chỉ là chuyển đổi ngôn ngữ mà còn là chuyến đò chở văn hóa. Cùng một câu nói, trong những ngữ cảnh khác nhau có thể hàm chứa những tình cảm hoàn toàn khác biệt. Một dịch giả giỏi phải như một cây cầu, vừa trung thành với nguyên văn, vừa khiến người đọc bờ bên kia thấu hiểu trọn vẹn.",
+      "vocab": [
+        {
+          "zh": "摆渡",
+          "pinyin": "bǎidù",
+          "vi": "chở đò, chuyển tải"
+        },
+        {
+          "zh": "语境",
+          "pinyin": "yǔjìng",
+          "vi": "ngữ cảnh"
+        },
+        {
+          "zh": "蕴含",
+          "pinyin": "yùnhán",
+          "vi": "hàm chứa"
+        },
+        {
+          "zh": "截然不同",
+          "pinyin": "jiérán-bùtóng",
+          "vi": "hoàn toàn khác nhau"
+        },
+        {
+          "zh": "心领神会",
+          "pinyin": "xīnlǐng-shénhuì",
+          "vi": "hiểu ngầm, thấu hiểu"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "title_zh": "准备HSK六级考试",
+      "title_vi": "Chuẩn bị thi HSK cấp 6",
+      "text": "虽然中文已经成了我日常生活和工作中不可或缺的语言，但我始终觉得，应该用一张正式的证书，为自己这段漫长的学习旅程画上一个圆满的句号。于是，我报名参加了HSK六级考试——这是最高等级的考试，也是对自己最好的交代。",
+      "text_vi": "Tuy tiếng Trung đã trở thành ngôn ngữ không thể thiếu trong cuộc sống và công việc hằng ngày của tôi, nhưng tôi vẫn luôn cảm thấy, nên dùng một tấm chứng chỉ chính thức, để khép lại hành trình học tập dài lâu này một cách trọn vẹn. Thế là, tôi đăng ký tham gia kỳ thi HSK cấp 6 — đây là kỳ thi cấp cao nhất, cũng là lời giải trình tốt nhất cho chính mình.",
+      "vocab": [
+        {
+          "zh": "不可或缺",
+          "pinyin": "bùkěhuòquē",
+          "vi": "không thể thiếu"
+        },
+        {
+          "zh": "圆满",
+          "pinyin": "yuánmǎn",
+          "vi": "trọn vẹn, viên mãn"
+        },
+        {
+          "zh": "交代",
+          "pinyin": "jiāodài",
+          "vi": "lời giải trình, báo cáo"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "title_zh": "写给过去的自己",
+      "title_vi": "Viết cho chính mình trong quá khứ",
+      "text": "亲爱的二十岁的我：还记得那个第一次踏上中国土地，紧张得连“我叫李明”都说得结结巴巴的年轻人吗？十年后的今天，我想告诉你：未来的路也许充满未知，但只要保持一颗真诚而坚定的心，勇敢地往前走，你终将收获一个远比想象中更精彩的人生。",
+      "text_vi": "Gửi tôi của năm hai mươi tuổi thân mến: còn nhớ chàng trai lần đầu đặt chân lên đất Trung Quốc, căng thẳng đến mức nói cả câu \"tôi tên là Lý Minh\" cũng còn lắp bắp không? Mười năm sau của ngày hôm nay, tôi muốn nói với bạn rằng: con đường phía trước có lẽ đầy những điều chưa biết, nhưng chỉ cần giữ một trái tim chân thành và kiên định, dũng cảm bước về phía trước, cuối cùng bạn sẽ gặt hái được một cuộc đời rực rỡ hơn nhiều so với tưởng tượng.",
+      "vocab": [
+        {
+          "zh": "结结巴巴",
+          "pinyin": "jiējiēbābā",
+          "vi": "lắp bắp, ấp úng"
+        },
+        {
+          "zh": "坚定",
+          "pinyin": "jiāndìng",
+          "vi": "kiên định"
+        },
+        {
+          "zh": "收获",
+          "pinyin": "shōuhuò",
+          "vi": "gặt hái, thu hoạch"
+        }
+      ]
+    }
+  ]
+}

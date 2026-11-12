@@ -1,0 +1,27 @@
+# Private key dùng để KÝ license — không bao giờ được commit/đóng gói vào app.
+# Chỉ tồn tại trên máy người bán, dùng bởi auth/generate_license_dialog.py.
+auth/.license_private_key
+
+__pycache__/
+*.pyc
+.venv/
+build/
+dist/
+.DS_Store
+
+# ffmpeg sidecar (lớn, tạo bằng app/scripts/fetch_ffmpeg.py)
+**/src-tauri/binaries/
+# Kho đề thi mã hoá (~2 GB) — không đưa lên git
+data/exampacks/
+# Build / phụ thuộc
+**/node_modules/
+**/src-tauri/target/
+app/dist/
+# Khoá riêng ký license (mọi nơi)
+**/.license_private_key
+
+# File build đóng gói sẵn (quá lớn, build lại từ source khi cần)
+release/
+
+# Lock file session cục bộ của Claude Code
+.claude/scheduled_tasks.lock

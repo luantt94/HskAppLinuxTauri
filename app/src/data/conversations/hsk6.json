@@ -1,0 +1,2945 @@
+{
+ "level": "HSK6",
+ "topics": [
+  {
+   "id": 1,
+   "zh": "人生观",
+   "vi": "Quan niệm nhân sinh",
+   "icon": "🌅",
+   "dialogues": [
+    {
+     "id": "1-1",
+     "title_zh": "成功的定义",
+     "title_vi": "Định nghĩa của thành công",
+     "scene_vi": "Hai người bạn lâu năm bàn về ý nghĩa của thành công.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，前几天同学聚会，大家聊起各自的境遇，我忽然意识到，我们对“成功”的理解已经截然不同了。",
+       "py": "Xiǎo hóng, qián jǐ tiān tóng xué jù huì, dà jiā liáo qǐ gè zì de jìng yù, wǒ hū rán yì shí dào, wǒ men duì “chéng gōng” de lǐ jiě yǐ jīng jié rán bù tóng le.",
+       "vi": "Tiểu Hồng, hôm trước họp lớp, mọi người kể về hoàn cảnh của mình, mình bỗng nhận ra cách hiểu về “thành công” của chúng ta đã hoàn toàn khác nhau."
+      },
+      {
+       "spk": 1,
+       "zh": "是啊，以前总以为升职加薪、功成名就才算成功，如今却觉得，能够从容地过自己想要的生活，也许才是真正的成功。",
+       "py": "Shì a, yǐ qián zǒng yǐ wéi shēng zhí jiā xīn, gōng chéng míng jiù cái suàn chéng gōng, rú jīn què jué de, néng gòu cóng róng de guò zì jǐ xiǎng yào de shēng huó, yě xǔ cái shì zhēn zhèng de chéng gōng.",
+       "vi": "Đúng vậy, trước đây luôn cho rằng thăng chức tăng lương, công thành danh toại mới là thành công, nay lại thấy có lẽ có thể ung dung sống cuộc sống mình muốn mới là thành công thực sự."
+      },
+      {
+       "spk": 0,
+       "zh": "可是在这个竞争激烈的社会里，要做到从容谈何容易？别人都在拼命往前跑，你停下来，难免会被甩在后面。",
+       "py": "Kě shì zài zhè ge jìng zhēng jī liè de shè huì lǐ, yào zuò dào cóng róng tán hé róng yì? Bié rén dōu zài pīn mìng wǎng qián pǎo, nǐ tíng xià lái, nán miǎn huì bèi shuǎi zài hòu miàn.",
+       "vi": "Nhưng trong xã hội cạnh tranh khốc liệt này, muốn ung dung nói dễ làm sao? Người khác đều liều mạng chạy về phía trước, bạn dừng lại thì khó tránh bị bỏ lại phía sau."
+      },
+      {
+       "spk": 1,
+       "zh": "问题恰恰在于，我们常常把别人的赛道当作自己的赛道。倘若方向本身就错了，跑得再快又有什么意义呢？",
+       "py": "Wèn tí qià qià zài yú, wǒ men cháng cháng bǎ bié rén de sài dào dàng zuò zì jǐ de sài dào. Tǎng ruò fāng xiàng běn shēn jiù cuò le, pǎo de zài kuài yòu yǒu shén me yì yì ne?",
+       "vi": "Vấn đề đúng ở chỗ, chúng ta thường coi đường đua của người khác là đường đua của mình. Nếu bản thân phương hướng đã sai, chạy nhanh đến đâu thì có ý nghĩa gì?"
+      },
+      {
+       "spk": 0,
+       "zh": "你这番话让我想起了庄子的一句名言：“人生天地之间，若白驹之过隙，忽然而已。”",
+       "py": "Nǐ zhè fān huà ràng wǒ xiǎng qǐ le zhuāng zi de yí jù míng yán: “rén shēng tiān dì zhī jiān, ruò bái jū zhī guò xì, hū rán ér yǐ. ”",
+       "vi": "Những lời này của bạn khiến mình nhớ đến một câu danh ngôn của Trang Tử: “Đời người giữa trời đất, như bóng ngựa trắng vụt qua khe cửa, chỉ trong chớp mắt mà thôi.”"
+      },
+      {
+       "spk": 1,
+       "zh": "对，生命如此短暂，与其被外界的评价牵着鼻子走，不如静下心来，认真思考什么才是自己真正在乎的东西。",
+       "py": "Duì, shēng mìng rú cǐ duǎn zàn, yǔ qí bèi wài jiè de píng jià qiān zhe bí zi zǒu, bù rú jìng xià xīn lái, rèn zhēn sī kǎo shén me cái shì zì jǐ zhēn zhèng zài hū de dōng xi.",
+       "vi": "Đúng, sinh mệnh ngắn ngủi như vậy, thay vì bị đánh giá bên ngoài dắt mũi, chi bằng tĩnh tâm suy nghĩ cẩn thận điều gì mới là thứ mình thực sự để tâm."
+      },
+      {
+       "spk": 0,
+       "zh": "说起来容易，但愿我们都能在忙碌之中，守住内心的那份宁静。",
+       "py": "Shuō qǐ lái róng yì, dàn yuàn wǒ men dōu néng zài máng lù zhī zhōng, shǒu zhù nèi xīn de nà fèn níng jìng.",
+       "vi": "Nói thì dễ, mong rằng chúng ta đều có thể giữ được sự yên tĩnh trong lòng giữa bộn bề."
+      },
+      {
+       "spk": 1,
+       "zh": "这也是我想对你说的，共勉吧。",
+       "py": "Zhè yě shì wǒ xiǎng duì nǐ shuō de, gòng miǎn ba.",
+       "vi": "Đó cũng là điều mình muốn nói với bạn, cùng khích lệ nhau nhé."
+      }
+     ]
+    },
+    {
+     "id": "1-2",
+     "title_zh": "取舍之间",
+     "title_vi": "Giữa được và mất",
+     "scene_vi": "Bàn về chuyện lựa chọn trong cuộc sống.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，我最近面临一个艰难的抉择：一份是薪水丰厚但整天加班的工作，另一份是收入平平却能兼顾家庭的职位。",
+       "py": "Xiǎo měi, wǒ zuì jìn miàn lín yí gè jiān nán de jué zé: yí fèn shì xīn shuǐ fēng hòu dàn zhěng tiān jiā bān de gōng zuò, lìng yí fèn shì shōu rù píng píng què néng jiān gù jiā tíng de zhí wèi.",
+       "vi": "Tiểu Mỹ, gần đây mình đang đứng trước một lựa chọn khó khăn: một bên là công việc lương hậu hĩnh nhưng suốt ngày tăng ca, một bên là vị trí thu nhập bình thường nhưng vẫn lo được cho gia đình."
+      },
+      {
+       "spk": 1,
+       "zh": "这种两难的处境，几乎每个人都会遇到。你更看重的是什么，不妨先问问自己的内心。",
+       "py": "Zhè zhǒng liǎng nán de chǔ jìng, jī hū měi gè rén dōu huì yù dào. Nǐ gèng kàn zhòng de shì shén me, bù fáng xiān wèn wèn zì jǐ de nèi xīn.",
+       "vi": "Cảnh khó xử kiểu này gần như ai cũng gặp. Bạn coi trọng điều gì hơn, không ngại hỏi lòng mình trước."
+      },
+      {
+       "spk": 0,
+       "zh": "理智告诉我应该选前者，因为机会难得，可是情感上我又舍不得错过孩子成长的每一个瞬间。",
+       "py": "Lǐ zhì gào sù wǒ yīng gāi xuǎn qián zhě, yīn wèi jī huì nán dé, kě shì qíng gǎn shàng wǒ yòu shě bù dé cuò guò hái zi chéng zhǎng de měi yí gè shùn jiān.",
+       "vi": "Lý trí bảo mình nên chọn cái trước vì cơ hội khó có, nhưng về mặt tình cảm mình lại không nỡ bỏ lỡ từng khoảnh khắc trưởng thành của con."
+      },
+      {
+       "spk": 1,
+       "zh": "古人说“鱼和熊掌不可兼得”，人生本来就是不断取舍的过程，关键是要明白自己愿意为什么而付出代价。",
+       "py": "Gǔ rén shuō “yú hé xióng zhǎng bù kě jiān dé”, rén shēng běn lái jiù shì bú duàn qǔ shě de guò chéng, guān jiàn shì yào míng bai zì jǐ yuàn yì wèi shén me ér fù chū dài jià.",
+       "vi": "Người xưa nói “cá và tay gấu không thể có cả hai”, cuộc đời vốn là quá trình không ngừng lựa chọn, mấu chốt là phải hiểu mình sẵn lòng trả giá vì điều gì."
+      },
+      {
+       "spk": 0,
+       "zh": "话是这么说，可万一做出了错误的选择，将来后悔莫及怎么办？",
+       "py": "Huà shì zhè me shuō, kě wàn yī zuò chū le cuò wù de xuǎn zé, jiāng lái hòu huǐ mò jí zěn me bàn?",
+       "vi": "Nói thì vậy, nhưng lỡ đưa ra lựa chọn sai, sau này hối hận không kịp thì sao?"
+      },
+      {
+       "spk": 1,
+       "zh": "没有任何选择是绝对正确的，所谓正确，往往是在做出选择以后，通过努力让它变得正确。",
+       "py": "Méi yǒu rèn hé xuǎn zé shì jué duì zhèng què de, suǒ wèi zhèng què, wǎng wǎng shì zài zuò chū xuǎn zé yǐ hòu, tōng guò nǔ lì ràng tā biàn de zhèng què.",
+       "vi": "Không có lựa chọn nào là tuyệt đối đúng, cái gọi là đúng thường là sau khi lựa chọn, thông qua nỗ lực khiến nó trở nên đúng."
+      },
+      {
+       "spk": 0,
+       "zh": "这番见解发人深省，我想我心里已经有了答案。",
+       "py": "Zhè fān jiàn jiě fā rén shēn xǐng, wǒ xiǎng wǒ xīn lǐ yǐ jīng yǒu le dá àn.",
+       "vi": "Quan điểm này khiến người ta suy ngẫm sâu sắc, mình nghĩ trong lòng mình đã có đáp án."
+      },
+      {
+       "spk": 1,
+       "zh": "不管你怎么选，我都支持你，毕竟只有你才最清楚自己想要什么。",
+       "py": "Bù guǎn nǐ zěn me xuǎn, wǒ dōu zhī chí nǐ, bì jìng zhǐ yǒu nǐ cái zuì qīng chǔ zì jǐ xiǎng yào shén me.",
+       "vi": "Bất kể bạn chọn thế nào, mình đều ủng hộ, dù sao chỉ có bạn mới rõ nhất bản thân muốn gì."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "zh": "经济全球化",
+   "vi": "Toàn cầu hoá kinh tế",
+   "icon": "🌐",
+   "dialogues": [
+    {
+     "id": "2-1",
+     "title_zh": "利与弊",
+     "title_vi": "Lợi và hại",
+     "scene_vi": "Hai chuyên gia thảo luận về toàn cầu hoá.",
+     "speakers": [
+      {
+       "name": "张教授",
+       "gender": "m"
+      },
+      {
+       "name": "李博士",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "李博士，近年来逆全球化的声音此起彼伏，您认为全球化的趋势会不会发生逆转？",
+       "py": "Lǐ bó shì, jìn nián lái nì quán qiú huà de shēng yīn cǐ qǐ bǐ fú, nín rèn wéi quán qiú huà de qū shì huì bú huì fā shēng nì zhuǎn?",
+       "vi": "Tiến sĩ Lý, những năm gần đây tiếng nói chống toàn cầu hoá nổi lên liên tục, theo chị xu thế toàn cầu hoá có bị đảo ngược không?"
+      },
+      {
+       "spk": 1,
+       "zh": "我认为短期内难免会有波折，但是从长远来看，经济的相互依存已经深入到各个领域，想要完全割裂几乎是不可能的。",
+       "py": "Wǒ rèn wéi duǎn qī nèi nán miǎn huì yǒu bō zhé, dàn shì cóng cháng yuǎn lái kàn, jīng jì de xiāng hù yī cún yǐ jīng shēn rù dào gè gè lǐng yù, xiǎng yào wán quán gē liè jī hū shì bù kě néng de.",
+       "vi": "Tôi cho rằng ngắn hạn khó tránh có trắc trở, nhưng xét lâu dài, sự phụ thuộc lẫn nhau của kinh tế đã thâm nhập vào mọi lĩnh vực, muốn cắt đứt hoàn toàn gần như là không thể."
+      },
+      {
+       "spk": 0,
+       "zh": "然而，全球化带来的利益分配并不均衡，发达国家的部分工人因为产业转移而失业，这也是引发不满的重要原因。",
+       "py": "Rán ér, quán qiú huà dài lái de lì yì fēn pèi bìng bù jūn héng, fā dá guó jiā de bù fèn gōng rén yīn wèi chǎn yè zhuǎn yí ér shī yè, zhè yě shì yǐn fā bù mǎn de zhòng yào yuán yīn.",
+       "vi": "Tuy nhiên, lợi ích do toàn cầu hoá mang lại phân phối không đồng đều, một bộ phận công nhân ở các nước phát triển vì chuyển dịch ngành nghề mà mất việc, đó cũng là nguyên nhân quan trọng gây ra bất mãn."
+      },
+      {
+       "spk": 1,
+       "zh": "您说得很对。全球化好比一把双刃剑，它在促进效率和创新的同时，也加剧了不平等。问题的关键在于如何通过制度设计，让受损的群体得到合理的补偿。",
+       "py": "Nín shuō de hěn duì. Quán qiú huà hǎo bǐ yì bǎ shuāng rèn jiàn, tā zài cù jìn xiào lǜ hé chuàng xīn de tóng shí, yě jiā jù le bù píng děng. Wèn tí de guān jiàn zài yú rú hé tōng guò zhì dù shè jì, ràng shòu sǔn de qún tǐ dé dào hé lǐ de bǔ cháng.",
+       "vi": "Ông nói rất đúng. Toàn cầu hoá giống như thanh kiếm hai lưỡi, trong lúc thúc đẩy hiệu suất và đổi mới, cũng làm trầm trọng thêm bất bình đẳng. Mấu chốt là làm sao thông qua thiết kế chế độ để nhóm bị thiệt hại được bồi thường hợp lý."
+      },
+      {
+       "spk": 0,
+       "zh": "那么，发展中国家在这个过程中又该如何自处呢？",
+       "py": "Nà me, fā zhǎn zhōng guó jiā zài zhè ge guò chéng zhōng yòu gāi rú hé zì chǔ ne?",
+       "vi": "Vậy các nước đang phát triển trong quá trình này nên tự xử thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "一方面要积极融入世界市场，学习先进的技术和管理经验；另一方面也要注重培养自己的核心竞争力，避免陷入对外部的过度依赖。",
+       "py": "Yì fāng miàn yào jī jí róng rù shì jiè shì chǎng, xué xí xiān jìn de jì shù hé guǎn lǐ jīng yàn; lìng yì fāng miàn yě yào zhù zhòng péi yǎng zì jǐ de hé xīn jìng zhēng lì, bì miǎn xiàn rù duì wài bù de guò dù yī lài.",
+       "vi": "Một mặt phải tích cực hoà nhập thị trường thế giới, học hỏi kỹ thuật và kinh nghiệm quản lý tiên tiến; mặt khác cũng phải chú trọng bồi dưỡng sức cạnh tranh cốt lõi của mình, tránh sa vào phụ thuộc quá mức vào bên ngoài."
+      },
+      {
+       "spk": 0,
+       "zh": "看来，在开放与自主之间寻找平衡，是每个国家都必须面对的课题。",
+       "py": "Kàn lái, zài kāi fàng yǔ zì zhǔ zhī jiān xún zhǎo píng héng, shì měi gè guó jiā dōu bì xū miàn duì de kè tí.",
+       "vi": "Xem ra, tìm kiếm cân bằng giữa mở cửa và tự chủ là đề tài mà mọi quốc gia đều phải đối mặt."
+      },
+      {
+       "spk": 1,
+       "zh": "没错，这需要智慧，更需要各国之间的合作与互信。",
+       "py": "Méi cuò, zhè xū yào zhì huì, gèng xū yào gè guó zhī jiān de hé zuò yǔ hù xìn.",
+       "vi": "Đúng vậy, điều này cần trí tuệ, càng cần sự hợp tác và tin cậy lẫn nhau giữa các nước."
+      }
+     ]
+    },
+    {
+     "id": "2-2",
+     "title_zh": "跨国企业的责任",
+     "title_vi": "Trách nhiệm của doanh nghiệp đa quốc gia",
+     "scene_vi": "Bàn về trách nhiệm xã hội của công ty xuyên quốc gia.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，你怎么看待一些跨国企业为了压低成本，把工厂迁往劳动力便宜的地区，却忽视当地的环境保护和工人权益？",
+       "py": "Xiǎo měi, nǐ zěn me kàn dài yì xiē kuà guó qǐ yè wèi le yā dī chéng běn, bǎ gōng chǎng qiān wǎng láo dòng lì pián yi de dì qū, què hū shì dāng dì de huán jìng bǎo hù hé gōng rén quán yì?",
+       "vi": "Tiểu Mỹ, bạn nhìn nhận thế nào về việc một số doanh nghiệp đa quốc gia vì ép giảm chi phí mà chuyển nhà máy sang nơi lao động rẻ, lại bỏ qua bảo vệ môi trường và quyền lợi công nhân địa phương?"
+      },
+      {
+       "spk": 1,
+       "zh": "这是一种短视的做法。企业追求利润无可厚非，但是如果以牺牲环境和人的尊严为代价，最终必然会损害自身的声誉。",
+       "py": "Zhè shì yì zhǒng duǎn shì de zuò fǎ. Qǐ yè zhuī qiú lì rùn wú kě hòu fēi, dàn shì rú guǒ yǐ xī shēng huán jìng hé rén de zūn yán wéi dài jià, zuì zhōng bì rán huì sǔn hài zì shēn de shēng yù.",
+       "vi": "Đó là cách làm thiển cận. Doanh nghiệp theo đuổi lợi nhuận là không có gì đáng trách, nhưng nếu lấy việc hy sinh môi trường và nhân phẩm làm cái giá, cuối cùng ắt tổn hại uy tín của chính mình."
+      },
+      {
+       "spk": 0,
+       "zh": "可是在激烈的市场竞争中，一旦哪家企业主动提高标准，成本上升，就可能被对手挤出市场。",
+       "py": "Kě shì zài jī liè de shì chǎng jìng zhēng zhōng, yí dàn nǎ jiā qǐ yè zhǔ dòng tí gāo biāo zhǔn, chéng běn shàng shēng, jiù kě néng bèi duì shǒu jǐ chū shì chǎng.",
+       "vi": "Nhưng trong cạnh tranh thị trường khốc liệt, một khi doanh nghiệp nào chủ động nâng tiêu chuẩn, chi phí tăng lên thì có thể bị đối thủ đẩy ra khỏi thị trường."
+      },
+      {
+       "spk": 1,
+       "zh": "这恰恰说明，仅靠企业的自觉是不够的，需要有国际层面的规则和监督，让所有企业都在同一条起跑线上竞争。",
+       "py": "Zhè qià qià shuō míng, jǐn kào qǐ yè de zì jué shì bú gòu de, xū yào yǒu guó jì céng miàn de guī zé hé jiān dū, ràng suǒ yǒu qǐ yè dōu zài tóng yì tiáo qǐ pǎo xiàn shàng jìng zhēng.",
+       "vi": "Điều đó chính là cho thấy, chỉ dựa vào sự tự giác của doanh nghiệp là chưa đủ, cần có quy tắc và giám sát ở tầm quốc tế, để mọi doanh nghiệp cạnh tranh trên cùng một vạch xuất phát."
+      },
+      {
+       "spk": 0,
+       "zh": "消费者的选择也能发挥作用吧？如果大家都拒绝购买不负责任的企业的产品，它们自然会改变。",
+       "py": "Xiāo fèi zhě de xuǎn zé yě néng fā huī zuò yòng ba? Rú guǒ dà jiā dōu jù jué gòu mǎi bú fù zé rèn de qǐ yè de chǎn pǐn, tā men zì rán huì gǎi biàn.",
+       "vi": "Lựa chọn của người tiêu dùng cũng có thể phát huy tác dụng nhỉ? Nếu mọi người đều từ chối mua sản phẩm của doanh nghiệp vô trách nhiệm, họ tự nhiên sẽ thay đổi."
+      },
+      {
+       "spk": 1,
+       "zh": "是的，消费者的“用脚投票”往往比任何说教都更有力量，关键是信息要公开透明。",
+       "py": "Shì de, xiāo fèi zhě de “yòng jiǎo tóu piào” wǎng wǎng bǐ rèn hé shuō jiào dōu gèng yǒu lì liàng, guān jiàn shì xìn xī yào gōng kāi tòu míng.",
+       "vi": "Đúng vậy, “bỏ phiếu bằng chân” của người tiêu dùng thường có sức mạnh hơn bất kỳ lời thuyết giáo nào, mấu chốt là thông tin phải công khai minh bạch."
+      },
+      {
+       "spk": 0,
+       "zh": "看来企业、政府和公众三方都要各尽其责，才能形成良性的循环。",
+       "py": "Kàn lái qǐ yè, zhèng fǔ hé gōng zhòng sān fāng dōu yào gè jǐn qí zé, cái néng xíng chéng liáng xìng de xún huán.",
+       "vi": "Xem ra doanh nghiệp, chính phủ và công chúng ba bên đều phải làm tròn trách nhiệm mới tạo nên vòng tuần hoàn lành mạnh."
+      },
+      {
+       "spk": 1,
+       "zh": "正是如此，责任不是负担，而是企业长远发展的基石。",
+       "py": "Zhèng shì rú cǐ, zé rèn bú shì fù dān, ér shì qǐ yè cháng yuǎn fā zhǎn de jī shí.",
+       "vi": "Chính là như vậy, trách nhiệm không phải gánh nặng mà là nền tảng cho sự phát triển lâu dài của doanh nghiệp."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "zh": "文学",
+   "vi": "Văn học & phê bình",
+   "icon": "📜",
+   "dialogues": [
+    {
+     "id": "3-1",
+     "title_zh": "经典的价值",
+     "title_vi": "Giá trị của kinh điển",
+     "scene_vi": "Hai người bàn về việc đọc tác phẩm kinh điển.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，如今短视频、快餐式的阅读铺天盖地，你觉得人们还有必要去读那些厚重的经典作品吗？",
+       "py": "Xiǎo hóng, rú jīn duǎn shì pín, kuài cān shì de yuè dú pū tiān gài dì, nǐ jué de rén men hái yǒu bì yào qù dú nà xiē hòu zhòng de jīng diǎn zuò pǐn ma?",
+       "vi": "Tiểu Hồng, ngày nay video ngắn và kiểu đọc ăn liền tràn ngập khắp nơi, bạn thấy mọi người còn cần thiết đọc những tác phẩm kinh điển đồ sộ không?"
+      },
+      {
+       "spk": 1,
+       "zh": "我认为非常有必要。经典之所以历久弥新，是因为它们触及了人性最深处的东西，无论时代如何变迁，这些问题始终存在。",
+       "py": "Wǒ rèn wéi fēi cháng yǒu bì yào. Jīng diǎn zhī suǒ yǐ lì jiǔ mí xīn, shì yīn wèi tā men chù jí le rén xìng zuì shēn chù de dōng xi, wú lùn shí dài rú hé biàn qiān, zhè xiē wèn tí shǐ zhōng cún zài.",
+       "vi": "Mình cho rằng rất cần thiết. Kinh điển sở dĩ càng lâu càng mới là vì chúng chạm đến những điều sâu thẳm nhất của nhân tính, bất kể thời đại đổi thay thế nào, những vấn đề này vẫn luôn tồn tại."
+      },
+      {
+       "spk": 0,
+       "zh": "可是对于忙碌的现代人来说，要静下心来读完一部几十万字的小说，实在是一种奢侈。",
+       "py": "Kě shì duì yú máng lù de xiàn dài rén lái shuō, yào jìng xià xīn lái dú wán yí bù jǐ shí wàn zì de xiǎo shuō, shí zài shì yì zhǒng shē chǐ.",
+       "vi": "Nhưng đối với người hiện đại bận rộn, tĩnh tâm đọc hết một cuốn tiểu thuyết mấy trăm nghìn chữ thật sự là một thứ xa xỉ."
+      },
+      {
+       "spk": 1,
+       "zh": "正因为如此，更应该把它当作对抗浮躁的一种方式。读经典不是为了获取信息，而是为了培养深度思考的能力。",
+       "py": "Zhèng yīn wèi rú cǐ, gèng yīng gāi bǎ tā dàng zuò duì kàng fú zào de yì zhǒng fāng shì. Dú jīng diǎn bú shì wèi le huò qǔ xìn xī, ér shì wèi le péi yǎng shēn dù sī kǎo de néng lì.",
+       "vi": "Chính vì vậy càng nên coi nó là một cách đối kháng sự nông nổi. Đọc kinh điển không phải để thu nhận thông tin, mà để bồi dưỡng năng lực tư duy chiều sâu."
+      },
+      {
+       "spk": 0,
+       "zh": "你说得有道理，我读《红楼梦》的时候，每次重读都有新的感悟，年龄不同，体会也不同。",
+       "py": "Nǐ shuō de yǒu dào lǐ, wǒ dú《hóng lóu mèng》de shí hou, měi cì chóng dú dōu yǒu xīn de gǎn wù, nián líng bù tóng, tǐ huì yě bù tóng.",
+       "vi": "Bạn nói có lý, lúc mình đọc 《Hồng Lâu Mộng》, mỗi lần đọc lại đều có cảm ngộ mới, tuổi khác nhau, cảm nhận cũng khác."
+      },
+      {
+       "spk": 1,
+       "zh": "这就是经典的魅力，它像一面镜子，照出的是读者自己。",
+       "py": "Zhè jiù shì jīng diǎn de mèi lì, tā xiàng yí miàn jìng zi, zhào chū de shì dú zhě zì jǐ.",
+       "vi": "Đó chính là sức hấp dẫn của kinh điển, nó như một tấm gương, soi ra chính người đọc."
+      },
+      {
+       "spk": 0,
+       "zh": "那么，对于初学者，你有什么建议吗？",
+       "py": "Nà me, duì yú chū xué zhě, nǐ yǒu shén me jiàn yì ma?",
+       "vi": "Vậy với người mới bắt đầu, bạn có lời khuyên nào không?"
+      },
+      {
+       "spk": 1,
+       "zh": "不必急于求成，可以先从篇幅短小、语言浅近的作品入手，培养兴趣，再逐步深入。",
+       "py": "Bú bì jí yú qiú chéng, kě yǐ xiān cóng piān fú duǎn xiǎo, yǔ yán qiǎn jìn de zuò pǐn rù shǒu, péi yǎng xìng qù, zài zhú bù shēn rù.",
+       "vi": "Không cần nóng vội, có thể bắt đầu từ những tác phẩm ngắn gọn, ngôn ngữ giản dị, nuôi dưỡng hứng thú rồi dần đi sâu."
+      }
+     ]
+    },
+    {
+     "id": "3-2",
+     "title_zh": "好的小说是什么样的",
+     "title_vi": "Tiểu thuyết hay là thế nào",
+     "scene_vi": "Bình luận về một tiểu thuyết mới.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，那部刚获奖的长篇小说你看完了吗？评论界对它的评价似乎褒贬不一。",
+       "py": "Xiǎo měi, nà bù gāng huò jiǎng de cháng piān xiǎo shuō nǐ kàn wán le ma? Píng lùn jiè duì tā de píng jià sì hū bāo biǎn bù yī.",
+       "vi": "Tiểu Mỹ, bộ tiểu thuyết dài vừa đoạt giải đó bạn đọc xong chưa? Giới phê bình đánh giá về nó dường như khen chê không đồng nhất."
+      },
+      {
+       "spk": 1,
+       "zh": "看完了。我个人觉得它的叙事结构很有创意，打破了传统的时间线，但是也正因如此，有的读者会觉得晦涩难懂。",
+       "py": "Kàn wán le. Wǒ gè rén jué de tā de xù shì jié gòu hěn yǒu chuàng yì, dǎ pò le chuán tǒng de shí jiān xiàn, dàn shì yě zhèng yīn rú cǐ, yǒu de dú zhě huì jué de huì sè nán dǒng.",
+       "vi": "Đọc xong rồi. Cá nhân mình thấy kết cấu tự sự của nó rất sáng tạo, phá vỡ đường thời gian truyền thống, nhưng cũng chính vì vậy, có độc giả cảm thấy khó hiểu tối nghĩa."
+      },
+      {
+       "spk": 0,
+       "zh": "我倒觉得，一部好的作品不应该只迎合读者的口味，而应该有挑战读者、拓展他们视野的勇气。",
+       "py": "Wǒ dào jué de, yí bù hǎo de zuò pǐn bù yīng gāi zhǐ yíng hé dú zhě de kǒu wèi, ér yīng gāi yǒu tiǎo zhàn dú zhě, tuò zhǎn tā men shì yě de yǒng qì.",
+       "vi": "Mình lại thấy, một tác phẩm hay không nên chỉ chiều theo khẩu vị độc giả, mà nên có dũng khí thách thức độc giả, mở rộng tầm nhìn của họ."
+      },
+      {
+       "spk": 1,
+       "zh": "你的观点我基本赞同，不过作家也不能走向另一个极端，为了追求形式上的新奇而忽略了内容的深度。",
+       "py": "Nǐ de guān diǎn wǒ jī běn zàn tóng, bú guò zuò jiā yě bù néng zǒu xiàng lìng yí gè jí duān, wèi le zhuī qiú xíng shì shàng de xīn qí ér hū lüè le nèi róng de shēn dù.",
+       "vi": "Quan điểm của bạn mình cơ bản tán thành, nhưng nhà văn cũng không thể đi đến thái cực khác, vì theo đuổi sự mới lạ về hình thức mà xem nhẹ chiều sâu nội dung."
+      },
+      {
+       "spk": 0,
+       "zh": "这部小说在人物塑造上，我认为是成功的，尤其是那位母亲的形象，既平凡又伟大，令人难以忘怀。",
+       "py": "Zhè bù xiǎo shuō zài rén wù sù zào shàng, wǒ rèn wéi shì chéng gōng de, yóu qí shì nà wèi mǔ qīn de xíng xiàng, jì píng fán yòu wěi dà, lìng rén nán yǐ wàng huái.",
+       "vi": "Về xây dựng nhân vật, mình cho rằng tiểu thuyết này thành công, nhất là hình tượng người mẹ, vừa bình thường vừa vĩ đại, khiến người ta khó quên."
+      },
+      {
+       "spk": 1,
+       "zh": "没错，作者用大量的细节刻画了她的内心世界，没有说教，却让人感同身受。",
+       "py": "Méi cuò, zuò zhě yòng dà liàng de xì jié kè huà le tā de nèi xīn shì jiè, méi yǒu shuō jiào, què ràng rén gǎn tóng shēn shòu.",
+       "vi": "Đúng vậy, tác giả dùng rất nhiều chi tiết khắc hoạ thế giới nội tâm của bà, không thuyết giáo mà vẫn khiến người ta đồng cảm."
+      },
+      {
+       "spk": 0,
+       "zh": "看来，评价一部作品，不能只看热度，还要看它能否经得起时间的考验。",
+       "py": "Kàn lái, píng jià yí bù zuò pǐn, bù néng zhǐ kàn rè dù, hái yào kàn tā néng fǒu jīng de qǐ shí jiān de kǎo yàn.",
+       "vi": "Xem ra, đánh giá một tác phẩm không thể chỉ nhìn độ nóng, còn phải xem nó có chịu được thử thách của thời gian không."
+      },
+      {
+       "spk": 1,
+       "zh": "是啊，真正的好书，是读完之后依然在你心里留下回响的书。",
+       "py": "Shì a, zhēn zhèng de hǎo shū, shì dú wán zhī hòu yī rán zài nǐ xīn lǐ liú xià huí xiǎng de shū.",
+       "vi": "Đúng vậy, sách hay thực sự là cuốn sau khi đọc xong vẫn để lại âm vang trong lòng bạn."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "zh": "科学研究",
+   "vi": "Nghiên cứu khoa học",
+   "icon": "🔬",
+   "dialogues": [
+    {
+     "id": "4-1",
+     "title_zh": "基础研究的意义",
+     "title_vi": "Ý nghĩa của nghiên cứu cơ bản",
+     "scene_vi": "Nhà khoa học trả lời phỏng vấn về nghiên cứu thuần tuý.",
+     "speakers": [
+      {
+       "name": "记者",
+       "gender": "f"
+      },
+      {
+       "name": "陈院士",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "陈院士，很多人认为基础研究短期内看不到经济效益，投入巨大却回报遥遥无期，您如何看待这种观点？",
+       "py": "Chén yuàn shì, hěn duō rén rèn wéi jī chǔ yán jiū duǎn qī nèi kàn bú dào jīng jì xiào yì, tóu rù jù dà què huí bào yáo yáo wú qī, nín rú hé kàn dài zhè zhǒng guān diǎn?",
+       "vi": "Viện sĩ Trần, nhiều người cho rằng nghiên cứu cơ bản trong ngắn hạn không thấy hiệu quả kinh tế, đầu tư khổng lồ mà hồi báo xa vời, ông nhìn nhận quan điểm này thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "这种观点是短视的。基础研究好比大树的根，平时看不见，但它决定了树能长多高、多壮。",
+       "py": "Zhè zhǒng guān diǎn shì duǎn shì de. Jī chǔ yán jiū hǎo bǐ dà shù de gēn, píng shí kàn bú jiàn, dàn tā jué dìng le shù néng zhǎng duō gāo, duō zhuàng.",
+       "vi": "Quan điểm này là thiển cận. Nghiên cứu cơ bản như rễ của cây đại thụ, thường ngày không nhìn thấy, nhưng nó quyết định cây có thể cao bao nhiêu, khoẻ bao nhiêu."
+      },
+      {
+       "spk": 0,
+       "zh": "能否举个具体的例子来说明？",
+       "py": "Néng fǒu jǔ gè jù tǐ de lì zi lái shuō míng?",
+       "vi": "Ông có thể nêu ví dụ cụ thể để minh hoạ không?"
+      },
+      {
+       "spk": 1,
+       "zh": "比如我们今天离不开的互联网和卫星定位，追根溯源，都建立在几十年前物理学家对基本规律的探索之上，当时没有人想到它们会改变世界。",
+       "py": "Bǐ rú wǒ men jīn tiān lí bù kāi de hù lián wǎng hé wèi xīng dìng wèi, zhuī gēn sù yuán, dōu jiàn lì zài jǐ shí nián qián wù lǐ xué jiā duì jī běn guī lǜ de tàn suǒ zhī shàng, dāng shí méi yǒu rén xiǎng dào tā men huì gǎi biàn shì jiè.",
+       "vi": "Ví dụ internet và định vị vệ tinh mà ngày nay chúng ta không thể thiếu, truy nguồn gốc đều dựa trên sự khám phá quy luật cơ bản của các nhà vật lý mấy chục năm trước, khi ấy không ai nghĩ chúng sẽ thay đổi thế giới."
+      },
+      {
+       "spk": 0,
+       "zh": "那么，要让科研人员安心从事长期研究，应该创造什么样的环境？",
+       "py": "Nà me, yào ràng kē yán rén yuán ān xīn cóng shì cháng qī yán jiū, yīng gāi chuàng zào shén me yàng de huán jìng?",
+       "vi": "Vậy để các nhà nghiên cứu yên tâm theo đuổi nghiên cứu dài hạn, cần tạo ra môi trường thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "首先是稳定的支持，不能让他们为了发论文、拿项目而疲于奔命；其次是宽容失败，科学探索本来就充满不确定性。",
+       "py": "Shǒu xiān shì wěn dìng de zhī chí, bù néng ràng tā men wèi le fā lùn wén, ná xiàng mù ér pí yú bēn mìng; qí cì shì kuān róng shī bài, kē xué tàn suǒ běn lái jiù chōng mǎn bú què dìng xìng.",
+       "vi": "Trước hết là sự hỗ trợ ổn định, không thể để họ vì công bố bài báo, giành đề tài mà chạy vạy kiệt sức; kế đến là khoan dung với thất bại, thăm dò khoa học vốn đầy bất định."
+      },
+      {
+       "spk": 0,
+       "zh": "您对年轻的科研工作者有什么寄语？",
+       "py": "Nín duì nián qīng de kē yán gōng zuò zhě yǒu shén me jì yǔ?",
+       "vi": "Ông có lời nhắn gửi nào cho các nhà nghiên cứu trẻ?"
+      },
+      {
+       "spk": 1,
+       "zh": "要有“板凳要坐十年冷”的耐心，也要有敢于质疑权威的勇气，保持好奇心，才是创新的源泉。",
+       "py": "Yào yǒu “bǎn dèng yào zuò shí nián lěng” de nài xīn, yě yào yǒu gǎn yú zhì yí quán wēi de yǒng qì, bǎo chí hào qí xīn, cái shì chuàng xīn de yuán quán.",
+       "vi": "Phải có sự kiên nhẫn “ngồi ghế lạnh mười năm”, cũng phải có dũng khí dám nghi ngờ quyền uy, giữ lòng hiếu kỳ mới là nguồn cội của sáng tạo."
+      }
+     ]
+    },
+    {
+     "id": "4-2",
+     "title_zh": "科研诚信",
+     "title_vi": "Liêm chính khoa học",
+     "scene_vi": "Hai nghiên cứu sinh bàn về gian lận học thuật.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，听说有一篇颇具影响的论文被撤稿了，原因是数据造假，这件事在学术圈引起了轩然大波。",
+       "py": "Xiǎo hóng, tīng shuō yǒu yì piān pǒ jù yǐng xiǎng de lùn wén bèi chè gǎo le, yuán yīn shì shù jù zào jiǎ, zhè jiàn shì zài xué shù quān yǐn qǐ le xuān rán dà bō.",
+       "vi": "Tiểu Hồng, nghe nói một bài báo khá có ảnh hưởng bị rút lại, nguyên nhân là làm giả số liệu, chuyện này gây xôn xao lớn trong giới học thuật."
+      },
+      {
+       "spk": 1,
+       "zh": "我也看到了，真是令人痛心。学术造假不仅是个人的道德问题，更会误导后来的研究，浪费大量的资源。",
+       "py": "Wǒ yě kàn dào le, zhēn shì lìng rén tòng xīn. Xué shù zào jiǎ bù jǐn shì gè rén de dào dé wèn tí, gèng huì wù dǎo hòu lái de yán jiū, làng fèi dà liàng de zī yuán.",
+       "vi": "Mình cũng thấy rồi, thật đau lòng. Gian lận học thuật không chỉ là vấn đề đạo đức cá nhân, mà còn làm sai lệch các nghiên cứu về sau, lãng phí rất nhiều nguồn lực."
+      },
+      {
+       "spk": 0,
+       "zh": "你认为根源在哪里？是研究者的品行问题，还是评价制度出了偏差？",
+       "py": "Nǐ rèn wéi gēn yuán zài nǎ li? Shì yán jiū zhě de pǐn xíng wèn tí, hái shì píng jià zhì dù chū le piān chā?",
+       "vi": "Bạn cho rằng căn nguyên ở đâu? Là vấn đề phẩm hạnh của người nghiên cứu hay chế độ đánh giá có sai lệch?"
+      },
+      {
+       "spk": 1,
+       "zh": "我认为两者兼有。过分看重论文数量和发表的期刊级别，会迫使一些人铤而走险，因此评价体系需要更加注重研究的实际质量。",
+       "py": "Wǒ rèn wéi liǎng zhě jiān yǒu. Guò fèn kàn zhòng lùn wén shù liàng hé fā biǎo de qī kān jí bié, huì pò shǐ yì xiē rén tǐng ér zǒu xiǎn, yīn cǐ píng jià tǐ xì xū yào gèng jiā zhù zhòng yán jiū de shí jì zhì liàng.",
+       "vi": "Mình cho rằng cả hai. Quá coi trọng số lượng bài báo và cấp độ tạp chí đăng tải sẽ ép một số người liều lĩnh, vì vậy hệ thống đánh giá cần chú trọng hơn chất lượng thực tế của nghiên cứu."
+      },
+      {
+       "spk": 0,
+       "zh": "同时，对违规者也要严肃处理，才能起到震慑作用。",
+       "py": "Tóng shí, duì wéi guī zhě yě yào yán sù chǔ lǐ, cái néng qǐ dào zhèn shè zuò yòng.",
+       "vi": "Đồng thời với người vi phạm cũng phải xử lý nghiêm khắc, mới có tác dụng răn đe."
+      },
+      {
+       "spk": 1,
+       "zh": "对，学术的生命在于真实，一旦失去了诚信，整个学术共同体的信任基础就会崩塌。",
+       "py": "Duì, xué shù de shēng mìng zài yú zhēn shí, yí dàn shī qù le chéng xìn, zhěng gè xué shù gòng tóng tǐ de xìn rèn jī chǔ jiù huì bēng tā.",
+       "vi": "Đúng, sinh mệnh của học thuật nằm ở sự chân thực, một khi mất đi liêm chính, nền tảng tin cậy của cả cộng đồng học thuật sẽ sụp đổ."
+      },
+      {
+       "spk": 0,
+       "zh": "我们作为年轻的研究者，更应该引以为戒，从自己做起。",
+       "py": "Wǒ men zuò wéi nián qīng de yán jiū zhě, gèng yīng gāi yǐn yǐ wéi jiè, cóng zì jǐ zuò qǐ.",
+       "vi": "Chúng ta là nhà nghiên cứu trẻ, càng nên lấy đó làm bài học, bắt đầu từ chính mình."
+      },
+      {
+       "spk": 1,
+       "zh": "是啊，宁可成果慢一点儿，也要经得起检验。",
+       "py": "Shì a, nìng kě chéng guǒ màn yì diǎnr, yě yào jīng de qǐ jiǎn yàn.",
+       "vi": "Phải, thà thành quả chậm một chút, cũng phải chịu được kiểm nghiệm."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "zh": "法律与道德",
+   "vi": "Pháp luật & đạo đức",
+   "icon": "⚖️",
+   "dialogues": [
+    {
+     "id": "5-1",
+     "title_zh": "见义勇为",
+     "title_vi": "Dũng cảm làm việc nghĩa",
+     "scene_vi": "Tranh luận về trách nhiệm cứu giúp người gặp nạn.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，前段时间有个新闻，一位老人摔倒在街上，路过的人都不敢上前搀扶，生怕被讹诈，你怎么看？",
+       "py": "Xiǎo měi, qián duàn shí jiān yǒu gè xīn wén, yí wèi lǎo rén shuāi dǎo zài jiē shàng, lù guò de rén dōu bù gǎn shàng qián chān fú, shēng pà bèi é zhà, nǐ zěn me kàn?",
+       "vi": "Tiểu Mỹ, thời gian trước có một tin tức, một cụ già ngã trên phố, người đi đường đều không dám tiến lên đỡ, sợ bị vu oan tống tiền, bạn nghĩ sao?"
+      },
+      {
+       "spk": 1,
+       "zh": "这种现象折射出了社会信任的缺失。人们并非天生冷漠，而是担心善意得不到保护，反而惹上麻烦。",
+       "py": "Zhè zhǒng xiàn xiàng zhé shè chū le shè huì xìn rèn de quē shī. Rén men bìng fēi tiān shēng lěng mò, ér shì dān xīn shàn yì de bú dào bǎo hù, fǎn ér rě shàng má fán.",
+       "vi": "Hiện tượng này phản ánh sự thiếu hụt niềm tin xã hội. Con người không phải bẩm sinh lạnh lùng, mà là lo thiện ý không được bảo vệ, ngược lại chuốc phiền toái."
+      },
+      {
+       "spk": 0,
+       "zh": "所以光靠道德谴责是不够的，法律应该为见义勇为者提供切实的保障。",
+       "py": "Suǒ yǐ guāng kào dào dé qiǎn zé shì bú gòu de, fǎ lǜ yīng gāi wèi jiàn yì yǒng wéi zhě tí gōng qiè shí de bǎo zhàng.",
+       "vi": "Vì vậy chỉ dựa vào lên án đạo đức là chưa đủ, pháp luật nên cung cấp bảo đảm thực chất cho người dũng cảm làm việc nghĩa."
+      },
+      {
+       "spk": 1,
+       "zh": "目前已经有了“好人法”，明确规定救助人在紧急情况下的善意行为造成损害时，不必承担责任，这是一大进步。",
+       "py": "Mù qián yǐ jīng yǒu le “hǎo rén fǎ”, míng què guī dìng jiù zhù rén zài jǐn jí qíng kuàng xià de shàn yì xíng wéi zào chéng sǔn hài shí, bú bì chéng dān zé rèn, zhè shì yí dà jìn bù.",
+       "vi": "Hiện nay đã có “luật người tốt”, quy định rõ khi người cứu giúp trong tình huống khẩn cấp có hành vi thiện ý gây ra thiệt hại thì không phải chịu trách nhiệm, đây là một bước tiến lớn."
+      },
+      {
+       "spk": 0,
+       "zh": "不过法律只能划定底线，真正让社会变得温暖，还要靠每个人内心的道德自觉。",
+       "py": "Bú guò fǎ lǜ zhǐ néng huà dìng dǐ xiàn, zhēn zhèng ràng shè huì biàn de wēn nuǎn, hái yào kào měi gè rén nèi xīn de dào dé zì jué.",
+       "vi": "Nhưng pháp luật chỉ có thể vạch ra giới hạn cuối cùng, thật sự khiến xã hội ấm áp còn phải dựa vào sự tự giác đạo đức trong lòng mỗi người."
+      },
+      {
+       "spk": 1,
+       "zh": "没错，法律与道德好比车的两个轮子，缺一不可，相辅相成。",
+       "py": "Méi cuò, fǎ lǜ yǔ dào dé hǎo bǐ chē de liǎng gè lún zi, quē yí bù kě, xiāng fǔ xiāng chéng.",
+       "vi": "Đúng vậy, pháp luật và đạo đức như hai bánh của một chiếc xe, thiếu một không được, bổ trợ cho nhau."
+      },
+      {
+       "spk": 0,
+       "zh": "我想，如果每个人都能在力所能及的范围内伸出援手，这个世界会变得更美好。",
+       "py": "Wǒ xiǎng, rú guǒ měi gè rén dōu néng zài lì suǒ néng jí de fàn wéi nèi shēn chū yuán shǒu, zhè ge shì jiè huì biàn de gèng měi hǎo.",
+       "vi": "Mình nghĩ, nếu mỗi người đều có thể đưa tay giúp đỡ trong phạm vi khả năng, thế giới này sẽ tốt đẹp hơn."
+      },
+      {
+       "spk": 1,
+       "zh": "与其等待别人先行动，不如从自己开始，做一个值得被信任的人。",
+       "py": "Yǔ qí děng dài bié rén xiān xíng dòng, bù rú cóng zì jǐ kāi shǐ, zuò yí gè zhí dé bèi xìn rèn de rén.",
+       "vi": "Thay vì đợi người khác hành động trước, chi bằng bắt đầu từ mình, làm một người đáng được tin cậy."
+      }
+     ]
+    },
+    {
+     "id": "5-2",
+     "title_zh": "隐私与安全",
+     "title_vi": "Riêng tư & an ninh",
+     "scene_vi": "Bàn về việc lắp camera giám sát công cộng.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，如今城市里的监控摄像头越来越多，有人认为这有助于维护治安，有人却担心侵犯个人隐私，你持什么态度？",
+       "py": "Xiǎo hóng, rú jīn chéng shì lǐ de jiān kòng shè xiàng tóu yuè lái yuè duō, yǒu rén rèn wéi zhè yǒu zhù yú wéi hù zhì ān, yǒu rén què dān xīn qīn fàn gè rén yǐn sī, nǐ chí shén me tài dù?",
+       "vi": "Tiểu Hồng, ngày nay camera giám sát trong thành phố ngày càng nhiều, có người cho rằng điều này giúp giữ gìn trị an, có người lại lo xâm phạm quyền riêng tư cá nhân, bạn giữ thái độ nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "我认为要在两者之间寻求平衡。监控确实能震慑犯罪，也帮助警方破获了不少案件，这是不容否认的事实。",
+       "py": "Wǒ rèn wéi yào zài liǎng zhě zhī jiān xún qiú píng héng. Jiān kòng què shí néng zhèn shè fàn zuì, yě bāng zhù jǐng fāng pò huò le bù shǎo àn jiàn, zhè shì bù róng fǒu rèn de shì shí.",
+       "vi": "Mình cho rằng phải tìm sự cân bằng giữa hai bên. Giám sát đúng là có thể răn đe tội phạm, cũng giúp cảnh sát phá được không ít vụ án, đó là sự thật không thể phủ nhận."
+      },
+      {
+       "spk": 0,
+       "zh": "可是一旦这些数据被滥用或者泄露，后果不堪设想。",
+       "py": "Kě shì yí dàn zhè xiē shù jù bèi làn yòng huò zhě xiè lòu, hòu guǒ bù kān shè xiǎng.",
+       "vi": "Nhưng một khi dữ liệu này bị lạm dụng hoặc rò rỉ, hậu quả thật khó lường."
+      },
+      {
+       "spk": 1,
+       "zh": "所以关键在于监管：哪些地方可以安装，数据由谁保管，保存多长时间，什么情况下可以调取，都应该有明确而严格的规定。",
+       "py": "Suǒ yǐ guān jiàn zài yú jiān guǎn: nǎ xiē dì fang kě yǐ ān zhuāng, shù jù yóu shuí bǎo guǎn, bǎo cún duō cháng shí jiān, shén me qíng kuàng xià kě yǐ diào qǔ, dōu yīng gāi yǒu míng què ér yán gé de guī dìng.",
+       "vi": "Vì vậy mấu chốt là ở giám sát quản lý: nơi nào được lắp đặt, ai lưu giữ dữ liệu, lưu bao lâu, trong tình huống nào được truy xuất, đều phải có quy định rõ ràng và nghiêm ngặt."
+      },
+      {
+       "spk": 0,
+       "zh": "公众的知情权也不能忽视，大家有权知道自己的信息被如何使用。",
+       "py": "Gōng zhòng de zhī qíng quán yě bù néng hū shì, dà jiā yǒu quán zhī dao zì jǐ de xìn xī bèi rú hé shǐ yòng.",
+       "vi": "Quyền được biết của công chúng cũng không thể xem nhẹ, mọi người có quyền biết thông tin của mình được sử dụng thế nào."
+      },
+      {
+       "spk": 1,
+       "zh": "没错，只有在公开透明的前提下，监控才能真正赢得公众的理解和支持。",
+       "py": "Méi cuò, zhǐ yǒu zài gōng kāi tòu míng de qián tí xià, jiān kòng cái néng zhēn zhèng yíng dé gōng zhòng de lǐ jiě hé zhī chí.",
+       "vi": "Đúng vậy, chỉ trên tiền đề công khai minh bạch, giám sát mới thực sự giành được sự thông cảm và ủng hộ của công chúng."
+      },
+      {
+       "spk": 0,
+       "zh": "安全固然重要，但是自由和尊严同样珍贵，不能以牺牲一方为代价来换取另一方。",
+       "py": "Ān quán gù rán zhòng yào, dàn shì zì yóu hé zūn yán tóng yàng zhēn guì, bù néng yǐ xī shēng yì fāng wéi dài jià lái huàn qǔ lìng yì fāng.",
+       "vi": "An ninh cố nhiên quan trọng, nhưng tự do và nhân phẩm cũng quý giá như vậy, không thể lấy hy sinh bên này để đổi lấy bên kia."
+      },
+      {
+       "spk": 1,
+       "zh": "说得好，这也是现代法治社会应当坚守的原则。",
+       "py": "Shuō de hǎo, zhè yě shì xiàn dài fǎ zhì shè huì yīng dāng jiān shǒu de yuán zé.",
+       "vi": "Nói hay lắm, đó cũng là nguyên tắc mà xã hội pháp quyền hiện đại cần kiên định."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "zh": "可持续发展",
+   "vi": "Phát triển bền vững",
+   "icon": "🌍",
+   "dialogues": [
+    {
+     "id": "6-1",
+     "title_zh": "发展与保护",
+     "title_vi": "Phát triển và bảo vệ",
+     "scene_vi": "Hai chuyên gia thảo luận mâu thuẫn giữa tăng trưởng và môi trường.",
+     "speakers": [
+      {
+       "name": "王教授",
+       "gender": "f"
+      },
+      {
+       "name": "大卫",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "大卫，不少发展中国家面临两难：不发展经济，民众难以摆脱贫困；盲目发展，又会付出沉重的环境代价。你怎么看？",
+       "py": "Dà wèi, bù shǎo fā zhǎn zhōng guó jiā miàn lín liǎng nán: bù fā zhǎn jīng jì, mín zhòng nán yǐ bǎi tuō pín kùn; máng mù fā zhǎn, yòu huì fù chū chén zhòng de huán jìng dài jià. Nǐ zěn me kàn?",
+       "vi": "David, không ít nước đang phát triển đứng trước thế lưỡng nan: không phát triển kinh tế thì dân chúng khó thoát nghèo; phát triển mù quáng lại phải trả cái giá môi trường nặng nề. Bạn nghĩ sao?"
+      },
+      {
+       "spk": 1,
+       "zh": "我认为发展与保护并不是非此即彼的对立关系。“先污染、后治理”的老路已经被事实证明代价高昂，治理的成本往往远超当初所获得的收益。",
+       "py": "Wǒ rèn wéi fā zhǎn yǔ bǎo hù bìng bú shì fēi cǐ jí bǐ de duì lì guān xì. “xiān wū rǎn, hòu zhì lǐ” de lǎo lù yǐ jīng bèi shì shí zhèng míng dài jià gāo áng, zhì lǐ de chéng běn wǎng wǎng yuǎn chāo dāng chū suǒ huò dé de shōu yì.",
+       "vi": "Tôi cho rằng phát triển và bảo vệ không phải quan hệ đối lập “hoặc cái này hoặc cái kia”. Con đường cũ “ô nhiễm trước, xử lý sau” đã được thực tế chứng minh giá cao, chi phí xử lý thường vượt xa lợi ích thu được ban đầu."
+      },
+      {
+       "spk": 0,
+       "zh": "那么可持续发展的核心理念究竟是什么？",
+       "py": "Nà me kě chí xù fā zhǎn de hé xīn lǐ niàn jiū jìng shì shén me?",
+       "vi": "Vậy ý niệm cốt lõi của phát triển bền vững rốt cuộc là gì?"
+      },
+      {
+       "spk": 1,
+       "zh": "就是在满足当代人需求的同时，不损害后代人满足其需求的能力。换句话说，我们不能透支子孙后代的资源。",
+       "py": "Jiù shì zài mǎn zú dāng dài rén xū qiú de tóng shí, bù sǔn hài hòu dài rén mǎn zú qí xū qiú de néng lì. Huàn jù huà shuō, wǒ men bù néng tòu zhī zǐ sūn hòu dài de zī yuán.",
+       "vi": "Chính là trong lúc đáp ứng nhu cầu của thế hệ hiện tại, không làm tổn hại khả năng thế hệ sau đáp ứng nhu cầu của họ. Nói cách khác, chúng ta không thể rút cạn tài nguyên của con cháu."
+      },
+      {
+       "spk": 0,
+       "zh": "在实践中，有哪些切实可行的路径？",
+       "py": "Zài shí jiàn zhōng, yǒu nǎ xiē qiè shí kě xíng de lù jìng?",
+       "vi": "Trong thực tiễn, có những con đường khả thi nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "大力发展清洁能源，推动产业升级，提高资源利用效率，同时通过税收和补贴等政策工具，引导企业采用环保技术。",
+       "py": "Dà lì fā zhǎn qīng jié néng yuán, tuī dòng chǎn yè shēng jí, tí gāo zī yuán lì yòng xiào lǜ, tóng shí tōng guò shuì shōu hé bǔ tiē děng zhèng cè gōng jù, yǐn dǎo qǐ yè cǎi yòng huán bǎo jì shù.",
+       "vi": "Đẩy mạnh phát triển năng lượng sạch, thúc đẩy nâng cấp ngành nghề, nâng cao hiệu suất sử dụng tài nguyên, đồng thời thông qua công cụ chính sách như thuế và trợ cấp, hướng dẫn doanh nghiệp áp dụng công nghệ thân thiện môi trường."
+      },
+      {
+       "spk": 0,
+       "zh": "公众在其中又能发挥什么作用呢？",
+       "py": "Gōng zhòng zài qí zhōng yòu néng fā huī shén me zuò yòng ne?",
+       "vi": "Công chúng trong đó có thể phát huy tác dụng gì?"
+      },
+      {
+       "spk": 1,
+       "zh": "公众的作用不可小觑。绿色消费、节约能源、监督企业，每个人的选择汇聚起来，就是推动变革的巨大力量。",
+       "py": "Gōng zhòng de zuò yòng bù kě xiǎo qù. Lǜ sè xiāo fèi, jié yuē néng yuán, jiān dū qǐ yè, měi gè rén de xuǎn zé huì jù qǐ lái, jiù shì tuī dòng biàn gé de jù dà lì liàng.",
+       "vi": "Vai trò của công chúng không thể xem nhẹ. Tiêu dùng xanh, tiết kiệm năng lượng, giám sát doanh nghiệp, lựa chọn của mỗi người hội tụ lại chính là sức mạnh to lớn thúc đẩy thay đổi."
+      }
+     ]
+    },
+    {
+     "id": "6-2",
+     "title_zh": "碳中和",
+     "title_vi": "Trung hoà carbon",
+     "scene_vi": "Bàn về mục tiêu trung hoà carbon.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，“碳达峰、碳中和”这几年成了热门词汇，可是我始终不太明白，它和我们普通人的生活到底有什么关系？",
+       "py": "Xiǎo hóng, “tàn dá fēng, tàn zhōng hé” zhè jǐ nián chéng le rè mén cí huì, kě shì wǒ shǐ zhōng bú tài míng bai, tā hé wǒ men pǔ tōng rén de shēng huó dào dǐ yǒu shén me guān xì?",
+       "vi": "Tiểu Hồng, “đạt đỉnh carbon, trung hoà carbon” mấy năm nay thành từ khoá nóng, nhưng mình vẫn không hiểu lắm, nó rốt cuộc liên quan gì đến cuộc sống của người bình thường chúng ta?"
+      },
+      {
+       "spk": 1,
+       "zh": "关系很大。简单地说，就是要让排放的二氧化碳和吸收的二氧化碳达到平衡，这意味着我们的能源结构、出行方式乃至消费习惯，都将发生深刻的变化。",
+       "py": "Guān xì hěn dà. Jiǎn dān de shuō, jiù shì yào ràng pái fàng de èr yǎng huà tàn hé xī shōu de èr yǎng huà tàn dá dào píng héng, zhè yì wèi zhe wǒ men de néng yuán jié gòu, chū xíng fāng shì nǎi zhì xiāo fèi xí guàn, dōu jiāng fā shēng shēn kè de biàn huà.",
+       "vi": "Quan hệ rất lớn. Nói đơn giản là phải làm cho lượng CO2 thải ra và lượng hấp thụ đạt cân bằng, điều này có nghĩa cơ cấu năng lượng, phương thức đi lại thậm chí thói quen tiêu dùng của chúng ta đều sẽ có biến đổi sâu sắc."
+      },
+      {
+       "spk": 0,
+       "zh": "听起来任重道远。要实现这个目标，会不会以牺牲经济增长为代价？",
+       "py": "Tīng qǐ lái rèn zhòng dào yuǎn. Yào shí xiàn zhè ge mù biāo, huì bú huì yǐ xī shēng jīng jì zēng zhǎng wéi dài jià?",
+       "vi": "Nghe có vẻ đường dài gánh nặng. Để đạt mục tiêu này, có phải phải lấy hy sinh tăng trưởng kinh tế làm cái giá không?"
+      },
+      {
+       "spk": 1,
+       "zh": "短期内转型确实会带来阵痛，一些传统行业可能面临淘汰，但是同时也催生了新能源、节能技术等新兴产业，创造出新的就业机会。",
+       "py": "Duǎn qī nèi zhuǎn xíng què shí huì dài lái zhèn tòng, yì xiē chuán tǒng háng yè kě néng miàn lín táo tài, dàn shì tóng shí yě cuī shēng le xīn néng yuán, jié néng jì shù děng xīn xīng chǎn yè, chuàng zào chū xīn de jiù yè jī huì.",
+       "vi": "Ngắn hạn chuyển đổi đúng là sẽ mang lại cơn đau, một số ngành truyền thống có thể đối mặt đào thải, nhưng đồng thời cũng sản sinh ngành mới nổi như năng lượng mới, công nghệ tiết kiệm năng lượng, tạo ra cơ hội việc làm mới."
+      },
+      {
+       "spk": 0,
+       "zh": "那对于被淘汰行业中的工人，应该如何妥善安置呢？",
+       "py": "Nà duì yú bèi táo tài háng yè zhōng de gōng rén, yīng gāi rú hé tuǒ shàn ān zhì ne?",
+       "vi": "Vậy với công nhân trong ngành bị đào thải, nên sắp xếp ổn thoả thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "这就需要政府提供职业培训和社会保障，实现“公平转型”，不能让他们成为转型的牺牲品。",
+       "py": "Zhè jiù xū yào zhèng fǔ tí gōng zhí yè péi xùn hé shè huì bǎo zhàng, shí xiàn “gōng píng zhuǎn xíng”, bù néng ràng tā men chéng wéi zhuǎn xíng de xī shēng pǐn.",
+       "vi": "Việc này cần chính phủ cung cấp đào tạo nghề và bảo đảm xã hội, thực hiện “chuyển đổi công bằng”, không thể để họ trở thành vật hy sinh của chuyển đổi."
+      },
+      {
+       "spk": 0,
+       "zh": "你的分析让我对这个话题有了更全面的认识，看来环保与民生是紧密相连的。",
+       "py": "Nǐ de fēn xī ràng wǒ duì zhè ge huà tí yǒu le gèng quán miàn de rèn shi, kàn lái huán bǎo yǔ mín shēng shì jǐn mì xiāng lián de.",
+       "vi": "Phân tích của bạn giúp mình có nhận thức toàn diện hơn về chủ đề này, xem ra bảo vệ môi trường và dân sinh gắn bó chặt chẽ."
+      },
+      {
+       "spk": 1,
+       "zh": "对，绿水青山就是金山银山，只有真正把二者结合起来，发展才会长久。",
+       "py": "Duì, lǜ shuǐ qīng shān jiù shì jīn shān yín shān, zhǐ yǒu zhēn zhèng bǎ èr zhě jié hé qǐ lái, fā zhǎn cái huì cháng jiǔ.",
+       "vi": "Đúng, núi xanh nước biếc chính là núi vàng núi bạc, chỉ khi thật sự kết hợp hai điều này, phát triển mới lâu dài."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "zh": "贫富差距",
+   "vi": "Chênh lệch giàu nghèo",
+   "icon": "⚖️",
+   "dialogues": [
+    {
+     "id": "7-1",
+     "title_zh": "收入分配",
+     "title_vi": "Phân phối thu nhập",
+     "scene_vi": "Thảo luận về bất bình đẳng thu nhập.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "李教授",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "李教授，近年来收入差距不断拉大，少数人占有大量财富，而相当多的人仍然为温饱奔波，这种现象的根源是什么？",
+       "py": "Lǐ jiào shòu, jìn nián lái shōu rù chā jù bú duàn lā dà, shǎo shù rén zhàn yǒu dà liàng cái fù, ér xiāng dāng duō de rén réng rán wèi wēn bǎo bēn bō, zhè zhǒng xiàn xiàng de gēn yuán shì shén me?",
+       "vi": "Giáo sư Lý, những năm gần đây chênh lệch thu nhập không ngừng nới rộng, thiểu số người chiếm hữu lượng lớn tài sản, trong khi khá nhiều người vẫn bôn ba vì cái ăn cái mặc, nguồn gốc của hiện tượng này là gì?"
+      },
+      {
+       "spk": 1,
+       "zh": "原因是多方面的：有教育机会的不均等，有地区发展的不平衡，也有资本收益增长快于劳动收入的结构性因素。",
+       "py": "Yuán yīn shì duō fāng miàn de: yǒu jiào yù jī huì de bù jūn děng, yǒu dì qū fā zhǎn de bù píng héng, yě yǒu zī běn shōu yì zēng zhǎng kuài yú láo dòng shōu rù de jié gòu xìng yīn sù.",
+       "vi": "Nguyên nhân là nhiều mặt: có sự bất bình đẳng về cơ hội giáo dục, có sự mất cân bằng phát triển giữa các vùng, cũng có yếu tố kết cấu là thu nhập từ vốn tăng nhanh hơn thu nhập từ lao động."
+      },
+      {
+       "spk": 0,
+       "zh": "有人认为，适度的差距能够激励人们努力工作，您同意这种看法吗？",
+       "py": "Yǒu rén rèn wéi, shì dù de chā jù néng gòu jī lì rén men nǔ lì gōng zuò, nín tóng yì zhè zhǒng kàn fǎ ma?",
+       "vi": "Có người cho rằng chênh lệch vừa phải có thể khích lệ mọi người nỗ lực làm việc, giáo sư có đồng ý với cách nhìn này không?"
+      },
+      {
+       "spk": 1,
+       "zh": "适度的差距确实有激励作用，但前提是起点公平、规则公正。如果差距源于出身或者特权，而不是个人的努力，就会挫伤人们的积极性，加剧社会矛盾。",
+       "py": "Shì dù de chā jù què shí yǒu jī lì zuò yòng, dàn qián tí shì qǐ diǎn gōng píng, guī zé gōng zhèng. Rú guǒ chā jù yuán yú chū shēn huò zhě tè quán, ér bú shì gè rén de nǔ lì, jiù huì cuò shāng rén men de jī jí xìng, jiā jù shè huì máo dùn.",
+       "vi": "Chênh lệch vừa phải đúng là có tác dụng khích lệ, nhưng tiền đề là điểm xuất phát công bằng, quy tắc công chính. Nếu chênh lệch bắt nguồn từ xuất thân hay đặc quyền chứ không phải nỗ lực cá nhân, sẽ làm tổn thương tính tích cực của mọi người, làm trầm trọng mâu thuẫn xã hội."
+      },
+      {
+       "spk": 0,
+       "zh": "那么政府可以通过哪些手段来缩小差距？",
+       "py": "Nà me zhèng fǔ kě yǐ tōng guò nǎ xiē shǒu duàn lái suō xiǎo chā jù?",
+       "vi": "Vậy chính phủ có thể thông qua những biện pháp nào để thu hẹp chênh lệch?"
+      },
+      {
+       "spk": 1,
+       "zh": "主要是税收调节、完善社会保障、加大对欠发达地区的投入，还要保证教育资源的公平分配，让每个孩子都有出彩的机会。",
+       "py": "Zhǔ yào shì shuì shōu tiáo jié, wán shàn shè huì bǎo zhàng, jiā dà duì qiàn fā dá dì qū de tóu rù, hái yào bǎo zhèng jiào yù zī yuán de gōng píng fēn pèi, ràng měi gè hái zi dōu yǒu chū cǎi de jī huì.",
+       "vi": "Chủ yếu là điều tiết thuế, hoàn thiện bảo đảm xã hội, tăng đầu tư cho vùng kém phát triển, còn phải bảo đảm phân phối công bằng nguồn lực giáo dục, để mỗi đứa trẻ đều có cơ hội toả sáng."
+      },
+      {
+       "spk": 0,
+       "zh": "看来要真正解决这个问题，需要长期而系统的努力。",
+       "py": "Kàn lái yào zhēn zhèng jiě jué zhè ge wèn tí, xū yào cháng qī ér xì tǒng de nǔ lì.",
+       "vi": "Xem ra muốn giải quyết thực sự vấn đề này cần nỗ lực lâu dài và có hệ thống."
+      },
+      {
+       "spk": 1,
+       "zh": "是的，共同富裕不是平均主义，而是让发展的成果更公平地惠及全体人民。",
+       "py": "Shì de, gòng tóng fù yù bú shì píng jūn zhǔ yì, ér shì ràng fā zhǎn de chéng guǒ gèng gōng píng de huì jí quán tǐ rén mín.",
+       "vi": "Đúng vậy, cùng giàu có không phải chủ nghĩa bình quân, mà là để thành quả phát triển đến với toàn thể nhân dân một cách công bằng hơn."
+      }
+     ]
+    },
+    {
+     "id": "7-2",
+     "title_zh": "寒门难出贵子",
+     "title_vi": "Nhà nghèo khó nảy sinh quý tử",
+     "scene_vi": "Hai người bàn về cơ hội thăng tiến xã hội.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，有句话叫“寒门难出贵子”，听起来虽然有些悲观，但似乎有一定的现实依据，你怎么看？",
+       "py": "Xiǎo hóng, yǒu jù huà jiào “hán mén nán chū guì zi”, tīng qǐ lái suī rán yǒu xiē bēi guān, dàn sì hū yǒu yí dìng de xiàn shí yī jù, nǐ zěn me kàn?",
+       "vi": "Tiểu Hồng, có câu “nhà nghèo khó nảy sinh quý tử”, nghe tuy có chút bi quan nhưng dường như có căn cứ thực tế nhất định, bạn nghĩ sao?"
+      },
+      {
+       "spk": 1,
+       "zh": "这句话反映了阶层流动性下降的担忧。出身优越的孩子，从小就能接触到优质的教育和丰富的社会资源，起点自然更高。",
+       "py": "Zhè jù huà fǎn yìng le jiē céng liú dòng xìng xià jiàng de dān yōu. Chū shēn yōu yuè de hái zi, cóng xiǎo jiù néng jiē chù dào yōu zhì de jiào yù hé fēng fù de shè huì zī yuán, qǐ diǎn zì rán gèng gāo.",
+       "vi": "Câu này phản ánh nỗi lo về tính lưu động tầng lớp giảm đi. Trẻ có xuất thân ưu việt từ nhỏ đã được tiếp xúc giáo dục chất lượng và nguồn lực xã hội phong phú, điểm xuất phát tự nhiên cao hơn."
+      },
+      {
+       "spk": 0,
+       "zh": "可是我们身边也不乏通过努力改变命运的例子，难道个人的奋斗已经不重要了吗？",
+       "py": "Kě shì wǒ men shēn biān yě bù fá tōng guò nǔ lì gǎi biàn mìng yùn de lì zi, nán dào gè rén de fèn dòu yǐ jīng bú zhòng yào le ma?",
+       "vi": "Nhưng xung quanh chúng ta cũng không thiếu ví dụ thay đổi vận mệnh nhờ nỗ lực, lẽ nào phấn đấu cá nhân đã không còn quan trọng?"
+      },
+      {
+       "spk": 1,
+       "zh": "当然重要，个人奋斗永远是改变命运的根本力量。但是我们也不能把一切都归结为个人的责任，社会应该努力为每个人搭建向上流动的阶梯。",
+       "py": "Dāng rán zhòng yào, gè rén fèn dòu yǒng yuǎn shì gǎi biàn mìng yùn de gēn běn lì liàng. Dàn shì wǒ men yě bù néng bǎ yí qiè dōu guī jié wèi gè rén de zé rèn, shè huì yīng gāi nǔ lì wèi měi gè rén dā jiàn xiàng shàng liú dòng de jiē tī.",
+       "vi": "Đương nhiên quan trọng, phấn đấu cá nhân mãi mãi là sức mạnh căn bản thay đổi vận mệnh. Nhưng chúng ta cũng không thể quy mọi thứ về trách nhiệm cá nhân, xã hội nên nỗ lực dựng nên chiếc thang đi lên cho mỗi người."
+      },
+      {
+       "spk": 0,
+       "zh": "比如通过完善奖学金制度、扶持农村教育等方式？",
+       "py": "Bǐ rú tōng guò wán shàn jiǎng xué jīn zhì dù, fú chí nóng cūn jiào yù děng fāng shì?",
+       "vi": "Ví dụ thông qua hoàn thiện chế độ học bổng, hỗ trợ giáo dục nông thôn?"
+      },
+      {
+       "spk": 1,
+       "zh": "对，这些措施虽然不能完全消除差距，但至少能够让更多有天赋、肯努力的孩子不被埋没。",
+       "py": "Duì, zhè xiē cuò shī suī rán bù néng wán quán xiāo chú chā jù, dàn zhì shǎo néng gòu ràng gèng duō yǒu tiān fù, kěn nǔ lì de hái zi bú bèi mái mò.",
+       "vi": "Đúng, những biện pháp này tuy không thể xoá bỏ hoàn toàn chênh lệch nhưng ít nhất có thể giúp nhiều đứa trẻ có thiên phú và chịu nỗ lực không bị chôn vùi."
+      },
+      {
+       "spk": 0,
+       "zh": "我想，一个健康的社会，应该让“努力就有回报”成为普遍的信念。",
+       "py": "Wǒ xiǎng, yí gè jiàn kāng de shè huì, yīng gāi ràng “nǔ lì jiù yǒu huí bào” chéng wéi pǔ biàn de xìn niàn.",
+       "vi": "Mình nghĩ, một xã hội lành mạnh nên làm cho “nỗ lực sẽ có hồi báo” trở thành niềm tin phổ biến."
+      },
+      {
+       "spk": 1,
+       "zh": "说得好，这才是社会公平的真正体现。",
+       "py": "Shuō de hǎo, zhè cái shì shè huì gōng píng de zhēn zhèng tǐ xiàn.",
+       "vi": "Nói hay lắm, đây mới là sự thể hiện chân chính của công bằng xã hội."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "zh": "人工智能伦理",
+   "vi": "Đạo đức trí tuệ nhân tạo",
+   "icon": "🤖",
+   "dialogues": [
+    {
+     "id": "8-1",
+     "title_zh": "算法的偏见",
+     "title_vi": "Định kiến của thuật toán",
+     "scene_vi": "Bàn về vấn đề thiên lệch của thuật toán.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，我最近读到一篇报道，某公司的招聘系统在筛选简历时，竟然对女性求职者存在偏见，这是怎么回事？",
+       "py": "Xiǎo měi, wǒ zuì jìn dú dào yì piān bào dào, mǒu gōng sī de zhāo pìn xì tǒng zài shāi xuǎn jiǎn lì shí, jìng rán duì nǚ xìng qiú zhí zhě cún zài piān jiàn, zhè shì zěn me huí shì?",
+       "vi": "Tiểu Mỹ, gần đây mình đọc một bài báo, hệ thống tuyển dụng của một công ty khi lọc hồ sơ lại có thành kiến với ứng viên nữ, chuyện này là sao?"
+      },
+      {
+       "spk": 1,
+       "zh": "算法本身并没有主观意图，问题出在训练它的数据上。如果过去的招聘记录本身就带有性别倾向，机器学到的也就是这种倾向。",
+       "py": "Suàn fǎ běn shēn bìng méi yǒu zhǔ guān yì tú, wèn tí chū zài xùn liàn tā de shù jù shàng. Rú guǒ guò qù de zhāo pìn jì lù běn shēn jiù dài yǒu xìng bié qīng xiàng, jī qì xué dào de yě jiù shì zhè zhǒng qīng xiàng.",
+       "vi": "Bản thân thuật toán không có ý đồ chủ quan, vấn đề nằm ở dữ liệu huấn luyện nó. Nếu bản ghi tuyển dụng trước đây vốn mang khuynh hướng giới tính thì máy học được cũng chính là khuynh hướng đó."
+      },
+      {
+       "spk": 0,
+       "zh": "这样一来，人工智能不但没有消除偏见，反而把偏见固化甚至放大了。",
+       "py": "Zhè yàng yì lái, rén gōng zhì néng bú dàn méi yǒu xiāo chú piān jiàn, fǎn ér bǎ piān jiàn gù huà shèn zhì fàng dà le.",
+       "vi": "Như vậy, trí tuệ nhân tạo không những không xoá bỏ định kiến, ngược lại còn cố định hoá thậm chí khuếch đại định kiến."
+      },
+      {
+       "spk": 1,
+       "zh": "所以我们不能盲目地相信技术是“中立”的，必须在设计阶段就考虑公平性，并且对算法的决策过程进行审查。",
+       "py": "Suǒ yǐ wǒ men bù néng máng mù de xiāng xìn jì shù shì “zhōng lì” de, bì xū zài shè jì jiē duàn jiù kǎo lǜ gōng píng xìng, bìng qiě duì suàn fǎ de jué cè guò chéng jìn xíng shěn chá.",
+       "vi": "Vì vậy chúng ta không thể mù quáng tin công nghệ là “trung lập”, phải cân nhắc tính công bằng ngay từ giai đoạn thiết kế và thẩm tra quá trình ra quyết định của thuật toán."
+      },
+      {
+       "spk": 0,
+       "zh": "可是很多算法是“黑箱”，连开发者自己也说不清它是如何做出判断的。",
+       "py": "Kě shì hěn duō suàn fǎ shì “hēi xiāng”, lián kāi fā zhě zì jǐ yě shuō bù qīng tā shì rú hé zuò chū pàn duàn de.",
+       "vi": "Nhưng nhiều thuật toán là “hộp đen”, ngay cả người phát triển cũng không nói rõ nó đưa ra phán đoán thế nào."
+      },
+      {
+       "spk": 1,
+       "zh": "这正是当前研究的难点之一，也是为什么“可解释性”成为人工智能领域的热点话题。",
+       "py": "Zhè zhèng shì dāng qián yán jiū de nán diǎn zhī yī, yě shì wèi shén me “kě jiě shì xìng” chéng wéi rén gōng zhì néng lǐng yù de rè diǎn huà tí.",
+       "vi": "Đây chính là một trong những điểm khó của nghiên cứu hiện nay, cũng là lý do “khả năng giải thích” trở thành chủ đề nóng trong lĩnh vực trí tuệ nhân tạo."
+      },
+      {
+       "spk": 0,
+       "zh": "看来技术越是强大，我们越需要在伦理上有所约束。",
+       "py": "Kàn lái jì shù yuè shì qiáng dà, wǒ men yuè xū yào zài lún lǐ shàng yǒu suǒ yuē shù.",
+       "vi": "Xem ra công nghệ càng mạnh, chúng ta càng cần có ràng buộc về mặt đạo đức."
+      },
+      {
+       "spk": 1,
+       "zh": "没错，技术应该服务于人，而不是让人屈从于技术。",
+       "py": "Méi cuò, jì shù yīng gāi fú wù yú rén, ér bú shì ràng rén qū cóng yú jì shù.",
+       "vi": "Đúng vậy, công nghệ nên phục vụ con người chứ không phải bắt con người khuất phục công nghệ."
+      }
+     ]
+    },
+    {
+     "id": "8-2",
+     "title_zh": "机器会取代人类吗",
+     "title_vi": "Máy móc có thay thế loài người không",
+     "scene_vi": "Tranh luận về tương lai của trí tuệ nhân tạo.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，随着人工智能的飞速发展，不少人忧心忡忡，担心机器终有一天会取代人类，你是否也有这样的担忧？",
+       "py": "Xiǎo hóng, suí zhe rén gōng zhì néng de fēi sù fā zhǎn, bù shǎo rén yōu xīn chōng chōng, dān xīn jī qì zhōng yǒu yì tiān huì qǔ dài rén lèi, nǐ shì fǒu yě yǒu zhè yàng de dān yōu?",
+       "vi": "Tiểu Hồng, cùng với sự phát triển vũ bão của trí tuệ nhân tạo, không ít người lo lắng nặng nề, sợ rằng máy móc một ngày nào đó sẽ thay thế loài người, bạn có lo ngại như vậy không?"
+      },
+      {
+       "spk": 1,
+       "zh": "取代某些工作是必然的，但取代人类我认为言过其实。机器擅长处理海量数据和重复性任务，可是创造力、同理心和价值判断，依然是人类独有的优势。",
+       "py": "Qǔ dài mǒu xiē gōng zuò shì bì rán de, dàn qǔ dài rén lèi wǒ rèn wéi yán guò qí shí. Jī qì shàn cháng chǔ lǐ hǎi liàng shù jù hé chóng fù xìng rèn wù, kě shì chuàng zào lì, tóng lǐ xīn hé jià zhí pàn duàn, yī rán shì rén lèi dú yǒu de yōu shì.",
+       "vi": "Thay thế một số công việc là tất yếu, nhưng thay thế loài người mình cho là nói quá. Máy móc giỏi xử lý lượng dữ liệu khổng lồ và nhiệm vụ lặp lại, nhưng sức sáng tạo, sự đồng cảm và phán đoán giá trị vẫn là ưu thế độc nhất của con người."
+      },
+      {
+       "spk": 0,
+       "zh": "然而，人工智能已经能够写诗、作画，甚至创作音乐，难道这不算创造力吗？",
+       "py": "Rán ér, rén gōng zhì néng yǐ jīng néng gòu xiě shī, zuò huà, shèn zhì chuàng zuò yīn yuè, nán dào zhè bú suàn chuàng zào lì ma?",
+       "vi": "Tuy nhiên, trí tuệ nhân tạo đã có thể làm thơ, vẽ tranh, thậm chí sáng tác âm nhạc, chẳng lẽ điều này không tính là sức sáng tạo sao?"
+      },
+      {
+       "spk": 1,
+       "zh": "它是在海量作品的基础上进行模仿和组合，缺乏真正的体验和情感。至少到目前为止，它还无法理解一首诗背后那份“为什么而写”的冲动。",
+       "py": "Tā shì zài hǎi liàng zuò pǐn de jī chǔ shàng jìn xíng mó fǎng hé zǔ hé, quē fá zhēn zhèng de tǐ yàn hé qíng gǎn. Zhì shǎo dào mù qián wéi zhǐ, tā hái wú fǎ lǐ jiě yì shǒu shī bèi hòu nà fèn “wèi shén me ér xiě” de chōng dòng.",
+       "vi": "Nó dựa trên lượng tác phẩm khổng lồ để mô phỏng và kết hợp, thiếu trải nghiệm và tình cảm thực sự. Ít nhất đến hiện nay, nó vẫn chưa thể hiểu được sự thôi thúc “vì sao mà viết” đằng sau một bài thơ."
+      },
+      {
+       "spk": 0,
+       "zh": "但是技术进步的速度惊人，谁也不能保证未来不会出现突破。",
+       "py": "Dàn shì jì shù jìn bù de sù dù jīng rén, shuí yě bù néng bǎo zhèng wèi lái bú huì chū xiàn tū pò.",
+       "vi": "Nhưng tốc độ tiến bộ công nghệ đáng kinh ngạc, không ai bảo đảm tương lai sẽ không xuất hiện đột phá."
+      },
+      {
+       "spk": 1,
+       "zh": "你说得对，所以更重要的是未雨绸缪，提前制定规则，确保人工智能的发展始终处于人类的掌控和监督之下。",
+       "py": "Nǐ shuō de duì, suǒ yǐ gèng zhòng yào de shì wèi yǔ chóu móu, tí qián zhì dìng guī zé, què bǎo rén gōng zhì néng de fā zhǎn shǐ zhōng chǔ yú rén lèi de zhǎng kòng hé jiān dū zhī xià.",
+       "vi": "Bạn nói đúng, vì vậy quan trọng hơn là phòng bị trước, đề ra quy tắc từ sớm, bảo đảm sự phát triển của trí tuệ nhân tạo luôn nằm trong sự kiểm soát và giám sát của con người."
+      },
+      {
+       "spk": 0,
+       "zh": "看来关键不在于恐惧，而在于智慧地引导。",
+       "py": "Kàn lái guān jiàn bú zài yú kǒng jù, ér zài yú zhì huì de yǐn dǎo.",
+       "vi": "Xem ra mấu chốt không phải ở nỗi sợ, mà ở sự dẫn dắt có trí tuệ."
+      },
+      {
+       "spk": 1,
+       "zh": "是的，人类与机器应该是合作的伙伴，而不是对立的双方。",
+       "py": "Shì de, rén lèi yǔ jī qì yīng gāi shì hé zuò de huǒ bàn, ér bú shì duì lì de shuāng fāng.",
+       "vi": "Đúng vậy, con người và máy móc nên là đối tác hợp tác, chứ không phải hai phía đối lập."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "zh": "教育公平",
+   "vi": "Công bằng giáo dục",
+   "icon": "📚",
+   "dialogues": [
+    {
+     "id": "9-1",
+     "title_zh": "城乡教育差距",
+     "title_vi": "Chênh lệch giáo dục thành thị – nông thôn",
+     "scene_vi": "Giáo viên về từ vùng núi chia sẻ thực trạng.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "陈老师",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "陈老师，您在山区学校支教了三年，能谈谈城乡教育之间的差距究竟体现在哪些方面吗？",
+       "py": "Chén lǎo shī, nín zài shān qū xué xiào zhī jiào le sān nián, néng tán tán chéng xiāng jiào yù zhī jiān de chā jù jiū jìng tǐ xiàn zài nǎ xiē fāng miàn ma?",
+       "vi": "Cô Trần, cô dạy tình nguyện ở trường vùng núi ba năm, cô có thể nói chênh lệch giáo dục thành thị – nông thôn rốt cuộc thể hiện ở những mặt nào không?"
+      },
+      {
+       "spk": 1,
+       "zh": "最明显的是硬件和师资。城里的学校有图书馆、实验室，而山区的孩子连一台像样的电脑都没有，许多老师还要同时教好几个年级的课程。",
+       "py": "Zuì míng xiǎn de shì yìng jiàn hé shī zī. Chéng lǐ de xué xiào yǒu tú shū guǎn, shí yàn shì, ér shān qū de hái zi lián yì tái xiàng yàng de diàn nǎo dōu méi yǒu, xǔ duō lǎo shī hái yào tóng shí jiào hǎo jǐ gè nián jí de kè chéng.",
+       "vi": "Rõ rệt nhất là cơ sở vật chất và đội ngũ giáo viên. Trường thành phố có thư viện, phòng thí nghiệm, còn trẻ vùng núi ngay cả một chiếc máy tính tử tế cũng không có, nhiều thầy cô còn phải dạy chương trình của mấy khối lớp cùng lúc."
+      },
+      {
+       "spk": 0,
+       "zh": "除了这些看得见的差距，是不是还有更深层的问题？",
+       "py": "Chú le zhè xiē kàn de jiàn de chā jù, shì bú shì hái yǒu gèng shēn céng de wèn tí?",
+       "vi": "Ngoài những chênh lệch nhìn thấy được này, có phải còn vấn đề sâu hơn không?"
+      },
+      {
+       "spk": 1,
+       "zh": "有的。比如视野和期望，山里的孩子很少有机会接触外面的世界，对未来的想象也就受到了局限。我常常觉得，这种眼界上的差距比物质上的差距更难弥补。",
+       "py": "Yǒu de. Bǐ rú shì yě hé qī wàng, shān lǐ de hái zi hěn shǎo yǒu jī huì jiē chù wài miàn de shì jiè, duì wèi lái de xiǎng xiàng yě jiù shòu dào le jú xiàn. Wǒ cháng cháng jué de, zhè zhǒng yǎn jiè shàng de chā jù bǐ wù zhì shàng de chā jù gèng nán mí bǔ.",
+       "vi": "Có. Ví dụ tầm nhìn và kỳ vọng, trẻ miền núi rất ít cơ hội tiếp xúc thế giới bên ngoài, nên trí tưởng tượng về tương lai cũng bị hạn chế. Tôi thường thấy, chênh lệch về tầm mắt khó bù đắp hơn chênh lệch vật chất."
+      },
+      {
+       "spk": 0,
+       "zh": "现在有了网络教学，这种状况有没有得到改善？",
+       "py": "Xiàn zài yǒu le wǎng luò jiào xué, zhè zhǒng zhuàng kuàng yǒu méi yǒu dé dào gǎi shàn?",
+       "vi": "Bây giờ có dạy học trực tuyến, tình trạng này có được cải thiện không?"
+      },
+      {
+       "spk": 1,
+       "zh": "确实带来了希望，孩子们可以跟着城里的名师上课。可是网络并不能代替老师与学生之间面对面的关怀，而且还存在设备和信号的问题。",
+       "py": "Què shí dài lái le xī wàng, hái zi men kě yǐ gēn zhe chéng lǐ de míng shī shàng kè. Kě shì wǎng luò bìng bù néng dài tì lǎo shī yǔ xué shēng zhī jiān miàn duì miàn de guān huái, ér qiě hái cún zài shè bèi hé xìn hào de wèn tí.",
+       "vi": "Đúng là mang lại hy vọng, các em có thể học theo thầy cô nổi tiếng ở thành phố. Nhưng mạng không thể thay thế sự quan tâm trực tiếp giữa thầy và trò, hơn nữa còn có vấn đề thiết bị và tín hiệu."
+      },
+      {
+       "spk": 0,
+       "zh": "那么，要真正缩小差距，您认为最迫切的是什么？",
+       "py": "Nà me, yào zhēn zhèng suō xiǎo chā jù, nín rèn wéi zuì pò qiè de shì shén me?",
+       "vi": "Vậy để thực sự thu hẹp chênh lệch, cô cho rằng điều cấp bách nhất là gì?"
+      },
+      {
+       "spk": 1,
+       "zh": "我认为是留住好老师。只有让山区教师的待遇和发展前景得到切实改善，才能吸引并留住优秀的人才，这才是治本之策。",
+       "py": "Wǒ rèn wéi shì liú zhù hǎo lǎo shī. Zhǐ yǒu ràng shān qū jiào shī de dài yù hé fā zhǎn qián jǐng dé dào qiè shí gǎi shàn, cái néng xī yǐn bìng liú zhù yōu xiù de rén cái, zhè cái shì zhì běn zhī cè.",
+       "vi": "Tôi cho rằng là giữ chân giáo viên giỏi. Chỉ khi đãi ngộ và triển vọng phát triển của giáo viên miền núi được cải thiện thực sự mới thu hút và giữ chân được nhân tài ưu tú, đó mới là kế sách trị gốc."
+      }
+     ]
+    },
+    {
+     "id": "9-2",
+     "title_zh": "择校热",
+     "title_vi": "Cơn sốt chọn trường",
+     "scene_vi": "Hai phụ huynh bàn về việc chen chân vào trường trọng điểm.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，为了让孩子进一所好小学，你们家竟然特意买了学区房，这代价是不是太大了？",
+       "py": "Xiǎo měi, wèi le ràng hái zi jìn yì suǒ hǎo xiǎo xué, nǐ men jiā jìng rán tè yì mǎi le xué qū fáng, zhè dài jià shì bú shì tài dà le?",
+       "vi": "Tiểu Mỹ, để con vào một trường tiểu học tốt, nhà bạn lại cố ý mua nhà thuộc khu tuyển sinh, cái giá này có phải quá lớn không?"
+      },
+      {
+       "spk": 1,
+       "zh": "说实话，我们也是被逼无奈。优质学校的资源太稀缺，如果不这样做，孩子就可能输在起跑线上。",
+       "py": "Shuō shí huà, wǒ men yě shì bèi bī wú nài. Yōu zhì xué xiào de zī yuán tài xī quē, rú guǒ bú zhè yàng zuò, hái zi jiù kě néng shū zài qǐ pǎo xiàn shàng.",
+       "vi": "Nói thật, bọn mình cũng là bị ép bất đắc dĩ. Tài nguyên trường chất lượng quá khan hiếm, nếu không làm như vậy, con có thể thua ngay ở vạch xuất phát."
+      },
+      {
+       "spk": 0,
+       "zh": "可是这样一来，学区房的价格越炒越高，普通家庭更加负担不起，不平等反而加剧了。",
+       "py": "Kě shì zhè yàng yì lái, xué qū fáng de jià gé yuè chǎo yuè gāo, pǔ tōng jiā tíng gèng jiā fù dān bù qǐ, bù píng děng fǎn ér jiā jù le.",
+       "vi": "Nhưng như thế giá nhà khu tuyển sinh càng bị đẩy lên cao, gia đình bình thường càng không gánh nổi, bất bình đẳng ngược lại càng trầm trọng."
+      },
+      {
+       "spk": 1,
+       "zh": "你说到了问题的实质。择校热的根源在于学校之间的差距太大，只要差距存在，家长就会不惜代价地去争取。",
+       "py": "Nǐ shuō dào le wèn tí de shí zhì. Zé xiào rè de gēn yuán zài yú xué xiào zhī jiān de chā jù tài dà, zhǐ yào chā jù cún zài, jiā zhǎng jiù huì bù xī dài jià de qù zhēng qǔ.",
+       "vi": "Bạn nói trúng thực chất vấn đề. Gốc rễ của cơn sốt chọn trường là chênh lệch giữa các trường quá lớn, chừng nào chênh lệch còn tồn tại, phụ huynh sẽ không tiếc giá để tranh giành."
+      },
+      {
+       "spk": 0,
+       "zh": "所以政府应该推动教师轮岗、资源共享，让每所学校都办得好。",
+       "py": "Suǒ yǐ zhèng fǔ yīng gāi tuī dòng jiào shī lún gǎng, zī yuán gòng xiǎng, ràng měi suǒ xué xiào dōu bàn de hǎo.",
+       "vi": "Vì vậy chính phủ nên thúc đẩy luân chuyển giáo viên, chia sẻ nguồn lực, để mỗi trường đều được làm tốt."
+      },
+      {
+       "spk": 1,
+       "zh": "对，当“家门口的学校”也同样优秀的时候，大家自然就不会挤破头去择校了。",
+       "py": "Duì, dāng “jiā mén kǒu de xué xiào” yě tóng yàng yōu xiù de shí hou, dà jiā zì rán jiù bú huì jǐ pò tóu qù zé xiào le.",
+       "vi": "Đúng, khi “trường ngay trước cửa nhà” cũng ưu tú như nhau, mọi người tự nhiên sẽ không chen nhau vỡ đầu để chọn trường nữa."
+      },
+      {
+       "spk": 0,
+       "zh": "但愿这一天早日到来，让孩子们能够在一个更公平的环境里成长。",
+       "py": "Dàn yuàn zhè yì tiān zǎo rì dào lái, ràng hái zi men néng gòu zài yí gè gèng gōng píng de huán jìng lǐ chéng zhǎng.",
+       "vi": "Mong rằng ngày ấy sớm đến, để trẻ em có thể trưởng thành trong môi trường công bằng hơn."
+      },
+      {
+       "spk": 1,
+       "zh": "我也这样期待，毕竟教育是改变命运最公平的途径。",
+       "py": "Wǒ yě zhè yàng qī dài, bì jìng jiào yù shì gǎi biàn mìng yùn zuì gōng píng de tú jìng.",
+       "vi": "Mình cũng mong như vậy, dù sao giáo dục là con đường công bằng nhất để thay đổi vận mệnh."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "zh": "创新与风险",
+   "vi": "Đổi mới & rủi ro",
+   "icon": "🧪",
+   "dialogues": [
+    {
+     "id": "10-1",
+     "title_zh": "容忍失败",
+     "title_vi": "Dung thứ thất bại",
+     "scene_vi": "Bàn về văn hoá đổi mới trong doanh nghiệp.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "陈总",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "陈总，您的公司以创新著称，请问你们是如何鼓励员工大胆尝试、又不惧怕失败的？",
+       "py": "Chén zǒng, nín de gōng sī yǐ chuàng xīn zhù chēng, qǐng wèn nǐ men shì rú hé gǔ lì yuán gōng dà dǎn cháng shì, yòu bú jù pà shī bài de?",
+       "vi": "Tổng giám đốc Trần, công ty chị nổi tiếng về đổi mới, xin hỏi các chị khuyến khích nhân viên mạnh dạn thử nghiệm và không sợ thất bại thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "首先要从观念上转变：失败不是终点，而是通向成功的必经之路。我们公司甚至设有“最佳失败奖”，奖励那些虽然失败却从中获得宝贵经验的团队。",
+       "py": "Shǒu xiān yào cóng guān niàn shàng zhuǎn biàn: shī bài bú shì zhōng diǎn, ér shì tōng xiàng chéng gōng de bì jīng zhī lù. Wǒ men gōng sī shèn zhì shè yǒu “zuì jiā shī bài jiǎng”, jiǎng lì nà xiē suī rán shī bài què cóng zhōng huò dé bǎo guì jīng yàn de tuán duì.",
+       "vi": "Trước hết phải chuyển biến về quan niệm: thất bại không phải điểm cuối mà là con đường tất yếu dẫn đến thành công. Công ty chúng tôi thậm chí có “giải thất bại xuất sắc”, thưởng cho những đội tuy thất bại nhưng thu được kinh nghiệm quý giá."
+      },
+      {
+       "spk": 0,
+       "zh": "这听起来很有魄力，不过从商业的角度来看，每一次失败都意味着真金白银的损失，您不担心吗？",
+       "py": "Zhè tīng qǐ lái hěn yǒu pò lì, bú guò cóng shāng yè de jiǎo dù lái kàn, měi yí cì shī bài dōu yì wèi zhe zhēn jīn bái yín de sǔn shī, nín bù dān xīn ma?",
+       "vi": "Nghe rất có bản lĩnh, nhưng xét từ góc độ kinh doanh, mỗi lần thất bại đều có nghĩa là tổn thất tiền thật bạc thật, chị không lo sao?"
+      },
+      {
+       "spk": 1,
+       "zh": "当然会担心，所以我们采取“小步快跑”的策略，先用较小的成本验证想法，一旦发现行不通就及时止损，把风险控制在可承受的范围之内。",
+       "py": "Dāng rán huì dān xīn, suǒ yǐ wǒ men cǎi qǔ “xiǎo bù kuài pǎo” de cè lüè, xiān yòng jiào xiǎo de chéng běn yàn zhèng xiǎng fǎ, yí dàn fā xiàn xíng bù tōng jiù jí shí zhǐ sǔn, bǎ fēng xiǎn kòng zhì zài kě chéng shòu de fàn wéi zhī nèi.",
+       "vi": "Đương nhiên lo, nên chúng tôi áp dụng chiến lược “bước nhỏ chạy nhanh”, dùng chi phí nhỏ hơn để kiểm chứng ý tưởng trước, một khi phát hiện không khả thi thì kịp thời cắt lỗ, khống chế rủi ro trong phạm vi chịu đựng được."
+      },
+      {
+       "spk": 0,
+       "zh": "那么，如何避免员工因为害怕担责而变得保守呢？",
+       "py": "Nà me, rú hé bì miǎn yuán gōng yīn wèi hài pà dān zé ér biàn de bǎo shǒu ne?",
+       "vi": "Vậy làm thế nào tránh nhân viên vì sợ chịu trách nhiệm mà trở nên bảo thủ?"
+      },
+      {
+       "spk": 1,
+       "zh": "关键在于管理者要以身作则，敢于承担责任，营造一种开放、包容的氛围，让大家觉得提出不成熟的想法也是安全的。",
+       "py": "Guān jiàn zài yú guǎn lǐ zhě yào yǐ shēn zuò zé, gǎn yú chéng dān zé rèn, yíng zào yì zhǒng kāi fàng, bāo róng de fēn wéi, ràng dà jiā jué de tí chū bù chéng shú de xiǎng fǎ yě shì ān quán de.",
+       "vi": "Mấu chốt là nhà quản lý phải làm gương, dám gánh trách nhiệm, tạo ra bầu không khí cởi mở bao dung, để mọi người cảm thấy đưa ra ý tưởng chưa chín muồi cũng là an toàn."
+      },
+      {
+       "spk": 0,
+       "zh": "看来创新不仅需要技术和资金，更需要一种文化的土壤。",
+       "py": "Kàn lái chuàng xīn bù jǐn xū yào jì shù hé zī jīn, gèng xū yào yì zhǒng wén huà de tǔ rǎng.",
+       "vi": "Xem ra đổi mới không chỉ cần công nghệ và vốn, mà càng cần mảnh đất văn hoá."
+      },
+      {
+       "spk": 1,
+       "zh": "您总结得很到位，文化才是企业最难被复制的核心竞争力。",
+       "py": "Nín zǒng jié de hěn dào wèi, wén huà cái shì qǐ yè zuì nán bèi fù zhì de hé xīn jìng zhēng lì.",
+       "vi": "Anh tổng kết rất đúng chỗ, văn hoá mới là sức cạnh tranh cốt lõi khó bị sao chép nhất của doanh nghiệp."
+      }
+     ]
+    },
+    {
+     "id": "10-2",
+     "title_zh": "颠覆性技术",
+     "title_vi": "Công nghệ đột phá",
+     "scene_vi": "Bàn về tác động của công nghệ mới đối với ngành truyền thống.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，你有没有想过，那些曾经风光无限的传统行业，为什么会在新技术面前不堪一击？",
+       "py": "Xiǎo hóng, nǐ yǒu méi yǒu xiǎng guò, nà xiē céng jīng fēng guāng wú xiàn de chuán tǒng háng yè, wèi shén me huì zài xīn jì shù miàn qián bù kān yì jī?",
+       "vi": "Tiểu Hồng, bạn có từng nghĩ, những ngành truyền thống từng huy hoàng vô hạn kia vì sao lại không chịu nổi một đòn trước công nghệ mới?"
+      },
+      {
+       "spk": 1,
+       "zh": "我觉得原因之一是它们过于依赖既有的成功经验，对变化缺乏警觉。就像温水里的青蛙，等到发现水烫了，已经来不及跳出来了。",
+       "py": "Wǒ jué de yuán yīn zhī yí shì tā men guò yú yī lài jì yǒu de chéng gōng jīng yàn, duì biàn huà quē fá jǐng jué. Jiù xiàng wēn shuǐ lǐ de qīng wā, děng dào fā xiàn shuǐ tàng le, yǐ jīng lái bù jí tiào chū lái le.",
+       "vi": "Mình thấy một nguyên nhân là chúng quá dựa vào kinh nghiệm thành công sẵn có, thiếu cảnh giác trước thay đổi. Như con ếch trong nước ấm, đến lúc phát hiện nước nóng thì đã không kịp nhảy ra."
+      },
+      {
+       "spk": 0,
+       "zh": "可是颠覆也不全是坏事，它淘汰落后的同时，也为社会带来了更高的效率和更多的选择。",
+       "py": "Kě shì diān fù yě bù quán shì huài shì, tā táo tài luò hòu de tóng shí, yě wèi shè huì dài lái le gèng gāo de xiào lǜ hé gèng duō de xuǎn zé.",
+       "vi": "Nhưng đột phá cũng không hoàn toàn là chuyện xấu, nó đào thải cái lạc hậu đồng thời cũng mang đến cho xã hội hiệu suất cao hơn và nhiều lựa chọn hơn."
+      },
+      {
+       "spk": 1,
+       "zh": "话是这么说，可对被淘汰的从业者来说，这种“创造性破坏”的过程是痛苦的。社会需要为他们提供再培训的机会，帮助他们重新找到自己的位置。",
+       "py": "Huà shì zhè me shuō, kě duì bèi táo tài de cóng yè zhě lái shuō, zhè zhǒng “chuàng zào xìng pò huài” de guò chéng shì tòng kǔ de. Shè huì xū yào wèi tā men tí gōng zài péi xùn de jī huì, bāng zhù tā men chóng xīn zhǎo dào zì jǐ de wèi zhì.",
+       "vi": "Nói thì vậy, nhưng với người làm nghề bị đào thải, quá trình “phá huỷ sáng tạo” này là đau đớn. Xã hội cần cung cấp cho họ cơ hội đào tạo lại, giúp họ tìm lại vị trí của mình."
+      },
+      {
+       "spk": 0,
+       "zh": "这么说来，个人也得时刻保持学习的状态，不能躺在过去的功劳簿上。",
+       "py": "Zhè me shuō lái, gè rén yě děi shí kè bǎo chí xué xí de zhuàng tài, bù néng tǎng zài guò qù de gōng láo bù shàng.",
+       "vi": "Nói như vậy, cá nhân cũng phải luôn giữ trạng thái học tập, không thể nằm trên sổ công lao của quá khứ."
+      },
+      {
+       "spk": 1,
+       "zh": "没错，在这个瞬息万变的时代，唯一不变的就是变化本身，终身学习已经成为生存的必修课。",
+       "py": "Méi cuò, zài zhè ge shùn xī wàn biàn de shí dài, wéi yí bú biàn de jiù shì biàn huà běn shēn, zhōng shēn xué xí yǐ jīng chéng wéi shēng cún de bì xiū kè.",
+       "vi": "Đúng vậy, trong thời đại thay đổi chớp nhoáng này, điều duy nhất không đổi là bản thân sự thay đổi, học tập suốt đời đã trở thành môn bắt buộc để sinh tồn."
+      },
+      {
+       "spk": 0,
+       "zh": "与其被动地等待被淘汰，不如主动拥抱变化。",
+       "py": "Yǔ qí bèi dòng de děng dài bèi táo tài, bù rú zhǔ dòng yōng bào biàn huà.",
+       "vi": "Thay vì bị động chờ bị đào thải, chi bằng chủ động đón nhận thay đổi."
+      },
+      {
+       "spk": 1,
+       "zh": "这才是积极的人生态度。",
+       "py": "Zhè cái shì jī jí de rén shēng tài dù.",
+       "vi": "Đó mới là thái độ sống tích cực."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "zh": "成语故事",
+   "vi": "Chuyện thành ngữ",
+   "icon": "🐉",
+   "dialogues": [
+    {
+     "id": "11-1",
+     "title_zh": "守株待兔",
+     "title_vi": "Ôm cây đợi thỏ",
+     "scene_vi": "Ông bà kể chuyện thành ngữ cho cháu.",
+     "speakers": [
+      {
+       "name": "爷爷",
+       "gender": "m"
+      },
+      {
+       "name": "小明",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小明，你知道“守株待兔”这个成语的来历吗？",
+       "py": "Xiǎo míng, nǐ zhī dao “shǒu zhū dài tù” zhè ge chéng yǔ de lái lì ma?",
+       "vi": "Tiểu Minh, cháu có biết lai lịch của thành ngữ “ôm cây đợi thỏ” không?"
+      },
+      {
+       "spk": 1,
+       "zh": "不太清楚，爷爷，您给我讲讲吧。",
+       "py": "Bú tài qīng chǔ, yé yé, nín gěi wǒ jiǎng jiǎng ba.",
+       "vi": "Cháu không rõ lắm ông ơi, ông kể cho cháu nghe đi."
+      },
+      {
+       "spk": 0,
+       "zh": "从前有个农夫，在田里干活的时候，看见一只兔子慌慌张张地跑过来，一头撞在树桩上死了。他不费吹灰之力就捡到了一只兔子。",
+       "py": "Cóng qián yǒu gè nóng fū, zài tián lǐ gàn huó de shí hou, kàn jiàn yì zhī tù zi huāng huāng zhāng zhāng de pǎo guò lái, yì tóu zhuàng zài shù zhuāng shàng sǐ le. Tā bú fèi chuī huī zhī lì jiù jiǎn dào le yì zhī tù zi.",
+       "vi": "Ngày xưa có một người nông dân, lúc đang làm ruộng, thấy một con thỏ hớt hải chạy tới, đâm đầu vào gốc cây chết. Ông ta chẳng tốn chút sức nào đã nhặt được một con thỏ."
+      },
+      {
+       "spk": 1,
+       "zh": "太幸运了！后来呢？",
+       "py": "Tài xìng yùn le! Hòu lái ne?",
+       "vi": "May mắn quá! Về sau thì sao?"
+      },
+      {
+       "spk": 0,
+       "zh": "从此他就放下农活，每天守在树桩旁边，希望再捡到兔子。结果呢，兔子没有再来，田地却荒废了。",
+       "py": "Cóng cǐ tā jiù fàng xià nóng huó, měi tiān shǒu zài shù zhuāng páng biān, xī wàng zài jiǎn dào tù zi. Jié guǒ ne, tù zi méi yǒu zài lái, tián dì què huāng fèi le.",
+       "vi": "Từ đó ông ta bỏ việc đồng, ngày ngày canh bên cạnh gốc cây, hy vọng lại nhặt được thỏ. Kết quả thì sao, thỏ không đến nữa, ruộng đồng lại bỏ hoang."
+      },
+      {
+       "spk": 1,
+       "zh": "哈哈，他真傻，怎么可能每次都有这样的好运呢？",
+       "py": "Hā hā, tā zhēn shǎ, zěn me kě néng měi cì dōu yǒu zhè yàng de hǎo yùn ne?",
+       "vi": "Ha ha, ông ta ngốc thật, làm sao lần nào cũng có vận may như vậy?"
+      },
+      {
+       "spk": 0,
+       "zh": "这个成语就是用来比喻不主动努力，只想靠侥幸获得成功的人。它告诉我们，成功没有捷径，要脚踏实地。",
+       "py": "Zhè ge chéng yǔ jiù shì yòng lái bǐ yù bù zhǔ dòng nǔ lì, zhǐ xiǎng kào jiǎo xìng huò dé chéng gōng de rén. Tā gào sù wǒ men, chéng gōng méi yǒu jié jìng, yào jiǎo tà shí dì.",
+       "vi": "Thành ngữ này dùng để ví người không chủ động nỗ lực mà chỉ muốn dựa vào may rủi để thành công. Nó cho chúng ta biết, thành công không có đường tắt, phải đi từng bước vững chắc."
+      },
+      {
+       "spk": 1,
+       "zh": "我明白了，以后我一定认真学习，不会存有侥幸心理。",
+       "py": "Wǒ míng bai le, yǐ hòu wǒ yí dìng rèn zhēn xué xí, bú huì cún yǒu jiǎo xìng xīn lǐ.",
+       "vi": "Cháu hiểu rồi, sau này cháu nhất định chăm chỉ học tập, không ôm tâm lý may rủi."
+      }
+     ]
+    },
+    {
+     "id": "11-2",
+     "title_zh": "塞翁失马",
+     "title_vi": "Tái ông mất ngựa",
+     "scene_vi": "Bàn về triết lý họa phúc qua điển tích.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，我昨天丢了一份重要的合同，心里懊恼极了，感觉倒霉透顶。",
+       "py": "Xiǎo hóng, wǒ zuó tiān diū le yí fèn zhòng yào de hé tóng, xīn lǐ ào nǎo jí le, gǎn jué dǎo méi tòu dǐng.",
+       "vi": "Tiểu Hồng, hôm qua mình làm mất một bản hợp đồng quan trọng, trong lòng hối hận vô cùng, cảm thấy xui xẻo tột độ."
+      },
+      {
+       "spk": 1,
+       "zh": "别太沮丧，你听说过“塞翁失马，焉知非福”这个典故吗？",
+       "py": "Bié tài jǔ sàng, nǐ tīng shuō guò “sài wēng shī mǎ, yān zhī fēi fú” zhè ge diǎn gù ma?",
+       "vi": "Đừng quá chán nản, bạn đã nghe điển tích “Tái ông mất ngựa, sao biết không phải phúc” chưa?"
+      },
+      {
+       "spk": 0,
+       "zh": "听过一点儿，但是记不清了，你能说说吗？",
+       "py": "Tīng guò yì diǎnr, dàn shì jì bù qīng le, nǐ néng shuō shuō ma?",
+       "vi": "Nghe qua một chút nhưng không nhớ rõ, bạn kể xem được không?"
+      },
+      {
+       "spk": 1,
+       "zh": "边塞有位老人，他的马跑丢了，邻居们都来安慰他，他却说：“这怎么知道不是好事呢？”过了几个月，那匹马竟然带着一群骏马回来了。",
+       "py": "Biān sài yǒu wèi lǎo rén, tā de mǎ pǎo diū le, lín jū men dōu lái ān wèi tā, tā què shuō: “zhè zěn me zhī dao bú shì hǎo shì ne? ” guò le jǐ gè yuè, nà pǐ mǎ jìng rán dài zhe yì qún jùn mǎ huí lái le.",
+       "vi": "Nơi biên ải có một cụ già, ngựa của cụ chạy mất, hàng xóm đều đến an ủi, cụ lại nói: “Làm sao biết đây không phải việc tốt?” Qua mấy tháng, con ngựa ấy lại dẫn một bầy tuấn mã quay về."
+      },
+      {
+       "spk": 0,
+       "zh": "这么说，坏事也可能变成好事？",
+       "py": "Zhè me shuō, huài shì yě kě néng biàn chéng hǎo shì?",
+       "vi": "Nói vậy, việc xấu cũng có thể biến thành việc tốt?"
+      },
+      {
+       "spk": 1,
+       "zh": "没错，后来他的儿子骑马摔断了腿，又因此躲过了征兵，保住了性命。祸与福是可以相互转化的。",
+       "py": "Méi cuò, hòu lái tā de ér zi qí mǎ shuāi duàn le tuǐ, yòu yīn cǐ duǒ guò le zhēng bīng, bǎo zhù le xìng mìng. Huò yǔ fú shì kě yǐ xiāng hù zhuǎn huà de.",
+       "vi": "Đúng vậy, về sau con trai cụ cưỡi ngựa ngã gãy chân, lại nhờ thế mà tránh được lệnh nhập ngũ, giữ được tính mạng. Hoạ và phúc có thể chuyển hoá lẫn nhau."
+      },
+      {
+       "spk": 0,
+       "zh": "你这么一说，我的心情好多了。也许丢了合同也是一个让我重新审视流程的机会。",
+       "py": "Nǐ zhè me yì shuō, wǒ de xīn qíng hǎo duō le. Yě xǔ diū le hé tóng yě shì yí gè ràng wǒ chóng xīn shěn shì liú chéng de jī huì.",
+       "vi": "Bạn nói vậy, tâm trạng mình tốt lên nhiều. Có lẽ mất hợp đồng cũng là cơ hội để mình xem xét lại quy trình."
+      },
+      {
+       "spk": 1,
+       "zh": "对，遇到挫折的时候，换个角度看问题，也许就会发现转机。",
+       "py": "Duì, yù dào cuò zhé de shí hou, huàn gè jiǎo dù kàn wèn tí, yě xǔ jiù huì fā xiàn zhuǎn jī.",
+       "vi": "Đúng, khi gặp trắc trở, đổi góc độ nhìn vấn đề, có lẽ sẽ phát hiện bước ngoặt."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "zh": "历史评价",
+   "vi": "Đánh giá lịch sử",
+   "icon": "🏺",
+   "dialogues": [
+    {
+     "id": "12-1",
+     "title_zh": "如何看待历史人物",
+     "title_vi": "Nhìn nhận nhân vật lịch sử",
+     "scene_vi": "Hai người bàn về cách đánh giá nhân vật lịch sử.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "李教授",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "李教授，对于历史上的功过争议比较大的人物，我们应该如何评价才算客观公正？",
+       "py": "Lǐ jiào shòu, duì yú lì shǐ shàng de gōng guò zhēng yì bǐ jiào dà de rén wù, wǒ men yīng gāi rú hé píng jià cái suàn kè guān gōng zhèng?",
+       "vi": "Giáo sư Lý, đối với những nhân vật lịch sử có nhiều tranh luận về công lỗi, chúng ta nên đánh giá thế nào mới coi là khách quan công bằng?"
+      },
+      {
+       "spk": 1,
+       "zh": "首先要把人物放回他所处的时代背景中去考察，不能用今天的标准去苛求古人。",
+       "py": "Shǒu xiān yào bǎ rén wù fàng huí tā suǒ chǔ de shí dài bèi jǐng zhōng qù kǎo chá, bù néng yòng jīn tiān de biāo zhǔn qù kē qiú gǔ rén.",
+       "vi": "Trước hết phải đặt nhân vật trở lại bối cảnh thời đại mà họ sống để xem xét, không thể dùng tiêu chuẩn ngày nay để đòi hỏi khắt khe với người xưa."
+      },
+      {
+       "spk": 0,
+       "zh": "可是如果一味强调时代局限性，会不会变成为历史上的错误开脱？",
+       "py": "Kě shì rú guǒ yí wèi qiáng diào shí dài jú xiàn xìng, huì bú huì biàn chéng wéi lì shǐ shàng de cuò wù kāi tuō?",
+       "vi": "Nhưng nếu một mực nhấn mạnh hạn chế thời đại, có thành ra biện hộ cho sai lầm trong lịch sử không?"
+      },
+      {
+       "spk": 1,
+       "zh": "这个担心不无道理。理解不等于原谅，我们既要看到人物的历史贡献，也要对他们造成的伤害保持清醒的认识，不能以功抵过，也不能一笔抹杀。",
+       "py": "Zhè ge dān xīn bù wú dào lǐ. Lǐ jiě bù děng yú yuán liàng, wǒ men jì yào kàn dào rén wù de lì shǐ gòng xiàn, yě yào duì tā men zào chéng de shāng hài bǎo chí qīng xǐng de rèn shi, bù néng yǐ gōng dǐ guò, yě bù néng yì bǐ mǒ shā.",
+       "vi": "Nỗi lo này không phải vô lý. Thấu hiểu không đồng nghĩa với tha thứ, chúng ta vừa phải thấy cống hiến lịch sử của nhân vật, vừa phải giữ nhận thức tỉnh táo về tổn hại họ gây ra, không thể lấy công bù tội, cũng không thể xoá bỏ một nét bút."
+      },
+      {
+       "spk": 0,
+       "zh": "史料的真实性也是一个难题，不同的记载往往相互矛盾。",
+       "py": "Shǐ liào de zhēn shí xìng yě shì yí gè nán tí, bù tóng de jì zǎi wǎng wǎng xiāng hù máo dùn.",
+       "vi": "Tính chân thực của sử liệu cũng là một khó khăn, các ghi chép khác nhau thường mâu thuẫn nhau."
+      },
+      {
+       "spk": 1,
+       "zh": "所以研究历史需要多方比对，慎重取舍，尤其要警惕那些带有强烈立场的叙述。“孤证不立”是史学的基本原则。",
+       "py": "Suǒ yǐ yán jiū lì shǐ xū yào duō fāng bǐ duì, shèn zhòng qǔ shě, yóu qí yào jǐng tì nà xiē dài yǒu qiáng liè lì chǎng de xù shù. “gū zhèng bú lì” shì shǐ xué de jī běn yuán zé.",
+       "vi": "Vì vậy nghiên cứu lịch sử cần so sánh nhiều nguồn, lựa chọn thận trọng, nhất là phải cảnh giác với những tường thuật mang lập trường mạnh. “Chứng cứ đơn lẻ không đủ lập luận” là nguyên tắc cơ bản của sử học."
+      },
+      {
+       "spk": 0,
+       "zh": "我明白了，评价历史既需要冷静的头脑，也需要宽广的胸怀。",
+       "py": "Wǒ míng bai le, píng jià lì shǐ jì xū yào lěng jìng de tóu nǎo, yě xū yào kuān guǎng de xiōng huái.",
+       "vi": "Em hiểu rồi, đánh giá lịch sử vừa cần cái đầu lạnh vừa cần tấm lòng rộng."
+      },
+      {
+       "spk": 1,
+       "zh": "正是如此，“以史为鉴”，目的不是审判过去，而是照亮未来。",
+       "py": "Zhèng shì rú cǐ, “yǐ shǐ wéi jiàn”, mù dì bú shì shěn pàn guò qù, ér shì zhào liàng wèi lái.",
+       "vi": "Chính là như vậy, “lấy sử làm gương”, mục đích không phải xét xử quá khứ mà là soi sáng tương lai."
+      }
+     ]
+    },
+    {
+     "id": "12-2",
+     "title_zh": "历史的教训",
+     "title_vi": "Bài học lịch sử",
+     "scene_vi": "Bàn về việc học hỏi từ lịch sử.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，黑格尔说过：“人类从历史中学到的唯一教训，就是人类从来不会从历史中吸取教训。”你同意吗？",
+       "py": "Xiǎo měi, hēi gé ěr shuō guò: “rén lèi cóng lì shǐ zhōng xué dào de wéi yí jiào xùn, jiù shì rén lèi cóng lái bú huì cóng lì shǐ zhōng xī qǔ jiào xùn. ” nǐ tóng yì ma?",
+       "vi": "Tiểu Mỹ, Hegel từng nói: “Bài học duy nhất loài người học được từ lịch sử là loài người chưa bao giờ rút bài học từ lịch sử.” Bạn có đồng ý không?"
+      },
+      {
+       "spk": 1,
+       "zh": "这句话虽然尖锐，却不无几分真实。我们常常看到相似的错误在不同的年代反复上演。",
+       "py": "Zhè jù huà suī rán jiān ruì, què bù wú jǐ fēn zhēn shí. Wǒ men cháng cháng kàn dào xiāng sì de cuò wù zài bù tóng de nián dài fǎn fù shàng yǎn.",
+       "vi": "Câu nói này tuy sắc bén nhưng cũng có phần thật. Chúng ta thường thấy những sai lầm tương tự lặp đi lặp lại ở các thời đại khác nhau."
+      },
+      {
+       "spk": 0,
+       "zh": "那么，为什么人们总是难以汲取教训呢？",
+       "py": "Nà me, wèi shén me rén men zǒng shì nán yǐ jí qǔ jiào xùn ne?",
+       "vi": "Vậy vì sao con người luôn khó rút ra bài học?"
+      },
+      {
+       "spk": 1,
+       "zh": "原因很复杂。一是人性中的弱点，比如贪婪和短视；二是当局者迷，身处其中的人往往看不清全局；三是每个时代的情况毕竟不完全相同，简单地照搬经验也会出问题。",
+       "py": "Yuán yīn hěn fù zá. Yí shì rén xìng zhōng de ruò diǎn, bǐ rú tān lán hé duǎn shì; èr shì dāng jú zhě mí, shēn chǔ qí zhōng de rén wǎng wǎng kàn bù qīng quán jú; sān shì měi gè shí dài de qíng kuàng bì jìng bù wán quán xiāng tóng, jiǎn dān de zhào bān jīng yàn yě huì chū wèn tí.",
+       "vi": "Nguyên nhân rất phức tạp. Một là điểm yếu trong bản tính con người, ví dụ tham lam và thiển cận; hai là người trong cuộc thì mê, người ở trong đó thường không nhìn rõ toàn cục; ba là tình hình mỗi thời đại dù sao cũng không hoàn toàn giống nhau, sao chép kinh nghiệm một cách đơn giản cũng gây ra vấn đề."
+      },
+      {
+       "spk": 0,
+       "zh": "这么说，读史的意义不在于找到现成的答案，而在于培养思考的能力？",
+       "py": "Zhè me shuō, dú shǐ de yì yì bú zài yú zhǎo dào xiàn chéng de dá àn, ér zài yú péi yǎng sī kǎo de néng lì?",
+       "vi": "Nói vậy, ý nghĩa của việc đọc sử không phải ở chỗ tìm đáp án có sẵn mà ở bồi dưỡng năng lực tư duy?"
+      },
+      {
+       "spk": 1,
+       "zh": "你说到点子上了。历史给我们的是一面镜子和一种视野，让我们在面对新问题时，能够站在更长远的时间尺度上思考。",
+       "py": "Nǐ shuō dào diǎn zi shàng le. Lì shǐ gěi wǒ men de shì yí miàn jìng zi hé yì zhǒng shì yě, ràng wǒ men zài miàn duì xīn wèn tí shí, néng gòu zhàn zài gèng cháng yuǎn de shí jiān chǐ dù shàng sī kǎo.",
+       "vi": "Bạn nói trúng trọng tâm rồi. Lịch sử cho chúng ta một tấm gương và một tầm nhìn, giúp chúng ta khi đối mặt vấn đề mới có thể suy nghĩ trên thang thời gian dài hơn."
+      },
+      {
+       "spk": 0,
+       "zh": "所谓“前事不忘，后事之师”，大概就是这个道理。",
+       "py": "Suǒ wèi “qián shì bú wàng, hòu shì zhī shī”, dà gài jiù shì zhè ge dào lǐ.",
+       "vi": "Cái gọi là “việc trước không quên, làm thầy cho việc sau”, có lẽ chính là đạo lý này."
+      },
+      {
+       "spk": 1,
+       "zh": "是的，只要我们保持反思的习惯，历史就不会白白流逝。",
+       "py": "Shì de, zhǐ yào wǒ men bǎo chí fǎn sī de xí guàn, lì shǐ jiù bú huì bái bái liú shì.",
+       "vi": "Đúng vậy, chỉ cần chúng ta giữ thói quen phản tư, lịch sử sẽ không trôi qua vô ích."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "zh": "文化认同",
+   "vi": "Bản sắc văn hoá",
+   "icon": "🏮",
+   "dialogues": [
+    {
+     "id": "13-1",
+     "title_zh": "身在异乡",
+     "title_vi": "Nơi đất khách",
+     "scene_vi": "Người con xa xứ nói về bản sắc văn hoá.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "大卫",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "大卫，你在中国生活了十年，已经能说一口流利的汉语了，你有没有觉得自己的文化身份变得模糊了？",
+       "py": "Dà wèi, nǐ zài zhōng guó shēng huó le shí nián, yǐ jīng néng shuō yì kǒu liú lì de hàn yǔ le, nǐ yǒu méi yǒu jué de zì jǐ de wén huà shēn fèn biàn de mó hú le?",
+       "vi": "David, bạn sống ở Trung Quốc mười năm, đã nói được tiếng Hán lưu loát, bạn có thấy bản sắc văn hoá của mình trở nên mờ nhạt không?"
+      },
+      {
+       "spk": 1,
+       "zh": "这个问题我也经常思考。有时候，我在这里觉得自己是外国人，回到家乡，又发现自己和周围的人有些格格不入。",
+       "py": "Zhè ge wèn tí wǒ yě jīng cháng sī kǎo. Yǒu shí hòu, wǒ zài zhè lǐ jué de zì jǐ shì wài guó rén, huí dào jiā xiāng, yòu fā xiàn zì jǐ hé zhōu wéi de rén yǒu xiē gé gé bú rù.",
+       "vi": "Câu hỏi này mình cũng thường suy nghĩ. Có lúc ở đây mình thấy mình là người nước ngoài, về quê lại phát hiện mình có phần lạc lõng với người xung quanh."
+      },
+      {
+       "spk": 0,
+       "zh": "那你是如何看待这种“夹在中间”的感觉的？",
+       "py": "Nà nǐ shì rú hé kàn dài zhè zhǒng “jiā zài zhōng jiān” de gǎn jué de?",
+       "vi": "Vậy bạn nhìn nhận cảm giác “kẹt ở giữa” này như thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "起初很苦恼，后来我渐渐想通了：文化认同并不是非此即彼的选择题，一个人完全可以同时拥有多重身份，并从中汲取不同的养分。",
+       "py": "Qǐ chū hěn kǔ nǎo, hòu lái wǒ jiàn jiàn xiǎng tōng le: wén huà rèn tóng bìng bú shì fēi cǐ jí bǐ de xuǎn zé tí, yí gè rén wán quán kě yǐ tóng shí yōng yǒu duō chóng shēn fèn, bìng cóng zhōng jí qǔ bù tóng de yǎng fèn.",
+       "vi": "Lúc đầu rất phiền muộn, sau mình dần nghĩ thông: bản sắc văn hoá không phải câu hỏi trắc nghiệm hoặc cái này hoặc cái kia, một người hoàn toàn có thể đồng thời có đa danh tính và hút lấy dưỡng chất khác nhau từ đó."
+      },
+      {
+       "spk": 0,
+       "zh": "这种开放的心态很难得。不过，文化的差异有时也会带来误解甚至冲突。",
+       "py": "Zhè zhǒng kāi fàng de xīn tài hěn nán dé. Bú guò, wén huà de chā yì yǒu shí yě huì dài lái wù jiě shèn zhì chōng tū.",
+       "vi": "Tâm thế cởi mở này rất hiếm có. Tuy nhiên, khác biệt văn hoá đôi khi cũng gây ra hiểu lầm thậm chí xung đột."
+      },
+      {
+       "spk": 1,
+       "zh": "确实如此，所以相互理解尤为重要。很多时候，冲突并不是因为谁对谁错，而是因为我们站在不同的立场，用不同的方式看待同一件事。",
+       "py": "Què shí rú cǐ, suǒ yǐ xiāng hù lǐ jiě yóu wéi zhòng yào. Hěn duō shí hou, chōng tū bìng bú shì yīn wèi shuí duì shuí cuò, ér shì yīn wèi wǒ men zhàn zài bù tóng de lì chǎng, yòng bù tóng de fāng shì kàn dài tóng yí jiàn shì.",
+       "vi": "Đúng vậy, nên thấu hiểu lẫn nhau càng quan trọng. Rất nhiều khi xung đột không phải vì ai đúng ai sai, mà vì chúng ta đứng ở lập trường khác nhau, nhìn cùng một việc bằng những cách khác nhau."
+      },
+      {
+       "spk": 0,
+       "zh": "或许正是这些差异，让人类文明变得丰富多彩。",
+       "py": "Huò xǔ zhèng shì zhè xiē chā yì, ràng rén lèi wén míng biàn de fēng fù duō cǎi.",
+       "vi": "Có lẽ chính những khác biệt này khiến văn minh nhân loại trở nên phong phú đa sắc."
+      },
+      {
+       "spk": 1,
+       "zh": "是啊，“和而不同”，才是处理文化关系的最高境界。",
+       "py": "Shì a, “hé ér bù tóng”, cái shì chǔ lǐ wén huà guān xì de zuì gāo jìng jiè.",
+       "vi": "Phải, “hoà nhi bất đồng”, mới là cảnh giới cao nhất khi xử lý quan hệ văn hoá."
+      }
+     ]
+    },
+    {
+     "id": "13-2",
+     "title_zh": "守住乡愁",
+     "title_vi": "Giữ lấy nỗi nhớ quê",
+     "scene_vi": "Bàn về việc bảo tồn văn hoá quê hương trong thời đô thị hoá.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，随着城市化的推进，许多古老的村落正在消失，我们常说的“乡愁”也越来越没有寄托之处了。",
+       "py": "Xiǎo měi, suí zhe chéng shì huà de tuī jìn, xǔ duō gǔ lǎo de cūn luò zhèng zài xiāo shī, wǒ men cháng shuō de “xiāng chóu” yě yuè lái yuè méi yǒu jì tuō zhī chù le.",
+       "vi": "Tiểu Mỹ, cùng với tiến trình đô thị hoá, nhiều làng cổ xưa đang biến mất, “nỗi nhớ quê” mà chúng ta thường nói cũng ngày càng không có nơi gửi gắm."
+      },
+      {
+       "spk": 1,
+       "zh": "是啊，那些祠堂、老井、石板路，不只是建筑，更是一个村庄的集体记忆。拆掉容易，重建就难了。",
+       "py": "Shì a, nà xiē cí táng, lǎo jǐng, shí bǎn lù, bù zhǐ shì jiàn zhù, gèng shì yí gè cūn zhuāng de jí tǐ jì yì. Chāi diào róng yì, chóng jiàn jiù nán le.",
+       "vi": "Phải, những từ đường, giếng cổ, đường đá phiến ấy không chỉ là kiến trúc mà còn là ký ức tập thể của một ngôi làng. Phá bỏ thì dễ, xây lại thì khó."
+      },
+      {
+       "spk": 0,
+       "zh": "可是村民也有改善生活的权利，总不能为了保留所谓的“古风”，让他们一直住在条件落后的老屋里吧？",
+       "py": "Kě shì cūn mín yě yǒu gǎi shàn shēng huó de quán lì, zǒng bù néng wèi le bǎo liú suǒ wèi de “gǔ fēng”, ràng tā men yì zhí zhù zài tiáo jiàn luò hòu de lǎo wū lǐ ba?",
+       "vi": "Nhưng dân làng cũng có quyền cải thiện cuộc sống, chẳng lẽ vì giữ cái gọi là “nét cổ” mà để họ mãi ở trong nhà cũ lạc hậu?"
+      },
+      {
+       "spk": 1,
+       "zh": "所以保护和发展并不矛盾，关键是让村民成为主角。比如鼓励他们参与旅游和手工艺经营，让传统文化成为改善生活的资源。",
+       "py": "Suǒ yǐ bǎo hù hé fā zhǎn bìng bù máo dùn, guān jiàn shì ràng cūn mín chéng wéi zhǔ jué. Bǐ rú gǔ lì tā men cān yù lǚ yóu hé shǒu gōng yì jīng yíng, ràng chuán tǒng wén huà chéng wéi gǎi shàn shēng huó de zī yuán.",
+       "vi": "Vì vậy bảo tồn và phát triển không mâu thuẫn, mấu chốt là để dân làng làm nhân vật chính. Ví dụ khuyến khích họ tham gia du lịch và kinh doanh thủ công mỹ nghệ, để văn hoá truyền thống trở thành nguồn lực cải thiện cuộc sống."
+      },
+      {
+       "spk": 0,
+       "zh": "不过也要防止过度商业化，让古村变成千篇一律的“景点”。",
+       "py": "Bú guò yě yào fáng zhǐ guò dù shāng yè huà, ràng gǔ cūn biàn chéng qiān piān yí lǜ de “jǐng diǎn”.",
+       "vi": "Nhưng cũng phải ngăn thương mại hoá quá mức, khiến làng cổ biến thành “điểm tham quan” giống hệt nhau."
+      },
+      {
+       "spk": 1,
+       "zh": "对，保持真实性是底线，一旦失去了原有的生活气息，这里的文化也就失去了灵魂。",
+       "py": "Duì, bǎo chí zhēn shí xìng shì dǐ xiàn, yí dàn shī qù le yuán yǒu de shēng huó qì xī, zhè lǐ de wén huà yě jiù shī qù le líng hún.",
+       "vi": "Đúng, giữ tính chân thực là giới hạn cuối, một khi mất hơi thở cuộc sống vốn có thì văn hoá nơi đây cũng mất linh hồn."
+      },
+      {
+       "spk": 0,
+       "zh": "希望我们的下一代，还能在这片土地上找到属于他们的根。",
+       "py": "Xī wàng wǒ men de xià yí dài, hái néng zài zhè piàn tǔ dì shàng zhǎo dào shǔ yú tā men de gēn.",
+       "vi": "Hy vọng thế hệ sau của chúng ta vẫn còn tìm thấy cội rễ thuộc về họ trên mảnh đất này."
+      },
+      {
+       "spk": 1,
+       "zh": "这也是我们这一代人的责任。",
+       "py": "Zhè yě shì wǒ men zhè yí dài rén de zé rèn.",
+       "vi": "Đó cũng là trách nhiệm của thế hệ chúng ta."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "zh": "幸福感",
+   "vi": "Cảm nhận hạnh phúc",
+   "icon": "☺️",
+   "dialogues": [
+    {
+     "id": "14-1",
+     "title_zh": "什么是幸福",
+     "title_vi": "Hạnh phúc là gì",
+     "scene_vi": "Hai người bạn bàn về hạnh phúc trong cuộc sống hiện đại.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "小明",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小明，如今物质生活比过去丰富了许多，可是为什么很多人反而觉得不幸福呢？",
+       "py": "Xiǎo míng, rú jīn wù zhì shēng huó bǐ guò qù fēng fù le xǔ duō, kě shì wèi shén me hěn duō rén fǎn ér jué de bú xìng fú ne?",
+       "vi": "Tiểu Minh, ngày nay đời sống vật chất phong phú hơn trước rất nhiều, nhưng vì sao nhiều người ngược lại thấy không hạnh phúc?"
+      },
+      {
+       "spk": 1,
+       "zh": "我认为幸福感与物质条件并不总是成正比。人们的欲望是无止境的，得到了一样，又会盯上下一样，永远处于追逐的状态。",
+       "py": "Wǒ rèn wéi xìng fú gǎn yǔ wù zhì tiáo jiàn bìng bù zǒng shì chéng zhèng bǐ. Rén men de yù wàng shì wú zhǐ jìng de, dé dào le yí yàng, yòu huì dīng shàng xià yí yàng, yǒng yuǎn chǔ yú zhuī zhú de zhuàng tài.",
+       "vi": "Mình cho rằng cảm nhận hạnh phúc và điều kiện vật chất không phải lúc nào cũng tỷ lệ thuận. Dục vọng con người không có điểm dừng, có được thứ này lại nhắm đến thứ khác, mãi ở trong trạng thái đuổi theo."
+      },
+      {
+       "spk": 0,
+       "zh": "再加上社交媒体上的攀比，别人晒出的“完美生活”，让我们对自己所拥有的一切产生了不满。",
+       "py": "Zài jiā shàng shè jiāo méi tǐ shàng de pān bǐ, bié rén shài chū de “wán měi shēng huó”, ràng wǒ men duì zì jǐ suǒ yōng yǒu de yí qiè chǎn shēng le bù mǎn.",
+       "vi": "Thêm vào đó là so bì trên mạng xã hội, “cuộc sống hoàn hảo” người khác khoe ra khiến chúng ta bất mãn với mọi thứ mình đang có."
+      },
+      {
+       "spk": 1,
+       "zh": "没错，所谓“知足常乐”，并非要求我们不思进取，而是学会珍惜眼前的拥有，把注意力放在真正重要的人和事上。",
+       "py": "Méi cuò, suǒ wèi “zhī zú cháng lè”, bìng fēi yāo qiú wǒ men bù sī jìn qǔ, ér shì xué huì zhēn xī yǎn qián de yōng yǒu, bǎ zhù yì lì fàng zài zhēn zhèng zhòng yào de rén hé shì shàng.",
+       "vi": "Đúng vậy, cái gọi là “biết đủ thì thường vui”, không phải yêu cầu chúng ta không cầu tiến, mà là học cách trân trọng những gì đang có, đặt sự chú ý vào những người và việc thật sự quan trọng."
+      },
+      {
+       "spk": 0,
+       "zh": "心理学研究也表明，良好的人际关系，是影响幸福感最重要的因素之一。",
+       "py": "Xīn lǐ xué yán jiū yě biǎo míng, liáng hǎo de rén jì guān xì, shì yǐng xiǎng xìng fú gǎn zuì zhòng yào de yīn sù zhī yī.",
+       "vi": "Nghiên cứu tâm lý học cũng cho thấy, quan hệ giữa người với người tốt đẹp là một trong những yếu tố quan trọng nhất ảnh hưởng đến cảm nhận hạnh phúc."
+      },
+      {
+       "spk": 1,
+       "zh": "所以与其拼命加班挣更多的钱，不如留出时间陪伴家人和朋友，这样得到的满足往往更持久。",
+       "py": "Suǒ yǐ yǔ qí pīn mìng jiā bān zhēng gèng duō de qián, bù rú liú chū shí jiān péi bàn jiā rén hé péng you, zhè yàng dé dào de mǎn zú wǎng wǎng gèng chí jiǔ.",
+       "vi": "Vì vậy thay vì liều mạng tăng ca kiếm thêm tiền, chi bằng dành thời gian bầu bạn với gia đình bạn bè, sự thoả mãn có được thường bền lâu hơn."
+      },
+      {
+       "spk": 0,
+       "zh": "你说得很对，我也打算放慢脚步，多留意身边的美好。",
+       "py": "Nǐ shuō de hěn duì, wǒ yě dǎ suàn fàng màn jiǎo bù, duō liú yì shēn biān de měi hǎo.",
+       "vi": "Bạn nói rất đúng, mình cũng định chậm bước lại, để ý nhiều hơn những điều tốt đẹp xung quanh."
+      },
+      {
+       "spk": 1,
+       "zh": "幸福其实一直在身边，只是我们常常忙着赶路，忘了抬头看看。",
+       "py": "Xìng fú qí shí yì zhí zài shēn biān, zhǐ shì wǒ men cháng cháng máng zhe gǎn lù, wàng le tái tóu kàn kàn.",
+       "vi": "Hạnh phúc thật ra luôn ở bên cạnh, chỉ là chúng ta thường bận chạy đường, quên ngẩng đầu nhìn."
+      }
+     ]
+    },
+    {
+     "id": "14-2",
+     "title_zh": "感恩的力量",
+     "title_vi": "Sức mạnh của lòng biết ơn",
+     "scene_vi": "Chia sẻ thói quen viết nhật ký biết ơn.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，我发现你无论遇到什么事，总是心态平和，充满正能量，你是怎么做到的？",
+       "py": "Xiǎo měi, wǒ fā xiàn nǐ wú lùn yù dào shén me shì, zǒng shì xīn tài píng hé, chōng mǎn zhèng néng liàng, nǐ shì zěn me zuò dào de?",
+       "vi": "Tiểu Mỹ, mình thấy bạn dù gặp chuyện gì cũng luôn tâm thái bình hoà, tràn đầy năng lượng tích cực, bạn làm thế nào vậy?"
+      },
+      {
+       "spk": 1,
+       "zh": "我有一个小习惯：每天睡觉前，写下三件值得感恩的事，哪怕只是一杯好喝的咖啡、一句同事的问候。",
+       "py": "Wǒ yǒu yí gè xiǎo xí guàn: měi tiān shuì jiào qián, xiě xià sān jiàn zhí dé gǎn ēn de shì, nǎ pà zhǐ shì yì bēi hǎo hē de kā fēi, yí jù tóng shì de wèn hòu.",
+       "vi": "Mình có một thói quen nhỏ: mỗi ngày trước khi ngủ, viết ra ba điều đáng biết ơn, dù chỉ là một cốc cà phê ngon, một lời hỏi thăm của đồng nghiệp."
+      },
+      {
+       "spk": 0,
+       "zh": "听起来很简单，真的能带来改变吗？",
+       "py": "Tīng qǐ lái hěn jiǎn dān, zhēn de néng dài lái gǎi biàn ma?",
+       "vi": "Nghe thật đơn giản, thật sự mang lại thay đổi sao?"
+      },
+      {
+       "spk": 1,
+       "zh": "坚持了一段时间以后，我发现自己的关注点发生了转变，不再总是盯着生活中的不如意，而是更容易发现美好的一面。",
+       "py": "Jiān chí le yí duàn shí jiān yǐ hòu, wǒ fā xiàn zì jǐ de guān zhù diǎn fā shēng le zhuǎn biàn, bú zài zǒng shì dīng zhe shēng huó zhōng de bù rú yì, ér shì gèng róng yì fā xiàn měi hǎo de yí miàn.",
+       "vi": "Sau khi kiên trì một thời gian, mình phát hiện điểm tập trung của mình thay đổi, không còn cứ nhìn chằm chằm vào những điều không như ý trong cuộc sống, mà dễ phát hiện mặt tốt đẹp hơn."
+      },
+      {
+       "spk": 0,
+       "zh": "这就像是给自己戴上了一副“发现美好”的眼镜。",
+       "py": "Zhè jiù xiàng shì gěi zì jǐ dài shàng le yí fù “fā xiàn měi hǎo” de yǎn jìng.",
+       "vi": "Điều này giống như đeo cho mình một cặp kính “phát hiện điều tốt đẹp”."
+      },
+      {
+       "spk": 1,
+       "zh": "可以这么说。当然，感恩并不意味着逃避问题，而是在直面困难的同时，不忘记生活中依然有值得珍惜的东西。",
+       "py": "Kě yǐ zhè me shuō. Dāng rán, gǎn ēn bìng bú yì wèi zhe táo bì wèn tí, ér shì zài zhí miàn kùn nán de tóng shí, bú wàng jì shēng huó zhōng yī rán yǒu zhí dé zhēn xī de dōng xi.",
+       "vi": "Có thể nói vậy. Đương nhiên biết ơn không có nghĩa là trốn tránh vấn đề, mà là trong lúc đối mặt khó khăn vẫn không quên trong cuộc sống còn những điều đáng trân trọng."
+      },
+      {
+       "spk": 0,
+       "zh": "我今晚就开始试试，谢谢你的分享。",
+       "py": "Wǒ jīn wǎn jiù kāi shǐ shì shì, xiè xie nǐ de fēn xiǎng.",
+       "vi": "Tối nay mình bắt đầu thử, cảm ơn chia sẻ của bạn."
+      },
+      {
+       "spk": 1,
+       "zh": "不客气，希望你也能从中受益。",
+       "py": "Bú kè qì, xī wàng nǐ yě néng cóng zhōng shòu yì.",
+       "vi": "Không có gì, hy vọng bạn cũng được hưởng lợi từ đó."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "zh": "媒介素养",
+   "vi": "Năng lực truyền thông",
+   "icon": "📡",
+   "dialogues": [
+    {
+     "id": "15-1",
+     "title_zh": "信息茧房",
+     "title_vi": "Buồng kén thông tin",
+     "scene_vi": "Bàn về hiệu ứng thuật toán đề xuất nội dung.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，我最近发现手机上推送给我的内容越来越单一，几乎都是我感兴趣的话题，这是怎么回事？",
+       "py": "Xiǎo hóng, wǒ zuì jìn fā xiàn shǒu jī shàng tuī sòng gěi wǒ de nèi róng yuè lái yuè dān yī, jī hū dōu shì wǒ gǎn xìng qù de huà tí, zhè shì zěn me huí shì?",
+       "vi": "Tiểu Hồng, gần đây mình phát hiện nội dung đẩy vào điện thoại cho mình ngày càng đơn điệu, gần như đều là chủ đề mình hứng thú, chuyện này là sao?"
+      },
+      {
+       "spk": 1,
+       "zh": "这就是所谓的“信息茧房”。算法根据你的浏览习惯不断推荐类似的内容，久而久之，你接触到的信息就像被一层茧包裹起来。",
+       "py": "Zhè jiù shì suǒ wèi de “xìn xī jiǎn fáng”. Suàn fǎ gēn jù nǐ de liú lǎn xí guàn bú duàn tuī jiàn lèi sì de nèi róng, jiǔ ér jiǔ zhī, nǐ jiē chù dào de xìn xī jiù xiàng bèi yì céng jiǎn bāo guǒ qǐ lái.",
+       "vi": "Đó chính là cái gọi là “buồng kén thông tin”. Thuật toán dựa vào thói quen duyệt của bạn không ngừng đề xuất nội dung tương tự, lâu dần, thông tin bạn tiếp xúc như bị một lớp kén bao bọc."
+      },
+      {
+       "spk": 0,
+       "zh": "听上去似乎挺贴心的，为什么说它有问题呢？",
+       "py": "Tīng shàng qù sì hū tǐng tiē xīn de, wèi shén me shuō tā yǒu wèn tí ne?",
+       "vi": "Nghe có vẻ rất chu đáo, vì sao lại nói nó có vấn đề?"
+      },
+      {
+       "spk": 1,
+       "zh": "因为长期只接触同一类观点，视野会越来越狭窄，也容易对不同的声音产生排斥，甚至导致社会观点的两极分化。",
+       "py": "Yīn wèi cháng qī zhǐ jiē chù tóng yí lèi guān diǎn, shì yě huì yuè lái yuè xiá zhǎi, yě róng yì duì bù tóng de shēng yīn chǎn shēng pái chì, shèn zhì dǎo zhì shè huì guān diǎn de liǎng jí fēn huà.",
+       "vi": "Vì lâu dài chỉ tiếp xúc cùng một loại quan điểm, tầm nhìn sẽ ngày càng hẹp, cũng dễ nảy sinh sự bài xích với những tiếng nói khác, thậm chí dẫn đến phân cực quan điểm xã hội."
+      },
+      {
+       "spk": 0,
+       "zh": "那么作为个人，应该如何打破这层“茧”呢？",
+       "py": "Nà me zuò wéi gè rén, yīng gāi rú hé dǎ pò zhè céng “jiǎn” ne?",
+       "vi": "Vậy với tư cách cá nhân, nên phá lớp “kén” này như thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "可以有意识地去阅读不同立场的文章，主动关注自己平时不太接触的领域，也可以定期清理浏览记录，减少算法对你的“画像”。",
+       "py": "Kě yǐ yǒu yì shí de qù yuè dú bù tóng lì chǎng de wén zhāng, zhǔ dòng guān zhù zì jǐ píng shí bú tài jiē chù de lǐng yù, yě kě yǐ dìng qī qīng lǐ liú lǎn jì lù, jiǎn shǎo suàn fǎ duì nǐ de “huà xiàng”.",
+       "vi": "Có thể có ý thức đọc bài viết của những lập trường khác nhau, chủ động theo dõi lĩnh vực mà bình thường ít tiếp xúc, cũng có thể định kỳ xoá lịch sử duyệt để giảm “chân dung” thuật toán về bạn."
+      },
+      {
+       "spk": 0,
+       "zh": "看来，在信息时代，保持独立判断的能力比获取信息本身更重要。",
+       "py": "Kàn lái, zài xìn xī shí dài, bǎo chí dú lì pàn duàn de néng lì bǐ huò qǔ xìn xī běn shēn gèng zhòng yào.",
+       "vi": "Xem ra, trong thời đại thông tin, giữ năng lực phán đoán độc lập quan trọng hơn bản thân việc thu nhận thông tin."
+      },
+      {
+       "spk": 1,
+       "zh": "没错，“兼听则明，偏信则暗”，这个道理放在今天依然适用。",
+       "py": "Méi cuò, “jiān tīng zé míng, piān xìn zé àn”, zhè ge dào lǐ fàng zài jīn tiān yī rán shì yòng.",
+       "vi": "Đúng vậy, “nghe nhiều bên thì sáng, tin một phía thì tối”, đạo lý này đặt vào hôm nay vẫn còn hợp."
+      }
+     ]
+    },
+    {
+     "id": "15-2",
+     "title_zh": "谣言的传播",
+     "title_vi": "Sự lan truyền của tin đồn",
+     "scene_vi": "Hai người phân tích vì sao tin đồn lan nhanh.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，上个星期有个关于食品安全的谣言在网上疯传，后来证实完全是捏造的，为什么这类消息总是传得比真相还快？",
+       "py": "Xiǎo měi, shàng gè xīng qī yǒu gè guān yú shí pǐn ān quán de yáo yán zài wǎng shàng fēng chuán, hòu lái zhèng shí wán quán shì niē zào de, wèi shén me zhè lèi xiāo xī zǒng shì chuán de bǐ zhēn xiàng hái kuài?",
+       "vi": "Tiểu Mỹ, tuần trước có một tin đồn về an toàn thực phẩm lan như điên trên mạng, về sau xác nhận hoàn toàn là bịa đặt, vì sao loại tin này luôn lan nhanh hơn sự thật?"
+      },
+      {
+       "spk": 1,
+       "zh": "因为谣言往往抓住了人们的恐惧和好奇，情绪化的内容天然更容易引发转发。而真相通常比较平淡，缺乏吸引力。",
+       "py": "Yīn wèi yáo yán wǎng wǎng zhuā zhù le rén men de kǒng jù hé hǎo qí, qíng xù huà de nèi róng tiān rán gèng róng yì yǐn fā zhuǎn fā. Ér zhēn xiàng tōng cháng bǐ jiào píng dàn, quē fá xī yǐn lì.",
+       "vi": "Vì tin đồn thường nắm bắt nỗi sợ và sự tò mò của con người, nội dung mang tính cảm xúc tự nhiên dễ gây chia sẻ. Còn sự thật thường khá bình thường, thiếu sức hấp dẫn."
+      },
+      {
+       "spk": 0,
+       "zh": "而且很多人转发的时候根本没有核实，只是觉得“宁可信其有，不可信其无”。",
+       "py": "Ér qiě hěn duō rén zhuǎn fā de shí hou gēn běn méi yǒu hé shí, zhǐ shì jué de “nìng kě xìn qí yǒu, bù kě xìn qí wú”.",
+       "vi": "Hơn nữa nhiều người khi chia sẻ hoàn toàn không kiểm chứng, chỉ nghĩ “thà tin là có, không thể tin là không”."
+      },
+      {
+       "spk": 1,
+       "zh": "这种心态正是谣言滋生的土壤。一条谣言经过无数次转发，就会被误认为是“大家都知道的事实”，这被称为“重复效应”。",
+       "py": "Zhè zhǒng xīn tài zhèng shì yáo yán zī shēng de tǔ rǎng. Yì tiáo yáo yán jīng guò wú shù cì zhuǎn fā, jiù huì bèi wù rèn wéi shì “dà jiā dōu zhī dao de shì shí”, zhè bèi chēng wéi “chóng fù xiào yìng”.",
+       "vi": "Tâm thế này chính là mảnh đất nuôi dưỡng tin đồn. Một tin đồn qua vô số lần chia sẻ sẽ bị nhầm tưởng là “sự thật ai cũng biết”, điều này gọi là “hiệu ứng lặp lại”."
+      },
+      {
+       "spk": 0,
+       "zh": "平台是不是也应该承担起相应的责任，比如对可疑信息加以标注或限制传播？",
+       "py": "Píng tái shì bú shì yě yīng gāi chéng dān qǐ xiāng yìng de zé rèn, bǐ rú duì kě yí xìn xī jiā yǐ biāo zhù huò xiàn zhì chuán bō?",
+       "vi": "Nền tảng có phải cũng nên gánh trách nhiệm tương ứng, ví dụ gắn nhãn hoặc hạn chế lan truyền với thông tin đáng ngờ?"
+      },
+      {
+       "spk": 1,
+       "zh": "当然，平台、监管部门和用户三方都要有所作为。对普通人来说，最简单的办法就是在转发之前多问一句：这条消息的来源可靠吗？",
+       "py": "Dāng rán, píng tái, jiān guǎn bù mén hé yòng hù sān fāng dōu yào yǒu suǒ zuò wéi. Duì pǔ tōng rén lái shuō, zuì jiǎn dān de bàn fǎ jiù shì zài zhuǎn fā zhī qián duō wèn yí jù: zhè tiáo xiāo xī de lái yuán kě kào ma?",
+       "vi": "Đương nhiên, nền tảng, cơ quan quản lý và người dùng ba bên đều phải hành động. Với người bình thường, cách đơn giản nhất là trước khi chia sẻ hãy hỏi thêm một câu: nguồn của tin này có đáng tin không?"
+      },
+      {
+       "spk": 0,
+       "zh": "谣言止于智者，但愿我们每个人都能成为这样的智者。",
+       "py": "Yáo yán zhǐ yú zhì zhě, dàn yuàn wǒ men měi gè rén dōu néng chéng wéi zhè yàng de zhì zhě.",
+       "vi": "Tin đồn dừng lại ở người trí, mong mỗi chúng ta đều có thể trở thành người trí như vậy."
+      },
+      {
+       "spk": 1,
+       "zh": "从一次理性的转发开始吧。",
+       "py": "Cóng yí cì lǐ xìng de zhuǎn fā kāi shǐ ba.",
+       "vi": "Hãy bắt đầu từ một lần chia sẻ lý trí."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "zh": "企业战略",
+   "vi": "Chiến lược doanh nghiệp",
+   "icon": "🏢",
+   "dialogues": [
+    {
+     "id": "16-1",
+     "title_zh": "多元化还是专业化",
+     "title_vi": "Đa dạng hoá hay chuyên môn hoá",
+     "scene_vi": "Hai nhà quản lý thảo luận chiến lược phát triển.",
+     "speakers": [
+      {
+       "name": "李总",
+       "gender": "m"
+      },
+      {
+       "name": "王总",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "王总，随着主营业务增长趋缓，公司内部对于未来的战略方向存在分歧：一派主张多元化经营，另一派则坚持深耕主业，您倾向于哪一种？",
+       "py": "Wáng zǒng, suí zhe zhǔ yíng yè wù zēng zhǎng qū huǎn, gōng sī nèi bù duì yú wèi lái de zhàn lüè fāng xiàng cún zài fēn qí: yí pài zhǔ zhāng duō yuán huà jīng yíng, lìng yí pài zé jiān chí shēn gēng zhǔ yè, nín qīng xiàng yú nǎ yì zhǒng?",
+       "vi": "Tổng giám đốc Vương, cùng với tăng trưởng nghiệp vụ chính chậm lại, nội bộ công ty có bất đồng về phương hướng chiến lược tương lai: một phái chủ trương kinh doanh đa dạng hoá, phái khác lại kiên trì thâm canh nghề chính, chị nghiêng về hướng nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "我倾向于谨慎的专业化。多元化固然可以分散风险，但是资源和精力毕竟有限，盲目扩张往往会稀释企业原有的核心优势。",
+       "py": "Wǒ qīng xiàng yú jǐn shèn de zhuān yè huà. Duō yuán huà gù rán kě yǐ fēn sàn fēng xiǎn, dàn shì zī yuán hé jīng lì bì jìng yǒu xiàn, máng mù kuò zhāng wǎng wǎng huì xī shì qǐ yè yuán yǒu de hé xīn yōu shì.",
+       "vi": "Tôi nghiêng về chuyên môn hoá thận trọng. Đa dạng hoá cố nhiên có thể phân tán rủi ro, nhưng nguồn lực và tinh lực dù sao có hạn, mở rộng mù quáng thường pha loãng ưu thế cốt lõi vốn có của doanh nghiệp."
+      },
+      {
+       "spk": 0,
+       "zh": "不过，如果主业所在的市场已经趋于饱和，一味坚守，岂不是坐以待毙？",
+       "py": "Bú guò, rú guǒ zhǔ yè suǒ zài de shì chǎng yǐ jīng qū yú bǎo hé, yí wèi jiān shǒu, qǐ bú shì zuò yǐ dài bì?",
+       "vi": "Nhưng nếu thị trường của nghề chính đã dần bão hoà, một mực cố thủ chẳng phải là ngồi chờ chết sao?"
+      },
+      {
+       "spk": 1,
+       "zh": "所以我并不主张固步自封。可以在相关领域内进行适度延伸，也就是所谓的“相关多元化”，这样既能够利用现有的技术和渠道，又可以打开新的增长空间。",
+       "py": "Suǒ yǐ wǒ bìng bù zhǔ zhāng gù bù zì fēng. Kě yǐ zài xiāng guān lǐng yù nèi jìn xíng shì dù yán shēn, yě jiù shì suǒ wèi de “xiāng guān duō yuán huà”, zhè yàng jì néng gòu lì yòng xiàn yǒu de jì shù hé qú dào, yòu kě yǐ dǎ kāi xīn de zēng zhǎng kōng jiān.",
+       "vi": "Vì vậy tôi không chủ trương bảo thủ. Có thể mở rộng vừa phải trong các lĩnh vực liên quan, chính là cái gọi là “đa dạng hoá liên quan”, như vậy vừa tận dụng được công nghệ và kênh hiện có, vừa mở ra không gian tăng trưởng mới."
+      },
+      {
+       "spk": 0,
+       "zh": "有道理。不过任何战略的成败，最终还取决于执行力。",
+       "py": "Yǒu dào lǐ. Bú guò rèn hé zhàn lüè de chéng bài, zuì zhōng hái qǔ jué yú zhí xíng lì.",
+       "vi": "Có lý. Nhưng thành bại của bất kỳ chiến lược nào, cuối cùng còn phụ thuộc vào năng lực thực thi."
+      },
+      {
+       "spk": 1,
+       "zh": "没错，再完美的规划，如果缺乏高效的执行和及时的调整，也不过是纸上谈兵。",
+       "py": "Méi cuò, zài wán měi de guī huà, rú guǒ quē fá gāo xiào de zhí xíng hé jí shí de tiáo zhěng, yě bú guò shì zhǐ shàng tán bīng.",
+       "vi": "Đúng vậy, kế hoạch hoàn hảo đến mấy, nếu thiếu thực thi hiệu quả và điều chỉnh kịp thời cũng chỉ là bàn việc trên giấy."
+      },
+      {
+       "spk": 0,
+       "zh": "看来我们需要尽快召集管理层，把这些意见进行系统的梳理。",
+       "py": "Kàn lái wǒ men xū yào jǐn kuài zhào jí guǎn lǐ céng, bǎ zhè xiē yì jiàn jìn xíng xì tǒng de shū lǐ.",
+       "vi": "Xem ra chúng ta cần sớm triệu tập ban quản lý, sắp xếp có hệ thống những ý kiến này."
+      },
+      {
+       "spk": 1,
+       "zh": "同意，战略的制定不能拍脑袋，要建立在充分的数据和调研的基础之上。",
+       "py": "Tóng yì, zhàn lüè de zhì dìng bù néng pāi nǎo dài, yào jiàn lì zài chōng fèn de shù jù hé diào yán de jī chǔ zhī shàng.",
+       "vi": "Đồng ý, việc đề ra chiến lược không thể tuỳ tiện, phải xây dựng trên cơ sở dữ liệu và khảo sát đầy đủ."
+      }
+     ]
+    },
+    {
+     "id": "16-2",
+     "title_zh": "危机管理",
+     "title_vi": "Quản trị khủng hoảng",
+     "scene_vi": "Bàn về cách xử lý khủng hoảng truyền thông.",
+     "speakers": [
+      {
+       "name": "李总",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，昨天我们的一款产品被曝出质量问题，舆论一下子炸开了锅，你认为公司现在最应该做什么？",
+       "py": "Xiǎo měi, zuó tiān wǒ men de yì kuǎn chǎn pǐn bèi pù chū zhì liàng wèn tí, yú lùn yí xià zi zhà kāi le guō, nǐ rèn wéi gōng sī xiàn zài zuì yīng gāi zuò shén me?",
+       "vi": "Tiểu Mỹ, hôm qua một sản phẩm của chúng ta bị phanh phui vấn đề chất lượng, dư luận bỗng sôi sục, bạn cho rằng công ty bây giờ nên làm gì nhất?"
+      },
+      {
+       "spk": 1,
+       "zh": "首先是迅速回应，不能回避。沉默只会让外界做出更多的猜测，使事态进一步恶化。",
+       "py": "Shǒu xiān shì xùn sù huí yìng, bù néng huí bì. Chén mò zhǐ huì ràng wài jiè zuò chū gèng duō de cāi cè, shǐ shì tài jìn yí bù è huà.",
+       "vi": "Trước hết là phản hồi nhanh chóng, không thể né tránh. Im lặng chỉ khiến bên ngoài đoán thêm nhiều điều, làm tình hình xấu đi hơn."
+      },
+      {
+       "spk": 0,
+       "zh": "可是我们对具体的原因还没有调查清楚，现在表态是不是为时过早？",
+       "py": "Kě shì wǒ men duì jù tǐ de yuán yīn hái méi yǒu diào chá qīng chǔ, xiàn zài biǎo tài shì bú shì wéi shí guò zǎo?",
+       "vi": "Nhưng chúng ta chưa điều tra rõ nguyên nhân cụ thể, bây giờ bày tỏ thái độ có phải quá sớm không?"
+      },
+      {
+       "spk": 1,
+       "zh": "回应的重点不在于立刻给出结论，而是表明公司重视这件事、正在调查、并且会为消费者负责的态度。同时要保证信息的真实，不能隐瞒或者夸大。",
+       "py": "Huí yìng de zhòng diǎn bú zài yú lì kè gěi chū jié lùn, ér shì biǎo míng gōng sī zhòng shì zhè jiàn shì, zhèng zài diào chá, bìng qiě huì wèi xiāo fèi zhě fù zé de tài dù. Tóng shí yào bǎo zhèng xìn xī de zhēn shí, bù néng yǐn mán huò zhě kuā dà.",
+       "vi": "Trọng điểm của phản hồi không phải đưa ra kết luận ngay, mà là thể hiện thái độ công ty coi trọng việc này, đang điều tra và sẽ chịu trách nhiệm với người tiêu dùng. Đồng thời phải bảo đảm tính chân thực của thông tin, không được che giấu hay phóng đại."
+      },
+      {
+       "spk": 0,
+       "zh": "对于已经购买了产品的消费者，我们是不是应该主动召回？",
+       "py": "Duì yú yǐ jīng gòu mǎi le chǎn pǐn de xiāo fèi zhě, wǒ men shì bú shì yīng gāi zhǔ dòng zhào huí?",
+       "vi": "Với người tiêu dùng đã mua sản phẩm, chúng ta có nên chủ động thu hồi không?"
+      },
+      {
+       "spk": 1,
+       "zh": "我建议立即启动召回程序，并提供退换和补偿的方案。短期来看会有损失，但是长远来说，这是在维护最宝贵的资产——信誉。",
+       "py": "Wǒ jiàn yì lì jí qǐ dòng zhào huí chéng xù, bìng tí gōng tuì huàn hé bǔ cháng de fāng àn. Duǎn qī lái kàn huì yǒu sǔn shī, dàn shì cháng yuǎn lái shuō, zhè shì zài wéi hù zuì bǎo guì de zī chǎn——xìn yù.",
+       "vi": "Tôi đề nghị lập tức khởi động quy trình thu hồi, và đưa ra phương án đổi trả và bồi thường. Ngắn hạn sẽ có tổn thất, nhưng về lâu dài, đây là đang bảo vệ tài sản quý giá nhất — uy tín."
+      },
+      {
+       "spk": 0,
+       "zh": "你说得对，“千里之堤，毁于蚁穴”，信誉一旦受损，要重建就难了。",
+       "py": "Nǐ shuō de duì, “qiān lǐ zhī dī, huǐ yú yǐ xué”, xìn yù yí dàn shòu sǔn, yào chóng jiàn jiù nán le.",
+       "vi": "Bạn nói đúng, “đê nghìn dặm, vỡ vì tổ kiến”, uy tín một khi tổn hại thì khó xây dựng lại."
+      },
+      {
+       "spk": 1,
+       "zh": "而且事后还要认真总结教训，完善质量管理体系，防止类似的问题再次发生。",
+       "py": "Ér qiě shì hòu hái yào rèn zhēn zǒng jié jiào xùn, wán shàn zhì liàng guǎn lǐ tǐ xì, fáng zhǐ lèi sì de wèn tí zài cì fā shēng.",
+       "vi": "Hơn nữa sau đó còn phải nghiêm túc tổng kết bài học, hoàn thiện hệ thống quản lý chất lượng, ngăn vấn đề tương tự tái diễn."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "zh": "学术研讨",
+   "vi": "Hội thảo học thuật",
+   "icon": "🎤",
+   "dialogues": [
+    {
+     "id": "17-1",
+     "title_zh": "论文答辩",
+     "title_vi": "Bảo vệ luận văn",
+     "scene_vi": "Nghiên cứu sinh bảo vệ luận văn trước hội đồng.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "陈教授",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "各位老师，我的论文题目是《新媒体环境下青年群体的信息获取行为研究》。本研究采用问卷调查与深度访谈相结合的方法。",
+       "py": "Gè wèi lǎo shī, wǒ de lùn wén tí mù shì《xīn méi tǐ huán jìng xià qīng nián qún tǐ de xìn xī huò qǔ xíng wéi yán jiū》. Běn yán jiū cǎi yòng wèn juǎn diào chá yǔ shēn dù fǎng tán xiāng jié hé de fāng fǎ.",
+       "vi": "Kính thưa các thầy cô, đề tài luận văn của em là 《Nghiên cứu hành vi tiếp nhận thông tin của nhóm thanh niên trong môi trường truyền thông mới》. Nghiên cứu này sử dụng phương pháp kết hợp khảo sát bảng hỏi và phỏng vấn chuyên sâu."
+      },
+      {
+       "spk": 1,
+       "zh": "你的选题很有现实意义。请问，你的样本是如何选取的？有没有考虑到样本的代表性问题？",
+       "py": "Nǐ de xuǎn tí hěn yǒu xiàn shí yì yì. Qǐng wèn, nǐ de yàng běn shì rú hé xuǎn qǔ de? Yǒu méi yǒu kǎo lǜ dào yàng běn de dài biǎo xìng wèn tí?",
+       "vi": "Đề tài của em có ý nghĩa thực tiễn lớn. Xin hỏi, mẫu của em được chọn thế nào? Có cân nhắc đến vấn đề tính đại diện của mẫu không?"
+      },
+      {
+       "spk": 0,
+       "zh": "这是本研究的局限之一。由于时间和经费有限，我的样本主要来自三所高校，可能无法完全代表全体青年。我在论文的最后部分对此作了说明，并建议后续研究扩大范围。",
+       "py": "Zhè shì běn yán jiū de jú xiàn zhī yī. Yóu yú shí jiān hé jīng fèi yǒu xiàn, wǒ de yàng běn zhǔ yào lái zì sān suǒ gāo xiào, kě néng wú fǎ wán quán dài biǎo quán tǐ qīng nián. Wǒ zài lùn wén de zuì hòu bù fèn duì cǐ zuò le shuō míng, bìng jiàn yì hòu xù yán jiū kuò dà fàn wéi.",
+       "vi": "Đây là một hạn chế của nghiên cứu này. Do thời gian và kinh phí có hạn, mẫu của em chủ yếu đến từ ba trường đại học, có thể chưa thể hoàn toàn đại diện cho toàn thể thanh niên. Em đã giải thích ở phần cuối luận văn và đề nghị nghiên cứu sau mở rộng phạm vi."
+      },
+      {
+       "spk": 1,
+       "zh": "能够坦诚地承认不足，这是严谨的学术态度。那么你的研究得出了哪些主要结论？",
+       "py": "Néng gòu tǎn chéng de chéng rèn bù zú, zhè shì yán jǐn de xué shù tài dù. Nà me nǐ de yán jiū dé chū le nǎ xiē zhǔ yào jié lùn?",
+       "vi": "Có thể thẳng thắn thừa nhận thiếu sót, đó là thái độ học thuật nghiêm cẩn. Vậy nghiên cứu của em rút ra những kết luận chính nào?"
+      },
+      {
+       "spk": 0,
+       "zh": "研究发现，青年人获取信息的渠道日益碎片化，但是对信息真伪的辨别能力并没有随之提高，这与他们接受的媒介素养教育不足有一定关系。",
+       "py": "Yán jiū fā xiàn, qīng nián rén huò qǔ xìn xī de qú dào rì yì suì piàn huà, dàn shì duì xìn xī zhēn wěi de biàn bié néng lì bìng méi yǒu suí zhī tí gāo, zhè yǔ tā men jiē shòu de méi jiè sù yǎng jiào yù bù zú yǒu yí dìng guān xì.",
+       "vi": "Nghiên cứu phát hiện kênh tiếp nhận thông tin của thanh niên ngày càng phân mảnh, nhưng năng lực phân biệt thật giả của thông tin không tăng theo, điều này có liên quan nhất định đến việc họ được giáo dục năng lực truyền thông chưa đủ."
+      },
+      {
+       "spk": 1,
+       "zh": "这个结论有一定的启发性。不过相关性不等于因果关系，你是如何排除其他干扰因素的？",
+       "py": "Zhè ge jié lùn yǒu yí dìng de qǐ fā xìng. Bú guò xiāng guān xìng bù děng yú yīn guǒ guān xì, nǐ shì rú hé pái chú qí tā gān rǎo yīn sù de?",
+       "vi": "Kết luận này có tính gợi mở nhất định. Nhưng tương quan không bằng quan hệ nhân quả, em loại trừ các yếu tố gây nhiễu khác như thế nào?"
+      },
+      {
+       "spk": 0,
+       "zh": "老师的提醒很关键。我在分析中控制了年龄、专业等变量，但是确实无法完全证明因果关系，这也是未来研究需要改进的地方。",
+       "py": "Lǎo shī de tí xǐng hěn guān jiàn. Wǒ zài fēn xī zhōng kòng zhì le nián líng, zhuān yè děng biàn liàng, dàn shì què shí wú fǎ wán quán zhèng míng yīn guǒ guān xì, zhè yě shì wèi lái yán jiū xū yào gǎi jìn de dì fang.",
+       "vi": "Lời nhắc của cô rất then chốt. Trong phân tích em đã kiểm soát các biến như tuổi, chuyên ngành, nhưng đúng là chưa thể chứng minh hoàn toàn quan hệ nhân quả, đây cũng là điểm nghiên cứu tương lai cần cải tiến."
+      },
+      {
+       "spk": 1,
+       "zh": "好的，回答得比较清楚。请你先回避，我们讨论一下评议结果。",
+       "py": "Hǎo de, huí dá de bǐ jiào qīng chǔ. Qǐng nǐ xiān huí bì, wǒ men tǎo lùn yí xià píng yì jié guǒ.",
+       "vi": "Được, trả lời khá rõ ràng. Mời em tạm lánh ra ngoài, chúng tôi sẽ thảo luận kết quả đánh giá."
+      }
+     ]
+    },
+    {
+     "id": "17-2",
+     "title_zh": "学术交流",
+     "title_vi": "Giao lưu học thuật",
+     "scene_vi": "Hai học giả trao đổi tại hội nghị quốc tế.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "李教授",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "李教授，您刚才的报告给了我很大的启发，尤其是关于跨文化交际中“语境”的论述。我有个问题想请教。",
+       "py": "Lǐ jiào shòu, nín gāng cái de bào gào gěi le wǒ hěn dà de qǐ fā, yóu qí shì guān yú kuà wén huà jiāo jì zhōng “yǔ jìng” de lùn shù. Wǒ yǒu gè wèn tí xiǎng qǐng jiào.",
+       "vi": "Giáo sư Lý, báo cáo vừa rồi của chị mang lại cho tôi gợi mở rất lớn, nhất là phần luận thuật về “ngữ cảnh” trong giao tiếp liên văn hoá. Tôi có một câu hỏi muốn thỉnh giáo."
+      },
+      {
+       "spk": 1,
+       "zh": "请讲，学术交流本来就是要互相切磋。",
+       "py": "Qǐng jiǎng, xué shù jiāo liú běn lái jiù shì yào hù xiāng qiē cuō.",
+       "vi": "Xin cứ nói, giao lưu học thuật vốn là để cùng nhau trao đổi."
+      },
+      {
+       "spk": 0,
+       "zh": "您提到高语境文化中，很多信息是不言而喻的，那么当不同文化背景的人交流时，应该如何避免因为对语境的理解不同而产生误解？",
+       "py": "Nín tí dào gāo yǔ jìng wén huà zhōng, hěn duō xìn xī shì bù yán ér yù de, nà me dāng bù tóng wén huà bèi jǐng de rén jiāo liú shí, yīng gāi rú hé bì miǎn yīn wèi duì yǔ jìng de lǐ jiě bù tóng ér chǎn shēng wù jiě?",
+       "vi": "Chị đề cập trong văn hoá ngữ cảnh cao, nhiều thông tin là không cần nói cũng hiểu, vậy khi người có nền tảng văn hoá khác nhau giao tiếp, nên làm thế nào tránh hiểu lầm do hiểu ngữ cảnh khác nhau?"
+      },
+      {
+       "spk": 1,
+       "zh": "这是个很好的问题。我认为，首先要意识到差异的存在，不能以自己的文化标准去衡量对方；其次要多用确认式的提问，比如“您的意思是……吗”，主动核实理解是否一致。",
+       "py": "Zhè shì gè hěn hǎo de wèn tí. Wǒ rèn wéi, shǒu xiān yào yì shí dào chā yì de cún zài, bù néng yǐ zì jǐ de wén huà biāo zhǔn qù héng liáng duì fāng; qí cì yào duō yòng què rèn shì de tí wèn, bǐ rú “nín de yì si shì……ma”, zhǔ dòng hé shí lǐ jiě shì fǒu yí zhì.",
+       "vi": "Đây là câu hỏi rất hay. Tôi cho rằng trước hết phải ý thức được sự tồn tại của khác biệt, không thể dùng chuẩn mực văn hoá của mình để đo đối phương; kế đến nên dùng nhiều câu hỏi xác nhận, ví dụ “ý của ông là… phải không”, chủ động kiểm chứng hiểu biết có nhất quán không."
+      },
+      {
+       "spk": 0,
+       "zh": "这个建议非常实用。我想在我的研究中引用您的观点，请问可以吗？",
+       "py": "Zhè ge jiàn yì fēi cháng shí yòng. Wǒ xiǎng zài wǒ de yán jiū zhōng yǐn yòng nín de guān diǎn, qǐng wèn kě yǐ ma?",
+       "vi": "Gợi ý này rất thiết thực. Tôi muốn trích dẫn quan điểm của chị trong nghiên cứu của mình, xin hỏi có được không?"
+      },
+      {
+       "spk": 1,
+       "zh": "当然可以，不过请注明出处。欢迎您会后把论文发给我，我们可以继续讨论。",
+       "py": "Dāng rán kě yǐ, bú guò qǐng zhù míng chū chù. Huān yíng nín huì hòu bǎ lùn wén fā gěi wǒ, wǒ men kě yǐ jì xù tǎo lùn.",
+       "vi": "Đương nhiên được, nhưng xin ghi rõ nguồn. Hoan nghênh ông sau hội nghị gửi bài cho tôi, chúng ta có thể tiếp tục thảo luận."
+      },
+      {
+       "spk": 0,
+       "zh": "太好了，期待与您进一步的合作。",
+       "py": "Tài hǎo le, qī dài yǔ nín jìn yí bù de hé zuò.",
+       "vi": "Tuyệt quá, mong được hợp tác sâu hơn với chị."
+      },
+      {
+       "spk": 1,
+       "zh": "彼此彼此，学术的发展离不开这样的思想碰撞。",
+       "py": "Bǐ cǐ bǐ cǐ, xué shù de fā zhǎn lí bù kāi zhè yàng de sī xiǎng pèng zhuàng.",
+       "vi": "Cùng vậy, sự phát triển của học thuật không thể thiếu những va chạm tư tưởng như thế."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "zh": "文化传承",
+   "vi": "Kế thừa văn hoá",
+   "icon": "🎎",
+   "dialogues": [
+    {
+     "id": "18-1",
+     "title_zh": "汉字的未来",
+     "title_vi": "Tương lai của chữ Hán",
+     "scene_vi": "Bàn về việc viết tay trong thời đại số.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，如今大家都用键盘和手机打字，我发现自己提笔忘字的情况越来越多，有时候连很常见的字都写不出来。",
+       "py": "Xiǎo hóng, rú jīn dà jiā dōu yòng jiàn pán hé shǒu jī dǎ zì, wǒ fā xiàn zì jǐ tí bǐ wàng zì de qíng kuàng yuè lái yuè duō, yǒu shí hòu lián hěn cháng jiàn de zì dōu xiě bù chū lái.",
+       "vi": "Tiểu Hồng, ngày nay mọi người đều gõ bằng bàn phím và điện thoại, mình phát hiện tình trạng cầm bút quên chữ của mình ngày càng nhiều, có lúc chữ rất thông dụng cũng viết không ra."
+      },
+      {
+       "spk": 1,
+       "zh": "这是一个很普遍的现象，被称为“提笔忘字”。拼音输入法让我们只需要认得字形，不需要记住书写的笔画。",
+       "py": "Zhè shì yí gè hěn pǔ biàn de xiàn xiàng, bèi chēng wéi “tí bǐ wàng zì”. Pīn yīn shū rù fǎ ràng wǒ men zhǐ xū yào rèn de zì xíng, bù xū yào jì zhù shū xiě de bǐ huà.",
+       "vi": "Đây là hiện tượng rất phổ biến, gọi là “cầm bút quên chữ”. Bộ gõ pinyin khiến chúng ta chỉ cần nhận ra hình chữ chứ không cần nhớ nét viết."
+      },
+      {
+       "spk": 0,
+       "zh": "你觉得这会不会对汉字文化造成冲击？",
+       "py": "Nǐ jué de zhè huì bú huì duì hàn zì wén huà zào chéng chōng jī?",
+       "vi": "Bạn thấy điều này có gây chấn động đến văn hoá chữ Hán không?"
+      },
+      {
+       "spk": 1,
+       "zh": "我认为影响是双重的。一方面，技术降低了使用门槛，让更多人能够方便地使用汉字；另一方面，手写所蕴含的审美和文化内涵可能逐渐被淡忘。",
+       "py": "Wǒ rèn wéi yǐng xiǎng shì shuāng chóng de. Yì fāng miàn, jì shù jiàng dī le shǐ yòng mén kǎn, ràng gèng duō rén néng gòu fāng biàn de shǐ yòng hàn zì; lìng yì fāng miàn, shǒu xiě suǒ yùn hán de shěn měi hé wén huà nèi hán kě néng zhú jiàn bèi dàn wàng.",
+       "vi": "Mình cho rằng ảnh hưởng là hai mặt. Một mặt, công nghệ hạ thấp ngưỡng sử dụng, giúp nhiều người dùng chữ Hán thuận tiện hơn; mặt khác, tính thẩm mỹ và nội hàm văn hoá chứa đựng trong chữ viết tay có thể dần bị lãng quên."
+      },
+      {
+       "spk": 0,
+       "zh": "书法是汉字之美的集中体现，可是现在愿意静下心来练字的年轻人并不多。",
+       "py": "Shū fǎ shì hàn zì zhī měi de jí zhōng tǐ xiàn, kě shì xiàn zài yuàn yì jìng xià xīn lái liàn zì de nián qīng rén bìng bù duō.",
+       "vi": "Thư pháp là sự thể hiện tập trung vẻ đẹp của chữ Hán, nhưng bây giờ người trẻ sẵn lòng tĩnh tâm luyện chữ không nhiều."
+      },
+      {
+       "spk": 1,
+       "zh": "所以学校教育应该发挥作用，把书法纳入课程，让孩子们从小感受汉字的魅力。同时，也可以借助现代技术，用新颖的方式让传统书法“活”起来。",
+       "py": "Suǒ yǐ xué xiào jiào yù yīng gāi fā huī zuò yòng, bǎ shū fǎ nà rù kè chéng, ràng hái zi men cóng xiǎo gǎn shòu hàn zì de mèi lì. Tóng shí, yě kě yǐ jiè zhù xiàn dài jì shù, yòng xīn yǐng de fāng shì ràng chuán tǒng shū fǎ “huó” qǐ lái.",
+       "vi": "Vì vậy giáo dục nhà trường nên phát huy tác dụng, đưa thư pháp vào chương trình, để trẻ em từ nhỏ cảm nhận sức hấp dẫn của chữ Hán. Đồng thời cũng có thể nhờ công nghệ hiện đại, dùng cách thức mới mẻ để thư pháp truyền thống “sống” lại."
+      },
+      {
+       "spk": 0,
+       "zh": "从我自己做起吧，我打算每天抽出半个小时练字。",
+       "py": "Cóng wǒ zì jǐ zuò qǐ ba, wǒ dǎ suàn měi tiān chōu chū bàn gè xiǎo shí liàn zì.",
+       "vi": "Bắt đầu từ chính mình nhé, mình định mỗi ngày dành nửa tiếng luyện chữ."
+      },
+      {
+       "spk": 1,
+       "zh": "好主意，文化的传承，往往就是从这样的日常坚持开始的。",
+       "py": "Hǎo zhǔ yì, wén huà de chuán chéng, wǎng wǎng jiù shì cóng zhè yàng de rì cháng jiān chí kāi shǐ de.",
+       "vi": "Ý hay, sự kế thừa văn hoá thường bắt đầu từ những kiên trì thường ngày như vậy."
+      }
+     ]
+    },
+    {
+     "id": "18-2",
+     "title_zh": "老字号的新生",
+     "title_vi": "Sự đổi mới của thương hiệu lâu đời",
+     "scene_vi": "Bàn về việc thương hiệu cổ truyền thích ứng với thị trường.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，那家有百年历史的点心老字号最近推出了联名款，在年轻人中大受欢迎，你怎么看待传统品牌的这种“跨界”？",
+       "py": "Xiǎo měi, nà jiā yǒu bǎi nián lì shǐ de diǎn xīn lǎo zì hào zuì jìn tuī chū le lián míng kuǎn, zài nián qīng rén zhōng dà shòu huān yíng, nǐ zěn me kàn dài chuán tǒng pǐn pái de zhè zhǒng “kuà jiè”?",
+       "vi": "Tiểu Mỹ, thương hiệu bánh ngọt trăm năm tuổi đó gần đây ra mắt dòng hợp tác, rất được giới trẻ ưa chuộng, bạn nhìn nhận thế nào về việc thương hiệu truyền thống “liên kết chéo” như vậy?"
+      },
+      {
+       "spk": 1,
+       "zh": "我认为这是老字号焕发新生的有效途径。如果只是抱着祖传的招牌固步自封，随着老顾客逐渐减少，品牌迟早会被时代淘汰。",
+       "py": "Wǒ rèn wéi zhè shì lǎo zì hào huàn fā xīn shēng de yǒu xiào tú jìng. Rú guǒ zhǐ shì bào zhe zǔ chuán de zhāo pái gù bù zì fēng, suí zhe lǎo gù kè zhú jiàn jiǎn shǎo, pǐn pái chí zǎo huì bèi shí dài táo tài.",
+       "vi": "Mình cho rằng đây là con đường hiệu quả để thương hiệu lâu đời tái sinh. Nếu chỉ ôm tấm biển tổ truyền bảo thủ, cùng với khách quen dần ít đi, thương hiệu sớm muộn bị thời đại đào thải."
+      },
+      {
+       "spk": 0,
+       "zh": "可是创新的同时，如何保证传统工艺和品质不被稀释呢？",
+       "py": "Kě shì chuàng xīn de tóng shí, rú hé bǎo zhèng chuán tǒng gōng yì hé pǐn zhì bú bèi xī shì ne?",
+       "vi": "Nhưng trong lúc đổi mới, làm sao bảo đảm kỹ nghệ và chất lượng truyền thống không bị pha loãng?"
+      },
+      {
+       "spk": 1,
+       "zh": "这正是最大的挑战。创新应该是在继承的基础上进行的，包装可以年轻化，营销方式可以多样化，但是配方和工艺的精髓必须坚守。",
+       "py": "Zhè zhèng shì zuì dà de tiǎo zhàn. Chuàng xīn yīng gāi shì zài jì chéng de jī chǔ shàng jìn xíng de, bāo zhuāng kě yǐ nián qīng huà, yíng xiāo fāng shì kě yǐ duō yàng huà, dàn shì pèi fāng hé gōng yì de jīng suǐ bì xū jiān shǒu.",
+       "vi": "Đây chính là thách thức lớn nhất. Đổi mới nên được tiến hành trên cơ sở kế thừa, bao bì có thể trẻ hoá, cách thức tiếp thị có thể đa dạng hoá, nhưng tinh tuý của công thức và kỹ nghệ phải kiên định."
+      },
+      {
+       "spk": 0,
+       "zh": "有人批评，一些老字号为了追逐热点，过度消费了自己的历史，反而失去了本来的味道。",
+       "py": "Yǒu rén pī píng, yì xiē lǎo zì hào wèi le zhuī zhú rè diǎn, guò dù xiāo fèi le zì jǐ de lì shǐ, fǎn ér shī qù le běn lái de wèi dào.",
+       "vi": "Có người phê bình, một số thương hiệu lâu đời vì chạy theo xu hướng nóng đã tiêu thụ quá mức lịch sử của mình, ngược lại đánh mất hương vị vốn có."
+      },
+      {
+       "spk": 1,
+       "zh": "这样的风险确实存在。品牌的核心是消费者对品质的信任，一旦为了短期的流量牺牲品质，得不偿失。",
+       "py": "Zhè yàng de fēng xiǎn què shí cún zài. Pǐn pái de hé xīn shì xiāo fèi zhě duì pǐn zhì de xìn rèn, yí dàn wèi le duǎn qī de liú liàng xī shēng pǐn zhì, de bù cháng shī.",
+       "vi": "Rủi ro như vậy đúng là tồn tại. Cốt lõi của thương hiệu là niềm tin của người tiêu dùng vào chất lượng, một khi vì lưu lượng ngắn hạn mà hy sinh chất lượng, được không bù mất."
+      },
+      {
+       "spk": 0,
+       "zh": "所以，传承不是原封不动地保存，而是在变与不变之间找到平衡。",
+       "py": "Suǒ yǐ, chuán chéng bú shì yuán fēng bú dòng de bǎo cún, ér shì zài biàn yǔ bú biàn zhī jiān zhǎo dào píng héng.",
+       "vi": "Vì vậy, kế thừa không phải bảo tồn nguyên vẹn bất động, mà là tìm ra cân bằng giữa đổi và không đổi."
+      },
+      {
+       "spk": 1,
+       "zh": "你总结得很精辟，“守正创新”，大概就是这个意思。",
+       "py": "Nǐ zǒng jié de hěn jīng pì, “shǒu zhèng chuàng xīn”, dà gài jiù shì zhè ge yì si.",
+       "vi": "Anh tổng kết rất tinh tế, “giữ chính đổi mới”, có lẽ chính là ý này."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "zh": "艺术鉴赏",
+   "vi": "Thưởng lãm nghệ thuật",
+   "icon": "🖌️",
+   "dialogues": [
+    {
+     "id": "19-1",
+     "title_zh": "山水画的意境",
+     "title_vi": "Ý cảnh tranh sơn thuỷ",
+     "scene_vi": "Hai người ngắm tranh sơn thuỷ ở bảo tàng.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，这幅山水画的画面上留了大片的空白，我起初以为是画家没画完，后来才发现似乎别有深意。",
+       "py": "Xiǎo hóng, zhè fú shān shuǐ huà de huà miàn shàng liú le dà piàn de kòng bái, wǒ qǐ chū yǐ wéi shì huà jiā méi huà wán, hòu lái cái fā xiàn sì hū bié yǒu shēn yì.",
+       "vi": "Tiểu Hồng, bức tranh sơn thuỷ này trên mặt tranh chừa nhiều khoảng trắng lớn, lúc đầu mình tưởng hoạ sĩ chưa vẽ xong, về sau mới thấy dường như có ý sâu xa."
+      },
+      {
+       "spk": 1,
+       "zh": "你观察得很细致。这叫“留白”，是中国传统绘画的重要技法。空白并不是空无一物，而是留给观者想象的空间。",
+       "py": "Nǐ guān chá de hěn xì zhì. Zhè jiào “liú bái”, shì zhōng guó chuán tǒng huì huà de zhòng yào jì fǎ. Kòng bái bìng bú shì kōng wú yí wù, ér shì liú gěi guān zhě xiǎng xiàng de kōng jiān.",
+       "vi": "Bạn quan sát rất tỉ mỉ. Đó gọi là “lưu bạch”, là kỹ pháp quan trọng của hội hoạ truyền thống Trung Quốc. Khoảng trắng không phải trống rỗng, mà là không gian để người xem tưởng tượng."
+      },
+      {
+       "spk": 0,
+       "zh": "这和西方绘画追求写实的传统很不一样。",
+       "py": "Zhè hé xī fāng huì huà zhuī qiú xiě shí de chuán tǒng hěn bù yí yàng.",
+       "vi": "Điều này rất khác với truyền thống hội hoạ phương Tây theo đuổi tả thực."
+      },
+      {
+       "spk": 1,
+       "zh": "是的，中国画更注重“意境”，也就是画面所营造出的精神氛围，所谓“画中有诗，诗中有画”。画家不求形似，而求神似。",
+       "py": "Shì de, zhōng guó huà gèng zhù zhòng “yì jìng”, yě jiù shì huà miàn suǒ yíng zào chū de jīng shén fēn wéi, suǒ wèi “huà zhōng yǒu shī, shī zhōng yǒu huà”. Huà jiā bù qiú xíng sì, ér qiú shén sì.",
+       "vi": "Đúng vậy, hội hoạ Trung Quốc chú trọng hơn “ý cảnh”, tức bầu không khí tinh thần mà mặt tranh tạo nên, cái gọi là “trong tranh có thơ, trong thơ có tranh”. Hoạ sĩ không cầu giống hình mà cầu giống thần."
+      },
+      {
+       "spk": 0,
+       "zh": "你这么一说，我再看这幅画，仿佛真的能感受到雾气在山间流动，听到远处的钟声。",
+       "py": "Nǐ zhè me yì shuō, wǒ zài kàn zhè fú huà, fǎng fú zhēn de néng gǎn shòu dào wù qì zài shān jiān liú dòng, tīng dào yuǎn chù de zhōng shēng.",
+       "vi": "Bạn nói vậy, mình nhìn lại bức tranh này, cứ như thật sự cảm nhận được sương mù trôi giữa núi, nghe thấy tiếng chuông xa."
+      },
+      {
+       "spk": 1,
+       "zh": "这就是意境的魅力，它调动的是你自己的感受和联想，每个人看到的风景都不尽相同。",
+       "py": "Zhè jiù shì yì jìng de mèi lì, tā diào dòng de shì nǐ zì jǐ de gǎn shòu hé lián xiǎng, měi gè rén kàn dào de fēng jǐng dōu bú jìn xiāng tóng.",
+       "vi": "Đó chính là sức hấp dẫn của ý cảnh, nó huy động cảm nhận và liên tưởng của chính bạn, phong cảnh mỗi người nhìn thấy đều không hoàn toàn giống nhau."
+      },
+      {
+       "spk": 0,
+       "zh": "看来欣赏艺术，需要的不仅是眼睛，更是一颗愿意安静下来的心。",
+       "py": "Kàn lái xīn shǎng yì shù, xū yào de bù jǐn shì yǎn jīng, gèng shì yì kē yuàn yì ān jìng xià lái de xīn.",
+       "vi": "Xem ra thưởng thức nghệ thuật không chỉ cần đôi mắt, mà càng cần một trái tim sẵn lòng tĩnh lại."
+      },
+      {
+       "spk": 1,
+       "zh": "说得真好，在这个喧嚣的时代，这种宁静本身就是一种奢侈的享受。",
+       "py": "Shuō de zhēn hǎo, zài zhè ge xuān xiāo de shí dài, zhè zhǒng níng jìng běn shēn jiù shì yì zhǒng shē chǐ de xiǎng shòu.",
+       "vi": "Nói hay lắm, trong thời đại ồn ào này, sự tĩnh lặng đó bản thân đã là một sự hưởng thụ xa xỉ."
+      }
+     ]
+    },
+    {
+     "id": "19-2",
+     "title_zh": "音乐与情感",
+     "title_vi": "Âm nhạc & cảm xúc",
+     "scene_vi": "Hai người nghe buổi hoà nhạc cổ điển.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，刚才那首交响曲的第二乐章，我听着听着竟然落泪了，我自己都觉得有些意外。",
+       "py": "Xiǎo měi, gāng cái nà shǒu jiāo xiǎng qǔ de dì èr yuè zhāng, wǒ tīng zhe tīng zhe jìng rán luò lèi le, wǒ zì jǐ dōu jué de yǒu xiē yì wài.",
+       "vi": "Tiểu Mỹ, chương hai của bản giao hưởng vừa rồi, mình nghe mà bất giác rơi lệ, bản thân mình cũng thấy hơi bất ngờ."
+      },
+      {
+       "spk": 1,
+       "zh": "音乐有一种直接触动人心的力量，它不需要语言，就能唤起深层的情感。",
+       "py": "Yīn yuè yǒu yì zhǒng zhí jiē chù dòng rén xīn de lì liàng, tā bù xū yào yǔ yán, jiù néng huàn qǐ shēn céng de qíng gǎn.",
+       "vi": "Âm nhạc có sức mạnh chạm thẳng vào lòng người, không cần ngôn ngữ cũng gợi dậy cảm xúc sâu xa."
+      },
+      {
+       "spk": 0,
+       "zh": "可是我对古典音乐几乎一窍不通，为什么也会被打动呢？",
+       "py": "Kě shì wǒ duì gǔ diǎn yīn yuè jī hū yí qiào bù tōng, wèi shén me yě huì bèi dǎ dòng ne?",
+       "vi": "Nhưng mình hầu như mù tịt về nhạc cổ điển, vì sao cũng bị cảm động?"
+      },
+      {
+       "spk": 1,
+       "zh": "因为欣赏音乐并不一定需要专业知识，旋律、节奏和力度的变化，本身就在讲述情绪的起伏。当然，了解创作的背景，会让你的体会更加深刻。",
+       "py": "Yīn wèi xīn shǎng yīn yuè bìng bù yí dìng xū yào zhuān yè zhī shí, xuán lǜ, jié zòu hé lì dù de biàn huà, běn shēn jiù zài jiǎng shù qíng xù de qǐ fú. Dāng rán, liǎo jiě chuàng zuò de bèi jǐng, huì ràng nǐ de tǐ huì gèng jiā shēn kè.",
+       "vi": "Vì thưởng thức âm nhạc không nhất thiết cần kiến thức chuyên môn, sự biến đổi của giai điệu, nhịp điệu và cường độ bản thân đã đang kể về thăng trầm cảm xúc. Đương nhiên, hiểu bối cảnh sáng tác sẽ khiến cảm nhận của bạn sâu sắc hơn."
+      },
+      {
+       "spk": 0,
+       "zh": "比如这首曲子是作曲家在失聪以后写的，对吗？",
+       "py": "Bǐ rú zhè shǒu qǔ zi shì zuò qǔ jiā zài shī cōng yǐ hòu xiě de, duì ma?",
+       "vi": "Ví dụ bản nhạc này là nhà soạn nhạc viết sau khi bị điếc, đúng không?"
+      },
+      {
+       "spk": 1,
+       "zh": "对，一位听不见声音的人，却创造出如此动人的音乐，这本身就让人肃然起敬。苦难常常能够孕育出伟大的艺术。",
+       "py": "Duì, yí wèi tīng bú jiàn shēng yīn de rén, què chuàng zào chū rú cǐ dòng rén de yīn yuè, zhè běn shēn jiù ràng rén sù rán qǐ jìng. Kǔ nàn cháng cháng néng gòu yùn yù chū wěi dà de yì shù.",
+       "vi": "Đúng, một người không nghe được âm thanh mà lại sáng tạo nên âm nhạc cảm động như vậy, điều này bản thân đã khiến người ta kính phục. Khổ nạn thường có thể sinh ra nghệ thuật vĩ đại."
+      },
+      {
+       "spk": 0,
+       "zh": "听你这么说，下次再听这首曲子，我一定会有不同的感受。",
+       "py": "Tīng nǐ zhè me shuō, xià cì zài tīng zhè shǒu qǔ zi, wǒ yí dìng huì yǒu bù tóng de gǎn shòu.",
+       "vi": "Nghe bạn nói vậy, lần sau nghe lại bản nhạc này, mình nhất định sẽ có cảm nhận khác."
+      },
+      {
+       "spk": 1,
+       "zh": "这就是艺术的魅力，同一件作品，在不同的人生阶段，总会给你不同的启示。",
+       "py": "Zhè jiù shì yì shù de mèi lì, tóng yí jiàn zuò pǐn, zài bù tóng de rén shēng jiē duàn, zǒng huì gěi nǐ bù tóng de qǐ shì.",
+       "vi": "Đó chính là sức hấp dẫn của nghệ thuật, cùng một tác phẩm ở những giai đoạn đời người khác nhau luôn cho bạn những gợi mở khác nhau."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "zh": "人口与生育",
+   "vi": "Dân số & sinh đẻ",
+   "icon": "👶",
+   "dialogues": [
+    {
+     "id": "20-1",
+     "title_zh": "不愿生孩子",
+     "title_vi": "Không muốn sinh con",
+     "scene_vi": "Bàn về xu hướng ngại sinh con của giới trẻ.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "小明",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小明，现在越来越多的年轻夫妇选择不生孩子，或者推迟生育，你觉得这是什么原因造成的？",
+       "py": "Xiǎo míng, xiàn zài yuè lái yuè duō de nián qīng fū fù xuǎn zé bù shēng hái zi, huò zhě tuī chí shēng yù, nǐ jué de zhè shì shén me yuán yīn zào chéng de?",
+       "vi": "Tiểu Minh, bây giờ ngày càng nhiều cặp vợ chồng trẻ chọn không sinh con hoặc trì hoãn sinh, bạn thấy nguyên nhân gì gây ra điều này?"
+      },
+      {
+       "spk": 1,
+       "zh": "我认为主要是经济和时间的压力。住房、教育、医疗的开支都很高，再加上工作节奏快，很多人觉得没有足够的精力去养育孩子。",
+       "py": "Wǒ rèn wéi zhǔ yào shì jīng jì hé shí jiān de yā lì. Zhù fáng, jiào yù, yī liáo de kāi zhī dōu hěn gāo, zài jiā shàng gōng zuò jié zòu kuài, hěn duō rén jué de méi yǒu zú gòu de jīng lì qù yǎng yù hái zi.",
+       "vi": "Mình cho rằng chủ yếu là áp lực kinh tế và thời gian. Chi phí nhà ở, giáo dục, y tế đều cao, thêm vào đó nhịp công việc nhanh, nhiều người thấy không đủ tinh lực nuôi dạy con."
+      },
+      {
+       "spk": 0,
+       "zh": "观念的变化也不容忽视，如今的年轻人更注重个人的生活质量和自我实现，不再把“传宗接代”看作人生的必修课。",
+       "py": "Guān niàn de biàn huà yě bù róng hū shì, rú jīn de nián qīng rén gèng zhù zhòng gè rén de shēng huó zhì liàng hé zì wǒ shí xiàn, bú zài bǎ “chuán zōng jiē dài” kàn zuò rén shēng de bì xiū kè.",
+       "vi": "Sự thay đổi quan niệm cũng không thể xem nhẹ, người trẻ ngày nay coi trọng hơn chất lượng sống cá nhân và tự thực hiện bản thân, không còn xem “nối dõi tông đường” là môn bắt buộc của đời người."
+      },
+      {
+       "spk": 1,
+       "zh": "是的，这是一种社会的进步，每个人都有权利选择自己的生活方式。但是生育率过低，也会引发劳动力减少、人口老龄化加剧等长远的问题。",
+       "py": "Shì de, zhè shì yì zhǒng shè huì de jìn bù, měi gè rén dōu yǒu quán lì xuǎn zé zì jǐ de shēng huó fāng shì. Dàn shì shēng yù lǜ guò dī, yě huì yǐn fā láo dòng lì jiǎn shǎo, rén kǒu lǎo líng huà jiā jù děng cháng yuǎn de wèn tí.",
+       "vi": "Đúng vậy, đây là một bước tiến của xã hội, mỗi người đều có quyền chọn lối sống của mình. Nhưng tỷ lệ sinh quá thấp cũng sẽ gây ra những vấn đề lâu dài như lực lượng lao động giảm, già hoá dân số trầm trọng hơn."
+      },
+      {
+       "spk": 0,
+       "zh": "那么，政府和社会可以采取哪些措施来鼓励生育，又不至于给人们造成压力呢？",
+       "py": "Nà me, zhèng fǔ hé shè huì kě yǐ cǎi qǔ nǎ xiē cuò shī lái gǔ lì shēng yù, yòu bú zhì yú gěi rén men zào chéng yā lì ne?",
+       "vi": "Vậy chính phủ và xã hội có thể áp dụng những biện pháp nào để khuyến khích sinh đẻ mà không gây áp lực cho mọi người?"
+      },
+      {
+       "spk": 1,
+       "zh": "我觉得应该着重于减轻养育的负担，比如延长产假、发放育儿补贴、发展普惠托育服务，同时保障女性在职场上的平等权益。",
+       "py": "Wǒ jué de yīng gāi zhuó zhòng yú jiǎn qīng yǎng yù de fù dān, bǐ rú yán cháng chǎn jià, fā fàng yù ér bǔ tiē, fā zhǎn pǔ huì tuō yù fú wù, tóng shí bǎo zhàng nǚ xìng zài zhí chǎng shàng de píng děng quán yì.",
+       "vi": "Mình thấy nên tập trung giảm nhẹ gánh nặng nuôi dạy, ví dụ kéo dài nghỉ thai sản, cấp trợ cấp nuôi con, phát triển dịch vụ gửi trẻ phổ cập, đồng thời bảo đảm quyền bình đẳng của phụ nữ ở nơi làm việc."
+      },
+      {
+       "spk": 0,
+       "zh": "只有让人们敢生、愿生、生得起，才可能真正扭转局面。",
+       "py": "Zhǐ yǒu ràng rén men gǎn shēng, yuàn shēng, shēng de qǐ, cái kě néng zhēn zhèng niǔ zhuǎn jú miàn.",
+       "vi": "Chỉ khi để mọi người dám sinh, muốn sinh, sinh nổi mới có thể thật sự xoay chuyển tình thế."
+      },
+      {
+       "spk": 1,
+       "zh": "没错，鼓励而不强迫，才是尊重个体选择的正确方式。",
+       "py": "Méi cuò, gǔ lì ér bù qiǎng pò, cái shì zūn zhòng gè tǐ xuǎn zé de zhèng què fāng shì.",
+       "vi": "Đúng vậy, khuyến khích mà không cưỡng ép mới là cách đúng để tôn trọng lựa chọn cá nhân."
+      }
+     ]
+    },
+    {
+     "id": "20-2",
+     "title_zh": "养育的责任",
+     "title_vi": "Trách nhiệm nuôi dạy",
+     "scene_vi": "Hai vợ chồng chia sẻ việc chăm con.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，自从有了孩子，我才真正体会到“为人父母”四个字的分量，每天都觉得时间不够用。",
+       "py": "Xiǎo měi, zì cóng yǒu le hái zi, wǒ cái zhēn zhèng tǐ huì dào “wéi rén fù mǔ” sì gè zì de fèn liàng, měi tiān dōu jué de shí jiān bú gòu yòng.",
+       "vi": "Tiểu Mỹ, từ khi có con, mình mới thực sự thấm thía sức nặng của bốn chữ “làm cha mẹ”, mỗi ngày đều thấy thời gian không đủ dùng."
+      },
+      {
+       "spk": 1,
+       "zh": "是啊，养育孩子既是一种幸福，也是一份沉甸甸的责任。不仅要照顾他的生活，更要关注他的心理成长。",
+       "py": "Shì a, yǎng yù hái zi jì shì yì zhǒng xìng fú, yě shì yí fèn chén diàn diàn de zé rèn. Bù jǐn yào zhào gù tā de shēng huó, gèng yào guān zhù tā de xīn lǐ chéng zhǎng.",
+       "vi": "Đúng vậy, nuôi dạy con vừa là một hạnh phúc, vừa là một trách nhiệm nặng trĩu. Không chỉ chăm sóc cuộc sống của con, mà còn phải quan tâm sự trưởng thành tâm lý của con."
+      },
+      {
+       "spk": 0,
+       "zh": "有时候我也会忍不住对他发脾气，事后又十分后悔。",
+       "py": "Yǒu shí hòu wǒ yě huì rěn bú zhù duì tā fā pí qì, shì hòu yòu shí fēn hòu huǐ.",
+       "vi": "Có lúc mình cũng không nhịn được nổi nóng với con, sau đó lại vô cùng hối hận."
+      },
+      {
+       "spk": 1,
+       "zh": "父母也是普通人，难免有情绪失控的时候，重要的是事后坦诚地向孩子道歉，让他明白大人也会犯错，也在不断学习。",
+       "py": "Fù mǔ yě shì pǔ tōng rén, nán miǎn yǒu qíng xù shī kòng de shí hou, zhòng yào de shì shì hòu tǎn chéng de xiàng hái zi dào qiàn, ràng tā míng bai dà rén yě huì fàn cuò, yě zài bú duàn xué xí.",
+       "vi": "Cha mẹ cũng là người bình thường, khó tránh có lúc mất kiểm soát cảm xúc, quan trọng là sau đó thẳng thắn xin lỗi con, để con hiểu người lớn cũng mắc lỗi, cũng đang không ngừng học tập."
+      },
+      {
+       "spk": 0,
+       "zh": "你的话让我释然了许多。我想，言传不如身教，我们怎么对待别人，孩子都看在眼里。",
+       "py": "Nǐ de huà ràng wǒ shì rán le xǔ duō. Wǒ xiǎng, yán chuán bù rú shēn jiào, wǒ men zěn me duì dài bié rén, hái zi dōu kàn zài yǎn lǐ.",
+       "vi": "Lời bạn khiến mình nhẹ lòng nhiều. Mình nghĩ, lời dạy không bằng làm gương, chúng ta đối xử với người khác thế nào, con đều nhìn thấy."
+      },
+      {
+       "spk": 1,
+       "zh": "对，最好的教育，就是父母自己成为孩子的榜样。",
+       "py": "Duì, zuì hǎo de jiào yù, jiù shì fù mǔ zì jǐ chéng wéi hái zi de bǎng yàng.",
+       "vi": "Đúng, nền giáo dục tốt nhất chính là cha mẹ tự trở thành tấm gương cho con."
+      },
+      {
+       "spk": 0,
+       "zh": "我们一起努力，做一对称职的父母。",
+       "py": "Wǒ men yì qǐ nǔ lì, zuò yí duì chèn zhí de fù mǔ.",
+       "vi": "Chúng ta cùng cố gắng, làm một cặp cha mẹ xứng chức."
+      },
+      {
+       "spk": 1,
+       "zh": "好，慢慢来，孩子的成长也是我们的成长。",
+       "py": "Hǎo, màn màn lái, hái zi de chéng zhǎng yě shì wǒ men de chéng zhǎng.",
+       "vi": "Được, từ từ thôi, sự trưởng thành của con cũng là sự trưởng thành của chúng ta."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "zh": "消费主义",
+   "vi": "Chủ nghĩa tiêu dùng",
+   "icon": "🛒",
+   "dialogues": [
+    {
+     "id": "21-1",
+     "title_zh": "为什么越买越空虚",
+     "title_vi": "Vì sao càng mua càng trống rỗng",
+     "scene_vi": "Hai người bàn về văn hoá tiêu dùng.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，我发现自己有个怪现象：每次买了新东西，兴奋不了几天，就觉得索然无味，转而又盯上了别的东西，好像永远没有满足的时候。",
+       "py": "Xiǎo hóng, wǒ fā xiàn zì jǐ yǒu gè guài xiàn xiàng: měi cì mǎi le xīn dōng xi, xīng fèn bù liǎo jǐ tiān, jiù jué de suǒ rán wú wèi, zhuǎn ér yòu dīng shàng le bié de dōng xi, hǎo xiàng yǒng yuǎn méi yǒu mǎn zú de shí hou.",
+       "vi": "Tiểu Hồng, mình phát hiện bản thân có một hiện tượng lạ: mỗi lần mua đồ mới, hưng phấn chẳng được mấy hôm đã thấy nhạt nhẽo, lại chuyển sang nhắm món khác, dường như không bao giờ có lúc thoả mãn."
+      },
+      {
+       "spk": 1,
+       "zh": "这正是消费主义的典型表现。商家通过广告不断制造新的“需求”，让我们相信，只要拥有了某样东西，就能获得幸福和认同。",
+       "py": "Zhè zhèng shì xiāo fèi zhǔ yì de diǎn xíng biǎo xiàn. Shāng jiā tōng guò guǎng gào bú duàn zhì zào xīn de “xū qiú”, ràng wǒ men xiāng xìn, zhǐ yào yōng yǒu le mǒu yàng dōng xi, jiù néng huò dé xìng fú hé rèn tóng.",
+       "vi": "Đó chính là biểu hiện điển hình của chủ nghĩa tiêu dùng. Nhà kinh doanh thông qua quảng cáo không ngừng tạo ra “nhu cầu” mới, khiến chúng ta tin rằng chỉ cần có thứ nào đó là có thể có hạnh phúc và sự công nhận."
+      },
+      {
+       "spk": 0,
+       "zh": "可是为什么我们明知如此，仍然难以抵御诱惑呢？",
+       "py": "Kě shì wèi shén me wǒ men míng zhī rú cǐ, réng rán nán yǐ dǐ yù yòu huò ne?",
+       "vi": "Nhưng vì sao chúng ta biết rõ như vậy mà vẫn khó chống lại cám dỗ?"
+      },
+      {
+       "spk": 1,
+       "zh": "因为消费已经和身份、社交紧密联系在一起，人们通过购买来表达自我，也通过购买来获得归属感。再加上分期付款、一键下单，让消费变得毫无阻力。",
+       "py": "Yīn wèi xiāo fèi yǐ jīng hé shēn fèn, shè jiāo jǐn mì lián xì zài yì qǐ, rén men tōng guò gòu mǎi lái biǎo dá zì wǒ, yě tōng guò gòu mǎi lái huò dé guī shǔ gǎn. Zài jiā shàng fēn qī fù kuǎn, yí jiàn xià dān, ràng xiāo fèi biàn de háo wú zǔ lì.",
+       "vi": "Vì tiêu dùng đã gắn chặt với thân phận, giao tiếp xã hội, con người thông qua mua sắm để biểu đạt bản thân, cũng thông qua mua sắm để có cảm giác thuộc về. Thêm vào đó trả góp, đặt hàng một chạm khiến tiêu dùng trở nên không còn trở ngại."
+      },
+      {
+       "spk": 0,
+       "zh": "那应该如何建立更健康的消费观呢？",
+       "py": "Nà yīng gāi rú hé jiàn lì gèng jiàn kāng de xiāo fèi guān ne?",
+       "vi": "Vậy nên xây dựng quan niệm tiêu dùng lành mạnh hơn thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "我觉得可以尝试区分“需要”和“想要”，在每次下单前冷静思考二十四小时。如果过了一天，你依然觉得非买不可，那或许才是真正的需要。",
+       "py": "Wǒ jué de kě yǐ cháng shì qū fēn “xū yào” hé “xiǎng yào”, zài měi cì xià dān qián lěng jìng sī kǎo èr shí sì xiǎo shí. Rú guǒ guò le yì tiān, nǐ yī rán jué de fēi mǎi bù kě, nà huò xǔ cái shì zhēn zhèng de xū yào.",
+       "vi": "Mình thấy có thể thử phân biệt “cần” và “muốn”, trước mỗi lần đặt hàng bình tĩnh suy nghĩ hai mươi bốn tiếng. Nếu qua một ngày bạn vẫn thấy nhất định phải mua, thì có lẽ mới là nhu cầu thực sự."
+      },
+      {
+       "spk": 0,
+       "zh": "这个办法简单而有效，我打算从今天开始试试。",
+       "py": "Zhè ge bàn fǎ jiǎn dān ér yǒu xiào, wǒ dǎ suàn cóng jīn tiān kāi shǐ shì shì.",
+       "vi": "Cách này đơn giản mà hiệu quả, mình định bắt đầu thử từ hôm nay."
+      },
+      {
+       "spk": 1,
+       "zh": "真正的富足，不在于拥有多少，而在于需要的有多少。",
+       "py": "Zhēn zhèng de fù zú, bú zài yú yōng yǒu duō shǎo, ér zài yú xū yào de yǒu duō shǎo.",
+       "vi": "Sự giàu có thực sự không nằm ở có bao nhiêu, mà ở cần bao nhiêu."
+      }
+     ]
+    },
+    {
+     "id": "21-2",
+     "title_zh": "极简生活",
+     "title_vi": "Lối sống tối giản",
+     "scene_vi": "Chia sẻ trải nghiệm sống tối giản.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，我听说你最近把家里一半的东西都送人或者扔掉了，开始过“极简生活”，这是怎么想的？",
+       "py": "Xiǎo měi, wǒ tīng shuō nǐ zuì jìn bǎ jiā lǐ yí bàn de dōng xi dōu sòng rén huò zhě rēng diào le, kāi shǐ guò “jí jiǎn shēng huó”, zhè shì zěn me xiǎng de?",
+       "vi": "Tiểu Mỹ, mình nghe nói gần đây bạn đem một nửa đồ trong nhà tặng người hoặc vứt đi, bắt đầu sống “tối giản”, bạn nghĩ thế nào vậy?"
+      },
+      {
+       "spk": 1,
+       "zh": "有一次搬家，我才惊觉自己竟然拥有那么多从来没有用过的东西，它们占据着空间，也占据着我的精力。",
+       "py": "Yǒu yí cì bān jiā, wǒ cái jīng jué zì jǐ jìng rán yōng yǒu nà me duō cóng lái méi yǒu yòng guò de dōng xi, tā men zhàn jù zhe kōng jiān, yě zhàn jù zhe wǒ de jīng lì.",
+       "vi": "Có lần chuyển nhà, mình mới giật mình phát hiện bản thân lại có nhiều đồ chưa từng dùng đến như vậy, chúng chiếm không gian, cũng chiếm tinh lực của mình."
+      },
+      {
+       "spk": 0,
+       "zh": "扔掉那么多东西，你不觉得可惜吗？",
+       "py": "Rēng diào nà me duō dōng xi, nǐ bù jué de kě xī ma?",
+       "vi": "Vứt nhiều đồ như vậy, bạn không thấy tiếc sao?"
+      },
+      {
+       "spk": 1,
+       "zh": "刚开始有点儿不舍，但是慢慢发现，真正让我快乐的东西其实很少。精简以后，不仅家里整洁了，心里也变得轻松。",
+       "py": "Gāng kāi shǐ yǒu diǎnr bù shě, dàn shì màn màn fā xiàn, zhēn zhèng ràng wǒ kuài lè de dōng xi qí shí hěn shǎo. Jīng jiǎn yǐ hòu, bù jǐn jiā lǐ zhěng jié le, xīn lǐ yě biàn de qīng sōng.",
+       "vi": "Lúc đầu có chút không nỡ, nhưng dần phát hiện thứ thật sự làm mình vui thực ra rất ít. Sau khi tinh giản, không chỉ nhà cửa gọn gàng mà trong lòng cũng nhẹ nhõm."
+      },
+      {
+       "spk": 0,
+       "zh": "不过极简并不意味着一味地减少，否则也可能变成另一种极端。",
+       "py": "Bú guò jí jiǎn bìng bú yì wèi zhe yí wèi de jiǎn shǎo, fǒu zé yě kě néng biàn chéng lìng yì zhǒng jí duān.",
+       "vi": "Nhưng tối giản không có nghĩa là một mực giảm bớt, nếu không cũng có thể thành một thái cực khác."
+      },
+      {
+       "spk": 1,
+       "zh": "你说得对。极简的本质是“取舍”，是明白什么对自己重要，并且敢于放弃其余的。它是手段，不是目的。",
+       "py": "Nǐ shuō de duì. Jí jiǎn de běn zhì shì “qǔ shě”, shì míng bai shén me duì zì jǐ zhòng yào, bìng qiě gǎn yú fàng qì qí yú de. Tā shì shǒu duàn, bú shì mù dì.",
+       "vi": "Bạn nói đúng. Bản chất của tối giản là “lựa chọn”, là hiểu điều gì quan trọng với mình và dám buông bỏ phần còn lại. Nó là phương tiện chứ không phải mục đích."
+      },
+      {
+       "spk": 0,
+       "zh": "听你说完，我也想回家整理一下了。",
+       "py": "Tīng nǐ shuō wán, wǒ yě xiǎng huí jiā zhěng lǐ yí xià le.",
+       "vi": "Nghe bạn nói xong, mình cũng muốn về nhà dọn dẹp một chút rồi."
+      },
+      {
+       "spk": 1,
+       "zh": "可以从最小的抽屉开始，慢慢你就会找到属于自己的节奏。",
+       "py": "Kě yǐ cóng zuì xiǎo de chōu tì kāi shǐ, màn màn nǐ jiù huì zhǎo dào shǔ yú zì jǐ de jié zòu.",
+       "vi": "Có thể bắt đầu từ ngăn kéo nhỏ nhất, dần dần bạn sẽ tìm thấy nhịp điệu của riêng mình."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

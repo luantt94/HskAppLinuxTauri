@@ -1,0 +1,612 @@
+{
+  "level": "HSK3",
+  "story_title": "Câu chuyện của Lý Minh (3): Thực tập và những người bạn mới",
+  "story_intro_vi": "Lý Minh đã học tiếng Trung được hơn một năm. Bạn ấy chuyển ra ở riêng, đi làm thêm ở một công ty thương mại, và quen thêm nhiều người bạn mới trên con đường trưởng thành.",
+  "passages": [
+    {
+      "id": 1,
+      "title_zh": "新的开始",
+      "title_vi": "Khởi đầu mới",
+      "text": "新的学期开始了，我的汉语水平又提高了不少。这个学期我决定搬出宿舍，自己租房子住，一边学习，一边体验真正的中国生活。",
+      "text_vi": "Học kỳ mới đã bắt đầu, trình độ tiếng Trung của tôi lại tiến bộ hơn không ít. Học kỳ này tôi quyết định dọn ra khỏi ký túc xá, tự thuê nhà ở, vừa học tập vừa trải nghiệm cuộc sống thực sự ở Trung Quốc.",
+      "vocab": [
+        {
+          "zh": "决定",
+          "pinyin": "juédìng",
+          "vi": "quyết định"
+        },
+        {
+          "zh": "体验",
+          "pinyin": "tǐyàn",
+          "vi": "trải nghiệm"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title_zh": "找房子",
+      "title_vi": "Tìm nhà thuê",
+      "text": "小红陪我一起去找房子。我们看了三个地方，最后选了一个离学校不远、价钱也合适的房子。房东是一位很友好的阿姨。",
+      "text_vi": "Tiểu Hồng cùng tôi đi tìm nhà thuê. Chúng tôi xem ba chỗ, cuối cùng chọn một căn nhà cách trường không xa, giá cả cũng hợp lý. Chủ nhà là một cô rất thân thiện.",
+      "vocab": [
+        {
+          "zh": "房东",
+          "pinyin": "fángdōng",
+          "vi": "chủ nhà"
+        },
+        {
+          "zh": "价钱",
+          "pinyin": "jiàqián",
+          "vi": "giá cả"
+        },
+        {
+          "zh": "合适",
+          "pinyin": "héshì",
+          "vi": "phù hợp, hợp lý"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title_zh": "搬家",
+      "title_vi": "Chuyển nhà",
+      "text": "搬家那天，大卫和玛丽都来帮忙。虽然东西不多，但是我们一边搬一边聊天，搬了差不多三个小时才搬完。",
+      "text_vi": "Ngày chuyển nhà, David và Mary đều đến giúp. Tuy đồ đạc không nhiều, nhưng chúng tôi vừa chuyển vừa trò chuyện, chuyển gần ba tiếng mới xong.",
+      "vocab": [
+        {
+          "zh": "搬家",
+          "pinyin": "bānjiā",
+          "vi": "chuyển nhà, dọn nhà"
+        },
+        {
+          "zh": "差不多",
+          "pinyin": "chàbuduō",
+          "vi": "gần như, xấp xỉ"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title_zh": "办银行卡和手机卡",
+      "title_vi": "Mở thẻ ngân hàng và SIM điện thoại",
+      "text": "我去银行办了一张银行卡，又去手机店办了一张手机卡。工作人员帮我设置好了手机银行，这样以后交房租、买东西都方便多了。",
+      "text_vi": "Tôi đến ngân hàng làm một thẻ ngân hàng, lại đến cửa hàng điện thoại làm một SIM điện thoại. Nhân viên giúp tôi cài đặt xong ngân hàng điện tử, như vậy sau này đóng tiền thuê nhà, mua đồ đều tiện hơn nhiều.",
+      "vocab": [
+        {
+          "zh": "办",
+          "pinyin": "bàn",
+          "vi": "làm thủ tục, đăng ký"
+        },
+        {
+          "zh": "房租",
+          "pinyin": "fángzū",
+          "vi": "tiền thuê nhà"
+        },
+        {
+          "zh": "设置",
+          "pinyin": "shèzhì",
+          "vi": "cài đặt"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title_zh": "第一份兼职工作",
+      "title_vi": "Công việc làm thêm đầu tiên",
+      "text": "我在一家贸易公司找到了一份兼职工作，主要负责把中文资料翻译成越南语。老板对我很满意，说我做事认真又细心。",
+      "text_vi": "Tôi tìm được một công việc làm thêm ở một công ty thương mại, chủ yếu phụ trách dịch tài liệu tiếng Trung sang tiếng Việt. Ông chủ rất hài lòng về tôi, nói tôi làm việc nghiêm túc lại tỉ mỉ.",
+      "vocab": [
+        {
+          "zh": "贸易公司",
+          "pinyin": "màoyì gōngsī",
+          "vi": "công ty thương mại"
+        },
+        {
+          "zh": "翻译",
+          "pinyin": "fānyì",
+          "vi": "dịch, biên dịch"
+        },
+        {
+          "zh": "细心",
+          "pinyin": "xìxīn",
+          "vi": "tỉ mỉ, cẩn thận"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title_zh": "坐地铁上班",
+      "title_vi": "Đi tàu điện ngầm đi làm",
+      "text": "公司离我家比较远，我每天要坐四十分钟地铁上班。虽然有点儿辛苦，但是我可以在地铁上听新闻，练习听力。",
+      "text_vi": "Công ty cách nhà tôi khá xa, mỗi ngày tôi phải đi tàu điện ngầm bốn mươi phút để đi làm. Tuy hơi vất vả một chút, nhưng tôi có thể nghe thời sự trên tàu, luyện nghe.",
+      "vocab": [
+        {
+          "zh": "地铁",
+          "pinyin": "dìtiě",
+          "vi": "tàu điện ngầm"
+        },
+        {
+          "zh": "辛苦",
+          "pinyin": "xīnkǔ",
+          "vi": "vất vả"
+        },
+        {
+          "zh": "新闻",
+          "pinyin": "xīnwén",
+          "vi": "tin tức"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title_zh": "公司里的误会",
+      "title_vi": "Hiểu lầm ở công ty",
+      "text": "上个星期，因为我没听清楚同事的话，把一份文件的时间弄错了，结果给大家添了麻烦。我主动向大家道歉，以后做事更加小心了。",
+      "text_vi": "Tuần trước, vì tôi nghe không rõ lời đồng nghiệp, làm sai thời gian của một tài liệu, kết quả gây phiền phức cho mọi người. Tôi chủ động xin lỗi mọi người, sau này làm việc cẩn thận hơn.",
+      "vocab": [
+        {
+          "zh": "同事",
+          "pinyin": "tóngshì",
+          "vi": "đồng nghiệp"
+        },
+        {
+          "zh": "添麻烦",
+          "pinyin": "tiān máfan",
+          "vi": "gây phiền phức"
+        },
+        {
+          "zh": "道歉",
+          "pinyin": "dàoqiàn",
+          "vi": "xin lỗi"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title_zh": "认识了陈小雨",
+      "title_vi": "Quen biết Trần Tiểu Vũ",
+      "text": "在公司，我认识了一个叫陈小雨的同事。她很聪明，中文说得特别清楚，经常耐心地帮我纠正发音。我们渐渐成了好朋友。",
+      "text_vi": "Ở công ty, tôi quen biết một đồng nghiệp tên là Trần Tiểu Vũ. Cô ấy rất thông minh, nói tiếng Trung đặc biệt rõ ràng, thường kiên nhẫn giúp tôi sửa phát âm. Chúng tôi dần dần trở thành bạn tốt.",
+      "vocab": [
+        {
+          "zh": "陈小雨",
+          "pinyin": "Chén Xiǎoyǔ",
+          "vi": "Trần Tiểu Vũ (đồng nghiệp mới quen)"
+        },
+        {
+          "zh": "纠正",
+          "pinyin": "jiūzhèng",
+          "vi": "sửa, chỉnh sửa"
+        },
+        {
+          "zh": "渐渐",
+          "pinyin": "jiànjiàn",
+          "vi": "dần dần"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title_zh": "一起看京剧",
+      "title_vi": "Cùng xem Kinh kịch",
+      "text": "周末，小雨带我去看了一场京剧。演员的服装非常漂亮，可是我听不太懂他们唱的内容，小雨就一句一句地给我解释。",
+      "text_vi": "Cuối tuần, Tiểu Vũ dẫn tôi đi xem một vở Kinh kịch. Trang phục của diễn viên rất đẹp, nhưng tôi không hiểu rõ lắm nội dung họ hát, Tiểu Vũ liền giải thích cho tôi từng câu một.",
+      "vocab": [
+        {
+          "zh": "京剧",
+          "pinyin": "Jīngjù",
+          "vi": "Kinh kịch"
+        },
+        {
+          "zh": "演员",
+          "pinyin": "yǎnyuán",
+          "vi": "diễn viên"
+        },
+        {
+          "zh": "解释",
+          "pinyin": "jiěshì",
+          "vi": "giải thích"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title_zh": "台风来了",
+      "title_vi": "Bão đến",
+      "text": "听说明天有一个很大的台风，学校和公司都通知大家尽量别出门。我买了一些食物和水，准备在家安安静静地待两天。",
+      "text_vi": "Nghe nói ngày mai sẽ có một cơn bão lớn, trường học và công ty đều thông báo mọi người cố gắng đừng ra ngoài. Tôi mua một ít đồ ăn và nước, chuẩn bị ở nhà yên tĩnh hai ngày.",
+      "vocab": [
+        {
+          "zh": "台风",
+          "pinyin": "táifēng",
+          "vi": "bão, cuồng phong"
+        },
+        {
+          "zh": "通知",
+          "pinyin": "tōngzhī",
+          "vi": "thông báo"
+        },
+        {
+          "zh": "尽量",
+          "pinyin": "jǐnliàng",
+          "vi": "cố gắng hết sức"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title_zh": "丢了钱包",
+      "title_vi": "Mất ví tiền",
+      "text": "有一天我在公交车上把钱包弄丢了，里面有身份证和银行卡，我着急得不得了。没想到，第二天一位好心人把钱包送到了警察局，东西一样都没少。",
+      "text_vi": "Có một hôm tôi làm mất ví tiền trên xe buýt, bên trong có chứng minh thư và thẻ ngân hàng, tôi lo lắng vô cùng. Không ngờ, ngày hôm sau một người tốt bụng đã mang ví đến đồn công an, đồ đạc không thiếu thứ gì.",
+      "vocab": [
+        {
+          "zh": "丢",
+          "pinyin": "diū",
+          "vi": "mất, làm mất"
+        },
+        {
+          "zh": "着急",
+          "pinyin": "zháojí",
+          "vi": "lo lắng, sốt ruột"
+        },
+        {
+          "zh": "警察局",
+          "pinyin": "jǐngchájú",
+          "vi": "đồn công an"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title_zh": "学成语",
+      "title_vi": "Học thành ngữ",
+      "text": "小雨教了我几个常用的成语，比如“一举两得”“马马虎虎”。她说学会用成语，说话会更有意思，也更像中国人。",
+      "text_vi": "Tiểu Vũ dạy tôi mấy thành ngữ thường dùng, ví dụ như \"nhất cử lưỡng tiện\", \"qua loa đại khái\". Cô ấy nói học cách dùng thành ngữ, nói chuyện sẽ thú vị hơn, cũng giống người Trung Quốc hơn.",
+      "vocab": [
+        {
+          "zh": "成语",
+          "pinyin": "chéngyǔ",
+          "vi": "thành ngữ"
+        },
+        {
+          "zh": "一举两得",
+          "pinyin": "yìjǔliǎngdé",
+          "vi": "nhất cử lưỡng tiện"
+        },
+        {
+          "zh": "马马虎虎",
+          "pinyin": "mǎmǎhǔhǔ",
+          "vi": "qua loa, đại khái"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title_zh": "去医院体检",
+      "title_vi": "Đi khám sức khỏe tổng quát",
+      "text": "公司安排我们每年做一次体检。检查的项目很多，排队排了很久，不过医生说我的身体很健康，让我放心不少。",
+      "text_vi": "Công ty sắp xếp cho chúng tôi khám sức khỏe tổng quát mỗi năm một lần. Hạng mục kiểm tra rất nhiều, xếp hàng rất lâu, nhưng bác sĩ nói cơ thể tôi rất khỏe mạnh, khiến tôi yên tâm hơn nhiều.",
+      "vocab": [
+        {
+          "zh": "体检",
+          "pinyin": "tǐjiǎn",
+          "vi": "khám sức khỏe tổng quát"
+        },
+        {
+          "zh": "项目",
+          "pinyin": "xiàngmù",
+          "vi": "hạng mục"
+        },
+        {
+          "zh": "健康",
+          "pinyin": "jiànkāng",
+          "vi": "khỏe mạnh"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title_zh": "中秋节",
+      "title_vi": "Tết Trung Thu",
+      "text": "中秋节那天晚上，小雨、小红、大卫和玛丽都来我家过节。我们一边吃月饼，一边赏月，大家还一起分享了各自国家的节日习惯。",
+      "text_vi": "Đêm Tết Trung Thu, Tiểu Vũ, Tiểu Hồng, David và Mary đều đến nhà tôi đón lễ. Chúng tôi vừa ăn bánh trung thu vừa ngắm trăng, mọi người còn cùng chia sẻ phong tục lễ hội của đất nước mình.",
+      "vocab": [
+        {
+          "zh": "月饼",
+          "pinyin": "yuèbǐng",
+          "vi": "bánh trung thu"
+        },
+        {
+          "zh": "赏月",
+          "pinyin": "shǎngyuè",
+          "vi": "ngắm trăng"
+        },
+        {
+          "zh": "分享",
+          "pinyin": "fēnxiǎng",
+          "vi": "chia sẻ"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title_zh": "第一次出差",
+      "title_vi": "Lần đầu đi công tác",
+      "text": "公司派我去广州出差三天，这是我第一次一个人出差。虽然有点儿紧张，但是我顺利完成了任务，老板对我的表现很满意。",
+      "text_vi": "Công ty cử tôi đi Quảng Châu công tác ba ngày, đây là lần đầu tiên tôi đi công tác một mình. Tuy hơi căng thẳng một chút, nhưng tôi đã hoàn thành nhiệm vụ suôn sẻ, ông chủ rất hài lòng về biểu hiện của tôi.",
+      "vocab": [
+        {
+          "zh": "出差",
+          "pinyin": "chūchāi",
+          "vi": "đi công tác"
+        },
+        {
+          "zh": "任务",
+          "pinyin": "rènwu",
+          "vi": "nhiệm vụ"
+        },
+        {
+          "zh": "表现",
+          "pinyin": "biǎoxiàn",
+          "vi": "biểu hiện"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title_zh": "准备面试",
+      "title_vi": "Chuẩn bị phỏng vấn",
+      "text": "我看到一家更大的公司在招聘翻译，决定去试一试。面试前，小雨帮我一起练习了常见的问题，还给了我不少有用的建议。",
+      "text_vi": "Tôi thấy một công ty lớn hơn đang tuyển phiên dịch, quyết định đi thử. Trước khi phỏng vấn, Tiểu Vũ giúp tôi cùng luyện tập những câu hỏi thường gặp, còn cho tôi nhiều lời khuyên hữu ích.",
+      "vocab": [
+        {
+          "zh": "招聘",
+          "pinyin": "zhāopìn",
+          "vi": "tuyển dụng"
+        },
+        {
+          "zh": "建议",
+          "pinyin": "jiànyì",
+          "vi": "lời khuyên, đề nghị"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title_zh": "做志愿者",
+      "title_vi": "Làm tình nguyện viên",
+      "text": "周末，我和朋友们一起参加了一个国际马拉松比赛的志愿者活动，负责给外国选手指路、翻译。这次活动让我认识了很多不同国家的人。",
+      "text_vi": "Cuối tuần, tôi cùng bạn bè tham gia hoạt động tình nguyện viên cho một cuộc thi marathon quốc tế, phụ trách chỉ đường, phiên dịch cho các vận động viên nước ngoài. Hoạt động lần này giúp tôi quen biết nhiều người đến từ nhiều quốc gia khác nhau.",
+      "vocab": [
+        {
+          "zh": "志愿者",
+          "pinyin": "zhìyuànzhě",
+          "vi": "tình nguyện viên"
+        },
+        {
+          "zh": "选手",
+          "pinyin": "xuǎnshǒu",
+          "vi": "vận động viên, thí sinh"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title_zh": "学做饭的课",
+      "title_vi": "Lớp học nấu ăn",
+      "text": "我报名参加了一个周末的做饭课，学会了做红烧肉和饺子。虽然第一次做得不太好看，但是味道还不错，朋友们都说可以再做一次。",
+      "text_vi": "Tôi đăng ký tham gia một lớp học nấu ăn cuối tuần, học được cách làm thịt kho tàu và sủi cảo. Tuy lần đầu làm không đẹp lắm, nhưng mùi vị khá ngon, bạn bè đều nói có thể làm lại lần nữa.",
+      "vocab": [
+        {
+          "zh": "报名",
+          "pinyin": "bàomíng",
+          "vi": "đăng ký"
+        },
+        {
+          "zh": "红烧肉",
+          "pinyin": "hóngshāoròu",
+          "vi": "thịt kho tàu"
+        },
+        {
+          "zh": "饺子",
+          "pinyin": "jiǎozi",
+          "vi": "sủi cảo, bánh chẻo"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title_zh": "新同事",
+      "title_vi": "Đồng nghiệp mới",
+      "text": "公司来了一位新同事，他是日本人，汉语说得不太流利。我想起自己刚来中国的时候，就主动帮他介绍公司的情况，教他怎么用打印机。",
+      "text_vi": "Công ty có thêm một đồng nghiệp mới, anh ấy là người Nhật, nói tiếng Hán chưa được lưu loát. Tôi nhớ lại lúc mới đến Trung Quốc của mình nên chủ động giới thiệu tình hình công ty cho anh ấy và chỉ anh ấy cách dùng máy in.",
+      "vocab": [
+        {
+          "zh": "新同事",
+          "pinyin": "xīn tóngshì",
+          "vi": "đồng nghiệp mới"
+        },
+        {
+          "zh": "流利",
+          "pinyin": "liúlì",
+          "vi": "lưu loát"
+        },
+        {
+          "zh": "主动",
+          "pinyin": "zhǔdòng",
+          "vi": "chủ động"
+        },
+        {
+          "zh": "打印机",
+          "pinyin": "dǎyìnjī",
+          "vi": "máy in"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title_zh": "感冒了",
+      "title_vi": "Bị cảm",
+      "text": "最近天气变化很大，我不小心感冒了，嗓子疼，还一直咳嗽。小雨给我煮了姜汤，还提醒我按时吃药。喝了两天姜汤，我的感冒终于好了。",
+      "text_vi": "Gần đây thời tiết thay đổi nhiều, tôi không cẩn thận bị cảm, đau họng và ho liên tục. Tiểu Vũ nấu cho tôi nước gừng, còn nhắc tôi uống thuốc đúng giờ. Uống nước gừng hai ngày, cuối cùng tôi cũng khỏi cảm.",
+      "vocab": [
+        {
+          "zh": "嗓子",
+          "pinyin": "sǎngzi",
+          "vi": "cổ họng"
+        },
+        {
+          "zh": "咳嗽",
+          "pinyin": "késou",
+          "vi": "ho"
+        },
+        {
+          "zh": "姜汤",
+          "pinyin": "jiāngtāng",
+          "vi": "nước gừng"
+        },
+        {
+          "zh": "按时",
+          "pinyin": "ànshí",
+          "vi": "đúng giờ"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "title_zh": "租房合同",
+      "title_vi": "Hợp đồng thuê nhà",
+      "text": "房东阿姨说下个月房租要涨一点儿。我仔细看了合同，发现里面写得很清楚，所以没有问题。小红提醒我，租房以前一定要把合同看明白。",
+      "text_vi": "Cô chủ nhà nói tháng sau tiền thuê nhà sẽ tăng một chút. Tôi đọc kỹ hợp đồng, thấy trong đó ghi rất rõ ràng nên không có vấn đề gì. Tiểu Hồng nhắc tôi, trước khi thuê nhà nhất định phải đọc hiểu hợp đồng.",
+      "vocab": [
+        {
+          "zh": "房租",
+          "pinyin": "fángzū",
+          "vi": "tiền thuê nhà"
+        },
+        {
+          "zh": "涨",
+          "pinyin": "zhǎng",
+          "vi": "tăng"
+        },
+        {
+          "zh": "仔细",
+          "pinyin": "zǐxì",
+          "vi": "kỹ lưỡng"
+        },
+        {
+          "zh": "合同",
+          "pinyin": "hétong",
+          "vi": "hợp đồng"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "title_zh": "买机票",
+      "title_vi": "Mua vé máy bay",
+      "text": "春节快到了，我想买机票回越南看爸爸妈妈。可是票很难买，我在网上等了好几个小时才买到。拿到票的时候，我高兴得跳了起来。",
+      "text_vi": "Sắp đến Tết rồi, tôi muốn mua vé máy bay về Việt Nam thăm bố mẹ. Nhưng vé rất khó mua, tôi chờ trên mạng mấy tiếng đồng hồ mới mua được. Lúc cầm được vé, tôi vui đến nhảy cẫng lên.",
+      "vocab": [
+        {
+          "zh": "机票",
+          "pinyin": "jīpiào",
+          "vi": "vé máy bay"
+        },
+        {
+          "zh": "网上",
+          "pinyin": "wǎngshàng",
+          "vi": "trên mạng"
+        },
+        {
+          "zh": "好几个",
+          "pinyin": "hǎo jǐ ge",
+          "vi": "mấy (nhiều)"
+        },
+        {
+          "zh": "跳",
+          "pinyin": "tiào",
+          "vi": "nhảy"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "title_zh": "和家人视频",
+      "title_vi": "Gọi video với gia đình",
+      "text": "周末，我和家人视频聊天。妈妈说家里的天气很热，爸爸的身体也不错。姐姐给我看了她刚买的新房子，我真为她高兴。",
+      "text_vi": "Cuối tuần, tôi gọi video trò chuyện với gia đình. Mẹ nói thời tiết ở nhà rất nóng, sức khỏe của bố cũng khá tốt. Chị gái cho tôi xem căn nhà mới chị vừa mua, tôi thực sự mừng cho chị.",
+      "vocab": [
+        {
+          "zh": "视频",
+          "pinyin": "shìpín",
+          "vi": "video, gọi video"
+        },
+        {
+          "zh": "天气",
+          "pinyin": "tiānqì",
+          "vi": "thời tiết"
+        },
+        {
+          "zh": "新房子",
+          "pinyin": "xīn fángzi",
+          "vi": "nhà mới"
+        },
+        {
+          "zh": "为",
+          "pinyin": "wèi",
+          "vi": "vì, cho"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "title_zh": "准备HSK三级考试",
+      "title_vi": "Chuẩn bị thi HSK cấp 3",
+      "text": "离HSK三级考试只有一个月了，我每天除了上班以外，晚上都会花一个小时复习语法和生词。小雨也经常陪我一起练习口语。",
+      "text_vi": "Chỉ còn một tháng nữa là đến kỳ thi HSK cấp 3, mỗi ngày ngoài đi làm ra, buổi tối tôi đều dành một tiếng để ôn ngữ pháp và từ mới. Tiểu Vũ cũng thường cùng tôi luyện khẩu ngữ.",
+      "vocab": [
+        {
+          "zh": "复习",
+          "pinyin": "fùxí",
+          "vi": "ôn tập"
+        },
+        {
+          "zh": "语法",
+          "pinyin": "yǔfǎ",
+          "vi": "ngữ pháp"
+        },
+        {
+          "zh": "口语",
+          "pinyin": "kǒuyǔ",
+          "vi": "khẩu ngữ, nói"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "title_zh": "一年的总结",
+      "title_vi": "Tổng kết một năm",
+      "text": "HSK三级考试顺利结束了。回想这一年，我租了房子、找了工作、交了新朋友，还学会了照顾自己。我相信，接下来的日子会越来越精彩。",
+      "text_vi": "Kỳ thi HSK cấp 3 đã kết thúc suôn sẻ. Nhớ lại một năm này, tôi đã thuê nhà, tìm được việc làm, kết bạn mới, còn học được cách tự chăm sóc bản thân. Tôi tin rằng, những ngày tiếp theo sẽ ngày càng rực rỡ hơn.",
+      "vocab": [
+        {
+          "zh": "回想",
+          "pinyin": "huíxiǎng",
+          "vi": "nhớ lại, hồi tưởng"
+        },
+        {
+          "zh": "照顾",
+          "pinyin": "zhàogù",
+          "vi": "chăm sóc"
+        },
+        {
+          "zh": "精彩",
+          "pinyin": "jīngcǎi",
+          "vi": "xuất sắc, rực rỡ"
+        }
+      ]
+    }
+  ]
+}

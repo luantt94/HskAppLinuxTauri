@@ -1,0 +1,647 @@
+{
+  "level": "HSK4",
+  "story_title": "Câu chuyện của Lý Minh (4): Trưởng thành hơn",
+  "story_intro_vi": "Lý Minh đã làm việc được một thời gian và ngày càng hiểu sâu hơn về cuộc sống, công việc và văn hóa Trung Quốc. Tình cảm với Tiểu Vũ cũng dần trở nên nghiêm túc hơn.",
+  "passages": [
+    {
+      "id": 1,
+      "title_zh": "职业规划",
+      "title_vi": "Định hướng nghề nghiệp",
+      "text": "工作了一段时间以后，我开始认真考虑自己的职业规划。我喜欢翻译这份工作，但是我也希望将来能有更多发展的机会，而不只是一直做同样的事情。",
+      "text_vi": "Sau khi làm việc một thời gian, tôi bắt đầu nghiêm túc suy nghĩ về định hướng nghề nghiệp của mình. Tôi thích công việc phiên dịch này, nhưng tôi cũng hy vọng sau này có thể có nhiều cơ hội phát triển hơn, chứ không chỉ mãi làm những việc giống nhau.",
+      "vocab": [
+        {
+          "zh": "职业规划",
+          "pinyin": "zhíyè guīhuà",
+          "vi": "định hướng nghề nghiệp"
+        },
+        {
+          "zh": "发展",
+          "pinyin": "fāzhǎn",
+          "vi": "phát triển"
+        },
+        {
+          "zh": "机会",
+          "pinyin": "jīhuì",
+          "vi": "cơ hội"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title_zh": "换工作",
+      "title_vi": "Chuyển việc",
+      "text": "经过几轮面试，我顺利地被一家更大的跨国公司录取了。虽然要离开熟悉的同事，心里有点儿舍不得，但是我知道这是一个难得的机会。",
+      "text_vi": "Qua vài vòng phỏng vấn, tôi đã suôn sẻ được một công ty đa quốc gia lớn hơn nhận vào làm. Tuy phải rời xa những đồng nghiệp quen thuộc, trong lòng có chút lưu luyến, nhưng tôi biết đây là một cơ hội hiếm có.",
+      "vocab": [
+        {
+          "zh": "跨国公司",
+          "pinyin": "kuàguó gōngsī",
+          "vi": "công ty đa quốc gia"
+        },
+        {
+          "zh": "录取",
+          "pinyin": "lùqǔ",
+          "vi": "nhận vào, tuyển dụng"
+        },
+        {
+          "zh": "舍不得",
+          "pinyin": "shěbude",
+          "vi": "lưu luyến, không nỡ"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title_zh": "手机的影响",
+      "title_vi": "Ảnh hưởng của điện thoại",
+      "text": "现在不管是在地铁上还是在餐厅里，几乎每个人都在看手机。手机确实给我们的生活带来了很多方便，但是如果用得太多，也会影响我们和身边人的交流。",
+      "text_vi": "Bây giờ bất kể là trên tàu điện ngầm hay trong nhà hàng, hầu như ai cũng đang nhìn điện thoại. Điện thoại thực sự mang lại nhiều tiện lợi cho cuộc sống chúng ta, nhưng nếu dùng quá nhiều, cũng sẽ ảnh hưởng đến việc giao tiếp với người xung quanh.",
+      "vocab": [
+        {
+          "zh": "不管",
+          "pinyin": "bùguǎn",
+          "vi": "bất kể, dù cho"
+        },
+        {
+          "zh": "交流",
+          "pinyin": "jiāoliú",
+          "vi": "giao tiếp, giao lưu"
+        },
+        {
+          "zh": "影响",
+          "pinyin": "yǐngxiǎng",
+          "vi": "ảnh hưởng"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title_zh": "保护环境",
+      "title_vi": "Bảo vệ môi trường",
+      "text": "公司最近组织了一次植树活动，呼吁大家关注环境保护。小雨说，随着社会的发展，人们越来越重视空气质量和垃圾分类这些问题。",
+      "text_vi": "Công ty gần đây tổ chức một hoạt động trồng cây, kêu gọi mọi người quan tâm đến bảo vệ môi trường. Tiểu Vũ nói, cùng với sự phát triển của xã hội, mọi người ngày càng coi trọng những vấn đề như chất lượng không khí và phân loại rác.",
+      "vocab": [
+        {
+          "zh": "呼吁",
+          "pinyin": "hūyù",
+          "vi": "kêu gọi"
+        },
+        {
+          "zh": "随着",
+          "pinyin": "suízhe",
+          "vi": "cùng với, theo đà"
+        },
+        {
+          "zh": "垃圾分类",
+          "pinyin": "lājī fēnlèi",
+          "vi": "phân loại rác"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title_zh": "去西安旅行",
+      "title_vi": "Du lịch Tây An",
+      "text": "国庆节假期，我和小雨一起去了西安旅行。我们参观了有名的兵马俑，看到那些栩栩如生的陶俑，我真正感受到了中国历史的悠久和伟大。",
+      "text_vi": "Kỳ nghỉ Quốc khánh, tôi và Tiểu Vũ cùng đi du lịch Tây An. Chúng tôi tham quan tượng binh mã俑 nổi tiếng, nhìn thấy những pho tượng đất nung sống động như thật, tôi thực sự cảm nhận được bề dày và sự vĩ đại của lịch sử Trung Quốc.",
+      "vocab": [
+        {
+          "zh": "兵马俑",
+          "pinyin": "Bīngmǎyǒng",
+          "vi": "tượng binh mã đất nung (Tây An)"
+        },
+        {
+          "zh": "栩栩如生",
+          "pinyin": "xǔxǔrúshēng",
+          "vi": "sống động như thật"
+        },
+        {
+          "zh": "悠久",
+          "pinyin": "yōujiǔ",
+          "vi": "lâu đời, bề dày"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title_zh": "两国文化的不同",
+      "title_vi": "Sự khác biệt văn hóa hai nước",
+      "text": "和小雨聊天的时候，我们常常比较越南和中国的文化。虽然两国有不少相似的习俗，比如都过春节，但是在饮食、语言等方面也存在着不少差异。",
+      "text_vi": "Khi trò chuyện với Tiểu Vũ, chúng tôi thường so sánh văn hóa Việt Nam và Trung Quốc. Tuy hai nước có không ít phong tục giống nhau, ví dụ đều ăn Tết Nguyên Đán, nhưng về mặt ẩm thực, ngôn ngữ cũng tồn tại không ít khác biệt.",
+      "vocab": [
+        {
+          "zh": "相似",
+          "pinyin": "xiāngsì",
+          "vi": "giống nhau, tương tự"
+        },
+        {
+          "zh": "存在",
+          "pinyin": "cúnzài",
+          "vi": "tồn tại"
+        },
+        {
+          "zh": "差异",
+          "pinyin": "chāyì",
+          "vi": "khác biệt"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title_zh": "我们在一起了",
+      "title_vi": "Chúng tôi đã yêu nhau",
+      "text": "经过一年多的相处，我和小雨决定正式在一起。她说，不管以后遇到什么困难，她都愿意和我一起面对。听到这句话，我心里既感动又幸福。",
+      "text_vi": "Sau hơn một năm ở bên nhau, tôi và Tiểu Vũ quyết định chính thức yêu nhau. Cô ấy nói, bất kể sau này gặp khó khăn gì, cô ấy đều sẵn lòng cùng tôi đối mặt. Nghe câu nói đó, trong lòng tôi vừa cảm động vừa hạnh phúc.",
+      "vocab": [
+        {
+          "zh": "相处",
+          "pinyin": "xiāngchǔ",
+          "vi": "ở bên nhau, chung sống"
+        },
+        {
+          "zh": "面对",
+          "pinyin": "miànduì",
+          "vi": "đối mặt"
+        },
+        {
+          "zh": "幸福",
+          "pinyin": "xìngfú",
+          "vi": "hạnh phúc"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title_zh": "交通堵塞的烦恼",
+      "title_vi": "Phiền toái vì tắc đường",
+      "text": "最近这个城市的交通越来越堵，上下班高峰期堵车堵得特别厉害。很多人建议多坐公共交通，既环保又能节省时间，我也开始尝试这样做。",
+      "text_vi": "Dạo gần đây giao thông của thành phố này ngày càng tắc, giờ cao điểm đi làm tan làm tắc đường đặc biệt nghiêm trọng. Nhiều người đề nghị đi nhiều phương tiện công cộng hơn, vừa bảo vệ môi trường vừa tiết kiệm thời gian, tôi cũng bắt đầu thử làm như vậy.",
+      "vocab": [
+        {
+          "zh": "堵车",
+          "pinyin": "dǔchē",
+          "vi": "tắc đường, kẹt xe"
+        },
+        {
+          "zh": "高峰期",
+          "pinyin": "gāofēngqī",
+          "vi": "giờ cao điểm"
+        },
+        {
+          "zh": "节省",
+          "pinyin": "jiéshěng",
+          "vi": "tiết kiệm"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title_zh": "网购的生活",
+      "title_vi": "Cuộc sống mua sắm online",
+      "text": "现在我买东西几乎都靠网购，不但方便，而且选择也多。不过小雨提醒我，网购虽然方便，但也要注意辨别商品的质量，不能只看价格便宜。",
+      "text_vi": "Bây giờ tôi mua đồ hầu như đều dựa vào mua sắm online, không chỉ tiện lợi, mà lựa chọn cũng nhiều. Tuy nhiên Tiểu Vũ nhắc tôi, mua sắm online tuy tiện lợi, nhưng cũng cần chú ý phân biệt chất lượng sản phẩm, không thể chỉ nhìn giá rẻ.",
+      "vocab": [
+        {
+          "zh": "网购",
+          "pinyin": "wǎnggòu",
+          "vi": "mua sắm online"
+        },
+        {
+          "zh": "辨别",
+          "pinyin": "biànbié",
+          "vi": "phân biệt"
+        },
+        {
+          "zh": "质量",
+          "pinyin": "zhìliàng",
+          "vi": "chất lượng"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title_zh": "考试的压力",
+      "title_vi": "Áp lực thi cử",
+      "text": "小红的弟弟今年要参加高考，压力特别大，每天都学习到很晚。我们都劝他不要太紧张，身体健康比考试成绩更重要。",
+      "text_vi": "Em trai của Tiểu Hồng năm nay sắp tham gia kỳ thi đại học, áp lực đặc biệt lớn, mỗi ngày đều học đến rất khuya. Chúng tôi đều khuyên cậu ấy đừng quá căng thẳng, sức khỏe quan trọng hơn thành tích thi cử.",
+      "vocab": [
+        {
+          "zh": "高考",
+          "pinyin": "gāokǎo",
+          "vi": "kỳ thi đại học (Trung Quốc)"
+        },
+        {
+          "zh": "压力",
+          "pinyin": "yālì",
+          "vi": "áp lực"
+        },
+        {
+          "zh": "劝",
+          "pinyin": "quàn",
+          "vi": "khuyên"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title_zh": "转正了",
+      "title_vi": "Lên chính thức",
+      "text": "经过三个月的试用期，我终于正式转正了，工资也提高了不少。老板还夸我适应得很快，既认真又有责任心。",
+      "text_vi": "Sau ba tháng thử việc, cuối cùng tôi cũng được chuyển thành nhân viên chính thức, lương cũng tăng không ít. Ông chủ còn khen tôi thích nghi rất nhanh, vừa nghiêm túc vừa có tinh thần trách nhiệm.",
+      "vocab": [
+        {
+          "zh": "试用期",
+          "pinyin": "shìyòngqī",
+          "vi": "thời gian thử việc"
+        },
+        {
+          "zh": "转正",
+          "pinyin": "zhuǎnzhèng",
+          "vi": "chuyển chính thức"
+        },
+        {
+          "zh": "责任心",
+          "pinyin": "zérènxīn",
+          "vi": "tinh thần trách nhiệm"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title_zh": "我爱看的书",
+      "title_vi": "Cuốn sách tôi thích đọc",
+      "text": "我最近迷上了看中国的历史小说。虽然有些句子不太好理解，但是通过读书，我不但提高了阅读能力，还了解了很多有意思的历史故事。",
+      "text_vi": "Gần đây tôi mê đọc tiểu thuyết lịch sử Trung Quốc. Tuy có một số câu không dễ hiểu lắm, nhưng thông qua đọc sách, tôi không chỉ nâng cao khả năng đọc hiểu, còn hiểu biết thêm nhiều câu chuyện lịch sử thú vị.",
+      "vocab": [
+        {
+          "zh": "迷上",
+          "pinyin": "míshàng",
+          "vi": "mê, say mê"
+        },
+        {
+          "zh": "阅读",
+          "pinyin": "yuèdú",
+          "vi": "đọc hiểu, đọc"
+        },
+        {
+          "zh": "了解",
+          "pinyin": "liǎojiě",
+          "vi": "hiểu biết, tìm hiểu"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title_zh": "父母的期望",
+      "title_vi": "Kỳ vọng của bố mẹ",
+      "text": "妈妈打电话问我什么时候回越南工作。我理解父母希望我留在身边的心情，但是我觉得现在在中国还有很多值得我学习和发展的机会。",
+      "text_vi": "Mẹ gọi điện hỏi tôi khi nào về Việt Nam làm việc. Tôi hiểu tâm tư của bố mẹ muốn tôi ở bên cạnh, nhưng tôi cảm thấy bây giờ ở Trung Quốc vẫn còn nhiều cơ hội đáng để tôi học hỏi và phát triển.",
+      "vocab": [
+        {
+          "zh": "期望",
+          "pinyin": "qīwàng",
+          "vi": "kỳ vọng"
+        },
+        {
+          "zh": "心情",
+          "pinyin": "xīnqíng",
+          "vi": "tâm trạng, tâm tư"
+        },
+        {
+          "zh": "值得",
+          "pinyin": "zhídé",
+          "vi": "đáng, đáng giá"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title_zh": "小雨家里的聚会",
+      "title_vi": "Họp mặt ở nhà Tiểu Vũ",
+      "text": "小雨邀请我去她家参加家庭聚会。她的爷爷奶奶一开始对我这个外国女婿不太了解，但是聊了几次以后，他们渐渐接受了我，还夸我懂事又勤快。",
+      "text_vi": "Tiểu Vũ mời tôi đến nhà cô ấy tham gia buổi họp mặt gia đình. Ông bà của cô ấy lúc đầu chưa hiểu rõ lắm về chàng rể ngoại quốc này, nhưng sau vài lần trò chuyện, họ dần dần chấp nhận tôi, còn khen tôi biết điều lại chăm chỉ.",
+      "vocab": [
+        {
+          "zh": "女婿",
+          "pinyin": "nǚxu",
+          "vi": "con rể, chàng rể"
+        },
+        {
+          "zh": "接受",
+          "pinyin": "jiēshòu",
+          "vi": "chấp nhận"
+        },
+        {
+          "zh": "懂事",
+          "pinyin": "dǒngshì",
+          "vi": "biết điều, hiểu chuyện"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title_zh": "我的梦想",
+      "title_vi": "Ước mơ của tôi",
+      "text": "我的梦想是以后能开一家连接中国和越南的翻译公司，帮助更多像我一样想学习对方语言和文化的人。小雨说她愿意和我一起努力实现这个梦想。",
+      "text_vi": "Ước mơ của tôi là sau này có thể mở một công ty phiên dịch kết nối Trung Quốc và Việt Nam, giúp đỡ nhiều người muốn học ngôn ngữ và văn hóa của nhau giống như tôi. Tiểu Vũ nói cô ấy sẵn lòng cùng tôi nỗ lực thực hiện ước mơ này.",
+      "vocab": [
+        {
+          "zh": "连接",
+          "pinyin": "liánjiē",
+          "vi": "kết nối"
+        },
+        {
+          "zh": "实现",
+          "pinyin": "shíxiàn",
+          "vi": "thực hiện"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title_zh": "春节习俗的变化",
+      "title_vi": "Sự thay đổi phong tục Tết",
+      "text": "小雨说，这些年春节的习俗也在慢慢变化。以前大家喜欢放鞭炮，现在很多城市因为安全和环保的原因禁止放鞭炮了，取而代之的是发电子红包。",
+      "text_vi": "Tiểu Vũ nói, những năm gần đây phong tục Tết Nguyên Đán cũng đang dần thay đổi. Trước đây mọi người thích đốt pháo, bây giờ nhiều thành phố vì lý do an toàn và bảo vệ môi trường đã cấm đốt pháo, thay vào đó là gửi lì xì điện tử.",
+      "vocab": [
+        {
+          "zh": "鞭炮",
+          "pinyin": "biānpào",
+          "vi": "pháo"
+        },
+        {
+          "zh": "禁止",
+          "pinyin": "jìnzhǐ",
+          "vi": "cấm"
+        },
+        {
+          "zh": "取而代之",
+          "pinyin": "qǔ'érdàizhī",
+          "vi": "thay thế cho"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title_zh": "学语言的乐趣",
+      "title_vi": "Niềm vui học ngôn ngữ",
+      "text": "除了汉语以外，我也在业余时间自学一点儿英语。小雨说，多学一门语言，就像多打开一扇了解世界的窗户，能让人的眼界变得更开阔。",
+      "text_vi": "Ngoài tiếng Trung ra, tôi còn tự học thêm một chút tiếng Anh vào thời gian rảnh. Tiểu Vũ nói, học thêm một ngôn ngữ, cũng giống như mở thêm một cánh cửa sổ để hiểu thế giới, có thể khiến tầm nhìn của con người trở nên rộng mở hơn.",
+      "vocab": [
+        {
+          "zh": "业余时间",
+          "pinyin": "yèyú shíjiān",
+          "vi": "thời gian rảnh, ngoài giờ"
+        },
+        {
+          "zh": "窗户",
+          "pinyin": "chuānghu",
+          "vi": "cửa sổ"
+        },
+        {
+          "zh": "眼界",
+          "pinyin": "yǎnjiè",
+          "vi": "tầm nhìn, nhãn quan"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title_zh": "感恩的心",
+      "title_vi": "Lòng biết ơn",
+      "text": "回想这几年的经历，我要感谢王老师的耐心教导，感谢小红、大卫、玛丽的陪伴，也感谢小雨一直支持我。正是因为有这些人，我才能走到今天。",
+      "text_vi": "Nhớ lại những trải nghiệm mấy năm nay, tôi muốn cảm ơn sự dạy dỗ kiên nhẫn của cô Vương, cảm ơn sự đồng hành của Tiểu Hồng, David, Mary, cũng cảm ơn Tiểu Vũ luôn ủng hộ tôi. Chính vì có những người này, tôi mới có thể đi đến ngày hôm nay.",
+      "vocab": [
+        {
+          "zh": "教导",
+          "pinyin": "jiàodǎo",
+          "vi": "dạy dỗ, chỉ bảo"
+        },
+        {
+          "zh": "陪伴",
+          "pinyin": "péibàn",
+          "vi": "đồng hành, ở bên"
+        },
+        {
+          "zh": "支持",
+          "pinyin": "zhīchí",
+          "vi": "ủng hộ"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title_zh": "加班",
+      "title_vi": "Làm thêm giờ",
+      "text": "最近公司的项目很紧，我连续一个星期都在加班。虽然很累，但是看到项目一步一步完成，我觉得很有成就感。小雨怕我熬坏身体，每天都给我送夜宵。",
+      "text_vi": "Dạo này dự án của công ty rất gấp, tôi làm thêm giờ liên tục suốt một tuần. Tuy rất mệt nhưng nhìn dự án hoàn thành từng bước, tôi thấy rất có cảm giác thành tựu. Tiểu Vũ sợ tôi thức khuya hại sức khỏe nên ngày nào cũng mang đồ ăn khuya cho tôi.",
+      "vocab": [
+        {
+          "zh": "项目",
+          "pinyin": "xiàngmù",
+          "vi": "dự án"
+        },
+        {
+          "zh": "加班",
+          "pinyin": "jiābān",
+          "vi": "làm thêm giờ"
+        },
+        {
+          "zh": "成就感",
+          "pinyin": "chéngjiùgǎn",
+          "vi": "cảm giác thành tựu"
+        },
+        {
+          "zh": "夜宵",
+          "pinyin": "yèxiāo",
+          "vi": "đồ ăn khuya"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title_zh": "学太极拳",
+      "title_vi": "Học Thái cực quyền",
+      "text": "为了缓解工作压力，我开始跟着公园里的老人学太极拳。动作看起来很慢，其实很不容易，需要身体和呼吸配合。练了一个月，我的心情平静了许多。",
+      "text_vi": "Để giảm bớt áp lực công việc, tôi bắt đầu học Thái cực quyền theo những cụ già trong công viên. Động tác trông rất chậm, thật ra không hề dễ, cần cơ thể và hơi thở phối hợp. Tập một tháng, tâm trạng tôi bình tĩnh hơn nhiều.",
+      "vocab": [
+        {
+          "zh": "缓解",
+          "pinyin": "huǎnjiě",
+          "vi": "làm dịu, giảm bớt"
+        },
+        {
+          "zh": "压力",
+          "pinyin": "yālì",
+          "vi": "áp lực"
+        },
+        {
+          "zh": "太极拳",
+          "pinyin": "tàijíquán",
+          "vi": "Thái cực quyền"
+        },
+        {
+          "zh": "呼吸",
+          "pinyin": "hūxī",
+          "vi": "hơi thở"
+        },
+        {
+          "zh": "平静",
+          "pinyin": "píngjìng",
+          "vi": "bình tĩnh"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "title_zh": "我的邻居",
+      "title_vi": "Người hàng xóm của tôi",
+      "text": "我家的邻居是一位退休的老教授，他常常主动跟我打招呼，有时还送我自己种的蔬菜。虽然我们年龄相差很大，却成了无话不谈的朋友。他让我明白，友谊是不分年龄和国籍的。",
+      "text_vi": "Hàng xóm nhà tôi là một vị giáo sư đã nghỉ hưu, ông thường chủ động chào hỏi tôi, đôi khi còn tặng rau do chính ông trồng. Dù chênh lệch tuổi tác rất lớn, chúng tôi vẫn trở thành những người bạn không chuyện gì không nói. Ông giúp tôi hiểu rằng, tình bạn không phân biệt tuổi tác và quốc tịch.",
+      "vocab": [
+        {
+          "zh": "邻居",
+          "pinyin": "línjū",
+          "vi": "hàng xóm"
+        },
+        {
+          "zh": "退休",
+          "pinyin": "tuìxiū",
+          "vi": "nghỉ hưu"
+        },
+        {
+          "zh": "教授",
+          "pinyin": "jiàoshòu",
+          "vi": "giáo sư"
+        },
+        {
+          "zh": "打招呼",
+          "pinyin": "dǎ zhāohu",
+          "vi": "chào hỏi"
+        },
+        {
+          "zh": "年龄",
+          "pinyin": "niánlíng",
+          "vi": "tuổi tác"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "title_zh": "汉语演讲比赛",
+      "title_vi": "Cuộc thi hùng biện tiếng Hán",
+      "text": "公司推荐我参加一个汉语演讲比赛。我的题目是《我与汉语的故事》。准备的过程中，我反复练习发音和语气，最后虽然只得了第二名，但是积累了宝贵的经验。",
+      "text_vi": "Công ty đề cử tôi tham gia một cuộc thi hùng biện tiếng Hán. Đề tài của tôi là “Câu chuyện giữa tôi và tiếng Hán”. Trong quá trình chuẩn bị, tôi luyện đi luyện lại phát âm và ngữ điệu, cuối cùng tuy chỉ được giải nhì nhưng đã tích lũy được kinh nghiệm quý báu.",
+      "vocab": [
+        {
+          "zh": "推荐",
+          "pinyin": "tuījiàn",
+          "vi": "đề cử, giới thiệu"
+        },
+        {
+          "zh": "演讲",
+          "pinyin": "yǎnjiǎng",
+          "vi": "diễn thuyết"
+        },
+        {
+          "zh": "题目",
+          "pinyin": "tímù",
+          "vi": "đề tài, đề bài"
+        },
+        {
+          "zh": "语气",
+          "pinyin": "yǔqì",
+          "vi": "ngữ điệu, giọng điệu"
+        },
+        {
+          "zh": "经验",
+          "pinyin": "jīngyàn",
+          "vi": "kinh nghiệm"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "title_zh": "学会理财",
+      "title_vi": "Học cách quản lý tiền",
+      "text": "随着收入增加，我开始学习理财。小雨建议我每个月先存一部分钱，再安排其他开销。我按照她的建议做了半年，发现自己的存款比以前多了不少，花钱也更合理了。",
+      "text_vi": "Khi thu nhập tăng lên, tôi bắt đầu học quản lý tài chính. Tiểu Vũ khuyên tôi mỗi tháng nên để dành một phần tiền trước, rồi mới sắp xếp các khoản chi khác. Tôi làm theo lời khuyên của cô ấy nửa năm, thấy tiền tiết kiệm nhiều hơn trước khá nhiều, tiêu tiền cũng hợp lý hơn.",
+      "vocab": [
+        {
+          "zh": "收入",
+          "pinyin": "shōurù",
+          "vi": "thu nhập"
+        },
+        {
+          "zh": "理财",
+          "pinyin": "lǐcái",
+          "vi": "quản lý tài chính"
+        },
+        {
+          "zh": "开销",
+          "pinyin": "kāixiāo",
+          "vi": "chi tiêu"
+        },
+        {
+          "zh": "存款",
+          "pinyin": "cúnkuǎn",
+          "vi": "tiền tiết kiệm"
+        },
+        {
+          "zh": "合理",
+          "pinyin": "hélǐ",
+          "vi": "hợp lý"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "title_zh": "准备HSK四级考试",
+      "title_vi": "Chuẩn bị thi HSK cấp 4",
+      "text": "HSK四级考试越来越近了，题目的难度比三级高了不少，特别是写作部分。我每天坚持练习写作文，小雨也帮我检查语法错误。",
+      "text_vi": "Kỳ thi HSK cấp 4 ngày càng gần, độ khó của đề thi cao hơn cấp 3 không ít, đặc biệt là phần viết. Mỗi ngày tôi kiên trì luyện viết văn, Tiểu Vũ cũng giúp tôi kiểm tra lỗi ngữ pháp.",
+      "vocab": [
+        {
+          "zh": "难度",
+          "pinyin": "nándù",
+          "vi": "độ khó"
+        },
+        {
+          "zh": "写作",
+          "pinyin": "xiězuò",
+          "vi": "viết văn, viết lách"
+        },
+        {
+          "zh": "坚持",
+          "pinyin": "jiānchí",
+          "vi": "kiên trì"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "title_zh": "毕业的脚步近了",
+      "title_vi": "Bước chân trưởng thành",
+      "text": "不知不觉，我来中国已经四年了。虽然还没有真正“毕业”，但是回头看看这段日子，我从一个什么都不懂的留学生，变成了一个能独立生活、工作的人。这让我对未来更有信心了。",
+      "text_vi": "Không hay không biết, tôi đến Trung Quốc đã bốn năm rồi. Tuy chưa thực sự \"tốt nghiệp\", nhưng nhìn lại quãng thời gian này, tôi từ một du học sinh chẳng hiểu gì, đã trở thành một người có thể sống và làm việc độc lập. Điều này khiến tôi tự tin hơn với tương lai.",
+      "vocab": [
+        {
+          "zh": "不知不觉",
+          "pinyin": "bùzhībùjué",
+          "vi": "không hay không biết"
+        },
+        {
+          "zh": "独立",
+          "pinyin": "dúlì",
+          "vi": "độc lập"
+        },
+        {
+          "zh": "信心",
+          "pinyin": "xìnxīn",
+          "vi": "sự tự tin"
+        }
+      ]
+    }
+  ]
+}

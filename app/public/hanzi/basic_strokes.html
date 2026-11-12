@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<title>Luyện nét</title>
+<script src="./hanzi-writer.min.js"></script>
+<style>
+  html, body { margin: 0; padding: 0; background: #fafafa; font-family: sans-serif; color: #222; }
+  .wrap { padding: 12px 20px 28px; max-width: 1100px; margin: 0 auto; }
+  h2 { margin: 18px 0 4px; font-size: 20px; }
+  .sub { color: #64748b; font-size: 13px; margin-bottom: 12px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 14px; }
+  .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 10px; text-align: center; }
+  .card .name { font-weight: 700; font-size: 15px; }
+  .card .han { font-size: 13px; color: #64748b; margin-bottom: 6px; }
+  .pad { position: relative; width: 150px; height: 150px; margin: 0 auto; box-sizing: border-box;
+    border: 1px solid #ccc; background-color: #fff;
+    background-image:
+      linear-gradient(to right, transparent calc(50% - 0.5px), #e5b0b0 calc(50% - 0.5px), #e5b0b0 calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+      linear-gradient(to bottom, transparent calc(50% - 0.5px), #e5b0b0 calc(50% - 0.5px), #e5b0b0 calc(50% + 0.5px), transparent calc(50% + 0.5px)); }
+  .pad canvas { position: absolute; left: 0; top: 0; width: 150px; height: 150px; cursor: crosshair; touch-action: none; }
+  .pad.ok { background-color: #f0fdf4; border-color: #39b54a; }
+  .pad.bad { background-color: #fef2f2; border-color: #e74c3c; }
+  .row-btns { margin-top: 8px; display: flex; gap: 6px; justify-content: center; align-items: center; font-size: 13px; }
+  button { cursor: pointer; border: 1px solid #cbd5e1; background: #f8fafc; border-radius: 6px; padding: 4px 10px; font-size: 13px; }
+  button:hover { background: #eef2f7; }
+  .cnt { color: #18a957; font-weight: 700; min-width: 40px; }
+  .rule { display: flex; gap: 14px; align-items: center; background: #fff; border: 1px solid #e2e8f0;
+    border-radius: 10px; padding: 10px 12px; margin-bottom: 10px; flex-wrap: wrap; }
+  .rule .txt { flex: 1 1 240px; min-width: 220px; }
+  .rule .txt b { font-size: 15px; }
+  .rule .txt div { font-size: 13px; color: #475569; margin-top: 3px; }
+  .rule .boxes { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .box { width: 90px; height: 90px; box-sizing: border-box; border: 1px solid #ccc; background-color: #fff;
+    background-image:
+      linear-gradient(to right, #e5b0b0 1px, transparent 1px),
+      linear-gradient(to bottom, #e5b0b0 1px, transparent 1px),
+      linear-gradient(to bottom right, transparent calc(50% - 1px), #e5b0b0 calc(50% - 1px), #e5b0b0 calc(50% + 1px), transparent calc(50% + 1px)),
+      linear-gradient(to bottom left, transparent calc(50% - 1px), #e5b0b0 calc(50% - 1px), #e5b0b0 calc(50% + 1px), transparent calc(50% + 1px));
+    background-size: 100% 100%; background-position: center, center, 0 0, 0 0; background-repeat: no-repeat; cursor: crosshair; }
+  .box.done { border-color: #39b54a; background-color: #f0fdf4; }
+  .box.demo { cursor: default; background-color: #f8fafc; }
+  .lbl { font-size: 11px; color: #94a3b8; text-align: center; margin-top: 2px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h2>1. Tám nét cơ bản</h2>
+  <div class="sub">Dùng chuột vẽ theo nét mờ, bắt đầu từ chấm xanh. Vẽ đúng hướng và đúng hình thì ô sẽ xanh lên.</div>
+  <div class="grid" id="strokes"></div>
+
+  <h2>2. Tám quy tắc thứ tự nét</h2>
+  <div class="sub">Mỗi dòng một quy tắc: xem ô mẫu tự viết (bấm ▶ để xem lại), rồi tự viết vào các ô bên cạnh đúng thứ tự nét. Ô đầu có chữ mờ để đồ theo, hai ô sau viết tự do.</div>
+  <div id="rules"></div>
+</div>
+
+<script>
+// ===== Phần 1: 8 nét cơ bản (toạ độ trong khung 100x100) =====
+const STROKES = [
+  { name: 'Ngang', han: '横 héng', pts: [[14,52],[86,48]] },
+  { name: 'Sổ', han: '竖 shù', pts: [[50,12],[50,88]] },
+  { name: 'Phẩy', han: '撇 piě', pts: [[74,14],[63,46],[45,72],[22,88]] },
+  { name: 'Chấm', han: '点 diǎn', pts: [[42,30],[60,64]] },
+  { name: 'Mác', han: '捺 nà', pts: [[22,18],[46,55],[68,76],[90,86]] },
+  { name: 'Hất', han: '提 tí', pts: [[14,78],[50,60],[86,36]] },
+  { name: 'Sổ móc', han: '竖钩 shùgōu', pts: [[54,12],[54,80],[36,72]] },
+  { name: 'Ngang gấp', han: '横折 héngzhé', pts: [[18,22],[80,22],[80,86]] },
+];
+const PAD = 150, S = PAD / 100;
+
+function resample(pts, n) {
+  const d = [0];
+  for (let i = 1; i < pts.length; i++) d.push(d[i-1] + Math.hypot(pts[i][0]-pts[i-1][0], pts[i][1]-pts[i-1][1]));
+  const total = d[d.length-1] || 1, out = [];
+  for (let k = 0; k < n; k++) {
+    const t = total * k / (n-1);
+    let i = 1; while (i < d.length-1 && d[i] < t) i++;
+    const seg = (d[i]-d[i-1]) || 1, r = (t-d[i-1]) / seg;
+    out.push([pts[i-1][0] + (pts[i][0]-pts[i-1][0])*r, pts[i-1][1] + (pts[i][1]-pts[i-1][1])*r]);
+  }
+  return out;
+}
+function pathLen(p) { let s = 0; for (let i = 1; i < p.length; i++) s += Math.hypot(p[i][0]-p[i-1][0], p[i][1]-p[i-1][1]); return s; }
+
+function judge(user, guide) {
+  if (user.length < 2) return false;
+  const ul = pathLen(user), gl = pathLen(guide);
+  if (ul < gl * 0.55 || ul > gl * 1.8) return false;
+  const u = resample(user, 24), g = resample(guide, 24);
+  if (Math.hypot(u[0][0]-g[0][0], u[0][1]-g[0][1]) > 24) return false;
+  if (Math.hypot(u[23][0]-g[23][0], u[23][1]-g[23][1]) > 24) return false;
+  let sum = 0;
+  for (let i = 0; i < 24; i++) sum += Math.hypot(u[i][0]-g[i][0], u[i][1]-g[i][1]);
+  return sum / 24 < 14;
+}
+
+function drawGuide(ctx, pts, progress) {
+  ctx.clearRect(0, 0, PAD, PAD);
+  ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+  ctx.strokeStyle = 'rgba(43,43,43,0.2)'; ctx.lineWidth = 9;
+  ctx.beginPath(); pts.forEach((p, i) => i ? ctx.lineTo(p[0]*S, p[1]*S) : ctx.moveTo(p[0]*S, p[1]*S)); ctx.stroke();
+  ctx.fillStyle = '#18a957'; ctx.beginPath(); ctx.arc(pts[0][0]*S, pts[0][1]*S, 5, 0, 7); ctx.fill();
+  const e = pts[pts.length-1], q = pts[pts.length-2];
+  const a = Math.atan2(e[1]-q[1], e[0]-q[0]);
+  ctx.fillStyle = 'rgba(43,43,43,0.45)'; ctx.beginPath();
+  ctx.moveTo(e[0]*S + Math.cos(a)*9, e[1]*S + Math.sin(a)*9);
+  ctx.lineTo(e[0]*S + Math.cos(a+2.5)*9, e[1]*S + Math.sin(a+2.5)*9);
+  ctx.lineTo(e[0]*S + Math.cos(a-2.5)*9, e[1]*S + Math.sin(a-2.5)*9);
+  ctx.fill();
+}
+
+function buildStroke(def) {
+  const card = document.createElement('div'); card.className = 'card';
+  card.innerHTML = '<div class="name"></div><div class="han"></div>';
+  card.querySelector('.name').textContent = def.name;
+  card.querySelector('.han').textContent = def.han;
+  const pad = document.createElement('div'); pad.className = 'pad';
+  const dpr = window.devicePixelRatio || 1;
+  const mk = () => { const c = document.createElement('canvas'); c.width = PAD*dpr; c.height = PAD*dpr; c.getContext('2d').scale(dpr, dpr); pad.appendChild(c); return c; };
+  const guideC = mk(), drawC = mk();
+  const g = guideC.getContext('2d'), d = drawC.getContext('2d');
+  drawGuide(g, def.pts);
+  card.appendChild(pad);
+
+  const btns = document.createElement('div'); btns.className = 'row-btns';
+  const cnt = document.createElement('span'); cnt.className = 'cnt'; cnt.textContent = '✓ 0';
+  const demo = document.createElement('button'); demo.textContent = '▶ Xem mẫu';
+  const clr = document.createElement('button'); clr.textContent = 'Xoá';
+  btns.append(cnt, demo, clr); card.appendChild(btns);
+
+  let n = 0, drawing = false, path = [], locked = false;
+  const pos = (e) => { const r = drawC.getBoundingClientRect(); return [(e.clientX - r.left) / S, (e.clientY - r.top) / S]; };
+  const reset = () => { d.clearRect(0, 0, PAD, PAD); pad.className = 'pad'; path = []; locked = false; };
+  clr.onclick = reset;
+  drawC.addEventListener('pointerdown', (e) => {
+    if (locked) return;
+    drawing = true; drawC.setPointerCapture(e.pointerId); d.clearRect(0, 0, PAD, PAD); pad.className = 'pad';
+    path = [pos(e)];
+  });
+  drawC.addEventListener('pointermove', (e) => {
+    if (!drawing) return;
+    const p = pos(e), q = path[path.length-1]; path.push(p);
+    d.lineCap = 'round'; d.strokeStyle = '#2b2b2b'; d.lineWidth = 6;
+    d.beginPath(); d.moveTo(q[0]*S, q[1]*S); d.lineTo(p[0]*S, p[1]*S); d.stroke();
+  });
+  const end = () => {
+    if (!drawing) return; drawing = false; locked = true;
+    if (judge(path, def.pts)) { pad.className = 'pad ok'; n++; cnt.textContent = '✓ ' + n; setTimeout(reset, 700); }
+    else { pad.className = 'pad bad'; setTimeout(reset, 700); }
+  };
+  drawC.addEventListener('pointerup', end);
+  drawC.addEventListener('pointercancel', end);
+  demo.onclick = () => {
+    reset(); locked = true; const t0 = performance.now(), dur = 900;
+    const full = resample(def.pts, 40);
+    (function step(now) {
+      const k = Math.min(1, (now - t0) / dur), m = Math.max(2, Math.round(full.length * k));
+      d.clearRect(0, 0, PAD, PAD); d.lineCap = 'round'; d.lineJoin = 'round'; d.strokeStyle = '#2b2b2b'; d.lineWidth = 6;
+      d.beginPath(); full.slice(0, m).forEach((p, i) => i ? d.lineTo(p[0]*S, p[1]*S) : d.moveTo(p[0]*S, p[1]*S)); d.stroke();
+      if (k < 1) requestAnimationFrame(step); else setTimeout(reset, 800);
+    })(t0);
+  };
+  return card;
+}
+const strokesEl = document.getElementById('strokes');
+STROKES.forEach((s) => strokesEl.appendChild(buildStroke(s)));
+
+// ===== Phần 2: 8 quy tắc thứ tự nét (HanziWriter, cần Internet để tải dữ liệu nét) =====
+const RULES = [
+  { title: '1. Ngang trước, sổ sau', desc: '先横后竖 — ví dụ 十', ch: '十' },
+  { title: '2. Phẩy trước, mác sau', desc: '先撇后捺 — ví dụ 人', ch: '人' },
+  { title: '3. Trên trước, dưới sau', desc: '从上到下 — ví dụ 三', ch: '三' },
+  { title: '4. Trái trước, phải sau', desc: '从左到右 — ví dụ 明', ch: '明' },
+  { title: '5. Ngoài trước, trong sau', desc: '从外到内 — ví dụ 同', ch: '同' },
+  { title: '6. Vào trước, đóng sau', desc: '先里头后封口 — ví dụ 回', ch: '回' },
+  { title: '7. Giữa trước, hai bên sau', desc: '先中间后两边 — ví dụ 小', ch: '小' },
+  { title: '8. Bộ thủ bên trái viết trước', desc: 'Ví dụ 河 (bộ 氵 trước)', ch: '河' },
+];
+const BOX = 90;
+function mkWriter(host, ch, outline) {
+  return HanziWriter.create(host, ch, {
+    width: BOX, height: BOX, padding: 4, showCharacter: false, showOutline: outline,
+    outlineColor: 'rgba(43,43,43,0.25)', strokeColor: '#2b2b2b', drawingWidth: 40,
+  });
+}
+function buildRule(r) {
+  const row = document.createElement('div'); row.className = 'rule';
+  const txt = document.createElement('div'); txt.className = 'txt';
+  txt.innerHTML = '<b></b><div></div>';
+  txt.querySelector('b').textContent = r.title; txt.querySelector('div').textContent = r.desc;
+  row.appendChild(txt);
+  const boxes = document.createElement('div'); boxes.className = 'boxes'; row.appendChild(boxes);
+
+  const wrapDemo = document.createElement('div');
+  const demoBox = document.createElement('div'); demoBox.className = 'box demo'; demoBox.id = 'demo-' + r.ch;
+  wrapDemo.appendChild(demoBox);
+  const lab = document.createElement('div'); lab.className = 'lbl'; lab.textContent = 'Mẫu';
+  wrapDemo.appendChild(lab);
+  boxes.appendChild(wrapDemo);
+  const play = document.createElement('button'); play.textContent = '▶'; play.title = 'Xem lại thứ tự nét';
+  boxes.appendChild(play);
+  document.getElementById('rules').appendChild(row);
+
+  const demo = HanziWriter.create(demoBox.id, r.ch, {
+    width: BOX, height: BOX, padding: 4, showCharacter: false, showOutline: true,
+    outlineColor: 'rgba(43,43,43,0.2)', strokeColor: '#2b2b2b', strokeAnimationSpeed: 1, delayBetweenStrokes: 250,
+    onLoadCharDataSuccess: () => demo.animateCharacter(),
+  });
+  play.onclick = () => demo.animateCharacter();
+
+  for (let i = 0; i < 3; i++) {
+    const w = document.createElement('div');
+    const b = document.createElement('div'); b.className = 'box'; b.id = 'rb-' + r.ch + '-' + i;
+    w.appendChild(b);
+    const l = document.createElement('div'); l.className = 'lbl'; l.textContent = i === 0 ? 'Đồ theo' : 'Tự viết';
+    w.appendChild(l); boxes.appendChild(w);
+    const writer = mkWriter(b.id, r.ch, i === 0);
+    writer.quiz({ onComplete: () => b.classList.add('done') });
+  }
+}
+RULES.forEach(buildRule);
+</script>
+</body>
+</html>

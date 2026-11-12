@@ -1,0 +1,6117 @@
+{
+ "level": "HSK2",
+ "topics": [
+  {
+   "id": 1,
+   "zh": "自我介绍",
+   "vi": "Giới thiệu bản thân",
+   "icon": "🙋",
+   "dialogues": [
+    {
+     "id": "1-1",
+     "title_zh": "我来自越南",
+     "title_vi": "Mình đến từ Việt Nam",
+     "scene_vi": "Buổi đầu tiên của lớp tiếng Trung, mỗi người giới thiệu về mình.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "大家好，我叫李明，来自越南。",
+       "py": "Dà jiā hǎo, wǒ jiào lǐ míng, lái zì yuè nán.",
+       "vi": "Chào mọi người, mình tên là Lý Minh, đến từ Việt Nam."
+      },
+      {
+       "spk": 1,
+       "zh": "你好！你来中国多长时间了？",
+       "py": "Nǐ hǎo! Nǐ lái zhōng guó duō cháng shí jiān le?",
+       "vi": "Chào bạn! Bạn đến Trung Quốc được bao lâu rồi?"
+      },
+      {
+       "spk": 0,
+       "zh": "我来了三个月了。以前我在越南学过一年汉语。",
+       "py": "Wǒ lái le sān gè yuè le. Yǐ qián wǒ zài yuè nán xué guò yì nián hàn yǔ.",
+       "vi": "Mình đến được ba tháng rồi. Trước đây mình đã học tiếng Trung một năm ở Việt Nam."
+      },
+      {
+       "spk": 1,
+       "zh": "难怪你说得这么好！你为什么学汉语？",
+       "py": "Nán guài nǐ shuō de zhè me hǎo! Nǐ wèi shén me xué hàn yǔ?",
+       "vi": "Thảo nào bạn nói giỏi thế! Tại sao bạn học tiếng Trung?"
+      },
+      {
+       "spk": 0,
+       "zh": "因为我想在中国工作，所以要学好汉语。",
+       "py": "Yīn wèi wǒ xiǎng zài zhōng guó gōng zuò, suǒ yǐ yào xué hǎo hàn yǔ.",
+       "vi": "Vì mình muốn làm việc ở Trung Quốc, nên phải học giỏi tiếng Trung."
+      },
+      {
+       "spk": 1,
+       "zh": "你的想法很好。你喜欢中国的什么？",
+       "py": "Nǐ de xiǎng fǎ hěn hǎo. Nǐ xǐ huan zhōng guó de shén me?",
+       "vi": "Suy nghĩ của bạn rất hay. Bạn thích điều gì ở Trung Quốc?"
+      },
+      {
+       "spk": 0,
+       "zh": "我喜欢中国菜，也喜欢这里的朋友。",
+       "py": "Wǒ xǐ huan zhōng guó cài, yě xǐ huan zhè lǐ de péng you.",
+       "vi": "Mình thích món Trung Quốc, cũng thích những người bạn ở đây."
+      },
+      {
+       "spk": 1,
+       "zh": "欢迎你！有问题可以问我。",
+       "py": "Huān yíng nǐ! Yǒu wèn tí kě yǐ wèn wǒ.",
+       "vi": "Chào mừng bạn! Có vấn đề gì cứ hỏi mình."
+      }
+     ]
+    },
+    {
+     "id": "1-2",
+     "title_zh": "你有什么爱好",
+     "title_vi": "Sở thích của bạn là gì",
+     "scene_vi": "Hai người làm quen và hỏi về sở thích.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，你平时喜欢做什么？",
+       "py": "Xiǎo měi, nǐ píng shí xǐ huan zuò shén me?",
+       "vi": "Tiểu Mỹ, bình thường bạn thích làm gì?"
+      },
+      {
+       "spk": 1,
+       "zh": "我喜欢跑步，还喜欢看电影。你呢？",
+       "py": "Wǒ xǐ huan pǎo bù, hái xǐ huan kàn diàn yǐng. Nǐ ne?",
+       "vi": "Mình thích chạy bộ, còn thích xem phim. Còn bạn?"
+      },
+      {
+       "spk": 0,
+       "zh": "我喜欢踢足球，每个星期都踢两次。",
+       "py": "Wǒ xǐ huan tī zú qiú, měi gè xīng qī dōu tī liǎng cì.",
+       "vi": "Mình thích đá bóng, tuần nào cũng đá hai lần."
+      },
+      {
+       "spk": 1,
+       "zh": "你踢得怎么样？",
+       "py": "Nǐ tī de zěn me yàng?",
+       "vi": "Bạn đá thế nào?"
+      },
+      {
+       "spk": 0,
+       "zh": "踢得不太好，但是很快乐。",
+       "py": "Tī de bú tài hǎo, dàn shì hěn kuài lè.",
+       "vi": "Đá không giỏi lắm, nhưng rất vui."
+      },
+      {
+       "spk": 1,
+       "zh": "这样就很好。下次我也想去看看。",
+       "py": "Zhè yàng jiù hěn hǎo. Xià cì wǒ yě xiǎng qù kàn kàn.",
+       "vi": "Như thế là tốt rồi. Lần sau mình cũng muốn đến xem."
+      },
+      {
+       "spk": 0,
+       "zh": "欢迎！下个星期六下午三点，在学校的足球场。",
+       "py": "Huān yíng! Xià gè xīng qī liù xià wǔ sān diǎn, zài xué xiào de zú qiú chǎng.",
+       "vi": "Chào mừng! Thứ Bảy tuần sau, ba giờ chiều, ở sân bóng của trường."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "zh": "比较",
+   "vi": "So sánh",
+   "icon": "⚖️",
+   "dialogues": [
+    {
+     "id": "2-1",
+     "title_zh": "谁比谁高",
+     "title_vi": "Ai cao hơn ai",
+     "scene_vi": "Hai anh em so sánh với nhau.",
+     "speakers": [
+      {
+       "name": "哥哥",
+       "gender": "m"
+      },
+      {
+       "name": "妹妹",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "你看，我比你高多了。",
+       "py": "Nǐ kàn, wǒ bǐ nǐ gāo duō le.",
+       "vi": "Em xem, anh cao hơn em nhiều lắm."
+      },
+      {
+       "spk": 1,
+       "zh": "可是我比你跑得快！",
+       "py": "Kě shì wǒ bǐ nǐ pǎo de kuài!",
+       "vi": "Nhưng em chạy nhanh hơn anh!"
+      },
+      {
+       "spk": 0,
+       "zh": "真的吗？我们来比一比。",
+       "py": "Zhēn de ma? Wǒ men lái bǐ yì bǐ.",
+       "vi": "Thật không? Chúng ta thi thử đi."
+      },
+      {
+       "spk": 1,
+       "zh": "好啊！从这儿跑到那棵树。",
+       "py": "Hǎo a! Cóng zhèr pǎo dào nà kē shù.",
+       "vi": "Được chứ! Chạy từ đây đến cái cây kia."
+      },
+      {
+       "spk": 0,
+       "zh": "你准备好了吗？一、二、三，跑！",
+       "py": "Nǐ zhǔn bèi hǎo le ma? Yī, èr, sān, pǎo!",
+       "vi": "Em chuẩn bị xong chưa? Một, hai, ba, chạy!"
+      },
+      {
+       "spk": 1,
+       "zh": "哈哈，我赢了！你比我慢。",
+       "py": "Hā hā, wǒ yíng le! Nǐ bǐ wǒ màn.",
+       "vi": "Ha ha, em thắng rồi! Anh chậm hơn em."
+      },
+      {
+       "spk": 0,
+       "zh": "好吧，你跑得比我快。明天我们再比。",
+       "py": "Hǎo ba, nǐ pǎo de bǐ wǒ kuài. Míng tiān wǒ men zài bǐ.",
+       "vi": "Được rồi, em chạy nhanh hơn anh. Ngày mai chúng ta thi lại."
+      }
+     ]
+    },
+    {
+     "id": "2-2",
+     "title_zh": "这个比那个好",
+     "title_vi": "Cái này tốt hơn cái kia",
+     "scene_vi": "Hai người chọn điện thoại ở cửa hàng.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "店员",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "请问，这两个手机有什么不同？",
+       "py": "Qǐng wèn, zhè liǎng gè shǒu jī yǒu shén me bù tóng?",
+       "vi": "Xin hỏi, hai chiếc điện thoại này khác nhau thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "这个比那个新，也比那个轻。",
+       "py": "Zhè ge bǐ nà ge xīn, yě bǐ nà ge qīng.",
+       "vi": "Chiếc này mới hơn chiếc kia, cũng nhẹ hơn chiếc kia."
+      },
+      {
+       "spk": 0,
+       "zh": "那个呢？有什么好的地方？",
+       "py": "Nà ge ne? Yǒu shén me hǎo de dì fang?",
+       "vi": "Còn chiếc kia thì sao? Có điểm gì tốt?"
+      },
+      {
+       "spk": 1,
+       "zh": "那个比这个便宜两百块。",
+       "py": "Nà ge bǐ zhè ge pián yi liǎng bǎi kuài.",
+       "vi": "Chiếc kia rẻ hơn chiếc này hai trăm tệ."
+      },
+      {
+       "spk": 0,
+       "zh": "这个一共多少钱？",
+       "py": "Zhè ge yí gòng duō shǎo qián?",
+       "vi": "Chiếc này tổng cộng bao nhiêu?"
+      },
+      {
+       "spk": 1,
+       "zh": "两千八百块。如果现在买，可以便宜一点儿。",
+       "py": "Liǎng qiān bā bǎi kuài. Rú guǒ xiàn zài mǎi, kě yǐ pián yi yì diǎnr.",
+       "vi": "Hai nghìn tám trăm tệ. Nếu mua bây giờ có thể rẻ hơn một chút."
+      },
+      {
+       "spk": 0,
+       "zh": "那我要这个，贵一点儿，但是更好用。",
+       "py": "Nà wǒ yào zhè ge, guì yì diǎnr, dàn shì gèng hǎo yòng.",
+       "vi": "Vậy tôi lấy chiếc này, đắt hơn một chút nhưng dễ dùng hơn."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "zh": "生病",
+   "vi": "Bị ốm",
+   "icon": "🤒",
+   "dialogues": [
+    {
+     "id": "3-1",
+     "title_zh": "你怎么了",
+     "title_vi": "Bạn sao vậy",
+     "scene_vi": "Bạn cùng lớp thấy Tiểu Hồng trông không khỏe.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，你的脸色不好，你怎么了？",
+       "py": "Xiǎo hóng, nǐ de liǎn sè bù hǎo, nǐ zěn me le?",
+       "vi": "Tiểu Hồng, sắc mặt bạn không tốt, bạn sao vậy?"
+      },
+      {
+       "spk": 1,
+       "zh": "我有点儿不舒服，昨天晚上发烧了。",
+       "py": "Wǒ yǒu diǎnr bù shū fú, zuó tiān wǎn shàng fā shāo le.",
+       "vi": "Mình hơi khó chịu, tối qua bị sốt."
+      },
+      {
+       "spk": 0,
+       "zh": "现在还发烧吗？你去医院看了吗？",
+       "py": "Xiàn zài hái fā shāo ma? Nǐ qù yī yuàn kàn le ma?",
+       "vi": "Bây giờ còn sốt không? Bạn đã đi bệnh viện khám chưa?"
+      },
+      {
+       "spk": 1,
+       "zh": "还没有。我觉得可能是感冒了。",
+       "py": "Hái méi yǒu. Wǒ jué de kě néng shì gǎn mào le.",
+       "vi": "Chưa. Mình nghĩ có thể là bị cảm."
+      },
+      {
+       "spk": 0,
+       "zh": "你应该去看医生，别等了。",
+       "py": "Nǐ yīng gāi qù kàn yī shēng, bié děng le.",
+       "vi": "Bạn nên đi khám bác sĩ, đừng chờ nữa."
+      },
+      {
+       "spk": 1,
+       "zh": "好，下午上完课我就去。",
+       "py": "Hǎo, xià wǔ shàng wán kè wǒ jiù qù.",
+       "vi": "Được, chiều học xong mình sẽ đi."
+      },
+      {
+       "spk": 0,
+       "zh": "我陪你去吧，你一个人不方便。",
+       "py": "Wǒ péi nǐ qù ba, nǐ yí gè rén bù fāng biàn.",
+       "vi": "Mình đi cùng bạn nhé, bạn đi một mình không tiện."
+      },
+      {
+       "spk": 1,
+       "zh": "谢谢你，你真关心我。",
+       "py": "Xiè xie nǐ, nǐ zhēn guān xīn wǒ.",
+       "vi": "Cảm ơn bạn, bạn thật quan tâm mình."
+      }
+     ]
+    },
+    {
+     "id": "3-2",
+     "title_zh": "医生说我要休息",
+     "title_vi": "Bác sĩ bảo tôi phải nghỉ ngơi",
+     "scene_vi": "Sau khi khám, bác sĩ dặn dò.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "医生",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "医生，我的病重不重？",
+       "py": "Yī shēng, wǒ de bìng zhòng bú zhòng?",
+       "vi": "Bác sĩ, bệnh của tôi có nặng không?"
+      },
+      {
+       "spk": 1,
+       "zh": "不重，是感冒。不过你有点儿发烧，要多休息。",
+       "py": "Bú zhòng, shì gǎn mào. Bú guò nǐ yǒu diǎnr fā shāo, yào duō xiū xi.",
+       "vi": "Không nặng, là cảm. Nhưng bạn hơi sốt, cần nghỉ ngơi nhiều."
+      },
+      {
+       "spk": 0,
+       "zh": "我要吃药吗？",
+       "py": "Wǒ yào chī yào ma?",
+       "vi": "Tôi có cần uống thuốc không?"
+      },
+      {
+       "spk": 1,
+       "zh": "要。一天三次，饭后吃，每次两片。",
+       "py": "Yào. Yì tiān sān cì, fàn hòu chī, měi cì liǎng piàn.",
+       "vi": "Cần. Một ngày ba lần, uống sau bữa ăn, mỗi lần hai viên."
+      },
+      {
+       "spk": 0,
+       "zh": "我可以去上课吗？",
+       "py": "Wǒ kě yǐ qù shàng kè ma?",
+       "vi": "Tôi có thể đi học không?"
+      },
+      {
+       "spk": 1,
+       "zh": "最好不要。在家休息两天，多喝水。",
+       "py": "Zuì hǎo bú yào. Zài jiā xiū xi liǎng tiān, duō hē shuǐ.",
+       "vi": "Tốt nhất là không nên. Ở nhà nghỉ hai ngày, uống nhiều nước."
+      },
+      {
+       "spk": 0,
+       "zh": "好的，我记住了。谢谢您！",
+       "py": "Hǎo de, wǒ jì zhù le. Xiè xie nín!",
+       "vi": "Vâng, tôi nhớ rồi. Cảm ơn bác sĩ!"
+      },
+      {
+       "spk": 1,
+       "zh": "别忘了吃药，希望你早点儿好起来。",
+       "py": "Bié wàng le chī yào, xī wàng nǐ zǎo diǎnr hǎo qǐ lái.",
+       "vi": "Đừng quên uống thuốc, hy vọng bạn sớm khỏe lại."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "zh": "作业",
+   "vi": "Bài tập & học hành",
+   "icon": "✏️",
+   "dialogues": [
+    {
+     "id": "4-1",
+     "title_zh": "作业做完了吗",
+     "title_vi": "Làm xong bài tập chưa",
+     "scene_vi": "Mẹ hỏi con về bài tập.",
+     "speakers": [
+      {
+       "name": "妈妈",
+       "gender": "f"
+      },
+      {
+       "name": "小明",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小明，今天的作业做完了吗？",
+       "py": "Xiǎo míng, jīn tiān de zuò yè zuò wán le ma?",
+       "vi": "Tiểu Minh, bài tập hôm nay con làm xong chưa?"
+      },
+      {
+       "spk": 1,
+       "zh": "还没有，还有一点儿数学题。",
+       "py": "Hái méi yǒu, hái yǒu yì diǎnr shù xué tí.",
+       "vi": "Chưa ạ, còn một chút bài toán nữa."
+      },
+      {
+       "spk": 0,
+       "zh": "你一边看电视一边写作业，怎么能写好？",
+       "py": "Nǐ yì biān kàn diàn shì yì biān xiě zuò yè, zěn me néng xiě hǎo?",
+       "vi": "Con vừa xem tivi vừa làm bài tập, làm sao làm tốt được?"
+      },
+      {
+       "spk": 1,
+       "zh": "我只是看一会儿。",
+       "py": "Wǒ zhǐ shì kàn yí huìr.",
+       "vi": "Con chỉ xem một lát thôi."
+      },
+      {
+       "spk": 0,
+       "zh": "先把作业写完，再看电视。",
+       "py": "Xiān bǎ zuò yè xiě wán, zài kàn diàn shì.",
+       "vi": "Làm xong bài tập trước, rồi hãy xem tivi."
+      },
+      {
+       "spk": 1,
+       "zh": "好吧，我现在就关电视。",
+       "py": "Hǎo ba, wǒ xiàn zài jiù guān diàn shì.",
+       "vi": "Được rồi, con tắt tivi ngay bây giờ."
+      },
+      {
+       "spk": 0,
+       "zh": "有不会的题可以问我。",
+       "py": "Yǒu bú huì de tí kě yǐ wèn wǒ.",
+       "vi": "Có câu nào không biết thì hỏi mẹ."
+      }
+     ]
+    },
+    {
+     "id": "4-2",
+     "title_zh": "我们一起复习",
+     "title_vi": "Chúng ta cùng ôn bài",
+     "scene_vi": "Hai bạn chuẩn bị cho kỳ thi tiếng Trung.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，下个星期就考试了，你准备好了吗？",
+       "py": "Xiǎo měi, xià gè xīng qī jiù kǎo shì le, nǐ zhǔn bèi hǎo le ma?",
+       "vi": "Tiểu Mỹ, tuần sau là thi rồi, bạn chuẩn bị xong chưa?"
+      },
+      {
+       "spk": 1,
+       "zh": "还没有。汉字我写得不太好。",
+       "py": "Hái méi yǒu. Hàn zì wǒ xiě de bú tài hǎo.",
+       "vi": "Chưa. Chữ Hán mình viết không tốt lắm."
+      },
+      {
+       "spk": 0,
+       "zh": "我们一起复习吧，互相帮助。",
+       "py": "Wǒ men yì qǐ fù xí ba, hù xiāng bāng zhù.",
+       "vi": "Chúng ta cùng ôn nhé, giúp đỡ lẫn nhau."
+      },
+      {
+       "spk": 1,
+       "zh": "好主意。你的语法比我好，我的汉字比你好。",
+       "py": "Hǎo zhǔ yì. Nǐ de yǔ fǎ bǐ wǒ hǎo, wǒ de hàn zì bǐ nǐ hǎo.",
+       "vi": "Ý hay đó. Ngữ pháp của bạn tốt hơn mình, chữ Hán của mình tốt hơn bạn."
+      },
+      {
+       "spk": 0,
+       "zh": "对，所以我们可以互相教。",
+       "py": "Duì, suǒ yǐ wǒ men kě yǐ hù xiāng jiào.",
+       "vi": "Đúng, vì vậy chúng ta có thể dạy lẫn nhau."
+      },
+      {
+       "spk": 1,
+       "zh": "每天晚上八点，在图书馆见，怎么样？",
+       "py": "Měi tiān wǎn shàng bā diǎn, zài tú shū guǎn jiàn, zěn me yàng?",
+       "vi": "Mỗi tối tám giờ, gặp nhau ở thư viện, được không?"
+      },
+      {
+       "spk": 0,
+       "zh": "没问题，我一定去。",
+       "py": "Méi wèn tí, wǒ yí dìng qù.",
+       "vi": "Không vấn đề, mình nhất định đến."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "zh": "点菜",
+   "vi": "Gọi món",
+   "icon": "🍽️",
+   "dialogues": [
+    {
+     "id": "5-1",
+     "title_zh": "你们想吃点儿什么",
+     "title_vi": "Các bạn muốn ăn gì",
+     "scene_vi": "Nhóm bạn gọi món ở nhà hàng.",
+     "speakers": [
+      {
+       "name": "服务员",
+       "gender": "f"
+      },
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "你们好，请问几位？",
+       "py": "Nǐ men hǎo, qǐng wèn jǐ wèi?",
+       "vi": "Chào các bạn, xin hỏi mấy vị ạ?"
+      },
+      {
+       "spk": 1,
+       "zh": "三位。请给我们一个靠窗的位子。",
+       "py": "Sān wèi. Qǐng gěi wǒ men yí gè kào chuāng de wèi zi.",
+       "vi": "Ba người. Cho chúng tôi một chỗ cạnh cửa sổ."
+      },
+      {
+       "spk": 0,
+       "zh": "好的，这边请。这是菜单。",
+       "py": "Hǎo de, zhè biān qǐng. Zhè shì cài dān.",
+       "vi": "Vâng, mời lối này. Đây là thực đơn."
+      },
+      {
+       "spk": 2,
+       "zh": "小明，你想吃什么？这儿的鱼很有名。",
+       "py": "Xiǎo míng, nǐ xiǎng chī shén me? Zhèr de yú hěn yǒu míng.",
+       "vi": "Tiểu Minh, bạn muốn ăn gì? Cá ở đây rất nổi tiếng."
+      },
+      {
+       "spk": 1,
+       "zh": "那我们点一个鱼，再点一个牛肉，一个青菜。",
+       "py": "Nà wǒ men diǎn yí gè yú, zài diǎn yí gè niú ròu, yí gè qīng cài.",
+       "vi": "Vậy chúng ta gọi một món cá, thêm món thịt bò, một món rau."
+      },
+      {
+       "spk": 0,
+       "zh": "你们要不要来点儿汤？",
+       "py": "Nǐ men yào bú yào lái diǎnr tāng?",
+       "vi": "Các bạn có muốn dùng chút canh không?"
+      },
+      {
+       "spk": 2,
+       "zh": "要，再来三碗米饭。",
+       "py": "Yào, zài lái sān wǎn mǐ fàn.",
+       "vi": "Có, thêm ba bát cơm nữa."
+      },
+      {
+       "spk": 0,
+       "zh": "好的，请稍等，菜很快就好。",
+       "py": "Hǎo de, qǐng shāo děng, cài hěn kuài jiù hǎo.",
+       "vi": "Vâng, xin chờ một chút, món sẽ xong ngay."
+      }
+     ]
+    },
+    {
+     "id": "5-2",
+     "title_zh": "这个菜不太好吃",
+     "title_vi": "Món này không ngon lắm",
+     "scene_vi": "Khách phản ánh món ăn với phục vụ.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "服务员",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "服务员，我的面条还没来，已经等了半个小时了。",
+       "py": "Fú wù yuán, wǒ de miàn tiáo hái méi lái, yǐ jīng děng le bàn gè xiǎo shí le.",
+       "vi": "Phục vụ ơi, mì của tôi vẫn chưa có, đã đợi nửa tiếng rồi."
+      },
+      {
+       "spk": 1,
+       "zh": "真对不起，今天客人太多了，我去问一下。",
+       "py": "Zhēn duì bù qǐ, jīn tiān kè rén tài duō le, wǒ qù wèn yí xià.",
+       "vi": "Thành thật xin lỗi, hôm nay khách quá đông, để tôi đi hỏi."
+      },
+      {
+       "spk": 0,
+       "zh": "好。还有，这个菜太咸了。",
+       "py": "Hǎo. Hái yǒu, zhè ge cài tài xián le.",
+       "vi": "Được. Còn nữa, món này mặn quá."
+      },
+      {
+       "spk": 1,
+       "zh": "对不起，我给您换一个，好吗？",
+       "py": "Duì bù qǐ, wǒ gěi nín huàn yí gè, hǎo ma?",
+       "vi": "Xin lỗi, tôi đổi cho ông một món khác, được không?"
+      },
+      {
+       "spk": 0,
+       "zh": "不用换了，请给我一杯水就可以。",
+       "py": "Bú yòng huàn le, qǐng gěi wǒ yì bēi shuǐ jiù kě yǐ.",
+       "vi": "Không cần đổi đâu, cho tôi một cốc nước là được."
+      },
+      {
+       "spk": 1,
+       "zh": "好的，马上来。您的面条也马上就好。",
+       "py": "Hǎo de, mǎ shàng lái. Nín de miàn tiáo yě mǎ shàng jiù hǎo.",
+       "vi": "Vâng, có ngay. Mì của ông cũng sắp xong rồi."
+      },
+      {
+       "spk": 0,
+       "zh": "谢谢你，没关系。",
+       "py": "Xiè xie nǐ, méi guān xì.",
+       "vi": "Cảm ơn cô, không sao đâu."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "zh": "约会",
+   "vi": "Hẹn gặp & mời mọc",
+   "icon": "📅",
+   "dialogues": [
+    {
+     "id": "6-1",
+     "title_zh": "周末有空吗",
+     "title_vi": "Cuối tuần có rảnh không",
+     "scene_vi": "Rủ bạn đi chơi cuối tuần.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，这个周末你有空吗？",
+       "py": "Xiǎo hóng, zhè ge zhōu mò nǐ yǒu kòng ma?",
+       "vi": "Tiểu Hồng, cuối tuần này bạn có rảnh không?"
+      },
+      {
+       "spk": 1,
+       "zh": "星期六上午有课，下午有空。怎么了？",
+       "py": "Xīng qī liù shàng wǔ yǒu kè, xià wǔ yǒu kòng. Zěn me le?",
+       "vi": "Sáng thứ Bảy mình có tiết, chiều thì rảnh. Sao vậy?"
+      },
+      {
+       "spk": 0,
+       "zh": "我有两张电影票，你想不想去看？",
+       "py": "Wǒ yǒu liǎng zhāng diàn yǐng piào, nǐ xiǎng bù xiǎng qù kàn?",
+       "vi": "Mình có hai vé xem phim, bạn có muốn đi xem không?"
+      },
+      {
+       "spk": 1,
+       "zh": "什么电影？",
+       "py": "Shén me diàn yǐng?",
+       "vi": "Phim gì vậy?"
+      },
+      {
+       "spk": 0,
+       "zh": "是一个新的爱情电影，听说很好看。",
+       "py": "Shì yí gè xīn de ài qíng diàn yǐng, tīng shuō hěn hǎo kàn.",
+       "vi": "Là một bộ phim tình cảm mới, nghe nói rất hay."
+      },
+      {
+       "spk": 1,
+       "zh": "好啊，几点开始？",
+       "py": "Hǎo a, jǐ diǎn kāi shǐ?",
+       "vi": "Được chứ, mấy giờ bắt đầu?"
+      },
+      {
+       "spk": 0,
+       "zh": "下午四点，我们三点半在电影院门口见。",
+       "py": "Xià wǔ sì diǎn, wǒ men sān diǎn bàn zài diàn yǐng yuàn mén kǒu jiàn.",
+       "vi": "Bốn giờ chiều, chúng ta gặp nhau ở cổng rạp lúc ba rưỡi."
+      },
+      {
+       "spk": 1,
+       "zh": "好，到时候见。",
+       "py": "Hǎo, dào shí hou jiàn.",
+       "vi": "Được, lúc đó gặp nhé."
+      }
+     ]
+    },
+    {
+     "id": "6-2",
+     "title_zh": "我可能会晚一点儿",
+     "title_vi": "Có thể mình sẽ đến muộn một chút",
+     "scene_vi": "Gọi điện báo sẽ đến muộn.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "喂，小美，我是大卫，你到了吗？",
+       "py": "Wèi, xiǎo měi, wǒ shì dà wèi, nǐ dào le ma?",
+       "vi": "A lô, Tiểu Mỹ, mình là David, bạn tới chưa?"
+      },
+      {
+       "spk": 1,
+       "zh": "我已经到了，你在哪儿呢？",
+       "py": "Wǒ yǐ jīng dào le, nǐ zài nǎr ne?",
+       "vi": "Mình đến rồi, bạn đang ở đâu?"
+      },
+      {
+       "spk": 0,
+       "zh": "对不起，路上堵车，我可能会晚十分钟。",
+       "py": "Duì bù qǐ, lù shàng dǔ chē, wǒ kě néng huì wǎn shí fēn zhōng.",
+       "vi": "Xin lỗi, trên đường kẹt xe, có thể mình sẽ muộn mười phút."
+      },
+      {
+       "spk": 1,
+       "zh": "没关系，我在咖啡店里等你。",
+       "py": "Méi guān xì, wǒ zài kā fēi diàn lǐ děng nǐ.",
+       "vi": "Không sao, mình ở quán cà phê đợi bạn."
+      },
+      {
+       "spk": 0,
+       "zh": "你先点东西吧，不用等我。",
+       "py": "Nǐ xiān diǎn dōng xi ba, bú yòng děng wǒ.",
+       "vi": "Bạn cứ gọi đồ trước đi, không cần đợi mình."
+      },
+      {
+       "spk": 1,
+       "zh": "好，我先点一杯茶。路上小心。",
+       "py": "Hǎo, wǒ xiān diǎn yì bēi chá. Lù shàng xiǎo xīn.",
+       "vi": "Được, mình gọi trước một tách trà. Đi đường cẩn thận."
+      },
+      {
+       "spk": 0,
+       "zh": "谢谢，我很快就到。",
+       "py": "Xiè xie, wǒ hěn kuài jiù dào.",
+       "vi": "Cảm ơn, mình sẽ đến ngay thôi."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "zh": "旅行计划",
+   "vi": "Kế hoạch du lịch",
+   "icon": "🗺️",
+   "dialogues": [
+    {
+     "id": "7-1",
+     "title_zh": "假期去哪儿",
+     "title_vi": "Nghỉ lễ đi đâu",
+     "scene_vi": "Hai bạn bàn kế hoạch cho kỳ nghỉ dài.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "下个月放假，你有什么打算？",
+       "py": "Xià gè yuè fàng jià, nǐ yǒu shén me dǎ suàn?",
+       "vi": "Tháng sau nghỉ, bạn có dự định gì?"
+      },
+      {
+       "spk": 1,
+       "zh": "我想去旅游，你呢？",
+       "py": "Wǒ xiǎng qù lǚ yóu, nǐ ne?",
+       "vi": "Mình muốn đi du lịch, còn bạn?"
+      },
+      {
+       "spk": 0,
+       "zh": "我也是。你想去哪儿？",
+       "py": "Wǒ yě shì. Nǐ xiǎng qù nǎr?",
+       "vi": "Mình cũng vậy. Bạn muốn đi đâu?"
+      },
+      {
+       "spk": 1,
+       "zh": "我想去海边，那里夏天又凉快又漂亮。",
+       "py": "Wǒ xiǎng qù hǎi biān, nà lǐ xià tiān yòu liáng kuài yòu piào liang.",
+       "vi": "Mình muốn đi biển, mùa hè ở đó vừa mát vừa đẹp."
+      },
+      {
+       "spk": 0,
+       "zh": "可是我更想去山里，我觉得空气比海边好。",
+       "py": "Kě shì wǒ gèng xiǎng qù shān lǐ, wǒ jué de kōng qì bǐ hǎi biān hǎo.",
+       "vi": "Nhưng mình muốn lên núi hơn, mình thấy không khí tốt hơn ở biển."
+      },
+      {
+       "spk": 1,
+       "zh": "那我们先去海边，再去山里，好不好？",
+       "py": "Nà wǒ men xiān qù hǎi biān, zài qù shān lǐ, hǎo bù hǎo?",
+       "vi": "Vậy chúng ta đi biển trước, rồi lên núi, được không?"
+      },
+      {
+       "spk": 0,
+       "zh": "时间够吗？",
+       "py": "Shí jiān gòu ma?",
+       "vi": "Thời gian có đủ không?"
+      },
+      {
+       "spk": 1,
+       "zh": "我们有十天，应该够了。",
+       "py": "Wǒ men yǒu shí tiān, yīng gāi gòu le.",
+       "vi": "Chúng ta có mười ngày, chắc là đủ."
+      }
+     ]
+    },
+    {
+     "id": "7-2",
+     "title_zh": "订飞机票",
+     "title_vi": "Đặt vé máy bay",
+     "scene_vi": "Hai người đặt vé trên mạng.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，我们要去上海，飞机票你买了吗？",
+       "py": "Xiǎo měi, wǒ men yào qù shàng hǎi, fēi jī piào nǐ mǎi le ma?",
+       "vi": "Tiểu Mỹ, chúng ta sắp đi Thượng Hải, bạn mua vé máy bay chưa?"
+      },
+      {
+       "spk": 1,
+       "zh": "还没有。我在网上看了，八号的比九号的便宜。",
+       "py": "Hái méi yǒu. Wǒ zài wǎng shàng kàn le, bā hào de bǐ jiǔ hào de pián yi.",
+       "vi": "Chưa. Mình xem trên mạng rồi, vé ngày 8 rẻ hơn vé ngày 9."
+      },
+      {
+       "spk": 0,
+       "zh": "那我们坐八号的，几点起飞？",
+       "py": "Nà wǒ men zuò bā hào de, jǐ diǎn qǐ fēi?",
+       "vi": "Vậy chúng ta đi chuyến ngày 8, mấy giờ cất cánh?"
+      },
+      {
+       "spk": 1,
+       "zh": "早上七点。我们要五点起床。",
+       "py": "Zǎo shàng qī diǎn. Wǒ men yào wǔ diǎn qǐ chuáng.",
+       "vi": "Bảy giờ sáng. Chúng ta phải dậy lúc năm giờ."
+      },
+      {
+       "spk": 0,
+       "zh": "太早了，有没有晚一点儿的？",
+       "py": "Tài zǎo le, yǒu méi yǒu wǎn yì diǎnr de?",
+       "vi": "Sớm quá, có chuyến nào muộn hơn không?"
+      },
+      {
+       "spk": 1,
+       "zh": "有，下午两点的，不过要贵一百块。",
+       "py": "Yǒu, xià wǔ liǎng diǎn de, bú guò yào guì yì bǎi kuài.",
+       "vi": "Có, chuyến hai giờ chiều, nhưng đắt hơn một trăm tệ."
+      },
+      {
+       "spk": 0,
+       "zh": "没关系，我们坐下午的吧，可以多睡一会儿。",
+       "py": "Méi guān xì, wǒ men zuò xià wǔ de ba, kě yǐ duō shuì yí huìr.",
+       "vi": "Không sao, chúng ta đi chuyến chiều, có thể ngủ thêm một lát."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "zh": "迷路",
+   "vi": "Bị lạc đường",
+   "icon": "📍",
+   "dialogues": [
+    {
+     "id": "8-1",
+     "title_zh": "我找不到路",
+     "title_vi": "Tôi không tìm được đường",
+     "scene_vi": "Du khách bị lạc và nhờ người giúp.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "路人",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "你好，请问火车站怎么走？",
+       "py": "Nǐ hǎo, qǐng wèn huǒ chē zhàn zěn me zǒu?",
+       "vi": "Xin chào, cho hỏi ga tàu đi thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "你从这儿一直往前走，到第二个路口往右走。",
+       "py": "Nǐ cóng zhèr yì zhí wǎng qián zǒu, dào dì èr gè lù kǒu wǎng yòu zǒu.",
+       "vi": "Từ đây bạn cứ đi thẳng, đến ngã tư thứ hai thì rẽ phải."
+      },
+      {
+       "spk": 0,
+       "zh": "离这儿远吗？",
+       "py": "Lí zhèr yuǎn ma?",
+       "vi": "Cách đây có xa không?"
+      },
+      {
+       "spk": 1,
+       "zh": "不太远，走路大概十五分钟。",
+       "py": "Bú tài yuǎn, zǒu lù dà gài shí wǔ fēn zhōng.",
+       "vi": "Không xa lắm, đi bộ khoảng mười lăm phút."
+      },
+      {
+       "spk": 0,
+       "zh": "我看地图上写着在东边，是吗？",
+       "py": "Wǒ kàn dì tú shàng xiě zhe zài dōng biān, shì ma?",
+       "vi": "Tôi xem trên bản đồ ghi là ở phía đông, đúng không?"
+      },
+      {
+       "spk": 1,
+       "zh": "对，在银行的旁边，很容易找。",
+       "py": "Duì, zài yín háng de páng biān, hěn róng yì zhǎo.",
+       "vi": "Đúng, ở bên cạnh ngân hàng, rất dễ tìm."
+      },
+      {
+       "spk": 0,
+       "zh": "太感谢你了，我自己找不到。",
+       "py": "Tài gǎn xiè nǐ le, wǒ zì jǐ zhǎo bú dào.",
+       "vi": "Cảm ơn bạn rất nhiều, tôi tự tìm không ra."
+      }
+     ]
+    },
+    {
+     "id": "8-2",
+     "title_zh": "坐地铁",
+     "title_vi": "Đi tàu điện ngầm",
+     "scene_vi": "Hỏi cách đi tàu điện ngầm.",
+     "speakers": [
+      {
+       "name": "小美",
+       "gender": "f"
+      },
+      {
+       "name": "小明",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "请问，去天安门坐几号线？",
+       "py": "Qǐng wèn, qù tiān ān mén zuò jǐ hào xiàn?",
+       "vi": "Xin hỏi, đi Thiên An Môn đi tuyến số mấy?"
+      },
+      {
+       "spk": 1,
+       "zh": "你坐一号线，坐五站就到了。",
+       "py": "Nǐ zuò yī hào xiàn, zuò wǔ zhàn jiù dào le.",
+       "vi": "Bạn đi tuyến số 1, đi năm trạm là tới."
+      },
+      {
+       "spk": 0,
+       "zh": "在哪儿上车？",
+       "py": "Zài nǎr shàng chē?",
+       "vi": "Lên tàu ở đâu?"
+      },
+      {
+       "spk": 1,
+       "zh": "那边有一个入口，下去就是。",
+       "py": "Nà biān yǒu yí gè rù kǒu, xià qù jiù shì.",
+       "vi": "Bên kia có một lối vào, đi xuống là tới."
+      },
+      {
+       "spk": 0,
+       "zh": "一张票多少钱？",
+       "py": "Yì zhāng piào duō shǎo qián?",
+       "vi": "Một vé bao nhiêu tiền?"
+      },
+      {
+       "spk": 1,
+       "zh": "看你坐多远，五站大概三块钱。",
+       "py": "Kàn nǐ zuò duō yuǎn, wǔ zhàn dà gài sān kuài qián.",
+       "vi": "Tùy bạn đi xa bao nhiêu, năm trạm khoảng ba tệ."
+      },
+      {
+       "spk": 0,
+       "zh": "地铁比公共汽车快吗？",
+       "py": "Dì tiě bǐ gōng gòng qì chē kuài ma?",
+       "vi": "Tàu điện ngầm có nhanh hơn xe buýt không?"
+      },
+      {
+       "spk": 1,
+       "zh": "快多了，而且不堵车。",
+       "py": "Kuài duō le, ér qiě bù dǔ chē.",
+       "vi": "Nhanh hơn nhiều, hơn nữa không bị kẹt xe."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "zh": "租房",
+   "vi": "Thuê nhà",
+   "icon": "🔑",
+   "dialogues": [
+    {
+     "id": "9-1",
+     "title_zh": "看房子",
+     "title_vi": "Xem nhà",
+     "scene_vi": "Người thuê nhà xem căn hộ với chủ nhà.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "房东",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "你好，我想租房子，这个房子怎么样？",
+       "py": "Nǐ hǎo, wǒ xiǎng zū fáng zi, zhè ge fáng zi zěn me yàng?",
+       "vi": "Xin chào, tôi muốn thuê nhà, căn nhà này thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "你看，这个房子有两个房间，一个客厅。",
+       "py": "Nǐ kàn, zhè ge fáng zi yǒu liǎng gè fáng jiān, yí gè kè tīng.",
+       "vi": "Anh xem, căn nhà này có hai phòng, một phòng khách."
+      },
+      {
+       "spk": 0,
+       "zh": "离地铁站远不远？",
+       "py": "Lí dì tiě zhàn yuǎn bù yuǎn?",
+       "vi": "Cách ga tàu điện ngầm có xa không?"
+      },
+      {
+       "spk": 1,
+       "zh": "不远，走五分钟就到。旁边还有超市。",
+       "py": "Bù yuǎn, zǒu wǔ fēn zhōng jiù dào. Páng biān hái yǒu chāo shì.",
+       "vi": "Không xa, đi bộ năm phút là đến. Bên cạnh còn có siêu thị."
+      },
+      {
+       "spk": 0,
+       "zh": "真不错。一个月多少钱？",
+       "py": "Zhēn bú cuò. Yí gè yuè duō shǎo qián?",
+       "vi": "Tốt thật. Một tháng bao nhiêu tiền?"
+      },
+      {
+       "spk": 1,
+       "zh": "三千五，水电费要自己付。",
+       "py": "Sān qiān wǔ, shuǐ diàn fèi yào zì jǐ fù.",
+       "vi": "Ba nghìn rưỡi, tiền điện nước tự trả."
+      },
+      {
+       "spk": 0,
+       "zh": "有点儿贵，可以便宜一点儿吗？",
+       "py": "Yǒu diǎnr guì, kě yǐ pián yi yì diǎnr ma?",
+       "vi": "Hơi đắt, có thể rẻ hơn một chút không?"
+      },
+      {
+       "spk": 1,
+       "zh": "你租一年的话，可以便宜两百块。",
+       "py": "Nǐ zū yì nián de huà, kě yǐ pián yi liǎng bǎi kuài.",
+       "vi": "Nếu anh thuê một năm thì có thể rẻ hơn hai trăm tệ."
+      }
+     ]
+    },
+    {
+     "id": "9-2",
+     "title_zh": "搬家",
+     "title_vi": "Chuyển nhà",
+     "scene_vi": "Bạn bè giúp nhau chuyển nhà.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，谢谢你来帮我搬家。",
+       "py": "Xiǎo hóng, xiè xie nǐ lái bāng wǒ bān jiā.",
+       "vi": "Tiểu Hồng, cảm ơn bạn đã đến giúp mình chuyển nhà."
+      },
+      {
+       "spk": 1,
+       "zh": "别客气，你的东西真多！",
+       "py": "Bié kè qi, nǐ de dōng xi zhēn duō!",
+       "vi": "Đừng khách sáo, đồ của bạn nhiều thật!"
+      },
+      {
+       "spk": 0,
+       "zh": "是啊，特别是这些书，很重。",
+       "py": "Shì a, tè bié shì zhè xiē shū, hěn zhòng.",
+       "vi": "Đúng vậy, nhất là mấy quyển sách này, rất nặng."
+      },
+      {
+       "spk": 1,
+       "zh": "书放在哪儿？",
+       "py": "Shū fàng zài nǎr?",
+       "vi": "Sách để ở đâu?"
+      },
+      {
+       "spk": 0,
+       "zh": "放在新房子的书房里，在二楼。",
+       "py": "Fàng zài xīn fáng zi de shū fáng lǐ, zài èr lóu.",
+       "vi": "Để trong phòng sách của nhà mới, ở tầng hai."
+      },
+      {
+       "spk": 1,
+       "zh": "好，我先把轻的东西搬上去。",
+       "py": "Hǎo, wǒ xiān bǎ qīng de dōng xi bān shàng qù.",
+       "vi": "Được, mình mang những thứ nhẹ lên trước."
+      },
+      {
+       "spk": 0,
+       "zh": "搬完以后，我请你吃饭。",
+       "py": "Bān wán yǐ hòu, wǒ qǐng nǐ chī fàn.",
+       "vi": "Chuyển xong mình mời bạn ăn cơm."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "zh": "新手机",
+   "vi": "Mua điện thoại & đồ điện tử",
+   "icon": "📱",
+   "dialogues": [
+    {
+     "id": "10-1",
+     "title_zh": "我想换手机",
+     "title_vi": "Tôi muốn đổi điện thoại",
+     "scene_vi": "Hai bạn nói chuyện về điện thoại mới.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，你的手机是新的吗？",
+       "py": "Xiǎo měi, nǐ de shǒu jī shì xīn de ma?",
+       "vi": "Tiểu Mỹ, điện thoại của bạn là đồ mới à?"
+      },
+      {
+       "spk": 1,
+       "zh": "对，上个星期刚买的。你看，照相特别清楚。",
+       "py": "Duì, shàng gè xīng qī gāng mǎi de. Nǐ kàn, zhào xiàng tè bié qīng chǔ.",
+       "vi": "Đúng, tuần trước mới mua. Bạn xem, chụp ảnh rất nét."
+      },
+      {
+       "spk": 0,
+       "zh": "多少钱？",
+       "py": "Duō shǎo qián?",
+       "vi": "Bao nhiêu tiền?"
+      },
+      {
+       "spk": 1,
+       "zh": "三千多块，我觉得很值。",
+       "py": "Sān qiān duō kuài, wǒ jué de hěn zhí.",
+       "vi": "Hơn ba nghìn tệ, mình thấy rất đáng."
+      },
+      {
+       "spk": 0,
+       "zh": "我的手机用了三年了，太慢了。",
+       "py": "Wǒ de shǒu jī yòng le sān nián le, tài màn le.",
+       "vi": "Điện thoại của mình dùng ba năm rồi, chậm quá."
+      },
+      {
+       "spk": 1,
+       "zh": "那你也换一个吧，现在店里有活动。",
+       "py": "Nà nǐ yě huàn yí gè ba, xiàn zài diàn lǐ yǒu huó dòng.",
+       "vi": "Vậy bạn cũng đổi một chiếc đi, bây giờ cửa hàng đang có khuyến mãi."
+      },
+      {
+       "spk": 0,
+       "zh": "好，下午我去看看。",
+       "py": "Hǎo, xià wǔ wǒ qù kàn kàn.",
+       "vi": "Được, chiều mình sẽ đi xem."
+      }
+     ]
+    },
+    {
+     "id": "10-2",
+     "title_zh": "手机没电了",
+     "title_vi": "Điện thoại hết pin",
+     "scene_vi": "Điện thoại hết pin giữa chừng.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，你有充电器吗？我的手机快没电了。",
+       "py": "Xiǎo hóng, nǐ yǒu chōng diàn qì ma? Wǒ de shǒu jī kuài méi diàn le.",
+       "vi": "Tiểu Hồng, bạn có sạc không? Điện thoại mình sắp hết pin rồi."
+      },
+      {
+       "spk": 1,
+       "zh": "有，在我的包里。你自己拿吧。",
+       "py": "Yǒu, zài wǒ de bāo lǐ. Nǐ zì jǐ ná ba.",
+       "vi": "Có, ở trong túi của mình. Bạn tự lấy đi."
+      },
+      {
+       "spk": 0,
+       "zh": "找到了。我可以在这儿充一会儿吗？",
+       "py": "Zhǎo dào le. Wǒ kě yǐ zài zhèr chōng yí huìr ma?",
+       "vi": "Thấy rồi. Mình có thể sạc ở đây một lát không?"
+      },
+      {
+       "spk": 1,
+       "zh": "可以，那边有一个电源。",
+       "py": "Kě yǐ, nà biān yǒu yí gè diàn yuán.",
+       "vi": "Được, bên kia có một ổ điện."
+      },
+      {
+       "spk": 0,
+       "zh": "你的手机和我的不一样，这个能用吗？",
+       "py": "Nǐ de shǒu jī hé wǒ de bù yí yàng, zhè ge néng yòng ma?",
+       "vi": "Điện thoại của bạn khác của mình, cái này dùng được không?"
+      },
+      {
+       "spk": 1,
+       "zh": "能，都是一样的。",
+       "py": "Néng, dōu shì yí yàng de.",
+       "vi": "Dùng được, đều giống nhau cả."
+      },
+      {
+       "spk": 0,
+       "zh": "太好了，我还要给妈妈打电话呢。",
+       "py": "Tài hǎo le, wǒ hái yào gěi mā ma dǎ diàn huà ne.",
+       "vi": "Tốt quá, mình còn phải gọi điện cho mẹ nữa."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "zh": "比赛",
+   "vi": "Thi đấu thể thao",
+   "icon": "🏆",
+   "dialogues": [
+    {
+     "id": "11-1",
+     "title_zh": "你喜欢看比赛吗",
+     "title_vi": "Bạn có thích xem thi đấu không",
+     "scene_vi": "Hai người nói chuyện về bóng đá.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "大卫",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "大卫，昨天晚上的足球比赛你看了吗？",
+       "py": "Dà wèi, zuó tiān wǎn shàng de zú qiú bǐ sài nǐ kàn le ma?",
+       "vi": "David, trận bóng đá tối qua bạn xem chưa?"
+      },
+      {
+       "spk": 1,
+       "zh": "看了，太好看了！最后一个球是在九十分钟进的。",
+       "py": "Kàn le, tài hǎo kàn le! Zuì hòu yí gè qiú shì zài jiǔ shí fēn zhōng jìn de.",
+       "vi": "Xem rồi, hay quá! Bàn thắng cuối cùng vào ở phút thứ chín mươi."
+      },
+      {
+       "spk": 0,
+       "zh": "我也看了。你觉得哪个队踢得更好？",
+       "py": "Wǒ yě kàn le. Nǐ jué de nǎ ge duì tī de gèng hǎo?",
+       "vi": "Mình cũng xem. Bạn thấy đội nào đá hay hơn?"
+      },
+      {
+       "spk": 1,
+       "zh": "我觉得白色的队踢得比红色的好。",
+       "py": "Wǒ jué de bái sè de duì tī de bǐ hóng sè de hǎo.",
+       "vi": "Mình thấy đội áo trắng đá hay hơn đội áo đỏ."
+      },
+      {
+       "spk": 0,
+       "zh": "可是红色的队赢了。",
+       "py": "Kě shì hóng sè de duì yíng le.",
+       "vi": "Nhưng đội áo đỏ thắng rồi."
+      },
+      {
+       "spk": 1,
+       "zh": "没办法，这就是比赛。",
+       "py": "Méi bàn fǎ, zhè jiù shì bǐ sài.",
+       "vi": "Hết cách, đó chính là thi đấu mà."
+      },
+      {
+       "spk": 0,
+       "zh": "下个星期还有一场，我们一起看吧。",
+       "py": "Xià gè xīng qī hái yǒu yì cháng, wǒ men yì qǐ kàn ba.",
+       "vi": "Tuần sau còn một trận nữa, chúng ta cùng xem nhé."
+      }
+     ]
+    },
+    {
+     "id": "11-2",
+     "title_zh": "参加比赛",
+     "title_vi": "Tham gia thi đấu",
+     "scene_vi": "Hai bạn đăng ký thi chạy.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，学校下个月有跑步比赛，你参加吗？",
+       "py": "Xiǎo měi, xué xiào xià gè yuè yǒu pǎo bù bǐ sài, nǐ cān jiā ma?",
+       "vi": "Tiểu Mỹ, tháng sau trường có cuộc thi chạy bộ, bạn có tham gia không?"
+      },
+      {
+       "spk": 1,
+       "zh": "我想参加，不过我没有准备好。",
+       "py": "Wǒ xiǎng cān jiā, bú guò wǒ méi yǒu zhǔn bèi hǎo.",
+       "vi": "Mình muốn tham gia, nhưng chưa chuẩn bị xong."
+      },
+      {
+       "spk": 0,
+       "zh": "从今天开始练习，还来得及。",
+       "py": "Cóng jīn tiān kāi shǐ liàn xí, hái lái de jí.",
+       "vi": "Từ hôm nay bắt đầu luyện tập vẫn còn kịp."
+      },
+      {
+       "spk": 1,
+       "zh": "你每天跑几公里？",
+       "py": "Nǐ měi tiān pǎo jǐ gōng lǐ?",
+       "vi": "Mỗi ngày bạn chạy mấy cây số?"
+      },
+      {
+       "spk": 0,
+       "zh": "我每天早上跑三公里。",
+       "py": "Wǒ měi tiān zǎo shàng pǎo sān gōng lǐ.",
+       "vi": "Mỗi buổi sáng mình chạy ba cây số."
+      },
+      {
+       "spk": 1,
+       "zh": "那我也和你一起跑吧，可以吗？",
+       "py": "Nà wǒ yě hé nǐ yì qǐ pǎo ba, kě yǐ ma?",
+       "vi": "Vậy mình cũng chạy cùng bạn nhé, được không?"
+      },
+      {
+       "spk": 0,
+       "zh": "当然可以，明天早上六点，在学校门口见。",
+       "py": "Dāng rán kě yǐ, míng tiān zǎo shàng liù diǎn, zài xué xiào mén kǒu jiàn.",
+       "vi": "Đương nhiên được, sáu giờ sáng mai, gặp nhau ở cổng trường."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "zh": "天气预报",
+   "vi": "Dự báo thời tiết",
+   "icon": "🌦️",
+   "dialogues": [
+    {
+     "id": "12-1",
+     "title_zh": "明天会下雨吗",
+     "title_vi": "Ngày mai có mưa không",
+     "scene_vi": "Hai bạn xem dự báo thời tiết để lên kế hoạch.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，你看天气预报了吗？明天天气怎么样？",
+       "py": "Xiǎo hóng, nǐ kàn tiān qì yù bào le ma? Míng tiān tiān qì zěn me yàng?",
+       "vi": "Tiểu Hồng, bạn xem dự báo thời tiết chưa? Ngày mai thời tiết thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "看了，明天上午阴天，下午有雨。",
+       "py": "Kàn le, míng tiān shàng wǔ yīn tiān, xià wǔ yǒu yǔ.",
+       "vi": "Xem rồi, sáng mai trời âm u, chiều có mưa."
+      },
+      {
+       "spk": 0,
+       "zh": "糟糕，我们明天不是要去爬山吗？",
+       "py": "Zāo gāo, wǒ men míng tiān bú shì yào qù pá shān ma?",
+       "vi": "Thôi chết, chẳng phải ngày mai chúng ta đi leo núi sao?"
+      },
+      {
+       "spk": 1,
+       "zh": "对，下雨的话，爬山很危险。",
+       "py": "Duì, xià yǔ de huà, pá shān hěn wēi xiǎn.",
+       "vi": "Đúng, nếu mưa thì leo núi rất nguy hiểm."
+      },
+      {
+       "spk": 0,
+       "zh": "那我们改到后天吧，后天是晴天。",
+       "py": "Nà wǒ men gǎi dào hòu tiān ba, hòu tiān shì qíng tiān.",
+       "vi": "Vậy chúng ta dời sang ngày kia đi, ngày kia trời nắng."
+      },
+      {
+       "spk": 1,
+       "zh": "好，后天最高温度二十五度，很舒服。",
+       "py": "Hǎo, hòu tiān zuì gāo wēn dù èr shí wǔ dù, hěn shū fu.",
+       "vi": "Được, ngày kia nhiệt độ cao nhất hai mươi lăm độ, rất dễ chịu."
+      },
+      {
+       "spk": 0,
+       "zh": "我去告诉大家。",
+       "py": "Wǒ qù gào sù dà jiā.",
+       "vi": "Mình đi báo cho mọi người."
+      }
+     ]
+    },
+    {
+     "id": "12-2",
+     "title_zh": "今天冷多了",
+     "title_vi": "Hôm nay lạnh hơn nhiều",
+     "scene_vi": "Hai người nhận xét thời tiết đổi mùa.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "今天真冷，比昨天冷多了。",
+       "py": "Jīn tiān zhēn lěng, bǐ zuó tiān lěng duō le.",
+       "vi": "Hôm nay lạnh thật, lạnh hơn hôm qua nhiều."
+      },
+      {
+       "spk": 1,
+       "zh": "是啊，听说今天只有五度。",
+       "py": "Shì a, tīng shuō jīn tiān zhǐ yǒu wǔ dù.",
+       "vi": "Đúng vậy, nghe nói hôm nay chỉ có năm độ."
+      },
+      {
+       "spk": 0,
+       "zh": "我没有带外衣，冷死了。",
+       "py": "Wǒ méi yǒu dài wài yī, lěng sǐ le.",
+       "vi": "Mình không mang áo khoác, lạnh chết đi được."
+      },
+      {
+       "spk": 1,
+       "zh": "我的包里有一件，你先穿吧。",
+       "py": "Wǒ de bāo lǐ yǒu yí jiàn, nǐ xiān chuān ba.",
+       "vi": "Trong túi mình có một cái, bạn mặc trước đi."
+      },
+      {
+       "spk": 0,
+       "zh": "谢谢你！那你呢？",
+       "py": "Xiè xie nǐ! Nà nǐ ne?",
+       "vi": "Cảm ơn bạn! Còn bạn thì sao?"
+      },
+      {
+       "spk": 1,
+       "zh": "我穿得很多，不冷。",
+       "py": "Wǒ chuān de hěn duō, bù lěng.",
+       "vi": "Mình mặc nhiều lắm, không lạnh."
+      },
+      {
+       "spk": 0,
+       "zh": "冬天来了，我们要小心，别生病。",
+       "py": "Dōng tiān lái le, wǒ men yào xiǎo xīn, bié shēng bìng.",
+       "vi": "Mùa đông đến rồi, chúng ta phải cẩn thận, đừng để bị ốm."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "zh": "经历",
+   "vi": "Kinh nghiệm đã từng",
+   "icon": "🌟",
+   "dialogues": [
+    {
+     "id": "13-1",
+     "title_zh": "你去过长城吗",
+     "title_vi": "Bạn đã từng đến Vạn Lý Trường Thành chưa",
+     "scene_vi": "Hai bạn kể về những nơi đã đi.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，你去过长城吗？",
+       "py": "Xiǎo hóng, nǐ qù guò cháng chéng ma?",
+       "vi": "Tiểu Hồng, bạn đã từng đến Vạn Lý Trường Thành chưa?"
+      },
+      {
+       "spk": 1,
+       "zh": "去过两次。第一次是和家人去的，第二次是和朋友去的。",
+       "py": "Qù guò liǎng cì. Dì yī cì shì hé jiā rén qù de, dì èr cì shì hé péng you qù de.",
+       "vi": "Đi hai lần rồi. Lần đầu đi cùng gia đình, lần hai đi cùng bạn bè."
+      },
+      {
+       "spk": 0,
+       "zh": "感觉怎么样？",
+       "py": "Gǎn jué zěn me yàng?",
+       "vi": "Cảm giác thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "很累，但是风景特别漂亮。你去过吗？",
+       "py": "Hěn lèi, dàn shì fēng jǐng tè bié piào liang. Nǐ qù guò ma?",
+       "vi": "Rất mệt, nhưng phong cảnh vô cùng đẹp. Bạn đã đến chưa?"
+      },
+      {
+       "spk": 0,
+       "zh": "我还没去过。我来中国三个月了，一直很忙。",
+       "py": "Wǒ hái méi qù guò. Wǒ lái zhōng guó sān gè yuè le, yì zhí hěn máng.",
+       "vi": "Mình chưa từng đi. Mình đến Trung Quốc ba tháng rồi mà cứ bận mãi."
+      },
+      {
+       "spk": 1,
+       "zh": "那你一定要去，我可以当你的导游。",
+       "py": "Nà nǐ yí dìng yào qù, wǒ kě yǐ dāng nǐ de dǎo yóu.",
+       "vi": "Vậy bạn nhất định phải đi, mình có thể làm hướng dẫn viên cho bạn."
+      },
+      {
+       "spk": 0,
+       "zh": "太好了，我们哪天去？",
+       "py": "Tài hǎo le, wǒ men nǎ tiān qù?",
+       "vi": "Tuyệt quá, chúng ta đi ngày nào?"
+      }
+     ]
+    },
+    {
+     "id": "13-2",
+     "title_zh": "我吃过北京烤鸭",
+     "title_vi": "Mình từng ăn vịt quay Bắc Kinh",
+     "scene_vi": "Hai bạn kể về món ăn đã thử.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，你吃过北京烤鸭吗？",
+       "py": "Xiǎo měi, nǐ chī guò běi jīng kǎo yā ma?",
+       "vi": "Tiểu Mỹ, bạn từng ăn vịt quay Bắc Kinh chưa?"
+      },
+      {
+       "spk": 1,
+       "zh": "吃过，去年在北京吃的，非常好吃。",
+       "py": "Chī guò, qù nián zài běi jīng chī de, fēi cháng hǎo chī.",
+       "vi": "Ăn rồi, năm ngoái ăn ở Bắc Kinh, vô cùng ngon."
+      },
+      {
+       "spk": 0,
+       "zh": "怎么吃？",
+       "py": "Zěn me chī?",
+       "vi": "Ăn như thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "把鸭肉和菜放在一张薄饼里，一起吃。",
+       "py": "Bǎ yā ròu hé cài fàng zài yì zhāng báo bǐng lǐ, yì qǐ chī.",
+       "vi": "Cho thịt vịt và rau vào một chiếc bánh mỏng rồi ăn cùng nhau."
+      },
+      {
+       "spk": 0,
+       "zh": "听起来很不错，我从来没吃过。",
+       "py": "Tīng qǐ lái hěn bú cuò, wǒ cóng lái méi chī guò.",
+       "vi": "Nghe có vẻ rất ngon, mình chưa từng ăn bao giờ."
+      },
+      {
+       "spk": 1,
+       "zh": "这个周末我们去吃吧，我知道一家很好的店。",
+       "py": "Zhè ge zhōu mò wǒ men qù chī ba, wǒ zhī dao yì jiā hěn hǎo de diàn.",
+       "vi": "Cuối tuần này chúng ta đi ăn nhé, mình biết một quán rất ngon."
+      },
+      {
+       "spk": 0,
+       "zh": "太好了！我请客。",
+       "py": "Tài hǎo le! Wǒ qǐng kè.",
+       "vi": "Tuyệt quá! Mình mời."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "zh": "正在做",
+   "vi": "Đang làm gì",
+   "icon": "⏳",
+   "dialogues": [
+    {
+     "id": "14-1",
+     "title_zh": "你在做什么",
+     "title_vi": "Bạn đang làm gì",
+     "scene_vi": "Gọi điện hỏi thăm bạn.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "喂，小红，你在做什么呢？",
+       "py": "Wèi, xiǎo hóng, nǐ zài zuò shén me ne?",
+       "vi": "A lô, Tiểu Hồng, bạn đang làm gì vậy?"
+      },
+      {
+       "spk": 1,
+       "zh": "我正在做饭，你呢？",
+       "py": "Wǒ zhèng zài zuò fàn, nǐ ne?",
+       "vi": "Mình đang nấu cơm, còn bạn?"
+      },
+      {
+       "spk": 0,
+       "zh": "我正在看电视，没什么事。",
+       "py": "Wǒ zhèng zài kàn diàn shì, méi shén me shì.",
+       "vi": "Mình đang xem tivi, không có việc gì."
+      },
+      {
+       "spk": 1,
+       "zh": "你吃饭了吗？要不要来我家吃？",
+       "py": "Nǐ chī fàn le ma? Yào bú yào lái wǒ jiā chī?",
+       "vi": "Bạn ăn cơm chưa? Có muốn đến nhà mình ăn không?"
+      },
+      {
+       "spk": 0,
+       "zh": "好啊，你做什么菜？",
+       "py": "Hǎo a, nǐ zuò shén me cài?",
+       "vi": "Được chứ, bạn nấu món gì?"
+      },
+      {
+       "spk": 1,
+       "zh": "我做了鱼和鸡蛋汤，已经做好了。",
+       "py": "Wǒ zuò le yú hé jī dàn tāng, yǐ jīng zuò hǎo le.",
+       "vi": "Mình nấu cá và canh trứng, đã nấu xong rồi."
+      },
+      {
+       "spk": 0,
+       "zh": "我马上过去，十分钟就到。",
+       "py": "Wǒ mǎ shàng guò qù, shí fēn zhōng jiù dào.",
+       "vi": "Mình sang ngay, mười phút là tới."
+      }
+     ]
+    },
+    {
+     "id": "14-2",
+     "title_zh": "别打扰我",
+     "title_vi": "Đừng làm phiền mình",
+     "scene_vi": "Hai anh em trong nhà.",
+     "speakers": [
+      {
+       "name": "哥哥",
+       "gender": "m"
+      },
+      {
+       "name": "妹妹",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "哥哥，你在干什么？我想和你玩儿。",
+       "py": "Gē ge, nǐ zài gàn shén me? Wǒ xiǎng hé nǐ wánr.",
+       "vi": "Anh ơi, anh đang làm gì thế? Em muốn chơi với anh."
+      },
+      {
+       "spk": 1,
+       "zh": "我正在写作业，现在不能玩儿。",
+       "py": "Wǒ zhèng zài xiě zuò yè, xiàn zài bù néng wánr.",
+       "vi": "Anh đang làm bài tập, bây giờ không chơi được."
+      },
+      {
+       "spk": 0,
+       "zh": "你还要写多长时间？",
+       "py": "Nǐ hái yào xiě duō cháng shí jiān?",
+       "vi": "Anh còn phải viết bao lâu nữa?"
+      },
+      {
+       "spk": 1,
+       "zh": "大概一个小时。你去找妈妈玩儿吧。",
+       "py": "Dà gài yí gè xiǎo shí. Nǐ qù zhǎo mā ma wánr ba.",
+       "vi": "Khoảng một tiếng. Em đi tìm mẹ chơi đi."
+      },
+      {
+       "spk": 0,
+       "zh": "妈妈正在睡觉，我不想叫她。",
+       "py": "Mā ma zhèng zài shuì jiào, wǒ bù xiǎng jiào tā.",
+       "vi": "Mẹ đang ngủ, em không muốn gọi mẹ."
+      },
+      {
+       "spk": 1,
+       "zh": "那你先看一会儿书，我写完就陪你。",
+       "py": "Nà nǐ xiān kàn yí huìr shū, wǒ xiě wán jiù péi nǐ.",
+       "vi": "Vậy em đọc sách một lát đi, anh viết xong sẽ chơi với em."
+      },
+      {
+       "spk": 0,
+       "zh": "好吧，你要快一点儿。",
+       "py": "Hǎo ba, nǐ yào kuài yì diǎnr.",
+       "vi": "Được rồi, anh nhanh lên một chút nhé."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "zh": "时间安排",
+   "vi": "Sắp xếp thời gian",
+   "icon": "🗓️",
+   "dialogues": [
+    {
+     "id": "15-1",
+     "title_zh": "我迟到了",
+     "title_vi": "Mình đến muộn rồi",
+     "scene_vi": "Đến muộn buổi học.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "王老师",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "老师，对不起，我迟到了。",
+       "py": "Lǎo shī, duì bù qǐ, wǒ chí dào le.",
+       "vi": "Thưa cô, em xin lỗi, em đến muộn rồi."
+      },
+      {
+       "spk": 1,
+       "zh": "已经八点十分了，你怎么才来？",
+       "py": "Yǐ jīng bā diǎn shí fēn le, nǐ zěn me cái lái?",
+       "vi": "Đã tám giờ mười rồi, sao em mới đến?"
+      },
+      {
+       "spk": 0,
+       "zh": "早上我起晚了，路上又堵车。",
+       "py": "Zǎo shàng wǒ qǐ wǎn le, lù shàng yòu dǔ chē.",
+       "vi": "Sáng nay em dậy muộn, trên đường lại kẹt xe."
+      },
+      {
+       "spk": 1,
+       "zh": "下次要早一点儿出门。你吃早饭了吗？",
+       "py": "Xià cì yào zǎo yì diǎnr chū mén. Nǐ chī zǎo fàn le ma?",
+       "vi": "Lần sau phải ra khỏi nhà sớm hơn. Em ăn sáng chưa?"
+      },
+      {
+       "spk": 0,
+       "zh": "没有，来不及吃。",
+       "py": "Méi yǒu, lái bù jí chī.",
+       "vi": "Chưa ạ, không kịp ăn."
+      },
+      {
+       "spk": 1,
+       "zh": "先坐下吧，我们刚开始上课。",
+       "py": "Xiān zuò xià ba, wǒ men gāng kāi shǐ shàng kè.",
+       "vi": "Em ngồi xuống trước đi, chúng ta vừa mới bắt đầu học."
+      },
+      {
+       "spk": 0,
+       "zh": "谢谢老师，以后我不会再迟到了。",
+       "py": "Xiè xie lǎo shī, yǐ hòu wǒ bú huì zài chí dào le.",
+       "vi": "Cảm ơn cô, sau này em sẽ không đến muộn nữa."
+      }
+     ]
+    },
+    {
+     "id": "15-2",
+     "title_zh": "明天的安排",
+     "title_vi": "Kế hoạch ngày mai",
+     "scene_vi": "Đồng nghiệp bàn lịch làm việc.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，明天你有什么安排？",
+       "py": "Xiǎo měi, míng tiān nǐ yǒu shén me ān pái?",
+       "vi": "Tiểu Mỹ, ngày mai bạn có lịch gì?"
+      },
+      {
+       "spk": 1,
+       "zh": "上午九点开会，十一点见一个客人。",
+       "py": "Shàng wǔ jiǔ diǎn kāi huì, shí yī diǎn jiàn yí gè kè rén.",
+       "vi": "Chín giờ sáng họp, mười một giờ gặp một khách hàng."
+      },
+      {
+       "spk": 0,
+       "zh": "下午呢？",
+       "py": "Xià wǔ ne?",
+       "vi": "Còn buổi chiều?"
+      },
+      {
+       "spk": 1,
+       "zh": "下午比较空，两点以后没有事。",
+       "py": "Xià wǔ bǐ jiào kōng, liǎng diǎn yǐ hòu méi yǒu shì.",
+       "vi": "Buổi chiều khá rảnh, sau hai giờ không có việc gì."
+      },
+      {
+       "spk": 0,
+       "zh": "那我们两点半一起去看一下新办公室吧。",
+       "py": "Nà wǒ men liǎng diǎn bàn yì qǐ qù kàn yí xià xīn bàn gōng shì ba.",
+       "vi": "Vậy hai giờ rưỡi chúng ta cùng đi xem văn phòng mới nhé."
+      },
+      {
+       "spk": 1,
+       "zh": "好，我先写在本子上，免得忘了。",
+       "py": "Hǎo, wǒ xiān xiě zài běn zi shàng, miǎn de wàng le.",
+       "vi": "Được, mình ghi vào sổ trước, kẻo quên."
+      },
+      {
+       "spk": 0,
+       "zh": "你做事真认真。",
+       "py": "Nǐ zuò shì zhēn rèn zhēn.",
+       "vi": "Bạn làm việc thật cẩn thận."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "zh": "请假",
+   "vi": "Xin nghỉ",
+   "icon": "🙋‍♀️",
+   "dialogues": [
+    {
+     "id": "16-1",
+     "title_zh": "我想请假",
+     "title_vi": "Tôi muốn xin nghỉ",
+     "scene_vi": "Xin phép nghỉ vì bị ốm.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "王老师",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "王老师，我今天不舒服，想请一天假。",
+       "py": "Wáng lǎo shī, wǒ jīn tiān bù shū fú, xiǎng qǐng yì tiān jiǎ.",
+       "vi": "Cô Vương ơi, hôm nay em không khỏe, muốn xin nghỉ một ngày."
+      },
+      {
+       "spk": 1,
+       "zh": "你怎么了？",
+       "py": "Nǐ zěn me le?",
+       "vi": "Em bị làm sao?"
+      },
+      {
+       "spk": 0,
+       "zh": "我头疼，还有点儿发烧。",
+       "py": "Wǒ tóu téng, hái yǒu diǎnr fā shāo.",
+       "vi": "Em đau đầu, còn hơi sốt."
+      },
+      {
+       "spk": 1,
+       "zh": "去医院了吗？",
+       "py": "Qù yī yuàn le ma?",
+       "vi": "Em đi bệnh viện chưa?"
+      },
+      {
+       "spk": 0,
+       "zh": "下午去。我想先休息一下。",
+       "py": "Xià wǔ qù. Wǒ xiǎng xiān xiū xi yí xià.",
+       "vi": "Chiều em đi. Em muốn nghỉ ngơi một chút trước."
+      },
+      {
+       "spk": 1,
+       "zh": "好，你好好休息，作业我让同学给你送去。",
+       "py": "Hǎo, nǐ hǎo hǎo xiū xi, zuò yè wǒ ràng tóng xué gěi nǐ sòng qù.",
+       "vi": "Được, em nghỉ ngơi cho tốt, bài tập cô nhờ bạn đưa cho em."
+      },
+      {
+       "spk": 0,
+       "zh": "谢谢老师。",
+       "py": "Xiè xie lǎo shī.",
+       "vi": "Em cảm ơn cô."
+      }
+     ]
+    },
+    {
+     "id": "16-2",
+     "title_zh": "明天我不能来",
+     "title_vi": "Ngày mai tôi không thể đến",
+     "scene_vi": "Xin nghỉ làm vì việc nhà.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "经理",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "经理，明天我有点儿私事，想请半天假，可以吗？",
+       "py": "Jīng lǐ, míng tiān wǒ yǒu diǎnr sī shì, xiǎng qǐng bàn tiān jiǎ, kě yǐ ma?",
+       "vi": "Thưa giám đốc, ngày mai tôi có chút việc riêng, muốn xin nghỉ nửa ngày, được không ạ?"
+      },
+      {
+       "spk": 1,
+       "zh": "什么事？很重要吗？",
+       "py": "Shén me shì? Hěn zhòng yào ma?",
+       "vi": "Việc gì vậy? Quan trọng không?"
+      },
+      {
+       "spk": 0,
+       "zh": "我要陪爸爸去医院检查身体。",
+       "py": "Wǒ yào péi bà ba qù yī yuàn jiǎn chá shēn tǐ.",
+       "vi": "Tôi phải đưa bố đến bệnh viện kiểm tra sức khỏe."
+      },
+      {
+       "spk": 1,
+       "zh": "可以，你上午去，下午来上班吧。",
+       "py": "Kě yǐ, nǐ shàng wǔ qù, xià wǔ lái shàng bān ba.",
+       "vi": "Được, buổi sáng anh đi, buổi chiều đến làm việc."
+      },
+      {
+       "spk": 0,
+       "zh": "好的，谢谢您。工作我今天会做完。",
+       "py": "Hǎo de, xiè xie nín. Gōng zuò wǒ jīn tiān huì zuò wán.",
+       "vi": "Vâng, cảm ơn giám đốc. Công việc hôm nay tôi sẽ làm xong."
+      },
+      {
+       "spk": 1,
+       "zh": "不用着急，身体最重要。",
+       "py": "Bú yòng zháo jí, shēn tǐ zuì zhòng yào.",
+       "vi": "Không cần vội, sức khỏe là quan trọng nhất."
+      },
+      {
+       "spk": 0,
+       "zh": "您真好，我先走了。",
+       "py": "Nín zhēn hǎo, wǒ xiān zǒu le.",
+       "vi": "Giám đốc tốt quá, tôi xin phép về trước."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "zh": "礼物",
+   "vi": "Quà tặng",
+   "icon": "🎁",
+   "dialogues": [
+    {
+     "id": "17-1",
+     "title_zh": "送什么好呢",
+     "title_vi": "Tặng gì thì tốt",
+     "scene_vi": "Hai bạn chọn quà cho bạn học.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "下个星期是小美的生日，我们送她什么礼物？",
+       "py": "Xià gè xīng qī shì xiǎo měi de shēng rì, wǒ men sòng tā shén me lǐ wù?",
+       "vi": "Tuần sau là sinh nhật Tiểu Mỹ, chúng ta tặng cô ấy quà gì?"
+      },
+      {
+       "spk": 1,
+       "zh": "她喜欢看书，我们送她一本书吧。",
+       "py": "Tā xǐ huan kàn shū, wǒ men sòng tā yì běn shū ba.",
+       "vi": "Cô ấy thích đọc sách, chúng ta tặng cô ấy một quyển sách đi."
+      },
+      {
+       "spk": 0,
+       "zh": "书太普通了，我觉得送花更好。",
+       "py": "Shū tài pǔ tōng le, wǒ jué de sòng huā gèng hǎo.",
+       "vi": "Sách thì bình thường quá, mình thấy tặng hoa thì hay hơn."
+      },
+      {
+       "spk": 1,
+       "zh": "花过两天就不新鲜了，书可以一直放着。",
+       "py": "Huā guò liǎng tiān jiù bù xīn xiān le, shū kě yǐ yì zhí fàng zhe.",
+       "vi": "Hoa vài ngày là không tươi nữa, sách thì có thể giữ mãi."
+      },
+      {
+       "spk": 0,
+       "zh": "你说得有道理。那我们买一本她喜欢的书。",
+       "py": "Nǐ shuō de yǒu dào lǐ. Nà wǒ men mǎi yì běn tā xǐ huan de shū.",
+       "vi": "Bạn nói có lý. Vậy chúng ta mua một quyển sách cô ấy thích."
+      },
+      {
+       "spk": 1,
+       "zh": "再买一张漂亮的卡片，写上祝福的话。",
+       "py": "Zài mǎi yì zhāng piào liang de kǎ piàn, xiě shàng zhù fú de huà.",
+       "vi": "Mua thêm một tấm thiệp đẹp, viết lời chúc lên."
+      },
+      {
+       "spk": 0,
+       "zh": "好主意，明天下午一起去买。",
+       "py": "Hǎo zhǔ yì, míng tiān xià wǔ yì qǐ qù mǎi.",
+       "vi": "Ý hay, chiều mai cùng đi mua."
+      }
+     ]
+    },
+    {
+     "id": "17-2",
+     "title_zh": "谢谢你的礼物",
+     "title_vi": "Cảm ơn món quà của bạn",
+     "scene_vi": "Nhận quà từ bạn.",
+     "speakers": [
+      {
+       "name": "小美",
+       "gender": "f"
+      },
+      {
+       "name": "大卫",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，生日快乐！这是送给你的礼物。",
+       "py": "Xiǎo měi, shēng rì kuài lè! Zhè shì sòng gěi nǐ de lǐ wù.",
+       "vi": "Tiểu Mỹ, sinh nhật vui vẻ! Đây là món quà tặng bạn."
+      },
+      {
+       "spk": 1,
+       "zh": "哇，是一本书！你怎么知道我喜欢这本？",
+       "py": "Wa, shì yì běn shū! Nǐ zěn me zhī dao wǒ xǐ huan zhè běn?",
+       "vi": "Oa, là một quyển sách! Sao bạn biết mình thích quyển này?"
+      },
+      {
+       "spk": 0,
+       "zh": "小红告诉我的，她说你一直想买。",
+       "py": "Xiǎo hóng gào sù wǒ de, tā shuō nǐ yì zhí xiǎng mǎi.",
+       "vi": "Tiểu Hồng nói với mình, cô ấy bảo bạn luôn muốn mua."
+      },
+      {
+       "spk": 1,
+       "zh": "太谢谢你了，我非常喜欢。",
+       "py": "Tài xiè xie nǐ le, wǒ fēi cháng xǐ huan.",
+       "vi": "Cảm ơn bạn nhiều lắm, mình vô cùng thích."
+      },
+      {
+       "spk": 0,
+       "zh": "里面还有一张卡片，你回家再看。",
+       "py": "Lǐ miàn hái yǒu yì zhāng kǎ piàn, nǐ huí jiā zài kàn.",
+       "vi": "Bên trong còn có một tấm thiệp, bạn về nhà hãy xem."
+      },
+      {
+       "spk": 1,
+       "zh": "好的。我也准备了一点儿吃的，你尝一尝。",
+       "py": "Hǎo de. Wǒ yě zhǔn bèi le yì diǎnr chī de, nǐ cháng yì cháng.",
+       "vi": "Được. Mình cũng chuẩn bị chút đồ ăn, bạn nếm thử nhé."
+      },
+      {
+       "spk": 0,
+       "zh": "你真是太客气了。",
+       "py": "Nǐ zhēn shì tài kè qi le.",
+       "vi": "Bạn khách sáo quá rồi."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "zh": "接人",
+   "vi": "Đón người",
+   "icon": "🚗",
+   "dialogues": [
+    {
+     "id": "18-1",
+     "title_zh": "去机场接朋友",
+     "title_vi": "Ra sân bay đón bạn",
+     "scene_vi": "Đón bạn ở sân bay.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "大卫",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "大卫，你的飞机几点到？",
+       "py": "Dà wèi, nǐ de fēi jī jǐ diǎn dào?",
+       "vi": "David, mấy giờ máy bay của bạn đến?"
+      },
+      {
+       "spk": 1,
+       "zh": "下午三点半。你来接我吗？",
+       "py": "Xià wǔ sān diǎn bàn. Nǐ lái jiē wǒ ma?",
+       "vi": "Ba giờ rưỡi chiều. Bạn đến đón mình chứ?"
+      },
+      {
+       "spk": 0,
+       "zh": "当然。我坐地铁去，大概一个小时。",
+       "py": "Dāng rán. Wǒ zuò dì tiě qù, dà gài yí gè xiǎo shí.",
+       "vi": "Đương nhiên. Mình đi tàu điện ngầm, khoảng một tiếng."
+      },
+      {
+       "spk": 1,
+       "zh": "不用那么麻烦，我可以坐出租车。",
+       "py": "Bú yòng nà me má fán, wǒ kě yǐ zuò chū zū chē.",
+       "vi": "Không cần phiền như vậy, mình có thể đi taxi."
+      },
+      {
+       "spk": 0,
+       "zh": "没关系，我想见你。你的行李多不多？",
+       "py": "Méi guān xì, wǒ xiǎng jiàn nǐ. Nǐ de xíng lǐ duō bù duō?",
+       "vi": "Không sao, mình muốn gặp bạn. Hành lý của bạn có nhiều không?"
+      },
+      {
+       "spk": 1,
+       "zh": "有两个大箱子，很重。",
+       "py": "Yǒu liǎng gè dà xiāng zi, hěn zhòng.",
+       "vi": "Có hai chiếc vali lớn, rất nặng."
+      },
+      {
+       "spk": 0,
+       "zh": "那我去接你，我们一起坐车回去。",
+       "py": "Nà wǒ qù jiē nǐ, wǒ men yì qǐ zuò chē huí qù.",
+       "vi": "Vậy mình đến đón bạn, chúng ta cùng đi xe về."
+      }
+     ]
+    },
+    {
+     "id": "18-2",
+     "title_zh": "我在出口等你",
+     "title_vi": "Mình đợi bạn ở lối ra",
+     "scene_vi": "Gặp nhau ở sân bay.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "大卫",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "喂，小明，我下飞机了，你在哪儿？",
+       "py": "Wèi, xiǎo míng, wǒ xià fēi jī le, nǐ zài nǎr?",
+       "vi": "A lô, Tiểu Minh, mình xuống máy bay rồi, bạn ở đâu?"
+      },
+      {
+       "spk": 1,
+       "zh": "我在三号出口等你，穿着红色的外衣。",
+       "py": "Wǒ zài sān hào chū kǒu děng nǐ, chuān zhe hóng sè de wài yī.",
+       "vi": "Mình đợi bạn ở cửa ra số 3, mặc áo khoác màu đỏ."
+      },
+      {
+       "spk": 0,
+       "zh": "我看到你了！你在那边，对不对？",
+       "py": "Wǒ kàn dào nǐ le! Nǐ zài nà biān, duì bú duì?",
+       "vi": "Mình thấy bạn rồi! Bạn ở bên kia, đúng không?"
+      },
+      {
+       "spk": 1,
+       "zh": "对，我在这儿！大卫，欢迎来中国！",
+       "py": "Duì, wǒ zài zhèr! Dà wèi, huān yíng lái zhōng guó!",
+       "vi": "Đúng, mình ở đây! David, chào mừng đến Trung Quốc!"
+      },
+      {
+       "spk": 0,
+       "zh": "谢谢，我太高兴了。你瘦了吗？",
+       "py": "Xiè xie, wǒ tài gāo xìng le. Nǐ shòu le ma?",
+       "vi": "Cảm ơn, mình vui quá. Bạn gầy đi à?"
+      },
+      {
+       "spk": 1,
+       "zh": "可能是吧。来，我帮你拿箱子。",
+       "py": "Kě néng shì ba. Lái, wǒ bāng nǐ ná xiāng zi.",
+       "vi": "Có thể vậy. Nào, để mình giúp bạn xách vali."
+      },
+      {
+       "spk": 0,
+       "zh": "不用不用，我自己可以。",
+       "py": "Bú yòng bú yòng, wǒ zì jǐ kě yǐ.",
+       "vi": "Không cần đâu, mình tự xách được."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "zh": "打工",
+   "vi": "Làm thêm",
+   "icon": "💰",
+   "dialogues": [
+    {
+     "id": "19-1",
+     "title_zh": "我想找工作",
+     "title_vi": "Tôi muốn tìm việc làm thêm",
+     "scene_vi": "Sinh viên nói chuyện về việc làm thêm.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，你知道哪儿可以打工吗？我想找一份工作。",
+       "py": "Xiǎo hóng, nǐ zhī dao nǎr kě yǐ dǎ gōng ma? Wǒ xiǎng zhǎo yí fèn gōng zuò.",
+       "vi": "Tiểu Hồng, bạn biết chỗ nào có thể làm thêm không? Mình muốn tìm một công việc."
+      },
+      {
+       "spk": 1,
+       "zh": "你想做什么工作？",
+       "py": "Nǐ xiǎng zuò shén me gōng zuò?",
+       "vi": "Bạn muốn làm công việc gì?"
+      },
+      {
+       "spk": 0,
+       "zh": "什么都可以，只要时间合适就行。",
+       "py": "Shén me dōu kě yǐ, zhǐ yào shí jiān hé shì jiù xíng.",
+       "vi": "Gì cũng được, chỉ cần thời gian phù hợp."
+      },
+      {
+       "spk": 1,
+       "zh": "学校旁边的咖啡店正在找人。",
+       "py": "Xué xiào páng biān de kā fēi diàn zhèng zài zhǎo rén.",
+       "vi": "Quán cà phê cạnh trường đang tìm người."
+      },
+      {
+       "spk": 0,
+       "zh": "工资高不高？",
+       "py": "Gōng zī gāo bù gāo?",
+       "vi": "Lương có cao không?"
+      },
+      {
+       "spk": 1,
+       "zh": "一个小时二十五块，比别的地方高一点儿。",
+       "py": "Yí gè xiǎo shí èr shí wǔ kuài, bǐ bié de dì fang gāo yì diǎnr.",
+       "vi": "Một tiếng hai mươi lăm tệ, cao hơn những chỗ khác một chút."
+      },
+      {
+       "spk": 0,
+       "zh": "好，我明天就去问一问。",
+       "py": "Hǎo, wǒ míng tiān jiù qù wèn yí wèn.",
+       "vi": "Được, ngày mai mình sẽ đến hỏi thử."
+      }
+     ]
+    },
+    {
+     "id": "19-2",
+     "title_zh": "面试",
+     "title_vi": "Phỏng vấn",
+     "scene_vi": "Phỏng vấn xin việc ở quán cà phê.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "老板",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "你好，请坐。你叫什么名字？",
+       "py": "Nǐ hǎo, qǐng zuò. Nǐ jiào shén me míng zi?",
+       "vi": "Chào bạn, mời ngồi. Bạn tên là gì?"
+      },
+      {
+       "spk": 1,
+       "zh": "我叫李明，是越南人，在大学学习汉语。",
+       "py": "Wǒ jiào lǐ míng, shì yuè nán rén, zài dà xué xué xí hàn yǔ.",
+       "vi": "Tôi tên Lý Minh, là người Việt Nam, đang học tiếng Trung ở trường đại học."
+      },
+      {
+       "spk": 0,
+       "zh": "你以前做过这个工作吗？",
+       "py": "Nǐ yǐ qián zuò guò zhè ge gōng zuò ma?",
+       "vi": "Trước đây bạn đã làm công việc này chưa?"
+      },
+      {
+       "spk": 1,
+       "zh": "没有，不过我愿意学。",
+       "py": "Méi yǒu, bú guò wǒ yuàn yì xué.",
+       "vi": "Chưa ạ, nhưng tôi sẵn lòng học."
+      },
+      {
+       "spk": 0,
+       "zh": "你每个星期能来几天？",
+       "py": "Nǐ měi gè xīng qī néng lái jǐ tiān?",
+       "vi": "Mỗi tuần bạn có thể đến mấy ngày?"
+      },
+      {
+       "spk": 1,
+       "zh": "星期三、五和周末，每天下午可以来。",
+       "py": "Xīng qī sān, wǔ hé zhōu mò, měi tiān xià wǔ kě yǐ lái.",
+       "vi": "Thứ Tư, thứ Sáu và cuối tuần, buổi chiều ngày nào cũng có thể đến."
+      },
+      {
+       "spk": 0,
+       "zh": "很好，下个星期一开始上班，可以吗？",
+       "py": "Hěn hǎo, xià gè xīng qī yī kāi shǐ shàng bān, kě yǐ ma?",
+       "vi": "Tốt lắm, thứ Hai tuần sau bắt đầu đi làm, được không?"
+      },
+      {
+       "spk": 1,
+       "zh": "可以，谢谢您给我这个机会。",
+       "py": "Kě yǐ, xiè xie nín gěi wǒ zhè ge jī huì.",
+       "vi": "Được ạ, cảm ơn cô đã cho tôi cơ hội này."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "zh": "买衣服",
+   "vi": "Mua quần áo",
+   "icon": "👕",
+   "dialogues": [
+    {
+     "id": "20-1",
+     "title_zh": "我可以试一试吗",
+     "title_vi": "Tôi có thể mặc thử không",
+     "scene_vi": "Thử đồ ở cửa hàng quần áo.",
+     "speakers": [
+      {
+       "name": "小美",
+       "gender": "f"
+      },
+      {
+       "name": "店员",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "你好，这条裙子我可以试一试吗？",
+       "py": "Nǐ hǎo, zhè tiáo qún zi wǒ kě yǐ shì yí shì ma?",
+       "vi": "Xin chào, chiếc váy này tôi mặc thử được không?"
+      },
+      {
+       "spk": 1,
+       "zh": "当然可以，试衣间在那边。你穿多大的？",
+       "py": "Dāng rán kě yǐ, shì yī jiān zài nà biān. Nǐ chuān duō dà de?",
+       "vi": "Đương nhiên được, phòng thử đồ ở bên kia. Chị mặc cỡ nào?"
+      },
+      {
+       "spk": 0,
+       "zh": "我穿中号的。",
+       "py": "Wǒ chuān zhōng hào de.",
+       "vi": "Tôi mặc cỡ vừa."
+      },
+      {
+       "spk": 1,
+       "zh": "给您，请试一下。",
+       "py": "Gěi nín, qǐng shì yí xià.",
+       "vi": "Đây ạ, mời chị thử."
+      },
+      {
+       "spk": 0,
+       "zh": "有点儿小，有大一号的吗？",
+       "py": "Yǒu diǎnr xiǎo, yǒu dà yī hào de ma?",
+       "vi": "Hơi chật, có cỡ lớn hơn một số không?"
+      },
+      {
+       "spk": 1,
+       "zh": "有，我去拿。这个颜色很适合您。",
+       "py": "Yǒu, wǒ qù ná. Zhè ge yán sè hěn shì hé nín.",
+       "vi": "Có, tôi đi lấy. Màu này rất hợp với chị."
+      },
+      {
+       "spk": 0,
+       "zh": "大一号的正好。多少钱？",
+       "py": "Dà yī hào de zhèng hǎo. Duō shǎo qián?",
+       "vi": "Cỡ lớn hơn vừa đúng. Bao nhiêu tiền?"
+      },
+      {
+       "spk": 1,
+       "zh": "三百二，现在打八折。",
+       "py": "Sān bǎi èr, xiàn zài dǎ bā zhé.",
+       "vi": "Ba trăm hai, bây giờ giảm giá hai mươi phần trăm."
+      }
+     ]
+    },
+    {
+     "id": "20-2",
+     "title_zh": "太贵了",
+     "title_vi": "Đắt quá",
+     "scene_vi": "Mặc cả khi mua đồ.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "老板",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "老板，这件衣服多少钱？",
+       "py": "Lǎo bǎn, zhè jiàn yī fu duō shǎo qián?",
+       "vi": "Ông chủ ơi, cái áo này bao nhiêu tiền?"
+      },
+      {
+       "spk": 1,
+       "zh": "二百八十块，质量很好。",
+       "py": "Èr bǎi bā shí kuài, zhì liàng hěn hǎo.",
+       "vi": "Hai trăm tám mươi tệ, chất lượng rất tốt."
+      },
+      {
+       "spk": 0,
+       "zh": "太贵了，便宜点儿吧。",
+       "py": "Tài guì le, pián yi diǎnr ba.",
+       "vi": "Đắt quá, rẻ hơn một chút đi."
+      },
+      {
+       "spk": 1,
+       "zh": "你说多少？",
+       "py": "Nǐ shuō duō shǎo?",
+       "vi": "Cô nói bao nhiêu?"
+      },
+      {
+       "spk": 0,
+       "zh": "一百五怎么样？",
+       "py": "Yì bǎi wǔ zěn me yàng?",
+       "vi": "Một trăm năm mươi thì thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "太少了，二百二，不能再少了。",
+       "py": "Tài shǎo le, èr bǎi èr, bù néng zài shǎo le.",
+       "vi": "Ít quá, hai trăm hai, không bớt nữa được."
+      },
+      {
+       "spk": 0,
+       "zh": "二百吧，我再买一条裤子。",
+       "py": "Èr bǎi ba, wǒ zài mǎi yì tiáo kù zi.",
+       "vi": "Hai trăm đi, tôi mua thêm một cái quần nữa."
+      },
+      {
+       "spk": 1,
+       "zh": "好吧，看你买得多，就卖给你。",
+       "py": "Hǎo ba, kàn nǐ mǎi de duō, jiù mài gěi nǐ.",
+       "vi": "Được rồi, thấy cô mua nhiều thì bán cho cô."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "zh": "学汉语",
+   "vi": "Cách học tiếng Trung",
+   "icon": "🈶",
+   "dialogues": [
+    {
+     "id": "21-1",
+     "title_zh": "怎么学好汉语",
+     "title_vi": "Làm sao học giỏi tiếng Trung",
+     "scene_vi": "Hai bạn trao đổi cách học.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，你的汉语这么好，有什么好方法吗？",
+       "py": "Xiǎo měi, nǐ de hàn yǔ zhè me hǎo, yǒu shén me hǎo fāng fǎ ma?",
+       "vi": "Tiểu Mỹ, tiếng Trung của bạn giỏi thế, có phương pháp gì hay không?"
+      },
+      {
+       "spk": 1,
+       "zh": "我觉得最重要的是多说、多听。",
+       "py": "Wǒ jué de zuì zhòng yào de shì duō shuō, duō tīng.",
+       "vi": "Mình thấy quan trọng nhất là nói nhiều, nghe nhiều."
+      },
+      {
+       "spk": 0,
+       "zh": "我听不懂的时候怎么办？",
+       "py": "Wǒ tīng bù dǒng de shí hou zěn me bàn?",
+       "vi": "Lúc mình nghe không hiểu thì làm sao?"
+      },
+      {
+       "spk": 1,
+       "zh": "别怕，先听大概意思，再慢慢学。",
+       "py": "Bié pà, xiān tīng dà gài yì si, zài màn màn xué.",
+       "vi": "Đừng sợ, nghe ý chính trước rồi từ từ học."
+      },
+      {
+       "spk": 0,
+       "zh": "汉字我总是忘，怎么办？",
+       "py": "Hàn zì wǒ zǒng shì wàng, zěn me bàn?",
+       "vi": "Chữ Hán mình luôn quên, làm sao đây?"
+      },
+      {
+       "spk": 1,
+       "zh": "每天写几个，写了以后再看一看。",
+       "py": "Měi tiān xiě jǐ gè, xiě le yǐ hòu zài kàn yí kàn.",
+       "vi": "Mỗi ngày viết vài chữ, viết xong thì xem lại."
+      },
+      {
+       "spk": 0,
+       "zh": "谢谢你，我会试试这个方法。",
+       "py": "Xiè xie nǐ, wǒ huì shì shì zhè ge fāng fǎ.",
+       "vi": "Cảm ơn bạn, mình sẽ thử cách này."
+      }
+     ]
+    },
+    {
+     "id": "21-2",
+     "title_zh": "请你纠正我",
+     "title_vi": "Xin hãy sửa lỗi cho tôi",
+     "scene_vi": "Nhờ bạn Trung Quốc sửa lỗi phát âm.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，我说汉语的时候，如果说错了，请你告诉我。",
+       "py": "Xiǎo hóng, wǒ shuō hàn yǔ de shí hou, rú guǒ shuō cuò le, qǐng nǐ gào sù wǒ.",
+       "vi": "Tiểu Hồng, khi mình nói tiếng Trung, nếu nói sai, nhờ bạn nói cho mình biết."
+      },
+      {
+       "spk": 1,
+       "zh": "好的。你刚才说的“谢谢你的帮助”很对。",
+       "py": "Hǎo de. Nǐ gāng cái shuō de “xiè xie nǐ de bāng zhù” hěn duì.",
+       "vi": "Được. Câu “谢谢你的帮助” vừa rồi bạn nói rất đúng."
+      },
+      {
+       "spk": 0,
+       "zh": "真的吗？可是我觉得发音有问题。",
+       "py": "Zhēn de ma? Kě shì wǒ jué de fā yīn yǒu wèn tí.",
+       "vi": "Thật không? Nhưng mình thấy phát âm có vấn đề."
+      },
+      {
+       "spk": 1,
+       "zh": "只有“帮”字的声调，要读第一声。",
+       "py": "Zhǐ yǒu “bāng” zì de shēng diào, yào dú dì yī shēng.",
+       "vi": "Chỉ có thanh điệu của chữ “帮”, phải đọc thanh một."
+      },
+      {
+       "spk": 0,
+       "zh": "帮，帮，对吗？",
+       "py": "Bāng, bāng, duì ma?",
+       "vi": "Bāng, bāng, đúng không?"
+      },
+      {
+       "spk": 1,
+       "zh": "对了，很好！你进步真快。",
+       "py": "Duì le, hěn hǎo! Nǐ jìn bù zhēn kuài.",
+       "vi": "Đúng rồi, rất tốt! Bạn tiến bộ nhanh thật."
+      },
+      {
+       "spk": 0,
+       "zh": "多亏有你帮我。",
+       "py": "Duō kuī yǒu nǐ bāng wǒ.",
+       "vi": "May mà có bạn giúp mình."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "zh": "快递",
+   "vi": "Bưu điện & chuyển phát",
+   "icon": "📦",
+   "dialogues": [
+    {
+     "id": "22-1",
+     "title_zh": "寄包裹",
+     "title_vi": "Gửi bưu kiện",
+     "scene_vi": "Gửi quà cho gia đình từ bưu điện.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "工作人员",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "你好，我想把这个包裹寄到越南。",
+       "py": "Nǐ hǎo, wǒ xiǎng bǎ zhè ge bāo guǒ jì dào yuè nán.",
+       "vi": "Xin chào, tôi muốn gửi bưu kiện này về Việt Nam."
+      },
+      {
+       "spk": 1,
+       "zh": "好的，里面是什么东西？",
+       "py": "Hǎo de, lǐ miàn shì shén me dōng xi?",
+       "vi": "Vâng, bên trong là gì ạ?"
+      },
+      {
+       "spk": 0,
+       "zh": "是几件衣服和一些茶叶，送给我爸爸妈妈。",
+       "py": "Shì jǐ jiàn yī fu hé yì xiē chá yè, sòng gěi wǒ bà ba mā ma.",
+       "vi": "Là mấy bộ quần áo và một ít trà, tặng bố mẹ tôi."
+      },
+      {
+       "spk": 1,
+       "zh": "请先称一下。三公斤，一共二百六十块。",
+       "py": "Qǐng xiān chēng yí xià. Sān gōng jīn, yí gòng èr bǎi liù shí kuài.",
+       "vi": "Xin để tôi cân thử. Ba cân, tổng cộng hai trăm sáu mươi tệ."
+      },
+      {
+       "spk": 0,
+       "zh": "要多长时间才能到？",
+       "py": "Yào duō cháng shí jiān cái néng dào?",
+       "vi": "Bao lâu thì đến nơi?"
+      },
+      {
+       "spk": 1,
+       "zh": "大概七天。如果快一点儿，要加五十块，四天就到。",
+       "py": "Dà gài qī tiān. Rú guǒ kuài yì diǎnr, yào jiā wǔ shí kuài, sì tiān jiù dào.",
+       "vi": "Khoảng bảy ngày. Nếu muốn nhanh hơn thì thêm năm mươi tệ, bốn ngày là tới."
+      },
+      {
+       "spk": 0,
+       "zh": "我不着急，寄慢的就可以。",
+       "py": "Wǒ bù zháo jí, jì màn de jiù kě yǐ.",
+       "vi": "Tôi không vội, gửi loại chậm là được."
+      }
+     ]
+    },
+    {
+     "id": "22-2",
+     "title_zh": "我的快递到了吗",
+     "title_vi": "Bưu kiện của tôi đến chưa",
+     "scene_vi": "Nhận hàng mua trên mạng.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "快递员",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "喂，你好，请问是小红吗？你的快递到了。",
+       "py": "Wèi, nǐ hǎo, qǐng wèn shì xiǎo hóng ma? Nǐ de kuài dì dào le.",
+       "vi": "A lô, xin chào, có phải Tiểu Hồng không? Bưu kiện của bạn đến rồi."
+      },
+      {
+       "spk": 1,
+       "zh": "太好了！你现在在哪儿？",
+       "py": "Tài hǎo le! Nǐ xiàn zài zài nǎr?",
+       "vi": "Tốt quá! Bây giờ anh ở đâu?"
+      },
+      {
+       "spk": 0,
+       "zh": "我在你们楼下，你能下来拿吗？",
+       "py": "Wǒ zài nǐ men lóu xià, nǐ néng xià lái ná ma?",
+       "vi": "Tôi ở dưới tòa nhà của bạn, bạn xuống lấy được không?"
+      },
+      {
+       "spk": 1,
+       "zh": "对不起，我正在上班，不在家。",
+       "py": "Duì bù qǐ, wǒ zhèng zài shàng bān, bú zài jiā.",
+       "vi": "Xin lỗi, tôi đang đi làm, không có ở nhà."
+      },
+      {
+       "spk": 0,
+       "zh": "那我放在门口的快递柜里，可以吗？",
+       "py": "Nà wǒ fàng zài mén kǒu de kuài dì guì lǐ, kě yǐ ma?",
+       "vi": "Vậy tôi để vào tủ chuyển phát ở cửa, được không?"
+      },
+      {
+       "spk": 1,
+       "zh": "可以，请把号码发给我。",
+       "py": "Kě yǐ, qǐng bǎ hào mǎ fā gěi wǒ.",
+       "vi": "Được, nhờ anh gửi mã số cho tôi."
+      },
+      {
+       "spk": 0,
+       "zh": "好的，我马上发。你回家以后自己拿吧。",
+       "py": "Hǎo de, wǒ mǎ shàng fā. Nǐ huí jiā yǐ hòu zì jǐ ná ba.",
+       "vi": "Vâng, tôi gửi ngay. Bạn về nhà rồi tự lấy nhé."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "zh": "银行办卡",
+   "vi": "Mở thẻ ngân hàng",
+   "icon": "💳",
+   "dialogues": [
+    {
+     "id": "23-1",
+     "title_zh": "我想办一张银行卡",
+     "title_vi": "Tôi muốn làm thẻ ngân hàng",
+     "scene_vi": "Sinh viên nước ngoài đến mở tài khoản.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "银行职员",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "你好，我想办一张银行卡。",
+       "py": "Nǐ hǎo, wǒ xiǎng bàn yì zhāng yín háng kǎ.",
+       "vi": "Xin chào, tôi muốn làm một thẻ ngân hàng."
+      },
+      {
+       "spk": 1,
+       "zh": "请问您带护照了吗？",
+       "py": "Qǐng wèn nín dài hù zhào le ma?",
+       "vi": "Xin hỏi anh có mang hộ chiếu không?"
+      },
+      {
+       "spk": 0,
+       "zh": "带了，给你。还需要别的东西吗？",
+       "py": "Dài le, gěi nǐ. Hái xū yào bié de dōng xi ma?",
+       "vi": "Có mang, đây ạ. Còn cần thứ gì khác không?"
+      },
+      {
+       "spk": 1,
+       "zh": "还需要您的手机号码和学校的证明。",
+       "py": "Hái xū yào nín de shǒu jī hào mǎ hé xué xiào de zhèng míng.",
+       "vi": "Còn cần số điện thoại của anh và giấy xác nhận của trường."
+      },
+      {
+       "spk": 0,
+       "zh": "我带了学校的证明，手机号码是一三九……",
+       "py": "Wǒ dài le xué xiào de zhèng míng, shǒu jī hào mǎ shì yī sān jiǔ……",
+       "vi": "Tôi có mang giấy xác nhận của trường, số điện thoại là 139..."
+      },
+      {
+       "spk": 1,
+       "zh": "好，请您在这儿写名字，再输入六个数字的密码。",
+       "py": "Hǎo, qǐng nín zài zhèr xiě míng zi, zài shū rù liù gè shù zì de mì mǎ.",
+       "vi": "Được, mời anh ký tên ở đây, rồi nhập mật mã sáu chữ số."
+      },
+      {
+       "spk": 0,
+       "zh": "好了。卡什么时候可以用？",
+       "py": "Hǎo le. Kǎ shén me shí hòu kě yǐ yòng?",
+       "vi": "Xong rồi. Khi nào thẻ có thể dùng được?"
+      },
+      {
+       "spk": 1,
+       "zh": "现在就可以用了，欢迎您使用我们的银行。",
+       "py": "Xiàn zài jiù kě yǐ yòng le, huān yíng nín shǐ yòng wǒ men de yín háng.",
+       "vi": "Bây giờ là dùng được rồi, hoan nghênh anh sử dụng ngân hàng của chúng tôi."
+      }
+     ]
+    },
+    {
+     "id": "23-2",
+     "title_zh": "手机付钱",
+     "title_vi": "Thanh toán bằng điện thoại",
+     "scene_vi": "Người nước ngoài hỏi cách trả tiền bằng điện thoại.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，为什么在中国很多人用手机付钱？",
+       "py": "Xiǎo měi, wèi shén me zài zhōng guó hěn duō rén yòng shǒu jī fù qián?",
+       "vi": "Tiểu Mỹ, tại sao ở Trung Quốc nhiều người dùng điện thoại để trả tiền?"
+      },
+      {
+       "spk": 1,
+       "zh": "因为又快又方便，不用带很多钱。",
+       "py": "Yīn wèi yòu kuài yòu fāng biàn, bú yòng dài hěn duō qián.",
+       "vi": "Vì vừa nhanh vừa tiện, không cần mang nhiều tiền."
+      },
+      {
+       "spk": 0,
+       "zh": "我也想试试，应该怎么做？",
+       "py": "Wǒ yě xiǎng shì shì, yīng gāi zěn me zuò?",
+       "vi": "Mình cũng muốn thử, nên làm thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "先下载一个软件，然后把银行卡放进去。",
+       "py": "Xiān xià zài yí gè ruǎn jiàn, rán hòu bǎ yín háng kǎ fàng jìn qù.",
+       "vi": "Trước hết tải một ứng dụng, sau đó thêm thẻ ngân hàng vào."
+      },
+      {
+       "spk": 0,
+       "zh": "这样就可以了吗？",
+       "py": "Zhè yàng jiù kě yǐ le ma?",
+       "vi": "Như vậy là được rồi à?"
+      },
+      {
+       "spk": 1,
+       "zh": "对，买东西的时候，扫一下就行。",
+       "py": "Duì, mǎi dōng xi de shí hou, sǎo yí xià jiù xíng.",
+       "vi": "Đúng, khi mua đồ, quét một cái là xong."
+      },
+      {
+       "spk": 0,
+       "zh": "太方便了，我今天就试试。",
+       "py": "Tài fāng biàn le, wǒ jīn tiān jiù shì shì.",
+       "vi": "Tiện quá, hôm nay mình sẽ thử ngay."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 24,
+   "zh": "订座位",
+   "vi": "Đặt bàn nhà hàng",
+   "icon": "📞",
+   "dialogues": [
+    {
+     "id": "24-1",
+     "title_zh": "订一张桌子",
+     "title_vi": "Đặt một bàn",
+     "scene_vi": "Gọi điện đặt bàn cho buổi tối.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "服务员",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "喂，你好，我想订今天晚上的位子。",
+       "py": "Wèi, nǐ hǎo, wǒ xiǎng dìng jīn tiān wǎn shàng de wèi zi.",
+       "vi": "A lô, xin chào, tôi muốn đặt chỗ cho tối nay."
+      },
+      {
+       "spk": 1,
+       "zh": "好的，请问几位？几点到？",
+       "py": "Hǎo de, qǐng wèn jǐ wèi? Jǐ diǎn dào?",
+       "vi": "Vâng, xin hỏi mấy người? Mấy giờ đến ạ?"
+      },
+      {
+       "spk": 0,
+       "zh": "六位，大概七点到。",
+       "py": "Liù wèi, dà gài qī diǎn dào.",
+       "vi": "Sáu người, khoảng bảy giờ đến."
+      },
+      {
+       "spk": 1,
+       "zh": "对不起，七点已经没有大桌子了，七点半可以吗？",
+       "py": "Duì bù qǐ, qī diǎn yǐ jīng méi yǒu dà zhuō zi le, qī diǎn bàn kě yǐ ma?",
+       "vi": "Xin lỗi, bảy giờ đã hết bàn lớn rồi, bảy rưỡi được không ạ?"
+      },
+      {
+       "spk": 0,
+       "zh": "可以，那就七点半。",
+       "py": "Kě yǐ, nà jiù qī diǎn bàn.",
+       "vi": "Được, vậy bảy rưỡi nhé."
+      },
+      {
+       "spk": 1,
+       "zh": "请问您贵姓？留一下手机号码。",
+       "py": "Qǐng wèn nín guì xìng? Liú yí xià shǒu jī hào mǎ.",
+       "vi": "Xin hỏi quý danh? Cho tôi xin số điện thoại."
+      },
+      {
+       "spk": 0,
+       "zh": "我姓李，手机是一三八，五二零一，三一四六。",
+       "py": "Wǒ xìng lǐ, shǒu jī shì yī sān bā, wǔ èr líng yī, sān yī sì liù.",
+       "vi": "Tôi họ Lý, số điện thoại là 138, 5201, 3146."
+      },
+      {
+       "spk": 1,
+       "zh": "好的，李先生，我们七点半等您。",
+       "py": "Hǎo de, lǐ xiān sheng, wǒ men qī diǎn bàn děng nín.",
+       "vi": "Vâng, ông Lý, chúng tôi đợi ông lúc bảy rưỡi."
+      }
+     ]
+    },
+    {
+     "id": "24-2",
+     "title_zh": "我们订过位子",
+     "title_vi": "Chúng tôi đã đặt chỗ",
+     "scene_vi": "Đến nhà hàng đã đặt trước.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "服务员",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "你好，我们昨天订过位子，姓李。",
+       "py": "Nǐ hǎo, wǒ men zuó tiān dìng guò wèi zi, xìng lǐ.",
+       "vi": "Xin chào, hôm qua chúng tôi đã đặt chỗ, họ Lý."
+      },
+      {
+       "spk": 1,
+       "zh": "李先生，请等一下，我看看。对，六位，七点半。",
+       "py": "Lǐ xiān sheng, qǐng děng yí xià, wǒ kàn kàn. Duì, liù wèi, qī diǎn bàn.",
+       "vi": "Ông Lý, xin chờ một chút, để tôi xem. Đúng rồi, sáu người, bảy rưỡi."
+      },
+      {
+       "spk": 0,
+       "zh": "我们有一位朋友还没到，可以先点菜吗？",
+       "py": "Wǒ men yǒu yí wèi péng you hái méi dào, kě yǐ xiān diǎn cài ma?",
+       "vi": "Còn một người bạn chưa đến, chúng tôi có thể gọi món trước không?"
+      },
+      {
+       "spk": 1,
+       "zh": "当然可以，这是菜单，今天的鱼特别新鲜。",
+       "py": "Dāng rán kě yǐ, zhè shì cài dān, jīn tiān de yú tè bié xīn xiān.",
+       "vi": "Đương nhiên được, đây là thực đơn, cá hôm nay đặc biệt tươi."
+      },
+      {
+       "spk": 0,
+       "zh": "那来一条鱼吧，还有一个汤。",
+       "py": "Nà lái yì tiáo yú ba, hái yǒu yí gè tāng.",
+       "vi": "Vậy cho một con cá, thêm một món canh."
+      },
+      {
+       "spk": 1,
+       "zh": "好的。你们喝什么？",
+       "py": "Hǎo de. Nǐ men hē shén me?",
+       "vi": "Vâng. Các vị uống gì ạ?"
+      },
+      {
+       "spk": 0,
+       "zh": "等朋友到了再说吧。",
+       "py": "Děng péng you dào le zài shuō ba.",
+       "vi": "Đợi bạn đến rồi hãy gọi nhé."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 25,
+   "zh": "家庭聚会",
+   "vi": "Họp mặt gia đình",
+   "icon": "👪",
+   "dialogues": [
+    {
+     "id": "25-1",
+     "title_zh": "周末回爷爷家",
+     "title_vi": "Cuối tuần về nhà ông",
+     "scene_vi": "Cả nhà chuẩn bị đến thăm ông bà.",
+     "speakers": [
+      {
+       "name": "妈妈",
+       "gender": "f"
+      },
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "爸爸",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "这个周末我们回爷爷奶奶家吃饭。",
+       "py": "Zhè ge zhōu mò wǒ men huí yé yé nǎi nǎi jiā chī fàn.",
+       "vi": "Cuối tuần này chúng ta về nhà ông bà ăn cơm."
+      },
+      {
+       "spk": 1,
+       "zh": "太好了！我好久没看到爷爷了。",
+       "py": "Tài hǎo le! Wǒ hǎo jiǔ méi kàn dào yé yé le.",
+       "vi": "Tuyệt quá! Con lâu rồi không gặp ông."
+      },
+      {
+       "spk": 2,
+       "zh": "我们要带点儿什么东西去？",
+       "py": "Wǒ men yào dài diǎnr shén me dōng xi qù?",
+       "vi": "Chúng ta nên mang gì đến?"
+      },
+      {
+       "spk": 0,
+       "zh": "买一些水果，再买一瓶爷爷喜欢的酒。",
+       "py": "Mǎi yì xiē shuǐ guǒ, zài mǎi yì píng yé yé xǐ huan de jiǔ.",
+       "vi": "Mua ít trái cây, rồi mua thêm chai rượu ông thích."
+      },
+      {
+       "spk": 1,
+       "zh": "奶奶喜欢吃蛋糕，我们也买一个吧。",
+       "py": "Nǎi nǎi xǐ huan chī dàn gāo, wǒ men yě mǎi yí gè ba.",
+       "vi": "Bà thích ăn bánh kem, chúng ta cũng mua một cái nhé."
+      },
+      {
+       "spk": 2,
+       "zh": "好，我开车，路上要一个半小时。",
+       "py": "Hǎo, wǒ kāi chē, lù shàng yào yí gè bàn xiǎo shí.",
+       "vi": "Được, bố lái xe, đi đường mất một tiếng rưỡi."
+      },
+      {
+       "spk": 0,
+       "zh": "那我们早上八点出发。",
+       "py": "Nà wǒ men zǎo shàng bā diǎn chū fā.",
+       "vi": "Vậy chúng ta tám giờ sáng xuất phát."
+      }
+     ]
+    },
+    {
+     "id": "25-2",
+     "title_zh": "家里人真多",
+     "title_vi": "Nhà đông người thật",
+     "scene_vi": "Họ hàng đến thăm.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，你家今天真热闹，来了多少客人？",
+       "py": "Xiǎo hóng, nǐ jiā jīn tiān zhēn rè nào, lái le duō shǎo kè rén?",
+       "vi": "Tiểu Hồng, hôm nay nhà bạn náo nhiệt thật, có bao nhiêu khách đến vậy?"
+      },
+      {
+       "spk": 1,
+       "zh": "有二十多个，都是亲戚。",
+       "py": "Yǒu èr shí duō gè, dōu shì qīn qī.",
+       "vi": "Hơn hai mươi người, đều là họ hàng."
+      },
+      {
+       "spk": 0,
+       "zh": "那个穿红衣服的是谁？",
+       "py": "Nà ge chuān hóng yī fú de shì shuí?",
+       "vi": "Người mặc áo đỏ kia là ai?"
+      },
+      {
+       "spk": 1,
+       "zh": "是我姑姑，她刚从国外回来。",
+       "py": "Shì wǒ gū gū, tā gāng cóng guó wài huí lái.",
+       "vi": "Là cô của mình, cô vừa từ nước ngoài về."
+      },
+      {
+       "spk": 0,
+       "zh": "你们一年见几次面？",
+       "py": "Nǐ men yì nián jiàn jǐ cì miàn?",
+       "vi": "Mỗi năm các bạn gặp nhau mấy lần?"
+      },
+      {
+       "spk": 1,
+       "zh": "春节和中秋节，大家都会回来。",
+       "py": "Chūn jié hé zhōng qiū jié, dà jiā dōu huì huí lái.",
+       "vi": "Tết và Trung thu, mọi người đều về."
+      },
+      {
+       "spk": 0,
+       "zh": "真好，我们家人很少见面。",
+       "py": "Zhēn hǎo, wǒ men jiā rén hěn shǎo jiàn miàn.",
+       "vi": "Thích thật, nhà mình rất ít khi gặp mặt."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "zh": "健康",
+   "vi": "Ăn uống lành mạnh",
+   "icon": "🥗",
+   "dialogues": [
+    {
+     "id": "26-1",
+     "title_zh": "我想减肥",
+     "title_vi": "Mình muốn giảm cân",
+     "scene_vi": "Hai người nói chuyện về sức khỏe.",
+     "speakers": [
+      {
+       "name": "小美",
+       "gender": "f"
+      },
+      {
+       "name": "大卫",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "大卫，我最近胖了三公斤，我想减肥。",
+       "py": "Dà wèi, wǒ zuì jìn pàng le sān gōng jīn, wǒ xiǎng jiǎn féi.",
+       "vi": "David, dạo này mình tăng ba cân, mình muốn giảm cân."
+      },
+      {
+       "spk": 1,
+       "zh": "你每天吃什么？",
+       "py": "Nǐ měi tiān chī shén me?",
+       "vi": "Ngày nào bạn cũng ăn gì?"
+      },
+      {
+       "spk": 0,
+       "zh": "我常常吃很多肉，还爱喝甜的饮料。",
+       "py": "Wǒ cháng cháng chī hěn duō ròu, hái ài hē tián de yǐn liào.",
+       "vi": "Mình thường ăn nhiều thịt, còn thích uống đồ ngọt."
+      },
+      {
+       "spk": 1,
+       "zh": "那你应该少吃肉，多吃青菜和水果。",
+       "py": "Nà nǐ yīng gāi shǎo chī ròu, duō chī qīng cài hé shuǐ guǒ.",
+       "vi": "Vậy bạn nên ăn ít thịt đi, ăn nhiều rau và trái cây."
+      },
+      {
+       "spk": 0,
+       "zh": "饮料呢？",
+       "py": "Yǐn liào ne?",
+       "vi": "Còn nước ngọt thì sao?"
+      },
+      {
+       "spk": 1,
+       "zh": "最好喝水或者茶，别喝饮料。",
+       "py": "Zuì hǎo hē shuǐ huò zhě chá, bié hē yǐn liào.",
+       "vi": "Tốt nhất là uống nước hoặc trà, đừng uống nước ngọt."
+      },
+      {
+       "spk": 0,
+       "zh": "还要每天锻炼吧？",
+       "py": "Hái yào měi tiān duàn liàn ba?",
+       "vi": "Còn phải tập thể dục mỗi ngày nữa nhỉ?"
+      },
+      {
+       "spk": 1,
+       "zh": "对，每天走路半个小时就可以。",
+       "py": "Duì, měi tiān zǒu lù bàn gè xiǎo shí jiù kě yǐ.",
+       "vi": "Đúng, mỗi ngày đi bộ nửa tiếng là được."
+      }
+     ]
+    },
+    {
+     "id": "26-2",
+     "title_zh": "早点儿睡觉",
+     "title_vi": "Đi ngủ sớm hơn",
+     "scene_vi": "Bạn bè nhắc nhau giữ gìn sức khỏe.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "小明",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小明，你怎么看起来这么累？",
+       "py": "Xiǎo míng, nǐ zěn me kàn qǐ lái zhè me lèi?",
+       "vi": "Tiểu Minh, sao trông bạn mệt thế?"
+      },
+      {
+       "spk": 1,
+       "zh": "我昨天晚上两点才睡，在看比赛。",
+       "py": "Wǒ zuó tiān wǎn shàng liǎng diǎn cái shuì, zài kàn bǐ sài.",
+       "vi": "Tối qua hai giờ sáng mình mới ngủ, vì xem thi đấu."
+      },
+      {
+       "spk": 0,
+       "zh": "这样对身体不好，你应该早点儿睡觉。",
+       "py": "Zhè yàng duì shēn tǐ bù hǎo, nǐ yīng gāi zǎo diǎnr shuì jiào.",
+       "vi": "Như vậy không tốt cho sức khỏe, bạn nên đi ngủ sớm hơn."
+      },
+      {
+       "spk": 1,
+       "zh": "我知道，可是比赛太有意思了。",
+       "py": "Wǒ zhī dao, kě shì bǐ sài tài yǒu yì si le.",
+       "vi": "Mình biết, nhưng trận đấu thú vị quá."
+      },
+      {
+       "spk": 0,
+       "zh": "身体比比赛重要，别太晚睡。",
+       "py": "Shēn tǐ bǐ bǐ sài zhòng yào, bié tài wǎn shuì.",
+       "vi": "Sức khỏe quan trọng hơn trận đấu, đừng ngủ quá muộn."
+      },
+      {
+       "spk": 1,
+       "zh": "你说得对，今天我十点就睡。",
+       "py": "Nǐ shuō de duì, jīn tiān wǒ shí diǎn jiù shuì.",
+       "vi": "Bạn nói đúng, hôm nay mười giờ mình sẽ ngủ."
+      },
+      {
+       "spk": 0,
+       "zh": "这才对嘛！",
+       "py": "Zhè cái duì ma!",
+       "vi": "Thế mới đúng chứ!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 27,
+   "zh": "骑车",
+   "vi": "Đi xe đạp",
+   "icon": "🚲",
+   "dialogues": [
+    {
+     "id": "27-1",
+     "title_zh": "租自行车",
+     "title_vi": "Thuê xe đạp",
+     "scene_vi": "Du khách thuê xe đạp.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "老板",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "老板，我想租一辆自行车。",
+       "py": "Lǎo bǎn, wǒ xiǎng zū yí liàng zì xíng chē.",
+       "vi": "Ông chủ, tôi muốn thuê một chiếc xe đạp."
+      },
+      {
+       "spk": 1,
+       "zh": "好，你想租多长时间？",
+       "py": "Hǎo, nǐ xiǎng zū duō cháng shí jiān?",
+       "vi": "Được, bạn muốn thuê bao lâu?"
+      },
+      {
+       "spk": 0,
+       "zh": "一个下午，大概三个小时。",
+       "py": "Yí gè xià wǔ, dà gài sān gè xiǎo shí.",
+       "vi": "Một buổi chiều, khoảng ba tiếng."
+      },
+      {
+       "spk": 1,
+       "zh": "一个小时十块钱，你要先给一百块的押金。",
+       "py": "Yí gè xiǎo shí shí kuài qián, nǐ yào xiān gěi yì bǎi kuài de yā jīn.",
+       "vi": "Một tiếng mười tệ, bạn phải đặt cọc trước một trăm tệ."
+      },
+      {
+       "spk": 0,
+       "zh": "没问题。车好用吗？",
+       "py": "Méi wèn tí. Chē hǎo yòng ma?",
+       "vi": "Không vấn đề. Xe có dễ đi không?"
+      },
+      {
+       "spk": 1,
+       "zh": "很好用，我刚检查过了。",
+       "py": "Hěn hǎo yòng, wǒ gāng jiǎn chá guò le.",
+       "vi": "Rất dễ đi, tôi vừa kiểm tra rồi."
+      },
+      {
+       "spk": 0,
+       "zh": "谢谢，我五点以前还回来。",
+       "py": "Xiè xie, wǒ wǔ diǎn yǐ qián hái huí lái.",
+       "vi": "Cảm ơn, trước năm giờ tôi sẽ trả lại."
+      }
+     ]
+    },
+    {
+     "id": "27-2",
+     "title_zh": "车坏了",
+     "title_vi": "Xe bị hỏng",
+     "scene_vi": "Xe đạp bị thủng lốp giữa đường.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，等一下，我的车好像有问题。",
+       "py": "Xiǎo hóng, děng yí xià, wǒ de chē hǎo xiàng yǒu wèn tí.",
+       "vi": "Tiểu Hồng, đợi một chút, xe của mình hình như có vấn đề."
+      },
+      {
+       "spk": 1,
+       "zh": "怎么了？",
+       "py": "Zěn me le?",
+       "vi": "Sao vậy?"
+      },
+      {
+       "spk": 0,
+       "zh": "后面的轮子没有气了。",
+       "py": "Hòu miàn de lún zi méi yǒu qì le.",
+       "vi": "Bánh sau hết hơi rồi."
+      },
+      {
+       "spk": 1,
+       "zh": "附近有一个修车的地方，我记得就在前面。",
+       "py": "Fù jìn yǒu yí gè xiū chē de dì fang, wǒ jì de jiù zài qián miàn.",
+       "vi": "Gần đây có một chỗ sửa xe, mình nhớ ngay phía trước."
+      },
+      {
+       "spk": 0,
+       "zh": "太好了，我们推过去吧。",
+       "py": "Tài hǎo le, wǒ men tuī guò qù ba.",
+       "vi": "Tốt quá, chúng ta dắt xe đến đó đi."
+      },
+      {
+       "spk": 1,
+       "zh": "别着急，也许十分钟就能修好。",
+       "py": "Bié zháo jí, yě xǔ shí fēn zhōng jiù néng xiū hǎo.",
+       "vi": "Đừng vội, có lẽ mười phút là sửa xong."
+      },
+      {
+       "spk": 0,
+       "zh": "幸好你知道这儿，不然我就麻烦了。",
+       "py": "Xìng hǎo nǐ zhī dao zhèr, bù rán wǒ jiù má fán le.",
+       "vi": "May mà bạn biết chỗ này, không thì mình rắc rối rồi."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 28,
+   "zh": "修东西",
+   "vi": "Sửa đồ",
+   "icon": "🔧",
+   "dialogues": [
+    {
+     "id": "28-1",
+     "title_zh": "电脑坏了",
+     "title_vi": "Máy tính bị hỏng",
+     "scene_vi": "Mang máy tính đi sửa.",
+     "speakers": [
+      {
+       "name": "小美",
+       "gender": "f"
+      },
+      {
+       "name": "修理工",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "师傅，我的电脑突然打不开了，您能帮我看看吗？",
+       "py": "Shī fù, wǒ de diàn nǎo tū rán dǎ bù kāi le, nín néng bāng wǒ kàn kàn ma?",
+       "vi": "Bác thợ, máy tính của tôi đột nhiên không mở được, bác xem giúp tôi được không?"
+      },
+      {
+       "spk": 1,
+       "zh": "你先放这儿，我检查一下。",
+       "py": "Nǐ xiān fàng zhèr, wǒ jiǎn chá yí xià.",
+       "vi": "Chị để ở đây trước, tôi kiểm tra một chút."
+      },
+      {
+       "spk": 0,
+       "zh": "大概要多长时间？",
+       "py": "Dà gài yào duō cháng shí jiān?",
+       "vi": "Khoảng bao lâu thì xong?"
+      },
+      {
+       "spk": 1,
+       "zh": "可能要两天，我看看是哪儿有问题。",
+       "py": "Kě néng yào liǎng tiān, wǒ kàn kàn shì nǎr yǒu wèn tí.",
+       "vi": "Có thể mất hai ngày, để tôi xem hỏng ở đâu."
+      },
+      {
+       "spk": 0,
+       "zh": "里面有很多重要的东西，别丢了。",
+       "py": "Lǐ miàn yǒu hěn duō chóng yào de dōng xi, bié diū le.",
+       "vi": "Bên trong có rất nhiều thứ quan trọng, đừng làm mất."
+      },
+      {
+       "spk": 1,
+       "zh": "你放心，我会很小心的。",
+       "py": "Nǐ fàng xīn, wǒ huì hěn xiǎo xīn de.",
+       "vi": "Chị yên tâm, tôi sẽ rất cẩn thận."
+      },
+      {
+       "spk": 0,
+       "zh": "好，修好以后请给我打电话。",
+       "py": "Hǎo, xiū hǎo yǐ hòu qǐng gěi wǒ dǎ diàn huà.",
+       "vi": "Được, sửa xong nhờ bác gọi điện cho tôi."
+      }
+     ]
+    },
+    {
+     "id": "28-2",
+     "title_zh": "灯不亮了",
+     "title_vi": "Đèn không sáng",
+     "scene_vi": "Nhờ bảo vệ tòa nhà sửa đèn.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "保安",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "你好，我房间里的灯不亮了，怎么办？",
+       "py": "Nǐ hǎo, wǒ fáng jiān lǐ de dēng bú liàng le, zěn me bàn?",
+       "vi": "Xin chào, đèn trong phòng tôi không sáng, phải làm sao?"
+      },
+      {
+       "spk": 1,
+       "zh": "是不是灯坏了？你换一个试试。",
+       "py": "Shì bú shì dēng huài le? Nǐ huàn yí gè shì shì.",
+       "vi": "Có phải đèn hỏng rồi không? Bạn thử thay một cái."
+      },
+      {
+       "spk": 0,
+       "zh": "我换过了，还是不亮。",
+       "py": "Wǒ huàn guò le, hái shì bú liàng.",
+       "vi": "Tôi thay rồi, vẫn không sáng."
+      },
+      {
+       "spk": 1,
+       "zh": "那可能是电的问题，我上去看一下。",
+       "py": "Nà kě néng shì diàn de wèn tí, wǒ shàng qù kàn yí xià.",
+       "vi": "Vậy có thể là vấn đề về điện, để tôi lên xem."
+      },
+      {
+       "spk": 0,
+       "zh": "太感谢了，几楼你知道吗？",
+       "py": "Tài gǎn xiè le, jǐ lóu nǐ zhī dao ma?",
+       "vi": "Cảm ơn nhiều, anh biết tầng mấy không?"
+      },
+      {
+       "spk": 1,
+       "zh": "你说过，五楼，五零八房间。",
+       "py": "Nǐ shuō guò, wǔ lóu, wǔ líng bā fáng jiān.",
+       "vi": "Bạn nói rồi, tầng năm, phòng 508."
+      },
+      {
+       "spk": 0,
+       "zh": "对，我在门口等你。",
+       "py": "Duì, wǒ zài mén kǒu děng nǐ.",
+       "vi": "Đúng, tôi đợi anh ở cửa."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 29,
+   "zh": "爬山",
+   "vi": "Leo núi",
+   "icon": "⛰️",
+   "dialogues": [
+    {
+     "id": "29-1",
+     "title_zh": "我们去爬山吧",
+     "title_vi": "Chúng ta đi leo núi nhé",
+     "scene_vi": "Rủ nhau leo núi cuối tuần.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "周末天气很好，我们去爬山吧。",
+       "py": "Zhōu mò tiān qì hěn hǎo, wǒ men qù pá shān ba.",
+       "vi": "Cuối tuần thời tiết đẹp, chúng ta đi leo núi nhé."
+      },
+      {
+       "spk": 1,
+       "zh": "好啊，我们去哪座山？",
+       "py": "Hǎo a, wǒ men qù nǎ zuò shān?",
+       "vi": "Được chứ, chúng ta đi núi nào?"
+      },
+      {
+       "spk": 0,
+       "zh": "学校西边那座山，坐车四十分钟就到。",
+       "py": "Xué xiào xī biān nà zuò shān, zuò chē sì shí fēn zhōng jiù dào.",
+       "vi": "Ngọn núi phía tây trường, đi xe bốn mươi phút là tới."
+      },
+      {
+       "spk": 1,
+       "zh": "爬上去要多长时间？",
+       "py": "Pá shàng qù yào duō cháng shí jiān?",
+       "vi": "Leo lên mất bao lâu?"
+      },
+      {
+       "spk": 0,
+       "zh": "大概两个小时，山上的风景很漂亮。",
+       "py": "Dà gài liǎng gè xiǎo shí, shān shàng de fēng jǐng hěn piào liang.",
+       "vi": "Khoảng hai tiếng, phong cảnh trên núi rất đẹp."
+      },
+      {
+       "spk": 1,
+       "zh": "我们要带什么？",
+       "py": "Wǒ men yào dài shén me?",
+       "vi": "Chúng ta cần mang gì?"
+      },
+      {
+       "spk": 0,
+       "zh": "多带点儿水，还要带一些吃的。",
+       "py": "Duō dài diǎnr shuǐ, hái yào dài yì xiē chī de.",
+       "vi": "Mang thêm nước, còn phải mang một ít đồ ăn."
+      }
+     ]
+    },
+    {
+     "id": "29-2",
+     "title_zh": "爬得很累",
+     "title_vi": "Leo mệt quá",
+     "scene_vi": "Giữa chừng leo núi, hai người nghỉ.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "小明",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "我走不动了，我们休息一会儿吧。",
+       "py": "Wǒ zǒu bú dòng le, wǒ men xiū xi yí huìr ba.",
+       "vi": "Mình đi không nổi nữa, chúng ta nghỉ một lát nhé."
+      },
+      {
+       "spk": 1,
+       "zh": "好，来，喝点儿水。你累不累？",
+       "py": "Hǎo, lái, hē diǎnr shuǐ. Nǐ lèi bú lèi?",
+       "vi": "Được, nào, uống chút nước. Bạn có mệt không?"
+      },
+      {
+       "spk": 0,
+       "zh": "累死了，我平时很少锻炼。",
+       "py": "Lèi sǐ le, wǒ píng shí hěn shǎo duàn liàn.",
+       "vi": "Mệt chết đi được, bình thường mình rất ít tập thể dục."
+      },
+      {
+       "spk": 1,
+       "zh": "别着急，慢慢走，我们不用比谁快。",
+       "py": "Bié zháo jí, màn màn zǒu, wǒ men bú yòng bǐ shuí kuài.",
+       "vi": "Đừng vội, cứ đi từ từ, chúng ta đâu cần thi ai nhanh."
+      },
+      {
+       "spk": 0,
+       "zh": "还有多远才到山顶？",
+       "py": "Hái yǒu duō yuǎn cái dào shān dǐng?",
+       "vi": "Còn bao xa nữa mới tới đỉnh núi?"
+      },
+      {
+       "spk": 1,
+       "zh": "你看，那就是山顶，已经不远了。",
+       "py": "Nǐ kàn, nà jiù shì shān dǐng, yǐ jīng bù yuǎn le.",
+       "vi": "Bạn xem, kia chính là đỉnh núi, không còn xa nữa."
+      },
+      {
+       "spk": 0,
+       "zh": "好，为了看风景，我继续走！",
+       "py": "Hǎo, wèi le kàn fēng jǐng, wǒ jì xù zǒu!",
+       "vi": "Được, vì để ngắm phong cảnh, mình tiếp tục đi!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 30,
+   "zh": "博物馆",
+   "vi": "Bảo tàng",
+   "icon": "🏛️",
+   "dialogues": [
+    {
+     "id": "30-1",
+     "title_zh": "买门票",
+     "title_vi": "Mua vé tham quan",
+     "scene_vi": "Mua vé vào bảo tàng.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "售票员",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "你好，两张票，一共多少钱？",
+       "py": "Nǐ hǎo, liǎng zhāng piào, yí gòng duō shǎo qián?",
+       "vi": "Xin chào, hai vé, tổng cộng bao nhiêu tiền?"
+      },
+      {
+       "spk": 1,
+       "zh": "学生票十块，别人二十块。你们是学生吗？",
+       "py": "Xué shēng piào shí kuài, bié rén èr shí kuài. Nǐ men shì xué shēng ma?",
+       "vi": "Vé sinh viên mười tệ, người khác hai mươi tệ. Các bạn là sinh viên à?"
+      },
+      {
+       "spk": 0,
+       "zh": "是的，这是我们的学生证。",
+       "py": "Shì de, zhè shì wǒ men de xué shēng zhèng.",
+       "vi": "Vâng, đây là thẻ sinh viên của chúng tôi."
+      },
+      {
+       "spk": 1,
+       "zh": "那两张一共二十块。",
+       "py": "Nà liǎng zhāng yí gòng èr shí kuài.",
+       "vi": "Vậy hai vé tổng cộng hai mươi tệ."
+      },
+      {
+       "spk": 0,
+       "zh": "里面可以照相吗？",
+       "py": "Lǐ miàn kě yǐ zhào xiàng ma?",
+       "vi": "Bên trong có chụp ảnh được không?"
+      },
+      {
+       "spk": 1,
+       "zh": "可以，不过不能用灯。",
+       "py": "Kě yǐ, bú guò bù néng yòng dēng.",
+       "vi": "Được, nhưng không được dùng đèn flash."
+      },
+      {
+       "spk": 0,
+       "zh": "明白了，谢谢。",
+       "py": "Míng bai le, xiè xie.",
+       "vi": "Hiểu rồi, cảm ơn."
+      }
+     ]
+    },
+    {
+     "id": "30-2",
+     "title_zh": "这是什么",
+     "title_vi": "Đây là cái gì",
+     "scene_vi": "Tham quan hiện vật trong bảo tàng.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "导游",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "请问，这个东西是什么时候的？",
+       "py": "Qǐng wèn, zhè ge dōng xi shì shén me shí hòu de?",
+       "vi": "Xin hỏi, vật này là của thời nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "这是两千年以前的，是中国最老的东西之一。",
+       "py": "Zhè shì liǎng qiān nián yǐ qián de, shì zhōng guó zuì lǎo de dōng xi zhī yī.",
+       "vi": "Đây là của hai nghìn năm trước, là một trong những vật cổ nhất của Trung Quốc."
+      },
+      {
+       "spk": 0,
+       "zh": "真的吗？看起来还很新。",
+       "py": "Zhēn de ma? Kàn qǐ lái hái hěn xīn.",
+       "vi": "Thật không? Trông vẫn còn rất mới."
+      },
+      {
+       "spk": 1,
+       "zh": "是的，因为保护得很好。",
+       "py": "Shì de, yīn wèi bǎo hù de hěn hǎo.",
+       "vi": "Vâng, vì được bảo vệ rất tốt."
+      },
+      {
+       "spk": 0,
+       "zh": "它是做什么用的？",
+       "py": "Tā shì zuò shén me yòng de?",
+       "vi": "Nó dùng để làm gì?"
+      },
+      {
+       "spk": 1,
+       "zh": "古时候的人用它喝酒或者喝水。",
+       "py": "Gǔ shí hou de rén yòng tā hē jiǔ huò zhě hē shuǐ.",
+       "vi": "Người xưa dùng nó để uống rượu hoặc uống nước."
+      },
+      {
+       "spk": 0,
+       "zh": "太有意思了，我要多照几张相。",
+       "py": "Tài yǒu yì si le, wǒ yào duō zhào jǐ zhāng xiàng.",
+       "vi": "Thú vị quá, tôi phải chụp thêm mấy tấm ảnh."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 31,
+   "zh": "丢东西",
+   "vi": "Mất đồ",
+   "icon": "😟",
+   "dialogues": [
+    {
+     "id": "31-1",
+     "title_zh": "我的包不见了",
+     "title_vi": "Túi của tôi biến mất",
+     "scene_vi": "Báo mất túi ở quầy hướng dẫn.",
+     "speakers": [
+      {
+       "name": "小美",
+       "gender": "f"
+      },
+      {
+       "name": "工作人员",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "你好，我的包不见了，你能帮帮我吗？",
+       "py": "Nǐ hǎo, wǒ de bāo bú jiàn le, nǐ néng bāng bāng wǒ ma?",
+       "vi": "Xin chào, túi của tôi biến mất rồi, anh giúp tôi được không?"
+      },
+      {
+       "spk": 1,
+       "zh": "别着急，什么颜色的包？",
+       "py": "Bié zháo jí, shén me yán sè de bāo?",
+       "vi": "Đừng vội, túi màu gì?"
+      },
+      {
+       "spk": 0,
+       "zh": "黑色的，不大，里面有我的手机和钱包。",
+       "py": "Hēi sè de, bú dà, lǐ miàn yǒu wǒ de shǒu jī hé qián bāo.",
+       "vi": "Màu đen, không lớn, bên trong có điện thoại và ví của tôi."
+      },
+      {
+       "spk": 1,
+       "zh": "你最后一次看到是在哪儿？",
+       "py": "Nǐ zuì hòu yí cì kàn dào shì zài nǎr?",
+       "vi": "Lần cuối chị nhìn thấy là ở đâu?"
+      },
+      {
+       "spk": 0,
+       "zh": "在咖啡店里，我坐在窗户旁边。",
+       "py": "Zài kā fēi diàn lǐ, wǒ zuò zài chuāng hù páng biān.",
+       "vi": "Trong quán cà phê, tôi ngồi cạnh cửa sổ."
+      },
+      {
+       "spk": 1,
+       "zh": "我给咖啡店打个电话问一下。",
+       "py": "Wǒ gěi kā fēi diàn dǎ gè diàn huà wèn yí xià.",
+       "vi": "Để tôi gọi điện cho quán cà phê hỏi thử."
+      },
+      {
+       "spk": 0,
+       "zh": "太谢谢了，里面真的很重要。",
+       "py": "Tài xiè xie le, lǐ miàn zhēn de hěn zhòng yào.",
+       "vi": "Cảm ơn nhiều lắm, bên trong thật sự rất quan trọng."
+      }
+     ]
+    },
+    {
+     "id": "31-2",
+     "title_zh": "找到了",
+     "title_vi": "Tìm thấy rồi",
+     "scene_vi": "Được thông báo đã tìm thấy túi.",
+     "speakers": [
+      {
+       "name": "小美",
+       "gender": "f"
+      },
+      {
+       "name": "工作人员",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "喂，是小美吗？你的包找到了。",
+       "py": "Wèi, shì xiǎo měi ma? Nǐ de bāo zhǎo dào le.",
+       "vi": "A lô, có phải Tiểu Mỹ không? Túi của chị tìm thấy rồi."
+      },
+      {
+       "spk": 1,
+       "zh": "真的吗？太好了！在哪儿找到的？",
+       "py": "Zhēn de ma? Tài hǎo le! Zài nǎr zhǎo dào de?",
+       "vi": "Thật không? Tốt quá! Tìm thấy ở đâu vậy?"
+      },
+      {
+       "spk": 0,
+       "zh": "在咖啡店的椅子下面，服务员送到我们这儿了。",
+       "py": "Zài kā fēi diàn de yǐ zi xià miàn, fú wù yuán sòng dào wǒ men zhèr le.",
+       "vi": "Ở dưới ghế trong quán cà phê, nhân viên đã đưa đến chỗ chúng tôi."
+      },
+      {
+       "spk": 1,
+       "zh": "里面的东西都在吗？",
+       "py": "Lǐ miàn de dōng xi dōu zài ma?",
+       "vi": "Đồ bên trong còn đủ không?"
+      },
+      {
+       "spk": 0,
+       "zh": "都在，手机、钱包，一样都没少。",
+       "py": "Dōu zài, shǒu jī, qián bāo, yí yàng dōu méi shǎo.",
+       "vi": "Còn đủ, điện thoại, ví, không thiếu thứ nào."
+      },
+      {
+       "spk": 1,
+       "zh": "我现在就去拿。要带什么吗？",
+       "py": "Wǒ xiàn zài jiù qù ná. Yào dài shén me ma?",
+       "vi": "Bây giờ tôi đến lấy ngay. Cần mang theo gì không?"
+      },
+      {
+       "spk": 0,
+       "zh": "带上你的身份证就可以。",
+       "py": "Dài shàng nǐ de shēn fèn zhèng jiù kě yǐ.",
+       "vi": "Mang theo chứng minh thư của chị là được."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 32,
+   "zh": "报名考试",
+   "vi": "Đăng ký thi HSK",
+   "icon": "📋",
+   "dialogues": [
+    {
+     "id": "32-1",
+     "title_zh": "我想参加HSK考试",
+     "title_vi": "Tôi muốn thi HSK",
+     "scene_vi": "Hỏi giáo viên về việc đăng ký thi HSK.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "王老师",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "王老师，我想参加HSK二级考试，怎么报名？",
+       "py": "Wáng lǎo shī, wǒ xiǎng cān jiā HSK èr jí kǎo shì, zěn me bào míng?",
+       "vi": "Cô Vương, em muốn thi HSK cấp 2, đăng ký thế nào ạ?"
+      },
+      {
+       "spk": 1,
+       "zh": "你可以在网上报名，也可以来办公室。",
+       "py": "Nǐ kě yǐ zài wǎng shàng bào míng, yě kě yǐ lái bàn gōng shì.",
+       "vi": "Em có thể đăng ký trên mạng, cũng có thể đến văn phòng."
+      },
+      {
+       "spk": 0,
+       "zh": "考试什么时候？",
+       "py": "Kǎo shì shén me shí hòu?",
+       "vi": "Khi nào thi?"
+      },
+      {
+       "spk": 1,
+       "zh": "下个月十五号，上午九点。",
+       "py": "Xià gè yuè shí wǔ hào, shàng wǔ jiǔ diǎn.",
+       "vi": "Ngày 15 tháng sau, chín giờ sáng."
+      },
+      {
+       "spk": 0,
+       "zh": "要交多少钱？",
+       "py": "Yào jiāo duō shǎo qián?",
+       "vi": "Phải nộp bao nhiêu tiền?"
+      },
+      {
+       "spk": 1,
+       "zh": "三百块，还要一张照片。",
+       "py": "Sān bǎi kuài, hái yào yì zhāng zhào piàn.",
+       "vi": "Ba trăm tệ, còn cần một tấm ảnh."
+      },
+      {
+       "spk": 0,
+       "zh": "好，我明天就去办。",
+       "py": "Hǎo, wǒ míng tiān jiù qù bàn.",
+       "vi": "Vâng, ngày mai em sẽ đi làm thủ tục."
+      }
+     ]
+    },
+    {
+     "id": "32-2",
+     "title_zh": "考试前紧张吗",
+     "title_vi": "Trước khi thi có căng thẳng không",
+     "scene_vi": "Bạn bè động viên nhau trước kỳ thi.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "小明",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小明，明天就要考HSK了，你紧张吗？",
+       "py": "Xiǎo míng, míng tiān jiù yào kǎo HSK le, nǐ jǐn zhāng ma?",
+       "vi": "Tiểu Minh, mai là thi HSK rồi, bạn có căng thẳng không?"
+      },
+      {
+       "spk": 1,
+       "zh": "有一点儿。我怕听力听不懂。",
+       "py": "Yǒu yì diǎnr. Wǒ pà tīng lì tīng bù dǒng.",
+       "vi": "Một chút. Mình sợ phần nghe không hiểu."
+      },
+      {
+       "spk": 0,
+       "zh": "你每天都听了很多，应该没问题。",
+       "py": "Nǐ měi tiān dōu tīng le hěn duō, yīng gāi méi wèn tí.",
+       "vi": "Ngày nào bạn cũng nghe rất nhiều, chắc là không vấn đề gì."
+      },
+      {
+       "spk": 1,
+       "zh": "希望是这样。你准备得怎么样？",
+       "py": "Xī wàng shì zhè yàng. Nǐ zhǔn bèi de zěn me yàng?",
+       "vi": "Hy vọng là vậy. Bạn chuẩn bị thế nào rồi?"
+      },
+      {
+       "spk": 0,
+       "zh": "我复习了三遍，写作有点儿担心。",
+       "py": "Wǒ fù xí le sān biàn, xiě zuò yǒu diǎnr dān xīn.",
+       "vi": "Mình ôn ba lượt rồi, phần viết hơi lo."
+      },
+      {
+       "spk": 1,
+       "zh": "别担心，晚上早点儿睡，明天带好东西。",
+       "py": "Bié dān xīn, wǎn shàng zǎo diǎnr shuì, míng tiān dài hǎo dōng xi.",
+       "vi": "Đừng lo, tối nay ngủ sớm, mai mang đủ đồ."
+      },
+      {
+       "spk": 0,
+       "zh": "对，祝我们都考得好！",
+       "py": "Duì, zhù wǒ men dōu kǎo de hǎo!",
+       "vi": "Đúng, chúc chúng ta đều thi tốt!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 33,
+   "zh": "室友",
+   "vi": "Bạn cùng phòng",
+   "icon": "🛏️",
+   "dialogues": [
+    {
+     "id": "33-1",
+     "title_zh": "我的新室友",
+     "title_vi": "Bạn cùng phòng mới",
+     "scene_vi": "Gặp bạn cùng phòng ký túc xá.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小明",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "你好，我叫大卫，是你的新室友。",
+       "py": "Nǐ hǎo, wǒ jiào dà wèi, shì nǐ de xīn shì yǒu.",
+       "vi": "Chào bạn, mình tên David, là bạn cùng phòng mới của bạn."
+      },
+      {
+       "spk": 1,
+       "zh": "你好！我叫小明，欢迎你。你住上面还是下面？",
+       "py": "Nǐ hǎo! Wǒ jiào xiǎo míng, huān yíng nǐ. Nǐ zhù shàng miàn hái shì xià miàn?",
+       "vi": "Chào bạn! Mình tên Tiểu Minh, chào mừng bạn. Bạn ở giường trên hay dưới?"
+      },
+      {
+       "spk": 0,
+       "zh": "我住上面吧，下面你已经放了很多东西。",
+       "py": "Wǒ zhù shàng miàn ba, xià miàn nǐ yǐ jīng fàng le hěn duō dōng xi.",
+       "vi": "Mình ở trên nhé, giường dưới bạn đã để nhiều đồ rồi."
+      },
+      {
+       "spk": 1,
+       "zh": "对不起，我马上拿走一些。",
+       "py": "Duì bù qǐ, wǒ mǎ shàng ná zǒu yì xiē.",
+       "vi": "Xin lỗi, mình dọn bớt đi ngay."
+      },
+      {
+       "spk": 0,
+       "zh": "没关系。晚上几点关灯？",
+       "py": "Méi guān xì. Wǎn shàng jǐ diǎn guān dēng?",
+       "vi": "Không sao. Buổi tối mấy giờ tắt đèn?"
+      },
+      {
+       "spk": 1,
+       "zh": "我一般十一点睡，你呢？",
+       "py": "Wǒ yì bān shí yī diǎn shuì, nǐ ne?",
+       "vi": "Mình thường mười một giờ ngủ, còn bạn?"
+      },
+      {
+       "spk": 0,
+       "zh": "我也差不多，我们的习惯很像。",
+       "py": "Wǒ yě chà bù duō, wǒ men de xí guàn hěn xiàng.",
+       "vi": "Mình cũng gần như vậy, thói quen của chúng ta rất giống nhau."
+      }
+     ]
+    },
+    {
+     "id": "33-2",
+     "title_zh": "请安静一点儿",
+     "title_vi": "Xin yên tĩnh một chút",
+     "scene_vi": "Nhắc bạn cùng phòng giữ yên tĩnh.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "大卫",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "大卫，对不起，你能小声一点儿吗？我明天要考试。",
+       "py": "Dà wèi, duì bù qǐ, nǐ néng xiǎo shēng yì diǎnr ma? Wǒ míng tiān yào kǎo shì.",
+       "vi": "David, xin lỗi, bạn nói nhỏ một chút được không? Ngày mai mình thi."
+      },
+      {
+       "spk": 1,
+       "zh": "啊，对不起！我不知道，我马上关音乐。",
+       "py": "A, duì bù qǐ! Wǒ bù zhī dao, wǒ mǎ shàng guān yīn yuè.",
+       "vi": "À, xin lỗi! Mình không biết, mình tắt nhạc ngay."
+      },
+      {
+       "spk": 0,
+       "zh": "谢谢你。你在看电影吗？",
+       "py": "Xiè xie nǐ. Nǐ zài kàn diàn yǐng ma?",
+       "vi": "Cảm ơn bạn. Bạn đang xem phim à?"
+      },
+      {
+       "spk": 1,
+       "zh": "是的，我戴上耳机看吧。",
+       "py": "Shì de, wǒ dài shàng ěr jī kàn ba.",
+       "vi": "Đúng vậy, mình đeo tai nghe để xem nhé."
+      },
+      {
+       "spk": 0,
+       "zh": "好的，这样就不会影响我了。",
+       "py": "Hǎo de, zhè yàng jiù bú huì yǐng xiǎng wǒ le.",
+       "vi": "Được, như vậy sẽ không ảnh hưởng mình nữa."
+      },
+      {
+       "spk": 1,
+       "zh": "你考完试，我们一起去吃好吃的吧。",
+       "py": "Nǐ kǎo wán shì, wǒ men yì qǐ qù chī hǎo chī de ba.",
+       "vi": "Thi xong, chúng ta cùng đi ăn món ngon nhé."
+      },
+      {
+       "spk": 0,
+       "zh": "好主意，一言为定！",
+       "py": "Hǎo zhǔ yì, yì yán wéi dìng!",
+       "vi": "Ý hay, nói là làm nhé!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 34,
+   "zh": "做客",
+   "vi": "Đến nhà người khác",
+   "icon": "🏡",
+   "dialogues": [
+    {
+     "id": "34-1",
+     "title_zh": "欢迎你来我家",
+     "title_vi": "Chào mừng đến nhà mình",
+     "scene_vi": "Được mời đến nhà bạn ăn cơm.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "大卫",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "大卫，欢迎你来我家！请进。",
+       "py": "Dà wèi, huān yíng nǐ lái wǒ jiā! Qǐng jìn.",
+       "vi": "David, chào mừng bạn đến nhà mình! Mời vào."
+      },
+      {
+       "spk": 1,
+       "zh": "谢谢你的邀请。这是我给你和你家人带来的水果。",
+       "py": "Xiè xie nǐ de yāo qǐng. Zhè shì wǒ gěi nǐ hé nǐ jiā rén dài lái de shuǐ guǒ.",
+       "vi": "Cảm ơn lời mời của bạn. Đây là trái cây mình mang cho bạn và gia đình."
+      },
+      {
+       "spk": 0,
+       "zh": "你太客气了，来就好了，还带东西。",
+       "py": "Nǐ tài kè qi le, lái jiù hǎo le, hái dài dōng xi.",
+       "vi": "Bạn khách sáo quá, đến là được rồi, còn mang quà."
+      },
+      {
+       "spk": 1,
+       "zh": "应该的。你家真漂亮，也很干净。",
+       "py": "Yīng gāi de. Nǐ jiā zhēn piào liang, yě hěn gān jìng.",
+       "vi": "Nên thế mà. Nhà bạn đẹp thật, cũng rất sạch sẽ."
+      },
+      {
+       "spk": 0,
+       "zh": "来，坐这儿。你喝茶还是喝果汁？",
+       "py": "Lái, zuò zhèr. Nǐ hē chá hái shì hē guǒ zhī?",
+       "vi": "Nào, ngồi đây. Bạn uống trà hay nước ép?"
+      },
+      {
+       "spk": 1,
+       "zh": "我喝茶吧，谢谢。",
+       "py": "Wǒ hē chá ba, xiè xie.",
+       "vi": "Mình uống trà nhé, cảm ơn."
+      },
+      {
+       "spk": 0,
+       "zh": "饭马上就好，你先看一会儿电视。",
+       "py": "Fàn mǎ shàng jiù hǎo, nǐ xiān kàn yí huìr diàn shì.",
+       "vi": "Cơm sắp xong rồi, bạn xem tivi một lát nhé."
+      }
+     ]
+    },
+    {
+     "id": "34-2",
+     "title_zh": "再吃一点儿吧",
+     "title_vi": "Ăn thêm chút nữa nhé",
+     "scene_vi": "Chủ nhà mời khách ăn thêm.",
+     "speakers": [
+      {
+       "name": "小红的妈妈",
+       "gender": "f"
+      },
+      {
+       "name": "大卫",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "大卫，多吃点儿，别客气。",
+       "py": "Dà wèi, duō chī diǎnr, bié kè qi.",
+       "vi": "David, ăn nhiều một chút, đừng khách sáo."
+      },
+      {
+       "spk": 1,
+       "zh": "谢谢阿姨，我已经吃了很多了。",
+       "py": "Xiè xie ā yí, wǒ yǐ jīng chī le hěn duō le.",
+       "vi": "Cảm ơn cô, cháu đã ăn rất nhiều rồi."
+      },
+      {
+       "spk": 0,
+       "zh": "再来一碗汤吧，今天的汤是我做的。",
+       "py": "Zài lái yì wǎn tāng ba, jīn tiān de tāng shì wǒ zuò de.",
+       "vi": "Ăn thêm một bát canh nhé, canh hôm nay là cô nấu."
+      },
+      {
+       "spk": 1,
+       "zh": "好，真好喝！您做的菜比饭馆的还好吃。",
+       "py": "Hǎo, zhēn hǎo hē! Nín zuò de cài bǐ fàn guǎn de hái hǎo chī.",
+       "vi": "Vâng, ngon quá! Món cô nấu còn ngon hơn cả nhà hàng."
+      },
+      {
+       "spk": 0,
+       "zh": "你喜欢就好，下次再来。",
+       "py": "Nǐ xǐ huan jiù hǎo, xià cì zài lái.",
+       "vi": "Cháu thích là tốt rồi, lần sau lại đến."
+      },
+      {
+       "spk": 1,
+       "zh": "一定！今天太谢谢您了。",
+       "py": "Yí dìng! Jīn tiān tài xiè xie nín le.",
+       "vi": "Nhất định ạ! Hôm nay cảm ơn cô nhiều lắm."
+      },
+      {
+       "spk": 0,
+       "zh": "路上小心，到家给小红打个电话。",
+       "py": "Lù shàng xiǎo xīn, dào jiā gěi xiǎo hóng dǎ gè diàn huà.",
+       "vi": "Đi đường cẩn thận, về đến nhà nhớ gọi cho Tiểu Hồng nhé."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 35,
+   "zh": "电影评论",
+   "vi": "Bàn về phim",
+   "icon": "🎞️",
+   "dialogues": [
+    {
+     "id": "35-1",
+     "title_zh": "你看过这个电影吗",
+     "title_vi": "Bạn xem phim này chưa",
+     "scene_vi": "Hai bạn thảo luận về một bộ phim.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，你看过那个新电影吗？",
+       "py": "Xiǎo měi, nǐ kàn guò nà ge xīn diàn yǐng ma?",
+       "vi": "Tiểu Mỹ, bạn xem bộ phim mới đó chưa?"
+      },
+      {
+       "spk": 1,
+       "zh": "看过了，上个周末看的。你呢？",
+       "py": "Kàn guò le, shàng gè zhōu mò kàn de. Nǐ ne?",
+       "vi": "Xem rồi, cuối tuần trước xem. Còn bạn?"
+      },
+      {
+       "spk": 0,
+       "zh": "我还没看。听说很好，是真的吗？",
+       "py": "Wǒ hái méi kàn. Tīng shuō hěn hǎo, shì zhēn de ma?",
+       "vi": "Mình chưa xem. Nghe nói rất hay, có thật không?"
+      },
+      {
+       "spk": 1,
+       "zh": "故事很感人，我看的时候哭了。",
+       "py": "Gù shì hěn gǎn rén, wǒ kàn de shí hou kū le.",
+       "vi": "Câu chuyện rất cảm động, lúc xem mình đã khóc."
+      },
+      {
+       "spk": 0,
+       "zh": "是什么样的故事？",
+       "py": "Shì shén me yàng de gù shì?",
+       "vi": "Là câu chuyện như thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "是一个爸爸和女儿的故事，我不能说太多。",
+       "py": "Shì yí gè bà ba hé nǚ ér de gù shì, wǒ bù néng shuō tài duō.",
+       "vi": "Là chuyện về một người bố và con gái, mình không thể nói nhiều."
+      },
+      {
+       "spk": 0,
+       "zh": "好，那我自己去看，你别告诉我。",
+       "py": "Hǎo, nà wǒ zì jǐ qù kàn, nǐ bié gào sù wǒ.",
+       "vi": "Được, vậy mình tự đi xem, bạn đừng nói cho mình biết."
+      }
+     ]
+    },
+    {
+     "id": "35-2",
+     "title_zh": "比电影更好看",
+     "title_vi": "Hay hơn cả phim",
+     "scene_vi": "Bàn về sách và phim chuyển thể.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，这个电影是从一本书改成的，你看过那本书吗？",
+       "py": "Xiǎo hóng, zhè ge diàn yǐng shì cóng yì běn shū gǎi chéng de, nǐ kàn guò nà běn shū ma?",
+       "vi": "Tiểu Hồng, bộ phim này chuyển thể từ một quyển sách, bạn đọc quyển sách đó chưa?"
+      },
+      {
+       "spk": 1,
+       "zh": "看过，我觉得书比电影更好看。",
+       "py": "Kàn guò, wǒ jué de shū bǐ diàn yǐng gèng hǎo kàn.",
+       "vi": "Đọc rồi, mình thấy sách hay hơn phim."
+      },
+      {
+       "spk": 0,
+       "zh": "为什么？",
+       "py": "Wèi shén me?",
+       "vi": "Tại sao?"
+      },
+      {
+       "spk": 1,
+       "zh": "书里有很多电影里没有的故事。",
+       "py": "Shū lǐ yǒu hěn duō diàn yǐng lǐ méi yǒu de gù shì.",
+       "vi": "Trong sách có nhiều câu chuyện mà phim không có."
+      },
+      {
+       "spk": 0,
+       "zh": "可是电影的音乐和照片比书漂亮。",
+       "py": "Kě shì diàn yǐng de yīn yuè hé zhào piàn bǐ shū piào liang.",
+       "vi": "Nhưng nhạc và hình ảnh của phim đẹp hơn sách."
+      },
+      {
+       "spk": 1,
+       "zh": "你说得也对，所以我两个都喜欢。",
+       "py": "Nǐ shuō de yě duì, suǒ yǐ wǒ liǎng gè dōu xǐ huan.",
+       "vi": "Bạn nói cũng đúng, nên mình thích cả hai."
+      },
+      {
+       "spk": 0,
+       "zh": "有汉语的书吗？我也想读读。",
+       "py": "Yǒu hàn yǔ de shū ma? Wǒ yě xiǎng dú dú.",
+       "vi": "Có sách tiếng Trung không? Mình cũng muốn đọc thử."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 36,
+   "zh": "网上购物",
+   "vi": "Mua sắm trực tuyến",
+   "icon": "🛒",
+   "dialogues": [
+    {
+     "id": "36-1",
+     "title_zh": "买到不合适的",
+     "title_vi": "Mua phải đồ không hợp",
+     "scene_vi": "Đổi trả món hàng mua trên mạng.",
+     "speakers": [
+      {
+       "name": "小美",
+       "gender": "f"
+      },
+      {
+       "name": "客服",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "你好，我昨天在你们店里买了一件衣服，大小不合适。",
+       "py": "Nǐ hǎo, wǒ zuó tiān zài nǐ men diàn lǐ mǎi le yí jiàn yī fu, dà xiǎo bù hé shì.",
+       "vi": "Xin chào, hôm qua tôi mua một cái áo ở cửa hàng của anh, kích cỡ không vừa."
+      },
+      {
+       "spk": 1,
+       "zh": "很抱歉。你可以换一件大一点儿的。",
+       "py": "Hěn bào qiàn. Nǐ kě yǐ huàn yí jiàn dà yì diǎnr de.",
+       "vi": "Rất xin lỗi. Chị có thể đổi một cái lớn hơn."
+      },
+      {
+       "spk": 0,
+       "zh": "可以，我要怎么做？",
+       "py": "Kě yǐ, wǒ yào zěn me zuò?",
+       "vi": "Được, tôi cần làm thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "你先把衣服寄回来，我们收到以后再给你寄新的。",
+       "py": "Nǐ xiān bǎ yī fu jì huí lái, wǒ men shōu dào yǐ hòu zài gěi nǐ jì xīn de.",
+       "vi": "Chị gửi áo về trước, sau khi chúng tôi nhận được sẽ gửi cái mới cho chị."
+      },
+      {
+       "spk": 0,
+       "zh": "运费谁来出？",
+       "py": "Yùn fèi shuí lái chū?",
+       "vi": "Ai trả phí vận chuyển?"
+      },
+      {
+       "spk": 1,
+       "zh": "这次我们出，你不用付钱。",
+       "py": "Zhè cì wǒ men chū, nǐ bú yòng fù qián.",
+       "vi": "Lần này chúng tôi trả, chị không cần trả tiền."
+      },
+      {
+       "spk": 0,
+       "zh": "好的，谢谢你。",
+       "py": "Hǎo de, xiè xie nǐ.",
+       "vi": "Vâng, cảm ơn anh."
+      }
+     ]
+    },
+    {
+     "id": "36-2",
+     "title_zh": "打折",
+     "title_vi": "Giảm giá",
+     "scene_vi": "Hai bạn tranh thủ ngày giảm giá lớn.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，今天网上买东西打五折，你知道吗？",
+       "py": "Xiǎo měi, jīn tiān wǎng shàng mǎi dōng xi dǎ wǔ zhé, nǐ zhī dao ma?",
+       "vi": "Tiểu Mỹ, hôm nay mua đồ trên mạng giảm một nửa giá, bạn biết không?"
+      },
+      {
+       "spk": 1,
+       "zh": "真的吗？我正想买一双鞋呢。",
+       "py": "Zhēn de ma? Wǒ zhèng xiǎng mǎi yì shuāng xié ne.",
+       "vi": "Thật à? Mình đang muốn mua một đôi giày đây."
+      },
+      {
+       "spk": 0,
+       "zh": "你看，这双白色的很漂亮，只要一百块。",
+       "py": "Nǐ kàn, zhè shuāng bái sè de hěn piào liang, zhǐ yào yì bǎi kuài.",
+       "vi": "Bạn xem, đôi màu trắng này rất đẹp, chỉ cần một trăm tệ."
+      },
+      {
+       "spk": 1,
+       "zh": "平时要两百，今天真便宜。",
+       "py": "Píng shí yào liǎng bǎi, jīn tiān zhēn pián yi.",
+       "vi": "Bình thường hai trăm, hôm nay rẻ thật."
+      },
+      {
+       "spk": 0,
+       "zh": "不过别买太多，不然会花很多钱。",
+       "py": "Bú guò bié mǎi tài duō, bù rán huì huā hěn duō qián.",
+       "vi": "Nhưng đừng mua quá nhiều, không thì sẽ tốn rất nhiều tiền."
+      },
+      {
+       "spk": 1,
+       "zh": "你说得对，我只买需要的。",
+       "py": "Nǐ shuō de duì, wǒ zhǐ mǎi xū yào de.",
+       "vi": "Bạn nói đúng, mình chỉ mua đồ cần thiết."
+      },
+      {
+       "spk": 0,
+       "zh": "对，买东西要想清楚。",
+       "py": "Duì, mǎi dōng xi yào xiǎng qīng chǔ.",
+       "vi": "Đúng, mua đồ phải suy nghĩ kỹ."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 37,
+   "zh": "宠物",
+   "vi": "Thú cưng",
+   "icon": "🐱",
+   "dialogues": [
+    {
+     "id": "37-1",
+     "title_zh": "养一只小猫",
+     "title_vi": "Nuôi một chú mèo",
+     "scene_vi": "Hai người bàn chuyện nuôi thú cưng.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "小明",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小明，我想养一只小猫，你觉得怎么样？",
+       "py": "Xiǎo míng, wǒ xiǎng yǎng yì zhī xiǎo māo, nǐ jué de zěn me yàng?",
+       "vi": "Tiểu Minh, mình muốn nuôi một chú mèo, bạn thấy thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "养猫很有意思，但是需要花很多时间。",
+       "py": "Yǎng māo hěn yǒu yì si, dàn shì xū yào huā hěn duō shí jiān.",
+       "vi": "Nuôi mèo rất thú vị, nhưng cần tốn nhiều thời gian."
+      },
+      {
+       "spk": 0,
+       "zh": "我知道，每天要给它吃的，还要打扫。",
+       "py": "Wǒ zhī dao, měi tiān yào gěi tā chī de, hái yào dǎ sǎo.",
+       "vi": "Mình biết, mỗi ngày phải cho nó ăn, còn phải dọn dẹp nữa."
+      },
+      {
+       "spk": 1,
+       "zh": "你的房东同意吗？",
+       "py": "Nǐ de fáng dōng tóng yì ma?",
+       "vi": "Chủ nhà của bạn có đồng ý không?"
+      },
+      {
+       "spk": 0,
+       "zh": "我问过了，他说可以。",
+       "py": "Wǒ wèn guò le, tā shuō kě yǐ.",
+       "vi": "Mình hỏi rồi, ông ấy nói được."
+      },
+      {
+       "spk": 1,
+       "zh": "那你可以去宠物店看看，也可以去领养。",
+       "py": "Nà nǐ kě yǐ qù chǒng wù diàn kàn kàn, yě kě yǐ qù lǐng yǎng.",
+       "vi": "Vậy bạn có thể đến cửa hàng thú cưng xem, cũng có thể đi nhận nuôi."
+      },
+      {
+       "spk": 0,
+       "zh": "好主意，领养更有意义。",
+       "py": "Hǎo zhǔ yì, lǐng yǎng gèng yǒu yì yì.",
+       "vi": "Ý hay, nhận nuôi có ý nghĩa hơn."
+      }
+     ]
+    },
+    {
+     "id": "37-2",
+     "title_zh": "带小狗去医院",
+     "title_vi": "Dẫn chó đi bệnh viện",
+     "scene_vi": "Đưa thú cưng đi khám bác sĩ thú y.",
+     "speakers": [
+      {
+       "name": "小美",
+       "gender": "f"
+      },
+      {
+       "name": "医生",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "医生，我的小狗这两天不吃东西，也不爱玩儿。",
+       "py": "Yī shēng, wǒ de xiǎo gǒu zhè liǎng tiān bù chī dōng xi, yě bú ài wánr.",
+       "vi": "Bác sĩ, chú chó của tôi hai hôm nay không ăn, cũng không thích chơi."
+      },
+      {
+       "spk": 1,
+       "zh": "它几岁了？",
+       "py": "Tā jǐ suì le?",
+       "vi": "Nó mấy tuổi rồi?"
+      },
+      {
+       "spk": 0,
+       "zh": "三岁。昨天还吐了两次。",
+       "py": "Sān suì. Zuó tiān hái tǔ le liǎng cì.",
+       "vi": "Ba tuổi. Hôm qua còn nôn hai lần."
+      },
+      {
+       "spk": 1,
+       "zh": "我检查一下。可能吃了不好的东西。",
+       "py": "Wǒ jiǎn chá yí xià. Kě néng chī le bù hǎo de dōng xi.",
+       "vi": "Để tôi kiểm tra. Có thể nó đã ăn phải thứ không tốt."
+      },
+      {
+       "spk": 0,
+       "zh": "严重吗？",
+       "py": "Yán zhòng ma?",
+       "vi": "Có nghiêm trọng không?"
+      },
+      {
+       "spk": 1,
+       "zh": "不太严重，给它吃点儿药，明天会好一些。",
+       "py": "Bú tài yán zhòng, gěi tā chī diǎnr yào, míng tiān huì hǎo yì xiē.",
+       "vi": "Không nghiêm trọng lắm, cho nó uống chút thuốc, ngày mai sẽ đỡ hơn."
+      },
+      {
+       "spk": 0,
+       "zh": "谢谢医生，我回去会照顾好它。",
+       "py": "Xiè xie yī shēng, wǒ huí qù huì zhào gù hǎo tā.",
+       "vi": "Cảm ơn bác sĩ, về nhà tôi sẽ chăm sóc nó thật tốt."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 38,
+   "zh": "春节",
+   "vi": "Tết Nguyên đán",
+   "icon": "🧨",
+   "dialogues": [
+    {
+     "id": "38-1",
+     "title_zh": "过年回家",
+     "title_vi": "Về nhà ăn Tết",
+     "scene_vi": "Hai bạn nói về kế hoạch ăn Tết.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "春节快到了，你打算怎么过？",
+       "py": "Chūn jié kuài dào le, nǐ dǎ suàn zěn me guò?",
+       "vi": "Tết sắp đến rồi, bạn định ăn Tết thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "我回老家和家人一起过年。你呢？",
+       "py": "Wǒ huí lǎo jiā hé jiā rén yì qǐ guò nián. Nǐ ne?",
+       "vi": "Mình về quê ăn Tết cùng gia đình. Còn bạn?"
+      },
+      {
+       "spk": 0,
+       "zh": "我今年不回去，在北京过。",
+       "py": "Wǒ jīn nián bù huí qù, zài běi jīng guò.",
+       "vi": "Năm nay mình không về, ăn Tết ở Bắc Kinh."
+      },
+      {
+       "spk": 1,
+       "zh": "那你会想家吧？",
+       "py": "Nà nǐ huì xiǎng jiā ba?",
+       "vi": "Vậy bạn sẽ nhớ nhà nhỉ?"
+      },
+      {
+       "spk": 0,
+       "zh": "会，不过我可以和家人视频。",
+       "py": "Huì, bú guò wǒ kě yǐ hé jiā rén shì pín.",
+       "vi": "Có, nhưng mình có thể gọi video với gia đình."
+      },
+      {
+       "spk": 1,
+       "zh": "要不要来我家过年？我妈妈做的饺子很好吃。",
+       "py": "Yào bú yào lái wǒ jiā guò nián? Wǒ mā ma zuò de jiǎo zi hěn hǎo chī.",
+       "vi": "Bạn có muốn đến nhà mình ăn Tết không? Sủi cảo mẹ mình làm rất ngon."
+      },
+      {
+       "spk": 0,
+       "zh": "真的可以吗？太谢谢你了！",
+       "py": "Zhēn de kě yǐ ma? Tài xiè xie nǐ le!",
+       "vi": "Thật sự được không? Cảm ơn bạn nhiều lắm!"
+      }
+     ]
+    },
+    {
+     "id": "38-2",
+     "title_zh": "贴春联",
+     "title_vi": "Dán câu đối Tết",
+     "scene_vi": "Cả nhà trang trí nhà đón Tết.",
+     "speakers": [
+      {
+       "name": "爸爸",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，来帮我贴春联，这个是红色的。",
+       "py": "Xiǎo hóng, lái bāng wǒ tiē chūn lián, zhè ge shì hóng sè de.",
+       "vi": "Tiểu Hồng, lại giúp bố dán câu đối, cái này màu đỏ."
+      },
+      {
+       "spk": 1,
+       "zh": "爸爸，这些字是什么意思？",
+       "py": "Bà ba, zhè xiē zì shì shén me yì si?",
+       "vi": "Bố ơi, những chữ này có nghĩa là gì?"
+      },
+      {
+       "spk": 0,
+       "zh": "是祝福的话，希望新的一年越来越好。",
+       "py": "Shì zhù fú de huà, xī wàng xīn de yì nián yuè lái yuè hǎo.",
+       "vi": "Là lời chúc, hy vọng năm mới ngày càng tốt đẹp."
+      },
+      {
+       "spk": 1,
+       "zh": "为什么要贴在门的两边？",
+       "py": "Wèi shén me yào tiē zài mén de liǎng biān?",
+       "vi": "Tại sao phải dán ở hai bên cửa?"
+      },
+      {
+       "spk": 0,
+       "zh": "这是中国人的习惯，红色表示高兴和好运。",
+       "py": "Zhè shì zhōng guó rén de xí guàn, hóng sè biǎo shì gāo xìng hé hǎo yùn.",
+       "vi": "Đây là tập quán của người Trung Quốc, màu đỏ tượng trưng cho niềm vui và may mắn."
+      },
+      {
+       "spk": 1,
+       "zh": "原来是这样，我也想学写这些字。",
+       "py": "Yuán lái shì zhè yàng, wǒ yě xiǎng xué xiě zhè xiē zì.",
+       "vi": "Thì ra là vậy, con cũng muốn học viết những chữ này."
+      },
+      {
+       "spk": 0,
+       "zh": "好，明年我们一起写。",
+       "py": "Hǎo, míng nián wǒ men yì qǐ xiě.",
+       "vi": "Được, năm sau chúng ta cùng viết."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 39,
+   "zh": "留言",
+   "vi": "Gọi điện & nhắn lại",
+   "icon": "☎️",
+   "dialogues": [
+    {
+     "id": "39-1",
+     "title_zh": "他不在家",
+     "title_vi": "Anh ấy không có nhà",
+     "scene_vi": "Gọi điện tìm người nhưng không gặp.",
+     "speakers": [
+      {
+       "name": "小红",
+       "gender": "f"
+      },
+      {
+       "name": "小明的妈妈",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "喂，阿姨，您好！我是小红，请问小明在家吗？",
+       "py": "Wèi, ā yí, nín hǎo! Wǒ shì xiǎo hóng, qǐng wèn xiǎo míng zài jiā ma?",
+       "vi": "A lô, cô ơi, cháu chào cô! Cháu là Tiểu Hồng, cho hỏi Tiểu Minh có nhà không ạ?"
+      },
+      {
+       "spk": 1,
+       "zh": "小红啊，他不在家，刚才出去了。",
+       "py": "Xiǎo hóng a, tā bú zài jiā, gāng cái chū qù le.",
+       "vi": "Tiểu Hồng à, nó không có nhà, vừa mới ra ngoài."
+      },
+      {
+       "spk": 0,
+       "zh": "您知道他什么时候回来吗？",
+       "py": "Nín zhī dao tā shén me shí hòu huí lái ma?",
+       "vi": "Cô có biết khi nào nó về không ạ?"
+      },
+      {
+       "spk": 1,
+       "zh": "可能要晚上七点以后，有什么事吗？",
+       "py": "Kě néng yào wǎn shàng qī diǎn yǐ hòu, yǒu shén me shì ma?",
+       "vi": "Có thể phải sau bảy giờ tối, có việc gì không con?"
+      },
+      {
+       "spk": 0,
+       "zh": "我想让他帮我借一本书，明天上课要用。",
+       "py": "Wǒ xiǎng ràng tā bāng wǒ jiè yì běn shū, míng tiān shàng kè yào yòng.",
+       "vi": "Cháu muốn nhờ anh ấy mượn giúp một quyển sách, ngày mai lên lớp cần dùng."
+      },
+      {
+       "spk": 1,
+       "zh": "好，我告诉他，让他给你回电话。",
+       "py": "Hǎo, wǒ gào sù tā, ràng tā gěi nǐ huí diàn huà.",
+       "vi": "Được, cô sẽ nói với nó, bảo nó gọi lại cho con."
+      },
+      {
+       "spk": 0,
+       "zh": "谢谢阿姨，打扰您了。",
+       "py": "Xiè xie ā yí, dǎ rǎo nín le.",
+       "vi": "Cháu cảm ơn cô, làm phiền cô rồi."
+      }
+     ]
+    },
+    {
+     "id": "39-2",
+     "title_zh": "请帮我告诉他",
+     "title_vi": "Nhờ bạn nhắn với anh ấy",
+     "scene_vi": "Nhờ đồng nghiệp chuyển lời.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，经理在吗？我找他有点儿事。",
+       "py": "Xiǎo měi, jīng lǐ zài ma? Wǒ zhǎo tā yǒu diǎnr shì.",
+       "vi": "Tiểu Mỹ, giám đốc có ở đó không? Mình có chút việc cần gặp ông ấy."
+      },
+      {
+       "spk": 1,
+       "zh": "他正在开会，一个小时以后才结束。",
+       "py": "Tā zhèng zài kāi huì, yí gè xiǎo shí yǐ hòu cái jié shù.",
+       "vi": "Ông ấy đang họp, một tiếng nữa mới kết thúc."
+      },
+      {
+       "spk": 0,
+       "zh": "那我下午再来。你能帮我告诉他一声吗？",
+       "py": "Nà wǒ xià wǔ zài lái. Nǐ néng bāng wǒ gào sù tā yì shēng ma?",
+       "vi": "Vậy chiều mình quay lại. Bạn nhắn giúp mình với ông ấy một tiếng được không?"
+      },
+      {
+       "spk": 1,
+       "zh": "当然可以，什么事？",
+       "py": "Dāng rán kě yǐ, shén me shì?",
+       "vi": "Đương nhiên được, việc gì vậy?"
+      },
+      {
+       "spk": 0,
+       "zh": "就说明天的会，时间改到下午三点了。",
+       "py": "Jiù shuō míng tiān de huì, shí jiān gǎi dào xià wǔ sān diǎn le.",
+       "vi": "Cứ nói cuộc họp ngày mai đổi sang ba giờ chiều."
+      },
+      {
+       "spk": 1,
+       "zh": "好的，我写在本子上，一会儿就告诉他。",
+       "py": "Hǎo de, wǒ xiě zài běn zi shàng, yí huìr jiù gào sù tā.",
+       "vi": "Được, mình ghi vào sổ, lát nữa sẽ nói với ông ấy."
+      },
+      {
+       "spk": 0,
+       "zh": "谢谢你，你的工作做得真认真。",
+       "py": "Xiè xie nǐ, nǐ de gōng zuò zuò de zhēn rèn zhēn.",
+       "vi": "Cảm ơn bạn, bạn làm việc thật chu đáo."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 40,
+   "zh": "买菜做饭",
+   "vi": "Đi chợ nấu cơm",
+   "icon": "🥬",
+   "dialogues": [
+    {
+     "id": "40-1",
+     "title_zh": "在菜市场",
+     "title_vi": "Ở chợ rau",
+     "scene_vi": "Hai mẹ con đi chợ mua thức ăn.",
+     "speakers": [
+      {
+       "name": "妈妈",
+       "gender": "f"
+      },
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "老板",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小明，今天我们买点儿什么菜？",
+       "py": "Xiǎo míng, jīn tiān wǒ men mǎi diǎnr shén me cài?",
+       "vi": "Tiểu Minh, hôm nay chúng ta mua món gì?"
+      },
+      {
+       "spk": 1,
+       "zh": "妈妈，我想吃鱼，还有西红柿鸡蛋。",
+       "py": "Mā ma, wǒ xiǎng chī yú, hái yǒu xī hóng shì jī dàn.",
+       "vi": "Mẹ ơi, con muốn ăn cá, còn có trứng xào cà chua."
+      },
+      {
+       "spk": 0,
+       "zh": "好，鱼要买新鲜的，你看这条怎么样？",
+       "py": "Hǎo, yú yào mǎi xīn xiān de, nǐ kàn zhè tiáo zěn me yàng?",
+       "vi": "Được, cá phải mua con tươi, con xem con này thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "它还在动，应该很新鲜。",
+       "py": "Tā hái zài dòng, yīng gāi hěn xīn xiān.",
+       "vi": "Nó còn đang cử động, chắc là rất tươi."
+      },
+      {
+       "spk": 0,
+       "zh": "老板，这条鱼多少钱一斤？",
+       "py": "Lǎo bǎn, zhè tiáo yú duō shǎo qián yì jīn?",
+       "vi": "Ông chủ, con cá này bao nhiêu tiền một cân?"
+      },
+      {
+       "spk": 2,
+       "zh": "十八块，你要的话，给你便宜一点儿。",
+       "py": "Shí bā kuài, nǐ yào de huà, gěi nǐ pián yi yì diǎnr.",
+       "vi": "Mười tám tệ, nếu bà mua thì tôi bớt cho một chút."
+      },
+      {
+       "spk": 0,
+       "zh": "好，我要这条，再给我四个西红柿。",
+       "py": "Hǎo, wǒ yào zhè tiáo, zài gěi wǒ sì gè xī hóng shì.",
+       "vi": "Được, tôi lấy con này, cho thêm bốn quả cà chua."
+      }
+     ]
+    },
+    {
+     "id": "40-2",
+     "title_zh": "教我做这个菜",
+     "title_vi": "Dạy mình nấu món này",
+     "scene_vi": "Bạn nhờ bạn dạy nấu món Trung Quốc.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，你做的西红柿鸡蛋真好吃，能教我吗？",
+       "py": "Xiǎo hóng, nǐ zuò de xī hóng shì jī dàn zhēn hǎo chī, néng jiāo wǒ ma?",
+       "vi": "Tiểu Hồng, món trứng xào cà chua bạn nấu ngon thật, dạy mình được không?"
+      },
+      {
+       "spk": 1,
+       "zh": "很简单。先把鸡蛋打开，放一点儿盐。",
+       "py": "Hěn jiǎn dān. Xiān bǎ jī dàn dǎ kāi, fàng yì diǎnr yán.",
+       "vi": "Rất đơn giản. Trước tiên đập trứng ra, cho một chút muối."
+      },
+      {
+       "spk": 0,
+       "zh": "然后呢？",
+       "py": "Rán hòu ne?",
+       "vi": "Rồi sao nữa?"
+      },
+      {
+       "spk": 1,
+       "zh": "把鸡蛋炒好，拿出来，再炒西红柿。",
+       "py": "Bǎ jī dàn chǎo hǎo, ná chū lái, zài chǎo xī hóng shì.",
+       "vi": "Xào trứng xong lấy ra, rồi xào cà chua."
+      },
+      {
+       "spk": 0,
+       "zh": "什么时候放鸡蛋？",
+       "py": "Shén me shí hòu fàng jī dàn?",
+       "vi": "Khi nào cho trứng vào?"
+      },
+      {
+       "spk": 1,
+       "zh": "西红柿变软了以后，再把鸡蛋放进去一起炒。",
+       "py": "Xī hóng shì biàn ruǎn le yǐ hòu, zài bǎ jī dàn fàng jìn qù yì qǐ chǎo.",
+       "vi": "Sau khi cà chua mềm, cho trứng vào xào cùng."
+      },
+      {
+       "spk": 0,
+       "zh": "好，我明天回家试一试。",
+       "py": "Hǎo, wǒ míng tiān huí jiā shì yí shì.",
+       "vi": "Được, ngày mai mình về nhà thử."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 41,
+   "zh": "公共汽车",
+   "vi": "Xe buýt",
+   "icon": "🚌",
+   "dialogues": [
+    {
+     "id": "41-1",
+     "title_zh": "坐几路车",
+     "title_vi": "Đi xe số mấy",
+     "scene_vi": "Hỏi đường đi xe buýt.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "请问，去人民公园坐几路车？",
+       "py": "Qǐng wèn, qù rén mín gōng yuán zuò jǐ lù chē?",
+       "vi": "Xin hỏi, đi Công viên Nhân dân đi xe số mấy?"
+      },
+      {
+       "spk": 1,
+       "zh": "坐三十二路，就在对面上车。",
+       "py": "Zuò sān shí èr lù, jiù zài duì miàn shàng chē.",
+       "vi": "Đi xe số 32, lên xe ở phía đối diện."
+      },
+      {
+       "spk": 0,
+       "zh": "要坐多少站？",
+       "py": "Yào zuò duō shǎo zhàn?",
+       "vi": "Phải đi mấy trạm?"
+      },
+      {
+       "spk": 1,
+       "zh": "八站，大概二十分钟。",
+       "py": "Bā zhàn, dà gài èr shí fēn zhōng.",
+       "vi": "Tám trạm, khoảng hai mươi phút."
+      },
+      {
+       "spk": 0,
+       "zh": "车上可以用手机付钱吗？",
+       "py": "Chē shàng kě yǐ yòng shǒu jī fù qián ma?",
+       "vi": "Trên xe có thể trả tiền bằng điện thoại không?"
+      },
+      {
+       "spk": 1,
+       "zh": "可以，上车扫一下就行，一块钱。",
+       "py": "Kě yǐ, shàng chē sǎo yí xià jiù xíng, yí kuài qián.",
+       "vi": "Được, lên xe quét một cái là xong, một tệ."
+      },
+      {
+       "spk": 0,
+       "zh": "谢谢你，你真热心。",
+       "py": "Xiè xie nǐ, nǐ zhēn rè xīn.",
+       "vi": "Cảm ơn bạn, bạn nhiệt tình thật."
+      }
+     ]
+    },
+    {
+     "id": "41-2",
+     "title_zh": "让座",
+     "title_vi": "Nhường chỗ",
+     "scene_vi": "Trên xe buýt đông người.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "老奶奶",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "奶奶，您坐这儿吧，我站着就行。",
+       "py": "Nǎi nǎi, nín zuò zhèr ba, wǒ zhàn zhe jiù xíng.",
+       "vi": "Bà ơi, bà ngồi đây đi, cháu đứng là được."
+      },
+      {
+       "spk": 1,
+       "zh": "不用不用，你也很累吧。",
+       "py": "Bú yòng bú yòng, nǐ yě hěn lèi ba.",
+       "vi": "Không cần đâu, cháu cũng mệt chứ."
+      },
+      {
+       "spk": 0,
+       "zh": "我年轻，没关系，您快坐。",
+       "py": "Wǒ nián qīng, méi guān xì, nín kuài zuò.",
+       "vi": "Cháu còn trẻ, không sao, bà mau ngồi đi."
+      },
+      {
+       "spk": 1,
+       "zh": "谢谢你，你真是个好孩子。",
+       "py": "Xiè xie nǐ, nǐ zhēn shì gè hǎo hái zi.",
+       "vi": "Cảm ơn cháu, cháu đúng là đứa trẻ ngoan."
+      },
+      {
+       "spk": 0,
+       "zh": "您去哪儿？我帮您看着站。",
+       "py": "Nín qù nǎr? Wǒ bāng nín kàn zhe zhàn.",
+       "vi": "Bà đi đâu ạ? Cháu giúp bà để ý trạm."
+      },
+      {
+       "spk": 1,
+       "zh": "我到医院下车，还有四站。",
+       "py": "Wǒ dào yī yuàn xià chē, hái yǒu sì zhàn.",
+       "vi": "Bà xuống ở bệnh viện, còn bốn trạm nữa."
+      },
+      {
+       "spk": 0,
+       "zh": "好，到了我叫您。",
+       "py": "Hǎo, dào le wǒ jiào nín.",
+       "vi": "Vâng, đến nơi cháu gọi bà."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 42,
+   "zh": "运动会",
+   "vi": "Hội thao ở trường",
+   "icon": "🏅",
+   "dialogues": [
+    {
+     "id": "42-1",
+     "title_zh": "你参加什么项目",
+     "title_vi": "Bạn tham gia môn nào",
+     "scene_vi": "Chuẩn bị cho hội thao của trường.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，学校下个星期开运动会，你参加什么项目？",
+       "py": "Xiǎo hóng, xué xiào xià gè xīng qī kāi yùn dòng huì, nǐ cān jiā shén me xiàng mù?",
+       "vi": "Tiểu Hồng, tuần sau trường mở hội thao, bạn tham gia môn nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "我参加八百米跑步，还有跳远。",
+       "py": "Wǒ cān jiā bā bǎi mǐ pǎo bù, hái yǒu tiào yuǎn.",
+       "vi": "Mình tham gia chạy tám trăm mét, còn có nhảy xa."
+      },
+      {
+       "spk": 0,
+       "zh": "你每天都练习吗？",
+       "py": "Nǐ měi tiān dōu liàn xí ma?",
+       "vi": "Ngày nào bạn cũng luyện tập à?"
+      },
+      {
+       "spk": 1,
+       "zh": "是的，每天下午下课以后练一个小时。",
+       "py": "Shì de, měi tiān xià wǔ xià kè yǐ hòu liàn yí gè xiǎo shí.",
+       "vi": "Đúng vậy, mỗi chiều tan học luyện một tiếng."
+      },
+      {
+       "spk": 0,
+       "zh": "我参加篮球比赛，我们班有五个人。",
+       "py": "Wǒ cān jiā lán qiú bǐ sài, wǒ men bān yǒu wǔ gè rén.",
+       "vi": "Mình tham gia thi bóng rổ, lớp mình có năm người."
+      },
+      {
+       "spk": 1,
+       "zh": "你们准备得怎么样？",
+       "py": "Nǐ men zhǔn bèi de zěn me yàng?",
+       "vi": "Các bạn chuẩn bị thế nào rồi?"
+      },
+      {
+       "spk": 0,
+       "zh": "不错，我们想拿第一名。",
+       "py": "Bú cuò, wǒ men xiǎng ná dì yī míng.",
+       "vi": "Cũng khá, bọn mình muốn giành hạng nhất."
+      }
+     ]
+    },
+    {
+     "id": "42-2",
+     "title_zh": "加油",
+     "title_vi": "Cố lên",
+     "scene_vi": "Cổ vũ bạn trong cuộc thi chạy.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小红，加油！你跑得很快！",
+       "py": "Xiǎo hóng, jiā yóu! Nǐ pǎo de hěn kuài!",
+       "vi": "Tiểu Hồng, cố lên! Bạn chạy nhanh lắm!"
+      },
+      {
+       "spk": 1,
+       "zh": "谢谢，我有点儿累，还有两百米。",
+       "py": "Xiè xie, wǒ yǒu diǎnr lèi, hái yǒu liǎng bǎi mǐ.",
+       "vi": "Cảm ơn, mình hơi mệt, còn hai trăm mét nữa."
+      },
+      {
+       "spk": 0,
+       "zh": "别停，坚持一下就到了！",
+       "py": "Bié tíng, jiān chí yí xià jiù dào le!",
+       "vi": "Đừng dừng, cố thêm chút nữa là tới!"
+      },
+      {
+       "spk": 1,
+       "zh": "好，我再快一点儿！",
+       "py": "Hǎo, wǒ zài kuài yì diǎnr!",
+       "vi": "Được, mình sẽ nhanh thêm chút!"
+      },
+      {
+       "spk": 0,
+       "zh": "第二名，第二名，你可以的！",
+       "py": "Dì èr míng, dì èr míng, nǐ kě yǐ de!",
+       "vi": "Hạng hai, hạng hai, bạn làm được mà!"
+      },
+      {
+       "spk": 1,
+       "zh": "我跑到了！我得了第二名！",
+       "py": "Wǒ pǎo dào le! Wǒ de le dì èr míng!",
+       "vi": "Mình chạy đến rồi! Mình được hạng hai!"
+      },
+      {
+       "spk": 0,
+       "zh": "太棒了，我们去喝水吧。",
+       "py": "Tài bàng le, wǒ men qù hē shuǐ ba.",
+       "vi": "Giỏi quá, chúng ta đi uống nước nhé."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 43,
+   "zh": "理发",
+   "vi": "Đi cắt tóc",
+   "icon": "✂️",
+   "dialogues": [
+    {
+     "id": "43-1",
+     "title_zh": "想换个发型",
+     "title_vi": "Muốn đổi kiểu tóc",
+     "scene_vi": "Khách muốn thay đổi kiểu tóc.",
+     "speakers": [
+      {
+       "name": "小美",
+       "gender": "f"
+      },
+      {
+       "name": "理发师",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "你好，我想换一个新发型。",
+       "py": "Nǐ hǎo, wǒ xiǎng huàn yí gè xīn fà xíng.",
+       "vi": "Xin chào, tôi muốn đổi kiểu tóc mới."
+      },
+      {
+       "spk": 1,
+       "zh": "你想剪短还是烫一下？",
+       "py": "Nǐ xiǎng jiǎn duǎn hái shì tàng yí xià?",
+       "vi": "Chị muốn cắt ngắn hay uốn một chút?"
+      },
+      {
+       "spk": 0,
+       "zh": "我想剪到肩膀这儿，看起来年轻一点儿。",
+       "py": "Wǒ xiǎng jiǎn dào jiān bǎng zhèr, kàn qǐ lái nián qīng yì diǎnr.",
+       "vi": "Tôi muốn cắt đến ngang vai, trông trẻ hơn một chút."
+      },
+      {
+       "spk": 1,
+       "zh": "你的头发很好，剪短以后会很漂亮。",
+       "py": "Nǐ de tóu fà hěn hǎo, jiǎn duǎn yǐ hòu huì hěn piào liang.",
+       "vi": "Tóc chị rất đẹp, cắt ngắn xong sẽ rất xinh."
+      },
+      {
+       "spk": 0,
+       "zh": "会不会太短？我怕不好看。",
+       "py": "Huì bú huì tài duǎn? Wǒ pà bù hǎo kàn.",
+       "vi": "Có ngắn quá không? Tôi sợ không đẹp."
+      },
+      {
+       "spk": 1,
+       "zh": "别担心，我先少剪一点儿，你看看再说。",
+       "py": "Bié dān xīn, wǒ xiān shǎo jiǎn yì diǎnr, nǐ kàn kàn zài shuō.",
+       "vi": "Đừng lo, tôi cắt ít trước, chị xem rồi tính tiếp."
+      },
+      {
+       "spk": 0,
+       "zh": "好，听你的。",
+       "py": "Hǎo, tīng nǐ de.",
+       "vi": "Được, nghe anh vậy."
+      }
+     ]
+    },
+    {
+     "id": "43-2",
+     "title_zh": "洗头发",
+     "title_vi": "Gội đầu",
+     "scene_vi": "Gội đầu ở tiệm cắt tóc.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "理发师",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "先生，请您躺在这儿，我给您洗头。",
+       "py": "Xiān sheng, qǐng nín tǎng zài zhèr, wǒ gěi nín xǐ tóu.",
+       "vi": "Thưa anh, mời anh nằm ở đây, tôi gội đầu cho anh."
+      },
+      {
+       "spk": 1,
+       "zh": "好的。水热不热？",
+       "py": "Hǎo de. Shuǐ rè bú rè?",
+       "vi": "Vâng. Nước có nóng không?"
+      },
+      {
+       "spk": 0,
+       "zh": "不太热，刚刚好。",
+       "py": "Bú tài rè, gāng gāng hǎo.",
+       "vi": "Không nóng lắm, vừa phải."
+      },
+      {
+       "spk": 1,
+       "zh": "你的手很轻，很舒服。",
+       "py": "Nǐ de shǒu hěn qīng, hěn shū fu.",
+       "vi": "Tay chị nhẹ quá, rất dễ chịu."
+      },
+      {
+       "spk": 0,
+       "zh": "您今天想怎么剪？",
+       "py": "Nín jīn tiān xiǎng zěn me jiǎn?",
+       "vi": "Hôm nay anh muốn cắt thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "两边短一点儿，上面不要太短。",
+       "py": "Liǎng biān duǎn yì diǎnr, shàng miàn bú yào tài duǎn.",
+       "vi": "Hai bên ngắn một chút, phía trên đừng ngắn quá."
+      },
+      {
+       "spk": 0,
+       "zh": "好的，剪完我再给您看一下。",
+       "py": "Hǎo de, jiǎn wán wǒ zài gěi nín kàn yí xià.",
+       "vi": "Vâng, cắt xong tôi cho anh xem lại."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 44,
+   "zh": "办登机",
+   "vi": "Làm thủ tục lên máy bay",
+   "icon": "🛫",
+   "dialogues": [
+    {
+     "id": "44-1",
+     "title_zh": "托运行李",
+     "title_vi": "Ký gửi hành lý",
+     "scene_vi": "Làm thủ tục tại quầy sân bay.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "工作人员",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "你好，我要去上海，请问在哪儿办手续？",
+       "py": "Nǐ hǎo, wǒ yào qù shàng hǎi, qǐng wèn zài nǎr bàn shǒu xù?",
+       "vi": "Xin chào, tôi đi Thượng Hải, xin hỏi làm thủ tục ở đâu?"
+      },
+      {
+       "spk": 1,
+       "zh": "在这儿。请给我你的护照。",
+       "py": "Zài zhèr. Qǐng gěi wǒ nǐ de hù zhào.",
+       "vi": "Ở đây ạ. Xin đưa hộ chiếu của anh."
+      },
+      {
+       "spk": 0,
+       "zh": "给你。我有两个箱子，要托运。",
+       "py": "Gěi nǐ. Wǒ yǒu liǎng gè xiāng zi, yào tuō yùn.",
+       "vi": "Đây ạ. Tôi có hai chiếc vali, cần ký gửi."
+      },
+      {
+       "spk": 1,
+       "zh": "请把箱子放在这儿。这个有点儿重，二十五公斤。",
+       "py": "Qǐng bǎ xiāng zi fàng zài zhèr. Zhè ge yǒu diǎnr zhòng, èr shí wǔ gōng jīn.",
+       "vi": "Xin để vali ở đây. Cái này hơi nặng, hai mươi lăm cân."
+      },
+      {
+       "spk": 0,
+       "zh": "可以吗？",
+       "py": "Kě yǐ ma?",
+       "vi": "Có được không?"
+      },
+      {
+       "spk": 1,
+       "zh": "可以，不过不能超过二十公斤，要多付一点儿钱。",
+       "py": "Kě yǐ, bú guò bù néng chāo guò èr shí gōng jīn, yào duō fù yì diǎnr qián.",
+       "vi": "Được, nhưng không được quá hai mươi cân, phải trả thêm chút tiền."
+      },
+      {
+       "spk": 0,
+       "zh": "好吧，多少钱？",
+       "py": "Hǎo ba, duō shǎo qián?",
+       "vi": "Được rồi, bao nhiêu tiền?"
+      }
+     ]
+    },
+    {
+     "id": "44-2",
+     "title_zh": "在登机口",
+     "title_vi": "Ở cổng lên máy bay",
+     "scene_vi": "Chờ lên máy bay.",
+     "speakers": [
+      {
+       "name": "小美",
+       "gender": "f"
+      },
+      {
+       "name": "大卫",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "大卫，我们的登机口是几号？",
+       "py": "Dà wèi, wǒ men de dēng jī kǒu shì jǐ hào?",
+       "vi": "David, cổng lên máy bay của chúng ta là số mấy?"
+      },
+      {
+       "spk": 1,
+       "zh": "十二号，在那边，走过去要五分钟。",
+       "py": "Shí èr hào, zài nà biān, zǒu guò qù yào wǔ fēn zhōng.",
+       "vi": "Số 12, ở bên kia, đi bộ qua đó mất năm phút."
+      },
+      {
+       "spk": 0,
+       "zh": "飞机几点起飞？",
+       "py": "Fēi jī jǐ diǎn qǐ fēi?",
+       "vi": "Mấy giờ máy bay cất cánh?"
+      },
+      {
+       "spk": 1,
+       "zh": "下午三点十分，现在两点，还有一个小时。",
+       "py": "Xià wǔ sān diǎn shí fēn, xiàn zài liǎng diǎn, hái yǒu yí gè xiǎo shí.",
+       "vi": "Ba giờ mười chiều, bây giờ hai giờ, còn một tiếng nữa."
+      },
+      {
+       "spk": 0,
+       "zh": "我想去买一瓶水。",
+       "py": "Wǒ xiǎng qù mǎi yì píng shuǐ.",
+       "vi": "Mình muốn đi mua một chai nước."
+      },
+      {
+       "spk": 1,
+       "zh": "快点儿回来，不要迟到了。",
+       "py": "Kuài diǎnr huí lái, bú yào chí dào le.",
+       "vi": "Mau quay lại nhé, đừng để muộn."
+      },
+      {
+       "spk": 0,
+       "zh": "知道了，你在这儿看好行李。",
+       "py": "Zhī dao le, nǐ zài zhèr kàn hǎo xíng lǐ.",
+       "vi": "Mình biết rồi, bạn ở đây trông hành lý nhé."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 45,
+   "zh": "退房",
+   "vi": "Trả phòng khách sạn",
+   "icon": "🧳",
+   "dialogues": [
+    {
+     "id": "45-1",
+     "title_zh": "我要退房",
+     "title_vi": "Tôi muốn trả phòng",
+     "scene_vi": "Trả phòng khách sạn.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "服务员",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "你好，我要退房，房间号是六零二。",
+       "py": "Nǐ hǎo, wǒ yào tuì fáng, fáng jiān hào shì liù líng èr.",
+       "vi": "Xin chào, tôi muốn trả phòng, số phòng là 602."
+      },
+      {
+       "spk": 1,
+       "zh": "好的，请把房卡给我。你有没有用房间里的东西？",
+       "py": "Hǎo de, qǐng bǎ fáng kǎ gěi wǒ. Nǐ yǒu méi yǒu yòng fáng jiān lǐ de dōng xi?",
+       "vi": "Vâng, xin đưa tôi thẻ phòng. Anh có dùng đồ gì trong phòng không?"
+      },
+      {
+       "spk": 0,
+       "zh": "我喝了一瓶水，吃了一包东西。",
+       "py": "Wǒ hē le yì píng shuǐ, chī le yì bāo dōng xi.",
+       "vi": "Tôi uống một chai nước, ăn một gói đồ ăn vặt."
+      },
+      {
+       "spk": 1,
+       "zh": "一共四十块，加上房费，一共一千零四十块。",
+       "py": "Yí gòng sì shí kuài, jiā shàng fáng fèi, yí gòng yì qiān líng sì shí kuài.",
+       "vi": "Tổng cộng bốn mươi tệ, cộng tiền phòng, là một nghìn không trăm bốn mươi tệ."
+      },
+      {
+       "spk": 0,
+       "zh": "可以刷卡吗？",
+       "py": "Kě yǐ shuā kǎ ma?",
+       "vi": "Có thể quẹt thẻ được không?"
+      },
+      {
+       "spk": 1,
+       "zh": "可以，请在这儿签名。谢谢您，欢迎下次再来。",
+       "py": "Kě yǐ, qǐng zài zhèr qiān míng. Xiè xie nín, huān yíng xià cì zài lái.",
+       "vi": "Được, xin ký tên ở đây. Cảm ơn ông, hoan nghênh lần sau lại đến."
+      },
+      {
+       "spk": 0,
+       "zh": "谢谢，这几天过得很愉快。",
+       "py": "Xiè xie, zhè jǐ tiān guò de hěn yú kuài.",
+       "vi": "Cảm ơn, mấy ngày qua tôi rất vui."
+      }
+     ]
+    },
+    {
+     "id": "45-2",
+     "title_zh": "可以放行李吗",
+     "title_vi": "Có thể gửi hành lý không",
+     "scene_vi": "Hỏi gửi hành lý sau khi trả phòng.",
+     "speakers": [
+      {
+       "name": "小美",
+       "gender": "f"
+      },
+      {
+       "name": "服务员",
+       "gender": "m"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "你好，我已经退房了，但是飞机晚上才起飞。",
+       "py": "Nǐ hǎo, wǒ yǐ jīng tuì fáng le, dàn shì fēi jī wǎn shàng cái qǐ fēi.",
+       "vi": "Xin chào, tôi đã trả phòng rồi, nhưng tối máy bay mới cất cánh."
+      },
+      {
+       "spk": 1,
+       "zh": "您想把行李放在这儿吗？",
+       "py": "Nín xiǎng bǎ xíng lǐ fàng zài zhèr ma?",
+       "vi": "Chị muốn gửi hành lý ở đây phải không?"
+      },
+      {
+       "spk": 0,
+       "zh": "可以吗？我下午还想去外面玩儿。",
+       "py": "Kě yǐ ma? Wǒ xià wǔ hái xiǎng qù wài miàn wánr.",
+       "vi": "Được không? Chiều tôi còn muốn ra ngoài chơi."
+      },
+      {
+       "spk": 1,
+       "zh": "当然可以，不用付钱。请把东西放在这个房间里。",
+       "py": "Dāng rán kě yǐ, bú yòng fù qián. Qǐng bǎ dōng xi fàng zài zhè ge fáng jiān lǐ.",
+       "vi": "Đương nhiên được, không cần trả tiền. Xin để đồ trong phòng này."
+      },
+      {
+       "spk": 0,
+       "zh": "太好了。我大概五点回来拿。",
+       "py": "Tài hǎo le. Wǒ dà gài wǔ diǎn huí lái ná.",
+       "vi": "Tốt quá. Khoảng năm giờ tôi quay lại lấy."
+      },
+      {
+       "spk": 1,
+       "zh": "没问题，这是您的号码牌，请拿好。",
+       "py": "Méi wèn tí, zhè shì nín de hào mǎ pái, qǐng ná hǎo.",
+       "vi": "Không vấn đề, đây là số thẻ của chị, xin giữ cẩn thận."
+      },
+      {
+       "spk": 0,
+       "zh": "谢谢你们的帮助。",
+       "py": "Xiè xie nǐ men de bāng zhù.",
+       "vi": "Cảm ơn sự giúp đỡ của các bạn."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 46,
+   "zh": "火锅",
+   "vi": "Ăn lẩu",
+   "icon": "🍲",
+   "dialogues": [
+    {
+     "id": "46-1",
+     "title_zh": "我们去吃火锅",
+     "title_vi": "Chúng ta đi ăn lẩu",
+     "scene_vi": "Rủ nhau đi ăn lẩu.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "今天天气很冷，我们去吃火锅怎么样？",
+       "py": "Jīn tiān tiān qì hěn lěng, wǒ men qù chī huǒ guō zěn me yàng?",
+       "vi": "Hôm nay trời lạnh, chúng ta đi ăn lẩu nhé?"
+      },
+      {
+       "spk": 1,
+       "zh": "好啊！我最喜欢吃火锅了，你想去哪家？",
+       "py": "Hǎo a! Wǒ zuì xǐ huan chī huǒ guō le, nǐ xiǎng qù nǎ jiā?",
+       "vi": "Được chứ! Mình thích ăn lẩu nhất, bạn muốn đi quán nào?"
+      },
+      {
+       "spk": 0,
+       "zh": "学校旁边有一家，听说味道很不错。",
+       "py": "Xué xiào páng biān yǒu yì jiā, tīng shuō wèi dào hěn bú cuò.",
+       "vi": "Cạnh trường có một quán, nghe nói hương vị rất ngon."
+      },
+      {
+       "spk": 1,
+       "zh": "你能吃辣的吗？",
+       "py": "Nǐ néng chī là de ma?",
+       "vi": "Bạn ăn cay được không?"
+      },
+      {
+       "spk": 0,
+       "zh": "能吃一点儿，我们点一个不太辣的吧。",
+       "py": "Néng chī yì diǎnr, wǒ men diǎn yí gè bú tài là de ba.",
+       "vi": "Ăn được một chút, chúng ta gọi loại không cay lắm nhé."
+      },
+      {
+       "spk": 1,
+       "zh": "好，那就点一个半辣的。",
+       "py": "Hǎo, nà jiù diǎn yí gè bàn là de.",
+       "vi": "Được, vậy gọi loại cay vừa."
+      },
+      {
+       "spk": 0,
+       "zh": "我再叫几个朋友一起去，人多热闹。",
+       "py": "Wǒ zài jiào jǐ gè péng you yì qǐ qù, rén duō rè nào.",
+       "vi": "Mình rủ thêm vài người bạn đi cùng, đông người cho vui."
+      }
+     ]
+    },
+    {
+     "id": "46-2",
+     "title_zh": "这个太辣了",
+     "title_vi": "Cái này cay quá",
+     "scene_vi": "Lần đầu ăn lẩu cay.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "哎呀，这个太辣了，我的嘴巴好热！",
+       "py": "Āi yā, zhè ge tài là le, wǒ de zuǐ bā hǎo rè!",
+       "vi": "Trời ơi, cái này cay quá, miệng mình nóng quá!"
+      },
+      {
+       "spk": 1,
+       "zh": "快喝点儿牛奶，牛奶可以不辣。",
+       "py": "Kuài hē diǎnr niú nǎi, niú nǎi kě yǐ bú là.",
+       "vi": "Mau uống chút sữa, sữa có thể làm bớt cay."
+      },
+      {
+       "spk": 0,
+       "zh": "你怎么吃得这么快？你不觉得辣吗？",
+       "py": "Nǐ zěn me chī de zhè me kuài? Nǐ bù jué de là ma?",
+       "vi": "Sao bạn ăn nhanh thế? Bạn không thấy cay à?"
+      },
+      {
+       "spk": 1,
+       "zh": "我从小就爱吃辣的，已经习惯了。",
+       "py": "Wǒ cóng xiǎo jiù ài chī là de, yǐ jīng xí guàn le.",
+       "vi": "Mình thích ăn cay từ nhỏ, quen rồi."
+      },
+      {
+       "spk": 0,
+       "zh": "这个菜看起来不辣，吃起来特别辣。",
+       "py": "Zhè ge cài kàn qǐ lái bú là, chī qǐ lái tè bié là.",
+       "vi": "Món này trông không cay, ăn vào lại cực kỳ cay."
+      },
+      {
+       "spk": 1,
+       "zh": "你先吃青菜吧，青菜不辣。",
+       "py": "Nǐ xiān chī qīng cài ba, qīng cài bú là.",
+       "vi": "Bạn ăn rau trước đi, rau không cay."
+      },
+      {
+       "spk": 0,
+       "zh": "好，下次我们要点不辣的。",
+       "py": "Hǎo, xià cì wǒ men yào diǎn bú là de.",
+       "vi": "Được, lần sau chúng ta gọi loại không cay."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 47,
+   "zh": "新年愿望",
+   "vi": "Kế hoạch năm mới",
+   "icon": "🎆",
+   "dialogues": [
+    {
+     "id": "47-1",
+     "title_zh": "新年我要做什么",
+     "title_vi": "Năm mới tôi sẽ làm gì",
+     "scene_vi": "Bạn bè chia sẻ dự định năm mới.",
+     "speakers": [
+      {
+       "name": "小明",
+       "gender": "m"
+      },
+      {
+       "name": "小红",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "新年快到了，你有什么新年愿望吗？",
+       "py": "Xīn nián kuài dào le, nǐ yǒu shén me xīn nián yuàn wàng ma?",
+       "vi": "Năm mới sắp đến rồi, bạn có điều ước năm mới nào không?"
+      },
+      {
+       "spk": 1,
+       "zh": "我想学会游泳，还想去一次中国的南方。",
+       "py": "Wǒ xiǎng xué huì yóu yǒng, hái xiǎng qù yí cì zhōng guó de nán fāng.",
+       "vi": "Mình muốn học biết bơi, còn muốn đến miền Nam Trung Quốc một lần."
+      },
+      {
+       "spk": 0,
+       "zh": "这两个愿望都很好。你打算什么时候开始学游泳？",
+       "py": "Zhè liǎng gè yuàn wàng dōu hěn hǎo. Nǐ dǎ suàn shén me shí hòu kāi shǐ xué yóu yǒng?",
+       "vi": "Hai điều ước này đều rất hay. Bạn định bắt đầu học bơi khi nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "一月就开始，每个星期去两次。",
+       "py": "Yī yuè jiù kāi shǐ, měi gè xīng qī qù liǎng cì.",
+       "vi": "Tháng Giêng sẽ bắt đầu, mỗi tuần đi hai lần."
+      },
+      {
+       "spk": 0,
+       "zh": "我的愿望是把汉语学得更好。",
+       "py": "Wǒ de yuàn wàng shì bǎ hàn yǔ xué de gèng hǎo.",
+       "vi": "Điều ước của mình là học tiếng Trung giỏi hơn."
+      },
+      {
+       "spk": 1,
+       "zh": "你已经很不错了，我觉得你能做到。",
+       "py": "Nǐ yǐ jīng hěn bú cuò le, wǒ jué de nǐ néng zuò dào.",
+       "vi": "Bạn đã rất giỏi rồi, mình tin bạn làm được."
+      },
+      {
+       "spk": 0,
+       "zh": "谢谢，我们一起加油吧！",
+       "py": "Xiè xie, wǒ men yì qǐ jiā yóu ba!",
+       "vi": "Cảm ơn, chúng ta cùng cố gắng nhé!"
+      }
+     ]
+    },
+    {
+     "id": "47-2",
+     "title_zh": "回头看一年",
+     "title_vi": "Nhìn lại một năm",
+     "scene_vi": "Cuối năm tổng kết với nhau.",
+     "speakers": [
+      {
+       "name": "大卫",
+       "gender": "m"
+      },
+      {
+       "name": "小美",
+       "gender": "f"
+      }
+     ],
+     "turns": [
+      {
+       "spk": 0,
+       "zh": "小美，这一年过得真快，你觉得怎么样？",
+       "py": "Xiǎo měi, zhè yì nián guò de zhēn kuài, nǐ jué de zěn me yàng?",
+       "vi": "Tiểu Mỹ, một năm trôi qua nhanh thật, bạn thấy thế nào?"
+      },
+      {
+       "spk": 1,
+       "zh": "我学到了很多东西，也认识了很多朋友。",
+       "py": "Wǒ xué dào le hěn duō dōng xi, yě rèn shi le hěn duō péng you.",
+       "vi": "Mình học được nhiều điều, cũng quen được nhiều bạn."
+      },
+      {
+       "spk": 0,
+       "zh": "你觉得今年最高兴的事是什么？",
+       "py": "Nǐ jué de jīn nián zuì gāo xìng de shì shì shén me?",
+       "vi": "Bạn thấy chuyện vui nhất năm nay là gì?"
+      },
+      {
+       "spk": 1,
+       "zh": "是考过了HSK三级，我很高兴。",
+       "py": "Shì kǎo guò le HSK sān jí, wǒ hěn gāo xìng.",
+       "vi": "Là thi đỗ HSK cấp 3, mình rất vui."
+      },
+      {
+       "spk": 0,
+       "zh": "恭喜你！我今年最高兴的是来到了中国。",
+       "py": "Gōng xǐ nǐ! Wǒ jīn nián zuì gāo xìng de shì lái dào le zhōng guó.",
+       "vi": "Chúc mừng bạn! Chuyện vui nhất năm nay của mình là đến Trung Quốc."
+      },
+      {
+       "spk": 1,
+       "zh": "明年我们的汉语一定会更好。",
+       "py": "Míng nián wǒ men de hàn yǔ yí dìng huì gèng hǎo.",
+       "vi": "Năm sau tiếng Trung của chúng ta nhất định sẽ giỏi hơn."
+      },
+      {
+       "spk": 0,
+       "zh": "对，新的一年，加油！",
+       "py": "Duì, xīn de yì nián, jiā yóu!",
+       "vi": "Đúng, năm mới, cố lên!"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

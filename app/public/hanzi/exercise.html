@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<title>Exercise</title>
+<script src="./hanzi-writer.min.js"></script>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+    font-family: sans-serif;
+  }
+  #status {
+    text-align: center;
+    color: #888888;
+    font-size: 12px;
+    padding: 10px 16px 0;
+    min-height: 16px;
+  }
+  #exercise-container {
+    padding: 8px 16px 16px;
+  }
+  .exercise-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .exercise-row-label {
+    flex: 0 0 auto;
+    width: 40px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #999999;
+  }
+  .exercise-boxes {
+    flex: 1 1 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .exercise-box {
+    width: 90px;
+    height: 90px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    background-image:
+      linear-gradient(to right, #e5b0b0 1px, transparent 1px),
+      linear-gradient(to bottom, #e5b0b0 1px, transparent 1px),
+      linear-gradient(to bottom right, transparent calc(50% - 1px), #e5b0b0 calc(50% - 1px), #e5b0b0 calc(50% + 1px), transparent calc(50% + 1px)),
+      linear-gradient(to bottom left, transparent calc(50% - 1px), #e5b0b0 calc(50% - 1px), #e5b0b0 calc(50% + 1px), transparent calc(50% + 1px));
+    background-size: 100% 100%;
+    background-position: center, center, 0 0, 0 0;
+    background-repeat: no-repeat;
+  }
+</style>
+</head>
+<body>
+  <div id="status">Chọn một từ ở danh sách bên trái</div>
+  <div id="exercise-container"></div>
+
+  <script>
+    const BOX_SIZE = 90;
+    const BOX_PADDING = 4;
+    // Số ô luyện viết mỗi chữ.
+    const REPEAT_COUNT = 4;
+
+    window.exerciseWriters = [];       // phẳng, giữ để tương thích (không dùng để chạy nữa)
+    window.currentExerciseWord = null;
+    window.exerciseRunToken = 0;
+
+    function setStatus(text) {
+      document.getElementById('status').textContent = text;
+    }
+
+    function loadExercise(word) {
+      window.currentExerciseWord = word;
+      const token = ++window.exerciseRunToken;
+
+      const container = document.getElementById('exercise-container');
+      container.innerHTML = '';
+      window.exerciseWriters = [];
+
+      const chars = Array.from(word);
+      const repeatCount = REPEAT_COUNT;
+      const writersByChar = []; // writersByChar[charIdx][boxIdx]
+      const rowNodes = [];      // rowNodes[charIdx]
+      const charFailed = new Array(chars.length).fill(false);
+      let totalBoxes = 0;
+      let settledBoxes = 0;
+
+      // Chờ TẤT CẢ ô tải xong (dù thành công hay lỗi) rồi mới quyết định luyện
+      // ký tự nào — ký tự không có dữ liệu (chữ hiếm/lạ) bị ẩn cả hàng và bỏ
+      // qua, KHÔNG làm cả từ bị im lặng như trước.
+      function onSettled() {
+        settledBoxes += 1;
+        if (settledBoxes < totalBoxes || token !== window.exerciseRunToken) return;
+
+        let failedCount = 0;
+        const goodWritersByChar = [];
+        chars.forEach((ch, idx) => {
+          if (charFailed[idx]) {
+            failedCount += 1;
+            if (rowNodes[idx]) rowNodes[idx].style.display = 'none';
+          } else {
+            goodWritersByChar.push(writersByChar[idx]);
+          }
+        });
+
+        if (goodWritersByChar.length === 0) {
+          setStatus('Không tải được dữ liệu nét cho từ này (cần kết nối Internet).');
+          return;
+        }
+        setStatus(
+          failedCount > 0
+            ? `Đang tự động viết mẫu (bỏ qua ${failedCount} ký tự không có dữ liệu)...`
+            : 'Đang tự động viết mẫu...'
+        );
+        runColumns(0, token, goodWritersByChar);
+      }
+
+      chars.forEach((ch, charIdx) => {
+        const row = document.createElement('div');
+        row.className = 'exercise-row';
+
+        const label = document.createElement('div');
+        label.className = 'exercise-row-label';
+        label.textContent = ch;
+        row.appendChild(label);
+
+        const boxesWrap = document.createElement('div');
+        boxesWrap.className = 'exercise-boxes';
+        row.appendChild(boxesWrap);
+
+        container.appendChild(row);
+        rowNodes.push(row);
+
+        const rowWriters = [];
+        for (let i = 0; i < repeatCount; i++) {
+          const box = document.createElement('div');
+          box.className = 'exercise-box';
+          const boxId = 'exercise-box-' + token + '-' + charIdx + '-' + i;
+          box.id = boxId;
+          boxesWrap.appendChild(box);
+          totalBoxes += 1;
+
+          const writer = HanziWriter.create(boxId, ch, {
+            width: BOX_SIZE,
+            height: BOX_SIZE,
+            padding: BOX_PADDING,
+            showCharacter: false,
+            showOutline: false,
+            strokeAnimationSpeed: 2,
+            delayBetweenStrokes: 100,
+            strokeColor: '#2b2b2b',
+            onLoadCharDataSuccess: () => {
+              onSettled();
+            },
+            onLoadCharDataError: () => {
+              charFailed[charIdx] = true;
+              onSettled();
+            },
+          });
+          rowWriters.push(writer);
+          window.exerciseWriters.push(writer);
+        }
+        writersByChar.push(rowWriters);
+      });
+
+      setStatus('Đang tải nét chữ...');
+    }
+
+    // Viết theo CỘT: mọi ký tự trong từ (2-3 chữ) được viết CÙNG LÚC ở cùng vị
+    // trí lặp, thay vì viết xong hết cả hàng của ký tự 1 rồi mới sang ký tự 2.
+    function runColumns(col, token, writersByChar) {
+      if (token !== window.exerciseRunToken) return;
+      const maxCols = writersByChar.reduce((m, row) => Math.max(m, row.length), 0);
+      if (col >= maxCols) {
+        setStatus('Hoàn thành trang luyện viết.');
+        return;
+      }
+      const columnWriters = writersByChar.map(row => row[col]).filter(Boolean);
+      if (columnWriters.length === 0) {
+        runColumns(col + 1, token, writersByChar);
+        return;
+      }
+      let remaining = columnWriters.length;
+      columnWriters.forEach((w) => {
+        w.animateCharacter({
+          onComplete: () => {
+            remaining -= 1;
+            if (remaining === 0) {
+              runColumns(col + 1, token, writersByChar);
+            }
+          },
+        });
+      });
+    }
+
+    function replayExercise() {
+      if (window.currentExerciseWord) {
+        loadExercise(window.currentExerciseWord);
+      }
+    }
+  </script>
+</body>
+</html>

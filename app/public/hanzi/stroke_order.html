@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<title>Stroke Order</title>
+<script src="./hanzi-writer.min.js"></script>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+    font-family: sans-serif;
+  }
+  .section {
+    padding: 10px 16px;
+  }
+  .section-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: #555555;
+    margin-bottom: 4px;
+  }
+  .char-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .char-box {
+    position: relative;
+    /* Kích thước đặt qua inline style (JS) theo computeBoxSize() — không cố
+       định ở đây nữa, để ô to/nhỏ lại theo chiều rộng thật có (xem ghi chú
+       ở CHAR_BOX_MIN/CHAR_BOX_MAX trong <script>). */
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    background-image:
+      linear-gradient(to right, #e5b0b0 1px, transparent 1px),
+      linear-gradient(to bottom, #e5b0b0 1px, transparent 1px),
+      linear-gradient(to bottom right, transparent calc(50% - 1px), #e5b0b0 calc(50% - 1px), #e5b0b0 calc(50% + 1px), transparent calc(50% + 1px)),
+      linear-gradient(to bottom left, transparent calc(50% - 1px), #e5b0b0 calc(50% - 1px), #e5b0b0 calc(50% + 1px), transparent calc(50% + 1px));
+    background-size: 100% 100%;
+    background-position: center, center, 0 0, 0 0;
+    background-repeat: no-repeat;
+  }
+  .status {
+    text-align: center;
+    color: #888888;
+    font-size: 12px;
+    padding-bottom: 6px;
+    min-height: 16px;
+  }
+  hr {
+    border: none;
+    border-top: 1px solid #dddddd;
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+  <div class="section">
+    <div class="section-title">Cách viết</div>
+    <div id="demo-status" class="status">Chọn một từ ở danh sách bên trái</div>
+    <div id="demo-container" class="char-row"></div>
+  </div>
+
+  <hr />
+
+  <div class="section">
+    <div class="section-title">Luyện viết</div>
+    <div id="practice-status" class="status"></div>
+    <div id="practice-container" class="char-row"></div>
+  </div>
+
+  <script>
+    // Cầu nối tới Python (chế độ 🤖 Tự động làm bài ở "Khởi động" cần biết
+    // CHÍNH XÁC lúc nào hoạt hình minh hoạ nét bút (mục "Cách viết") viết
+    // xong TOÀN BỘ từ, để chờ đúng lúc đó mới qua từ mới — không đoán mò 1
+    // khoảng thời gian cố định vì chữ nhiều nét cần lâu hơn hẳn chữ ít nét).
+    window.pyBridge = null;
+    if (window.qt && window.qt.webChannelTransport) {
+      new QWebChannel(qt.webChannelTransport, function (channel) {
+        window.pyBridge = channel.objects.pyBridge;
+        reportContentHeight();
+      });
+    }
+
+    // Python (tab Quy tắc viết) đặt chiều cao view = đúng chiều cao nội dung để không
+    // có thanh cuộn riêng; con lăn chuột được chuyển sang cho khung cuộn ngoài.
+    function reportContentHeight() {
+      if (window.pyBridge && window.pyBridge.notifyContentHeight) {
+        window.pyBridge.notifyContentHeight(Math.ceil(document.body.getBoundingClientRect().height));
+      }
+    }
+    new ResizeObserver(reportContentHeight).observe(document.body);
+    window.addEventListener('wheel', (e) => {
+      if (window.pyBridge && window.pyBridge.notifyWheel) {
+        window.pyBridge.notifyWheel(Math.round(e.deltaMode === 1 ? e.deltaY * 16 : e.deltaY));
+      }
+    }, { passive: true });
+
+    window.demoWriters = [];
+    window.practiceWriters = [];
+    window.demoRunToken = 0;
+    window.demoAutoReplayTimer = null;
+    window.demoFinishedNotifiedToken = 0;
+
+    // Ô chữ co giãn theo chiều rộng thật có (computeBoxSize()) thay vì cố
+    // định 170px — trước đây cố định khiến từ nhiều ký tự (vd 3 chữ) bị
+    // tràn/xuống dòng khi panel trái/phải còn hiện, VÀ không to ra tận dụng
+    // chỗ trống khi người dùng ẩn panel đi. MAX cao hơn 170px cũ một chút để
+    // từ ngắn (1-2 chữ) thực sự to rõ rệt lúc có nhiều chỗ trống.
+    // Thu nhỏ còn ~80% so với trước (170/220 gốc) — màn hình laptop Windows
+    // thấp hơn bị tràn chiều cao, phải cuộn mới thấy hết cả 2 khối "Cách
+    // viết" + "Luyện viết" xếp chồng nhau trong cùng 1 tab.
+    const CHAR_BOX_MIN = 56;
+    const CHAR_BOX_MAX = 176;
+    const CHAR_BOX_GAP = 10; // khớp "gap" của .char-row trong CSS
+    const CHAR_BOX_PADDING = 4;
+    const AUTO_REPLAY_DELAY_MS = 3000;
+
+    // Đo bề rộng thật có của hàng ô chữ rồi chia đều cho đúng số ký tự, để
+    // CẢ TỪ luôn vừa 1 hàng duy nhất thay vì bị wrap xuống dòng — container
+    // (.char-row) không có padding riêng, bề rộng của nó = đúng phần nội
+    // dung của .section cha, không phụ thuộc số ô con đang có (block/flex
+    // width:auto lấp đầy chỗ trống của cha dù đang rỗng).
+    function computeBoxSize(container, charCount) {
+      if (!charCount) return CHAR_BOX_MAX;
+      const availableWidth = (container && container.clientWidth) || window.innerWidth;
+      const raw = Math.floor((availableWidth - (charCount - 1) * CHAR_BOX_GAP) / charCount);
+      return Math.max(CHAR_BOX_MIN, Math.min(CHAR_BOX_MAX, raw));
+    }
+
+    // Từ đang hiện (dùng chung cho demo + luyện viết, vì loadWord() luôn gọi
+    // cả 2 cùng 1 từ) — resize listener bên dưới dựa vào đây để vẽ lại đúng
+    // kích thước mới khi panel trái/phải bị ẩn/hiện (khiến QWebEngineView
+    // đổi kích thước thật, kéo theo window.innerWidth của trang đổi theo).
+    window.currentWord = null;
+    window.lastAppliedDemoBoxSize = 0;
+    window.lastAppliedPracticeBoxSize = 0;
+    let resizeDebounceTimer = null;
+
+    function handleResize() {
+      if (!window.currentWord) return;
+      const chars = Array.from(window.currentWord);
+      const newDemoSize = computeBoxSize(document.getElementById('demo-container'), chars.length);
+      const newPracticeSize = computeBoxSize(document.getElementById('practice-container'), chars.length);
+      // Chỉ vẽ lại (và mất tiến độ luyện tập) khi kích thước THỰC SỰ đổi rõ
+      // rệt — tránh vẽ lại vu vơ vì sai số làm tròn nhỏ.
+      if (Math.abs(newDemoSize - window.lastAppliedDemoBoxSize) >= 4) writeWord(window.currentWord);
+      if (Math.abs(newPracticeSize - window.lastAppliedPracticeBoxSize) >= 4) startPractice(window.currentWord);
+    }
+
+    window.addEventListener('resize', () => {
+      if (resizeDebounceTimer) clearTimeout(resizeDebounceTimer);
+      resizeDebounceTimer = setTimeout(() => {
+        resizeDebounceTimer = null;
+        handleResize();
+      }, 300);
+    });
+
+    function clearDemoAutoReplay() {
+      if (window.demoAutoReplayTimer) {
+        clearTimeout(window.demoAutoReplayTimer);
+        window.demoAutoReplayTimer = null;
+      }
+    }
+
+    function setDemoStatus(text) {
+      document.getElementById('demo-status').textContent = text;
+    }
+
+    function setPracticeStatus(text) {
+      document.getElementById('practice-status').textContent = text;
+    }
+
+    function makeCharBoxes(containerId, idPrefix, chars, boxSize) {
+      const container = document.getElementById(containerId);
+      container.innerHTML = '';
+      return chars.map((ch, idx) => {
+        const div = document.createElement('div');
+        div.className = 'char-box';
+        div.id = idPrefix + idx;
+        div.style.width = boxSize + 'px';
+        div.style.height = boxSize + 'px';
+        container.appendChild(div);
+        return div;
+      });
+    }
+
+    // --- Top section: animated writing demo (read-only) ---
+
+    function writeWord(word) {
+      clearDemoAutoReplay();
+      const token = ++window.demoRunToken;
+
+      const chars = Array.from(word);
+      const boxSize = computeBoxSize(document.getElementById('demo-container'), chars.length);
+      window.lastAppliedDemoBoxSize = boxSize;
+      const boxes = makeCharBoxes('demo-container', 'demo-char-', chars, boxSize);
+      const writers = new Array(chars.length).fill(null);
+      const ok = new Array(chars.length).fill(false);
+      window.demoWriters = [];
+
+      setDemoStatus('Đang tải nét chữ...');
+
+      let settledCount = 0;
+
+      // Chờ TẤT CẢ ký tự tải xong (dù thành công hay lỗi) rồi mới quyết định
+      // phát ký tự nào — ký tự không có dữ liệu (chữ hiếm/lạ) bị ẩn ô và bỏ
+      // qua, KHÔNG làm cả từ bị im lặng như trước.
+      function onSettled() {
+        settledCount += 1;
+        if (settledCount < chars.length || token !== window.demoRunToken) return;
+
+        const goodWriters = [];
+        let failedCount = 0;
+        chars.forEach((ch, idx) => {
+          if (ok[idx]) {
+            goodWriters.push(writers[idx]);
+          } else {
+            failedCount += 1;
+            if (boxes[idx]) boxes[idx].style.display = 'none';
+          }
+        });
+        window.demoWriters = goodWriters;
+
+        if (goodWriters.length === 0) {
+          setDemoStatus('Không tải được dữ liệu nét cho từ này (cần kết nối Internet).');
+          // Không có gì để phát cả — báo Python luôn là "xong" (không có
+          // animation nào để chờ), tránh chế độ tự động làm bài phải đợi
+          // hết thời gian timeout dự phòng mới qua được từ tiếp theo.
+          if (window.demoFinishedNotifiedToken !== token) {
+            window.demoFinishedNotifiedToken = token;
+            if (window.pyBridge) window.pyBridge.notifyDemoFinished();
+          }
+          return;
+        }
+        setDemoStatus(
+          failedCount > 0
+            ? `Đang phát hoạt hình nét bút (bỏ qua ${failedCount} ký tự không có dữ liệu)...`
+            : 'Đang phát hoạt hình nét bút...'
+        );
+        animateSequential(0, token);
+      }
+
+      chars.forEach((ch, idx) => {
+        writers[idx] = HanziWriter.create('demo-char-' + idx, ch, {
+          width: boxSize,
+          height: boxSize,
+          padding: CHAR_BOX_PADDING,
+          showOutline: true,
+          strokeAnimationSpeed: 1,
+          delayBetweenStrokes: 300,
+          strokeColor: '#2b2b2b',
+          outlineColor: '#dddddd',
+          onLoadCharDataSuccess: () => {
+            ok[idx] = true;
+            onSettled();
+          },
+          onLoadCharDataError: () => {
+            onSettled();
+          },
+        });
+      });
+    }
+
+    // Viết xong toàn bộ từ thì tự động phát lại sau AUTO_REPLAY_DELAY_MS, trừ
+    // khi đã chuyển sang từ khác hoặc người dùng bấm "Phát lại" trong lúc chờ
+    // (token không khớp / timer bị huỷ thì không phát lại nữa).
+    function animateSequential(idx, token) {
+      if (token !== window.demoRunToken) return;
+      const writers = window.demoWriters;
+      if (!writers || idx >= writers.length) {
+        setDemoStatus('Xong. Tự động phát lại sau 3 giây...');
+        // Chỉ báo Python 1 LẦN cho mỗi từ (lần viết xong ĐẦU TIÊN) — các
+        // vòng tự lặp lại sau đó (mỗi 3s) không cần báo lại.
+        if (window.demoFinishedNotifiedToken !== token) {
+          window.demoFinishedNotifiedToken = token;
+          if (window.pyBridge) window.pyBridge.notifyDemoFinished();
+        }
+        clearDemoAutoReplay();
+        window.demoAutoReplayTimer = setTimeout(() => {
+          window.demoAutoReplayTimer = null;
+          if (token === window.demoRunToken) replay();
+        }, AUTO_REPLAY_DELAY_MS);
+        return;
+      }
+      writers[idx].animateCharacter({
+        onComplete: () => animateSequential(idx + 1, token),
+      });
+    }
+
+    function replay() {
+      clearDemoAutoReplay();
+      if (window.demoWriters && window.demoWriters.length) {
+        setDemoStatus('Đang phát hoạt hình nét bút...');
+        animateSequential(0, window.demoRunToken);
+      }
+    }
+
+    // --- Bottom section: interactive practice (quiz) ---
+    //
+    // The whole character is always shown faintly (showOutline) so the user
+    // can see where to draw inside the empty grid cell.
+
+    window.currentPracticeWord = null;
+    window.practiceRunToken = 0;
+    window.practiceAutoResetTimer = null;
+    const PRACTICE_RESET_DELAY_MS = 2000;
+
+    function clearPracticeAutoReset() {
+      if (window.practiceAutoResetTimer) {
+        clearTimeout(window.practiceAutoResetTimer);
+        window.practiceAutoResetTimer = null;
+      }
+    }
+
+    function startPractice(word) {
+      clearPracticeAutoReset();
+      window.currentPracticeWord = word;
+      const token = ++window.practiceRunToken;
+
+      const chars = Array.from(word);
+      const boxSize = computeBoxSize(document.getElementById('practice-container'), chars.length);
+      window.lastAppliedPracticeBoxSize = boxSize;
+      const boxes = makeCharBoxes('practice-container', 'practice-char-', chars, boxSize);
+      const writers = new Array(chars.length).fill(null);
+      const ok = new Array(chars.length).fill(false);
+      window.practiceWriters = [];
+
+      setPracticeStatus('Đang tải nét chữ...');
+
+      let settledCount = 0;
+
+      function onSettled() {
+        settledCount += 1;
+        if (settledCount < chars.length || token !== window.practiceRunToken) return;
+
+        const goodWriters = [];
+        let failedCount = 0;
+        chars.forEach((ch, idx) => {
+          if (ok[idx]) {
+            goodWriters.push(writers[idx]);
+          } else {
+            failedCount += 1;
+            if (boxes[idx]) boxes[idx].style.display = 'none';
+          }
+        });
+        window.practiceWriters = goodWriters;
+
+        if (goodWriters.length === 0) {
+          setPracticeStatus('Không tải được dữ liệu nét cho từ này (cần kết nối Internet).');
+          return;
+        }
+        setPracticeStatus(
+          failedCount > 0
+            ? `Hãy vẽ từng nét theo đúng thứ tự (bỏ qua ${failedCount} ký tự không có dữ liệu).`
+            : 'Hãy vẽ từng nét theo đúng thứ tự.'
+        );
+        startQuizSequential(0, token);
+      }
+
+      chars.forEach((ch, idx) => {
+        writers[idx] = HanziWriter.create('practice-char-' + idx, ch, {
+          width: boxSize,
+          height: boxSize,
+          padding: CHAR_BOX_PADDING,
+          showCharacter: false,
+          showOutline: true,
+          outlineColor: 'rgba(43, 43, 43, 0.25)',
+          strokeColor: '#2b2b2b',
+          drawingWidth: 40,
+          onLoadCharDataSuccess: () => {
+            ok[idx] = true;
+            onSettled();
+          },
+          onLoadCharDataError: () => {
+            onSettled();
+          },
+        });
+      });
+    }
+
+    // Viết xong thì hiện thông báo "Làm tốt lắm", đợi 2 giây rồi tự reset lại
+    // để viết từ đầu (startPractice mới sẽ tự thay thông báo cũ bằng trạng
+    // thái mới, coi như đã xoá thông báo "Làm tốt lắm").
+    function startQuizSequential(idx, token) {
+      if (token !== window.practiceRunToken) return;
+      const writers = window.practiceWriters;
+      if (!writers || idx >= writers.length) {
+        setPracticeStatus('Làm tốt lắm! Bạn đã viết đúng cả từ.');
+        clearPracticeAutoReset();
+        window.practiceAutoResetTimer = setTimeout(() => {
+          window.practiceAutoResetTimer = null;
+          if (token === window.practiceRunToken && window.currentPracticeWord) {
+            startPractice(window.currentPracticeWord);
+          }
+        }, PRACTICE_RESET_DELAY_MS);
+        return;
+      }
+      writers[idx].quiz({
+        onCorrectStroke: () => {
+          setPracticeStatus('Chính xác! Tiếp tục nét tiếp theo.');
+        },
+        onMistake: () => {
+          setPracticeStatus('Sai rồi, thử lại nét này.');
+        },
+        onComplete: () => {
+          startQuizSequential(idx + 1, token);
+        },
+      });
+    }
+
+    // --- Shared entry point called from Python ---
+
+    function loadWord(word) {
+      window.currentWord = word;
+      writeWord(word);
+      startPractice(word);
+    }
+  </script>
+</body>
+</html>

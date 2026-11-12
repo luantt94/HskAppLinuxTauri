@@ -1,0 +1,607 @@
+{
+  "level": "HSK2",
+  "story_title": "Câu chuyện của Lý Minh (2): Cuộc sống ở Bắc Kinh",
+  "story_intro_vi": "Lý Minh đã quen với cuộc sống ở Trung Quốc. Bây giờ bạn ấy có nhiều trải nghiệm mới hơn: đi chơi xa, kết bạn, học nấu ăn, và chuẩn bị cho kỳ thi HSK2.",
+  "passages": [
+    {
+      "id": 1,
+      "title_zh": "新学期",
+      "title_vi": "Học kỳ mới",
+      "text": "新学期开始了，我的汉语水平比以前高了一点儿。这个学期我们班来了一个新同学，她叫玛丽，是法国人。",
+      "text_vi": "Học kỳ mới đã bắt đầu, trình độ tiếng Trung của tôi cao hơn trước một chút. Học kỳ này lớp chúng tôi có một bạn mới, cô ấy tên là Mary, là người Pháp.",
+      "vocab": [
+        {
+          "zh": "学期",
+          "pinyin": "xuéqī",
+          "vi": "học kỳ"
+        },
+        {
+          "zh": "水平",
+          "pinyin": "shuǐpíng",
+          "vi": "trình độ"
+        },
+        {
+          "zh": "玛丽",
+          "pinyin": "Mǎlì",
+          "vi": "Mary (tên bạn mới, người Pháp)"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title_zh": "爬长城",
+      "title_vi": "Leo Vạn Lý Trường Thành",
+      "text": "上个星期天，我们一起去爬长城了。长城又高又长，爬到最高的地方，我们都累极了，但是风景美得让我们忘了累。",
+      "text_vi": "Chủ nhật tuần trước, chúng tôi cùng nhau đi leo Vạn Lý Trường Thành. Trường Thành vừa cao vừa dài, leo lên chỗ cao nhất, chúng tôi đều mệt lả, nhưng phong cảnh đẹp đến mức khiến chúng tôi quên cả mệt.",
+      "vocab": [
+        {
+          "zh": "长城",
+          "pinyin": "Chángchéng",
+          "vi": "Vạn Lý Trường Thành"
+        },
+        {
+          "zh": "风景",
+          "pinyin": "fēngjǐng",
+          "vi": "phong cảnh"
+        },
+        {
+          "zh": "累",
+          "pinyin": "lèi",
+          "vi": "mệt"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title_zh": "小红的生日会",
+      "title_vi": "Tiệc sinh nhật Tiểu Hồng",
+      "text": "明天是小红的生日，我们打算给她开一个生日会。大卫负责买蛋糕，我负责买饮料，玛丽会唱一首中文歌送给她。",
+      "text_vi": "Ngày mai là sinh nhật Tiểu Hồng, chúng tôi định tổ chức cho cô ấy một bữa tiệc sinh nhật. David phụ trách mua bánh kem, tôi phụ trách mua đồ uống, Mary sẽ hát một bài hát tiếng Trung tặng cô ấy.",
+      "vocab": [
+        {
+          "zh": "生日会",
+          "pinyin": "shēngrìhuì",
+          "vi": "tiệc sinh nhật"
+        },
+        {
+          "zh": "负责",
+          "pinyin": "fùzé",
+          "vi": "phụ trách, chịu trách nhiệm"
+        },
+        {
+          "zh": "蛋糕",
+          "pinyin": "dàngāo",
+          "vi": "bánh kem, bánh gato"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title_zh": "学做中国菜",
+      "title_vi": "Học nấu món Trung Quốc",
+      "text": "小红的妈妈教我做了一道中国菜——西红柿炒鸡蛋。她说做菜其实不难，只要多练习就能做得越来越好。",
+      "text_vi": "Mẹ của Tiểu Hồng đã dạy tôi làm một món ăn Trung Quốc — trứng xào cà chua. Bà nói nấu ăn thật ra không khó, chỉ cần luyện tập nhiều là sẽ làm ngày càng ngon hơn.",
+      "vocab": [
+        {
+          "zh": "西红柿",
+          "pinyin": "xīhóngshì",
+          "vi": "cà chua"
+        },
+        {
+          "zh": "炒",
+          "pinyin": "chǎo",
+          "vi": "xào"
+        },
+        {
+          "zh": "越来越",
+          "pinyin": "yuèláiyuè",
+          "vi": "càng ngày càng"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title_zh": "迷路了",
+      "title_vi": "Bị lạc đường",
+      "text": "昨天我一个人去一家新的书店，可是迷路了。我问了一位老人，他很热心地告诉我怎么走。最后我终于找到了那家书店。",
+      "text_vi": "Hôm qua tôi một mình đi đến một hiệu sách mới, nhưng bị lạc đường. Tôi hỏi một ông cụ, ông rất nhiệt tình chỉ cho tôi cách đi. Cuối cùng tôi cũng tìm được hiệu sách đó.",
+      "vocab": [
+        {
+          "zh": "迷路",
+          "pinyin": "mílù",
+          "vi": "lạc đường"
+        },
+        {
+          "zh": "热心",
+          "pinyin": "rèxīn",
+          "vi": "nhiệt tình, sốt sắng"
+        },
+        {
+          "zh": "终于",
+          "pinyin": "zhōngyú",
+          "vi": "cuối cùng"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title_zh": "朋友生病了",
+      "title_vi": "Bạn bị ốm",
+      "text": "大卫生病了，发烧发得很厉害。我和小红一起去医院看他，还给他带了水果。医生说他休息几天就会好的。",
+      "text_vi": "David bị ốm, sốt rất nặng. Tôi và Tiểu Hồng cùng đến bệnh viện thăm cậu ấy, còn mang theo trái cây cho cậu. Bác sĩ nói cậu ấy nghỉ ngơi vài ngày sẽ khỏi thôi.",
+      "vocab": [
+        {
+          "zh": "厉害",
+          "pinyin": "lìhai",
+          "vi": "nặng, dữ dội, ghê gớm"
+        },
+        {
+          "zh": "看",
+          "pinyin": "kàn",
+          "vi": "thăm (người bệnh)"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title_zh": "中国新年",
+      "title_vi": "Tết Trung Quốc",
+      "text": "再过两个星期就是中国新年了。越南也过春节，和中国的习惯很像，但是也有一些不一样的地方。我打算跟小红的家人一起过年。",
+      "text_vi": "Còn hai tuần nữa là đến Tết Trung Quốc. Việt Nam cũng ăn Tết Nguyên Đán, phong tục rất giống Trung Quốc, nhưng cũng có một số điểm khác. Tôi định cùng ăn Tết với gia đình Tiểu Hồng.",
+      "vocab": [
+        {
+          "zh": "春节",
+          "pinyin": "Chūnjié",
+          "vi": "Tết Nguyên Đán, Xuân Tiết"
+        },
+        {
+          "zh": "习惯",
+          "pinyin": "xíguàn",
+          "vi": "thói quen, phong tục"
+        },
+        {
+          "zh": "过年",
+          "pinyin": "guònián",
+          "vi": "ăn Tết"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title_zh": "学写汉字",
+      "title_vi": "Học viết chữ Hán",
+      "text": "王老师教我们用毛笔写汉字。一开始我写得不好看，手也不知道怎么拿笔。练习了一个月以后，我写得比以前好多了。",
+      "text_vi": "Cô Vương dạy chúng tôi dùng bút lông viết chữ Hán. Lúc đầu tôi viết không đẹp, tay cũng không biết cầm bút thế nào. Luyện tập một tháng, tôi viết đẹp hơn trước nhiều rồi.",
+      "vocab": [
+        {
+          "zh": "毛笔",
+          "pinyin": "máobǐ",
+          "vi": "bút lông"
+        },
+        {
+          "zh": "一开始",
+          "pinyin": "yì kāishǐ",
+          "vi": "lúc đầu, mới đầu"
+        },
+        {
+          "zh": "练习",
+          "pinyin": "liànxí",
+          "vi": "luyện tập"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title_zh": "运动会",
+      "title_vi": "Hội thao",
+      "text": "学校开运动会了。我参加了跑步比赛，虽然没得第一名，但是我得了第三名，我已经很满意了。玛丽说她为我感到骄傲。",
+      "text_vi": "Trường tổ chức hội thao. Tôi tham gia cuộc thi chạy bộ, tuy không giành giải nhất nhưng tôi được giải ba, tôi đã rất hài lòng rồi. Mary nói cô ấy cảm thấy tự hào về tôi.",
+      "vocab": [
+        {
+          "zh": "运动会",
+          "pinyin": "yùndònghuì",
+          "vi": "hội thao"
+        },
+        {
+          "zh": "比赛",
+          "pinyin": "bǐsài",
+          "vi": "cuộc thi"
+        },
+        {
+          "zh": "骄傲",
+          "pinyin": "jiāo'ào",
+          "vi": "tự hào"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title_zh": "下大雨的晚上",
+      "title_vi": "Đêm mưa to",
+      "text": "昨天晚上下了很大的雨，还打雷。我一个人在宿舍，有点儿害怕。后来小红给我打了电话，我们聊了很久，我才不那么害怕了。",
+      "text_vi": "Tối hôm qua mưa rất to, còn có sấm sét nữa. Tôi một mình ở ký túc xá, hơi sợ một chút. Sau đó Tiểu Hồng gọi điện cho tôi, chúng tôi nói chuyện rất lâu, tôi mới bớt sợ.",
+      "vocab": [
+        {
+          "zh": "打雷",
+          "pinyin": "dǎléi",
+          "vi": "sấm sét, có sấm"
+        },
+        {
+          "zh": "害怕",
+          "pinyin": "hàipà",
+          "vi": "sợ hãi"
+        },
+        {
+          "zh": "聊",
+          "pinyin": "liáo",
+          "vi": "trò chuyện, tán gẫu"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title_zh": "去小红家过年",
+      "title_vi": "Về nhà Tiểu Hồng ăn Tết",
+      "text": "除夕那天，我跟小红一家一起吃了年夜饭，还看了春节晚会。小红的爷爷奶奶给了我一个红包，我高兴极了。",
+      "text_vi": "Đêm giao thừa, tôi cùng gia đình Tiểu Hồng ăn bữa cơm tất niên, còn xem chương trình Gala Xuân. Ông bà của Tiểu Hồng còn lì xì cho tôi một bao lì xì, tôi vui mừng vô cùng.",
+      "vocab": [
+        {
+          "zh": "除夕",
+          "pinyin": "chúxī",
+          "vi": "đêm giao thừa"
+        },
+        {
+          "zh": "年夜饭",
+          "pinyin": "niányèfàn",
+          "vi": "cơm tất niên"
+        },
+        {
+          "zh": "红包",
+          "pinyin": "hóngbāo",
+          "vi": "bao lì xì"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title_zh": "考试的结果",
+      "title_vi": "Kết quả kỳ thi",
+      "text": "上个月的考试结果出来了，我考得比上次好。老师说如果我继续这样努力，这次的HSK考试一定没问题。",
+      "text_vi": "Kết quả kỳ thi tháng trước đã có rồi, tôi thi tốt hơn lần trước. Cô giáo nói nếu tôi tiếp tục cố gắng như vậy, kỳ thi HSK lần này chắc chắn sẽ không có vấn đề gì.",
+      "vocab": [
+        {
+          "zh": "结果",
+          "pinyin": "jiéguǒ",
+          "vi": "kết quả"
+        },
+        {
+          "zh": "继续",
+          "pinyin": "jìxù",
+          "vi": "tiếp tục"
+        },
+        {
+          "zh": "努力",
+          "pinyin": "nǔlì",
+          "vi": "cố gắng, nỗ lực"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title_zh": "暑假计划",
+      "title_vi": "Kế hoạch nghỉ hè",
+      "text": "暑假快到了，我们打算一起去上海旅游。大卫说他想去看看上海的夜景，玛丽想去买东西，我最想尝尝上海的小吃。",
+      "text_vi": "Kỳ nghỉ hè sắp đến rồi, chúng tôi định cùng nhau đi du lịch Thượng Hải. David nói cậu ấy muốn đi ngắm cảnh đêm Thượng Hải, Mary muốn đi mua sắm, tôi thì muốn nếm thử các món ăn vặt Thượng Hải nhất.",
+      "vocab": [
+        {
+          "zh": "暑假",
+          "pinyin": "shǔjià",
+          "vi": "kỳ nghỉ hè"
+        },
+        {
+          "zh": "旅游",
+          "pinyin": "lǚyóu",
+          "vi": "du lịch"
+        },
+        {
+          "zh": "小吃",
+          "pinyin": "xiǎochī",
+          "vi": "món ăn vặt"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title_zh": "上海之旅",
+      "title_vi": "Chuyến đi Thượng Hải",
+      "text": "我们坐火车去了上海，玩儿了四天。上海比北京更繁华，到了晚上，外滩的灯光非常漂亮，我们都拍了很多照片。",
+      "text_vi": "Chúng tôi đi tàu hỏa đến Thượng Hải, chơi bốn ngày. Thượng Hải phồn hoa hơn Bắc Kinh, đến tối, ánh đèn ở Ngoại Than rất đẹp, chúng tôi đều chụp rất nhiều ảnh.",
+      "vocab": [
+        {
+          "zh": "繁华",
+          "pinyin": "fánhuá",
+          "vi": "phồn hoa, náo nhiệt"
+        },
+        {
+          "zh": "外滩",
+          "pinyin": "Wàitān",
+          "vi": "Ngoại Than (khu bờ sông nổi tiếng ở Thượng Hải)"
+        },
+        {
+          "zh": "照片",
+          "pinyin": "zhàopiàn",
+          "vi": "ảnh, tấm hình"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title_zh": "学骑自行车",
+      "title_vi": "Học đi xe đạp",
+      "text": "以前我不会骑自行车，大卫用了一个下午教会了我。现在我每天都骑自行车去学校，又方便又环保。",
+      "text_vi": "Trước đây tôi không biết đi xe đạp, David dùng một buổi chiều đã dạy tôi biết đi. Bây giờ mỗi ngày tôi đều đi xe đạp đến trường, vừa tiện lợi vừa thân thiện môi trường.",
+      "vocab": [
+        {
+          "zh": "自行车",
+          "pinyin": "zìxíngchē",
+          "vi": "xe đạp"
+        },
+        {
+          "zh": "方便",
+          "pinyin": "fāngbiàn",
+          "vi": "tiện lợi"
+        },
+        {
+          "zh": "环保",
+          "pinyin": "huánbǎo",
+          "vi": "bảo vệ môi trường"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title_zh": "给朋友们做越南菜",
+      "title_vi": "Nấu món Việt Nam cho bạn bè",
+      "text": "我在宿舍给朋友们做了越南春卷和越南米粉。大家都说很好吃，还问我下次能不能再做。我觉得特别开心和骄傲。",
+      "text_vi": "Tôi làm nem rán Việt Nam và phở cho bạn bè ăn ở ký túc xá. Mọi người đều khen ngon, còn hỏi lần sau tôi có thể làm lại không. Tôi cảm thấy đặc biệt vui và tự hào.",
+      "vocab": [
+        {
+          "zh": "春卷",
+          "pinyin": "chūnjuǎn",
+          "vi": "nem rán, chả giò"
+        },
+        {
+          "zh": "米粉",
+          "pinyin": "mǐfěn",
+          "vi": "phở, bún (làm từ gạo)"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title_zh": "看电影的晚上",
+      "title_vi": "Đêm xem phim",
+      "text": "星期五晚上，我们四个人一起去看了一场中国电影。电影很感动，玛丽看哭了。看完电影，我们还讨论了很长时间。",
+      "text_vi": "Tối thứ Sáu, bốn chúng tôi cùng đi xem một bộ phim Trung Quốc. Bộ phim rất cảm động, Mary xem khóc luôn. Xem phim xong, chúng tôi còn thảo luận rất lâu.",
+      "vocab": [
+        {
+          "zh": "感动",
+          "pinyin": "gǎndòng",
+          "vi": "cảm động"
+        },
+        {
+          "zh": "讨论",
+          "pinyin": "tǎolùn",
+          "vi": "thảo luận"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title_zh": "图书馆的小组作业",
+      "title_vi": "Bài tập nhóm ở thư viện",
+      "text": "这个星期我们有一个小组作业，我和小红、玛丽一起在图书馆准备。我们分工合作，三天就把作业做完了。",
+      "text_vi": "Tuần này chúng tôi có một bài tập nhóm, tôi cùng Tiểu Hồng và Mary chuẩn bị ở thư viện. Chúng tôi phân công hợp tác, ba ngày đã làm xong bài tập.",
+      "vocab": [
+        {
+          "zh": "小组",
+          "pinyin": "xiǎozǔ",
+          "vi": "nhóm nhỏ"
+        },
+        {
+          "zh": "分工",
+          "pinyin": "fēngōng",
+          "vi": "phân công"
+        },
+        {
+          "zh": "合作",
+          "pinyin": "hézuò",
+          "vi": "hợp tác"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title_zh": "给父母写信",
+      "title_vi": "Viết thư cho bố mẹ",
+      "text": "我给爸爸妈妈写了一封信，告诉他们我在中国的生活和学习情况。我说我过得很好，也交了很多好朋友，请他们放心。",
+      "text_vi": "Tôi viết một bức thư cho bố mẹ, kể cho họ về cuộc sống và việc học của tôi ở Trung Quốc. Tôi nói tôi sống rất tốt, cũng kết được nhiều bạn tốt, xin họ yên tâm.",
+      "vocab": [
+        {
+          "zh": "封",
+          "pinyin": "fēng",
+          "vi": "lượng từ dùng cho thư"
+        },
+        {
+          "zh": "情况",
+          "pinyin": "qíngkuàng",
+          "vi": "tình hình"
+        },
+        {
+          "zh": "放心",
+          "pinyin": "fàngxīn",
+          "vi": "yên tâm"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title_zh": "早起跑步",
+      "title_vi": "Dậy sớm chạy bộ",
+      "text": "最近我每天早上六点起床跑步。跑了两个星期，我觉得身体好多了，晚上也睡得更好。小红说她也想跟我一起跑。",
+      "text_vi": "Gần đây ngày nào tôi cũng dậy lúc sáu giờ sáng để chạy bộ. Chạy được hai tuần, tôi thấy sức khỏe tốt hơn nhiều, buổi tối cũng ngủ ngon hơn. Tiểu Hồng nói cô ấy cũng muốn chạy cùng tôi.",
+      "vocab": [
+        {
+          "zh": "最近",
+          "pinyin": "zuìjìn",
+          "vi": "gần đây"
+        },
+        {
+          "zh": "身体",
+          "pinyin": "shēntǐ",
+          "vi": "cơ thể, sức khỏe"
+        },
+        {
+          "zh": "睡",
+          "pinyin": "shuì",
+          "vi": "ngủ"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "title_zh": "手机坏了",
+      "title_vi": "Điện thoại bị hỏng",
+      "text": "昨天我的手机突然坏了，不能给家里打电话。大卫陪我去修手机。修好以后我很高兴，因为里面有很多重要的照片。",
+      "text_vi": "Hôm qua điện thoại của tôi đột nhiên bị hỏng, không thể gọi về nhà. David đi cùng tôi đi sửa điện thoại. Sửa xong tôi rất vui, vì trong đó có rất nhiều ảnh quan trọng.",
+      "vocab": [
+        {
+          "zh": "突然",
+          "pinyin": "tūrán",
+          "vi": "đột nhiên"
+        },
+        {
+          "zh": "坏",
+          "pinyin": "huài",
+          "vi": "hỏng"
+        },
+        {
+          "zh": "修",
+          "pinyin": "xiū",
+          "vi": "sửa"
+        },
+        {
+          "zh": "重要",
+          "pinyin": "zhòngyào",
+          "vi": "quan trọng"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "title_zh": "玛丽的中文名字",
+      "title_vi": "Tên tiếng Trung của Mary",
+      "text": "玛丽觉得她的名字很难写，所以想要一个中文名字。王老师给她起了一个名字，叫“美丽”。玛丽很喜欢，说这个名字又好听又好记。",
+      "text_vi": "Mary thấy tên của mình rất khó viết nên muốn có một cái tên tiếng Trung. Cô Vương đặt cho cô ấy một cái tên là “Mỹ Lệ”. Mary rất thích, nói cái tên này vừa hay vừa dễ nhớ.",
+      "vocab": [
+        {
+          "zh": "名字",
+          "pinyin": "míngzi",
+          "vi": "tên"
+        },
+        {
+          "zh": "好听",
+          "pinyin": "hǎotīng",
+          "vi": "dễ nghe, hay"
+        },
+        {
+          "zh": "好记",
+          "pinyin": "hǎojì",
+          "vi": "dễ nhớ"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "title_zh": "在咖啡店学习",
+      "title_vi": "Học bài ở quán cà phê",
+      "text": "周末下午，我们常常去学校旁边的咖啡店学习。那里很安静，咖啡也很好喝。可是有时候我们说话说得太多，忘了做作业。",
+      "text_vi": "Chiều cuối tuần, chúng tôi thường đến quán cà phê cạnh trường để học. Ở đó rất yên tĩnh, cà phê cũng rất ngon. Nhưng đôi khi chúng tôi nói chuyện quá nhiều mà quên làm bài tập.",
+      "vocab": [
+        {
+          "zh": "咖啡店",
+          "pinyin": "kāfēidiàn",
+          "vi": "quán cà phê"
+        },
+        {
+          "zh": "安静",
+          "pinyin": "ānjìng",
+          "vi": "yên tĩnh"
+        },
+        {
+          "zh": "忘",
+          "pinyin": "wàng",
+          "vi": "quên"
+        },
+        {
+          "zh": "作业",
+          "pinyin": "zuòyè",
+          "vi": "bài tập"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "title_zh": "第一次看到雪",
+      "title_vi": "Lần đầu thấy tuyết",
+      "text": "今年冬天北京下雪了。这是我第一次看到雪。我和小红在学校里堆了一个雪人，拍了很多照片，高兴得像小孩子一样。",
+      "text_vi": "Mùa đông năm nay Bắc Kinh có tuyết rơi. Đây là lần đầu tiên tôi thấy tuyết. Tôi và Tiểu Hồng đắp một người tuyết trong trường, chụp rất nhiều ảnh, vui như trẻ con vậy.",
+      "vocab": [
+        {
+          "zh": "雪",
+          "pinyin": "xuě",
+          "vi": "tuyết"
+        },
+        {
+          "zh": "堆",
+          "pinyin": "duī",
+          "vi": "chất, đắp"
+        },
+        {
+          "zh": "雪人",
+          "pinyin": "xuěrén",
+          "vi": "người tuyết"
+        },
+        {
+          "zh": "小孩子",
+          "pinyin": "xiǎoháizi",
+          "vi": "trẻ con"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "title_zh": "HSK二级考试",
+      "title_vi": "Kỳ thi HSK cấp 2",
+      "text": "今天我参加了HSK二级考试。考试不太难，我都认真地做完了。走出考场的时候，我觉得这一年我学到了很多，也成长了很多。",
+      "text_vi": "Hôm nay tôi tham gia kỳ thi HSK cấp 2. Đề thi không khó lắm, tôi đều làm bài nghiêm túc xong hết. Khi bước ra khỏi phòng thi, tôi cảm thấy một năm này mình đã học được rất nhiều, cũng trưởng thành hơn rất nhiều.",
+      "vocab": [
+        {
+          "zh": "认真",
+          "pinyin": "rènzhēn",
+          "vi": "nghiêm túc, chăm chỉ"
+        },
+        {
+          "zh": "考场",
+          "pinyin": "kǎochǎng",
+          "vi": "phòng thi, trường thi"
+        },
+        {
+          "zh": "成长",
+          "pinyin": "chéngzhǎng",
+          "vi": "trưởng thành"
+        }
+      ]
+    }
+  ]
+}

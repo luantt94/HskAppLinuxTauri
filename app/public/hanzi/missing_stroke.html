@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<title>Missing Stroke</title>
+<script src="./hanzi-writer.min.js"></script>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+    font-family: sans-serif;
+  }
+  #progress {
+    text-align: center;
+    color: #1d4ed8;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px 16px 0;
+    min-height: 18px;
+  }
+  #status {
+    text-align: center;
+    color: #475569;
+    font-size: 13px;
+    padding: 4px 16px 0;
+    min-height: 18px;
+  }
+  #status.ok { color: #15803d; font-weight: 700; }
+  #miss-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+  }
+  .mbox {
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    background-image:
+      linear-gradient(to right, #e5b0b0 1px, transparent 1px),
+      linear-gradient(to bottom, #e5b0b0 1px, transparent 1px),
+      linear-gradient(to bottom right, transparent calc(50% - 1px), #e5b0b0 calc(50% - 1px), #e5b0b0 calc(50% + 1px), transparent calc(50% + 1px)),
+      linear-gradient(to bottom left, transparent calc(50% - 1px), #e5b0b0 calc(50% - 1px), #e5b0b0 calc(50% + 1px), transparent calc(50% + 1px));
+    background-size: 100% 100%;
+    background-position: center, center, 0 0, 0 0;
+    background-repeat: no-repeat;
+    cursor: crosshair;
+  }
+  .mbox.done {
+    border-color: #39b54a;
+    background-color: #f0fdf4;
+  }
+  .mstatic, .mwriter {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .mstatic { pointer-events: none; }
+</style>
+</head>
+<body>
+  <div id="progress"></div>
+  <div id="status">Chọn một từ ở danh sách bên trái</div>
+  <div id="miss-container"></div>
+
+  <script>
+    const PAD = 8;
+    const SVG_NS = 'http://www.w3.org/2000/svg';
+    const STROKE_COLOR = '#2b2b2b';
+    const DONE_COLOR = '#15803d';
+
+    // Mỗi từ có N nét thì có N vòng "điền nét còn thiếu" (mỗi nét bị khuyết
+    // đúng 1 lần, thứ tự xáo trộn), rồi vòng cuối tự viết lại toàn bộ từ.
+    window.missRunToken = 0;
+    window.currentMissWord = null;
+
+    function setProgress(text) {
+      document.getElementById('progress').textContent = text || '';
+    }
+
+    function setStatus(text, ok) {
+      const el = document.getElementById('status');
+      el.textContent = text;
+      el.className = ok ? 'ok' : '';
+    }
+
+    function shuffle(arr) {
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+
+    function isCurrent(session) {
+      return session.token === window.missRunToken;
+    }
+
+    function loadMissingStroke(word, compact) {
+      window.currentMissWord = word;
+      // compact: ẩn dòng hướng dẫn/kết quả (dùng cho dialog nhỏ).
+      if (typeof compact === 'boolean') window.missCompact = compact;
+      document.getElementById('status').style.display = window.missCompact ? 'none' : '';
+      const token = ++window.missRunToken;
+      document.getElementById('miss-container').innerHTML = '';
+      setProgress('');
+      setStatus('Đang tải nét chữ...');
+
+      const chars = Array.from(word).filter((c) => /[一-鿿]/.test(c));
+      Promise.all(
+        chars.map((ch) =>
+          HanziWriter.loadCharacterData(ch).then(
+            (data) => ({ ch, data }),
+            () => null
+          )
+        )
+      ).then((list) => {
+        if (token !== window.missRunToken) return;
+        const items = list.filter((x) => x && x.data && x.data.strokes && x.data.strokes.length);
+        if (items.length === 0) {
+          setStatus('Không tải được dữ liệu nét cho từ này (cần kết nối Internet).');
+          return;
+        }
+        startSession(items, token);
+      });
+    }
+
+    function startSession(items, token) {
+      const container = document.getElementById('miss-container');
+      container.innerHTML = '';
+      const size = Math.max(90, Math.min(170, Math.floor((window.innerWidth - 48) / items.length) - 16));
+
+      const plan = [];
+      items.forEach((it, ci) => it.data.strokes.forEach((_, si) => plan.push({ ci, si })));
+      shuffle(plan);
+
+      const session = { token, size, items, plan, round: 0, boxes: [], writers: [] };
+      window.missSession = session;
+      items.forEach((it, ci) => {
+        const box = document.createElement('div');
+        box.className = 'mbox';
+        box.style.width = size + 'px';
+        box.style.height = size + 'px';
+
+        const svg = document.createElementNS(SVG_NS, 'svg');
+        svg.setAttribute('width', size);
+        svg.setAttribute('height', size);
+        svg.setAttribute('class', 'mstatic');
+        const g = document.createElementNS(SVG_NS, 'g');
+        g.setAttribute('transform', HanziWriter.getScalingTransform(size, size, PAD).transform);
+        svg.appendChild(g);
+
+        const wdiv = document.createElement('div');
+        wdiv.className = 'mwriter';
+        wdiv.id = 'mw-' + token + '-' + ci;
+
+        box.appendChild(svg);
+        box.appendChild(wdiv);
+        container.appendChild(box);
+        session.boxes.push({ box, g, wdiv });
+        session.writers.push(null);
+      });
+
+      nextRound(session);
+    }
+
+    function drawStatic(session, ci, skipStroke) {
+      const { g } = session.boxes[ci];
+      g.innerHTML = '';
+      session.items[ci].data.strokes.forEach((d, si) => {
+        if (si === skipStroke) return;
+        const path = document.createElementNS(SVG_NS, 'path');
+        path.setAttribute('d', d);
+        path.setAttribute('fill', STROKE_COLOR);
+        g.appendChild(path);
+      });
+    }
+
+    function clearWriter(session, ci) {
+      const w = session.writers[ci];
+      if (w) {
+        try { w.cancelQuiz(); } catch (e) {}
+      }
+      session.writers[ci] = null;
+      const { box, wdiv } = session.boxes[ci];
+      wdiv.innerHTML = '';
+      box.classList.remove('done');
+    }
+
+    function createWriter(session, ci, extra) {
+      const it = session.items[ci];
+      return HanziWriter.create(session.boxes[ci].wdiv.id, it.ch, Object.assign({
+        width: session.size,
+        height: session.size,
+        padding: PAD,
+        showCharacter: false,
+        showOutline: false,
+        strokeColor: STROKE_COLOR,
+        drawingColor: '#1d4ed8',
+        drawingWidth: 40,
+        highlightColor: '#f59e0b',
+        highlightOnComplete: false,
+        charDataLoader: (c, onComplete) => onComplete(it.data),
+      }, extra || {}));
+    }
+
+    function nextRound(session) {
+      if (!isCurrent(session)) return;
+      if (session.round >= session.plan.length) {
+        startFinal(session);
+        return;
+      }
+      const { ci, si } = session.plan[session.round];
+      setProgress('Vòng ' + (session.round + 1) + '/' + session.plan.length);
+      setStatus('Hãy viết nét còn thiếu của từ.');
+
+      session.items.forEach((_, i) => {
+        clearWriter(session, i);
+        drawStatic(session, i, i === ci ? si : -1);
+      });
+
+      const writer = createWriter(session, ci);
+      session.writers[ci] = writer;
+      let finished = false;
+      const finish = () => {
+        if (finished || !isCurrent(session)) return;
+        finished = true;
+        // Tạm hoãn để thư viện xử lý xong nét vừa đúng rồi mới huỷ quiz.
+        setTimeout(() => {
+          try { writer.cancelQuiz(); } catch (e) {}
+          try {
+            writer.showCharacter({ duration: 0 });
+            writer.updateColor('strokeColor', DONE_COLOR, { duration: 0 });
+          } catch (e) {}
+          session.boxes[ci].box.classList.add('done');
+          setStatus('Đúng rồi!', true);
+          session.round += 1;
+          setTimeout(() => nextRound(session), 900);
+        }, 0);
+      };
+      writer.quiz({
+        quizStartStrokeNum: si,
+        showHintAfterMisses: 2,
+        markStrokeCorrectAfterMisses: 4,
+        highlightOnComplete: false,
+        onCorrectStroke: finish,
+        onComplete: finish,
+      });
+    }
+
+    function startFinal(session) {
+      if (!isCurrent(session)) return;
+      setProgress('Vòng cuối');
+      setStatus('Hãy tự viết lại toàn bộ từ.');
+      let remaining = session.items.length;
+      session.items.forEach((it, ci) => {
+        clearWriter(session, ci);
+        session.boxes[ci].g.innerHTML = '';
+        const writer = createWriter(session, ci);
+        session.writers[ci] = writer;
+        writer.quiz({
+          showHintAfterMisses: 3,
+          highlightOnComplete: false,
+          onComplete: () => {
+            if (!isCurrent(session)) return;
+            session.boxes[ci].box.classList.add('done');
+            remaining -= 1;
+            if (remaining === 0) {
+              setProgress('Hoàn thành');
+              setStatus('Xong! Bấm "Từ tiếp theo" để qua từ mới.', true);
+            }
+          },
+        });
+      });
+    }
+
+    function replayMissingStroke() {
+      if (window.currentMissWord) loadMissingStroke(window.currentMissWord);
+    }
+  </script>
+</body>
+</html>

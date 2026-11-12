@@ -1,0 +1,592 @@
+{
+  "level": "HSK1",
+  "story_title": "Câu chuyện của Lý Minh (1): Những ngày đầu tiên",
+  "story_intro_vi": "Lý Minh là một bạn trẻ người Việt Nam sang Trung Quốc học tiếng Trung. 25 đoạn văn dưới đây kể lại những ngày đầu tiên của bạn ấy — gia đình, bạn bè, trường học và cuộc sống hằng ngày.",
+  "passages": [
+    {
+      "id": 1,
+      "title_zh": "我的名字",
+      "title_vi": "Tên của tôi",
+      "text": "我叫李明。我是越南人。我今年二十岁。",
+      "text_vi": "Tôi tên là Lý Minh. Tôi là người Việt Nam. Năm nay tôi hai mươi tuổi.",
+      "vocab": [
+        {
+          "zh": "李明",
+          "pinyin": "Lǐ Míng",
+          "vi": "Lý Minh (tên nhân vật chính)"
+        },
+        {
+          "zh": "越南人",
+          "pinyin": "yuènánrén",
+          "vi": "người Việt Nam"
+        },
+        {
+          "zh": "今年",
+          "pinyin": "jīnnián",
+          "vi": "năm nay"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title_zh": "我的家",
+      "title_vi": "Gia đình tôi",
+      "text": "我家有四口人：爸爸、妈妈、姐姐和我。爸爸是医生，妈妈是老师。",
+      "text_vi": "Nhà tôi có bốn người: bố, mẹ, chị gái và tôi. Bố là bác sĩ, mẹ là giáo viên.",
+      "vocab": [
+        {
+          "zh": "口",
+          "pinyin": "kǒu",
+          "vi": "lượng từ dùng đếm người trong nhà"
+        },
+        {
+          "zh": "姐姐",
+          "pinyin": "jiějie",
+          "vi": "chị gái"
+        },
+        {
+          "zh": "医生",
+          "pinyin": "yīshēng",
+          "vi": "bác sĩ"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title_zh": "在学校",
+      "title_vi": "Ở trường",
+      "text": "现在我在中国学习汉语。我的老师很好，同学们也很好。我很高兴。",
+      "text_vi": "Bây giờ tôi đang học tiếng Trung ở Trung Quốc. Thầy giáo của tôi rất tốt, các bạn cùng lớp cũng rất tốt. Tôi rất vui.",
+      "vocab": [
+        {
+          "zh": "汉语",
+          "pinyin": "hànyǔ",
+          "vi": "tiếng Hán (tiếng Trung)"
+        },
+        {
+          "zh": "同学",
+          "pinyin": "tóngxué",
+          "vi": "bạn cùng lớp, bạn học"
+        },
+        {
+          "zh": "高兴",
+          "pinyin": "gāoxìng",
+          "vi": "vui, vui vẻ"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title_zh": "我的朋友",
+      "title_vi": "Bạn của tôi",
+      "text": "我有两个好朋友。一个叫大卫，他是美国人。一个叫小红，她是中国人。我们一起学习汉语。",
+      "text_vi": "Tôi có hai người bạn tốt. Một người tên là David, anh ấy là người Mỹ. Một người tên là Tiểu Hồng, cô ấy là người Trung Quốc. Chúng tôi cùng nhau học tiếng Trung.",
+      "vocab": [
+        {
+          "zh": "大卫",
+          "pinyin": "Dàwèi",
+          "vi": "David (tên bạn người Mỹ)"
+        },
+        {
+          "zh": "小红",
+          "pinyin": "Xiǎohóng",
+          "vi": "Tiểu Hồng (tên bạn người Trung Quốc)"
+        },
+        {
+          "zh": "美国人",
+          "pinyin": "měiguórén",
+          "vi": "người Mỹ"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title_zh": "我的宿舍",
+      "title_vi": "Ký túc xá của tôi",
+      "text": "我住在学校的宿舍。我的房间不大，但是很干净。房间里有一张床、一张桌子和一把椅子。",
+      "text_vi": "Tôi ở trong ký túc xá của trường. Phòng của tôi không lớn, nhưng rất sạch sẽ. Trong phòng có một cái giường, một cái bàn và một cái ghế.",
+      "vocab": [
+        {
+          "zh": "宿舍",
+          "pinyin": "sùshè",
+          "vi": "ký túc xá"
+        },
+        {
+          "zh": "干净",
+          "pinyin": "gānjìng",
+          "vi": "sạch sẽ"
+        },
+        {
+          "zh": "床",
+          "pinyin": "chuáng",
+          "vi": "cái giường"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title_zh": "时间",
+      "title_vi": "Giờ giấc",
+      "text": "我每天七点起床，八点去学校。中午十二点吃午饭。晚上十点睡觉。",
+      "text_vi": "Mỗi ngày tôi dậy lúc 7 giờ, 8 giờ đi học. Trưa 12 giờ ăn cơm trưa. Tối 10 giờ đi ngủ.",
+      "vocab": [
+        {
+          "zh": "起床",
+          "pinyin": "qǐchuáng",
+          "vi": "ngủ dậy, thức dậy"
+        },
+        {
+          "zh": "午饭",
+          "pinyin": "wǔfàn",
+          "vi": "cơm trưa"
+        },
+        {
+          "zh": "睡觉",
+          "pinyin": "shuìjiào",
+          "vi": "ngủ, đi ngủ"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title_zh": "今天星期几",
+      "title_vi": "Hôm nay thứ mấy",
+      "text": "今天是星期一。我们星期一、星期三、星期五有汉语课。星期六、星期天不上课，我很高兴。",
+      "text_vi": "Hôm nay là thứ Hai. Thứ Hai, thứ Tư, thứ Sáu chúng tôi có tiết tiếng Trung. Thứ Bảy, Chủ nhật không phải học, tôi rất vui.",
+      "vocab": [
+        {
+          "zh": "星期",
+          "pinyin": "xīngqī",
+          "vi": "tuần; thứ (trong tuần)"
+        },
+        {
+          "zh": "上课",
+          "pinyin": "shàngkè",
+          "vi": "lên lớp, đi học"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title_zh": "我的教室",
+      "title_vi": "Lớp học của tôi",
+      "text": "我们的教室在二楼。教室里有二十个学生。我的老师姓王，王老师教汉语教得很好。",
+      "text_vi": "Lớp học của chúng tôi ở tầng hai. Trong lớp có hai mươi học sinh. Cô giáo của tôi họ Vương, cô Vương dạy tiếng Trung rất giỏi.",
+      "vocab": [
+        {
+          "zh": "教室",
+          "pinyin": "jiàoshì",
+          "vi": "lớp học, phòng học"
+        },
+        {
+          "zh": "楼",
+          "pinyin": "lóu",
+          "vi": "tầng, lầu"
+        },
+        {
+          "zh": "王老师",
+          "pinyin": "Wáng lǎoshī",
+          "vi": "cô/thầy giáo họ Vương"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title_zh": "吃饭",
+      "title_vi": "Ăn cơm",
+      "text": "中午我和同学们一起在食堂吃饭。食堂的米饭、面条都很好吃。我最喜欢吃米饭和鸡蛋。",
+      "text_vi": "Buổi trưa tôi cùng các bạn cùng lớp ăn cơm ở căng-tin. Cơm, mì ở căng-tin đều rất ngon. Tôi thích nhất ăn cơm và trứng gà.",
+      "vocab": [
+        {
+          "zh": "食堂",
+          "pinyin": "shítáng",
+          "vi": "nhà ăn, căng-tin"
+        },
+        {
+          "zh": "面条",
+          "pinyin": "miàntiáo",
+          "vi": "mì sợi"
+        },
+        {
+          "zh": "鸡蛋",
+          "pinyin": "jīdàn",
+          "vi": "trứng gà"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title_zh": "我喜欢的食物",
+      "title_vi": "Món ăn tôi thích",
+      "text": "我喜欢吃中国菜，也喜欢吃越南菜。我最喜欢的水果是香蕉和苹果。我不喜欢喝咖啡，我喜欢喝茶。",
+      "text_vi": "Tôi thích ăn món Trung Quốc, cũng thích ăn món Việt Nam. Trái cây tôi thích nhất là chuối và táo. Tôi không thích uống cà phê, tôi thích uống trà.",
+      "vocab": [
+        {
+          "zh": "水果",
+          "pinyin": "shuǐguǒ",
+          "vi": "trái cây, hoa quả"
+        },
+        {
+          "zh": "香蕉",
+          "pinyin": "xiāngjiāo",
+          "vi": "chuối"
+        },
+        {
+          "zh": "苹果",
+          "pinyin": "píngguǒ",
+          "vi": "táo"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title_zh": "买东西",
+      "title_vi": "Mua đồ",
+      "text": "星期六，我和小红去超市买东西。我买了水果、面包和牛奶。小红买了一本书。东西不贵，我们都很高兴。",
+      "text_vi": "Thứ Bảy, tôi và Tiểu Hồng đi siêu thị mua đồ. Tôi mua trái cây, bánh mì và sữa. Tiểu Hồng mua một quyển sách. Đồ không đắt, chúng tôi đều rất vui.",
+      "vocab": [
+        {
+          "zh": "超市",
+          "pinyin": "chāoshì",
+          "vi": "siêu thị"
+        },
+        {
+          "zh": "面包",
+          "pinyin": "miànbāo",
+          "vi": "bánh mì"
+        },
+        {
+          "zh": "牛奶",
+          "pinyin": "niúnǎi",
+          "vi": "sữa"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title_zh": "天气",
+      "title_vi": "Thời tiết",
+      "text": "今天天气很冷，还下雨了。我没有带伞，衣服都湿了。我希望明天天气好一点儿。",
+      "text_vi": "Hôm nay thời tiết rất lạnh, còn mưa nữa. Tôi không mang ô, quần áo đều bị ướt. Tôi hy vọng ngày mai thời tiết tốt hơn một chút.",
+      "vocab": [
+        {
+          "zh": "下雨",
+          "pinyin": "xiàyǔ",
+          "vi": "mưa, trời mưa"
+        },
+        {
+          "zh": "伞",
+          "pinyin": "sǎn",
+          "vi": "cái ô, cái dù"
+        },
+        {
+          "zh": "湿",
+          "pinyin": "shī",
+          "vi": "ướt"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title_zh": "我的爱好",
+      "title_vi": "Sở thích của tôi",
+      "text": "我的爱好是看书和听音乐。我也喜欢运动，每天早上我都跑步。运动让我很快乐。",
+      "text_vi": "Sở thích của tôi là đọc sách và nghe nhạc. Tôi cũng thích vận động, mỗi sáng tôi đều chạy bộ. Vận động khiến tôi rất vui vẻ.",
+      "vocab": [
+        {
+          "zh": "爱好",
+          "pinyin": "àihào",
+          "vi": "sở thích"
+        },
+        {
+          "zh": "运动",
+          "pinyin": "yùndòng",
+          "vi": "vận động, thể thao"
+        },
+        {
+          "zh": "跑步",
+          "pinyin": "pǎobù",
+          "vi": "chạy bộ"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title_zh": "周末",
+      "title_vi": "Cuối tuần",
+      "text": "周末我不用上课。我喜欢和朋友们一起去公园玩儿，有时候我们也去看电影。周末过得很快。",
+      "text_vi": "Cuối tuần tôi không phải học. Tôi thích cùng bạn bè đi công viên chơi, thỉnh thoảng chúng tôi cũng đi xem phim. Cuối tuần trôi qua rất nhanh.",
+      "vocab": [
+        {
+          "zh": "公园",
+          "pinyin": "gōngyuán",
+          "vi": "công viên"
+        },
+        {
+          "zh": "电影",
+          "pinyin": "diànyǐng",
+          "vi": "phim, điện ảnh"
+        },
+        {
+          "zh": "有时候",
+          "pinyin": "yǒushíhou",
+          "vi": "thỉnh thoảng, đôi khi"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title_zh": "打电话",
+      "title_vi": "Gọi điện thoại",
+      "text": "晚上我给妈妈打电话。妈妈问我：“你在中国好吗？”我说：“我很好，请别担心。”",
+      "text_vi": "Buổi tối tôi gọi điện cho mẹ. Mẹ hỏi tôi: \"Con ở Trung Quốc có tốt không?\" Tôi nói: \"Con rất tốt, mẹ đừng lo.\"",
+      "vocab": [
+        {
+          "zh": "打电话",
+          "pinyin": "dǎ diànhuà",
+          "vi": "gọi điện thoại"
+        },
+        {
+          "zh": "担心",
+          "pinyin": "dānxīn",
+          "vi": "lo lắng"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title_zh": "看医生",
+      "title_vi": "Đi khám bệnh",
+      "text": "昨天我头疼，还有点儿发烧。同学陪我去医院看医生。医生说我感冒了，让我多喝水，多休息。",
+      "text_vi": "Hôm qua tôi bị đau đầu, còn hơi sốt một chút. Bạn cùng lớp đưa tôi đi bệnh viện khám. Bác sĩ nói tôi bị cảm, bảo tôi uống nhiều nước, nghỉ ngơi nhiều.",
+      "vocab": [
+        {
+          "zh": "头疼",
+          "pinyin": "tóuténg",
+          "vi": "đau đầu"
+        },
+        {
+          "zh": "发烧",
+          "pinyin": "fāshāo",
+          "vi": "sốt"
+        },
+        {
+          "zh": "感冒",
+          "pinyin": "gǎnmào",
+          "vi": "cảm, cảm cúm"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title_zh": "颜色和衣服",
+      "title_vi": "Màu sắc và quần áo",
+      "text": "今天很冷，我穿了一件红色的毛衣和一条黑色的裤子。小红说红色很好看，很适合我。",
+      "text_vi": "Hôm nay rất lạnh, tôi mặc một chiếc áo len màu đỏ và một chiếc quần màu đen. Tiểu Hồng nói màu đỏ rất đẹp, rất hợp với tôi.",
+      "vocab": [
+        {
+          "zh": "毛衣",
+          "pinyin": "máoyī",
+          "vi": "áo len"
+        },
+        {
+          "zh": "适合",
+          "pinyin": "shìhé",
+          "vi": "phù hợp, hợp với"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title_zh": "图书馆",
+      "title_vi": "Thư viện",
+      "text": "下午我常常去图书馆看书。图书馆很安静，也有很多汉语书。我在那儿学习，觉得很舒服。",
+      "text_vi": "Buổi chiều tôi thường đi thư viện đọc sách. Thư viện rất yên tĩnh, cũng có rất nhiều sách tiếng Trung. Tôi học ở đó, cảm thấy rất thoải mái.",
+      "vocab": [
+        {
+          "zh": "图书馆",
+          "pinyin": "túshūguǎn",
+          "vi": "thư viện"
+        },
+        {
+          "zh": "安静",
+          "pinyin": "ānjìng",
+          "vi": "yên tĩnh"
+        },
+        {
+          "zh": "舒服",
+          "pinyin": "shūfu",
+          "vi": "thoải mái, dễ chịu"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title_zh": "一个中国朋友",
+      "title_vi": "Một người bạn Trung Quốc",
+      "text": "小红请我去她家吃饭。她的爸爸妈妈都很热情。我们吃了很多好吃的菜，还一起看了电视。我玩儿得很开心。",
+      "text_vi": "Tiểu Hồng mời tôi đến nhà cô ấy ăn cơm. Bố mẹ của cô ấy đều rất nhiệt tình. Chúng tôi ăn rất nhiều món ngon, còn cùng nhau xem ti vi. Tôi chơi rất vui.",
+      "vocab": [
+        {
+          "zh": "请",
+          "pinyin": "qǐng",
+          "vi": "mời"
+        },
+        {
+          "zh": "热情",
+          "pinyin": "rèqíng",
+          "vi": "nhiệt tình"
+        },
+        {
+          "zh": "开心",
+          "pinyin": "kāixīn",
+          "vi": "vui vẻ"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title_zh": "我的手机",
+      "title_vi": "Điện thoại của tôi",
+      "text": "我有一个手机。我常常用手机给爸爸妈妈打电话。手机里有很多照片，有家人的，也有朋友的。",
+      "text_vi": "Tôi có một chiếc điện thoại. Tôi thường dùng điện thoại gọi cho bố mẹ. Trong điện thoại có rất nhiều ảnh, có ảnh gia đình, cũng có ảnh bạn bè.",
+      "vocab": [
+        {
+          "zh": "手机",
+          "pinyin": "shǒujī",
+          "vi": "điện thoại di động"
+        },
+        {
+          "zh": "照片",
+          "pinyin": "zhàopiàn",
+          "vi": "ảnh"
+        },
+        {
+          "zh": "家人",
+          "pinyin": "jiārén",
+          "vi": "người nhà"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "title_zh": "坐出租车",
+      "title_vi": "Đi taxi",
+      "text": "今天下雨，我坐出租车去学校。司机是一个很好的人。他问我：“你是哪国人？”我说：“我是越南人。”",
+      "text_vi": "Hôm nay trời mưa, tôi đi taxi đến trường. Bác tài xế là người rất tốt. Bác hỏi tôi: “Bạn là người nước nào?” Tôi nói: “Tôi là người Việt Nam.”",
+      "vocab": [
+        {
+          "zh": "出租车",
+          "pinyin": "chūzūchē",
+          "vi": "taxi"
+        },
+        {
+          "zh": "司机",
+          "pinyin": "sījī",
+          "vi": "tài xế"
+        },
+        {
+          "zh": "哪国人",
+          "pinyin": "nǎ guó rén",
+          "vi": "người nước nào"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "title_zh": "小红家的小猫",
+      "title_vi": "Chú mèo nhà Tiểu Hồng",
+      "text": "小红家有一只小猫。小猫很小，也很可爱。它喜欢睡觉，也喜欢吃鱼。",
+      "text_vi": "Nhà Tiểu Hồng có một chú mèo con. Mèo con rất nhỏ, cũng rất đáng yêu. Nó thích ngủ, cũng thích ăn cá.",
+      "vocab": [
+        {
+          "zh": "小猫",
+          "pinyin": "xiǎomāo",
+          "vi": "mèo con"
+        },
+        {
+          "zh": "可爱",
+          "pinyin": "kě'ài",
+          "vi": "đáng yêu"
+        },
+        {
+          "zh": "鱼",
+          "pinyin": "yú",
+          "vi": "cá"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "title_zh": "在书店",
+      "title_vi": "Ở hiệu sách",
+      "text": "我去书店买了两本汉语书。一本五十块，一本三十块。一共八十块。",
+      "text_vi": "Tôi đến hiệu sách mua hai quyển sách tiếng Hán. Một quyển năm mươi tệ, một quyển ba mươi tệ. Tổng cộng tám mươi tệ.",
+      "vocab": [
+        {
+          "zh": "书店",
+          "pinyin": "shūdiàn",
+          "vi": "hiệu sách"
+        },
+        {
+          "zh": "块",
+          "pinyin": "kuài",
+          "vi": "tệ (đồng tiền)"
+        },
+        {
+          "zh": "一共",
+          "pinyin": "yígòng",
+          "vi": "tổng cộng"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "title_zh": "我的生日",
+      "title_vi": "Sinh nhật của tôi",
+      "text": "下个月我过生日。大卫说他要给我买蛋糕。我很高兴，因为我在中国有很多好朋友。",
+      "text_vi": "Tháng sau là sinh nhật tôi. David nói cậu ấy sẽ mua bánh kem cho tôi. Tôi rất vui, vì ở Trung Quốc tôi có rất nhiều bạn tốt.",
+      "vocab": [
+        {
+          "zh": "生日",
+          "pinyin": "shēngrì",
+          "vi": "sinh nhật"
+        },
+        {
+          "zh": "蛋糕",
+          "pinyin": "dàngāo",
+          "vi": "bánh kem"
+        },
+        {
+          "zh": "因为",
+          "pinyin": "yīnwèi",
+          "vi": "bởi vì"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "title_zh": "高兴的一天",
+      "title_vi": "Một ngày vui",
+      "text": "今天我考完了HSK一级考试。老师说我考得不错。我给爸爸妈妈打了电话，告诉他们这个好消息。我现在要开始学习HSK二级了。",
+      "text_vi": "Hôm nay tôi đã thi xong kỳ thi HSK cấp 1. Cô giáo nói tôi thi khá tốt. Tôi gọi điện cho bố mẹ, báo cho họ tin vui này. Bây giờ tôi sắp bắt đầu học HSK cấp 2 rồi.",
+      "vocab": [
+        {
+          "zh": "考试",
+          "pinyin": "kǎoshì",
+          "vi": "kỳ thi, thi"
+        },
+        {
+          "zh": "消息",
+          "pinyin": "xiāoxi",
+          "vi": "tin tức"
+        },
+        {
+          "zh": "不错",
+          "pinyin": "búcuò",
+          "vi": "khá tốt, không tệ"
+        }
+      ]
+    }
+  ]
+}
