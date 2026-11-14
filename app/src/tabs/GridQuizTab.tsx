@@ -2,7 +2,7 @@
 // Port của games/game_grid_quiz.py.
 import { useCallback, useEffect, useRef, useState } from "react";
 import Icon from "../components/Icon";
-import { Score } from "../components/ui";
+import { Done, Score } from "../components/ui";
 import { cleanZh, speak, stopAudio } from "../lib/audio";
 import { shuffle } from "../lib/data";
 import { resolveEffectivePool } from "../lib/srsPool";
@@ -93,32 +93,45 @@ export default function GridQuizTab() {
   const finished = total > 0 && top.length === 0;
   return (
     <div>
-      <div className="toolbar">
-        <span className="muted">Đã ghép <b className="stat" style={{ color: "var(--text)" }}>{matched}</b> / {total}</span>
-        <div className="pbar grow" style={{ maxWidth: "14rem" }}><div style={{ width: `${total ? (matched / total) * 100 : 0}%` }} /></div>
-        <span className="grow" />
+      <div className="study-top">
+        <span className="muted study-count">Đã ghép <b className="stat">{matched}</b> / {total}</span>
+        <div className="study-bar"><i style={{ width: `${total ? (matched / total) * 100 : 0}%` }} /></div>
         <Score ok={matched} bad={wrong} />
-        <button onClick={newRound}><Icon name="rotate" size={16} />Chơi lại</button>
+        <button className="icon" onClick={newRound} title="Chơi lại từ đầu"><Icon name="rotate" size={16} /></button>
       </div>
       {finished ? (
-        <p className="ok" style={{ margin: ".7rem 0", fontWeight: 700 }}>Hoàn thành! Ghép đúng {matched} từ, sai {wrong} lần.</p>
+        <Done title="Hoàn thành!">
+          <p className="muted" style={{ marginBottom: "1rem" }}>Ghép đúng {matched} từ, sai {wrong} lần.</p>
+          <button className="primary" onClick={newRound}><Icon name="rotate" size={15} />Chơi lại</button>
+        </Done>
       ) : !top.length ? (
-        <p className="muted" style={{ margin: ".7rem 0" }}>Chưa có từ vựng nào (cần có pinyin) — hãy chọn bộ từ ở nút phía trên bên phải.</p>
-      ) : null}
-      <div className="pair-label">Chữ Hán</div>
-      <div className="pair-grid">
-        {top.map((w, i) => <button key={w.zh} className={`${cls(i === selTop && (touched.top || !!flash))} hanzi zh`} onClick={() => clickTop(i)}>{w.zh}</button>)}
-      </div>
-      <div className="pair-meaning">{meaning}</div>
-      <div className="pair-label">Pinyin</div>
-      <div className="pair-grid">
-        {bot.map((w, i) => <button key={w.zh} className={`${cls(i === selBot && (touched.bot || !!flash))} py`} onClick={() => clickBot(i)}>{w.pinyin}</button>)}
-      </div>
-      {last && (
-        <div className="card pair-last">
-          <div><span className="hanzi zh">{last.zh}</span> <span className="py">{last.pinyin}</span> <span className="vi">{last.vi || "(chưa có nghĩa)"}</span></div>
-          {last.exCn && <div className="ex"><div className="hanzi">{last.exCn}</div><div className="muted small">{last.pySent}</div><div className="muted small">{last.exVi}</div></div>}
-        </div>
+        <div className="empty"><Icon name="grid" size={28} /><p>Chưa có từ vựng nào (cần có pinyin) — hãy chọn bộ từ ở nút bộ từ trên thanh tiêu đề.</p></div>
+      ) : (
+        <>
+          <section className="pair-board">
+            <div className="pair-label"><span className="step">1</span>Chọn chữ Hán</div>
+            <div className="pair-grid">
+              {top.map((w, i) => <button key={w.zh} className={`${cls(i === selTop && (touched.top || !!flash))} hanzi zh`} onClick={() => clickTop(i)}>{w.zh}</button>)}
+            </div>
+          </section>
+          {/* Nghĩa của ô vừa chọn — nằm giữa 2 bảng */}
+          <div className={`pair-meaning ${flash}`}>{meaning ?? <span className="muted">Chọn 1 chữ Hán và 1 pinyin cùng một từ</span>}</div>
+          <section className="pair-board">
+            <div className="pair-label"><span className="step">2</span>Chọn pinyin tương ứng</div>
+            <div className="pair-grid">
+              {bot.map((w, i) => <button key={w.zh} className={`${cls(i === selBot && (touched.bot || !!flash))} py`} onClick={() => clickBot(i)}>{w.pinyin}</button>)}
+            </div>
+          </section>
+          {last && (
+            <div className="pair-last">
+              <div className="pair-last-word">
+                <span className="hanzi zh">{last.zh}</span><span className="py">{last.pinyin}</span><span className="vi">{last.vi || "(chưa có nghĩa)"}</span>
+                <button className="ghost icon" onClick={() => speak(cleanZh(last.zh))} title="Nghe"><Icon name="volume" size={16} /></button>
+              </div>
+              {last.exCn && <div className="ex"><div className="hanzi">{last.exCn}</div><div className="ex-py">{last.pySent}</div><div className="muted small">{last.exVi}</div></div>}
+            </div>
+          )}
+        </>
       )}
     </div>
   );

@@ -6,6 +6,8 @@ import Icon from "../components/Icon";
 import { api } from "../lib/api";
 import { shuffle } from "../lib/data";
 import { usePersistent } from "../lib/storage";
+import { OptSection, OptSwitch, TabOptions } from "../components/TabOptions";
+import { Select } from "../components/Select";
 
 type Info = { level: number; name: string; title: string; path: string };
 type Answer = { letter: string; kind: string; image: string | null; text: string | null; correct: boolean; pinyin?: string; vi?: string };
@@ -107,7 +109,7 @@ function Card({ q, path, bank, usedLetters, hints, onAnswered, locked, reviewed 
 
       {kind === "choice" && answers.map((a) => (
         <button key={a.letter} className={`opt ${optClass(a.letter, a.correct)}`} disabled={locked && !reviewed}
-          title={hints.hover && a.pinyin ? a.pinyin : undefined} onClick={() => chooseOne(a.letter, a.correct)}>
+          data-tip={hints.hover && a.pinyin ? a.pinyin : undefined} onClick={() => chooseOne(a.letter, a.correct)}>
           <b>{a.letter}.</b>{" "}
           {a.kind === "image" ? <Img path={path} name={a.image} width={180} /> : <span className="hanzi">{a.text}</span>}
           {reviewed && (a.pinyin || a.vi) && <span className="muted"> · <span style={{ color: "#7c3aed" }}>{a.pinyin}</span> <span style={{ color: "#047857" }}>{a.vi}</span></span>}
@@ -277,33 +279,42 @@ export default function ExamTab() {
 
   return (
     <div>
-      <div className="row">
-        <button onClick={() => setShowSettings((v) => !v)}>{showSettings ? "▲ Ẩn cài đặt" : "▼ Hiện cài đặt"}</button>
+      <div className="exam-top">
+        <button className={showSettings ? "active" : ""} onClick={() => setShowSettings((v) => !v)} aria-expanded={showSettings}>
+          <Icon name="file" size={15} />Thiết lập đề<Icon name="chevD" size={15} className={showSettings ? "flip" : ""} />
+        </button>
         <b className="grow">{cur ? `HSK ${level} · ${SKILLS.find(([k]) => k === skill)?.[1]}` : ""}</b>
-        <span>Đã đúng {doneCount}/{pool.length} · Lượt này đúng {stats.ok}/{stats.total}</span>
+        <span className="muted">Đã đúng <b className="stat" style={{ color: "var(--good)" }}>{doneCount}</b> / {pool.length}</span>
+        <span className="muted">Lượt này <b className="stat" style={{ color: "var(--text)" }}>{stats.ok}</b> / {stats.total}</span>
       </div>
       {showSettings && (
-        <div className="card" style={{ margin: "10px 0" }}>
-          <p className="muted">Mỗi lần chỉ làm 1 câu (hoặc 1 nhóm câu dùng chung đề), thứ tự ngẫu nhiên. Câu làm ĐÚNG được đánh dấu đã làm và không hiện lại; câu sai sẽ quay lại sau. Đúng hết cả phần thì tự reset để làm lại từ đầu.</p>
-          <div className="row"><button onClick={chooseFolder}>Chọn thư mục đề</button><span className="muted">{root}</span></div>
-          <div className="row" style={{ marginTop: 8 }}>
-            <span>Cấp độ:</span>
-            <select value={level} onChange={(e) => setLevel(Number(e.target.value))}>{levels.map((l) => <option key={l} value={l}>HSK {l}</option>)}</select>
-            <span>Kỹ năng:</span>
-            <select value={skill} onChange={(e) => setSkill(e.target.value)}>
-              {SKILLS.filter(([k]) => pools[level]?.[k]?.length).map(([k, l]) => <option key={k} value={k}>{l} ({pools[level][k].length} câu)</option>)}
-            </select>
-            <button className="primary" disabled={!pool.length} onClick={start}>Bắt đầu / làm lại vòng</button>
+        <div className="card exam-setup">
+          <div className="exam-field">
+            <span className="exam-label">Thư mục đề</span>
+            <code className="exam-path" title={root}>{root || "Chưa chọn"}</code>
+            <button onClick={chooseFolder}><Icon name="folder" size={15} />Chọn thư mục…</button>
           </div>
-          {loading && <p className="muted">Đang nạp đề…</p>}
-          {msg && <p className="err">{msg}</p>}
+          <div className="exam-field">
+            <span className="exam-label">Cấp độ</span>
+            <Select value={level} onChange={setLevel} disabled={!levels.length} options={levels.map((l) => ({ value: l, label: `HSK ${l}` }))} />
+            <span className="exam-label">Kỹ năng</span>
+            <Select value={skill} onChange={setSkill} disabled={!levels.length}
+              options={SKILLS.filter(([k]) => pools[level]?.[k]?.length).map(([k, l]) => ({ value: k, label: l, hint: `${pools[level][k].length} câu` }))} />
+            <span className="grow" />
+            <button className="primary" disabled={!pool.length} onClick={start}><Icon name="play" size={15} />Bắt đầu / làm lại vòng</button>
+          </div>
+          {loading && <p className="muted small">Đang nạp đề…</p>}
+          {msg && <div className="exam-msg">{msg}</div>}
+          <p className="muted small exam-note">Mỗi lần làm 1 câu (hoặc 1 nhóm câu dùng chung đề), thứ tự ngẫu nhiên. Câu làm đúng sẽ không hiện lại; câu sai quay lại sau. Đúng hết cả phần thì tự làm lại từ đầu.</p>
         </div>
       )}
-      <div className="toolbar">
-        <label><input type="checkbox" checked={hintPy} onChange={(e) => setHintPy(e.target.checked)} /> Hiện pinyin</label>
-        <label><input type="checkbox" checked={hintVi} onChange={(e) => setHintVi(e.target.checked)} /> Hiện nghĩa tiếng Việt</label>
-        <label><input type="checkbox" checked={hover} onChange={(e) => setHover(e.target.checked)} /> Di chuột vào đáp án hiện pinyin</label>
-      </div>
+      <TabOptions>
+        <OptSection title="Gợi ý">
+          <OptSwitch checked={hintPy} onChange={setHintPy} label="Hiện pinyin" />
+          <OptSwitch checked={hintVi} onChange={setHintVi} label="Hiện nghĩa tiếng Việt" />
+          <OptSwitch checked={hover} onChange={setHover} label="Di chuột vào đáp án hiện pinyin" />
+        </OptSection>
+      </TabOptions>
       {notice && <p className="ok">{notice}</p>}
       {cur && (
         <div key={round}>

@@ -6,6 +6,8 @@ import { api } from "../lib/api";
 import { cleanZh, speak, stopAudio } from "../lib/audio";
 import { loadGrammar, loadPatternPinyin, type GrammarPoint } from "../lib/data";
 import { usePersistent } from "../lib/storage";
+import { OptSection, OptSwitch, TabOptions } from "../components/TabOptions";
+import { LevelChip, useFollowVocabLevel } from "../components/LevelChip";
 
 const LEVELS = ["HSK1", "HSK2", "HSK3", "HSK4", "HSK5", "HSK6"];
 const HAN_RUN = /[一-鿿]+/g;
@@ -62,6 +64,9 @@ export default function GrammarTab() {
   const [readEx, setReadEx] = usePersistent("grammar.readExamples", false);
   const [autoNext, setAutoNext] = usePersistent("grammar.autoNext", false);
   const run = useRef(0);
+  const [query, setQuery] = useState(""); // lọc danh sách bài
+  const [exPlaying, setExPlaying] = useState(false); // đang "Nghe tất cả" ví dụ
+  const [exActive, setExActive] = useState(-1); // ví dụ đang đọc (tô sáng)
 
   // Nạp dữ liệu và áp thứ tự đã lưu (bài chưa từng xếp đứng trước = chưa xem)
   useEffect(() => {
@@ -82,7 +87,10 @@ export default function GrammarTab() {
     })();
   }, []);
 
+  const pickLevel = (n: number) => { run.current++; stopAudio(); setLevel(`HSK${n}`); setIdx(0); setQuery(""); };
+  useFollowVocabLevel("grammar", pickLevel);
   const points = data?.[level] ?? [];
+  const q = query.trim().toLowerCase();
   const i = Math.min(idx, Math.max(0, points.length - 1));
   const p = points[i];
 
@@ -115,6 +123,22 @@ export default function GrammarTab() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [p?.title, level, readEx, autoNext]);
 
+  // Nghe lần lượt mọi ví dụ của bài (bấm lại để dừng)
+  async function playExamples() {
+    if (!p) return;
+    if (exPlaying) { run.current++; stopAudio(); setExPlaying(false); setExActive(-1); return; }
+    const my = ++run.current;
+    setExPlaying(true);
+    for (let n = 0; n < p.examples.length; n++) {
+      if (run.current !== my) return;
+      setExActive(n);
+      await speak(cleanZh(p.examples[n][0]));
+      await new Promise((r) => setTimeout(r, 600));
+    }
+    if (run.current === my) { setExPlaying(false); setExActive(-1); }
+  }
+  useEffect(() => { setExPlaying(false); setExActive(-1); }, [p?.title]);
+
   async function moveToEnd() {
     if (!data || i >= points.length - 1) return;
     const next = [...points];
@@ -126,45 +150,90 @@ export default function GrammarTab() {
   if (!data || !pp) return <p>Đang tải…</p>;
   return (
     <div style={{ display: "flex", gap: 16, height: "100%" }}>
-      <div style={{ width: 280, overflowY: "auto", flexShrink: 0 }}>
-        <div className="row">
-          {LEVELS.map((lv) => <button key={lv} className={lv === level ? "active" : ""} style={{ padding: "3px 8px" }} onClick={() => { setLevel(lv); setIdx(0); }}>{lv}</button>)}
+      <TabOptions>
+        <OptSection title="Âm thanh">
+          <OptSwitch checked={readEx} onChange={setReadEx} label="Đọc ví dụ khi mở bài" />
+          <OptSwitch checked={autoNext} onChange={setAutoNext} label="Đọc xong tự sang bài mới" disabled={!readEx} />
+        </OptSection>
+      </TabOptions>
+      <aside className="side-list">
+        <LevelChip value={Number(level.replace("HSK", ""))} onChange={pickLevel} unit="bài"
+          counts={Object.fromEntries(LEVELS.map((lv) => [Number(lv.replace("HSK", "")), data?.[lv]?.length]).filter(([, c]) => c !== undefined))} />
+        <div className="side-card">
+          <div className="side-search">
+            <Icon name="search" size={15} />
+            <input type="search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder={`Tìm trong ${points.length} điểm ngữ pháp…`} />
+          </div>
+          <div className="side-items">
+            {/* Tên bài dạng "是 — Động từ 'là'": phần trước dấu — (mẫu/chữ Hán) đậm ở trên, phần giải thích nhỏ ở dưới */}
+            {points.map((x, n) => {
+              if (q && !x.title.toLowerCase().includes(q)) return null;
+              const [key, ...rest] = x.title.split(" — ");
+              return (
+                <button key={x.title} className={n === i ? "active" : ""} onClick={() => { run.current++; stopAudio(); setIdx(n); }}>
+                  <span className="n">{n + 1}</span>
+                  <span className="t">{rest.length ? <><b>{colorHan(key)}</b><small>{rest.join(" — ")}</small></> : <b className="plain">{colorHan(key)}</b>}</span>
+                </button>
+              );
+            })}
+            {q && !points.some((x) => x.title.toLowerCase().includes(q)) && <p className="muted small side-none">Không tìm thấy “{query}”.</p>}
+          </div>
         </div>
-        {points.map((x, n) => (
-          <button key={x.title} className={n === i ? "active" : ""} style={{ display: "block", width: "100%", textAlign: "left", margin: "3px 0", fontWeight: 500 }} onClick={() => { run.current++; setIdx(n); }}>
-            {n + 1}. {x.title}
-          </button>
-        ))}
-      </div>
-      <div className="grow" style={{ overflowY: "auto" }}>
-        {!p ? <p className="muted">Chưa có bài.</p> : (
+      </aside>
+      <div className="grow lesson">
+        {!p ? <div className="empty"><Icon name="book" size={28} /><p>Chưa có bài.</p></div> : (
           <>
-            <div className="row">
-              <button disabled={!neighbor(-1)} onClick={() => go(neighbor(-1))}><Icon name="chevL" size={16} /> Bài trước</button>
-              <button disabled={!neighbor(1)} onClick={() => go(neighbor(1))}>Bài sau <Icon name="chevR" size={16} /></button>
-              <button disabled={i >= points.length - 1} onClick={moveToEnd} title="Đã học bài này — chuyển xuống cuối danh sách">⤵ Chuyển xuống cuối</button>
-              <label><input type="checkbox" checked={readEx} onChange={(e) => setReadEx(e.target.checked)} /> Đọc ví dụ</label>
-              <label style={{ opacity: readEx ? 1 : 0.5 }}><input type="checkbox" disabled={!readEx} checked={autoNext} onChange={(e) => setAutoNext(e.target.checked)} /> Tự động qua bài mới</label>
-            </div>
-            <h2 style={{ marginTop: 12 }}>{colorHan(p.title)}</h2>
-            {p.pattern && <div style={{ fontFamily: "Consolas, monospace", background: "#eef2ff", color: "#3730a3", padding: "8px 12px", borderRadius: 6, display: "inline-block", margin: "6px 0 10px" }}>{annotatePattern(p.pattern, pp)}</div>}
-            <p style={{ lineHeight: 1.6 }}>{colorHan(p.explain)}</p>
-            <h3 style={{ color: "#0f766e" }}>Ví dụ</h3>
-            {p.examples.length ? p.examples.map(([zh, py, vi], n) => (
-              <div key={n} style={{ margin: "10px 0", padding: "10px 12px", background: "#f8fafc", borderLeft: "3px solid #2563eb", borderRadius: 4 }}>
-                <div className="hanzi" style={{ fontSize: "1.3rem", color: "#1d4ed8" }}><a style={{ cursor: "pointer", textDecoration: "none" }} onClick={() => speak(cleanZh(zh))}><Icon name="volume" size={16} /></a> {zh}</div>
-                <div style={{ color: "#7c3aed" }}>{py}</div>
-                <div style={{ color: "#047857", fontWeight: 600 }}>{vi}</div>
+            {/* Đầu bài: cấp + số bài, tiêu đề, cấu trúc câu, giải thích */}
+            <header className="lesson-head">
+              <div className="lesson-meta">
+                <span className="pill accent">{level}</span>
+                <span className="muted">Bài <b className="stat">{i + 1}</b> / {points.length}</span>
+                <span className="grow" />
+                <button className="lesson-done" disabled={i >= points.length - 1} onClick={moveToEnd} title="Đã học bài này — chuyển xuống cuối danh sách"><Icon name="check" size={15} />Đã học</button>
               </div>
-            )) : <i>Chưa có ví dụ.</i>}
-            {!!p.notes?.length && (
-              <>
-                <h3 style={{ color: "#b45309" }}>Lưu ý chi tiết</h3>
-                <div style={{ background: "#fffbeb", borderLeft: "3px solid #f59e0b", borderRadius: 4, padding: "10px 14px" }}>
-                  <ul style={{ margin: 0, paddingLeft: 18, color: "#334155", lineHeight: 1.6 }}>{p.notes.map((n, k) => <li key={k} style={{ margin: "6px 0" }}>{colorHan(n)}</li>)}</ul>
+              <h2 className="lesson-title">{colorHan(p.title)}</h2>
+              {p.pattern && <div className="lesson-pattern"><span className="lbl">Cấu trúc</span><code>{annotatePattern(p.pattern, pp)}</code></div>}
+              <p className="lesson-explain">{colorHan(p.explain)}</p>
+            </header>
+
+            <section className="lesson-sec">
+              <div className="lesson-h">
+                <h3>Ví dụ <span className="cnt">{p.examples.length}</span></h3>
+                {!!p.examples.length && <button className={exPlaying ? "active" : ""} onClick={playExamples}><Icon name={exPlaying ? "pause" : "play"} size={14} />{exPlaying ? "Dừng" : "Nghe tất cả"}</button>}
+              </div>
+              {p.examples.length ? (
+                <div className="ex-list">
+                  {p.examples.map(([zh, py, vi], n) => (
+                    <div key={n} className={`ex-card ${exActive === n ? "on" : ""}`} onClick={() => { run.current++; setExPlaying(false); setExActive(n); speak(cleanZh(zh)).finally(() => setExActive((a) => (a === n ? -1 : a))); }} title="Bấm để nghe">
+                      <span className="ex-n">{n + 1}</span>
+                      <div className="grow">
+                        <div className="hanzi ex-zh">{zh}</div>
+                        <div className="ex-py">{py}</div>
+                        <div className="ex-vi">{vi}</div>
+                      </div>
+                      <span className="ex-play"><Icon name="volume" size={16} /></span>
+                    </div>
+                  ))}
                 </div>
-              </>
+              ) : <p className="muted">Chưa có ví dụ.</p>}
+            </section>
+
+            {!!p.notes?.length && (
+              <section className="lesson-sec">
+                <div className="lesson-h"><h3>Lưu ý</h3></div>
+                <ul className="lesson-notes">{p.notes.map((n, k) => <li key={k}>{colorHan(n)}</li>)}</ul>
+              </section>
             )}
+
+            {/* Chuyển bài: hiện tên bài trước / sau */}
+            <nav className="lesson-nav">
+              {(() => { const t = neighbor(-1); const q = t && data?.[t[0]]?.[t[1]]; return (
+                <button disabled={!q} onClick={() => go(t)}><Icon name="chevL" size={18} /><span><small>Bài trước{t && t[0] !== level ? ` · ${t[0]}` : ""}</small>{q ? q.title : "—"}</span></button>
+              ); })()}
+              {(() => { const t = neighbor(1); const q = t && data?.[t[0]]?.[t[1]]; return (
+                <button className="next" disabled={!q} onClick={() => go(t)}><span><small>Bài sau{t && t[0] !== level ? ` · ${t[0]}` : ""}</small>{q ? q.title : "—"}</span><Icon name="chevR" size={18} /></button>
+              ); })()}
+            </nav>
           </>
         )}
       </div>

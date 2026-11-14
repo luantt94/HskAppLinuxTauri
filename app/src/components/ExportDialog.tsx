@@ -1,26 +1,50 @@
 // Hộp thoại "Xuất Flashcard": chọn định dạng (PDF / Video / Anki) và phạm vi từ (tất cả / đã thuộc / chưa thuộc).
 import { invoke } from "@tauri-apps/api/core";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { runExport } from "../lib/exporter";
 import type { Word } from "../lib/types";
+import Icon from "./Icon";
+import Modal from "./Modal";
+
+type Fmt = "pdf" | "video" | "anki";
+type Scope = "all" | "known" | "unknown";
+
+const FORMATS: { k: Fmt; icon: Parameters<typeof Icon>[0]["name"]; title: string; desc: string }[] = [
+  { k: "pdf", icon: "file", title: "PDF", desc: "Lưới thẻ in được" },
+  { k: "video", icon: "play", title: "Video", desc: "Có giọng đọc từng từ" },
+  { k: "anki", icon: "layers", title: "Anki", desc: "File .apkg, có âm thanh" },
+];
+const SCOPES: { k: Scope; label: string }[] = [
+  { k: "all", label: "Tất cả" },
+  { k: "known", label: "Đã thuộc" },
+  { k: "unknown", label: "Chưa thuộc" },
+];
 
 export default function ExportDialog({ words, known, onClose }: { words: Word[]; known: Set<string>; onClose: () => void }) {
-  const [fmt, setFmt] = useState({ pdf: true, video: false, anki: false });
-  const [scope, setScope] = useState({ all: true, known: false, unknown: false });
+  const [fmt, setFmt] = useState<Record<Fmt, boolean>>({ pdf: true, video: false, anki: false });
+  const [scope, setScope] = useState<Scope>("all");
   const [busy, setBusy] = useState(false);
   const [prog, setProg] = useState({ label: "", cur: 0, total: 1 });
   const [msg, setMsg] = useState<{ t: string; ok: boolean } | null>(null);
   const cancel = useRef(false);
 
-  const pick = (key: "all" | "known" | "unknown", on: boolean) =>
-    setScope(key === "all" ? { all: on, known: false, unknown: false } : { ...scope, all: false, [key]: on });
+  const byScope = (s: Scope) => (s === "all" ? words : words.filter((w) => known.has(w.zh) === (s === "known")));
+  const selected = byScope(scope);
+  const scopeLabel = { all: "Tất cả từ vựng", known: "Từ đã thuộc", unknown: "Từ chưa thuộc" }[scope];
+  const anyFmt = fmt.pdf || fmt.video || fmt.anki;
 
-  const selected = scope.all ? words : words.filter((w) => (scope.known && known.has(w.zh)) || (scope.unknown && !known.has(w.zh)));
-  const scopeLabel = scope.all ? "Tất cả từ vựng" : [scope.known && "Từ đã thuộc", scope.unknown && "Từ chưa thuộc"].filter(Boolean).join(" + ");
+  // Đang xuất thì không cho đóng (phải bấm "Huỷ xuất" trước).
+  const close = () => { if (!busy) onClose(); };
+  const closeRef = useRef(close);
+  closeRef.current = close;
+  useEffect(() => {
+    const esc = (e: KeyboardEvent) => e.key === "Escape" && closeRef.current();
+    window.addEventListener("keydown", esc);
+    return () => window.removeEventListener("keydown", esc);
+  }, []);
 
   async function go() {
-    if (!(fmt.pdf || fmt.video || fmt.anki)) return setMsg({ t: "Hãy chọn ít nhất 1 định dạng xuất.", ok: false });
-    if (!(scope.all || scope.known || scope.unknown)) return setMsg({ t: "Hãy chọn ít nhất 1 phạm vi từ vựng.", ok: false });
+    if (!anyFmt) return setMsg({ t: "Hãy chọn ít nhất 1 định dạng xuất.", ok: false });
     if (!selected.length) return setMsg({ t: "Không có từ nào trong phạm vi đã chọn.", ok: false });
     cancel.current = false; setBusy(true); setMsg(null);
     try {
@@ -31,27 +55,51 @@ export default function ExportDialog({ words, known, onClose }: { words: Word[];
   }
 
   const stop = () => { cancel.current = true; invoke("export_cancel"); };
-  const C = (b: boolean, f: (v: boolean) => void, l: string) => <label style={{ display: "block", margin: "4px 0" }}><input type="checkbox" checked={b} disabled={busy} onChange={(e) => f(e.target.checked)} /> {l}</label>;
+
+  const footer = (
+    <>
+      <span className="muted grow">Sẽ xuất <b className="stat" style={{ color: "var(--text)" }}>{selected.length}</b> từ</span>
+      {busy ? <button onClick={stop}>Huỷ xuất</button> : (
+        <>
+          <button onClick={onClose}>Đóng</button>
+          <button className="primary" onClick={go} disabled={!anyFmt || !selected.length}><Icon name="download" size={15} />Xuất</button>
+        </>
+      )}
+    </>
+  );
 
   return (
-    <div style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,.35)", display: "grid", placeItems: "center", zIndex: 70 }}>
-      <div className="card" style={{ width: 440 }}>
-        <h2>📤 Xuất Flashcard</h2>
-        <p className="muted">Chọn định dạng và phạm vi từ vựng cần xuất:</p>
-        <h3>Định dạng xuất</h3>
-        {C(fmt.pdf, (v) => setFmt({ ...fmt, pdf: v }), "📄 PDF (lưới thẻ in được)")}
-        {C(fmt.video, (v) => setFmt({ ...fmt, video: v }), "🎬 Video (có giọng đọc từng từ)")}
-        {C(fmt.anki, (v) => setFmt({ ...fmt, anki: v }), "🗂️ Anki (.apkg, có âm thanh)")}
-        <h3>Phạm vi từ vựng</h3>
-        {C(scope.all, (v) => pick("all", v), `Tất cả từ vựng (${words.length})`)}
-        {C(scope.known, (v) => pick("known", v), "Từ đã thuộc")}
-        {C(scope.unknown, (v) => pick("unknown", v), "Từ chưa thuộc")}
-        {busy && (<><div className="pbar" style={{ margin: "10px 0 4px" }}><div style={{ width: `${(prog.cur / Math.max(1, prog.total)) * 100}%` }} /></div><div className="muted">{prog.label} ({prog.cur}/{prog.total})</div></>)}
-        {msg && <p className={msg.ok ? "ok" : "err"} style={{ whiteSpace: "pre-wrap" }}>{msg.t}</p>}
-        <div className="row" style={{ justifyContent: "flex-end", marginTop: 12 }}>
-          {busy ? <button onClick={stop}>Huỷ xuất</button> : <><button onClick={onClose}>Đóng</button><button className="primary" onClick={go}>Xuất</button></>}
+    <Modal title="Xuất flashcard" onClose={close} width={500} footer={footer}>
+      <div className="exp">
+        <div className="menu-head">Định dạng</div>
+        <div className="exp-fmts">
+          {FORMATS.map((f) => (
+            <label key={f.k} className={`exp-fmt ${fmt[f.k] ? "on" : ""} ${busy ? "off" : ""}`}>
+              <input type="checkbox" checked={fmt[f.k]} disabled={busy} onChange={(e) => setFmt({ ...fmt, [f.k]: e.target.checked })} />
+              <span className="exp-ico"><Icon name={f.icon} size={18} /></span>
+              <b>{f.title}</b>
+              <small>{f.desc}</small>
+            </label>
+          ))}
         </div>
+
+        <div className="menu-head">Phạm vi từ vựng</div>
+        <div className="tabs seg exp-scope">
+          {SCOPES.map((s) => (
+            <button key={s.k} className={scope === s.k ? "active" : ""} disabled={busy} onClick={() => setScope(s.k)}>
+              {s.label}<span className="cnt">{byScope(s.k).length}</span>
+            </button>
+          ))}
+        </div>
+
+        {busy && (
+          <div className="exp-prog">
+            <div className="pbar"><div style={{ width: `${(prog.cur / Math.max(1, prog.total)) * 100}%` }} /></div>
+            <div className="muted small">{prog.label} ({prog.cur}/{prog.total})</div>
+          </div>
+        )}
+        {msg && <div className={`exp-msg ${msg.ok ? "ok" : "err"}`}>{msg.t}</div>}
       </div>
-    </div>
+    </Modal>
   );
 }

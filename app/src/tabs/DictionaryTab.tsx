@@ -44,8 +44,8 @@ export default function DictionaryTab() {
 
   return (
     <div>
-      <input type="search" style={{ width: "100%", fontSize: "1.1rem", minHeight: "3rem", padding: ".5rem 1rem" }} autoFocus placeholder="Gõ chữ Hán, pinyin (không dấu cũng được) hoặc nghĩa tiếng Việt..."
-        value={q} onChange={(e) => { setQ(e.target.value); setPicked(null); }} />
+      <div className="sticky-top"><input type="search" style={{ width: "100%", fontSize: "1.1rem", minHeight: "3rem", padding: ".5rem 1rem" }} autoFocus placeholder="Gõ chữ Hán, pinyin (không dấu cũng được) hoặc nghĩa tiếng Việt..."
+        value={q} onChange={(e) => { setQ(e.target.value); setPicked(null); }} /></div>
       <p className="muted" style={{ margin: ".7rem 0" }}>{q.trim() ?  `${results.length} kết quả${results.length >= MAX_RESULTS ? ` (hiện ${MAX_RESULTS} kết quả đầu, gõ thêm để thu hẹp)` : ""}` : `Tra trong toàn bộ ${entries.length} từ HSK1-6 — không phụ thuộc cấp đang học.`}</p>
       <div className="wordlist">
         {results.map((e) => (

@@ -37,7 +37,7 @@ export function Done({ title, children }: { title: string; children?: ReactNode 
 }
 
 /** Nút mở menu thả xuống (tuỳ chọn phụ) — đóng khi bấm ra ngoài hoặc nhấn Esc. */
-export function Menu({ label, icon, children }: { label: ReactNode; icon?: Parameters<typeof Icon>[0]["name"]; children: ReactNode }) {
+export function Menu({ label, icon, title, children }: { label?: ReactNode; icon?: Parameters<typeof Icon>[0]["name"]; title?: string; children: ReactNode }) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -49,7 +49,7 @@ export function Menu({ label, icon, children }: { label: ReactNode; icon?: Param
   }, [open]);
   return (
     <div className="menu" ref={ref}>
-      <button className={open ? "active" : ""} onClick={() => setOpen(!open)}>{icon && <Icon name={icon} size={16} />}{label}<Icon name="chevD" size={15} /></button>
+      <button className={open ? "active" : ""} onClick={() => setOpen(!open)} title={title}>{icon && <Icon name={icon} size={16} />}{label}<Icon name="chevD" size={15} /></button>
       {open && <div className="menu-pop">{children}</div>}
     </div>
   );

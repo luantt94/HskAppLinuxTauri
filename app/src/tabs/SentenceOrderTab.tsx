@@ -2,7 +2,8 @@
 // Tách từ bằng jieba (Rust) vì câu tiếng Trung không có khoảng trắng.
 import { useCallback, useEffect, useRef, useState } from "react";
 import Icon from "../components/Icon";
-import { Check, Menu, Score } from "../components/ui";
+import { Score } from "../components/ui";
+import { OptSection, OptSwitch, TabOptions } from "../components/TabOptions";
 import { api } from "../lib/api";
 import { cleanZh, speak, stopAudio } from "../lib/audio";
 import { shuffle } from "../lib/data";
@@ -145,18 +146,24 @@ export default function SentenceOrderTab() {
 
   return (
     <div>
-      <div className="toolbar">
-        <span className="muted">Gợi ý đã dùng <b className="stat" style={{ color: "var(--text)" }}>{hints}</b></span>
+      <div className="study-top">
+        <span className="muted study-count">Câu đúng <b className="stat">{score.ok}</b></span>
+        <span className="pill" title="Số lần bấm Gợi ý">Gợi ý đã dùng {hints}</span>
         <span className="grow" />
         <Score ok={score.ok} bad={score.bad} />
-        <Menu label="Tuỳ chọn" icon="sliders">
-          <Check checked={showPinyin} onChange={setShowPinyin} label="Hiện pinyin của câu (dễ hơn)" />
-          <Check checked={readSelected} onChange={setReadSelected} label="Đọc từ vừa chọn" />
-        </Menu>
       </div>
-      {!round ? <p className="muted">{msg}</p> : (
+      <TabOptions>
+        <OptSection title="Gợi ý">
+          <OptSwitch checked={showPinyin} onChange={setShowPinyin} label="Hiện pinyin của câu" hint="Dễ hơn" />
+        </OptSection>
+        <OptSection title="Âm thanh">
+          <OptSwitch checked={readSelected} onChange={setReadSelected} label="Đọc từ vừa chọn" />
+        </OptSection>
+      </TabOptions>
+      {!round ? <div className="empty"><Icon name="puzzle" size={28} /><p>{msg}</p></div> : (
         <>
-          <div className="card prompt-card">
+          <div className="card prompt-card quiz-q">
+            <div className="quiz-ask">Xếp các từ thành câu có nghĩa</div>
             <button className="ghost icon corner" onClick={() => speak(cleanZh(round.fullCn))} title="Nghe cả câu"><Icon name="volume" /></button>
             <div className="order-vi">{round.exVi || "(chưa có nghĩa tiếng Việt cho câu này)"}</div>
             {showPinyin && round.pySent && <div className="ex-py">{round.pySent}</div>}
@@ -166,9 +173,9 @@ export default function SentenceOrderTab() {
               : <span className="muted small">Bấm các thẻ bên dưới theo đúng thứ tự — bấm lại để bỏ ra</span>}
           </div>
           <div className="order-bank">{bank.map((t) => tile(t, () => place(t)))}</div>
-          {feedback && <p style={{ textAlign: "center", fontWeight: 600, margin: ".6rem 0 0" }} className={feedback.good ? "ok" : "err"}>{feedback.text}</p>}
+          {feedback && <div className={`order-feedback ${feedback.good ? "good" : "bad"}`}><Icon name={feedback.good ? "checkCircle" : "x"} size={16} />{feedback.text}</div>}
           <div className="nav-row">
-            <button onClick={hint} disabled={locked}>Gợi ý</button>
+            <button onClick={hint} disabled={locked}><Icon name="star" size={15} />Gợi ý</button>
             <button className="primary" onClick={check}>{awaitingNext ? <>Tiếp theo <Icon name="chevR" size={16} /></> : "Kiểm tra"}</button>
           </div>
         </>

@@ -44,6 +44,9 @@
     background-position: center, center, 0 0, 0 0;
     background-repeat: no-repeat;
   }
+  /* Bấm vào ô chữ ở phần "Cách viết" để phát lại hoạt hình từ đầu */
+  #demo-container .char-box { cursor: pointer; transition: box-shadow .15s, border-color .15s; }
+  #demo-container .char-box:hover { border-color: #93b4f0; box-shadow: 0 0 0 3px rgba(37, 99, 235, .15); }
   .status {
     text-align: center;
     color: #888888;
@@ -273,7 +276,7 @@
       if (token !== window.demoRunToken) return;
       const writers = window.demoWriters;
       if (!writers || idx >= writers.length) {
-        setDemoStatus('Xong. Tự động phát lại sau 3 giây...');
+        setDemoStatus('Xong. Tự động phát lại sau 3 giây — hoặc bấm vào chữ để xem lại ngay.');
         // Chỉ báo Python 1 LẦN cho mỗi từ (lần viết xong ĐẦU TIÊN) — các
         // vòng tự lặp lại sau đó (mỗi 3s) không cần báo lại.
         if (window.demoFinishedNotifiedToken !== token) {
@@ -291,6 +294,23 @@
         onComplete: () => animateSequential(idx + 1, token),
       });
     }
+
+    // Người dùng bấm vào chữ: xoá nét đang hiện và viết lại từ nét đầu tiên. Đổi token để vòng
+    // hoạt hình đang chạy (nếu có) tự dừng, không chạy chồng 2 lượt cùng lúc.
+    function restartDemo() {
+      const writers = window.demoWriters;
+      if (!writers || !writers.length) return;
+      clearDemoAutoReplay();
+      const prev = window.demoRunToken;
+      const token = ++window.demoRunToken;
+      // từ này đã báo "xem xong" rồi thì không báo lại khi người dùng tự bấm xem lại
+      if (window.demoFinishedNotifiedToken === prev) window.demoFinishedNotifiedToken = token;
+      writers.forEach((w) => w.hideCharacter());
+      setDemoStatus('Đang phát hoạt hình nét bút...');
+      animateSequential(0, token);
+    }
+    document.getElementById('demo-container').addEventListener('click', restartDemo);
+    document.getElementById('demo-container').title = 'Bấm vào chữ để xem lại cách viết';
 
     function replay() {
       clearDemoAutoReplay();

@@ -3,7 +3,8 @@
 // Chọn đúng/sai được ghi vào SRS; từ rơi hết khung mà chưa chọn thì biến mất (không tính điểm).
 import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Icon from "../components/Icon";
-import { Check, Menu, Score } from "../components/ui";
+import { Score } from "../components/ui";
+import { OptRadio, OptRow, OptSection, OptSwitch, TabOptions } from "../components/TabOptions";
 import { cleanZh, speak, stopAudio } from "../lib/audio";
 import { shuffle } from "../lib/data";
 import { FALLBACK_VI, FALLBACK_ZH, MODES, fieldOf, thirdField } from "../lib/fields";
@@ -181,7 +182,7 @@ export default function FallingTab() {
   return (
     <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
       {/* Hay chỉnh khi đang chơi (tạm dừng, tốc độ) để ngoài; chế độ chơi gom vào menu */}
-      <div className="toolbar" style={{ marginTop: 0 }}>
+      <div className="study-top">
         <Score ok={score.ok} bad={score.bad} />
         <span className="muted">Lượt <b className="stat" style={{ color: "var(--text)" }}>{round}</b></span>
         <span className="grow" />
@@ -192,24 +193,28 @@ export default function FallingTab() {
           <button disabled={step >= 25} onClick={() => setStep((s) => s + 1)} title="Nhanh hơn">+</button>
         </div>
         <button className={paused ? "primary" : ""} onClick={() => setPaused((p) => !p)}><Icon name={paused ? "play" : "pause"} size={15} />{paused ? "Tiếp tục" : "Tạm dừng"}</button>
-        <Menu label="Chế độ" icon="sliders">
+      </div>
+      <TabOptions>
+        <OptSection title="Loại câu hỏi">
           <div className="tabs seg">
             <button className={!isSent ? "active" : ""} onClick={() => setGroup(false)}>Từ vựng</button>
             <button className={isSent ? "active" : ""} onClick={() => setGroup(true)}>Câu</button>
           </div>
-          {MODES.filter(([mq]) => (mq >= 3) === isSent).map(([mq, ma, label]) => (
-            <label key={label}><input type="radio" checked={mode === `${mq},${ma}`} onChange={() => setMode(`${mq},${ma}`)} />{label.split(": ")[1]}</label>
-          ))}
-          <div className="menu-row"><span className="grow">Số đáp án</span>
+          <OptRadio value={mode} onChange={setMode}
+            options={MODES.filter(([mq]) => (mq >= 3) === isSent).map(([mq, ma, label]) => [`${mq},${ma}`, label.split(": ")[1]] as [string, string])} />
+        </OptSection>
+        <OptSection title="Đáp án">
+          <OptRow label="Số đáp án">
             <div className="tabs seg">{[2, 3].map((n) => <button key={n} className={answerCount === n ? "active" : ""} onClick={() => setAnswerCount(n)}>{n}</button>)}</div>
-          </div>
-          <Check checked={auto} onChange={setAuto} label="Tự động chọn đúng (chỉ nghe)" />
-          <hr className="menu-sep" />
-          <button disabled={!wrongCount} onClick={() => exportWordsPdf([...wrong.current.values()], "Các từ đã trả lời sai (Từ rơi)", "HskApp — Từ trả lời sai")}>
-            <Icon name="download" size={16} />Xuất PDF từ sai{wrongCount ? ` (${wrongCount})` : ""}
+          </OptRow>
+          <OptSwitch checked={auto} onChange={setAuto} label="Tự động chọn đúng" hint="Chỉ nghe, không cần bấm" />
+        </OptSection>
+        <OptSection title="Xuất">
+          <button className="opt-action" disabled={!wrongCount} onClick={() => exportWordsPdf([...wrong.current.values()], "Các từ đã trả lời sai (Từ rơi)", "HskApp — Từ trả lời sai")}>
+            <Icon name="download" size={16} />Xuất PDF từ trả lời sai<small>{wrongCount ? `${wrongCount} từ` : "chưa có"}</small>
           </button>
-        </Menu>
-      </div>
+        </OptSection>
+      </TabOptions>
       <div className="fallzone grow" ref={zoneRef} style={{ minHeight: 260 }}>
         {rows.current.map((r) => (
           <div key={r.id} style={{ position: "absolute", left: 0, right: 0, top: 0, transform: `translateY(${r.y}px)`, textAlign: "center" }}>

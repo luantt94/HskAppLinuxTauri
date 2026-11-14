@@ -9,7 +9,6 @@ import type { Word } from "../lib/types";
 import { useVocab } from "../lib/vocabStore";
 import Icon from "./Icon";
 import Modal from "./Modal";
-import { Check } from "./ui";
 
 type Pos = { x: number; y: number };
 
@@ -184,10 +183,10 @@ function StrokeWin({ words, onClose, slot }: { words: Word[]; onClose: () => voi
 }
 
 const TOOLS = [
-  { id: "ticker", label: "Từ vựng chạy (mỗi từ 2 giây)" },
-  { id: "grammar", label: "Ngữ pháp + ví dụ (mỗi điểm 5 giây)" },
-  { id: "favorite", label: "Tìm theo pinyin và thêm vào bộ từ" },
-  { id: "stroke", label: "Điền nét còn thiếu" },
+  { id: "ticker", icon: "clock", tint: "#2563eb", label: "Từ vựng chạy", desc: "Tự đổi từ mới mỗi 2 giây, có thể bật phát âm" },
+  { id: "grammar", icon: "bookOpen", tint: "#7c3aed", label: "Ngữ pháp + ví dụ", desc: "Mỗi điểm ngữ pháp hiện 5 giây, kèm câu ví dụ" },
+  { id: "favorite", icon: "star", tint: "#d97706", label: "Thêm từ vào bộ", desc: "Gõ pinyin để tìm từ rồi thêm vào bộ từ của bạn" },
+  { id: "stroke", icon: "brush", tint: "#047857", label: "Điền nét còn thiếu", desc: "Luyện viết: vẽ nét còn thiếu của chữ Hán" },
 ] as const;
 
 /** Nút mở hộp bật/tắt + các cửa sổ đang mở. Đặt một lần ở Shell. */
@@ -199,9 +198,23 @@ export default function FloatingTools({ hubOpen, onHubClose }: { hubOpen: boolea
   return (
     <>
       {hubOpen && (
-        <Modal title="Công cụ nổi" onClose={onHubClose} width={420}>
-          <p className="muted small" style={{ marginBottom: ".6rem" }}>Bật cửa sổ nhỏ — kéo thanh tiêu đề để di chuyển, đặt ở bất kỳ đâu trên cửa sổ app:</p>
-          {TOOLS.map((t) => <div key={t.id} style={{ margin: ".35rem 0" }}><Check checked={open.has(t.id)} onChange={(v) => set(t.id, v)} label={t.label} /></div>)}
+        <Modal title="Công cụ nổi" onClose={onHubClose} width={460}
+          footer={<><span className="muted small grow">{open.size ? `Đang mở ${open.size}/${TOOLS.length} cửa sổ` : "Chưa mở cửa sổ nào"}</span>
+            <button className="ghost" disabled={!open.size} onClick={() => setOpen(new Set())}>Tắt tất cả</button>
+            <button className="primary" onClick={onHubClose}>Xong</button></>}>
+          <p className="muted small" style={{ margin: "0 0 .8rem" }}>Cửa sổ nhỏ luôn nổi trên app. Kéo thanh tiêu đề để di chuyển; trỏ chuột vào thì nội dung đứng yên.</p>
+          <div className="tool-list">
+            {TOOLS.map((t) => {
+              const on = open.has(t.id);
+              return (
+                <label key={t.id} className={`tool-row ${on ? "on" : ""}`}>
+                  <span className="tool-ico" style={{ color: t.tint, background: `${t.tint}14` }}><Icon name={t.icon} size={20} /></span>
+                  <span className="tool-txt"><b>{t.label}</b><small>{t.desc}</small></span>
+                  <span className="switch"><input type="checkbox" role="switch" checked={on} onChange={(e) => set(t.id, e.target.checked)} /><i /></span>
+                </label>
+              );
+            })}
+          </div>
         </Modal>
       )}
       {open.has("ticker") && <Ticker words={items} slot={slot("ticker")} onClose={() => set("ticker", false)} />}

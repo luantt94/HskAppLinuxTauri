@@ -5,13 +5,15 @@ import { api } from "../lib/api";
 import { cleanZh, speak, stopAudio } from "../lib/audio";
 import { allWords } from "../lib/data";
 import { usePersistent } from "../lib/storage";
+import Icon from "../components/Icon";
+import { OptSection, OptSwitch, TabOptions } from "../components/TabOptions";
+import { LevelChip, useFollowVocabLevel } from "../components/LevelChip";
 
 type Vocab = { zh: string; pinyin: string; vi: string };
 type Passage = { id: number; title_zh?: string; text: string; text_vi?: string; vocab?: Vocab[] };
 type LevelData = { story_title?: string; story_intro_vi?: string; passages: Passage[] };
 
 const FILES = import.meta.glob("../data/reading/*.json");
-const LEVELS: [string, string][] = [["hsk1", "HSK 1"], ["hsk2", "HSK 2"], ["hsk3", "HSK 3"], ["hsk4", "HSK 4"], ["hsk5", "HSK 5"], ["hsk6", "HSK 6"]];
 const CHARACTERS: Record<string, [string, string]> = {
   李明: ["Lǐ Míng", "Lý Minh (nhân vật chính của câu chuyện)"], 小红: ["Xiǎohóng", "Tiểu Hồng (bạn thân, người Trung Quốc)"],
   大卫: ["Dàwèi", "David (bạn, người Mỹ)"], 玛丽: ["Mǎlì", "Mary (bạn, người Pháp)"], 王老师: ["Wáng lǎoshī", "cô/thầy giáo họ Vương"],
@@ -25,8 +27,10 @@ export default function ReadingTab() {
   const [showVi, setShowVi] = usePersistent("reading.vi", true);
   const [showVocab, setShowVocab] = usePersistent("reading.vocab", true);
   const [data, setData] = useState<LevelData | null>(null);
+  useFollowVocabLevel("reading", (n) => setLevel(`hsk${n}`));
   const [tokens, setTokens] = useState<[string, string][][]>([]);
   const [playing, setPlaying] = useState(false);
+  const [activeP, setActiveP] = useState(-1); // đoạn đang đọc (tô sáng)
   const run = useRef(0);
   const lexicon = useMemo(() => {
     const m = new Map<string, [string, string]>();
@@ -35,7 +39,7 @@ export default function ReadingTab() {
   }, []);
 
   useEffect(() => {
-    run.current++; stopAudio(); setPlaying(false);
+    run.current++; stopAudio(); setPlaying(false); setActiveP(-1);
     const load = FILES[`../data/reading/${level}.json`];
     if (!load) { setData(null); return; }
     (async () => {
@@ -51,46 +55,86 @@ export default function ReadingTab() {
   };
 
   async function readAll() {
-    if (playing) { run.current++; stopAudio(); setPlaying(false); return; }
+    if (playing) { run.current++; stopAudio(); setPlaying(false); setActiveP(-1); return; }
     const my = ++run.current;
     setPlaying(true);
-    for (const p of data?.passages ?? []) { if (run.current !== my) return; await speak(cleanZh(p.text)); }
-    if (run.current === my) setPlaying(false);
+    const ps = data?.passages ?? [];
+    for (let i = 0; i < ps.length; i++) {
+      if (run.current !== my) return;
+      setActiveP(i);
+      document.getElementById(`rp-${i}`)?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      await speak(cleanZh(ps[i].text));
+    }
+    if (run.current === my) { setPlaying(false); setActiveP(-1); }
+  }
+  async function readOne(i: number) {
+    const my = ++run.current;
+    setPlaying(false); setActiveP(i);
+    await speak(cleanZh(data?.passages[i]?.text ?? ""));
+    if (run.current === my) setActiveP(-1);
   }
 
   return (
     <div>
-      <div className="row">
-        <select value={level} onChange={(e) => setLevel(e.target.value)}>{LEVELS.map(([k, l]) => <option key={k} value={k}>{l}</option>)}</select>
-        <label><input type="checkbox" checked={showPy} onChange={(e) => setShowPy(e.target.checked)} /> Pinyin</label>
-        <label><input type="checkbox" checked={showVi} onChange={(e) => setShowVi(e.target.checked)} /> Nghĩa tiếng Việt</label>
-        <label><input type="checkbox" checked={showVocab} onChange={(e) => setShowVocab(e.target.checked)} /> Từ vựng</label>
+      <div className="row sticky-top">
+        <LevelChip value={Number(level.replace("hsk", ""))} onChange={(n) => setLevel(`hsk${n}`)} unit="đoạn"
+          counts={data ? { [Number(level.replace("hsk", ""))]: data.passages.length } : undefined} />
         <span className="grow" />
-        <button onClick={readAll}>{playing ? "Dừng" : "Đọc cả bài"}</button>
+        <button className={playing ? "active" : "primary"} onClick={readAll}><Icon name={playing ? "pause" : "play"} size={15} />{playing ? "Dừng đọc" : "Đọc cả bài"}</button>
       </div>
+      <TabOptions>
+        <OptSection title="Hiển thị dưới mỗi đoạn">
+          <OptSwitch checked={showPy} onChange={setShowPy} label="Pinyin" />
+          <OptSwitch checked={showVi} onChange={setShowVi} label="Nghĩa tiếng Việt" />
+          <OptSwitch checked={showVocab} onChange={setShowVocab} label="Từ vựng" />
+        </OptSection>
+        <OptSection title="Cách dùng">
+          <span className="muted small">Rê chuột vào chữ để xem pinyin và nghĩa. Chữ tô vàng là từ vựng mới của đoạn — bấm thẻ từ vựng để nghe.</span>
+        </OptSection>
+      </TabOptions>
       {!data ? <p className="muted">Chưa có dữ liệu đoạn văn cho cấp này.</p> : (
         <>
-          <div className="card" style={{ margin: "10px 0" }}><b>{data.story_title}</b><div className="muted">{data.story_intro_vi}</div></div>
+          {/* Đầu truyện: tên, giới thiệu, số đoạn */}
+          <header className="story-head">
+            <div className="story-ico"><Icon name="bookOpen" size={22} /></div>
+            <div className="grow">
+              <h2>{data.story_title}</h2>
+              {data.story_intro_vi && <p>{data.story_intro_vi}</p>}
+            </div>
+            <span className="pill">{data.passages.length} đoạn</span>
+          </header>
           {data.passages.map((p, i) => {
             const vocab = new Map((p.vocab ?? []).map((v) => [v.zh, [v.pinyin, v.vi] as [string, string]]));
             const toks = tokens[i] ?? [[p.text, ""]];
             const pinyinLine = toks.map(([t, py]) => (hasCjk(t) ? " " + lookup(t, vocab, py.replace(/ /g, ""))[0] : t)).join("").trim();
             return (
-              <div key={p.id ?? i} style={{ margin: "14px 0" }}>
-                <p className="hanzi" style={{ fontSize: "1.4rem", lineHeight: 1.7, margin: 0 }}>
+              <div key={p.id ?? i} id={`rp-${i}`} className={`read-passage ${activeP === i ? "on" : ""}`}>
+                <div className="rp-head">
+                  <span className="rp-n">{i + 1}</span>
+                  {p.title_zh && <span className="rp-title hanzi">{p.title_zh}</span>}
+                  <span className="grow" />
+                  <button className="ghost icon" onClick={() => (activeP === i ? (run.current++, stopAudio(), setActiveP(-1), setPlaying(false)) : readOne(i))} title={activeP === i ? "Dừng" : "Nghe đoạn này"}>
+                    <Icon name={activeP === i ? "pause" : "volume"} size={17} />
+                  </button>
+                </div>
+                <p className="hanzi rp-text">
                   {toks.map(([t, py], k) => {
                     if (t === "\n") return <br key={k} />;
                     if (!hasCjk(t)) return <Fragment key={k}>{t}</Fragment>;
                     const [pinyin, vi] = lookup(t, vocab, py.replace(/ /g, ""));
-                    return <span key={k} title={vi ? `${pinyin}\n${vi}` : pinyin} style={{ borderBottom: "1px dotted #94a3b8", background: vocab.has(t) ? "#fef9c3" : undefined }}>{t}</span>;
+                    return <span key={k} className={`rw ${vocab.has(t) ? "key" : ""}`} data-py={pinyin} data-vi={vi || ""}>{t}</span>;
                   })}
                 </p>
-                {showPy && <p style={{ color: "#7c3aed", fontStyle: "italic", margin: "4px 0" }}>{pinyinLine}</p>}
-                {showVi && p.text_vi && <p style={{ color: "#047857", margin: "4px 0" }}>{p.text_vi}</p>}
+                {showPy && <p className="rp-py">{pinyinLine}</p>}
+                {showVi && p.text_vi && <p className="rp-vi">{p.text_vi}</p>}
                 {showVocab && !!p.vocab?.length && (
-                  <p style={{ fontSize: ".9rem" }}>📚 <i>Từ vựng:</i><br />
-                    {p.vocab.map((v) => <span key={v.zh}><b style={{ color: "#1d4ed8" }}>{v.zh}</b> <span style={{ color: "#7c3aed" }}>[{v.pinyin}]</span> <span style={{ color: "#047857" }}>— {v.vi}</span><br /></span>)}
-                  </p>
+                  <div className="rp-vocab">
+                    {p.vocab.map((v) => (
+                      <button key={v.zh} className="vchip" onClick={() => speak(cleanZh(v.zh))} title="Nghe">
+                        <b className="hanzi">{v.zh}</b><span className="py">{v.pinyin}</span><span className="vi">{v.vi}</span>
+                      </button>
+                    ))}
+                  </div>
                 )}
               </div>
             );

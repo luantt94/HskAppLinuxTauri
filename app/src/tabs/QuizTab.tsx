@@ -1,7 +1,8 @@
 // Tab "🅰️ Trắc nghiệm" — 4 đáp án, 12 chế độ (Từ/Câu × 3 cặp trường × 2 chiều). Port của games/game_quiz.py.
 import { useCallback, useEffect, useRef, useState } from "react";
 import Icon from "../components/Icon";
-import { Check, Done, Menu, Score } from "../components/ui";
+import { Done, Score } from "../components/ui";
+import { OptSection, OptSwitch, TabOptions } from "../components/TabOptions";
 import { cleanZh, speak, stopAudio } from "../lib/audio";
 import { shuffle } from "../lib/data";
 import { fieldOf } from "../lib/fields";
@@ -10,6 +11,8 @@ import { usePersistent } from "../lib/storage";
 import { useReport } from "../lib/toast";
 import type { Word } from "../lib/types";
 import { useVocab } from "../lib/vocabStore";
+import { Select } from "../components/Select";
+import { shortcutBlocked } from "../lib/shortcuts";
 
 const ANSWER_COUNT = 4;
 // [khoá, trường hỏi, trường đáp, nhãn thuận, nhãn nghịch] — khoá bắt đầu bằng "w" (từ) hoặc "s" (câu)
@@ -37,6 +40,7 @@ export default function QuizTab() {
   const [locked, setLocked] = useState(false);
   const [done, setDone] = useState(false);
   const [score, setScore] = useState({ ok: 0, bad: 0 });
+  const [total, setTotal] = useState(0); // số câu của lượt (để hiện "Câu n / N")
   const hadWrong = useRef(false);
   const recorded = useRef(false);
   const advance = useRef<number | undefined>(undefined);
@@ -62,6 +66,7 @@ export default function QuizTab() {
     setScore({ ok: 0, bad: 0 });
     const usable = items.filter((w) => w.zh && fieldOf(w, pf) && fieldOf(w, af));
     queue.current = await resolveEffectivePool(usable);
+    setTotal(queue.current.length);
     next();
   }, [items, pf, af, next]);
 
@@ -90,54 +95,91 @@ export default function QuizTab() {
     if (autoNext) advance.current = window.setTimeout(next, 1200);
   }
 
+  const keyRef = useRef<(e: KeyboardEvent) => void>(() => {});
+  keyRef.current = (e) => {
+    if (shortcutBlocked(e)) return;
+    const n = Number(e.key);
+    if (n >= 1 && n <= choices.length) { if (!e.repeat) click(choices[n - 1]); }
+    else if ((e.key === "Enter" || e.key === "ArrowRight") && locked) { e.preventDefault(); next(); }
+  };
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => keyRef.current(e);
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
   const lookup = (text: string) => (cur && text === fieldOf(cur, af) ? cur : items.find((x) => fieldOf(x, af) === text));
+
+  const pos = total ? Math.min(total, total - queue.current.length) : 0; // câu đang làm (1-based)
+  const askLabel = ["Chọn chữ Hán đúng", "Chọn nghĩa đúng", "Chọn pinyin đúng", "Chọn câu đúng", "Chọn nghĩa đúng của câu", "Chọn pinyin đúng của câu"][af] ?? "Chọn đáp án đúng";
+  const isZh = (f: number) => f === 0 || f === 3;
+  const shownDetail = detailFor ?? (locked && cur ? fieldOf(cur, af) : null); // trả lời đúng rồi thì tự hiện chi tiết đáp án đúng
 
   return (
     <div>
-      {/* Kiểu câu hỏi: chọn Từ/Câu rồi chọn chiều hỏi → đáp */}
-      <div className="toolbar">
+      {/* Trên cùng: kiểu câu hỏi (Từ/Câu + chiều hỏi) bên trái; tiến độ + điểm bên phải */}
+      <div className="study-top">
         <div className="tabs seg">
           {GROUPS.map(([g, modes]) => (
             <button key={g} className={type[0] === modes[0][0][0] ? "active" : ""} onClick={() => setType(modes[0][0][0] + type.slice(1))}>{g}</button>
           ))}
         </div>
-        <select value={type} onChange={(e) => setType(e.target.value)} title="Hỏi bằng → chọn đáp án là">
-          {(GROUPS.find(([, m]) => m[0][0][0] === type[0]) ?? GROUPS[0])[1].flatMap(([k, , , fwd, rev]) => [
-            <option key={`${k}f`} value={`${k}_fwd`}>{fwd}</option>, <option key={`${k}r`} value={`${k}_rev`}>{rev}</option>,
-          ])}
-        </select>
-        <span className="grow" />
+        {/* Chiều hỏi → đáp, nhóm theo cặp trường (vd Hán & Nghĩa: Hán → Nghĩa / Nghĩa → Hán) */}
+        <Select value={type} onChange={setType} title="Hỏi bằng → chọn đáp án là" className="quiz-type"
+          options={(GROUPS.find(([, m]) => m[0][0][0] === type[0]) ?? GROUPS[0])[1].flatMap(([k, , , fwd, rev]) => {
+            const group = fwd.replace(" → ", " & ");
+            const NAME: Record<string, string> = { "Hán": "chữ Hán", "Pinyin": "pinyin", "Nghĩa": "nghĩa" };
+            const hint = (s: string) => { const [q, a] = s.split(" → "); return `Thấy ${NAME[q] ?? q}, chọn ${NAME[a] ?? a}`; };
+            return [{ value: `${k}_fwd`, label: fwd, hint: hint(fwd), group }, { value: `${k}_rev`, label: rev, hint: hint(rev), group }];
+          })} />
+        <span className="muted study-count">Câu <b className="stat">{pos}</b> / {total}</span>
+        <div className="study-bar"><i style={{ width: `${total ? (pos / total) * 100 : 0}%` }} /></div>
         <Score ok={score.ok} bad={score.bad} />
-        <Menu label="Tuỳ chọn" icon="sliders">
-          <Check checked={autoNext} onChange={setAutoNext} label="Đúng thì tự chuyển câu" />
-          <Check checked={autoRead} onChange={setAutoRead} label="Tự đọc câu hỏi" />
-        </Menu>
       </div>
-      {done && <Done title="Hoàn thành!"><button className="primary" onClick={start}>Chơi lại</button></Done>}
+      <TabOptions>
+        <OptSection title="Tự động">
+          <OptSwitch checked={autoNext} onChange={setAutoNext} label="Đúng thì tự chuyển câu" />
+          <OptSwitch checked={autoRead} onChange={setAutoRead} label="Tự đọc câu hỏi" />
+        </OptSection>
+        <OptSection title="Phím tắt">
+          <span className="muted small"><kbd>1</kbd>–<kbd>4</kbd> chọn đáp án · <kbd>Enter</kbd> câu tiếp theo</span>
+          <span className="muted small">Sau khi trả lời, bấm lại các đáp án để xem chi tiết từng từ.</span>
+        </OptSection>
+      </TabOptions>
+      {done && (
+        <Done title="Hoàn thành!">
+          <p className="muted" style={{ marginBottom: "1rem" }}>Đúng ngay lần đầu {score.ok} · Sai {score.bad}</p>
+          <button className="primary" onClick={start}><Icon name="rotate" size={15} />Chơi lại</button>
+        </Done>
+      )}
       {cur && (
         <>
-          <div className="card prompt-card" style={{ fontSize: pf === 0 ? "2.6rem" : "1.5rem" }}>
-            <span className={pf === 0 || pf === 3 ? "hanzi" : ""}>{fieldOf(cur, pf)}</span>
+          <div className="card prompt-card quiz-q">
+            <div className="quiz-ask">{askLabel}</div>
+            <div className={`quiz-prompt ${isZh(pf) ? "hanzi" : ""} ${pf === 0 ? "big" : pf === 3 ? "sent" : ""}`}>{fieldOf(cur, pf)}</div>
             <button className="ghost icon corner" onClick={() => speak(cleanZh(pf < 3 ? cur.zh : cur.exCn))} title="Nghe phát âm"><Icon name="volume" /></button>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginTop: 12 }}>
-            {choices.map((c) => (
-              <button key={c} className={`opt ${states[c] === "good" ? "right" : states[c] === "bad" ? "wrong" : ""} ${detailFor === c ? "peek" : ""}`} style={{ margin: 0, minHeight: 60 }} onClick={() => click(c)}>
-                <span className={af === 0 || af === 3 ? "hanzi" : ""} style={{ fontSize: af === 0 ? "1.5rem" : "1.05rem" }}>{c}</span>
-              </button>
-            ))}
+          <div className="quiz-opts">
+            {choices.map((c, i) => {
+              const st = states[c];
+              return (
+                <button key={c} className={`opt quiz-opt ${st === "good" ? "right" : st === "bad" ? "wrong" : ""} ${detailFor === c ? "peek" : ""}`} onClick={() => click(c)}>
+                  <kbd>{i + 1}</kbd>
+                  <span className={`grow ${isZh(af) ? "hanzi" : ""}`} style={{ fontSize: af === 0 ? "1.5rem" : "1.05rem" }}>{c}</span>
+                  {st && <Icon name={st === "good" ? "checkCircle" : "x"} size={18} />}
+                </button>
+              );
+            })}
           </div>
-          <div className="nav-row"><button className="primary" disabled={!locked} onClick={next}>Tiếp theo <Icon name="chevR" size={16} /></button></div>
-          <div className="detail-panel">
-            {detailFor ? (
-              <>
-                <div className="detail-title">Chi tiết đáp án: <span className={af === 0 || af === 3 ? "hanzi" : ""}>{detailFor}</span></div>
-                {detailRows(lookup(detailFor)).length ? (
-                  <dl>{detailRows(lookup(detailFor)).map(([k, v]) => <div key={k}><dt>{k}</dt><dd className={k === "Từ" || k === "Câu ví dụ" ? "hanzi" : ""}>{v || "—"}</dd></div>)}</dl>
-                ) : <div className="muted">Không có thông tin cho đáp án này.</div>}
-              </>
-            ) : <div className="muted">Bấm vào một đáp án để xem chi tiết (từ, pinyin, nghĩa, câu ví dụ).</div>}
-          </div>
+          <div className="nav-row"><button className="primary" disabled={!locked} onClick={next}>Câu tiếp theo <Icon name="chevR" size={16} /></button></div>
+          {shownDetail ? (
+            <div className="detail-panel">
+              <div className="detail-title">Chi tiết: <span className={isZh(af) ? "hanzi" : ""}>{shownDetail}</span></div>
+              {detailRows(lookup(shownDetail)).length ? (
+                <dl>{detailRows(lookup(shownDetail)).map(([k, v]) => <div key={k}><dt>{k}</dt><dd className={k === "Từ" || k === "Câu ví dụ" ? "hanzi" : ""}>{v || "—"}</dd></div>)}</dl>
+              ) : <div className="muted">Không có thông tin cho đáp án này.</div>}
+            </div>
+          ) : null}
         </>
       )}
     </div>

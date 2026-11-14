@@ -3,13 +3,15 @@
 // Port của games/game_typing.py.
 import { useEffect, useMemo, useRef, useState } from "react";
 import Icon from "../components/Icon";
-import { Check, Done } from "../components/ui";
+import { Done } from "../components/ui";
+import { OptSection, OptSwitch, TabOptions } from "../components/TabOptions";
 import { cleanZh, speak, stopAudio } from "../lib/audio";
 import { normalizePinyin } from "../lib/data";
 import { dueDaysSort } from "../lib/srsPool";
 import { usePersistent } from "../lib/storage";
 import { useReport } from "../lib/toast";
 import { useVocab } from "../lib/vocabStore";
+import { WordList, useWordListOpen } from "../components/WordList";
 
 const MAX_CANDIDATES = 6;
 const WRONG_HIGHLIGHT_MS = 900;
@@ -17,6 +19,8 @@ const WRONG_HIGHLIGHT_MS = 900;
 type Entry = { zh: string; vi: string; py: string; srsZh: string };
 
 export default function TypingTab() {
+  const advance = useRef<number | undefined>(undefined); // hẹn giờ sang từ kế sau khi gõ đúng
+  const [wlOpen, setWlOpen] = useWordListOpen(); // cột danh sách từ
   const { items } = useVocab();
   const report = useReport();
   const [sound, setSound] = usePersistent("typing.sound", true);
@@ -111,7 +115,7 @@ export default function TypingTab() {
     if (ok) {
       setFeedback({ t: `✅ Đúng rồi — ${all[typedIdx].zh}`, c: "#18a957" });
       if (sound && !showSound) speak(cleanZh(all[typedIdx].zh));
-      setTimeout(() => setPos((p) => p + 1), 700);
+      advance.current = window.setTimeout(() => setPos((p) => p + 1), 700);
     } else {
       setFeedback({ t: `❌ Bạn gõ ra: ${all[typedIdx].zh} — chưa đúng, thử lại nhé.`, c: "#e74c3c" });
       showFix();
@@ -133,54 +137,71 @@ export default function TypingTab() {
     else if (e.key === "Enter") { e.preventDefault(); commitGeneric(); }
   }
 
-  const T = (b: boolean, set: (v: boolean) => void, label: string) => <Check checked={b} onChange={set} label={label} />;
-
   return (
     <div>
-      <div className="toolbar">
-        <label><input type="radio" checked={!sentence} onChange={() => setSentence(false)} /> Từ vựng</label>
-        <label><input type="radio" checked={sentence} onChange={() => setSentence(true)} /> Câu</label>
-        {T(showSound, setShowSound, "Âm thanh")}{T(showPy, setShowPy, "Pinyin")}{T(showVi, setShowVi, "Nghĩa")}{T(showZh, setShowZh, "Chữ Hán")}
-        {T(sound, setSound, "Đọc khi đúng")}
-        <span className="grow" />
-        <span className="muted" style={{ whiteSpace: "nowrap" }}>Từ <b>{order.length ? Math.min(pos + 1, order.length) : 0}</b>/{order.length}</span>
-        <span className="score"><span className="s good"><Icon name="checkCircle" size={16} />{score.ok} / {score.total}</span></span>
+      <div className="study-top">
+        <div className="tabs seg">
+          <button className={!sentence ? "active" : ""} onClick={() => setSentence(false)}>Từ vựng</button>
+          <button className={sentence ? "active" : ""} onClick={() => setSentence(true)}>Câu</button>
+        </div>
+        <span className="muted study-count">{sentence ? "Câu" : "Từ"} <b className="stat">{order.length ? Math.min(pos + 1, order.length) : 0}</b> / {order.length}</span>
+        <div className="study-bar"><i style={{ width: `${order.length ? (Math.min(pos + 1, order.length) / order.length) * 100 : 0}%` }} /></div>
+        <span className="score"><span className="s good" title="Gõ đúng / đã làm"><Icon name="checkCircle" size={16} />{score.ok} / {score.total}</span></span>
       </div>
+      <WordList open={wlOpen} onClose={() => setWlOpen(false)} index={pos} unit={sentence ? "câu" : "từ"} onPick={(n) => { window.clearTimeout(advance.current); setPos(n); setText(""); setFeedback(null); }}
+        // chưa làm: chỉ hiện nghĩa (không lộ chữ Hán / pinyin cần gõ); đã làm qua: hiện đủ
+        words={order.map((e, i) => (i < pos ? { zh: e.zh, py: e.py, vi: e.vi, done: true } : { zh: e.vi }))} />
+      <TabOptions>
+        <OptSection title="Danh sách">
+          <OptSwitch checked={wlOpen} onChange={setWlOpen} label="Hiện danh sách từ" hint="Cột bên trái: các từ đang học, bấm để nhảy tới" />
+        </OptSection>
+        <OptSection title="Gợi ý trên đề">
+          <OptSwitch checked={showVi} onChange={setShowVi} label="Nghĩa" />
+          <OptSwitch checked={showZh} onChange={setShowZh} label="Chữ Hán" />
+          <OptSwitch checked={showPy} onChange={setShowPy} label="Pinyin" />
+          <OptSwitch checked={showSound} onChange={setShowSound} label="Nút nghe lại" />
+        </OptSection>
+        <OptSection title="Âm thanh">
+          <OptSwitch checked={sound} onChange={setSound} label="Đọc khi gõ đúng" />
+        </OptSection>
+        <OptSection title="Cách gõ">
+          <span className="muted small">Gõ đủ pinyin không dấu rồi bấm phím số <kbd>1</kbd>–<kbd>6</kbd> để chọn chữ. <kbd>Space</kbd> chỉ chọn khi đã gõ đúng 1 từ.</span>
+        </OptSection>
+      </TabOptions>
 
       {!all.length ? <p className="muted">{sentence ? "Bộ từ vựng này chưa có câu ví dụ nào để luyện." : "Chưa có từ vựng nào — hãy chọn bộ từ vựng ở panel bên phải."}</p>
         : !cur ? <Done title="Đã luyện hết danh sách!"><button className="primary" onClick={() => setPos(0)}>Luyện lại</button></Done>
         : (
           <>
-            <div className="card prompt-card" style={{ minHeight: 120 }}>
+            <div className="card prompt-card quiz-q">
+              <div className="quiz-ask">{sentence ? "Gõ pinyin của câu" : "Gõ pinyin của từ"}</div>
+              {showSound && <button className="ghost icon corner" onClick={() => speak(cleanZh(cur.zh))} title="Nghe lại"><Icon name="volume" /></button>}
               {showZh && <div className="hanzi" style={{ fontSize: sentence ? "1.6rem" : "2.2rem", fontWeight: 800 }}>{cur.zh}</div>}
               {showVi && <div style={{ fontSize: sentence ? "1.2rem" : "1.5rem", fontWeight: 700 }}>{cur.vi}</div>}
               {!showZh && !showVi && <div className="muted"><i>Nghe và gõ pinyin của từ bạn nghe được</i></div>}
               {showPy && <div className="muted" style={{ marginTop: 6 }}>{cur.py}</div>}
-              {showSound && <button style={{ marginTop: 6 }} onClick={() => speak(cleanZh(cur.zh))}>Nghe lại</button>}
             </div>
             <div style={{ position: "relative", margin: "12px 0" }}>
-              <input ref={inputRef} style={{ width: "100%", fontSize: "1.6rem", padding: 10, color: wrongFrom !== null ? "#b91c1c" : undefined }}
+              <input ref={inputRef} className={`typing-input ${wrongFrom !== null ? "bad" : ""}`}
                 value={text} onChange={(e) => { fixToken.current++; setWrongFrom(null); setText(e.target.value); }}
                 onKeyDown={onKeyDown} placeholder="Gõ pinyin không dấu…" autoFocus />
               {wrongFrom !== null && <div className="err" style={{ fontSize: ".8rem" }}>Phần sai từ ký tự thứ {wrongFrom + 1}</div>}
             </div>
             {live.length > 0 && (
-              <div className="card" style={{ padding: 6 }}>
+              <div className="ime-list" role="listbox">
                 {live.map((i, n) => (
-                  <div key={i} className="wordrow" style={{ cursor: "pointer", border: "none" }} onClick={() => resolve(i)}>
-                    <b>{n + 1}</b><span className="hanzi" style={{ fontSize: "1.2rem" }}>{all[i].zh}</span>
-                    <span className="muted">{all[i].py}</span>
-                  </div>
+                  <button key={i} className="ime-item" role="option" onClick={() => resolve(i)}>
+                    <kbd>{n + 1}</kbd><span className="hanzi">{all[i].zh}</span><span className="muted">{all[i].py}</span>
+                  </button>
                 ))}
               </div>
             )}
             {feedback && <p style={{ color: feedback.c, fontWeight: 600 }}>{feedback.t}</p>}
             <div className="row" style={{ justifyContent: "center" }}>
-              <button onClick={() => setPos((p) => Math.max(0, p - 1))}><Icon name="chevL" size={16} /> Trước</button>
-              <button onClick={() => setFeedback({ t: `👁 Đáp án: ${cur.zh} (${cur.py})`, c: "#64748b" })}>Xem đáp án</button>
-              <button onClick={() => setPos((p) => p + 1)}>Bỏ qua <Icon name="chevR" size={16} /></button>
+              <button onClick={() => { window.clearTimeout(advance.current); setPos((p) => Math.max(0, p - 1)); }}><Icon name="chevL" size={16} /> Trước</button>
+              <button onClick={() => setFeedback({ t: `Đáp án: ${cur.zh} (${cur.py})`, c: "#64748b" })}>Xem đáp án</button>
+              <button onClick={() => { window.clearTimeout(advance.current); setPos((p) => p + 1); }}>Bỏ qua <Icon name="chevR" size={16} /></button>
             </div>
-            <p className="muted" style={{ fontSize: ".8rem" }}>Gõ ĐỦ pinyin rồi bấm phím số (1-6) để chọn; Space chỉ chọn khi đã gõ xong đúng 1 từ.</p>
           </>
         )}
     </div>

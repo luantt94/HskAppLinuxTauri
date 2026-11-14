@@ -22,7 +22,14 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
       api.settingGet("ui/font_pt").then((v) => { const n = Number(v); if (v !== null && n >= 8 && n <= 20) setFontPt(n); }).catch(() => {});
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  useEffect(() => { document.documentElement.style.fontSize = `${fontPt * 1.4545}px`; }, [fontPt]);
+  // Cỡ chữ người dùng chọn → biến CSS --base (px) và --base-k (= base / 16). App.css nhân thêm hệ số theo
+  // bề rộng cửa sổ (100% ở ≤1366px → tối đa 125% ở ≥2560px) nên mọi tab to/nhỏ cùng một tỉ lệ.
+  useEffect(() => {
+    const px = fontPt * 1.4545, root = document.documentElement.style;
+    root.removeProperty("font-size");
+    root.setProperty("--base", `${px}px`);
+    root.setProperty("--base-k", String(px / 16));
+  }, [fontPt]);
   useEffect(() => { currentVolume = volume; }, [volume]);
   return <Ctx.Provider value={{ fontPt, setFontPt, volume, setVolume }}>{children}</Ctx.Provider>;
 }
