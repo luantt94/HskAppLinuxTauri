@@ -1020,11 +1020,13 @@ button.wl-item.done .zh { opacity: .7; }
 /* ---- thanh tiêu đề tự vẽ (Linux, xem components/TitleBar.tsx) ---- */
 .window { display: flex; flex-direction: column; height: 100%; }
 .window-body { flex: 1; min-height: 0; }
-.titlebar { height: 36px; flex-shrink: 0; display: flex; align-items: center; gap: .5rem; padding-left: .75rem; user-select: none;
-  background: linear-gradient(90deg, #2563eb, #4f46e5); color: #fff; }
-.titlebar-logo { width: 22px; height: 22px; border-radius: 6px; background: rgba(255, 255, 255, .2); display: grid; place-items: center; font-family: var(--font-zh); font-size: 13px; font-weight: 700; }
-.titlebar-title { flex: 1; font-size: 13px; font-weight: 700; letter-spacing: .01em; }
-.titlebar-buttons { display: flex; height: 100%; }
-.titlebar-buttons button { width: 46px; height: 100%; border: 0; border-radius: 0; background: transparent; color: #fff; display: grid; place-items: center; cursor: default; padding: 0; }
-.titlebar-buttons button:hover { background: rgba(255, 255, 255, .18); }
-.titlebar-buttons button.close:hover { background: #dc2626; }
+.titlebar { position: relative; height: 36px; flex-shrink: 0; display: flex; align-items: center; user-select: none;
+  background: linear-gradient(90deg, #d6e4ff, #e0dcff); color: #1e40af; border-bottom: 1px solid #c7d4f2; }
+/* căn giữa theo cả thanh (không bị nút bên phải đẩy lệch); không nhận chuột để kéo/nhấp đúp vẫn ăn vào thanh */
+.titlebar-title { position: absolute; left: 50%; transform: translateX(-50%); max-width: calc(100% - 320px); overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  pointer-events: none; font-size: 13px; font-weight: 600; letter-spacing: .01em; animation: titlebar-fade .6s ease; }
+@keyframes titlebar-fade { from { opacity: 0; transform: translate(-50%, 4px); } to { opacity: 1; transform: translateX(-50%); } }
+.titlebar-buttons { display: flex; height: 100%; margin-left: auto; }
+.titlebar-buttons button { width: 46px; height: 100%; border: 0; border-radius: 0; background: transparent; color: #4b5b8a; display: grid; place-items: center; cursor: default; padding: 0; }
+.titlebar-buttons button:hover { background: rgba(37, 99, 235, .14); color: var(--accent-hover); }
+.titlebar-buttons button.close:hover { background: var(--bad); color: #fff; }
