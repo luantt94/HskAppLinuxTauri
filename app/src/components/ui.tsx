@@ -1,5 +1,5 @@
 // Thành phần giao diện dùng chung cho các tab.
-import { createContext, useContext, type ReactNode } from "react";
+import { createContext, useContext, useEffect, useRef, useState, type ReactNode } from "react";
 import { createPortal } from "react-dom";
 import Icon from "./Icon";
 
@@ -32,6 +32,25 @@ export function Done({ title, children }: { title: string; children?: ReactNode 
       <div className="done-ico"><Icon name="checkCircle" size={32} /></div>
       <h2>{title}</h2>
       {children}
+    </div>
+  );
+}
+
+/** Nút mở menu thả xuống (tuỳ chọn phụ) — đóng khi bấm ra ngoài hoặc nhấn Esc. */
+export function Menu({ label, icon, children }: { label: ReactNode; icon?: Parameters<typeof Icon>[0]["name"]; children: ReactNode }) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (!open) return;
+    const down = (e: MouseEvent) => !ref.current?.contains(e.target as Node) && setOpen(false);
+    const esc = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
+    window.addEventListener("mousedown", down); window.addEventListener("keydown", esc);
+    return () => { window.removeEventListener("mousedown", down); window.removeEventListener("keydown", esc); };
+  }, [open]);
+  return (
+    <div className="menu" ref={ref}>
+      <button className={open ? "active" : ""} onClick={() => setOpen(!open)}>{icon && <Icon name={icon} size={16} />}{label}<Icon name="chevD" size={15} /></button>
+      {open && <div className="menu-pop">{children}</div>}
     </div>
   );
 }

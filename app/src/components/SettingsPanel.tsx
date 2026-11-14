@@ -1,11 +1,13 @@
-// Panel phải "Cài đặt": cỡ chữ, âm lượng chung, reset tiến độ theo bộ đang chọn.
+// Hộp "Cài đặt": cỡ chữ, âm lượng, bản quyền, reset tiến độ — mỗi mục một dòng (nhãn trái, điều khiển phải).
 import { useState } from "react";
 import { api } from "../lib/api";
 import { ActivationForm, useLicense } from "./Gate";
-import { useSettings } from "../lib/settings";
+import { DEFAULT_FONT_PT, useSettings } from "../lib/settings";
 import { useVocab } from "../lib/vocabStore";
 import Icon from "./Icon";
 import ResetDialog from "./ResetDialog";
+
+const MIN_PT = 8, MAX_PT = 20;
 
 export default function SettingsPanel({ onChanged }: { onChanged: () => void }) {
   const { fontPt, setFontPt, volume, setVolume } = useSettings();
@@ -13,6 +15,7 @@ export default function SettingsPanel({ onChanged }: { onChanged: () => void }) 
   const { status, refresh: refreshLicense } = useLicense();
   const [msg, setMsg] = useState("");
   const [resetOpen, setResetOpen] = useState(false);
+  const vol = Math.round(volume * 100);
 
   async function reset() {
     if (!window.confirm(`Xoá HẲN tiến độ ôn tập của ${items.length} từ trong "${label}"? Không hoàn tác được.`)) return;
@@ -21,42 +24,49 @@ export default function SettingsPanel({ onChanged }: { onChanged: () => void }) 
     onChanged();
   }
 
-  const Slider = ({ title, value, text, min, max, onChange }: { title: string; value: number; text: string; min: number; max: number; onChange: (n: number) => void }) => (
-    <div style={{ margin: ".6rem 0" }}>
-      <div className="row" style={{ justifyContent: "space-between" }}><span>{title}</span><b className="stat">{text}</b></div>
-      <input type="range" min={min} max={max} value={value} onChange={(e) => onChange(Number(e.target.value))} style={{ width: "100%" }} />
-    </div>
-  );
-
   return (
-    <div>
-      <h3 style={{ marginTop: 0 }}>Giao diện</h3>
-      <div className="card">
-        <Slider title="Cỡ chữ" value={fontPt} text={`${fontPt}`} min={8} max={20} onChange={setFontPt} />
-        <div className="row" style={{ marginTop: ".3rem" }}>
-          <button onClick={() => setFontPt(Math.max(8, fontPt - 1))}>A−</button>
-          <button onClick={() => setFontPt(11)}>Mặc định</button>
-          <button onClick={() => setFontPt(Math.min(20, fontPt + 1))}>A+</button>
+    <div className="settings">
+      <h3>Giao diện & âm thanh</h3>
+      <div className="set-list">
+        <div className="set-row">
+          <div className="lbl">Cỡ chữ<small>Áp dụng cho toàn bộ ứng dụng</small></div>
+          {fontPt !== DEFAULT_FONT_PT && <button className="ghost small" onClick={() => setFontPt(DEFAULT_FONT_PT)}>Mặc định</button>}
+          <div className="stepper">
+            <button disabled={fontPt <= MIN_PT} onClick={() => setFontPt(Math.max(MIN_PT, fontPt - 1))} title="Nhỏ hơn">A−</button>
+            <b className="stat">{fontPt}</b>
+            <button disabled={fontPt >= MAX_PT} onClick={() => setFontPt(Math.min(MAX_PT, fontPt + 1))} title="Lớn hơn">A+</button>
+          </div>
+        </div>
+        <div className="set-row">
+          <div className="lbl">Âm lượng</div>
+          <button className="ghost icon" onClick={() => setVolume(vol ? 0 : 1)} title={vol ? "Tắt tiếng" : "Bật tiếng"}><Icon name={vol ? "volume" : "volumeOff"} /></button>
+          <input type="range" min={0} max={100} value={vol} onChange={(e) => setVolume(Number(e.target.value) / 100)} style={{ width: "9rem" }} />
+          <b className="stat" style={{ minWidth: "2.8rem", textAlign: "right" }}>{vol}%</b>
         </div>
       </div>
-      <h3>Âm thanh</h3>
-      <div className="card"><Slider title="Âm lượng" value={Math.round(volume * 100)} text={`${Math.round(volume * 100)}%`} min={0} max={100} onChange={(n) => setVolume(n / 100)} /></div>
+
       <h3>Bản quyền</h3>
-      <div className="card">
+      <div className="set-list">
         {!status ? (
-          <p className="muted small">Đang tải…</p>
+          <div className="set-row muted small">Đang tải…</div>
         ) : status.activated ? (
-          <p className="ok small">✅ Đã kích hoạt — dùng không giới hạn trên máy này.</p>
+          <div className="set-row"><Icon name="checkCircle" className="ok" /><div className="lbl ok">Đã kích hoạt<small>Dùng không giới hạn trên máy này</small></div></div>
         ) : (
-          <ActivationForm status={status} onActivated={refreshLicense} />
+          <div className="set-pad"><ActivationForm status={status} onActivated={refreshLicense} /></div>
         )}
       </div>
+
       <h3>Dữ liệu học</h3>
-      <div className="card">
-        <p className="muted small" style={{ marginBottom: ".6rem" }}>Chế độ học: Ôn tập (SRS).</p>
-        <button className="danger" style={{ width: "100%" }} onClick={reset}><Icon name="trash" size={16} />Reset tiến độ bộ đang chọn</button>
-        <button style={{ width: "100%", marginTop: ".5rem" }} onClick={() => setResetOpen(true)}><Icon name="list" size={16} />Reset theo bộ dữ liệu…</button>
-        {msg && <p className="ok small" style={{ marginTop: ".5rem" }}>{msg}</p>}
+      <div className="set-list">
+        <div className="set-row">
+          <div className="lbl">Reset bộ đang chọn<small>Xoá tiến độ ôn của {items.length} từ trong “{label}”</small></div>
+          <button className="danger" onClick={reset}><Icon name="trash" size={16} />Reset</button>
+        </div>
+        <div className="set-row">
+          <div className="lbl">Reset theo bộ dữ liệu<small>Chọn nhiều cấp / chủ đề / bộ để xoá cùng lúc</small></div>
+          <button onClick={() => setResetOpen(true)}>Chọn bộ…</button>
+        </div>
+        {msg && <div className="set-row ok small">{msg}</div>}
       </div>
       {resetOpen && <ResetDialog onClose={() => setResetOpen(false)} onDone={onChanged} />}
     </div>

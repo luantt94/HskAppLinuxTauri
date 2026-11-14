@@ -3,7 +3,7 @@
 // Chọn đúng/sai được ghi vào SRS; từ rơi hết khung mà chưa chọn thì biến mất (không tính điểm).
 import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Icon from "../components/Icon";
-import { Score, StatusRow } from "../components/ui";
+import { Check, Menu, Score } from "../components/ui";
 import { cleanZh, speak, stopAudio } from "../lib/audio";
 import { shuffle } from "../lib/data";
 import { FALLBACK_VI, FALLBACK_ZH, MODES, fieldOf, thirdField } from "../lib/fields";
@@ -39,7 +39,6 @@ export default function FallingTab() {
   const [auto, setAuto] = usePersistent("fall.auto", false);
   const [step, setStep] = useState(5); // tốc độ = step/5 (0.2x … 5.0x)
   const [paused, setPaused] = useState(false);
-  const [showSettings, setShowSettings] = useState(true);
   const [, force] = useState(0);
   const [score, setScore] = useState({ ok: 0, bad: 0 });
   const [round, setRound] = useState(1);
@@ -174,37 +173,47 @@ export default function FallingTab() {
 
   const wrongCount = wrong.current.size;
   const clr = (r: Row, i: number) =>
-    r.picked === null ? undefined : i === r.correctIdx ? { background: "#dcfce7", borderColor: "#39b54a" } : i === r.picked ? { background: "#fee2e2", borderColor: "#ff4d4f" } : undefined;
+    r.picked === null ? undefined : i === r.correctIdx ? { background: "var(--good-soft)", borderColor: "var(--good)" } : i === r.picked ? { background: "var(--bad-soft)", borderColor: "var(--bad)" } : undefined;
+  // Chế độ: nhóm Từ (trường 0–2) hoặc Câu (3–5); đổi nhóm giữ nguyên chiều hỏi → đáp
+  const isSent = q >= 3;
+  const setGroup = (sent: boolean) => sent !== isSent && setMode(`${q + (sent ? 3 : -3)},${a + (sent ? 3 : -3)}`);
 
   return (
     <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
-      <StatusRow right={<>
-        <button onClick={() => setPaused((p) => !p)}><Icon name={paused ? "play" : "pause"} size={15} />{paused ? "Tiếp tục" : "Tạm dừng"}</button>
-        <button className="ghost" onClick={() => setShowSettings((s) => !s)}><Icon name="sliders" size={16} />{showSettings ? "Ẩn cài đặt" : "Cài đặt"}</button></>}>
-        <span className="row"><Score ok={score.ok} bad={score.bad} /><span className="muted">Lượt <b>{round}</b></span></span>
-      </StatusRow>
-      {showSettings && (
-        <div className="toolbar">
-          <select value={mode} onChange={(e) => setMode(e.target.value)}>
-            {MODES.map(([mq, ma, label]) => <option key={label} value={`${mq},${ma}`}>{label}</option>)}
-          </select>
-          <select value={answerCount} onChange={(e) => setAnswerCount(Number(e.target.value))}>
-            <option value={2}>2 đáp án</option><option value={3}>3 đáp án</option>
-          </select>
-          <label><input type="checkbox" checked={auto} onChange={(e) => setAuto(e.target.checked)} /> Tự động</label>
-          <span>Tốc độ</span>
-          <button disabled={step <= 1} onClick={() => setStep((s) => s - 1)}>−</button>
-          <span>{(step / 5).toFixed(1)}x</span>
-          <button disabled={step >= 25} onClick={() => setStep((s) => s + 1)}>+</button>
-          <button disabled={!wrongCount} onClick={() => exportWordsPdf([...wrong.current.values()], "Các từ đã trả lời sai (Từ rơi)", "HskApp — Từ trả lời sai")}>
-            Xuất PDF từ sai{wrongCount ? ` (${wrongCount})` : ""}
-          </button>
+      {/* Hay chỉnh khi đang chơi (tạm dừng, tốc độ) để ngoài; chế độ chơi gom vào menu */}
+      <div className="toolbar" style={{ marginTop: 0 }}>
+        <Score ok={score.ok} bad={score.bad} />
+        <span className="muted">Lượt <b className="stat" style={{ color: "var(--text)" }}>{round}</b></span>
+        <span className="grow" />
+        <span className="muted">Tốc độ</span>
+        <div className="stepper">
+          <button disabled={step <= 1} onClick={() => setStep((s) => s - 1)} title="Chậm hơn">−</button>
+          <b className="stat" style={{ minWidth: "3rem" }}>{(step / 5).toFixed(1)}x</b>
+          <button disabled={step >= 25} onClick={() => setStep((s) => s + 1)} title="Nhanh hơn">+</button>
         </div>
-      )}
+        <button className={paused ? "primary" : ""} onClick={() => setPaused((p) => !p)}><Icon name={paused ? "play" : "pause"} size={15} />{paused ? "Tiếp tục" : "Tạm dừng"}</button>
+        <Menu label="Chế độ" icon="sliders">
+          <div className="tabs seg">
+            <button className={!isSent ? "active" : ""} onClick={() => setGroup(false)}>Từ vựng</button>
+            <button className={isSent ? "active" : ""} onClick={() => setGroup(true)}>Câu</button>
+          </div>
+          {MODES.filter(([mq]) => (mq >= 3) === isSent).map(([mq, ma, label]) => (
+            <label key={label}><input type="radio" checked={mode === `${mq},${ma}`} onChange={() => setMode(`${mq},${ma}`)} />{label.split(": ")[1]}</label>
+          ))}
+          <div className="menu-row"><span className="grow">Số đáp án</span>
+            <div className="tabs seg">{[2, 3].map((n) => <button key={n} className={answerCount === n ? "active" : ""} onClick={() => setAnswerCount(n)}>{n}</button>)}</div>
+          </div>
+          <Check checked={auto} onChange={setAuto} label="Tự động chọn đúng (chỉ nghe)" />
+          <hr className="menu-sep" />
+          <button disabled={!wrongCount} onClick={() => exportWordsPdf([...wrong.current.values()], "Các từ đã trả lời sai (Từ rơi)", "HskApp — Từ trả lời sai")}>
+            <Icon name="download" size={16} />Xuất PDF từ sai{wrongCount ? ` (${wrongCount})` : ""}
+          </button>
+        </Menu>
+      </div>
       <div className="fallzone grow" ref={zoneRef} style={{ minHeight: 260 }}>
         {rows.current.map((r) => (
           <div key={r.id} style={{ position: "absolute", left: 0, right: 0, top: 0, transform: `translateY(${r.y}px)`, textAlign: "center" }}>
-            <div className="faller hanzi" style={{ position: "static", display: "inline-block", fontSize: "1.5rem", fontWeight: q === 0 || q === 3 ? 700 : 500, borderColor: "#0284c7" }}>
+            <div className="faller hanzi" style={{ position: "static", display: "inline-block", fontSize: "1.5rem", fontWeight: q === 0 || q === 3 ? 700 : 500 }}>
               {fieldOf(r.word, q)}
             </div>
             <div className="row" style={{ justifyContent: "center", alignItems: "flex-start", marginTop: 10, gap: 14 }}>

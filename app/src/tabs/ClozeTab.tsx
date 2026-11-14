@@ -1,7 +1,7 @@
 // Tab "📝 Điền từ" — câu ví dụ bị khuyết chữ cần điền + 4 đáp án. Port của games/game_cloze.py.
 import { useCallback, useEffect, useRef, useState } from "react";
 import Icon from "../components/Icon";
-import { Check, Done, Score } from "../components/ui";
+import { Check, Done, Menu, Score } from "../components/ui";
 import { cleanZh, speak, stopAudio } from "../lib/audio";
 import { shuffle } from "../lib/data";
 import { resolveEffectivePool } from "../lib/srsPool";
@@ -82,39 +82,51 @@ export default function ClozeTab() {
     }
   }
 
-  const cloze = cur ? cur.exCn.replace(cur.zh, "____") : "";
+  // Câu bị khuyết: phần trước + ô trống + phần sau (đúng thì ô trống hiện từ cần điền)
+  const at = cur ? cur.exCn.indexOf(cur.zh) : -1;
+  const solved = !!picked?.good;
   const T = (b: boolean, set: (v: boolean) => void, label: string) => <Check checked={b} onChange={set} label={label} />;
 
   return (
     <div>
       <div className="toolbar">
-        {T(showLineMeaning, setShowLineMeaning, "Nghĩa câu")}
-        {T(showLinePinyin, setShowLinePinyin, "Pinyin câu")}
-        {T(showAnsPinyin, setShowAnsPinyin, "Pinyin đáp án")}
-        {T(showAnsMeaning, setShowAnsMeaning, "Nghĩa đáp án")}
-        {T(autoNext, setAutoNext, "Tự chuyển câu")}
-        {T(autoRead, setAutoRead, "Tự đọc câu")}
+        <span className="muted">Còn <b className="stat" style={{ color: "var(--text)" }}>{queue.current.length + (cur ? 1 : 0)}</b> câu</span>
         <span className="grow" />
         <Score ok={score.ok} bad={score.bad} />
+        <Menu label="Tuỳ chọn" icon="sliders">
+          <div className="menu-head">Gợi ý trên câu</div>
+          {T(showLineMeaning, setShowLineMeaning, "Nghĩa câu")}
+          {T(showLinePinyin, setShowLinePinyin, "Pinyin câu")}
+          <div className="menu-head">Gợi ý trên đáp án</div>
+          {T(showAnsPinyin, setShowAnsPinyin, "Pinyin")}
+          {T(showAnsMeaning, setShowAnsMeaning, "Nghĩa")}
+          <div className="menu-head">Tự động</div>
+          {T(autoNext, setAutoNext, "Đúng thì tự chuyển câu")}
+          {T(autoRead, setAutoRead, "Tự đọc câu")}
+        </Menu>
       </div>
       {empty && <div className="hint-box">Không có câu ví dụ phù hợp. Hãy chọn bộ từ có câu ví dụ.</div>}
       {done && <Done title="Hoàn thành!"><button className="primary" onClick={start}>Chơi lại</button></Done>}
       {cur && (
         <>
           <div className="card prompt-card">
-            {showLineMeaning && <div style={{ color: "#c2410c" }}>{cur.exVi || `Nghĩa: ${cur.vi}`}</div>}
-            {showLinePinyin && <div style={{ color: "#0e7490" }}>{cur.pySent}</div>}
-            <div className="hanzi" style={{ fontSize: "2.1rem", margin: ".7rem 0 1rem", lineHeight: 1.5 }}>{cloze}</div>
-            <button onClick={() => speak(cleanZh(cur.exCn))}><Icon name="volume" size={16} /> Đọc câu</button>
+            <button className="ghost icon corner" onClick={() => speak(cleanZh(cur.exCn))} title="Nghe cả câu"><Icon name="volume" /></button>
+            <div className="hanzi cloze-line">
+              {cur.exCn.slice(0, at)}
+              <span className={`blank ${solved ? "filled" : ""}`} style={{ minWidth: `${cur.zh.length * 1.15 + 0.6}em` }}>{solved ? cur.zh : ""}</span>
+              {cur.exCn.slice(at + cur.zh.length)}
+            </div>
+            {showLinePinyin && <div className="ex-py">{cur.pySent}</div>}
+            {showLineMeaning && <div className="ex-vi">{cur.exVi || `Nghĩa: ${cur.vi}`}</div>}
           </div>
-          <div style={{ marginTop: 10 }}>
+          <div style={{ marginTop: ".8rem" }}>
             {choices.map((c) => {
               const state = picked && picked.zh === c.zh ? (picked.good ? "right" : "wrong") : "";
               return (
                 <button key={c.zh + c.vi} className={`opt ${state}`} onClick={() => choose(c)}>
-                  <span className="hanzi" style={{ fontSize: "1.3rem", fontWeight: 600 }}>{c.zh}</span>
-                  {showAnsPinyin && c.pinyin && <span style={{ color: "#7c3aed", marginLeft: 12 }}>{c.pinyin}</span>}
-                  {showAnsMeaning && c.vi && <span className="muted" style={{ marginLeft: 12 }}>{c.vi}</span>}
+                  <span className="hanzi opt-zh">{c.zh}</span>
+                  {showAnsPinyin && c.pinyin && <span className="opt-py">{c.pinyin}</span>}
+                  {showAnsMeaning && c.vi && <span className="opt-vi">{c.vi}</span>}
                 </button>
               );
             })}

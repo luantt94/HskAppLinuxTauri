@@ -1,7 +1,7 @@
 // Tab "🅰️ Trắc nghiệm" — 4 đáp án, 12 chế độ (Từ/Câu × 3 cặp trường × 2 chiều). Port của games/game_quiz.py.
 import { useCallback, useEffect, useRef, useState } from "react";
 import Icon from "../components/Icon";
-import { Done, HeaderExtra, Score } from "../components/ui";
+import { Check, Done, Menu, Score } from "../components/ui";
 import { cleanZh, speak, stopAudio } from "../lib/audio";
 import { shuffle } from "../lib/data";
 import { fieldOf } from "../lib/fields";
@@ -12,10 +12,10 @@ import type { Word } from "../lib/types";
 import { useVocab } from "../lib/vocabStore";
 
 const ANSWER_COUNT = 4;
-// [khoá, trường A, trường B, nhãn thuận, nhãn nghịch]
+// [khoá, trường hỏi, trường đáp, nhãn thuận, nhãn nghịch] — khoá bắt đầu bằng "w" (từ) hoặc "s" (câu)
 const GROUPS: [string, [string, number, number, string, string][]][] = [
-  ["Từ vựng", [["wzp", 0, 2, "Hán ↔ Pinyin", "Pinyin ↔ Hán"], ["wzv", 0, 1, "Hán ↔ VN", "VN ↔ Hán"], ["wpv", 2, 1, "Pinyin ↔ VN", "VN ↔ Pinyin"]]],
-  ["Câu", [["szp", 3, 5, "Hán ↔ Pinyin", "Pinyin ↔ Hán"], ["szv", 3, 4, "Hán ↔ VN", "VN ↔ Hán"], ["spv", 5, 4, "Pinyin ↔ VN", "VN ↔ Pinyin"]]],
+  ["Từ vựng", [["wzp", 0, 2, "Hán → Pinyin", "Pinyin → Hán"], ["wzv", 0, 1, "Hán → Nghĩa", "Nghĩa → Hán"], ["wpv", 2, 1, "Pinyin → Nghĩa", "Nghĩa → Pinyin"]]],
+  ["Câu", [["szp", 3, 5, "Hán → Pinyin", "Pinyin → Hán"], ["szv", 3, 4, "Hán → Nghĩa", "Nghĩa → Hán"], ["spv", 5, 4, "Pinyin → Nghĩa", "Nghĩa → Pinyin"]]],
 ];
 const TYPES: Record<string, [number, number]> = {};
 for (const [, modes] of GROUPS) for (const [k, a, b] of modes) { TYPES[`${k}_fwd`] = [a, b]; TYPES[`${k}_rev`] = [b, a]; }
@@ -94,26 +94,31 @@ export default function QuizTab() {
 
   return (
     <div>
+      {/* Kiểu câu hỏi: chọn Từ/Câu rồi chọn chiều hỏi → đáp */}
       <div className="toolbar">
-        <select value={type} onChange={(e) => setType(e.target.value)}>
+        <div className="tabs seg">
           {GROUPS.map(([g, modes]) => (
-            <optgroup key={g} label={g}>
-              {modes.flatMap(([k, , , fwd, rev]) => [<option key={`${k}f`} value={`${k}_fwd`}>{g}: {fwd}</option>, <option key={`${k}r`} value={`${k}_rev`}>{g}: {rev}</option>])}
-            </optgroup>
+            <button key={g} className={type[0] === modes[0][0][0] ? "active" : ""} onClick={() => setType(modes[0][0][0] + type.slice(1))}>{g}</button>
           ))}
+        </div>
+        <select value={type} onChange={(e) => setType(e.target.value)} title="Hỏi bằng → chọn đáp án là">
+          {(GROUPS.find(([, m]) => m[0][0][0] === type[0]) ?? GROUPS[0])[1].flatMap(([k, , , fwd, rev]) => [
+            <option key={`${k}f`} value={`${k}_fwd`}>{fwd}</option>, <option key={`${k}r`} value={`${k}_rev`}>{rev}</option>,
+          ])}
         </select>
-        <label><input type="checkbox" checked={autoNext} onChange={(e) => setAutoNext(e.target.checked)} /> Tự chuyển câu</label>
-        <label><input type="checkbox" checked={autoRead} onChange={(e) => setAutoRead(e.target.checked)} /> Tự đọc</label>
         <span className="grow" />
-        <button disabled={!cur} onClick={() => cur && speak(cleanZh(pf < 3 ? cur.zh : cur.exCn))} title="Đọc lại câu hỏi"><Icon name="volume" size={16} />Phát âm</button>
-        <HeaderExtra><Score ok={score.ok} bad={score.bad} /></HeaderExtra>
+        <Score ok={score.ok} bad={score.bad} />
+        <Menu label="Tuỳ chọn" icon="sliders">
+          <Check checked={autoNext} onChange={setAutoNext} label="Đúng thì tự chuyển câu" />
+          <Check checked={autoRead} onChange={setAutoRead} label="Tự đọc câu hỏi" />
+        </Menu>
       </div>
       {done && <Done title="Hoàn thành!"><button className="primary" onClick={start}>Chơi lại</button></Done>}
       {cur && (
         <>
           <div className="card prompt-card" style={{ fontSize: pf === 0 ? "2.6rem" : "1.5rem" }}>
             <span className={pf === 0 || pf === 3 ? "hanzi" : ""}>{fieldOf(cur, pf)}</span>
-            
+            <button className="ghost icon corner" onClick={() => speak(cleanZh(pf < 3 ? cur.zh : cur.exCn))} title="Nghe phát âm"><Icon name="volume" /></button>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginTop: 12 }}>
             {choices.map((c) => (

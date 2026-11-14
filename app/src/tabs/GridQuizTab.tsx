@@ -2,7 +2,7 @@
 // Port của games/game_grid_quiz.py.
 import { useCallback, useEffect, useRef, useState } from "react";
 import Icon from "../components/Icon";
-import { Score, StatusRow } from "../components/ui";
+import { Score } from "../components/ui";
 import { cleanZh, speak, stopAudio } from "../lib/audio";
 import { shuffle } from "../lib/data";
 import { resolveEffectivePool } from "../lib/srsPool";
@@ -87,32 +87,37 @@ export default function GridQuizTab() {
     evaluate(selTop, i, t);
   }
 
-  const style = (sel: boolean, kind: "top" | "bot", size: number) => ({
-    fontSize: `${size / 15}rem`, minHeight: 56, margin: 0,
-    background: sel ? (flash === "good" ? "#dcfce7" : flash === "bad" ? "#fee2e2" : "#dbeafe") : undefined,
-    borderColor: sel ? (flash === "good" ? "#16a34a" : flash === "bad" ? "#dc2626" : "#2563eb") : undefined,
-    fontFamily: kind === "top" ? '"PingFang SC","Microsoft YaHei",sans-serif' : undefined,
-  });
+  // Ô đang chọn: xanh dương; lúc vừa ghép: xanh lá (đúng) / đỏ (sai)
+  const cls = (sel: boolean) => `pair ${sel ? (flash === "good" ? "good" : flash === "bad" ? "bad" : "sel") : ""}`;
 
   const finished = total > 0 && top.length === 0;
   return (
     <div>
-      <StatusRow right={<><Score ok={matched} bad={wrong} /><button onClick={newRound}><Icon name="rotate" size={16} />Chơi lại</button></>}>
-        <span className="muted">{total ? <>Đã ghép <b>{matched}</b> / {total}</> : ""}</span>
-      </StatusRow>
-      <p className={finished ? "ok" : "muted"} style={{ margin: ".7rem 0", fontWeight: finished ? 700 : 400 }}>{finished ? `Hoàn thành! Ghép đúng ${matched} từ, sai ${wrong} lần.` : top.length ? "Chọn 1 chữ Hán ở trên và pinyin tương ứng ở dưới" : "Chưa có từ vựng nào (cần có pinyin) — hãy chọn bộ từ ở panel bên phải."}</p>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 8 }}>
-        {top.map((w, i) => <button key={w.zh} className="hanzi" style={style(i === selTop, "top", 28)} onClick={() => clickTop(i)}>{w.zh}</button>)}
+      <div className="toolbar">
+        <span className="muted">Đã ghép <b className="stat" style={{ color: "var(--text)" }}>{matched}</b> / {total}</span>
+        <div className="pbar grow" style={{ maxWidth: "14rem" }}><div style={{ width: `${total ? (matched / total) * 100 : 0}%` }} /></div>
+        <span className="grow" />
+        <Score ok={matched} bad={wrong} />
+        <button onClick={newRound}><Icon name="rotate" size={16} />Chơi lại</button>
       </div>
-      <div style={{ height: 26, textAlign: "center", color: "#475569" }}>{meaning}</div>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 8 }}>
-        {bot.map((w, i) => <button key={w.zh} style={style(i === selBot, "bot", 20)} onClick={() => clickBot(i)}>{w.pinyin}</button>)}
+      {finished ? (
+        <p className="ok" style={{ margin: ".7rem 0", fontWeight: 700 }}>Hoàn thành! Ghép đúng {matched} từ, sai {wrong} lần.</p>
+      ) : !top.length ? (
+        <p className="muted" style={{ margin: ".7rem 0" }}>Chưa có từ vựng nào (cần có pinyin) — hãy chọn bộ từ ở nút phía trên bên phải.</p>
+      ) : null}
+      <div className="pair-label">Chữ Hán</div>
+      <div className="pair-grid">
+        {top.map((w, i) => <button key={w.zh} className={`${cls(i === selTop && (touched.top || !!flash))} hanzi zh`} onClick={() => clickTop(i)}>{w.zh}</button>)}
+      </div>
+      <div className="pair-meaning">{meaning}</div>
+      <div className="pair-label">Pinyin</div>
+      <div className="pair-grid">
+        {bot.map((w, i) => <button key={w.zh} className={`${cls(i === selBot && (touched.bot || !!flash))} py`} onClick={() => clickBot(i)}>{w.pinyin}</button>)}
       </div>
       {last && (
-        <div className="card" style={{ marginTop: 14 }}>
-          <span className="hanzi" style={{ fontSize: "1.6rem", fontWeight: 700 }}>{last.zh}</span>{" "}
-          <span className="muted">{last.pinyin}</span> <b style={{ color: "#14532d" }}>— {last.vi || "(chưa có nghĩa)"}</b>
-          {last.exCn && <div className="hanzi">{last.exCn}<div className="muted" style={{ fontSize: ".8rem" }}>{last.pySent}</div><div className="muted" style={{ fontSize: ".85rem" }}>{last.exVi}</div></div>}
+        <div className="card pair-last">
+          <div><span className="hanzi zh">{last.zh}</span> <span className="py">{last.pinyin}</span> <span className="vi">{last.vi || "(chưa có nghĩa)"}</span></div>
+          {last.exCn && <div className="ex"><div className="hanzi">{last.exCn}</div><div className="muted small">{last.pySent}</div><div className="muted small">{last.exVi}</div></div>}
         </div>
       )}
     </div>

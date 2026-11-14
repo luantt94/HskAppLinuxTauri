@@ -2,6 +2,7 @@
 // Port của games/game_list_reader.py (không có chấm điểm; chế độ SRS chỉ lọc theo hạn ôn).
 import { useCallback, useEffect, useRef, useState } from "react";
 import Icon from "../components/Icon";
+import { Check, Menu } from "../components/ui";
 import { api } from "../lib/api";
 import { cleanZh, speak, stopAudio } from "../lib/audio";
 import { daysLeft, dueOnlyPool } from "../lib/srsPool";
@@ -11,7 +12,6 @@ import { useVocab } from "../lib/vocabStore";
 
 const PAGE_SIZE = 20;
 const PAUSE_BETWEEN_MS = 1000; // nghỉ 1 giây giữa các mục khi tự đọc
-const TONES = ["#eff6ff", "#f0fdf4", "#fffbeb", "#fdf2f8"];
 
 type Active = { idx: number; part: "word" | "sent" } | null;
 
@@ -81,66 +81,88 @@ export default function ListTab() {
     if (runRef.current === myRun) { setActive(null); setAuto(false); }
   }
 
-  const fs = (px: number) => `${px * scale}px`;
+  // Cỡ chữ theo rem để đi cùng cài đặt "Cỡ chữ" chung của app; `scale` là phóng to riêng của tab này.
+  // Đổi trang bằng tay: cuộn khung nội dung về đầu để thấy mục đầu tiên của trang mới
+  const goPage = (p: number) => { setPage(Math.max(0, Math.min(pages - 1, p))); document.querySelector(".main")?.scrollTo({ top: 0 }); };
+  const pager = (
+    <div className="pager">
+      <button className="icon" disabled={page === 0} onClick={() => goPage(page - 1)} title="Trang trước"><Icon name="chevL" size={16} /></button>
+      <span>Trang <b className="stat">{page + 1}</b> / {pages}</span>
+      <button className="icon" disabled={page >= pages - 1} onClick={() => goPage(page + 1)} title="Trang sau"><Icon name="chevR" size={16} /></button>
+    </div>
+  );
+
+  const fs = (rem: number) => `${rem * scale}rem`;
 
   return (
     <div>
       <div className="toolbar">
-        <b>{pool.length} mục</b>
-        <span className="sep" />
         <button className={auto ? "active" : "primary"} onClick={readAll}><Icon name={auto ? "pause" : "play"} size={15} />{auto ? "Dừng" : "Đọc tất cả"}</button>
-        <span className="sep" />
-        <label><input type="radio" checked={filter === "due"} onChange={() => setFilter("due")} /> Từ đến hạn</label>
-        <label><input type="radio" checked={filter === "known"} onChange={() => setFilter("known")} /> Từ đã thuộc</label>
+        <div className="tabs seg">
+          <button className={filter === "due" ? "active" : ""} onClick={() => setFilter("due")}>Đến hạn</button>
+          <button className={filter === "known" ? "active" : ""} onClick={() => setFilter("known")}>Đã thuộc</button>
+        </div>
+        <span className="muted">{pool.length} mục</span>
         <span className="grow" />
-        <button className="ghost" onClick={() => setScale((s) => Math.max(0.7, +(s - 0.1).toFixed(1)))}>A−</button>
-        <button className="ghost" onClick={() => setScale((s) => Math.min(2, +(s + 0.1).toFixed(1)))}>A+</button>
-        <label><input type="checkbox" checked={readVi} onChange={(e) => setReadVi(e.target.checked)} /> Đọc nghĩa Việt</label>
-        <button onClick={() => setShowEx((v) => !v)}>{showEx ? "Ẩn câu" : "Hiện câu"}</button>
+        {pages > 1 && pager}
+        <Menu label="Hiển thị" icon="sliders">
+          <div className="menu-row">
+            <span className="grow">Cỡ chữ</span>
+            <button className="icon" onClick={() => setScale((s) => Math.max(0.7, +(s - 0.1).toFixed(1)))} title="Nhỏ hơn">A−</button>
+            <b className="stat" style={{ minWidth: "3rem", textAlign: "center" }}>{Math.round(scale * 100)}%</b>
+            <button className="icon" onClick={() => setScale((s) => Math.min(2, +(s + 0.1).toFixed(1)))} title="Lớn hơn">A+</button>
+          </div>
+          <Check checked={showEx} onChange={setShowEx} label="Hiện câu ví dụ" />
+          <Check checked={readVi} onChange={setReadVi} label="Đọc cả nghĩa tiếng Việt" />
+        </Menu>
       </div>
 
       <div className="wordlist">
         {slice.map((w, i) => {
           const left = daysLeft(dues[w.zh]);
-          const lbl = left === undefined ? ["chưa học", "#64748b"] : left < 0 ? [`Quá hạn ${-left}n`, "#be123c"] : left === 0 ? ["Hôm nay", "#b45309"] : [`còn ${left} ngày`, "#047857"];
+          // Nhãn hạn ôn: [chữ, lớp màu]
+          const [dueText, dueCls] = left === undefined ? ["chưa học", "new"] : left < 0 ? [`quá hạn ${-left} ngày`, "late"] : left === 0 ? ["hôm nay", "today"] : [`còn ${left} ngày`, "later"];
           const wa = active?.idx === i && active.part === "word";
           const sa = active?.idx === i && active.part === "sent";
           return (
-            <div id={`row-${i}`} key={w.zh} className="card" style={{ background: active?.idx === i ? "#d1fae5" : TONES[i % 4], padding: 10 }}>
-              <div className="row">
-                <button onClick={() => speak(cleanZh(w.zh))}><Icon name="volume" size={16} /></button>
-                <span className="hanzi" style={{ fontSize: fs(20), fontWeight: 700, color: wa ? "#16a34a" : "#1d4ed8" }}>{w.zh}</span>
-                <span style={{ fontSize: fs(15), color: "#7c3aed" }}>{w.pinyin}</span>
-                <span style={{ fontSize: fs(15), color: "#047857", fontWeight: 600 }} className="grow">— {w.vi}</span>
-                <button style={{ padding: "0 8px" }} onClick={() => adjust(w, -1)}>−</button>
-                <span style={{ color: lbl[1], fontWeight: 600, fontSize: fs(14), minWidth: 80, textAlign: "center" }}>{lbl[0]}</span>
-                <button style={{ padding: "0 8px" }} onClick={() => adjust(w, 1)}>+</button>
+            // Bố cục ngang: [từ + nghĩa] | [câu ví dụ] | [hạn ôn] — bấm vào từ / câu để nghe
+            <div id={`row-${i}`} key={w.zh} className={`lcard ${active?.idx === i ? "playing" : ""} ${showEx ? "" : "noex"}`}>
+              <div className="lcard-word">
+                <button className={`say ${wa ? "on" : ""}`} onClick={() => speak(cleanZh(w.zh))} title="Nghe từ">
+                  <span className="hanzi zh" style={{ fontSize: fs(1.5) }}>{w.zh}</span>
+                  <span className="py" style={{ fontSize: fs(1) }}>{w.pinyin}</span>
+                  <Icon name="volume" size={15} className="ico" />
+                </button>
+                <div className="vi" style={{ fontSize: fs(1) }}>{w.vi}</div>
               </div>
-              {showEx && (
-                <div className="row" style={{ marginTop: 6, alignItems: "flex-start" }}>
-                  <button disabled={!cleanZh(w.exCn)} onClick={() => speak(cleanZh(w.exCn))}><Icon name="volume" size={16} /></button>
-                  <div className="grow">
-                    {w.exCn ? (
-                      <>
-                        <div className="hanzi" style={{ fontSize: fs(17), color: sa ? "#16a34a" : "#0f172a" }}>{w.exCn}</div>
-                        <div style={{ fontSize: fs(14), color: "#0e7490" }}>{w.pySent}</div>
-                        <div style={{ fontSize: fs(14), color: "#c2410c" }}>{w.exVi}</div>
-                      </>
-                    ) : <span className="muted">（Chưa có câu ví dụ）</span>}
-                  </div>
-                </div>
-              )}
+              {showEx && (w.exCn ? (
+                <button className={`say ex ${sa ? "on" : ""}`} onClick={() => speak(cleanZh(w.exCn))} title="Nghe câu ví dụ">
+                  <span className="grow">
+                    <span className="hanzi ex-zh" style={{ fontSize: fs(1.1) }}>{w.exCn}</span>
+                    <span className="ex-py" style={{ fontSize: fs(.92) }}>{w.pySent}</span>
+                    <span className="ex-vi" style={{ fontSize: fs(.92) }}>{w.exVi}</span>
+                  </span>
+                  <Icon name="volume" size={15} className="ico" />
+                </button>
+              ) : <div className="muted small lcard-noex">Chưa có câu ví dụ</div>)}
+              <div className="due">
+                <button className="ghost icon" onClick={() => adjust(w, -1)} title="Ôn sớm hơn 1 ngày">−</button>
+                <span className={`due-lbl ${dueCls}`}>{dueText}</span>
+                <button className="ghost icon" onClick={() => adjust(w, 1)} title="Lùi lịch ôn 1 ngày">+</button>
+              </div>
             </div>
           );
         })}
       </div>
       {!pool.length && <p className="muted">Không có từ nào trong danh sách. {filter === "due" ? "Hôm nay không còn từ đến hạn — chọn bộ khác hoặc xem “Từ đã thuộc”." : ""}</p>}
 
-      <div className="row" style={{ justifyContent: "center", margin: "12px 0" }}>
-        <button disabled={page === 0} onClick={() => setPage((p) => p - 1)}><Icon name="chevL" size={16} /> Trang trước</button>
-        <span>Trang {page + 1}/{pages}</span>
-        <button disabled={page >= pages - 1} onClick={() => setPage((p) => p + 1)}>Trang sau <Icon name="chevR" size={16} /></button>
-      </div>
+      {pages > 1 && (
+        <div className="row" style={{ justifyContent: "center", margin: "1rem 0 .4rem" }}>
+          <button disabled={page === 0} onClick={() => goPage(page - 1)}><Icon name="chevL" size={16} />Trang trước</button>
+          <span className="muted">Trang <b className="stat" style={{ color: "var(--text)" }}>{page + 1}</b> / {pages}</span>
+          <button className="primary" disabled={page >= pages - 1} onClick={() => goPage(page + 1)}>Trang sau<Icon name="chevR" size={16} /></button>
+        </div>
+      )}
     </div>
   );
 }

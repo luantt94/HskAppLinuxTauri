@@ -1,7 +1,8 @@
-// Tab "🌀 Hỗn mang" — lưới 2×2 ô từ vựng, mỗi ô có 3 nút 🟡/⚪/🟢 chọn mức ôn lại.
+// Tab "Ôn nhanh" (trước đây "Hỗn mang") — lưới 2×2 ô từ vựng, mỗi ô có 3 nút Khó / Vừa / Dễ chọn mức ôn lại.
 // Chọn xong có ~1,5s "đổi ý" rồi mới chốt vào SRS. Port của games/game_chaos.py.
 import { useCallback, useEffect, useRef, useState } from "react";
 import Icon from "../components/Icon";
+import { Check, Done, Menu } from "../components/ui";
 import { api } from "../lib/api";
 import { cleanZh, speak, stopAudio } from "../lib/audio";
 import { resolveEffectivePool } from "../lib/srsPool";
@@ -16,7 +17,7 @@ const NEW_WORD_DAYS = [1, 2, 4];
 const DISPLAY_MODES: [string, string][] = [
   ["Chữ Hán", "z"], ["Pinyin", "p"], ["Nghĩa", "m"], ["Chữ Hán + Pinyin", "zp"], ["Chữ Hán + Nghĩa", "zm"], ["Pinyin + Nghĩa", "pm"],
 ];
-const COLORS = ["#f59e0b", "#ffffff", "#18a957"];
+const GRADES = ["Khó", "Vừa", "Dễ"]; // tên 3 mức tự đánh giá, theo thứ tự nút
 const fmtDays = (d: number) => `${Math.max(1, Math.round(d))} ngày`;
 
 type Box = { word: Word | null; labels: [string, string, string]; pending: number | null; revealed: boolean; token: number };
@@ -96,32 +97,40 @@ export default function ChaosTab() {
   return (
     <div>
       <div className="toolbar">
-        <b className="grow">Đã xét {decided} / {total} <span className="muted" style={{ fontWeight: 400 }}>· 🟡 {counts[0]} ⚪ {counts[1]} 🟢 {counts[2]}</span></b>
-        <span>Hiện:</span>
-        <select value={mode} onChange={(e) => setMode(Number(e.target.value))}>{DISPLAY_MODES.map(([l], i) => <option key={l} value={i}>{l}</option>)}</select>
-        <label><input type="checkbox" checked={sound} onChange={(e) => setSound(e.target.checked)} /> {sound ? "🔊" : "🔇"} Tự phát âm</label>
+        <span className="muted">Đã xét <b className="stat" style={{ color: "var(--text)" }}>{decided}</b> / {total}</span>
+        <span className="sep" />
+        {GRADES.map((g, k) => <span key={g} className={`pill grade-pill g${k}`}>{g} <b className="stat">{counts[k]}</b></span>)}
+        <span className="grow" />
+        <Menu label={`Hiện: ${DISPLAY_MODES[mode]?.[0] ?? ""}`} icon="sliders">
+          <div className="muted small">Phần hiện trên thẻ (phần còn lại tự nhớ)</div>
+          {DISPLAY_MODES.map(([l], i) => <label key={l}><input type="radio" checked={mode === i} onChange={() => setMode(i)} />{l}</label>)}
+          <hr className="menu-sep" />
+          <Check checked={sound} onChange={setSound} label="Tự phát âm khi lật thẻ" />
+        </Menu>
         <button onClick={start}><Icon name="rotate" size={16} />Làm lại</button>
       </div>
       {done ? (
-        <p style={{ textAlign: "center", fontWeight: 600, fontSize: "1.1rem" }}>
-          🎉 Đã xét hết {total} từ — 🟡 {counts[0]} gặp lại sau 1 ngày, ⚪ {counts[1]} mức vừa, 🟢 {counts[2]} mức xa.<br />Bấm "Làm lại" để làm lại.
-        </p>
+        <Done title={`Đã xét hết ${total} từ`}>
+          <p className="muted" style={{ marginBottom: "1rem" }}>Khó {counts[0]} (gặp lại sau 1 ngày) · Vừa {counts[1]} · Dễ {counts[2]}</p>
+          <button className="primary" onClick={start}><Icon name="rotate" size={16} />Làm lại</button>
+        </Done>
       ) : total === 0 ? <p className="muted">Bộ từ đang chọn chưa có từ nào để xét.</p> : (
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+        <div className="chaos-grid">
           {boxes.map((b, i) => {
             const shown = b.revealed || !b.word ? "zpm" : parts;
             const w = b.word;
             return (
-              <div key={i} className="card" style={{ minHeight: 190, padding: ".7rem .8rem", display: "flex", flexDirection: "column", background: "#f1f5f9", cursor: "pointer" }} onClick={() => reveal(i)}>
-                <div className="hanzi" style={{ fontSize: "2rem", fontWeight: 700, textAlign: "center", minHeight: "2.6rem", lineHeight: 1.3 }}>{w && shown.includes("z") ? w.zh : ""}</div>
-                <div style={{ fontSize: "1.15rem", fontWeight: 600, color: "#2563eb", textAlign: "center", minHeight: "1.7rem" }}>{w && shown.includes("p") ? w.pinyin : ""}</div>
-                <div style={{ fontSize: "1rem", color: "#475569", textAlign: "center", minHeight: "2.6rem", lineHeight: 1.35 }}>{w && shown.includes("m") ? w.vi : ""}</div>
-                <div className="grow" />
+              <div key={i} className={`chaos-card ${b.revealed ? "open" : ""}`} onClick={() => reveal(i)}>
+                <div className="hanzi zh">{w && shown.includes("z") ? w.zh : ""}</div>
+                <div className="py">{w && shown.includes("p") ? w.pinyin : ""}</div>
+                <div className="vi">{w && shown.includes("m") ? w.vi : ""}</div>
+                <div className="hint">{w && !b.revealed ? "Bấm để xem đủ" : ""}</div>
                 {w && (
-                  <div className="row" style={{ flexWrap: "nowrap" }} onClick={(e) => e.stopPropagation()}>
-                    {[0, 1, 2].map((o) => (
-                      <button key={o} className="grow" style={{ height: 46, minHeight: 0, background: COLORS[o], borderWidth: b.pending === o ? 3 : 1, borderColor: b.pending === o ? "#0f172a" : undefined, color: o === 2 ? "#fff" : "#0f172a" }}
-                        onClick={() => choose(i, o)}>{o === 0 ? "🟡" : o === 1 ? "⚪" : "🟢"}<br />{b.labels[o]}</button>
+                  <div className="grades" onClick={(e) => e.stopPropagation()}>
+                    {GRADES.map((g, o) => (
+                      <button key={g} className={`grade g${o} ${b.pending === o ? "on" : ""}`} onClick={() => choose(i, o)} title={`${g} — gặp lại sau ${b.labels[o]}`}>
+                        <b>{g}</b><small>{b.labels[o]}</small>
+                      </button>
                     ))}
                   </div>
                 )}

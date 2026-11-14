@@ -2,7 +2,7 @@
 // Tách từ bằng jieba (Rust) vì câu tiếng Trung không có khoảng trắng.
 import { useCallback, useEffect, useRef, useState } from "react";
 import Icon from "../components/Icon";
-import { Check, Score, StatusRow } from "../components/ui";
+import { Check, Menu, Score } from "../components/ui";
 import { api } from "../lib/api";
 import { cleanZh, speak, stopAudio } from "../lib/audio";
 import { shuffle } from "../lib/data";
@@ -20,6 +20,7 @@ export default function SentenceOrderTab() {
   const { items } = useVocab();
   const report = useReport();
   const [readSelected, setReadSelected] = usePersistent("order.readSelected", true);
+  const [showPinyin, setShowPinyin] = usePersistent("order.showPinyin", true); // pinyin câu gần như lộ thứ tự — cho phép ẩn
   const pool = useRef<Round[]>([]);
   const queue = useRef<Round[]>([]);
   const [round, setRound] = useState<Round | null>(null);
@@ -36,7 +37,7 @@ export default function SentenceOrderTab() {
 
   const nextRound = useCallback(() => {
     setLocked(false); setAwaitingNext(false); setFeedback(null); setHints(0); setWrongFrom(null); setAnswer([]);
-    if (!pool.current.length) { setRound(null); setMsg("⚠️ Không tìm thấy câu ví dụ phù hợp (cần câu 2-14 từ). Hãy chọn bộ từ vựng có nhiều câu ví dụ hơn."); return; }
+    if (!pool.current.length) { setRound(null); setMsg("Không tìm thấy câu ví dụ phù hợp (cần câu 2-14 từ). Hãy chọn bộ từ vựng có nhiều câu ví dụ hơn."); return; }
     if (!queue.current.length) queue.current = [...pool.current];
     const r = queue.current.shift()!;
     roundRef.current = r;
@@ -90,7 +91,7 @@ export default function SentenceOrderTab() {
     const r = roundRef.current;
     if (awaitingNext) return nextRound();
     if (locked || !r) return;
-    if (bank.length) return setFeedback({ text: "⚠️ Hãy đặt hết các thẻ vào câu trước khi kiểm tra.", good: false });
+    if (bank.length) return setFeedback({ text: "Hãy đặt hết các thẻ vào câu trước khi kiểm tra.", good: false });
     const ok = answer.every((t, i) => t.word === r.tokens[i]);
     if (ok) {
       setLocked(true); setAwaitingNext(true);
@@ -139,36 +140,37 @@ export default function SentenceOrderTab() {
   }
 
   const tile = (t: Tile, onClick: () => void, bad = false) => (
-    <button key={t.id} className="chip hanzi" onClick={onClick}
-      style={bad ? { background: "#fee2e2", borderColor: "#ef4444" } : undefined}>
-      {t.word}<div className="muted" style={{ fontSize: ".65rem", lineHeight: 1 }}>{t.id}</div>
-    </button>
+    <button key={t.id} className={`chip hanzi ${bad ? "bad" : ""}`} onClick={onClick}>{t.word}</button>
   );
 
   return (
     <div>
-      <StatusRow right={<Score ok={score.ok} bad={score.bad} />}>
-        <Check checked={readSelected} onChange={setReadSelected} label="Đọc từ vừa chọn" />
-      </StatusRow>
-      <div style={{ height: ".8rem" }} />
+      <div className="toolbar">
+        <span className="muted">Gợi ý đã dùng <b className="stat" style={{ color: "var(--text)" }}>{hints}</b></span>
+        <span className="grow" />
+        <Score ok={score.ok} bad={score.bad} />
+        <Menu label="Tuỳ chọn" icon="sliders">
+          <Check checked={showPinyin} onChange={setShowPinyin} label="Hiện pinyin của câu (dễ hơn)" />
+          <Check checked={readSelected} onChange={setReadSelected} label="Đọc từ vừa chọn" />
+        </Menu>
+      </div>
       {!round ? <p className="muted">{msg}</p> : (
         <>
           <div className="card prompt-card">
-            {round.pySent && <div style={{ color: "#0e7490" }}>{round.pySent}</div>}
-            <div style={{ color: "#c2410c", fontWeight: 600 }}>{round.exVi || "(chưa có nghĩa tiếng Việt cho câu này)"}</div>
+            <button className="ghost icon corner" onClick={() => speak(cleanZh(round.fullCn))} title="Nghe cả câu"><Icon name="volume" /></button>
+            <div className="order-vi">{round.exVi || "(chưa có nghĩa tiếng Việt cho câu này)"}</div>
+            {showPinyin && round.pySent && <div className="ex-py">{round.pySent}</div>}
           </div>
-          <div className="card" style={{ minHeight: 84, margin: "12px 0", background: "#f8fafc" }}>
-            <div className="muted" style={{ fontSize: ".8rem" }}>Câu của bạn (bấm thẻ để bỏ ra):</div>
-            {answer.map((t, i) => tile(t, () => unplace(t), wrongFrom !== null && i >= wrongFrom))}
+          <div className={`order-zone ${feedback?.good ? "good" : ""}`}>
+            {answer.length ? answer.map((t, i) => tile(t, () => unplace(t), wrongFrom !== null && i >= wrongFrom))
+              : <span className="muted small">Bấm các thẻ bên dưới theo đúng thứ tự — bấm lại để bỏ ra</span>}
           </div>
-          <div style={{ minHeight: 70 }}>{bank.map((t) => tile(t, () => place(t)))}</div>
-          <div className="row" style={{ justifyContent: "center", marginTop: 12 }}>
-            <button onClick={hint}>Gợi ý</button>
-            <button className="primary" onClick={check}>{awaitingNext ? "➡️ Tiếp theo" : "Kiểm tra"}</button>
-            <button onClick={() => speak(cleanZh(round.fullCn))}><Icon name="volume" size={16} /> Đọc cả câu</button>
+          <div className="order-bank">{bank.map((t) => tile(t, () => place(t)))}</div>
+          {feedback && <p style={{ textAlign: "center", fontWeight: 600, margin: ".6rem 0 0" }} className={feedback.good ? "ok" : "err"}>{feedback.text}</p>}
+          <div className="nav-row">
+            <button onClick={hint} disabled={locked}>Gợi ý</button>
+            <button className="primary" onClick={check}>{awaitingNext ? <>Tiếp theo <Icon name="chevR" size={16} /></> : "Kiểm tra"}</button>
           </div>
-          <p className="muted" style={{ textAlign: "center" }}>Gợi ý đã dùng: {hints}</p>
-          {feedback && <p style={{ textAlign: "center", fontWeight: 700 }} className={feedback.good ? "ok" : "err"}>{feedback.text}</p>}
         </>
       )}
     </div>

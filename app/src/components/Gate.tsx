@@ -1,6 +1,7 @@
 // Cổng license: hiện hộp thoại kích hoạt/dùng thử trước khi vào app, như main.py của bản Python.
 import { createContext, useContext, useEffect, useRef, useState, type ReactNode } from "react";
 import { api } from "../lib/api";
+import Icon from "./Icon";
 import type { LicenseStatus } from "../lib/types";
 
 const TRIAL_SAVE_EVERY = 10; // ghi tiến độ dùng thử mỗi 10 giây
@@ -56,7 +57,7 @@ export default function Gate({ children }: { children: ReactNode }) {
     return (
       <LicenseContext.Provider value={ctx}>
         {children}
-        <div className="trial-bar">🎁 Miễn phí dùng thử: còn {status.freeDaysLeft} ngày học không giới hạn — có thể vào tab Cài đặt để nhập mã kích hoạt sớm</div>
+        <div className="trial-bar">🎁 Miễn phí dùng thử: còn {status.freeDaysLeft} ngày học không giới hạn — có thể bấm ⚙ Cài đặt (góc trên bên phải) để nhập mã kích hoạt sớm</div>
       </LicenseContext.Provider>
     );
   }
@@ -64,7 +65,7 @@ export default function Gate({ children }: { children: ReactNode }) {
     return (
       <LicenseContext.Provider value={ctx}>
         {children}
-        <div className="trial-bar">Dùng thử: còn {fmt(remaining)} — nhập mã kích hoạt ở tab Cài đặt để dùng không giới hạn</div>
+        <div className="trial-bar">Dùng thử: còn {fmt(remaining)} — nhập mã kích hoạt ở ⚙ Cài đặt (góc trên bên phải) để dùng không giới hạn</div>
       </LicenseContext.Provider>
     );
   }
@@ -96,6 +97,7 @@ export function ActivationForm({ status, onActivated }: { status: LicenseStatus;
   const [key, setKey] = useState("");
   const [msg, setMsg] = useState("");
   const [busy, setBusy] = useState(false);
+  const [copied, setCopied] = useState(false);
 
   async function verify() {
     setBusy(true);
@@ -112,22 +114,29 @@ export function ActivationForm({ status, onActivated }: { status: LicenseStatus;
   }
 
   return (
-    <div>
-      <p>Gửi số này cho tôi nhé (Zalo {ZALO}):<br /><b>👉 {status.machineCode}</b></p>
-      <button onClick={() => navigator.clipboard.writeText(status.machineCode)}>📋 Copy ID</button>
-      <p>Vui lòng nhập mã kích hoạt:</p>
+    <div className="activation">
+      <div className="muted small">1. Gửi mã máy này qua Zalo <b>{ZALO}</b></div>
       <div className="row">
-        <input className="grow" value={key} onChange={(e) => setKey(e.target.value)} onKeyDown={(e) => e.key === "Enter" && verify()} />
-        <button onClick={async () => setKey((await navigator.clipboard.readText()).trim())}>📋 Paste</button>
+        <span className="code grow">{status.machineCode}</span>
+        <button onClick={() => { navigator.clipboard.writeText(status.machineCode); setCopied(true); setTimeout(() => setCopied(false), 1500); }}>
+          <Icon name={copied ? "checkCircle" : "file"} size={16} />{copied ? "Đã copy" : "Copy"}
+        </button>
       </div>
-      <p className="err">{msg}</p>
-      <button className="primary" disabled={busy || !key.trim()} onClick={verify}>✅ Kiểm tra mã</button>
-      <hr />
-      <p style={{ fontSize: 13, opacity: 0.85 }}>
-        🎁 Dùng thử miễn phí <b>không giới hạn</b> trong <b>7 ngày đầu</b> kể từ lần mở app đầu tiên.<br />
-        ⏱️ Sau 7 ngày, nếu chưa kích hoạt thì mỗi ngày được học tối đa <b>30 phút</b>.<br />
-        💰 Giá mỗi mã kích hoạt: <b>{status.priceVnd.toLocaleString("vi-VN")}đ</b> (dùng vĩnh viễn trên máy này).
-      </p>
+      <div className="muted small">2. Nhập mã kích hoạt nhận được</div>
+      <div className="row" style={{ flexWrap: "nowrap" }}>
+        <input className="grow" placeholder="Mã kích hoạt" value={key} onChange={(e) => setKey(e.target.value)} onKeyDown={(e) => e.key === "Enter" && verify()} />
+        <button onClick={async () => setKey((await navigator.clipboard.readText()).trim())} title="Dán từ clipboard">Dán</button>
+        <button className="primary" disabled={busy || !key.trim()} onClick={verify}>Kích hoạt</button>
+      </div>
+      {msg && <div className="err small">{msg}</div>}
+      <details className="activation-info">
+        <summary>Dùng thử & giá</summary>
+        <ul>
+          <li>Miễn phí <b>không giới hạn</b> trong <b>7 ngày đầu</b> kể từ lần mở app đầu tiên.</li>
+          <li>Sau đó, nếu chưa kích hoạt: tối đa <b>30 phút</b> mỗi ngày.</li>
+          <li>Giá mỗi mã: <b>{status.priceVnd.toLocaleString("vi-VN")}đ</b>, dùng vĩnh viễn trên máy này.</li>
+        </ul>
+      </details>
     </div>
   );
 }

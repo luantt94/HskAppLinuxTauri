@@ -2,7 +2,7 @@
 // tự đọc, tự chuyển thẻ. Port của games/game_flashcard.py (xuất PDF/video: xem ExportDialog).
 import { useCallback, useEffect, useRef, useState } from "react";
 import Icon from "../components/Icon";
-import { Check, StatusRow } from "../components/ui";
+import { Check, Menu } from "../components/ui";
 import { api } from "../lib/api";
 import { speak, stopAudio } from "../lib/audio";
 import { shuffle } from "../lib/data";
@@ -109,21 +109,30 @@ export default function FlashcardTab() {
 
   return (
     <div>
-      <StatusRow right={<button onClick={() => setExporting(true)}><Icon name="download" size={16} />Xuất</button>}>
-        <span className="muted">Thẻ <b>{deck.length ? Math.min(pos, deck.length - 1) + 1 : 0}</b> / {deck.length} · Đã thuộc <b>{known.size}</b></span>
-      </StatusRow>
+      {/* Hay dùng để ngoài (trộn, lọc thẻ); tuỳ chọn đọc và hiển thị gom vào 2 menu bên phải */}
       <div className="toolbar">
-        {T(shuf, setShuf, "Trộn")}
-        {T(onlyUnknown, setOnlyUnknown, "Chỉ thẻ chưa thuộc")}
-        {T(showAll, setShowAll, "Hiện tất cả trên 1 thẻ")}
-        {T(showEx, setShowEx, "Hiện ví dụ")}
-        {T(sound, setSound, "Tự đọc")}
-        {T(readMeaning, setReadMeaning, "Đọc nghĩa")}
-        {T(readExample, setReadExample, "Đọc ví dụ")}
-        {T(autoNext, setAutoNext, "Tự chuyển thẻ")}
+        <span className="muted">Thẻ <b className="stat" style={{ color: "var(--text)" }}>{deck.length ? Math.min(pos, deck.length - 1) + 1 : 0}</b> / {deck.length} · Đã thuộc <b className="stat" style={{ color: "var(--good)" }}>{known.size}</b></span>
         <span className="sep" />
-        <button className="ghost" onClick={() => setScale((s) => Math.max(0.6, +(s - 0.1).toFixed(1)))}>A−</button>
-        <button className="ghost" onClick={() => setScale((s) => Math.min(1.8, +(s + 0.1).toFixed(1)))}>A+</button>
+        <button className={shuf ? "active" : ""} onClick={() => setShuf(!shuf)} title="Xáo trộn thứ tự thẻ"><Icon name="shuffle" size={15} />Trộn</button>
+        <button className={onlyUnknown ? "active" : ""} onClick={() => setOnlyUnknown(!onlyUnknown)} title="Ẩn các thẻ đã đánh dấu thuộc trong phiên này"><Icon name="target" size={15} />Chỉ thẻ chưa thuộc</button>
+        <span className="grow" />
+        <Menu label="Tự đọc" icon={sound ? "volume" : "volumeOff"}>
+          {T(sound, setSound, "Tự đọc khi sang thẻ mới")}
+          <Check checked={readMeaning} onChange={setReadMeaning} label="Đọc cả nghĩa tiếng Việt" disabled={!sound} />
+          <Check checked={readExample} onChange={setReadExample} label="Đọc cả câu ví dụ" disabled={!sound || !showEx} />
+          {T(autoNext, setAutoNext, "Tự chuyển sang thẻ kế")}
+        </Menu>
+        <Menu label="Hiển thị" icon="sliders">
+          <div className="menu-row">
+            <span className="grow">Cỡ chữ thẻ</span>
+            <button className="icon" onClick={() => setScale((s) => Math.max(0.6, +(s - 0.1).toFixed(1)))} title="Nhỏ hơn">A−</button>
+            <b className="stat" style={{ minWidth: "3rem", textAlign: "center" }}>{Math.round(scale * 100)}%</b>
+            <button className="icon" onClick={() => setScale((s) => Math.min(1.8, +(s + 0.1).toFixed(1)))} title="Lớn hơn">A+</button>
+          </div>
+          {T(showEx, setShowEx, "Hiện câu ví dụ")}
+          {T(showAll, setShowAll, "Hiện cả hai mặt trên 1 thẻ")}
+        </Menu>
+        <button onClick={() => setExporting(true)} title="Xuất PDF / video / Anki"><Icon name="download" size={16} />Xuất</button>
       </div>
 
       {!cur ? (

@@ -5,7 +5,7 @@ import type { Word } from "./types";
 export const fieldOf = (w: Word, f: number): string =>
   [w.zh, w.vi, w.pinyin, w.exCn, w.exVi, w.pySent][f] ?? "";
 
-export const FIELD_NAMES: Record<number, string> = { 0: "Hán", 1: "VN", 2: "Pinyin", 3: "Hán", 4: "VN", 5: "Pinyin" };
+export const FIELD_NAMES: Record<number, string> = { 0: "Hán", 1: "Nghĩa", 2: "Pinyin", 3: "Hán", 4: "Nghĩa", 5: "Pinyin" };
 
 /** Trường còn lại trong bộ ba (không phải câu hỏi q, không phải đáp án a). */
 export const thirdField = (q: number, a: number): number => {

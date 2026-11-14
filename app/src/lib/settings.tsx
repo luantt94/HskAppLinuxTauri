@@ -8,10 +8,11 @@ const Ctx = createContext<S | null>(null);
 
 // Âm lượng module-level để các hàm phát âm (không phải component) đọc được.
 let currentVolume = 1;
+export const DEFAULT_FONT_PT = 10;
 export const getVolume = () => currentVolume;
 
 export function SettingsProvider({ children }: { children: ReactNode }) {
-  const [fontPt, setFontPt] = usePersistent("ui.fontPt", 11);
+  const [fontPt, setFontPt] = usePersistent("ui.fontPt", DEFAULT_FONT_PT);
   const [volume, setVolume] = usePersistent("audio.volume", 1);
   // Lần đầu (chưa có cài đặt mới): nhập âm lượng/cỡ chữ từ bản Python (QSettings) để không bị "reset".
   useEffect(() => {

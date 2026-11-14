@@ -6,12 +6,20 @@ import { daysLeft } from "./srsPool";
 import { useProgress } from "./progress";
 
 type Toast = { text: string; good: boolean; id: number } | null;
-const Ctx = createContext<{ report: (zh: string, correct: boolean) => Promise<void> } | null>(null);
+type ToastCtx = { report: (zh: string, correct: boolean) => Promise<void>; notify: (text: string, good?: boolean, ms?: number) => void };
+const Ctx = createContext<ToastCtx | null>(null);
 
 export function ToastProvider({ children }: { children: ReactNode }) {
   const [toast, setToast] = useState<Toast>(null);
   const { refresh } = useProgress();
   const timer = useRef<number | undefined>(undefined);
+
+  /** Hiện một thông báo ngắn (vd "Đang học: HSK2"). */
+  const notify = useCallback((text: string, good = true, ms = 1800) => {
+    setToast({ text, good, id: Date.now() });
+    window.clearTimeout(timer.current);
+    timer.current = window.setTimeout(() => setToast(null), ms);
+  }, []);
 
   /** Ghi kết quả đúng/sai vào SRS rồi hiện "gặp lại sau N ngày". */
   const report = useCallback(async (zh: string, correct: boolean) => {
@@ -22,13 +30,11 @@ export function ToastProvider({ children }: { children: ReactNode }) {
     if (!card) return;
     const d = daysLeft(card.dueDate) ?? 0;
     const when = d <= 0 ? "ngay hôm nay" : `sau ${d} ngày`;
-    setToast({ text: `${zh}: ${correct ? "đúng" : "sai"}, gặp lại ${when}`, good: correct, id: Date.now() });
-    window.clearTimeout(timer.current);
-    timer.current = window.setTimeout(() => setToast(null), 1500);
-  }, [refresh]);
+    notify(`${zh}: ${correct ? "đúng" : "sai"}, gặp lại ${when}`, correct, 1500);
+  }, [refresh, notify]);
 
   return (
-    <Ctx.Provider value={{ report }}>
+    <Ctx.Provider value={{ report, notify }}>
       {children}
       {toast && (
         <div key={toast.id} style={{ position: "fixed", left: "50%", bottom: 36, transform: "translateX(-50%)", zIndex: 60,
